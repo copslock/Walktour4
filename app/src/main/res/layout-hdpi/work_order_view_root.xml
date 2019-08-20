@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 筛选界面布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_menu_bg_color"
+    android:minHeight="150dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_menu_bg_color" >
+
+
+            	<LinearLayout
+	    android:id="@+id/content_list" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_above="@+id/ControlBar"
+	    android:orientation="vertical">
+            	    
+            	</LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/ControlBar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_ECECEC"
+            android:orientation="horizontal" >
+                    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/box2"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="@string/str_clear"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/default_txt_size_micro" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@android:drawable/divider_horizontal_bright" />
+
+            <Button
+                android:id="@+id/btn_filter"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="@string/data_manager_screening"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/default_txt_size_micro" />
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

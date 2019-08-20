@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 左边图标，右边标题 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="56dip"
+    android:background="@drawable/base_list_item_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="4dip" >
+
+    <!-- android:descendantFocusability="blocksDescendants" -->
+
+    <CheckBox
+        android:id="@+id/ItemTestable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:button="@drawable/checkbox"
+        android:paddingLeft="12dip"
+        android:visibility="gone"
+        android:paddingRight="12dip" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:paddingTop="6dip"
+            android:text="TextView01"
+            android:textColor="@color/app_main_text_color"
+            android:textSize="@dimen/default_txt_size_micro" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:textSize="@dimen/app_content_txt_size"
+                android:id="@+id/ItemCount_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dip"
+                android:singleLine="true"
+                android:text="3 times" />
+
+            <TextView
+                android:id="@+id/ItemDescrition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="right" >
+
+        <ImageView
+            android:padding="8dip"
+            android:id="@+id/ItemCheckble"
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="8dip"
+            android:src="@drawable/controlbar_delete"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

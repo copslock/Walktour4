@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/station_desc"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginStart="10dp"
+        android:gravity="center_vertical|left"
+        android:text="route"
+        android:textColor="@color/light_blue"
+        android:textSize="@dimen/app_second_title_txt_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp" >
+
+        <CheckBox
+            android:id="@+id/check_station_reach"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/app_content_txt_size"
+            android:text="@string/metro_station_operate_end"
+            android:textColor="@color/light_blue" />
+
+        <CheckBox
+            android:id="@+id/check_station_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/app_content_txt_size"
+            android:layout_weight="1"
+            android:text="@string/metro_station_operate_start"
+            android:textColor="@color/light_blue" />
+    </LinearLayout>
+
+</LinearLayout>

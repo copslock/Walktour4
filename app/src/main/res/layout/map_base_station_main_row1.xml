@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="2dp"
+    android:background="@drawable/base_list_item_bg"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/column1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:textColor="@color/app_main_text_color"
+        android:textSize="@dimen/app_content_txt_size" />
+
+    <TextView
+        android:id="@+id/column2"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:textColor="@color/app_main_text_color"
+        android:textSize="@dimen/app_content_txt_size" />
+
+    <TextView
+        android:id="@+id/column3"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:textColor="@color/app_main_text_color"
+        android:textSize="@dimen/app_content_txt_size" />
+
+    <TextView
+        android:id="@+id/column4"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:textColor="@color/app_main_text_color"
+        android:textSize="@dimen/app_content_txt_size" />
+
+    <ImageButton
+        android:id="@+id/detail_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:src="@drawable/right_btn2" />
+
+</LinearLayout>

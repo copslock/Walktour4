@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<config>
+
+	<sys name="setting">
+	
+		<routine>
+			<item name="VersionType" value="0"/>
+			<item name="checkOutOfService" value="0"/>
+			<item name="createBinFile" value="0" />
+			<item name="device" value="Android"/>
+			<item name="replaySpeed" value="100"/>
+			<item name="wcdmaExtendParam" value = "0" />
+			<item name="autoMarkPoint" value = "1" />
+			<item name="tel" value="0000"/>
+			<item name="storge" value="/sdcard/Walktour/"/>
+			<item name="statistic" value="A"/>
+			<item name="autostart" value="0" />	 		
+			<item name="tcpdump" value="0" />
+			<item name="filenamenum" value="1"/>
+			<item name="canrunscript" value="0"/>
+			<item name="notfirst" value="0"/>
+			<item name="samplingfrequency" value="500" />
+			<item name="SplitType" value ="1"></item>
+			<item name="filesize" value="3600"></item>
+			<item name="DataUploadWay" value="0"></item>
+			<item name="NET_T2G_CS_HANDOVER_FAILED" value="false"></item>
+			<item name="auto_goonging" value="false"></item>
+			<item name="auto_check_lic" value="0"></item>
+			<item name="auto_goonging" value=""></item>
+			<item name="nt_over" value="-1"></item>
+			<item name="initpw" value="false"></item>
+			<item name="net_interface" value="0"></item>
+			<item name="auto_delete" value="false"></item>
+			<item name="rcu" value="false"></item>
+			<item name="dtlog" value="false"></item>
+			<item name="dcf" value="true"></item>
+			<item name="org_rcu" value="false"></item>
+			<item name="tcp_ip_collect" value="2"></item>
+			<item name="Dual_Network" value="1"></item>
+			<item name="Run_Time" value="0"></item>
+			<item name="accept_call" value="false"></item>
+			<item name="puase_keep_test" value="false"></item>
+			<item name="puase_no_data" value="false"></item>
+			<item name="auto_delete_dau" value="15"></item>
+			<item name="bluetoothsync" value="false"></item>
+			<item name="open_datasetlog" value="false"></item>
+			<item name="ipad_wifimodel" value="false"></item>
+			<item name="writeby_memorymapped" value="false"></item>
+			<item name="save_all_log" value="false"></item>
+			<item name="tcpip_name" value="0"></item>
+			<basemap>
+				<item name="mapHeight" value="0"></item>
+				<item name="mapPn" value="0"></item>
+				<item name="mapAzimuth" value="0"></item>
+				<item name="latitude" value="0"></item>
+			</basemap>
+		</routine>
+		
+		<apn>
+			<item name="wap" value="None"/>
+			<item name="data" value="None"/>
+		</apn>
+		
+		<dataUpload>
+			<item name="server" value="123"/>
+			<item name="path" value="/"/>
+		</dataUpload>
+		
+		<fleetUpload>
+			<item name="ip" value=""/>
+			<item name="port" value=""/>
+		</fleetUpload>
+		
+		<ftpDwonLoad>
+			<serverIp>61.143.60.83</serverIp>
+			<serverPort>21</serverPort>
+			<serverUsername>twq</serverUsername>
+			<serverPassword>twq</serverPassword>
+		</ftpDwonLoad>
+	
+		<monitor>
+			<uploadOption>
+					<item name="allCall" value="1"/>
+					<item name="connectFail" value="1"/>
+					<item name="callFail" value="1"/>
+					<item name="coverWeak" value="1"/>
+					<item name="voiceQuality" value="1"/>
+					<item name="switchFrequently" value="1"/>
+					<item name="switchFail" value="1"/>
+			</uploadOption>			
+			<savaOption>
+					<item name="allCall" value="1"/>
+					<item name="connectFail" value="1"/>
+					<item name="callFail" value="1"/>
+					<item name="coverWeak" value="1"/>
+					<item name="voiceQuality" value="1"/>
+					<item name="switchFrequently" value="1"/>
+					<item name="switchFail" value="1"/>
+			</savaOption>
+						
+			<uploadType>
+					<item name="type" value="0"/>
+			</uploadType>
+									
+			<uploadDelete>
+					<item name="delete" value="0"/>
+			</uploadDelete>
+			
+			<uploadOneKey>
+					<item name="oneKey" value="0"/>
+			</uploadOneKey>						
+		</monitor>
+		
+		<defevent>
+				<switchFrequently>
+					<item name="duration" value="60"/>
+					<item name="count" value="0"/>
+				</switchFrequently>
+				<coverWeak>
+					<item name="duration" value="30"/>
+					<item name="rxLev" value="0"/>
+				</coverWeak>
+				<RxQuality>
+					<item name="duration" value="30"/>
+					<item name="RxQualSub" value="0"/>
+				</RxQuality>				
+		</defevent>
+		
+		<synchronize>
+		</synchronize>
+		
+	</sys>	
+	
+</config>

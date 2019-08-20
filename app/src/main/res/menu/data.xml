@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu 
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	
+	<item 
+	android:id="@+id/menu_uploadOption" 
+	android:icon="@android:drawable/ic_menu_upload" 
+	android:title="@string/data_uploadOption">
+	</item>
+	
+	<item 
+	android:id="@+id/menu_storge" 
+	android:icon="@android:drawable/ic_menu_save" 
+	android:title="@string/data_storgeOption">
+	</item>
+	
+	<item 
+	android:id="@+id/menu_multichoice" 
+	android:icon="@android:drawable/ic_menu_agenda" 
+	android:title="@string/select_multi">
+	</item>
+	
+</menu>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/basic_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/app_main_bg_color" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/setting_auto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_list_item_bg" >
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/lock_net_auto" />
+
+                <TextView style="@style/setting_sort_right_text_2" />
+            </RelativeLayout>
+
+            <View style="@style/setting_divider" />
+
+            <RelativeLayout
+                android:id="@+id/setting_gsm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_list_item_bg" >
+
+                <TextView
+                    android:id="@+id/setting_datacatup_size_left_text"
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/lock_net_gsm" />
+
+                <TextView style="@style/setting_sort_right_text_2" />
+            </RelativeLayout>
+
+            <View style="@style/setting_divider" />
+
+            <RelativeLayout
+                android:id="@+id/setting_td"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_list_item_bg" >
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/lock_net_tdcdma" />
+
+                <TextView style="@style/setting_sort_right_text_2" />
+            </RelativeLayout>
+
+            <View style="@style/setting_divider" />
+
+            <RelativeLayout
+                android:id="@+id/setting_lte"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_list_item_bg" >
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/lock_net_lte" />
+
+                <TextView style="@style/setting_sort_right_text_2" />
+            </RelativeLayout>
+
+            <View style="@style/setting_divider" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_grey_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/task_attach_title"
+            layout="@layout/basic_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tool_bar"
+        android:layout_below="@+id/top_title"
+        android:background="@android:color/background_light"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/metro_city_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/task_content_group_bg" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_download_file"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/base_list_item_bg"
+                android:text="@string/metro_check_update"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_defult_btn_txt_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

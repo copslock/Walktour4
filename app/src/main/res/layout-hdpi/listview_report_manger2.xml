@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/task_ftp_title"
+        layout="@layout/basic_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical|center"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/exportcurrentreport"
+            android:textSize="@dimen/app_content_txt_size"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_gravity="center_vertical|center"
+            android:background="@drawable/search_item_click"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="8dp"
+            android:text="@string/intelligent_analysis_ltedata_title_1" />
+
+        <View style="@style/setting_divider" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/layout11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+ 
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/createreport"
+            android:textSize="@dimen/app_content_txt_size"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_gravity="center_vertical|center"
+            android:background="@drawable/search_item_click"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="8dp"
+            android:text="@string/total_reportlist_export_str4"
+            android:visibility="gone"
+            />
+
+        <View style="@style/setting_divider" />
+    </LinearLayout>
+
+</LinearLayout>

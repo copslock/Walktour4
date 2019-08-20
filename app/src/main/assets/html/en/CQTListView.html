@@ -1,0 +1,41 @@
+
+<html lang="en" class="ui-mobile">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="jQuery/jquery.min.js"></script>
+    <script type="text/javascript" src="jQuery/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/dlUtils.js"></script>
+    <script type="text/javascript" src="js/dlData.js"></script>
+    <link rel="stylesheet" href="jQuery/jquery.mobile-1.4.5.min.css">
+    <script type="text/javascript" src="js/DLDefine.js"></script>
+    <script>
+        $.mobile.pushStateEnabled = false;
+    </script>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/dlChart.css">
+    <title>CQT</title>
+  </head>
+  <body>  
+    <div data-role="page" id="cqt-list-page">
+      <div data-role="content" class="ui-content" role="main">
+        <div data-role="collapsibleset" data-inset="false" class="dl-no-marginTop" data-mini="true" data-collapsed-icon="carat-r" data-expanded-icon="carat-d" data-iconpos="left" id = "CQTContent">
+        </div>
+      </div><!-- data role content-->
+<!--       // <script type="text/javascript" src="js/TestData.js"></script> -->
+    <script type="text/javascript" src="js/CQTListModel.js"></script>
+    <script type="text/javascript">
+      function dlLoadData(json,goNogo,threshold)
+      {
+        dlLoadSetting('DLGoNogoSetting',goNogo);
+        dlLoadSetting('DLThreholdSetting',threshold);
+        var model = new DLCQTListData();
+        if (model.initWithJson(json)) {
+          model.renderToDoc($('#CQTContent'));
+        }
+      }
+    </script>
+  </div><!-- data page -->
+  </body>
+</html>

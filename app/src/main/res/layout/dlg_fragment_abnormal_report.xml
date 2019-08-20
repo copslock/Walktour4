@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/et_abnormal_desc"
+        style="@style/task_edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:gravity="start"
+        android:hint="@string/single_station_abnormal_desc"
+        android:padding="5dp"
+        android:textSize="@dimen/app_content_txt_size"/>
+
+    <ImageView
+        android:id="@+id/iv_abnormal_photo"
+        android:layout_width="150dp"
+        android:visibility="gone"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/tv_photo_evidence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/singlestation_station_photo"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/single_station_capture_abnormal"
+        android:textColor="@color/app_main_text_color"
+        android:textSize="@dimen/app_content_txt_size"/>
+
+
+</LinearLayout>

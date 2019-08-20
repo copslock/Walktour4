@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="8dp" 
+    android:gravity="center|center_vertical"
+    android:background="@drawable/base_list_item_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/fileType"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="8dp"
+        android:background="@drawable/share_type_project"
+        android:gravity="center|center_vertical"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:paddingRight="8dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/name1"
+                style="@style/fontstyle14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="CSFB测试文件" />
+
+            <TextView
+                android:id="@+id/name2"
+                style="@style/fontstyle14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="160001" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/name333"
+                style="@style/fontstyle12"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="CSFB测试文件"
+                android:textColor="@color/single_huise" />
+
+            <TextView
+                android:id="@+id/name4"
+                style="@style/fontstyle12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="@string/share_project_exist_receive"
+                android:textColor="@color/single_huise"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/name5"
+                style="@style/fontstyle10"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_mybutton4"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="@string/share_project_receive"
+                android:textColor="@color/single_lanse"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/probar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:max="100"
+                android:progress="50"
+                android:progressDrawable="@drawable/progressbar_memory" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

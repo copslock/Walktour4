@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/info_lny"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg">
+
+        <ImageButton
+            android:id="@+id/ItemTestable"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:paddingBottom="13dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="13dip"
+            android:src="@drawable/btn_check_on"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/ItemTestable"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/groupname_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:text="Group1"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/time_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间段:19:00:00"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/expand_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="15dip"
+            android:paddingTop="5dip"
+            android:scaleType="fitXY"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:src="@drawable/expander_ic_minimized_black"
+            android:visibility="gone"/>
+
+        <CheckBox
+            android:id="@+id/delTestable"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:button="@null"
+            android:drawableLeft="@drawable/checkbox"
+            android:paddingBottom="13dip"
+            android:paddingLeft="18dip"
+            android:paddingTop="13dip"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:background="@drawable/list_divider"/>
+
+    <LinearLayout
+        android:id="@+id/visibe_gone_lny"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F6F6F6"
+        android:orientation="vertical"
+        android:paddingLeft="50dip"
+        android:paddingRight="15dip"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/groupname_rly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="38dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/act_task_group_name"/>
+
+            <TextView
+                android:id="@+id/groupname_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:textColor="@color/app_param_color"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:background="@drawable/list_divider"/>
+
+        <RelativeLayout
+            android:id="@+id/grouptask_rly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="38dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/str_test_business"/>
+
+            <TextView
+                android:id="@+id/grouptask_txt"
+                android:layout_width="220dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right|center_vertical"
+                android:lines="2"
+                android:text="1"
+                android:textColor="@color/app_param_color"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:background="@drawable/list_divider"/>
+
+        <RelativeLayout
+            android:id="@+id/groupRepeatCount_rly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/task_group_list_item_bg"
+            android:gravity="center_vertical"
+            android:minHeight="38dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_looptimes"/>
+
+            <TextView
+                android:id="@+id/groupRepeatCount_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="2"
+                android:textColor="@color/app_param_color"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:background="@drawable/list_divider"/>
+
+        <RelativeLayout
+            android:id="@+id/group_interval_rly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/task_group_list_item_bg"
+            android:gravity="center_vertical"
+            android:minHeight="38dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/task_interVal"/>
+
+            <TextView
+                android:id="@+id/group_interval_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:inputType="number"
+                android:textColor="@color/app_param_color"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:background="@drawable/list_divider"/>
+
+        <RelativeLayout
+            android:id="@+id/groupTimeDuan_rly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="38dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/act_task_group_time"/>
+
+            <CheckBox
+                android:id="@+id/timeduan_cbx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="-10dp"
+                android:button="@drawable/switch_button_bg"
+                android:checked="true"
+                android:scaleX="0.7"
+                android:scaleY="0.7"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/timeduan_lny"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#F6F6F6"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dip"
+                android:background="@drawable/list_divider"/>
+
+            <RelativeLayout
+                android:id="@+id/starttime_rly"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp"
+                android:background="@drawable/task_group_list_item_bg"
+                android:gravity="center_vertical"
+                android:minHeight="38dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/fleet_set_location_start"/>
+
+                <TextView
+                    android:id="@+id/starttime_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="09:00:00"
+                    android:textColor="@color/app_param_color"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:background="@drawable/list_divider"/>
+
+        <RelativeLayout
+            android:id="@+id/keeptime_rly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/task_group_list_item_bg"
+            android:gravity="center_vertical"
+            android:minHeight="38dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/monitor_alarmset_lasttime"/>
+
+            <TextView
+                android:id="@+id/keeptime_txt"
+                android:layout_width="220dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right|center_vertical"
+                android:lines="2"
+                android:text="02:00:00"
+                android:textColor="@color/app_param_color"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

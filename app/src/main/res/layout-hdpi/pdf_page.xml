@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:text="Parameter PDF"
+            android:textColor="@color/app_main_text_color"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical" >
+
+            <View
+                android:layout_width="13dip"
+                android:layout_height="13dip"
+                android:background="#0071BC" />
+
+            <com.walktour.framework.ui.BasicSpinner
+                android:id="@+id/parm_pdf_sp_1"
+                android:layout_width="130dip"
+                android:layout_height="28dip"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/drop"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:gravity="center_vertical" >
+
+            <View
+                android:layout_width="13dip"
+                android:layout_height="13dip"
+                android:background="#29ABE2" />
+
+            <com.walktour.framework.ui.BasicSpinner
+                android:id="@+id/parm_pdf_sp_2"
+                android:layout_width="130dip"
+                android:layout_height="28dip"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/drop"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pdfview_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

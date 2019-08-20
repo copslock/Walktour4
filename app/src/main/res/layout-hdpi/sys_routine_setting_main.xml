@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="8dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:background="@color/app_main_color"
+    >
+
+    <LinearLayout
+        android:background="@drawable/layout_white_circle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/sys_setting_devicetag"
+            android:layout_width="fill_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:text="@string/sys_setting_devicetag" />
+
+            <View style="@style/new_setting_divider" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sys_setting_apn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/setting_sort_left_up_text_2"
+                android:text="@string/sys_setting_access_point" />
+
+            <TextView
+                style="@style/setting_sort_left_down_text_2"
+                android:text="@string/sys_setting_access_point_describe" />
+
+            <View style="@style/new_setting_divider" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sys_setting_bluetooth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:text="@string/sys_setting_bluetooth_sync" />
+
+            <View style="@style/new_setting_divider" />
+        </LinearLayout>
+      <LinearLayout
+            android:id="@+id/sys_setting_taskgroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+          android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:text="@string/droidwall_other_app_task_group_short" />
+
+            <View style="@style/new_setting_divider" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/sys_setting_data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/setting_sort_left_up_text_2"
+                android:text="@string/sys_setting_data_collect_save_upload" />
+
+            <TextView
+                style="@style/setting_sort_left_down_text_2"
+                android:text="@string/sys_setting_data_collect_save_upload_describe" />
+
+            <View style="@style/new_setting_divider" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sys_setting_nogo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/setting_sort_left_up_text_2"
+                android:text="@string/sys_nogo_title" />
+
+            <TextView
+                style="@style/setting_sort_left_down_text_2"
+                android:text="@string/sys_nogo_title_descrite" />
+
+            <View style="@style/new_setting_divider" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sys_setting_lock"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/setting_sort_left_up_text_2"
+                android:text="@string/lock" />
+
+            <TextView
+                style="@style/setting_sort_left_down_text_2"
+                android:text="@string/lock_describe" />
+
+            <View style="@style/new_setting_divider" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/sys_setting_custom_window"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/setting_sort_left_up_text_2"
+                android:text="@string/sys_custom_window" />
+
+            <TextView
+                style="@style/setting_sort_left_down_text_2"
+                android:text="@string/sys_custom_window_describe" />
+
+            <View style="@style/new_setting_divider" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sys_setting_ots"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:text="@string/sys_setting_ots" />
+
+            <View style="@style/new_setting_divider" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/sys_setting_nbmodule"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/setting_sort_left_up_text_2"
+                android:text="@string/nb_module_setting" />
+
+            <TextView
+                style="@style/setting_sort_left_down_text_2"
+                android:text="@string/nb_module_params_setting" />
+
+            <View style="@style/new_setting_divider" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sys_setting_csfb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:text="@string/csfb_faild_analysis_main" />
+
+            <View style="@style/new_setting_divider" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sys_setting_advenced"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/setting_sort_left_up_text_2"
+                android:text="@string/sys_setting_advanced" />
+
+            <TextView
+                style="@style/setting_sort_left_down_text_2"
+                android:text="@string/sys_setting_advanced_describe" />
+
+            <View style="@style/new_setting_divider" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/sys_setting_other_app_network_permissions"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/setting_sort_left_up_text_2"
+                android:text="@string/droidwall_other_app_network_control" />
+
+            <TextView
+                style="@style/setting_sort_left_down_text_2"
+                android:text="@string/droidwall_other_app_network_control_setting" />
+
+            <View style="@style/new_setting_divider" />
+        </LinearLayout>
+        
+         <LinearLayout
+            android:id="@+id/sys_setting_platform_interactive_permissions"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/setting_sort_left_up_text_2"
+                android:text="@string/droidwall_platform_interactive_control" />
+
+            <TextView
+                style="@style/setting_sort_left_down_text_2"
+                android:text="@string/droidwall_platform_interactive_control_setting" />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/start_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/custom_export_starttime" />
+        
+        <TextView
+            android:id="@+id/start_time_txt"
+            style="@style/setting_sort_right_text"
+            android:textColor="@color/info_param_color"
+            android:text="2013-11-21 10:40:30" />
+    </RelativeLayout>
+
+    <View style="@style/setting_divider" />
+
+    <RelativeLayout
+        android:id="@+id/end_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/custom_export_endtime" />
+        
+        <TextView
+            android:id="@+id/end_time_txt"
+            style="@style/setting_sort_right_text"
+            android:textColor="@color/info_param_color"
+            android:text="2013-11-21 10:48:33" />
+    </RelativeLayout>
+
+</LinearLayout>

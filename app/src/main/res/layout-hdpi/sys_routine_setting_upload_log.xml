@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/start_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/custom_export_starttime" />
+
+        <TextView
+            android:id="@+id/start_time_txt"
+            style="@style/setting_sort_right_text_2"
+            android:textColor="@color/info_param_color" />
+    </RelativeLayout>
+
+    <View style="@style/sys_routine_setting_divider" />
+
+    <RelativeLayout
+        android:id="@+id/end_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/custom_export_endtime" />
+
+        <TextView
+            android:id="@+id/end_time_txt"
+            style="@style/setting_sort_right_text_2"
+            android:textColor="@color/info_param_color" />
+    </RelativeLayout>
+
+    <View style="@style/sys_routine_setting_divider" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/sys_setting_data_upload_log_data" />
+
+        <CheckBox
+            android:id="@+id/upload_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:button="@drawable/switch_button_bg"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <View style="@style/sys_routine_setting_divider" />
+
+    <RelativeLayout
+        android:id="@+id/setting_upload_file_type_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/sys_setting_data_upload_file_type" />
+
+        <TextView
+            android:id="@+id/setting_upload_file_type_text"
+            style="@style/setting_sort_right_text_2"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+</LinearLayout>

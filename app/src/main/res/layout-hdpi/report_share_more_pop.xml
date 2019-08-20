@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dip"
+        android:background="@drawable/app_main_shape"
+        android:orientation="vertical"
+        android:padding="2dip" >
+
+        <RelativeLayout
+            android:id="@+id/map_clean_all"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/base_list_item_bg"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="@string/total_email"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider" />
+
+        <RelativeLayout
+            android:id="@+id/setting_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/base_list_item_bg"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="@string/share_project_weifuwu"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

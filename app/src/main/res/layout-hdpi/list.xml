@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/tablelist"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TableRow android:id="@+id/TableRow01" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<TextView
+			android:textSize="@dimen/app_content_txt_size"
+
+			android:id="@+id/TextView1" android:layout_width="200px"
+			android:layout_height="wrap_content" android:text="TextView1"></TextView>
+		<ImageButton android:id="@+id/ImageButton01"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginLeft="80px"></ImageButton>
+	</TableRow>
+
+
+</TableLayout>

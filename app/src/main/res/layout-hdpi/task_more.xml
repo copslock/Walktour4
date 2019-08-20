@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ListView
+        android:id="@+id/ListView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dip" />
+
+    <LinearLayout
+        android:id="@+id/LineraLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="52dip"
+        android:layout_gravity="bottom"
+        android:background="@drawable/toolbar_bg"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <!--导入-->
+
+        <LinearLayout
+            android:id="@+id/import_task"
+            android:layout_width="64dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dip"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_toolbar_item"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/controlbar_addto" />
+
+            <TextView
+                android:id="@+id/TextView00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/task_import"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- 导出任务 -->
+
+        <LinearLayout
+            android:id="@+id/export_task"
+            android:layout_width="64dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dip"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_toolbar_item"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/controlbar_paste" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/task_export"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+
+        <!-- 历史 -->
+
+        <LinearLayout
+            android:id="@+id/histroy_task"
+            android:layout_width="64dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dip"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_toolbar_item"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/controlbar_history" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/task_history"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,231 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/app_main_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/mutilytester_mos_setting"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/item_layout_white_circle"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_setting_apn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                style="@style/setting_sort_left_text"
+                android:paddingLeft="10dp"
+                android:text="@string/sys_setting_access_point" />
+
+            <View style="@style/new_setting_divider" />
+
+            <TextView
+                android:id="@+id/text_apn_netname"
+                style="@style/setting_sort_right_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_setting_mosbox_channel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground">
+
+
+            <TextView
+                style="@style/setting_sort_left_text"
+                android:paddingLeft="10dp"
+                android:text="@string/mutilytester_mos_box_channel"
+                android:textColor="@color/app_main_text_color" />
+            <View style="@style/new_setting_divider" />
+            <TextView
+                android:id="@+id/text_setting_mosbox_channel"
+                style="@style/setting_sort_right_text"
+                android:textColor="@color/app_main_text_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_setting_vRec_value"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/setting_sort_left_text"
+                android:paddingLeft="10dp"
+                android:text="@string/mutilytester_mos_vRec_value"
+                android:textColor="@color/app_main_text_color" />
+
+            <TextView
+                android:id="@+id/txt_mutilytester_mos_vRec"
+                style="@style/setting_sort_right_text_2" />
+
+            <View style="@style/new_setting_divider" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_setting_vPlay_value"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/setting_sort_left_text"
+                android:paddingLeft="10dp"
+                android:text="@string/mutilytester_mos_vPlay_value"
+                android:textColor="@color/app_main_text_color" />
+
+            <TextView
+                android:id="@+id/txt_mutilytester_mos_vPlay"
+                style="@style/setting_sort_right_text_2" />
+
+            <View style="@style/new_setting_divider" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_setting_vFazhi_value"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/setting_sort_left_text"
+                android:paddingLeft="10dp"
+                android:text="@string/mutilytester_mos_vFazhi_value"
+                android:textColor="@color/app_main_text_color" />
+
+            <TextView
+                android:id="@+id/txt_mutilytester_mos_vfazhi"
+                style="@style/setting_sort_right_text_2" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/mutilytester_data_setting"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    <LinearLayout
+        style="@style/item_layout_white_circle"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/relative_dataupload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <View style="@style/new_setting_divider" />
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:paddingLeft="10dp"
+            android:text="@string/sys_setting_data_upload" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_datasave"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <View style="@style/new_setting_divider" />
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:paddingLeft="10dp"
+            android:text="@string/sys_setting_data_format" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_functions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <View style="@style/new_setting_divider" />
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:paddingLeft="10dp"
+            android:text="@string/sys_setting_lock" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_advances"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <View style="@style/new_setting_divider" />
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:paddingLeft="10dp"
+            android:text="@string/sys_setting_advanced" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_setting_alarm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:paddingLeft="10dp"
+            android:text="@string/act_sys_alarm" />
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/expander_ic_minimized_black" />
+    </RelativeLayout>
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/layout_setting_locknet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground" >
+
+        <View style="@style/new_setting_divider" />
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:paddingLeft="10dp"
+            android:text="@string/locl_lock_network"
+            android:textColor="@color/app_main_text_color" />
+
+        <TextView
+            android:id="@+id/text_setting_locknet"
+            style="@style/setting_sort_right_text"
+            android:textColor="@color/app_main_text_color" />
+    </RelativeLayout>
+	-->
+    </LinearLayout>
+
+</LinearLayout>

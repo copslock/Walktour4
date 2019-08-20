@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bmapView" >
+
+        <ImageView
+            android:id="@+id/showexceptiontype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/analysis_12"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bmapView"
+        android:layout_alignRight="@+id/bmapView"
+        android:layout_margin="8dp"
+        android:background="@null" >
+
+        <LinearLayout
+            android:id="@+id/showexceptiontypelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:gravity="center_vertical|left"
+            android:orientation="vertical" > 
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

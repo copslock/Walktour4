@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp" >
+
+        <RelativeLayout
+            style="@style/task_layout_edge"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_above="@+id/divider" >
+
+            <TextView
+                android:id="@+id/txt_1"
+                style="@style/setting_sort_left_text_2"
+                android:layout_marginLeft="0dp"
+                android:text="文件大小" />
+
+            <TextView
+                android:id="@+id/txt_2"
+                style="@style/setting_sort_right_text_2"
+                android:layout_marginRight="0dp"
+                android:maxWidth="200dp"
+                android:text="100k" />
+        </RelativeLayout>
+
+        <!-- style="@style/task_listdivider" -->
+        <View
+            android:layout_width="fill_parent"
+            android:id="@+id/divider"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/dashed_shape_gray" />
+    </RelativeLayout>
+
+</LinearLayout>

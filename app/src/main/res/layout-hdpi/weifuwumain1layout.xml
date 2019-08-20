@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <com.walktour.gui.weifuwu.view.swipemenulistview.SwipeMenuListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/single_heng_qian"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

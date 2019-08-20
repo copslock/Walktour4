@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+	<item android:title="@string/browser" 
+	android:id="@+id/browser"
+	/>
+	<item android:title="@string/delete" 
+	android:id="@+id/delete"
+	/>
+	
+	<item android:title="@string/copyto" 
+	android:id="@+id/copy"
+	/>
+	
+	<item android:title="@string/moveto" 
+	android:id="@+id/move"
+	/>
+	
+	<item android:title="@string/upload" 
+	android:id="@+id/upload"
+	/>
+	<item android:title="@string/attribute" 
+	android:id="@+id/attribute"
+	/>
+	
+	</menu>

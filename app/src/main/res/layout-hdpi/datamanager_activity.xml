@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 数据管理界面布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/basic_bg_color"
+    >
+
+    <include layout="@layout/basic_title" android:id="@+id/title_layout" />
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_below="@id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            
+            
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:background="#0065A9"
+                android:paddingTop="7dip" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@android:id/tabs"
+                />
+        </RelativeLayout>
+    </TabHost>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<parameters>
+	<par name="7F000103" shortName="GSM.RXLEV" min="0"  max="1023" table="1" nettype="1" checked="1"></par>
+	<par name="7F000112" shortName="GSM.C/I" min="0"  max="77" table="1" nettype="1" checked="1"></par>
+	<par name="7F000105" shortName="GSM.RXQUAL" min="0"  max="1023" table="1" nettype="1" checked="0"></par>
+	<par name="7F000113" shortName="GSM.TA" min="0"  max="7" table="1" nettype="1" checked="0"></par>
+	<par name="7F000303" shortName="GSM.LAC" min="0"  max="7" table="1" nettype="1" checked="0"></par>
+	<par name="7F000304" shortName="GSM.RAC" min="0"  max="1023" table="1" nettype="1" checked="0"></par>
+	<par name="7F000305" shortName="GSM.CID" min="0"  max="1023" table="1" nettype="1" checked="0"></par>
+	<par name="7F000201" shortName="GSM.RP_NCell" min="0"  max="1023" table="1" nettype="1" checked="0"></par>
+	
+	<par name="7F03011B" shortName="TDS.PCCPCH_RSCP" min="0"  max="1023" table="1" nettype="2" checked="0"></par>
+	<par name="7F030122" shortName="TDS.PCCPCH_SIR" min="0"  max="77" table="1" nettype="2" checked="0"></par>
+	<par name="7F030120" shortName="TDS.RXQUAL" min="0"  max="1023" table="1" nettype="2" checked="0"></par>
+	<par name="7F030117" shortName="TDS.TA" min="0"  max="7" table="1" nettype="2" checked="0"></par>
+	<par name="7F030303" shortName="TDS.LAC" min="0"  max="7" table="1" nettype="2" checked="0"></par>
+	<par name="7F030304" shortName="TDS.RAC" min="0"  max="1023" table="1" nettype="2" checked="0"></par>
+	<par name="7F030305" shortName="TDS.CID" min="0"  max="1023" table="1" nettype="2" checked="0"></par>
+	<par name="7F030203" shortName="TDS.RP_NCell" min="0"  max="1023" table="1" nettype="2" checked="0"></par>
+	
+	<par name="7F06000E" shortName="LTE.RSRP" min="0"  max="1023" table="1" nettype="3" checked="0"></par>
+	<par name="7F06000F" shortName="LTE.RSRQ" min="0"  max="77" table="1" nettype="3" checked="0"></par>
+	<par name="7F060001" shortName="LTE.SINR" min="0"  max="1023" table="1" nettype="3" checked="0"></par>
+	<par name="7F060016" shortName="LTE.EARFCN" min="0"  max="7" table="1" nettype="3" checked="0"></par>
+	<par name="7F060002" shortName="LTE.PCI" min="0"  max="7" table="1" nettype="3" checked="0"></par>
+	<par name="7F060018" shortName="LTE.TAC" min="0"  max="1023" table="1" nettype="3" checked="0"></par>
+	<par name="7F06001F" shortName="LTE.TM" min="0"  max="1023" table="1" nettype="3" checked="0"></par>
+	<par name="0A180001" shortName="LTE.RP_NCell" min="0"  max="1023" table="1" nettype="3" checked="0"></par>
+	
+	
+	
+	</parameters>
+

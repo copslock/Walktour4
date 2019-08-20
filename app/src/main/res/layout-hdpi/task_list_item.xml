@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_list_item_bg"
+    android:minHeight="56dip"
+    android:orientation="horizontal"
+    android:paddingLeft="10dip" >
+
+    <CheckBox
+        android:id="@+id/cw_task_ck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:checked="false"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/cw_task_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dip" />
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/task_ftp_title"
+        layout="@layout/basic_title_share" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical|center"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center_vertical|center"
+            android:gravity="center_vertical|center"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/seletetypesheet"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                
+                android:layout_weight="1"
+                android:background="@drawable/drop"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/searchbox"
+                android:layout_width="0dp"
+                android:layout_height="30dp" 
+                android:layout_weight="1"
+                android:background="@drawable/search_box"
+                android:textSize="14sp" 
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/createsheetlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+<com.walktour.gui.applet.ControlBar
+        android:id="@+id/ControlBar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        
+         />
+</LinearLayout>

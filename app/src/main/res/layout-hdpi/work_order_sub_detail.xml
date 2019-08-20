@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+			android:background="@color/setting_bgcolor"
+		    >
+		    <include
+            android:id="@+id/about_title"
+            layout="@layout/basic_title" />
+		    <View
+		    android:id="@+id/title_blue_color"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/setting_sort_title_bgcolor" />
+    <ScrollView
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:background="@color/setting_bgcolor"
+        android:layout_weight="50"
+        >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:background="@color/setting_bgcolor"
+         android:orientation="vertical"
+        >
+        
+
+		
+		<TextView 
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:textSize="18sp"
+		    android:textColor="@color/white"
+		    android:padding="5dip"
+		    android:text="@string/order_list_detail_str"
+		    />
+		
+       
+			<LinearLayout
+			    android:id="@+id/work_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:background="@drawable/license_run_state_shape"
+                 >
+
+            
+             </LinearLayout>
+             
+			<TextView 
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:textSize="18sp"
+		    android:textColor="@color/white"
+		    android:layout_marginTop="20dip"
+		    android:padding="5dip"
+		    android:text="@string/order_test_subitem_str"
+		    />
+       
+			<LinearLayout
+			    android:id="@+id/addLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:background="@drawable/license_run_state_shape"
+                 >
+             </LinearLayout>
+             
+			
+			<TextView 
+		    android:layout_height="50dip"
+		    android:layout_width="fill_parent"
+		    android:textColor="@android:color/transparent"
+		    android:text="@string/order_test_subitem_str"
+		    />
+
+    </LinearLayout>
+    
+    </ScrollView>
+    
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="58dip"
+    android:background="@drawable/menu_bottom_bg"
+	android:layout_alignParentBottom="true"	
+    android:orientation="horizontal"
+    android:weightSum="4" >
+
+    <Button
+        android:id="@+id/Button01"
+        style="@style/toolbar_button_bg"
+        android:textSize="16sp"
+        android:layout_weight="1"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/Button02"
+        style="@style/toolbar_button_bg"
+        android:textSize="16sp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/Button04"
+        android:textSize="16sp"
+        style="@style/toolbar_button_bg"
+        android:layout_weight="1"
+        android:visibility="gone" />
+</LinearLayout>
+    
+    </LinearLayout>
+

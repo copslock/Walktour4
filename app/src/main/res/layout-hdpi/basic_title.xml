@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/app_title_height"
+    android:background="@color/app_main_color"
+    android:gravity="center_vertical">
+
+    <ImageButton
+        android:id="@+id/pointer"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/task_test_main_bg"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip"
+        android:src="@drawable/navi_back" />
+
+    <TextView
+        android:id="@+id/title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/pointer"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="@string/act_info"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_first_title_txt_size" />
+
+    <LinearLayout
+        android:id="@+id/title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pointersetting"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:text="@string/setting"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_first_title_txt_size"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

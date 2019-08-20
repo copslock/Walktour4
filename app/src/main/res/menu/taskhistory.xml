@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="@string/task_history_add" android:id="@+id/menu_task_his_append" android:icon="@android:drawable/ic_input_add"></item>
+<item android:title="@string/task_history_delete" android:id="@+id/menu_task_his_del" android:icon="@android:drawable/ic_menu_delete"></item>
+</menu>

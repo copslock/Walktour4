@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/basic_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/gallery_bg"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/top_bar_select"
+                android:layout_width="fill_parent"
+                android:layout_height="28dip"
+                android:layout_weight="1"
+                android:background="@drawable/tab_btn_top_2_select_bg" >
+            </ImageView>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="28dip"
+                android:layout_weight="1"
+                android:visibility="invisible" >
+            </ImageView>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="28dip"
+                android:layout_weight="1"
+                android:visibility="invisible" >
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_alignParentTop="true"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/tab1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:background="@drawable/background_mybutton"
+                    android:padding="6dip"
+                    android:text="@string/baidumap_offline_tab1"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/app_content_txt_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/tab2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:background="@drawable/background_mybutton"
+                    android:padding="6dip"
+                    android:text="@string/baidumap_offline_tab2"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/app_content_txt_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/tab3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:background="@drawable/background_mybutton"
+                    android:padding="6dip"
+                    android:text="@string/baidumap_offline_tab3"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/app_content_txt_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TabHost
+            android:layout_above="@+id/ControlBar"
+            android:id="@+id/child_tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/linearlayout" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="0dp"
+                    android:background="@drawable/gallery_bg"
+                    android:divider="@null"
+                    android:padding="0dp"
+                    android:textColor="@color/white"
+                    android:visibility="gone" >
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@android:id/tabs"
+                    android:background="@drawable/base_list_item_bg"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" >
+
+                    <ListView
+                        android:id="@+id/city_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/base_list_item_bg" />
+
+                    <ListView
+                        android:id="@+id/download_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/base_list_item_bg" />
+
+                    <ListView
+                        android:id="@+id/local_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/base_list_item_bg" />
+                </FrameLayout>
+            </RelativeLayout>
+        </TabHost>
+
+        <!-- 底部工具栏 -->
+
+        <com.walktour.gui.applet.ControlBar
+            android:id="@+id/ControlBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="fill_horizontal" />
+    </RelativeLayout>
+
+</LinearLayout>

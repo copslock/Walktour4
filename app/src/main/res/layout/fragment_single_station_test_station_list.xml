@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/fragment_main_layout"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@+id/test_site"
+            android:text="@string/single_station_test_site"
+            android:textSize="@dimen/app_content_txt_size"/>
+
+        <TextView
+            android:id="@+id/test_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:textColor="#00A3E6"
+            android:textSize="@dimen/app_content_txt_size"/>
+    </RelativeLayout>
+
+    <View style="@style/list_divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@+id/current_site"
+            android:text="@string/single_station_current_site"
+            android:textSize="@dimen/app_content_txt_size"/>
+
+        <TextView
+            android:id="@+id/current_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:textColor="#39B54A"
+            android:textSize="@dimen/app_content_txt_size"/>
+    </RelativeLayout>
+
+    <View style="@style/list_divider"/>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"/>
+
+</LinearLayout>

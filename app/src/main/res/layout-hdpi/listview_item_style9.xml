@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>  
+
+<!--listview_item_style３  -->
+<!--左边图标ImageView，２个 TextView上下分布 -->
+
+<RelativeLayout   
+    android:id="@+id/RelativeLayout01"   
+    android:layout_width="fill_parent"   
+    xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:layout_height="wrap_content"   
+    android:paddingBottom="4dip"   
+    android:paddingLeft="8dip"  
+    android:paddingRight="8dip"
+    android:descendantFocusability="blocksDescendants"
+    >  
+<ImageView   
+    android:id="@+id/ItemImage"  
+    android:layout_alignParentLeft="true" 
+    android:layout_width="48dip"   
+    android:layout_height="48dip"   
+    android:layout_centerVertical="true"
+    />   
+<TextView   
+    android:id="@+id/ItemTitle"  
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+    android:layout_toRightOf="@id/ItemImage"
+    android:text="ItemTitle"  
+    android:textColor="@color/white" 
+    android:paddingTop="5dip"
+	android:textSize="@dimen/app_content_txt_size"
+    />  
+<TextView 
+    android:id="@+id/ItemText"  android:textSize="@dimen/app_content_txt_size"
+	android:layout_height="wrap_content"   
+    android:layout_width="fill_parent" 
+    android:layout_below="@+id/ItemTitle" 
+    android:layout_alignLeft="@id/ItemTitle"  
+    android:paddingRight="42dip"
+    android:text="ItemText"    
+    />
+    
+<CheckBox
+	android:id="@+id/ItemCheckble"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_alignParentRight="true"
+	android:layout_centerVertical="true"
+/> 
+  
+</RelativeLayout>  

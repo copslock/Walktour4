@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+ <!-- 主界面的底部按钮 -->
+ 
+ <item android:state_focused="false" 
+  		android:state_pressed="false" 
+        android:drawable="@color/task_main_tm" />
+ 
+ <item  android:state_pressed="true" 
+        android:drawable="@color/base_list_item_bg_select" />
+        
+  <item android:state_focused="true"
+        android:drawable="@color/base_list_item_bg_select" />
+    	
+</selector> 

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/basic_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/app_main_color">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/setting_level2_title"
+                android:text="@string/lock" />
+
+            <LinearLayout
+                style="@style/item_layout_white_circle"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/setting_network_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/lock_locknet" />
+
+                    <TextView
+                        android:id="@+id/TextNet"
+                        style="@style/setting_sort_right_text_2"
+                        android:text="GSM Only" />
+
+                    <View
+                        style="@style/setting_divider"
+                        android:layout_below="@+id/TextNet" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/setting_band_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/setting_datacatup_size_left_text"
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/lock_lockband" />
+
+                    <TextView
+                        android:id="@+id/TextBand"
+                        style="@style/setting_sort_right_text_2"
+                        android:layout_width="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@+id/setting_datacatup_size_left_text"
+                        android:gravity="center_vertical|right"
+                        android:singleLine="true"
+                        android:text="GSM 850,GSM 900,GSM 1800,GSM 1900" />
+
+                    <View
+                        style="@style/setting_divider"
+                        android:layout_below="@+id/TextBand" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/setting_frequency_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/locl_lock_point" />
+
+                    <TextView
+                        android:id="@+id/TextFrequency"
+                        style="@style/setting_sort_right_text_2"
+                        android:layout_marginLeft="10dip"
+                        android:singleLine="true"
+                        android:text="" />
+
+                    <View
+                        style="@style/setting_divider"
+                        android:layout_below="@+id/TextFrequency" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/setting_cell_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/locl_lock_area" />
+
+                    <TextView
+                        android:id="@+id/TextCell"
+                        style="@style/setting_sort_right_text_2"
+                        android:layout_marginLeft="10dip"
+                        android:singleLine="true"
+                        android:text="" />
+
+                    <View
+                        style="@style/setting_divider"
+                        android:layout_below="@+id/TextCell"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <!-- <View style="@style/setting_divider" /> -->
+
+                <RelativeLayout
+                    android:id="@+id/setting_camp_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        android:id="@+id/setting_camp_txt"
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/lock_camp_cell" />
+
+                    <View
+                        style="@style/setting_divider"
+                        android:layout_below="@+id/setting_camp_txt"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <!-- <View style="@style/setting_divider" /> -->
+
+                <RelativeLayout
+                    android:id="@+id/setting_release_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        android:id="@+id/txt_locl_lock_none"
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/locl_unlock_point" />
+
+                    <View
+                        style="@style/setting_divider"
+                        android:layout_below="@+id/txt_locl_lock_none"
+                        android:visibility="visible" />
+                </RelativeLayout>
+                <!-- <View style="@style/setting_divider" /> -->
+
+                <RelativeLayout
+                    android:id="@+id/setting_release_cell_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/locl_lock_cell_none" />
+                </RelativeLayout>
+                <!-- <View style="@style/setting_divider" /> -->
+            </LinearLayout>
+
+            <TextView
+                style="@style/setting_level2_title"
+                android:text="@string/lock_status" />
+
+            <include
+                layout="@layout/lock_status"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

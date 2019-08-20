@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="50"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip" >
+
+                <TextView
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="任务名称" />
+
+                <EditText
+                    android:id="@+id/cw_task_name_edt"
+                    android:layout_width="180dip"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip" >
+
+                <TextView
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="添加频点" />
+
+                <Button
+                    android:textSize="@dimen/app_defult_btn_txt_size"
+                    android:id="@+id/cw_add_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="添加" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip" >
+
+                <TextView
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="上下行链路" />
+
+                <CheckBox
+                    android:id="@+id/cw_isUp_cbx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip" >
+
+                <TextView
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="带宽" />
+
+                <EditText
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:id="@+id/cw_bandwidth_edt"
+                    android:layout_width="180dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:textSize="@dimen/app_defult_btn_txt_size"
+                android:id="@+id/save"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="save" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:textSize="@dimen/app_defult_btn_txt_size"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cancel" />
+        </LinearLayout>
+
+</LinearLayout>

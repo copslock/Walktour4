@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/map_ranging"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/base_list_item_bg"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/map_ranging"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+        </RelativeLayout>
+
+        <View
+            style="@style/task_listdivider"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/map_export"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/base_list_item_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/map_export"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+        </RelativeLayout>
+
+        <View
+            style="@style/task_listdivider"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp" />
+
+        <RelativeLayout
+            android:id="@+id/import_kml"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/base_list_item_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/import_navigation_path"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+        </RelativeLayout>
+
+        <View
+            style="@style/task_listdivider"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp" />
+
+        <RelativeLayout
+            android:id="@+id/setting_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/base_list_item_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/setting"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+        </RelativeLayout>
+
+        <View
+            style="@style/task_listdivider"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp" />
+
+        <RelativeLayout
+            android:id="@+id/gps_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/base_list_item_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/main_gps"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

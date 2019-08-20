@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 全部能量图 -->
+
+    <item android:id="@android:id/secondaryProgress">
+        <clip android:drawable="@color/white" />
+    </item>
+
+    <!-- 进和能量图 -->
+    <item android:id="@android:id/progress">
+        <clip android:drawable="@color/app_other_color" />
+    </item>
+
+</layer-list>

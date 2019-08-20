@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/basic_bg_color" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/info_title" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/title_layout"
+        android:background="@color/setting_sort_title_bgcolor" />
+
+    <ListView
+        android:id="@+id/list_work_dict"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_get_work_order_dict"
+        android:layout_below="@id/divider"
+        android:background="@color/base_list_item_bg_nomal"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/list_divider"
+        android:footerDividersEnabled="false" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_get_work_order_dict"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/menu_bottom_bg"
+        android:text="@string/get_work_order_dict"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

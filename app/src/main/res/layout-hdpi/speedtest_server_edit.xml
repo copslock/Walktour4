@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/task_attach_title"
+        layout="@layout/basic_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@color/setting_sort_title_bgcolor" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="@string/task_speedtest_country_region"
+            android:textSize="@dimen/app_content_txt_size"
+            android:textColor="@color/app_main_text_color"
+             />
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:id="@+id/edit_country"
+            style="@style/task_drop_view"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <View style="@style/task_listdivider" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txt_ip"
+            android:textSize="@dimen/app_content_txt_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="@string/task_speedtest_city"
+             android:textColor="@color/app_main_text_color"/>
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:id="@+id/edit_city"
+            style="@style/task_drop_view"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <View style="@style/task_listdivider" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/task_url"
+            android:textSize="@dimen/app_content_txt_size"
+            android:textColor="@color/app_main_text_color"/>
+
+        <Button
+            android:id="@+id/update_speedtest_server"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_blue_radius_selector"
+            android:textColor="@color/white"
+            android:text="@string/update_order_str"/>
+    </RelativeLayout>
+	<RelativeLayout 
+	    android:id="@+id/listLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+	    <ListView
+            android:id="@+id/urlList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="50dip"
+            android:choiceMode="singleChoice"
+            >
+        </ListView>
+	</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50sp" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" 
+            >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/task_content_group_bg" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btn_cencle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/base_list_item_bg"
+                    android:text="@string/str_cancle"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/app_defult_btn_txt_size" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="fill_parent"
+                    android:background="@color/task_content_group_bg" />
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/base_list_item_bg"
+                    android:text="@string/str_save"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/app_defult_btn_txt_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

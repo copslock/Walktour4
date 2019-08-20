@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KPIList>
+	<DTParams-TD>
+		<kpi kpiShowName="MO尝试次数" scale="1" molecule="_moTrys" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="V23O_1"/>
+		<kpi kpiShowName="MT尝试次数" scale="1" molecule="_mtTrys" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="9" markKey="V23T_1"/>
+		<kpi kpiShowName="MO接通次数" scale="1" molecule="_moConnects" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="10" markKey="V23O_2"/>
+		<kpi kpiShowName="MT接通次数" scale="1" molecule="_mtConnects" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="10" markKey="V23T_2"/>
+		<kpi kpiShowName="MO接通率" scale="100" molecule="_moConnects" denominator="_moTrys" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="11" markKey="V23O_3"/>
+		<kpi kpiShowName="MT接通率" scale="100" molecule="_mtConnects" denominator="_mtTrys" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="11" markKey="V23T_3"/>
+		<kpi kpiShowName="MO掉话率" scale="100" molecule="_moDropcalls" denominator="_moConnects" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="12" markKey="V23O_4"/>
+		<kpi kpiShowName="MT掉话率" scale="100" molecule="_mtDropcalls" denominator="_mtConnects" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="12" markKey="V23T_4"/>
+		<kpi kpiShowName="MO平均呼叫时延" scale="0.001" molecule="_moCalldelay" denominator="_moDelaytimes" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="13" markKey="V23O_5"/>
+		<kpi kpiShowName="MT平均呼叫时延" scale="0.001" molecule="_mtCalldelay" denominator="_mtDelaytimes" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="13" markKey="V23T_5"/>
+		
+		<kpi kpiShowName="MOCSFB尝试次数" scale="1" molecule="_csfb_mo_request" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="16" markKey="VCO_1"/>
+		<kpi kpiShowName="MTCSFB尝试次数" scale="1" molecule="_csfb_mt_request" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="16" markKey="VCT_1"/>				
+		<kpi kpiShowName="MOCSFB建立次数" scale="1" molecule="_csfb_mo_Established" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="17" markKey="VCO_2"/>
+		<kpi kpiShowName="MTCSFB建立次数" scale="1" molecule="_csfb_mt_Established" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="17" markKey="VCT_2"/>
+		<kpi kpiShowName="MOCSFB建立成功率" scale="100" molecule="_csfb_mo_Established" denominator="_csfb_mo_request" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="18" markKey="VCO_3"/>
+		<kpi kpiShowName="MTCSFB建立成功率" scale="100" molecule="_csfb_mt_Established" denominator="_csfb_mt_request" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="18" markKey="VCT_3"/>	
+		<kpi kpiShowName="MOCSFB时延" scale="0.001" molecule="_csfb_mo_FallbackDelay" denominator="_csfb_mo_proceeding" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="20" markKey="VCO_4"/>
+		<kpi kpiShowName="MTCSFB时延" scale="0.001" molecule="_csfb_mt_FallbackDelay" denominator="_csfb_mt_proceeding" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="20" markKey="VCT_4"/>
+		<kpi kpiShowName="MOCSFB建立时延" scale="0.001" molecule="_csfb_mo_SuccessDelay" denominator="_csfb_mo_Established" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="19" markKey="VCO_5"/>
+		<kpi kpiShowName="MTCSFB建立时延" scale="0.001" molecule="_csfb_mt_SuccessDelay" denominator="_csfb_mt_Established" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="19" markKey="VCT_5"/>
+		<kpi kpiShowName="MOCSFB掉话次数" scale="1" molecule="_csfb_mo_drop" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="21" markKey="VCO_6"/>
+		<kpi kpiShowName="MTCSFB掉话次数" scale="1" molecule="_csfb_mt_drop" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="21" markKey="VCT_6"/>
+		<kpi kpiShowName="MOCSFB掉话率" scale="100" molecule="_csfb_mo_drop" denominator="_csfb_mo_Established" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="22" markKey="VCO_7"/>
+		<kpi kpiShowName="MTCSFB掉话率" scale="100" molecule="_csfb_mt_drop" denominator="_csfb_mt_Established" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="22" markKey="VCT_7"/>
+		
+
+		<kpi kpiShowName="PESQScore" scale="1" molecule="_pesq_score" denominator="_pesq_scoreCount" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="25" markKey="VMO_1"/>
+		<kpi kpiShowName="PESQMOS" scale="1" molecule="_pesq_mos" denominator="_pesq_mosCount" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="26" markKey="VMO_2"/>			
+
+
+		<kpi kpiShowName="MOGSM覆盖率1" scale="100" molecule="_moRxLev1s" denominator="_moTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="31" markKey="VCGO_2"/>
+		<kpi kpiShowName="MTGSM覆盖率1" scale="100" molecule="_mtRxLev1s" denominator="_mtTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="31" markKey="VCGT_2"/>
+		<kpi kpiShowName="MOGSM覆盖率2" scale="100" molecule="_moRxLev2s" denominator="_moTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="32" markKey="VCGO_3"/>
+		<kpi kpiShowName="MTGSM覆盖率2" scale="100" molecule="_mtRxLev2s" denominator="_mtTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="32" markKey="VCGT_3"/>
+		<kpi kpiShowName="MOGSM切换成功率" scale="100" molecule="_moGsmSwitchSuccs" denominator="_moGsmSwitch" units="%" paramType="7" xlsSheets="0" xlsCols="3" xlsRows="33" markKey="VCGO_4"/>
+		<kpi kpiShowName="MTGSM切换成功率" scale="100" molecule="_mtGsmSwitchSuccs" denominator="_mtGsmSwitch" units="%" paramType="7" xlsSheets="0" xlsCols="4" xlsRows="33" markKey="VCGT_4"/>				
+
+		<kpi kpiShowName="MOTD测试时长" scale="0.001" molecule="_moTimeLongTD" denominator="" units="s" paramType="5" xlsSheets="0" xlsCols="3" xlsRows="35" markKey="VCTO_1"/>
+		<kpi kpiShowName="MTTD测试时长" scale="0.001" molecule="_mtTimeLongTD" denominator="" units="s" paramType="5" xlsSheets="0" xlsCols="4" xlsRows="35" markKey="VCTT_1"/>
+		<kpi kpiShowName="MOTD覆盖率1" scale="100" molecule="_moPccpchRscp1" denominator="_moPccpchRscpCount" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="36" markKey="VCTO_3"/>
+		<kpi kpiShowName="MTTD覆盖率1" scale="100" molecule="_mtPccpchRscp1" denominator="_mtPccpchRscpCount" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="36" markKey="VCTT_3"/>
+		<kpi kpiShowName="MOTD覆盖率2" scale="100" molecule="_moPccpchRscp2" denominator="_moPccpchRscpCount" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="37" markKey="VCTO_4"/>
+		<kpi kpiShowName="MTTD覆盖率2" scale="100" molecule="_mtPccpchRscp2" denominator="_mtPccpchRscpCount" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="37" markKey="VCTT_4"/>
+		<kpi kpiShowName="MOTD覆盖里程" scale="0.0001" molecule="_moTdCoverMileage" denominator="" units="km" paramType="5" xlsSheets="0" xlsCols="3" xlsRows="38" markKey="VCTO_5"/>
+		<kpi kpiShowName="MTTD覆盖里程" scale="0.0001" molecule="_mtTdCoverMileage" denominator="" units="km" paramType="5" xlsSheets="0" xlsCols="4" xlsRows="38" markKey="VCTT_5"/>
+		<kpi kpiShowName="MOTD总里程" scale="0.0001" molecule="_moTdTotalMileage" denominator="" units="km" paramType="5" xlsSheets="0" xlsCols="3" xlsRows="39" markKey="VCTO_6"/>
+		<kpi kpiShowName="MTTD总里程" scale="0.0001" molecule="_mtTdTotalMileage" denominator="" units="km" paramType="5" xlsSheets="0" xlsCols="4" xlsRows="39" markKey="VCTT_6"/>
+		<kpi kpiShowName="MOTD里程覆盖率" scale="100" molecule="_moTdCoverMileage" denominator="_moTdTotalMileage" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="40" markKey="VCTO_7"/>
+		<kpi kpiShowName="MTTD里程覆盖率" scale="100" molecule="_mtTdCoverMileage" denominator="_mtTdTotalMileage" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="40" markKey="VCTT_7"/>
+		<kpi kpiShowName="MOTD接力切换成功率" scale="100" molecule="_moTDBatonHandoverSuccess" denominator="_moTDBatonHandoverRequest" units="%" paramType="7" xlsSheets="0" xlsCols="3" xlsRows="41" markKey="VCTO_8"/>
+		<kpi kpiShowName="MTTD接力切换成功率" scale="100" molecule="_mtTDBatonHandoverSuccess" denominator="_mtTDBatonHandoverRequest" units="%" paramType="7" xlsSheets="0" xlsCols="4" xlsRows="41" markKey="VCTT_8"/>
+		<kpi kpiShowName="MOTD硬切换成功率" scale="100" molecule="_moTDHardHandoverSuccess" denominator="_moTDHardHandoverRequest" units="%" paramType="7" xlsSheets="0" xlsCols="3" xlsRows="42" markKey="VCTO_9"/>
+		<kpi kpiShowName="MTTD硬切换成功率" scale="100" molecule="_mtTDHardHandoverSuccess" denominator="_moTDHardHandoverSuccess" units="%" paramType="7" xlsSheets="0" xlsCols="4" xlsRows="42" markKey="VCTT_9"/>			
+
+		<kpi kpiShowName="Ping尝试次数" scale="1" molecule="_pingTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="2" xlsRows="5" markKey="DPI_1"/>		
+		<kpi kpiShowName="Ping成功率" scale="100" molecule="_pingSuccess" denominator="_pingTry" units="%" paramType="3" xlsSheets="1" xlsCols="3" xlsRows="5" markKey="DPI_2"/>	
+		<kpi kpiShowName="Ping平均时延" scale="1" molecule="_pingDelay" denominator="_pingSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="4" xlsRows="5" markKey="DPI_3"/>	
+		
+		<kpi kpiShowName="FTP下载尝试次数" scale="1" molecule="_downtrys" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="5" xlsRows="5" markKey="DFD_1"/>	
+		<kpi kpiShowName="FTP下载成功次数" scale="1" molecule="_downSuccs" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="6" xlsRows="5" markKey="DFD_2"/>	
+		<kpi kpiShowName="FTP下载掉线率" scale="100" molecule="_downDrops" denominator="_downtrys" units="%" paramType="3" xlsSheets="1" xlsCols="7" xlsRows="5" markKey="DFD_3"/>			
+		<kpi kpiShowName="FTP下载平均速率" scale="0.9765625" molecule="_downCurrentSize" denominator="_downCurrentTimes" units="kbps" paramType="3" xlsSheets="1" xlsCols="8" xlsRows="5" markKey="DFD_4"/>	
+		<kpi kpiShowName="FTP上传尝试次数" scale="1" molecule="_uptrys" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="9" xlsRows="5" markKey="DFU_1"/>	
+		<kpi kpiShowName="FTP上传成功次数" scale="1" molecule="_upSuccs" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="10" xlsRows="5" markKey="DFU_2"/>
+		<kpi kpiShowName="FTP上传掉线率" scale="100" molecule="_upDrops" denominator="_uptrys" units="%" paramType="3" xlsSheets="1" xlsCols="11" xlsRows="5" markKey="DFU_3"/>	
+		<kpi kpiShowName="FTP上传平均速率" scale="0.9765625" molecule="_upCurrentSize" denominator="_upCurrentTimes" units="" paramType="3" xlsSheets="1" xlsCols="12" xlsRows="5" markKey="DFU_4"/>
+			
+		<kpi kpiShowName="HTTP登录尝试次数" scale="1" molecule="_HttpTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="13" xlsRows="5" markKey="DHL_1"/>	
+		<kpi kpiShowName="HTTP登录成功次数" scale="1" molecule="_HttpSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="14" xlsRows="5" markKey="DHL_2"/>			
+		<kpi kpiShowName="HTTP登录成功率" scale="100" molecule="_HttpSuccess" denominator="_HttpTry" units="%" paramType="3" xlsSheets="1" xlsCols="15" xlsRows="5" markKey="DHL_3"/>	
+		<kpi kpiShowName="HTTP登录平均时延" scale="1" molecule="_HttpDelay" denominator="_HttpSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="16" xlsRows="5" markKey="DHL_4"/>	
+
+		<kpi kpiShowName="HTTP刷新尝试次数" scale="1" molecule="_HttpRefreshTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="17" xlsRows="5" markKey="DHR_1"/>			
+		<kpi kpiShowName="HTTP刷新成功次数" scale="1" molecule="_HttpRefreshSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="18" xlsRows="5" markKey="DHR_2"/>	
+		<kpi kpiShowName="HTTP刷新成功率" scale="100" molecule="_HttpRefreshSuccess" denominator="_HttpRefreshTry" units="%" paramType="3" xlsSheets="1" xlsCols="19" xlsRows="5" markKey="DHR_3"/>	
+		<kpi kpiShowName="HTTP刷新平均时延" scale="1" molecule="_HttpRefreshDelay" denominator="_HttpRefreshSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="20" xlsRows="5" markKey="DHR_4"/>
+			
+		<kpi kpiShowName="HTTP下载尝试次数" scale="1" molecule="_HttpDownTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="21" xlsRows="5" markKey="DHD_1"/>	
+		<kpi kpiShowName="HTTP下载成功次数" scale="1" molecule="_HttpDownSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="22" xlsRows="5" markKey="DHD_2"/>	
+		<kpi kpiShowName="HTTP下载成功率" scale="100" molecule="_HttpDownSuccess" denominator="_HttpDownTry" units="%" paramType="3" xlsSheets="1" xlsCols="23" xlsRows="5" markKey="DHD_3"/>			
+		<kpi kpiShowName="HTTP下载平均速率" scale="1" molecule="_httpDownTotalBytes" denominator="_httpDownTotalTime" units="kbps" paramType="3" xlsSheets="1" xlsCols="24" xlsRows="5" markKey="DHD_4"/>	
+
+		<kpi kpiShowName="23GAttach尝试次数" scale="1" molecule="_attachRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="25" xlsRows="5" markKey="D23A_1"/>			
+		<kpi kpiShowName="23GAttach成功率" scale="100" molecule="_attachSuccess" denominator="_attachRequest" units="%" paramType="3" xlsSheets="1" xlsCols="26" xlsRows="5" markKey="D23A_2"/>	
+		<kpi kpiShowName="23GAttach平均时延" scale="1" molecule="_attachDelay" denominator="_attachSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="27" xlsRows="5" markKey="D23A_3"/>	
+
+		<kpi kpiShowName="LTEAttach尝试次数" scale="1" molecule="_lteAttachRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="28" xlsRows="5" markKey="DLA_1"/>
+		<kpi kpiShowName="LTEAttach成功率" scale="100" molecule="_lteAttachSuccess" denominator="_lteAttachRequest" units="%" paramType="3" xlsSheets="1" xlsCols="29" xlsRows="5" markKey="DLA_2"/>	
+		<kpi kpiShowName="LTEAttach平均时延" scale="1" molecule="_lteAttachDelay" denominator="_lteAttachSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="30" xlsRows="5" markKey="DLA_3"/>
+			
+		<kpi kpiShowName="PDP激活尝试次数" scale="1" molecule="_pdpRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="31" xlsRows="5" markKey="DPD_1"/>			
+		<kpi kpiShowName="PDP激活尝试成功率" scale="100" molecule="_pdpSuccess" denominator="_pdpRequest" units="%" paramType="3" xlsSheets="1" xlsCols="32" xlsRows="5" markKey="DPD_2"/>	
+		<kpi kpiShowName="PDP激活时间" scale="1" molecule="_pdpDelay" denominator="_pdpSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="33" xlsRows="5" markKey="DPD_3"/>	
+
+		<kpi kpiShowName="LTE覆盖率" scale="100" molecule="_LTErsrp" denominator="_LTErsrpCount" units="%" paramType="4" xlsSheets="1" xlsCols="34" xlsRows="5" markKey="DCL_1"/>	
+		<kpi kpiShowName="LTE总里程" scale="0.0001" molecule="_LteTotalMileage" denominator="" units="km" paramType="5" xlsSheets="1" xlsCols="35" xlsRows="5" markKey="DCL_2"/>	
+		<kpi kpiShowName="LTE覆盖里程" scale="0.0001" molecule="_LteCoverMileage" denominator="" units="km" paramType="5" xlsSheets="1" xlsCols="36" xlsRows="5" markKey="DCL_3"/>	
+		<kpi kpiShowName="LTE里程覆盖率" scale="100" molecule="_LteCoverMileage" denominator="_LteTotalMileage" units="%" paramType="4" xlsSheets="1" xlsCols="37" xlsRows="5" markKey="DCL_4"/>	
+		<kpi kpiShowName="LTE搜网时延" scale="1" molecule="_lteSearchDelay" denominator="_lteAttachRequest" units="ms" paramType="4" xlsSheets="1" xlsCols="38" xlsRows="5" markKey="DCL_5"/>	
+
+		<kpi kpiShowName="RxQualFull" scale="1" molecule="_rxQualFull" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="3" markKey="PG1_1,PG1_2,PG1_3"/>	
+		<kpi kpiShowName="RxQualSub" scale="1" molecule="_rxQualSub" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="4" markKey="PG2_1,PG2_2,PG2_3"/>	
+		<kpi kpiShowName="RxLevFull" scale="1" molecule="_rxLevFull" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="5" markKey="PG3_1,PG3_2,PG3_3"/>	
+		<kpi kpiShowName="RxLevSub" scale="1" molecule="_rxLevSub" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="6" markKey="PG4_1,PG4_2,PG4_3"/>
+		<kpi kpiShowName="GSMTxPower" scale="1" molecule="_txPower" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="7" markKey="PG5_1,PG5_2,PG5_3"/>			
+		<kpi kpiShowName="TA" scale="1" molecule="_ta" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="8" markKey="PG6_1,PG6_2,PG6_3"/>	
+
+		<kpi kpiShowName="PCCPCHRSCP" scale="1" molecule="_tPCCPCH_RSCP" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="11" markKey="PT1_1,PT1_2,PT1_3"/>	
+		<kpi kpiShowName="PCCPCHCI" scale="1" molecule="_tPCCPCH_C_I" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="12" markKey="PT2_1,PT2_2,PT2_3"/>	
+		<kpi kpiShowName="TDUETxPower" scale="1" molecule="_tUE_TxPower" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="13" markKey="PT3_1,PT3_2,PT3_3"/>	
+		<kpi kpiShowName="TDBLER" scale="0.001" molecule="_tBLER" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="14" markKey="PT4_1,PT4_2,PT4_3"/>	
+		<kpi kpiShowName="DLRLCThr" scale="0.0009765" molecule="_tdlRLCThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="15" markKey="PT5_1,PT5_2,PT5_3"/>	
+		<kpi kpiShowName="DLRLCBLER" scale="0.001" molecule="_tdlRLCBLER" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="16" markKey="PT6_1,PT6_2,PT6_3"/>	
+		<kpi kpiShowName="ULRLCThr" scale="0.0009765" molecule="_tulRLCThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="17" markKey="PT7_1,PT7_2,PT7_3"/>	
+		<kpi kpiShowName="ULRLCRTXRate" scale="0.001" molecule="_tulRLCRTXRate" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="18" markKey="PT8_1,PT8_2,PT8_3"/>	
+
+		<kpi kpiShowName="RSRP" scale="1" molecule="_lRSRP" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="21" markKey="PL1_1,PL1_2,PL1_3"/>	
+		<kpi kpiShowName="RSRQ" scale="1" molecule="_lRSRQ" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="22" markKey="PL2_1,PL2_2,PL2_3"/>	
+		<kpi kpiShowName="SINR" scale="1" molecule="_lSINR" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="23" markKey="PL3_1,PL3_2,PL3_3"/>	
+		<kpi kpiShowName="SRSRxPower" scale="1" molecule="_lSRS_Power" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="24" markKey="PL4_1,PL4_2,PL4_3"/>	
+		<kpi kpiShowName="PRACHPower" scale="1" molecule="_lPRACH_Power" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="25" markKey="PL5_1,PL5_2,PL5_3"/>	
+		<kpi kpiShowName="PUCCHPower" scale="1" molecule="_lPUCCH_Power" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="26" markKey="PL6_1,PL6_2,PL6_3"/>	
+		<kpi kpiShowName="PUSCHPower" scale="1" molecule="_lPUSCH_Power" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="27" markKey="PL7_1,PL7_2,PL7_3"/>	
+		<kpi kpiShowName="DLPDCPThr" scale="0.0009765" molecule="_ldownPDCPThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="28" markKey="PL8_1,PL8_2,PL8_3"/>	
+		<kpi kpiShowName="DLRLCThr" scale="0.0009765" molecule="_ldownRLCThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="29" markKey="PL9_1,PL9_2,PL9_3"/>	
+		<kpi kpiShowName="DLMACThr" scale="0.0009765" molecule="_ldownMACThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="30" markKey="PL10_1,PL10_2,PL10_3"/>	
+		<kpi kpiShowName="DLPhysThr" scale="0.0009765" molecule="_ldownPhysThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="31" markKey="PL11_1,PL11_2,PL11_3"/>	
+		<kpi kpiShowName="DLMCSMean" scale="1" molecule="_ldownMCSMean" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="32" markKey="PL12_1,PL12_2,PL12_3"/>	
+		<kpi kpiShowName="DLRBCount" scale="1" molecule="_ldownRBCount" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="33" markKey="PL13_1,PL13_2,PL13_3"/>	
+		<kpi kpiShowName="PDSCHBLER" scale="1" molecule="_lpdSCHBLER" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="34" markKey="PL14_1,PL14_2,PL14_3"/>	
+		<kpi kpiShowName="ULPDCPThr" scale="0.0009765" molecule="_lupPDCPThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="35" markKey="PL15_1,PL15_2,PL15_3"/>	
+		<kpi kpiShowName="ULRLCThr" scale="0.0009765" molecule="_lupRLCThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="36" markKey="PL16_1,PL16_2,PL16_3"/>	
+		<kpi kpiShowName="ULMACThr" scale="0.0009765" molecule="_lupMACThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="37" markKey="PL17_1,PL17_2,PL17_3"/>	
+		<kpi kpiShowName="ULPhysThr" scale="0.0009765" molecule="_lupPhysThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="38" markKey="PL18_1,PL18_2,PL18_3"/>	
+		<kpi kpiShowName="ULMCSMean" scale="1" molecule="_lupMCSMean" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="39" markKey="PL19_1,PL19_2,PL19_3"/>	
+		<kpi kpiShowName="ULRBCount" scale="1" molecule="_lupRBCount" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="40" markKey="PL20_1,PL20_2,PL20_3"/>	
+		<kpi kpiShowName="PUSCHBLER" scale="1" molecule="_lpuSCHBLER" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="41" markKey="PL21_1,PL21_2,PL21_3"/>	
+	</DTParams-TD>
+	<CQTParams-TD>
+		<kpi kpiShowName="MO尝试次数" scale="1" molecule="_moTrys" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="V23O_1"/>
+		<kpi kpiShowName="MT尝试次数" scale="1" molecule="_mtTrys" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="9" markKey="V23T_1"/>
+		<kpi kpiShowName="MO接通次数" scale="1" molecule="_moConnects" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="10" markKey="V23O_2"/>
+		<kpi kpiShowName="MT接通次数" scale="1" molecule="_mtConnects" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="10" markKey="V23T_2"/>
+		<kpi kpiShowName="MO接通率" scale="100" molecule="_moConnects" denominator="_moTrys" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="11" markKey="V23O_3"/>
+		<kpi kpiShowName="MT接通率" scale="100" molecule="_mtConnects" denominator="_mtTrys" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="11" markKey="V23T_3"/>
+		<kpi kpiShowName="MO掉话率" scale="100" molecule="_moDropcalls" denominator="_moConnects" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="12" markKey="V23O_4"/>
+		<kpi kpiShowName="MT掉话率" scale="100" molecule="_mtDropcalls" denominator="_mtConnects" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="12" markKey="V23T_4"/>
+		<kpi kpiShowName="MO平均呼叫时延" scale="0.001" molecule="_moCalldelay" denominator="_moDelaytimes" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="13" markKey="V23O_5"/>
+		<kpi kpiShowName="MT平均呼叫时延" scale="0.001" molecule="_mtCalldelay" denominator="_mtDelaytimes" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="13" markKey="V23T_5"/>
+		
+		<kpi kpiShowName="MOCSFB尝试次数" scale="1" molecule="_csfb_mo_request" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="16" markKey="VCO_1"/>
+		<kpi kpiShowName="MTCSFB尝试次数" scale="1" molecule="_csfb_mt_request" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="16" markKey="VCT_1"/>				
+		<kpi kpiShowName="MOCSFB建立次数" scale="1" molecule="_csfb_mo_Established" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="17" markKey="VCO_2"/>
+		<kpi kpiShowName="MTCSFB建立次数" scale="1" molecule="_csfb_mt_Established" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="17" markKey="VCT_2"/>
+		<kpi kpiShowName="MOCSFB建立成功率" scale="100" molecule="_csfb_mo_Established" denominator="_csfb_mo_request" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="18" markKey="VCO_3"/>
+		<kpi kpiShowName="MTCSFB建立成功率" scale="100" molecule="_csfb_mt_Established" denominator="_csfb_mt_request" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="18" markKey="VCT_3"/>	
+		<kpi kpiShowName="MOCSFB时延" scale="0.001" molecule="_csfb_mo_FallbackDelay" denominator="_csfb_mo_proceeding" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="20" markKey="VCO_4"/>
+		<kpi kpiShowName="MTCSFB时延" scale="0.001" molecule="_csfb_mt_FallbackDelay" denominator="_csfb_mt_proceeding" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="20" markKey="VCT_4"/>
+		<kpi kpiShowName="MOCSFB建立时延" scale="0.001" molecule="_csfb_mo_SuccessDelay" denominator="_csfb_mo_Established" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="19" markKey="VCO_5"/>
+		<kpi kpiShowName="MTCSFB建立时延" scale="0.001" molecule="_csfb_mt_SuccessDelay" denominator="_csfb_mt_Established" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="19" markKey="VCT_5"/>
+		<kpi kpiShowName="MOCSFB掉话次数" scale="1" molecule="_csfb_mo_drop" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="21" markKey="VCO_6"/>
+		<kpi kpiShowName="MTCSFB掉话次数" scale="1" molecule="_csfb_mt_drop" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="21" markKey="VCT_6"/>
+		<kpi kpiShowName="MOCSFB掉话率" scale="100" molecule="_csfb_mo_drop" denominator="_csfb_mo_Established" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="22" markKey="VCO_7"/>
+		<kpi kpiShowName="MTCSFB掉话率" scale="100" molecule="_csfb_mt_drop" denominator="_csfb_mt_Established" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="22" markKey="VCT_7"/>
+		
+
+		<kpi kpiShowName="PESQScore" scale="1" molecule="_pesq_score" denominator="_pesq_scoreCount" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="25" markKey="VMO_1"/>
+		<kpi kpiShowName="PESQMOS" scale="1" molecule="_pesq_mos" denominator="_pesq_mosCount" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="26" markKey="VMO_2"/>			
+
+		<kpi kpiShowName="MOGSM覆盖率1" scale="100" molecule="_moRxLev1s" denominator="_moTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="31" markKey="VCGO_2"/>
+		<kpi kpiShowName="MTGSM覆盖率1" scale="100" molecule="_mtRxLev1s" denominator="_mtTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="31" markKey="VCGT_2"/>
+		<kpi kpiShowName="MOGSM覆盖率2" scale="100" molecule="_moRxLev2s" denominator="_moTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="32" markKey="VCGO_3"/>
+		<kpi kpiShowName="MTGSM覆盖率2" scale="100" molecule="_mtRxLev2s" denominator="_mtTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="32" markKey="VCGT_3"/>		
+
+		<kpi kpiShowName="MOTD测试时长" scale="0.001" molecule="_moTimeLongTD" denominator="" units="s" paramType="5" xlsSheets="0" xlsCols="3" xlsRows="34" markKey="VCTO_1"/>
+		<kpi kpiShowName="MTTD测试时长" scale="0.001" molecule="_mtTimeLongTD" denominator="" units="s" paramType="5" xlsSheets="0" xlsCols="4" xlsRows="34" markKey="VCTT_1"/>
+		<kpi kpiShowName="MOTD覆盖率1" scale="100" molecule="_moPccpchRscp1" denominator="_moPccpchRscpCount" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="35" markKey="VCTO_3"/>
+		<kpi kpiShowName="MTTD覆盖率1" scale="100" molecule="_mtPccpchRscp1" denominator="_mtPccpchRscpCount" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="35" markKey="VCTT_3"/>
+		<kpi kpiShowName="MOTD覆盖率2" scale="100" molecule="_moPccpchRscp2" denominator="_moPccpchRscpCount" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="36" markKey="VCTO_4"/>
+		<kpi kpiShowName="MTTD覆盖率2" scale="100" molecule="_mtPccpchRscp2" denominator="_mtPccpchRscpCount" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="36" markKey="VCTT_4"/>
+
+		<kpi kpiShowName="Ping尝试次数" scale="1" molecule="_pingTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="2" xlsRows="5" markKey="DPI_1"/>		
+		<kpi kpiShowName="Ping成功率" scale="100" molecule="_pingSuccess" denominator="_pingTry" units="%" paramType="3" xlsSheets="1" xlsCols="3" xlsRows="5" markKey="DPI_2"/>	
+		<kpi kpiShowName="Ping平均时延" scale="1" molecule="_pingDelay" denominator="_pingSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="4" xlsRows="5" markKey="DPI_3"/>	
+		
+		<kpi kpiShowName="FTP下载尝试次数" scale="1" molecule="_downtrys" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="5" xlsRows="5" markKey="DFD_1"/>	
+		<kpi kpiShowName="FTP下载成功次数" scale="1" molecule="_downSuccs" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="6" xlsRows="5" markKey="DFD_2"/>	
+		<kpi kpiShowName="FTP下载掉线率" scale="100" molecule="_downDrops" denominator="_downtrys" units="%" paramType="3" xlsSheets="1" xlsCols="7" xlsRows="5" markKey="DFD_3"/>			
+		<kpi kpiShowName="FTP下载平均速率" scale="0.9765625" molecule="_downCurrentSize" denominator="_downCurrentTimes" units="kbps" paramType="3" xlsSheets="1" xlsCols="8" xlsRows="5" markKey="DFD_4"/>	
+		<kpi kpiShowName="FTP上传尝试次数" scale="1" molecule="_uptrys" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="9" xlsRows="5" markKey="DFU_1"/>	
+		<kpi kpiShowName="FTP上传成功次数" scale="1" molecule="_upSuccs" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="10" xlsRows="5" markKey="DFU_2"/>
+		<kpi kpiShowName="FTP上传掉线率" scale="100" molecule="_upDrops" denominator="_uptrys" units="%" paramType="3" xlsSheets="1" xlsCols="11" xlsRows="5" markKey="DFU_3"/>	
+		<kpi kpiShowName="FTP上传平均速率" scale="0.9765625" molecule="_upCurrentSize" denominator="_upCurrentTimes" units="" paramType="3" xlsSheets="1" xlsCols="12" xlsRows="5" markKey="DFU_4"/>
+			
+		<kpi kpiShowName="HTTP登录尝试次数" scale="1" molecule="_HttpTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="13" xlsRows="5" markKey="DHL_1"/>	
+		<kpi kpiShowName="HTTP登录成功次数" scale="1" molecule="_HttpSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="14" xlsRows="5" markKey="DHL_2"/>			
+		<kpi kpiShowName="HTTP登录成功率" scale="100" molecule="_HttpSuccess" denominator="_HttpTry" units="%" paramType="3" xlsSheets="1" xlsCols="15" xlsRows="5" markKey="DHL_3"/>	
+		<kpi kpiShowName="HTTP登录平均时延" scale="1" molecule="_HttpDelay" denominator="_HttpSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="16" xlsRows="5" markKey="DHL_4"/>	
+
+		<kpi kpiShowName="HTTP刷新尝试次数" scale="1" molecule="_HttpRefreshTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="17" xlsRows="5" markKey="DHR_1"/>			
+		<kpi kpiShowName="HTTP刷新成功次数" scale="1" molecule="_HttpRefreshSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="18" xlsRows="5" markKey="DHR_2"/>	
+		<kpi kpiShowName="HTTP刷新成功率" scale="100" molecule="_HttpRefreshSuccess" denominator="_HttpRefreshTry" units="%" paramType="3" xlsSheets="1" xlsCols="19" xlsRows="5" markKey="DHR_3"/>	
+		<kpi kpiShowName="HTTP刷新平均时延" scale="1" molecule="_HttpRefreshDelay" denominator="_HttpRefreshSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="20" xlsRows="5" markKey="DHR_4"/>
+			
+		<kpi kpiShowName="HTTP下载尝试次数" scale="1" molecule="_HttpDownTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="21" xlsRows="5" markKey="DHD_1"/>	
+		<kpi kpiShowName="HTTP下载成功次数" scale="1" molecule="_HttpDownSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="22" xlsRows="5" markKey="DHD_2"/>	
+		<kpi kpiShowName="HTTP下载成功率" scale="100" molecule="_HttpDownSuccess" denominator="_HttpDownTry" units="%" paramType="3" xlsSheets="1" xlsCols="23" xlsRows="5" markKey="DHD_3"/>			
+		<kpi kpiShowName="HTTP下载平均速率" scale="1" molecule="_httpDownTotalBytes" denominator="_httpDownTotalTime" units="kbps" paramType="3" xlsSheets="1" xlsCols="24" xlsRows="5" markKey="DHD_4"/>	
+
+		<kpi kpiShowName="23GAttach尝试次数" scale="1" molecule="_attachRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="25" xlsRows="5" markKey="D23A_1"/>			
+		<kpi kpiShowName="23GAttach成功率" scale="100" molecule="_attachSuccess" denominator="_attachRequest" units="%" paramType="3" xlsSheets="1" xlsCols="26" xlsRows="5" markKey="D23A_2"/>	
+		<kpi kpiShowName="23GAttach平均时延" scale="1" molecule="_attachDelay" denominator="_attachSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="27" xlsRows="5" markKey="D23A_3"/>	
+
+		<kpi kpiShowName="LTEAttach尝试次数" scale="1" molecule="_lteAttachRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="28" xlsRows="5" markKey="DLA_1"/>
+		<kpi kpiShowName="LTEAttach成功率" scale="100" molecule="_lteAttachSuccess" denominator="_lteAttachRequest" units="%" paramType="3" xlsSheets="1" xlsCols="29" xlsRows="5" markKey="DLA_2"/>	
+		<kpi kpiShowName="LTEAttach平均时延" scale="1" molecule="_lteAttachDelay" denominator="_lteAttachSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="30" xlsRows="5" markKey="DLA_3"/>
+			
+		<kpi kpiShowName="PDP激活尝试次数" scale="1" molecule="_pdpRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="31" xlsRows="5" markKey="DPD_1"/>			
+		<kpi kpiShowName="PDP激活尝试成功率" scale="100" molecule="_pdpSuccess" denominator="_pdpRequest" units="%" paramType="3" xlsSheets="1" xlsCols="32" xlsRows="5" markKey="DPD_2"/>	
+		<kpi kpiShowName="PDP激活时间" scale="1" molecule="_pdpDelay" denominator="_pdpSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="33" xlsRows="5" markKey="DPD_3"/>	
+
+		<kpi kpiShowName="LTE覆盖率" scale="100" molecule="_LTErsrp" denominator="_LTErsrpCount" units="%" paramType="4" xlsSheets="1" xlsCols="34" xlsRows="5" markKey="DCL_1"/>	
+		<kpi kpiShowName="LTE搜网时延" scale="1" molecule="_lteSearchDelay" denominator="_lteAttachRequest" units="ms" paramType="4" xlsSheets="1" xlsCols="35" xlsRows="5" markKey="DCL_5"/>	
+
+		<kpi kpiShowName="RxQualFull" scale="1" molecule="_rxQualFull" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="3" markKey="PG1_1,PG1_2,PG1_3"/>	
+		<kpi kpiShowName="RxQualSub" scale="1" molecule="_rxQualSub" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="4" markKey="PG2_1,PG2_2,PG2_3"/>	
+		<kpi kpiShowName="RxLevFull" scale="1" molecule="_rxLevFull" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="5" markKey="PG3_1,PG3_2,PG3_3"/>	
+		<kpi kpiShowName="RxLevSub" scale="1" molecule="_rxLevSub" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="6" markKey="PG4_1,PG4_2,PG4_3"/>
+		<kpi kpiShowName="GSMTxPower" scale="1" molecule="_txPower" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="7" markKey="PG5_1,PG5_2,PG5_3"/>			
+		<kpi kpiShowName="TA" scale="1" molecule="_ta" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="8" markKey="PG6_1,PG6_2,PG6_3"/>	
+
+		<kpi kpiShowName="PCCPCHRSCP" scale="1" molecule="_tPCCPCH_RSCP" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="11" markKey="PT1_1,PT1_2,PT1_3"/>	
+		<kpi kpiShowName="PCCPCHCI" scale="1" molecule="_tPCCPCH_C_I" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="12" markKey="PT2_1,PT2_2,PT2_3"/>	
+		<kpi kpiShowName="TDUETxPower" scale="1" molecule="_tUE_TxPower" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="13" markKey="PT3_1,PT3_2,PT3_3"/>	
+		<kpi kpiShowName="TDBLER" scale="0.001" molecule="_tBLER" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="14" markKey="PT4_1,PT4_2,PT4_3"/>	
+		<kpi kpiShowName="DLRLCThr" scale="0.0009765" molecule="_tdlRLCThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="15" markKey="PT5_1,PT5_2,PT5_3"/>	
+		<kpi kpiShowName="DLRLCBLER" scale="0.001" molecule="_tdlRLCBLER" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="16" markKey="PT6_1,PT6_2,PT6_3"/>	
+		<kpi kpiShowName="ULRLCThr" scale="0.0009765" molecule="_tulRLCThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="17" markKey="PT7_1,PT7_2,PT7_3"/>	
+		<kpi kpiShowName="ULRLCRTXRate" scale="0.001" molecule="_tulRLCRTXRate" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="18" markKey="PT8_1,PT8_2,PT8_3"/>	
+
+		<kpi kpiShowName="RSRP" scale="1" molecule="_lRSRP" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="21" markKey="PL1_1,PL1_2,PL1_3"/>	
+		<kpi kpiShowName="RSRQ" scale="1" molecule="_lRSRQ" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="22" markKey="PL2_1,PL2_2,PL2_3"/>	
+		<kpi kpiShowName="SINR" scale="1" molecule="_lSINR" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="23" markKey="PL3_1,PL3_2,PL3_3"/>	
+		<kpi kpiShowName="SRSRxPower" scale="1" molecule="_lSRS_Power" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="24" markKey="PL4_1,PL4_2,PL4_3"/>	
+		<kpi kpiShowName="PRACHPower" scale="1" molecule="_lPRACH_Power" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="25" markKey="PL5_1,PL5_2,PL5_3"/>	
+		<kpi kpiShowName="PUCCHPower" scale="1" molecule="_lPUCCH_Power" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="26" markKey="PL6_1,PL6_2,PL6_3"/>	
+		<kpi kpiShowName="PUSCHPower" scale="1" molecule="_lPUSCH_Power" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="27" markKey="PL7_1,PL7_2,PL7_3"/>	
+		<kpi kpiShowName="DLPDCPThr" scale="0.0009765" molecule="_ldownPDCPThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="28" markKey="PL8_1,PL8_2,PL8_3"/>	
+		<kpi kpiShowName="DLRLCThr" scale="0.0009765" molecule="_ldownRLCThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="29" markKey="PL9_1,PL9_2,PL9_3"/>	
+		<kpi kpiShowName="DLMACThr" scale="0.0009765" molecule="_ldownMACThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="30" markKey="PL10_1,PL10_2,PL10_3"/>	
+		<kpi kpiShowName="DLPhysThr" scale="0.0009765" molecule="_ldownPhysThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="31" markKey="PL11_1,PL11_2,PL11_3"/>	
+		<kpi kpiShowName="DLMCSMean" scale="1" molecule="_ldownMCSMean" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="32" markKey="PL12_1,PL12_2,PL12_3"/>	
+		<kpi kpiShowName="DLRBCount" scale="1" molecule="_ldownRBCount" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="33" markKey="PL13_1,PL13_2,PL13_3"/>	
+		<kpi kpiShowName="PDSCHBLER" scale="1" molecule="_lpdSCHBLER" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="34" markKey="PL14_1,PL14_2,PL14_3"/>	
+		<kpi kpiShowName="ULPDCPThr" scale="0.0009765" molecule="_lupPDCPThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="35" markKey="PL15_1,PL15_2,PL15_3"/>	
+		<kpi kpiShowName="ULRLCThr" scale="0.0009765" molecule="_lupRLCThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="36" markKey="PL16_1,PL16_2,PL16_3"/>	
+		<kpi kpiShowName="ULMACThr" scale="0.0009765" molecule="_lupMACThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="37" markKey="PL17_1,PL17_2,PL17_3"/>	
+		<kpi kpiShowName="ULPhysThr" scale="0.0009765" molecule="_lupPhysThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="38" markKey="PL18_1,PL18_2,PL18_3"/>	
+		<kpi kpiShowName="ULMCSMean" scale="1" molecule="_lupMCSMean" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="39" markKey="PL19_1,PL19_2,PL19_3"/>	
+		<kpi kpiShowName="ULRBCount" scale="1" molecule="_lupRBCount" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="40" markKey="PL20_1,PL20_2,PL20_3"/>	
+		<kpi kpiShowName="PUSCHBLER" scale="1" molecule="_lpuSCHBLER" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="41" markKey="PL21_1,PL21_2,PL21_3"/>	
+	</CQTParams-TD>	
+	<DTParams-W>
+		<kpi kpiShowName="MO尝试次数" scale="1" molecule="_moTrys" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="V23O_1"/>
+		<kpi kpiShowName="MT尝试次数" scale="1" molecule="_mtTrys" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="9" markKey="V23T_1"/>
+		<kpi kpiShowName="MO接通次数" scale="1" molecule="_moConnects" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="10" markKey="V23O_2"/>
+		<kpi kpiShowName="MT接通次数" scale="1" molecule="_mtConnects" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="10" markKey="V23T_2"/>
+		<kpi kpiShowName="MO接通率" scale="100" molecule="_moConnects" denominator="_moTrys" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="11" markKey="V23O_3"/>
+		<kpi kpiShowName="MT接通率" scale="100" molecule="_mtConnects" denominator="_mtTrys" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="11" markKey="V23T_3"/>
+		<kpi kpiShowName="MO掉话率" scale="100" molecule="_moDropcalls" denominator="_moConnects" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="12" markKey="V23O_4"/>
+		<kpi kpiShowName="MT掉话率" scale="100" molecule="_mtDropcalls" denominator="_mtConnects" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="12" markKey="V23T_4"/>
+		<kpi kpiShowName="MO平均呼叫时延" scale="0.001" molecule="_moCalldelay" denominator="_moDelaytimes" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="13" markKey="V23O_5"/>
+		<kpi kpiShowName="MT平均呼叫时延" scale="0.001" molecule="_mtCalldelay" denominator="_mtDelaytimes" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="13" markKey="V23T_5"/>
+		
+		<kpi kpiShowName="MOCSFB尝试次数" scale="1" molecule="_csfb_mo_request" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="16" markKey="VCO_1"/>
+		<kpi kpiShowName="MTCSFB尝试次数" scale="1" molecule="_csfb_mt_request" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="16" markKey="VCT_1"/>				
+		<kpi kpiShowName="MOCSFB建立次数" scale="1" molecule="_csfb_mo_Established" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="17" markKey="VCO_2"/>
+		<kpi kpiShowName="MTCSFB建立次数" scale="1" molecule="_csfb_mt_Established" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="17" markKey="VCT_2"/>
+		<kpi kpiShowName="MOCSFB建立成功率" scale="100" molecule="_csfb_mo_Established" denominator="_csfb_mo_request" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="18" markKey="VCO_3"/>
+		<kpi kpiShowName="MTCSFB建立成功率" scale="100" molecule="_csfb_mt_Established" denominator="_csfb_mt_request" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="18" markKey="VCT_3"/>	
+		<kpi kpiShowName="MOCSFB时延" scale="0.001" molecule="_csfb_mo_FallbackDelay" denominator="_csfb_mo_proceeding" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="20" markKey="VCO_4"/>
+		<kpi kpiShowName="MTCSFB时延" scale="0.001" molecule="_csfb_mt_FallbackDelay" denominator="_csfb_mt_proceeding" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="20" markKey="VCT_4"/>
+		<kpi kpiShowName="MOCSFB建立时延" scale="0.001" molecule="_csfb_mo_SuccessDelay" denominator="_csfb_mo_Established" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="19" markKey="VCO_5"/>
+		<kpi kpiShowName="MTCSFB建立时延" scale="0.001" molecule="_csfb_mt_SuccessDelay" denominator="_csfb_mt_Established" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="19" markKey="VCT_5"/>
+		<kpi kpiShowName="MOCSFB掉话次数" scale="1" molecule="_csfb_mo_drop" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="21" markKey="VCO_6"/>
+		<kpi kpiShowName="MTCSFB掉话次数" scale="1" molecule="_csfb_mt_drop" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="21" markKey="VCT_6"/>
+		<kpi kpiShowName="MOCSFB掉话率" scale="100" molecule="_csfb_mo_drop" denominator="_csfb_mo_Established" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="22" markKey="VCO_7"/>
+		<kpi kpiShowName="MTCSFB掉话率" scale="100" molecule="_csfb_mt_drop" denominator="_csfb_mt_Established" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="22" markKey="VCT_7"/>
+		
+		<kpi kpiShowName="PESQScore" scale="1" molecule="_pesq_score" denominator="_pesq_scoreCount" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="25" markKey="VMO_1"/>
+		<kpi kpiShowName="PESQMOS" scale="1" molecule="_pesq_mos" denominator="_pesq_mosCount" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="26" markKey="VMO_2"/>			
+
+		<kpi kpiShowName="MOGSM覆盖率1" scale="100" molecule="_moRxLev1s" denominator="_moTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="31" markKey="VCGO_2"/>
+		<kpi kpiShowName="MTGSM覆盖率1" scale="100" molecule="_mtRxLev1s" denominator="_mtTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="31" markKey="VCGT_2"/>
+		<kpi kpiShowName="MOGSM覆盖率2" scale="100" molecule="_moRxLev2s" denominator="_moTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="32" markKey="VCGO_3"/>
+		<kpi kpiShowName="MTGSM覆盖率2" scale="100" molecule="_mtRxLev2s" denominator="_mtTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="32" markKey="VCGT_3"/>
+		<kpi kpiShowName="MOGSM切换成功率" scale="100" molecule="_moGsmSwitchSuccs" denominator="_moGsmSwitch" units="%" paramType="7" xlsSheets="0" xlsCols="3" xlsRows="33" markKey="VCGO_4"/>
+		<kpi kpiShowName="MTGSM切换成功率" scale="100" molecule="_mtGsmSwitchSuccs" denominator="_mtGsmSwitch" units="%" paramType="7" xlsSheets="0" xlsCols="4" xlsRows="33" markKey="VCGT_4"/>		
+			
+		<kpi kpiShowName="Ping尝试次数" scale="1" molecule="_pingTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="2" xlsRows="5" markKey="DPI_1"/>		
+		<kpi kpiShowName="Ping成功率" scale="100" molecule="_pingSuccess" denominator="_pingTry" units="%" paramType="3" xlsSheets="1" xlsCols="3" xlsRows="5" markKey="DPI_2"/>	
+		<kpi kpiShowName="Ping平均时延" scale="1" molecule="_pingDelay" denominator="_pingSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="4" xlsRows="5" markKey="DPI_3"/>	
+		
+		<kpi kpiShowName="FTP下载尝试次数" scale="1" molecule="_downtrys" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="5" xlsRows="5" markKey="DFD_1"/>	
+		<kpi kpiShowName="FTP下载成功次数" scale="1" molecule="_downSuccs" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="6" xlsRows="5" markKey="DFD_2"/>	
+		<kpi kpiShowName="FTP下载掉线率" scale="100" molecule="_downDrops" denominator="_downtrys" units="%" paramType="3" xlsSheets="1" xlsCols="7" xlsRows="5" markKey="DFD_3"/>			
+		<kpi kpiShowName="FTP下载平均速率" scale="0.9765625" molecule="_downCurrentSize" denominator="_downCurrentTimes" units="kbps" paramType="3" xlsSheets="1" xlsCols="8" xlsRows="5" markKey="DFD_4"/>	
+		<kpi kpiShowName="FTP上传尝试次数" scale="1" molecule="_uptrys" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="9" xlsRows="5" markKey="DFU_1"/>	
+		<kpi kpiShowName="FTP上传成功次数" scale="1" molecule="_upSuccs" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="10" xlsRows="5" markKey="DFU_2"/>
+		<kpi kpiShowName="FTP上传掉线率" scale="100" molecule="_upDrops" denominator="_uptrys" units="%" paramType="3" xlsSheets="1" xlsCols="11" xlsRows="5" markKey="DFU_3"/>	
+		<kpi kpiShowName="FTP上传平均速率" scale="0.9765625" molecule="_upCurrentSize" denominator="_upCurrentTimes" units="" paramType="3" xlsSheets="1" xlsCols="12" xlsRows="5" markKey="DFU_4"/>
+			
+		<kpi kpiShowName="HTTP登录尝试次数" scale="1" molecule="_HttpTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="13" xlsRows="5" markKey="DHL_1"/>	
+		<kpi kpiShowName="HTTP登录成功次数" scale="1" molecule="_HttpSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="14" xlsRows="5" markKey="DHL_2"/>			
+		<kpi kpiShowName="HTTP登录成功率" scale="100" molecule="_HttpSuccess" denominator="_HttpTry" units="%" paramType="3" xlsSheets="1" xlsCols="15" xlsRows="5" markKey="DHL_3"/>	
+		<kpi kpiShowName="HTTP登录平均时延" scale="1" molecule="_HttpDelay" denominator="_HttpSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="16" xlsRows="5" markKey="DHL_4"/>	
+
+		<kpi kpiShowName="HTTP刷新尝试次数" scale="1" molecule="_HttpRefreshTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="17" xlsRows="5" markKey="DHR_1"/>			
+		<kpi kpiShowName="HTTP刷新成功次数" scale="1" molecule="_HttpRefreshSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="18" xlsRows="5" markKey="DHR_2"/>	
+		<kpi kpiShowName="HTTP刷新成功率" scale="100" molecule="_HttpRefreshSuccess" denominator="_HttpRefreshTry" units="%" paramType="3" xlsSheets="1" xlsCols="19" xlsRows="5" markKey="DHR_3"/>	
+		<kpi kpiShowName="HTTP刷新平均时延" scale="1" molecule="_HttpRefreshDelay" denominator="_HttpRefreshSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="20" xlsRows="5" markKey="DHR_4"/>
+			
+		<kpi kpiShowName="HTTP下载尝试次数" scale="1" molecule="_HttpDownTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="21" xlsRows="5" markKey="DHD_1"/>	
+		<kpi kpiShowName="HTTP下载成功次数" scale="1" molecule="_HttpDownSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="22" xlsRows="5" markKey="DHD_2"/>	
+		<kpi kpiShowName="HTTP下载成功率" scale="100" molecule="_HttpDownSuccess" denominator="_HttpDownTry" units="%" paramType="3" xlsSheets="1" xlsCols="23" xlsRows="5" markKey="DHD_3"/>			
+		<kpi kpiShowName="HTTP下载平均速率" scale="1" molecule="_httpDownTotalBytes" denominator="_httpDownTotalTime" units="kbps" paramType="3" xlsSheets="1" xlsCols="24" xlsRows="5" markKey="DHD_4"/>	
+
+		<kpi kpiShowName="23GAttach尝试次数" scale="1" molecule="_attachRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="25" xlsRows="5" markKey="D23A_1"/>			
+		<kpi kpiShowName="23GAttach成功率" scale="100" molecule="_attachSuccess" denominator="_attachRequest" units="%" paramType="3" xlsSheets="1" xlsCols="26" xlsRows="5" markKey="D23A_2"/>	
+		<kpi kpiShowName="23GAttach平均时延" scale="1" molecule="_attachDelay" denominator="_attachSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="27" xlsRows="5" markKey="D23A_3"/>	
+
+		<kpi kpiShowName="LTEAttach尝试次数" scale="1" molecule="_lteAttachRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="28" xlsRows="5" markKey="DLA_1"/>
+		<kpi kpiShowName="LTEAttach成功率" scale="100" molecule="_lteAttachSuccess" denominator="_lteAttachRequest" units="%" paramType="3" xlsSheets="1" xlsCols="29" xlsRows="5" markKey="DLA_2"/>	
+		<kpi kpiShowName="LTEAttach平均时延" scale="1" molecule="_lteAttachDelay" denominator="_lteAttachSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="30" xlsRows="5" markKey="DLA_3"/>
+			
+		<kpi kpiShowName="PDP激活尝试次数" scale="1" molecule="_pdpRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="31" xlsRows="5" markKey="DPD_1"/>			
+		<kpi kpiShowName="PDP激活尝试成功率" scale="100" molecule="_pdpSuccess" denominator="_pdpRequest" units="%" paramType="3" xlsSheets="1" xlsCols="32" xlsRows="5" markKey="DPD_2"/>	
+		<kpi kpiShowName="PDP激活时间" scale="1" molecule="_pdpDelay" denominator="_pdpSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="33" xlsRows="5" markKey="DPD_3"/>	
+
+		<kpi kpiShowName="LTE覆盖率" scale="100" molecule="_LTErsrp" denominator="_LTErsrpCount" units="%" paramType="4" xlsSheets="1" xlsCols="34" xlsRows="5" markKey="DCL_1"/>	
+		<kpi kpiShowName="LTE总里程" scale="0.0001" molecule="_LteTotalMileage" denominator="" units="km" paramType="5" xlsSheets="1" xlsCols="35" xlsRows="5" markKey="DCL_2"/>	
+		<kpi kpiShowName="LTE覆盖里程" scale="0.0001" molecule="_LteCoverMileage" denominator="" units="km" paramType="5" xlsSheets="1" xlsCols="36" xlsRows="5" markKey="DCL_3"/>	
+		<kpi kpiShowName="LTE里程覆盖率" scale="100" molecule="_LteCoverMileage" denominator="_LteTotalMileage" units="%" paramType="4" xlsSheets="1" xlsCols="37" xlsRows="5" markKey="DCL_4"/>	
+		<kpi kpiShowName="LTE搜网时延" scale="1" molecule="_lteSearchDelay" denominator="_lteAttachRequest" units="ms" paramType="4" xlsSheets="1" xlsCols="38" xlsRows="5" markKey="DCL_5"/>	
+
+		<kpi kpiShowName="RxQualFull" scale="1" molecule="_rxQualFull" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="3" markKey="PG1_1,PG1_2,PG1_3"/>	
+		<kpi kpiShowName="RxQualSub" scale="1" molecule="_rxQualSub" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="4" markKey="PG2_1,PG2_2,PG2_3"/>	
+		<kpi kpiShowName="RxLevFull" scale="1" molecule="_rxLevFull" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="5" markKey="PG3_1,PG3_2,PG3_3"/>	
+		<kpi kpiShowName="RxLevSub" scale="1" molecule="_rxLevSub" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="6" markKey="PG4_1,PG4_2,PG4_3"/>
+		<kpi kpiShowName="GSMTxPower" scale="1" molecule="_txPower" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="7" markKey="PG5_1,PG5_2,PG5_3"/>			
+		<kpi kpiShowName="TA" scale="1" molecule="_ta" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="8" markKey="PG6_1,PG6_2,PG6_3"/>	
+
+		<kpi kpiShowName="WTotalRSCP" scale="1" molecule="_wTotalRSCP" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="11" markKey="PW1_1,PW1_2,PW1_3"/>	
+		<kpi kpiShowName="WTotalEcIo" scale="1" molecule="_wTotalEclo" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="12" markKey="PW2_1,PW2_2,PW2_3"/>	
+		<kpi kpiShowName="WRxPower" scale="1" molecule="_wRxPower" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="13" markKey="PW3_1,PW3_2,PW3_3"/>	
+		<kpi kpiShowName="WTxPower" scale="1" molecule="_wTxPower" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="14" markKey="PW4_1,PW4_2,PW4_3"/>	
+		<kpi kpiShowName="WBLER" scale="1" molecule="_wBLER" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="15" markKey="PW5_1,PW5_2,PW5_3"/>	
+		<kpi kpiShowName="WSIR" scale="1" molecule="_wSIR" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="16" markKey="PW6_1,PW6_2,PW6_3"/>	
+
+		<kpi kpiShowName="WDPAPhysRequestThr" scale="0.0009765" molecule="_hsdpaPhysRequestThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="19" markKey="PW7_1,PW7_2,PW7_3"/>	
+		<kpi kpiShowName="WDPAPhysScheduledThr" scale="0.0009765" molecule="_hsdpaPhysScheduledThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="20" markKey="PW8_1,PW8_2,PW8_3"/>	
+		<kpi kpiShowName="WDPAPhysServiceThr" scale="0.0009765" molecule="_hsdpaPhysServiceThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="21" markKey="PW9_1,PW9_2,PW9_3"/>	
+		<kpi kpiShowName="WDPAMACThr" scale="0.0009765" molecule="_hsdpaMACThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="22" markKey="PW10_1,PW10_2,PW10_3"/>	
+		
+		<kpi kpiShowName="WUPAPhysServiceThr" scale="0.0009765" molecule="_hsupaPhysServiceThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="25" markKey="PW11_1,PW11_2,PW11_3"/>	
+		<kpi kpiShowName="WUPAMACThr" scale="0.0009765" molecule="_hsupaMACThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="26" markKey="PW12_1,PW12_2,PW12_3"/>	
+
+		<kpi kpiShowName="RSRP" scale="1" molecule="_lRSRP" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="21" markKey="PL1_1,PL1_2,PL1_3"/>	
+		<kpi kpiShowName="RSRQ" scale="1" molecule="_lRSRQ" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="22" markKey="PL2_1,PL2_2,PL2_3"/>	
+		<kpi kpiShowName="SINR" scale="1" molecule="_lSINR" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="23" markKey="PL3_1,PL3_2,PL3_3"/>	
+		<kpi kpiShowName="SRSRxPower" scale="1" molecule="_lSRS_Power" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="24" markKey="PL4_1,PL4_2,PL4_3"/>	
+		<kpi kpiShowName="PRACHPower" scale="1" molecule="_lPRACH_Power" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="25" markKey="PL5_1,PL5_2,PL5_3"/>	
+		<kpi kpiShowName="PUCCHPower" scale="1" molecule="_lPUCCH_Power" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="26" markKey="PL6_1,PL6_2,PL6_3"/>	
+		<kpi kpiShowName="PUSCHPower" scale="1" molecule="_lPUSCH_Power" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="27" markKey="PL7_1,PL7_2,PL7_3"/>	
+		<kpi kpiShowName="DLPDCPThr" scale="0.0009765" molecule="_ldownPDCPThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="28" markKey="PL8_1,PL8_2,PL8_3"/>	
+		<kpi kpiShowName="DLRLCThr" scale="0.0009765" molecule="_ldownRLCThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="29" markKey="PL9_1,PL9_2,PL9_3"/>	
+		<kpi kpiShowName="DLMACThr" scale="0.0009765" molecule="_ldownMACThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="30" markKey="PL10_1,PL10_2,PL10_3"/>	
+		<kpi kpiShowName="DLPhysThr" scale="0.0009765" molecule="_ldownPhysThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="31" markKey="PL11_1,PL11_2,PL11_3"/>	
+		<kpi kpiShowName="DLMCSMean" scale="1" molecule="_ldownMCSMean" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="32" markKey="PL12_1,PL12_2,PL12_3"/>	
+		<kpi kpiShowName="DLRBCount" scale="1" molecule="_ldownRBCount" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="33" markKey="PL13_1,PL13_2,PL13_3"/>	
+		<kpi kpiShowName="PDSCHBLER" scale="1" molecule="_lpdSCHBLER" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="34" markKey="PL14_1,PL14_2,PL14_3"/>	
+		<kpi kpiShowName="ULPDCPThr" scale="0.0009765" molecule="_lupPDCPThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="35" markKey="PL15_1,PL15_2,PL15_3"/>	
+		<kpi kpiShowName="ULRLCThr" scale="0.0009765" molecule="_lupRLCThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="36" markKey="PL16_1,PL16_2,PL16_3"/>	
+		<kpi kpiShowName="ULMACThr" scale="0.0009765" molecule="_lupMACThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="37" markKey="PL17_1,PL17_2,PL17_3"/>	
+		<kpi kpiShowName="ULPhysThr" scale="0.0009765" molecule="_lupPhysThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="38" markKey="PL18_1,PL18_2,PL18_3"/>	
+		<kpi kpiShowName="ULMCSMean" scale="1" molecule="_lupMCSMean" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="39" markKey="PL19_1,PL19_2,PL19_3"/>	
+		<kpi kpiShowName="ULRBCount" scale="1" molecule="_lupRBCount" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="40" markKey="PL20_1,PL20_2,PL20_3"/>	
+		<kpi kpiShowName="PUSCHBLER" scale="1" molecule="_lpuSCHBLER" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="41" markKey="PL21_1,PL21_2,PL21_3"/>	
+	</DTParams-W>
+	<CQTParams-W>
+		<kpi kpiShowName="MO尝试次数" scale="1" molecule="_moTrys" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="V23O_1"/>
+		<kpi kpiShowName="MT尝试次数" scale="1" molecule="_mtTrys" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="9" markKey="V23T_1"/>
+		<kpi kpiShowName="MO接通次数" scale="1" molecule="_moConnects" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="10" markKey="V23O_2"/>
+		<kpi kpiShowName="MT接通次数" scale="1" molecule="_mtConnects" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="10" markKey="V23T_2"/>
+		<kpi kpiShowName="MO接通率" scale="100" molecule="_moConnects" denominator="_moTrys" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="11" markKey="V23O_3"/>
+		<kpi kpiShowName="MT接通率" scale="100" molecule="_mtConnects" denominator="_mtTrys" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="11" markKey="V23T_3"/>
+		<kpi kpiShowName="MO掉话率" scale="100" molecule="_moDropcalls" denominator="_moConnects" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="12" markKey="V23O_4"/>
+		<kpi kpiShowName="MT掉话率" scale="100" molecule="_mtDropcalls" denominator="_mtConnects" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="12" markKey="V23T_4"/>
+		<kpi kpiShowName="MO平均呼叫时延" scale="0.001" molecule="_moCalldelay" denominator="_moDelaytimes" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="13" markKey="V23O_5"/>
+		<kpi kpiShowName="MT平均呼叫时延" scale="0.001" molecule="_mtCalldelay" denominator="_mtDelaytimes" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="13" markKey="V23T_5"/>
+		
+		<kpi kpiShowName="MOCSFB尝试次数" scale="1" molecule="_csfb_mo_request" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="16" markKey="VCO_1"/>
+		<kpi kpiShowName="MTCSFB尝试次数" scale="1" molecule="_csfb_mt_request" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="16" markKey="VCT_1"/>				
+		<kpi kpiShowName="MOCSFB建立次数" scale="1" molecule="_csfb_mo_Established" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="17" markKey="VCO_2"/>
+		<kpi kpiShowName="MTCSFB建立次数" scale="1" molecule="_csfb_mt_Established" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="17" markKey="VCT_2"/>
+		<kpi kpiShowName="MOCSFB建立成功率" scale="100" molecule="_csfb_mo_Established" denominator="_csfb_mo_request" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="18" markKey="VCO_3"/>
+		<kpi kpiShowName="MTCSFB建立成功率" scale="100" molecule="_csfb_mt_Established" denominator="_csfb_mt_request" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="18" markKey="VCT_3"/>	
+		<kpi kpiShowName="MOCSFB时延" scale="0.001" molecule="_csfb_mo_FallbackDelay" denominator="_csfb_mo_proceeding" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="20" markKey="VCO_4"/>
+		<kpi kpiShowName="MTCSFB时延" scale="0.001" molecule="_csfb_mt_FallbackDelay" denominator="_csfb_mt_proceeding" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="20" markKey="VCT_4"/>
+		<kpi kpiShowName="MOCSFB建立时延" scale="0.001" molecule="_csfb_mo_SuccessDelay" denominator="_csfb_mo_Established" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="19" markKey="VCO_5"/>
+		<kpi kpiShowName="MTCSFB建立时延" scale="0.001" molecule="_csfb_mt_SuccessDelay" denominator="_csfb_mt_Established" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="19" markKey="VCT_5"/>
+		<kpi kpiShowName="MOCSFB掉话次数" scale="1" molecule="_csfb_mo_drop" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="21" markKey="VCO_6"/>
+		<kpi kpiShowName="MTCSFB掉话次数" scale="1" molecule="_csfb_mt_drop" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="21" markKey="VCT_6"/>
+		<kpi kpiShowName="MOCSFB掉话率" scale="100" molecule="_csfb_mo_drop" denominator="_csfb_mo_Established" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="22" markKey="VCO_7"/>
+		<kpi kpiShowName="MTCSFB掉话率" scale="100" molecule="_csfb_mt_drop" denominator="_csfb_mt_Established" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="22" markKey="VCT_7"/>
+		
+
+		<kpi kpiShowName="PESQScore" scale="1" molecule="_pesq_score" denominator="_pesq_scoreCount" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="25" markKey="VMO_1"/>
+		<kpi kpiShowName="PESQMOS" scale="1" molecule="_pesq_mos" denominator="_pesq_mosCount" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="26" markKey="VMO_2"/>				
+
+		<kpi kpiShowName="MOGSM覆盖率1" scale="100" molecule="_moRxLev1s" denominator="_moTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="31" markKey="VCGO_2"/>
+		<kpi kpiShowName="MTGSM覆盖率1" scale="100" molecule="_mtRxLev1s" denominator="_mtTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="31" markKey="VCGT_2"/>
+		<kpi kpiShowName="MOGSM覆盖率2" scale="100" molecule="_moRxLev2s" denominator="_moTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="32" markKey="VCGO_3"/>
+		<kpi kpiShowName="MTGSM覆盖率2" scale="100" molecule="_mtRxLev2s" denominator="_mtTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="32" markKey="VCGT_3"/>		
+
+		<kpi kpiShowName="Ping尝试次数" scale="1" molecule="_pingTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="2" xlsRows="5" markKey="DPI_1"/>		
+		<kpi kpiShowName="Ping成功率" scale="100" molecule="_pingSuccess" denominator="_pingTry" units="%" paramType="3" xlsSheets="1" xlsCols="3" xlsRows="5" markKey="DPI_2"/>	
+		<kpi kpiShowName="Ping平均时延" scale="1" molecule="_pingDelay" denominator="_pingSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="4" xlsRows="5" markKey="DPI_3"/>	
+		
+		<kpi kpiShowName="FTP下载尝试次数" scale="1" molecule="_downtrys" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="5" xlsRows="5" markKey="DFD_1"/>	
+		<kpi kpiShowName="FTP下载成功次数" scale="1" molecule="_downSuccs" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="6" xlsRows="5" markKey="DFD_2"/>	
+		<kpi kpiShowName="FTP下载掉线率" scale="100" molecule="_downDrops" denominator="_downtrys" units="%" paramType="3" xlsSheets="1" xlsCols="7" xlsRows="5" markKey="DFD_3"/>			
+		<kpi kpiShowName="FTP下载平均速率" scale="0.9765625" molecule="_downCurrentSize" denominator="_downCurrentTimes" units="kbps" paramType="3" xlsSheets="1" xlsCols="8" xlsRows="5" markKey="DFD_4"/>	
+		<kpi kpiShowName="FTP上传尝试次数" scale="1" molecule="_uptrys" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="9" xlsRows="5" markKey="DFU_1"/>	
+		<kpi kpiShowName="FTP上传成功次数" scale="1" molecule="_upSuccs" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="10" xlsRows="5" markKey="DFU_2"/>
+		<kpi kpiShowName="FTP上传掉线率" scale="100" molecule="_upDrops" denominator="_uptrys" units="%" paramType="3" xlsSheets="1" xlsCols="11" xlsRows="5" markKey="DFU_3"/>	
+		<kpi kpiShowName="FTP上传平均速率" scale="0.9765625" molecule="_upCurrentSize" denominator="_upCurrentTimes" units="" paramType="3" xlsSheets="1" xlsCols="12" xlsRows="5" markKey="DFU_4"/>
+			
+		<kpi kpiShowName="HTTP登录尝试次数" scale="1" molecule="_HttpTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="13" xlsRows="5" markKey="DHL_1"/>	
+		<kpi kpiShowName="HTTP登录成功次数" scale="1" molecule="_HttpSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="14" xlsRows="5" markKey="DHL_2"/>			
+		<kpi kpiShowName="HTTP登录成功率" scale="100" molecule="_HttpSuccess" denominator="_HttpTry" units="%" paramType="3" xlsSheets="1" xlsCols="15" xlsRows="5" markKey="DHL_3"/>	
+		<kpi kpiShowName="HTTP登录平均时延" scale="1" molecule="_HttpDelay" denominator="_HttpSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="16" xlsRows="5" markKey="DHL_4"/>	
+
+		<kpi kpiShowName="HTTP刷新尝试次数" scale="1" molecule="_HttpRefreshTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="17" xlsRows="5" markKey="DHR_1"/>			
+		<kpi kpiShowName="HTTP刷新成功次数" scale="1" molecule="_HttpRefreshSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="18" xlsRows="5" markKey="DHR_2"/>	
+		<kpi kpiShowName="HTTP刷新成功率" scale="100" molecule="_HttpRefreshSuccess" denominator="_HttpRefreshTry" units="%" paramType="3" xlsSheets="1" xlsCols="19" xlsRows="5" markKey="DHR_3"/>	
+		<kpi kpiShowName="HTTP刷新平均时延" scale="1" molecule="_HttpRefreshDelay" denominator="_HttpRefreshSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="20" xlsRows="5" markKey="DHR_4"/>
+			
+		<kpi kpiShowName="HTTP下载尝试次数" scale="1" molecule="_HttpDownTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="21" xlsRows="5" markKey="DHD_1"/>	
+		<kpi kpiShowName="HTTP下载成功次数" scale="1" molecule="_HttpDownSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="22" xlsRows="5" markKey="DHD_2"/>	
+		<kpi kpiShowName="HTTP下载成功率" scale="100" molecule="_HttpDownSuccess" denominator="_HttpDownTry" units="%" paramType="3" xlsSheets="1" xlsCols="23" xlsRows="5" markKey="DHD_3"/>			
+		<kpi kpiShowName="HTTP下载平均速率" scale="1" molecule="_httpDownTotalBytes" denominator="_httpDownTotalTime" units="kbps" paramType="3" xlsSheets="1" xlsCols="24" xlsRows="5" markKey="DHD_4"/>	
+
+		<kpi kpiShowName="23GAttach尝试次数" scale="1" molecule="_attachRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="25" xlsRows="5" markKey="D23A_1"/>			
+		<kpi kpiShowName="23GAttach成功率" scale="100" molecule="_attachSuccess" denominator="_attachRequest" units="%" paramType="3" xlsSheets="1" xlsCols="26" xlsRows="5" markKey="D23A_2"/>	
+		<kpi kpiShowName="23GAttach平均时延" scale="1" molecule="_attachDelay" denominator="_attachSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="27" xlsRows="5" markKey="D23A_3"/>	
+
+		<kpi kpiShowName="LTEAttach尝试次数" scale="1" molecule="_lteAttachRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="28" xlsRows="5" markKey="DLA_1"/>
+		<kpi kpiShowName="LTEAttach成功率" scale="100" molecule="_lteAttachSuccess" denominator="_lteAttachRequest" units="%" paramType="3" xlsSheets="1" xlsCols="29" xlsRows="5" markKey="DLA_2"/>	
+		<kpi kpiShowName="LTEAttach平均时延" scale="1" molecule="_lteAttachDelay" denominator="_lteAttachSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="30" xlsRows="5" markKey="DLA_3"/>
+			
+		<kpi kpiShowName="PDP激活尝试次数" scale="1" molecule="_pdpRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="31" xlsRows="5" markKey="DPD_1"/>			
+		<kpi kpiShowName="PDP激活尝试成功率" scale="100" molecule="_pdpSuccess" denominator="_pdpRequest" units="%" paramType="3" xlsSheets="1" xlsCols="32" xlsRows="5" markKey="DPD_2"/>	
+		<kpi kpiShowName="PDP激活时间" scale="1" molecule="_pdpDelay" denominator="_pdpSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="33" xlsRows="5" markKey="DPD_3"/>	
+
+		<kpi kpiShowName="LTE覆盖率" scale="100" molecule="_LTErsrp" denominator="_LTErsrpCount" units="%" paramType="4" xlsSheets="1" xlsCols="34" xlsRows="5" markKey="DCL_1"/>	
+		<kpi kpiShowName="LTE搜网时延" scale="1" molecule="_lteSearchDelay" denominator="_lteAttachRequest" units="ms" paramType="4" xlsSheets="1" xlsCols="35" xlsRows="5" markKey="DCL_5"/>	
+
+		<kpi kpiShowName="RxQualFull" scale="1" molecule="_rxQualFull" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="3" markKey="PG1_1,PG1_2,PG1_3"/>	
+		<kpi kpiShowName="RxQualSub" scale="1" molecule="_rxQualSub" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="4" markKey="PG2_1,PG2_2,PG2_3"/>	
+		<kpi kpiShowName="RxLevFull" scale="1" molecule="_rxLevFull" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="5" markKey="PG3_1,PG3_2,PG3_3"/>	
+		<kpi kpiShowName="RxLevSub" scale="1" molecule="_rxLevSub" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="6" markKey="PG4_1,PG4_2,PG4_3"/>
+		<kpi kpiShowName="GSMTxPower" scale="1" molecule="_txPower" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="7" markKey="PG5_1,PG5_2,PG5_3"/>			
+		<kpi kpiShowName="TA" scale="1" molecule="_ta" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="8" markKey="PG6_1,PG6_2,PG6_3"/>	
+
+		<kpi kpiShowName="WTotalRSCP" scale="1" molecule="_wTotalRSCP" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="11" markKey="PW1_1,PW1_2,PW1_3"/>	
+		<kpi kpiShowName="WTotalEcIo" scale="1" molecule="_wTotalEclo" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="12" markKey="PW2_1,PW2_2,PW2_3"/>	
+		<kpi kpiShowName="WRxPower" scale="1" molecule="_wRxPower" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="13" markKey="PW3_1,PW3_2,PW3_3"/>	
+		<kpi kpiShowName="WTxPower" scale="1" molecule="_wTxPower" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="14" markKey="PW4_1,PW4_2,PW4_3"/>	
+		<kpi kpiShowName="WBLER" scale="1" molecule="_wBLER" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="15" markKey="PW5_1,PW5_2,PW5_3"/>	
+		<kpi kpiShowName="WSIR" scale="1" molecule="_wSIR" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="16" markKey="PW6_1,PW6_2,PW6_3"/>	
+
+		<kpi kpiShowName="WDPAPhysRequestThr" scale="0.0009765" molecule="_hsdpaPhysRequestThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="19" markKey="PW7_1,PW7_2,PW7_3"/>	
+		<kpi kpiShowName="WDPAPhysScheduledThr" scale="0.0009765" molecule="_hsdpaPhysScheduledThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="20" markKey="PW8_1,PW8_2,PW8_3"/>	
+		<kpi kpiShowName="WDPAPhysServiceThr" scale="0.0009765" molecule="_hsdpaPhysServiceThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="21" markKey="PW9_1,PW9_2,PW9_3"/>	
+		<kpi kpiShowName="WDPAMACThr" scale="0.0009765" molecule="_hsdpaMACThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="22" markKey="PW10_1,PW10_2,PW10_3"/>	
+		
+		<kpi kpiShowName="WUPAPhysServiceThr" scale="0.0009765" molecule="_hsupaPhysServiceThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="25" markKey="PW11_1,PW11_2,PW11_3"/>	
+		<kpi kpiShowName="WUPAMACThr" scale="0.0009765" molecule="_hsupaMACThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="26" markKey="PW12_1,PW12_2,PW12_3"/>	
+
+		<kpi kpiShowName="RSRP" scale="1" molecule="_lRSRP" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="21" markKey="PL1_1,PL1_2,PL1_3"/>	
+		<kpi kpiShowName="RSRQ" scale="1" molecule="_lRSRQ" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="22" markKey="PL2_1,PL2_2,PL2_3"/>	
+		<kpi kpiShowName="SINR" scale="1" molecule="_lSINR" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="23" markKey="PL3_1,PL3_2,PL3_3"/>	
+		<kpi kpiShowName="SRSRxPower" scale="1" molecule="_lSRS_Power" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="24" markKey="PL4_1,PL4_2,PL4_3"/>	
+		<kpi kpiShowName="PRACHPower" scale="1" molecule="_lPRACH_Power" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="25" markKey="PL5_1,PL5_2,PL5_3"/>	
+		<kpi kpiShowName="PUCCHPower" scale="1" molecule="_lPUCCH_Power" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="26" markKey="PL6_1,PL6_2,PL6_3"/>	
+		<kpi kpiShowName="PUSCHPower" scale="1" molecule="_lPUSCH_Power" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="27" markKey="PL7_1,PL7_2,PL7_3"/>	
+		<kpi kpiShowName="DLPDCPThr" scale="0.0009765" molecule="_ldownPDCPThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="28" markKey="PL8_1,PL8_2,PL8_3"/>	
+		<kpi kpiShowName="DLRLCThr" scale="0.0009765" molecule="_ldownRLCThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="29" markKey="PL9_1,PL9_2,PL9_3"/>	
+		<kpi kpiShowName="DLMACThr" scale="0.0009765" molecule="_ldownMACThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="30" markKey="PL10_1,PL10_2,PL10_3"/>	
+		<kpi kpiShowName="DLPhysThr" scale="0.0009765" molecule="_ldownPhysThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="31" markKey="PL11_1,PL11_2,PL11_3"/>	
+		<kpi kpiShowName="DLMCSMean" scale="1" molecule="_ldownMCSMean" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="32" markKey="PL12_1,PL12_2,PL12_3"/>	
+		<kpi kpiShowName="DLRBCount" scale="1" molecule="_ldownRBCount" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="33" markKey="PL13_1,PL13_2,PL13_3"/>	
+		<kpi kpiShowName="PDSCHBLER" scale="1" molecule="_lpdSCHBLER" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="34" markKey="PL14_1,PL14_2,PL14_3"/>	
+		<kpi kpiShowName="ULPDCPThr" scale="0.0009765" molecule="_lupPDCPThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="35" markKey="PL15_1,PL15_2,PL15_3"/>	
+		<kpi kpiShowName="ULRLCThr" scale="0.0009765" molecule="_lupRLCThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="36" markKey="PL16_1,PL16_2,PL16_3"/>	
+		<kpi kpiShowName="ULMACThr" scale="0.0009765" molecule="_lupMACThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="37" markKey="PL17_1,PL17_2,PL17_3"/>	
+		<kpi kpiShowName="ULPhysThr" scale="0.0009765" molecule="_lupPhysThr" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="38" markKey="PL18_1,PL18_2,PL18_3"/>	
+		<kpi kpiShowName="ULMCSMean" scale="1" molecule="_lupMCSMean" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="39" markKey="PL19_1,PL19_2,PL19_3"/>	
+		<kpi kpiShowName="ULRBCount" scale="1" molecule="_lupRBCount" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="40" markKey="PL20_1,PL20_2,PL20_3"/>	
+		<kpi kpiShowName="PUSCHBLER" scale="1" molecule="_lpuSCHBLER" denominator="" units="" paramType="2" xlsSheets="2" xlsCols="2" xlsRows="41" markKey="PL21_1,PL21_2,PL21_3"/>	
+	
+	</CQTParams-W>
+	<DTParams-C>
+		<kpi kpiShowName="MO尝试次数" scale="1" molecule="_moTrys" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="V23O_1"/>
+		<kpi kpiShowName="MT尝试次数" scale="1" molecule="_mtTrys" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="9" markKey="V23T_1"/>
+		<kpi kpiShowName="MO接通次数" scale="1" molecule="_moConnects" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="10" markKey="V23O_2"/>
+		<kpi kpiShowName="MT接通次数" scale="1" molecule="_mtConnects" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="10" markKey="V23T_2"/>
+		<kpi kpiShowName="MO接通率" scale="100" molecule="_moConnects" denominator="_moTrys" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="11" markKey="V23O_3"/>
+		<kpi kpiShowName="MT接通率" scale="100" molecule="_mtConnects" denominator="_mtTrys" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="11" markKey="V23T_3"/>
+		<kpi kpiShowName="MO掉话率" scale="100" molecule="_moDropcalls" denominator="_moConnects" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="12" markKey="V23O_4"/>
+		<kpi kpiShowName="MT掉话率" scale="100" molecule="_mtDropcalls" denominator="_mtConnects" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="12" markKey="V23T_4"/>
+		<kpi kpiShowName="MO平均呼叫时延" scale="0.001" molecule="_moCalldelay" denominator="_moDelaytimes" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="13" markKey="V23O_5"/>
+		<kpi kpiShowName="MT平均呼叫时延" scale="0.001" molecule="_mtCalldelay" denominator="_mtDelaytimes" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="13" markKey="V23T_5"/>
+	
+		<kpi kpiShowName="PESQScore" scale="1" molecule="_pesq_score" denominator="_pesq_scoreCount" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="16" markKey="VMO_1"/>
+		<kpi kpiShowName="PESQMOS" scale="1" molecule="_pesq_mos" denominator="_pesq_mosCount" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="17" markKey="VMO_2"/>			
+
+		<kpi kpiShowName="Ping尝试次数" scale="1" molecule="_pingTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="2" xlsRows="5" markKey="DPI_1"/>		
+		<kpi kpiShowName="Ping成功率" scale="100" molecule="_pingSuccess" denominator="_pingTry" units="%" paramType="3" xlsSheets="1" xlsCols="3" xlsRows="5" markKey="DPI_2"/>	
+		<kpi kpiShowName="Ping平均时延" scale="1" molecule="_pingDelay" denominator="_pingSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="4" xlsRows="5" markKey="DPI_3"/>	
+		
+		<kpi kpiShowName="FTP下载尝试次数" scale="1" molecule="_downtrys" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="5" xlsRows="5" markKey="DFD_1"/>	
+		<kpi kpiShowName="FTP下载成功次数" scale="1" molecule="_downSuccs" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="6" xlsRows="5" markKey="DFD_2"/>	
+		<kpi kpiShowName="FTP下载掉线率" scale="100" molecule="_downDrops" denominator="_downtrys" units="%" paramType="3" xlsSheets="1" xlsCols="7" xlsRows="5" markKey="DFD_3"/>			
+		<kpi kpiShowName="FTP下载平均速率" scale="0.9765625" molecule="_downCurrentSize" denominator="_downCurrentTimes" units="kbps" paramType="3" xlsSheets="1" xlsCols="8" xlsRows="5" markKey="DFD_4"/>	
+		<kpi kpiShowName="FTP上传尝试次数" scale="1" molecule="_uptrys" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="9" xlsRows="5" markKey="DFU_1"/>	
+		<kpi kpiShowName="FTP上传成功次数" scale="1" molecule="_upSuccs" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="10" xlsRows="5" markKey="DFU_2"/>
+		<kpi kpiShowName="FTP上传掉线率" scale="100" molecule="_upDrops" denominator="_uptrys" units="%" paramType="3" xlsSheets="1" xlsCols="11" xlsRows="5" markKey="DFU_3"/>	
+		<kpi kpiShowName="FTP上传平均速率" scale="0.9765625" molecule="_upCurrentSize" denominator="_upCurrentTimes" units="" paramType="3" xlsSheets="1" xlsCols="12" xlsRows="5" markKey="DFU_4"/>
+			
+		<kpi kpiShowName="HTTP登录尝试次数" scale="1" molecule="_HttpTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="13" xlsRows="5" markKey="DHL_1"/>	
+		<kpi kpiShowName="HTTP登录成功次数" scale="1" molecule="_HttpSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="14" xlsRows="5" markKey="DHL_2"/>			
+		<kpi kpiShowName="HTTP登录成功率" scale="100" molecule="_HttpSuccess" denominator="_HttpTry" units="%" paramType="3" xlsSheets="1" xlsCols="15" xlsRows="5" markKey="DHL_3"/>	
+		<kpi kpiShowName="HTTP登录平均时延" scale="1" molecule="_HttpDelay" denominator="_HttpSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="16" xlsRows="5" markKey="DHL_4"/>	
+
+		<kpi kpiShowName="HTTP刷新尝试次数" scale="1" molecule="_HttpRefreshTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="17" xlsRows="5" markKey="DHR_1"/>			
+		<kpi kpiShowName="HTTP刷新成功次数" scale="1" molecule="_HttpRefreshSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="18" xlsRows="5" markKey="DHR_2"/>	
+		<kpi kpiShowName="HTTP刷新成功率" scale="100" molecule="_HttpRefreshSuccess" denominator="_HttpRefreshTry" units="%" paramType="3" xlsSheets="1" xlsCols="19" xlsRows="5" markKey="DHR_3"/>	
+		<kpi kpiShowName="HTTP刷新平均时延" scale="1" molecule="_HttpRefreshDelay" denominator="_HttpRefreshSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="20" xlsRows="5" markKey="DHR_4"/>
+			
+		<kpi kpiShowName="HTTP下载尝试次数" scale="1" molecule="_HttpDownTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="21" xlsRows="5" markKey="DHD_1"/>	
+		<kpi kpiShowName="HTTP下载成功次数" scale="1" molecule="_HttpDownSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="22" xlsRows="5" markKey="DHD_2"/>	
+		<kpi kpiShowName="HTTP下载成功率" scale="100" molecule="_HttpDownSuccess" denominator="_HttpDownTry" units="%" paramType="3" xlsSheets="1" xlsCols="23" xlsRows="5" markKey="DHD_3"/>			
+		<kpi kpiShowName="HTTP下载平均速率" scale="1" molecule="_httpDownTotalBytes" denominator="_httpDownTotalTime" units="kbps" paramType="3" xlsSheets="1" xlsCols="24" xlsRows="5" markKey="DHD_4"/>	
+
+		<kpi kpiShowName="LTEAttach尝试次数" scale="1" molecule="_lteAttachRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="25" xlsRows="5" markKey="DLA_1"/>
+		<kpi kpiShowName="LTEAttach成功率" scale="100" molecule="_lteAttachSuccess" denominator="_lteAttachRequest" units="%" paramType="3" xlsSheets="1" xlsCols="26" xlsRows="5" markKey="DLA_2"/>	
+		<kpi kpiShowName="LTEAttach平均时延" scale="1" molecule="_lteAttachDelay" denominator="_lteAttachSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="27" xlsRows="5" markKey="DLA_3"/>
+		
+		<kpi kpiShowName="LTE覆盖率" scale="100" molecule="_LTErsrp" denominator="_LTErsrpCount" units="%" paramType="4" xlsSheets="1" xlsCols="28" xlsRows="5" markKey="DCL_1"/>	
+		<kpi kpiShowName="LTE总里程" scale="0.0001" molecule="_LteTotalMileage" denominator="" units="km" paramType="5" xlsSheets="1" xlsCols="29" xlsRows="5" markKey="DCL_2"/>	
+		<kpi kpiShowName="LTE覆盖里程" scale="0.0001" molecule="_LteCoverMileage" denominator="" units="km" paramType="5" xlsSheets="1" xlsCols="30" xlsRows="5" markKey="DCL_3"/>	
+		<kpi kpiShowName="LTE里程覆盖率" scale="100" molecule="_LteCoverMileage" denominator="_LteTotalMileage" units="%" paramType="4" xlsSheets="1" xlsCols="31" xlsRows="5" markKey="DCL_4"/>	
+		<kpi kpiShowName="LTE搜网时延" scale="1" molecule="_lteSearchDelay" denominator="_lteAttachRequest" units="ms" paramType="4" xlsSheets="1" xlsCols="32" xlsRows="5" markKey="DCL_5"/>	
+	</DTParams-C>
+	<CQTParams-C>
+		<kpi kpiShowName="MO尝试次数" scale="1" molecule="_moTrys" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="V23O_1"/>
+		<kpi kpiShowName="MT尝试次数" scale="1" molecule="_mtTrys" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="9" markKey="V23T_1"/>
+		<kpi kpiShowName="MO接通次数" scale="1" molecule="_moConnects" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="10" markKey="V23O_2"/>
+		<kpi kpiShowName="MT接通次数" scale="1" molecule="_mtConnects" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="10" markKey="V23T_2"/>
+		<kpi kpiShowName="MO接通率" scale="100" molecule="_moConnects" denominator="_moTrys" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="11" markKey="V23O_3"/>
+		<kpi kpiShowName="MT接通率" scale="100" molecule="_mtConnects" denominator="_mtTrys" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="11" markKey="V23T_3"/>
+		<kpi kpiShowName="MO掉话率" scale="100" molecule="_moDropcalls" denominator="_moConnects" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="12" markKey="V23O_4"/>
+		<kpi kpiShowName="MT掉话率" scale="100" molecule="_mtDropcalls" denominator="_mtConnects" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="12" markKey="V23T_4"/>
+		<kpi kpiShowName="MO平均呼叫时延" scale="0.001" molecule="_moCalldelay" denominator="_moDelaytimes" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="13" markKey="V23O_5"/>
+		<kpi kpiShowName="MT平均呼叫时延" scale="0.001" molecule="_mtCalldelay" denominator="_mtDelaytimes" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="13" markKey="V23T_5"/>
+
+		<kpi kpiShowName="PESQScore" scale="1" molecule="_pesq_score" denominator="_pesq_scoreCount" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="16" markKey="VMO_1"/>
+		<kpi kpiShowName="PESQMOS" scale="1" molecule="_pesq_mos" denominator="_pesq_mosCount" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="17" markKey="VMO_2"/>			
+
+		<kpi kpiShowName="Ping尝试次数" scale="1" molecule="_pingTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="2" xlsRows="5" markKey="DPI_1"/>		
+		<kpi kpiShowName="Ping成功率" scale="100" molecule="_pingSuccess" denominator="_pingTry" units="%" paramType="3" xlsSheets="1" xlsCols="3" xlsRows="5" markKey="DPI_2"/>	
+		<kpi kpiShowName="Ping平均时延" scale="1" molecule="_pingDelay" denominator="_pingSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="4" xlsRows="5" markKey="DPI_3"/>	
+		
+		<kpi kpiShowName="FTP下载尝试次数" scale="1" molecule="_downtrys" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="5" xlsRows="5" markKey="DFD_1"/>	
+		<kpi kpiShowName="FTP下载成功次数" scale="1" molecule="_downSuccs" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="6" xlsRows="5" markKey="DFD_2"/>	
+		<kpi kpiShowName="FTP下载掉线率" scale="100" molecule="_downDrops" denominator="_downtrys" units="%" paramType="3" xlsSheets="1" xlsCols="7" xlsRows="5" markKey="DFD_3"/>			
+		<kpi kpiShowName="FTP下载平均速率" scale="0.9765625" molecule="_downCurrentSize" denominator="_downCurrentTimes" units="kbps" paramType="3" xlsSheets="1" xlsCols="8" xlsRows="5" markKey="DFD_4"/>	
+		<kpi kpiShowName="FTP上传尝试次数" scale="1" molecule="_uptrys" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="9" xlsRows="5" markKey="DFU_1"/>	
+		<kpi kpiShowName="FTP上传成功次数" scale="1" molecule="_upSuccs" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="10" xlsRows="5" markKey="DFU_2"/>
+		<kpi kpiShowName="FTP上传掉线率" scale="100" molecule="_upDrops" denominator="_uptrys" units="%" paramType="3" xlsSheets="1" xlsCols="11" xlsRows="5" markKey="DFU_3"/>	
+		<kpi kpiShowName="FTP上传平均速率" scale="0.9765625" molecule="_upCurrentSize" denominator="_upCurrentTimes" units="" paramType="3" xlsSheets="1" xlsCols="12" xlsRows="5" markKey="DFU_4"/>
+			
+		<kpi kpiShowName="HTTP登录尝试次数" scale="1" molecule="_HttpTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="13" xlsRows="5" markKey="DHL_1"/>	
+		<kpi kpiShowName="HTTP登录成功次数" scale="1" molecule="_HttpSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="14" xlsRows="5" markKey="DHL_2"/>			
+		<kpi kpiShowName="HTTP登录成功率" scale="100" molecule="_HttpSuccess" denominator="_HttpTry" units="%" paramType="3" xlsSheets="1" xlsCols="15" xlsRows="5" markKey="DHL_3"/>	
+		<kpi kpiShowName="HTTP登录平均时延" scale="1" molecule="_HttpDelay" denominator="_HttpSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="16" xlsRows="5" markKey="DHL_4"/>	
+
+		<kpi kpiShowName="HTTP刷新尝试次数" scale="1" molecule="_HttpRefreshTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="17" xlsRows="5" markKey="DHR_1"/>			
+		<kpi kpiShowName="HTTP刷新成功次数" scale="1" molecule="_HttpRefreshSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="18" xlsRows="5" markKey="DHR_2"/>	
+		<kpi kpiShowName="HTTP刷新成功率" scale="100" molecule="_HttpRefreshSuccess" denominator="_HttpRefreshTry" units="%" paramType="3" xlsSheets="1" xlsCols="19" xlsRows="5" markKey="DHR_3"/>	
+		<kpi kpiShowName="HTTP刷新平均时延" scale="1" molecule="_HttpRefreshDelay" denominator="_HttpRefreshSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="20" xlsRows="5" markKey="DHR_4"/>
+			
+		<kpi kpiShowName="HTTP下载尝试次数" scale="1" molecule="_HttpDownTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="21" xlsRows="5" markKey="DHD_1"/>	
+		<kpi kpiShowName="HTTP下载成功次数" scale="1" molecule="_HttpDownSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="22" xlsRows="5" markKey="DHD_2"/>	
+		<kpi kpiShowName="HTTP下载成功率" scale="100" molecule="_HttpDownSuccess" denominator="_HttpDownTry" units="%" paramType="3" xlsSheets="1" xlsCols="23" xlsRows="5" markKey="DHD_3"/>			
+		<kpi kpiShowName="HTTP下载平均速率" scale="1" molecule="_httpDownTotalBytes" denominator="_httpDownTotalTime" units="kbps" paramType="3" xlsSheets="1" xlsCols="24" xlsRows="5" markKey="DHD_4"/>	
+		
+		<kpi kpiShowName="LTEAttach尝试次数" scale="1" molecule="_lteAttachRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="25" xlsRows="5" markKey="DLA_1"/>
+		<kpi kpiShowName="LTEAttach成功率" scale="100" molecule="_lteAttachSuccess" denominator="_lteAttachRequest" units="%" paramType="3" xlsSheets="1" xlsCols="26" xlsRows="5" markKey="DLA_2"/>	
+		<kpi kpiShowName="LTEAttach平均时延" scale="1" molecule="_lteAttachDelay" denominator="_lteAttachSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="27" xlsRows="5" markKey="DLA_3"/>
+			
+		<kpi kpiShowName="LTE覆盖率" scale="100" molecule="_LTErsrp" denominator="_LTErsrpCount" units="%" paramType="4" xlsSheets="1" xlsCols="28" xlsRows="5" markKey="DCL_1"/>	
+		<kpi kpiShowName="LTE搜网时延" scale="1" molecule="_lteSearchDelay" denominator="_lteAttachRequest" units="ms" paramType="4" xlsSheets="1" xlsCols="29" xlsRows="5" markKey="DCL_5"/>	
+	</CQTParams-C>
+</KPIList>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<menu  
+  xmlns:android="http://schemas.android.com/apk/res/android">  
+  	<item android:id="@+id/main_menu_help"   
+          android:title="@string/main_menu_help"  
+          android:icon="@android:drawable/ic_menu_preferences" />   
+    <item android:id="@+id/main_menu_reset"   
+          android:title="@string/main_menu_resetdefault"  
+          android:icon="@android:drawable/ic_menu_revert"/>   
+    <!-- <item android:id="@+id/main_menu_about"   
+          android:title="@string/main_menu_about"   
+          android:icon="@android:drawable/ic_menu_myplaces" />  
+    <item android:id="@+id/main_menu_exit"   
+          android:title="@string/main_menu_exit"   
+          android:icon="@android:drawable/ic_lock_power_off" />  
+     -->
+</menu>  

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>  
+
+<LinearLayout   
+    android:id="@+id/RelativeLayout01"   
+    android:layout_width="fill_parent"   
+    xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:layout_height="wrap_content"   
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:background="@color/app_main_bg_color"
+    >  
+    
+ <RelativeLayout 
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:minHeight="56dip"
+     android:paddingLeft="8dip" 
+     android:paddingRight="8dip"
+     android:id="@+id/item_llyt"
+     >
+     
+     <TextView 
+	     android:id="@+id/channel_txt"
+         android:layout_marginLeft="8dip"
+	   		android:layout_gravity="center_vertical"
+	     android:layout_height="wrap_content"
+	     android:layout_width="wrap_content"
+	     android:singleLine="true"
+	     android:textSize="@dimen/app_content_txt_size"
+	     android:textColor="@color/app_main_text_color"
+		 android:text="Ftpsssssssssssssssssssssss"
+		 android:layout_centerVertical="true"
+     />
+     <ImageView 
+            android:id="@+id/delete_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:src="@drawable/controlbar_clear"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dip"
+            />
+     
+ </RelativeLayout>
+		    
+</LinearLayout>  

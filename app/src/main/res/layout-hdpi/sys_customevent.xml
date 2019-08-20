@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/task_attach_title"
+        layout="@layout/basic_title" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dip"
+        android:layout_weight="50">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dip"
+            android:background="@color/app_main_bg_color"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_list_item_bg">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_alarm_descrition" />
+
+                <EditText
+                    android:id="@+id/edit_name"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dip"
+                    android:inputType="text"
+                    android:maxLength="120"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <View style="@style/setting_divider" />
+
+            <RelativeLayout
+                android:id="@+id/rl_signaling_compare"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_list_item_bg">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/tv_signaling_compare" />
+
+                <CheckBox
+                    android:id="@+id/check_signaling_compare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/switch_button_bg" />
+            </RelativeLayout>
+
+            <View style="@style/setting_divider" />
+
+            <RelativeLayout
+                android:id="@+id/setting_alarm_define"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_list_item_bg">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_alarm_define_event" />
+
+                <TextView
+                    android:id="@+id/textView_define"
+                    style="@style/setting_sort_right_text_2"
+                    android:text="Msg1->Msg2:Delay" />
+            </RelativeLayout>
+
+            <!--自定义图案-->
+            <View style="@style/setting_divider" />
+
+            <RelativeLayout
+                android:id="@+id/setting_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_list_item_bg">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_alarm_define_icon" />
+
+                <ImageView
+                    android:id="@+id/iv_define_icon"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp" />
+            </RelativeLayout>
+
+            <!-- 网络告警设置 -->
+
+            <View style="@style/setting_divider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_list_item_bg">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/info_alarmmsg" />
+
+                <CheckBox
+                    android:id="@+id/check_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/switch_button_bg" />
+            </RelativeLayout>
+
+            <View style="@style/setting_divider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_list_item_bg">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_alarm_map" />
+
+                <CheckBox
+                    android:id="@+id/check_alarm_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/switch_button_bg" />
+            </RelativeLayout>
+
+            <View style="@style/setting_divider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_list_item_bg">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_alarm_chart" />
+
+                <CheckBox
+                    android:id="@+id/check_alarm_chart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/switch_button_bg" />
+            </RelativeLayout>
+
+            <View style="@style/setting_divider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_list_item_bg">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/total_total" />
+
+                <CheckBox
+                    android:id="@+id/check_alarm_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/switch_button_bg" />
+            </RelativeLayout>
+
+            <!-- 网络告警设置 -->
+
+            <View style="@style/setting_divider" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/task_menu_buttom" />
+
+</LinearLayout>

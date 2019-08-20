@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="#F6F6F6"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:focusable="false"
+    >
+  	<TextView 
+  	    android:id="@+id/go_or_nogo_setting_parent_item_view_txt_name"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    style="@style/setting_sort_left_text"
+  	    android:textColor="@color/black"
+  	    android:layout_centerVertical="true"
+  	    android:text="FTP Download"/>
+  	<ImageView 
+  	    android:id="@+id/go_or_nogo_setting_parent_item_view_img_add"
+  	    android:layout_width="30dp"
+  	    android:layout_height="30dp"
+  	    android:layout_centerVertical="true"
+  	    android:src="@drawable/add"
+  	    android:layout_alignParentRight="true"
+  	    android:layout_marginRight="5dp"
+  	    />
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:background="@color/app_title_bg_color"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/pointer"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/task_test_main_bg"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:src="@drawable/navi_back" />
+
+        <TextView
+            android:id="@+id/title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/pointer"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="@string/act_info"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_first_title_txt_size" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ControlBar"
+        android:layout_below="@id/title_layout" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/base_list_item_bg"
+            android:text="@string/total_export_str"
+            android:textColor="@drawable/textview_states" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/task_content_group_bg" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/base_list_item_bg"
+            android:text="@string/total_reportfile_str"
+            android:textColor="@drawable/textview_states"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/circleProgress_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#3f000000"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <com.walktour.framework.view.CircleProgress
+                android:id="@+id/circleProgress"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true" />
+
+            <com.walktour.framework.view.FlashingView
+                android:id="@+id/flashView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	    <string-array name="ftp1">
+	        <item name="on">开</item>
+	        <item name="off">关</item>
+    	</string-array>
+    	
+    	<string-array name="fet">
+			<item name="on">开</item>
+	        <item name="off">关</item>
+		</string-array>
+    	
+    	<ftp name="dataupload">
+		<ip>172.22.80.188</ip>
+		<port>21</port>
+		<user>user</user>
+		<passWord>don't_quess_me,haha</passWord>
+	</ftp>
+	
+	<ftp name="datadownload">
+		<ip>172.22.80.187</ip>
+		<port>21</port>
+		<user>user</user>
+		<passWord>*******</passWord>
+	</ftp>
+	
+	<ftp name="datadownload">
+		<ip>172.22.80.187</ip>
+		<port>21</port>
+		<user>user</user>
+		<passWord>*******</passWord>
+	</ftp>	
+	
+</resources>

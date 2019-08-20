@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/setting_upload_ftp_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/base_list_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/sys_setting_kpi_task_str" />
+        
+        <TextView
+            android:id="@+id/kpi_setting_task_id"
+            android:text="testIdle"
+            android:textColor="@color/info_param_color"
+            style="@style/setting_sort_right_text"/>
+
+	     <View style="@style/setting_divider" android:layout_below="@+id/kpi_setting_task_id"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/setting_upload_ftp_layout_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/base_list_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/sys_setting_kpi_kpi_str" />
+        
+        
+        <TextView
+            android:id="@+id/kpi_setting_kpi_id"
+            android:text="testIdle"
+            android:textColor="@color/info_param_color"
+            style="@style/setting_sort_right_text"/>
+
+	     <View style="@style/setting_divider" android:layout_below="@+id/kpi_setting_kpi_id"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/setting_upload_ftp_layout_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/base_list_item_bg"
+        >
+
+        <TextView
+            android:id="@+id/kpi_setting_formula_name"
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/sys_setting_kpi_formula_str" />
+
+        <com.walktour.framework.ui.BasicSpinner 
+            		android:id="@+id/kpi_setting_formula_id"
+             		android:layout_alignParentRight="true"
+                    style="@style/task_drop_view"
+                    android:layout_marginRight="5dip"
+                    android:layout_centerInParent="true"
+                    android:drawSelectorOnTop="true"
+        />
+	     <View style="@style/setting_divider" android:layout_below="@+id/kpi_setting_formula_name"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/setting_upload_ftp_layout_3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/base_list_item_bg"
+        >
+
+        <TextView
+            android:id="@+id/show_unit"
+            style="@style/setting_sort_left_text_2"
+             />
+
+        <EditText
+	        android:id="@+id/kpi_setting_threshold_id"
+	        android:singleLine="true"
+	        android:maxLength="7"
+	        android:inputType="numberDecimal"
+	        android:layout_width="145dip"
+	        android:layout_marginRight="7dip"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerInParent="true"
+	        style="@style/task_edit_view"
+	        />
+	     <View style="@style/setting_divider" android:layout_below="@+id/show_unit" android:visibility="gone"/>
+    </RelativeLayout>
+    
+
+</LinearLayout>

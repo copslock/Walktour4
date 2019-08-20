@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KPIList>
+	<DTParams>
+		<kpi kpiShowName="1	DT测试概述" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="1.1 测试目的" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="基于主流商用手机，从用户感知角度，进行语音和数据业务的室外覆盖和质量测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="1.2 测试项目" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="1.3 测试设备" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2 测试结果汇总" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.1 语音互拨测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.1.1 23G语音" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="MO尝试次数" scale="1" molecule="_moTrys" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="MT尝试次数" scale="1" molecule="_mtTrys" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="9" markKey="1004009"/>
+		<kpi kpiShowName="MO接通次数" scale="1" molecule="_moConnects" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="10" markKey="1003010"/>
+		<kpi kpiShowName="MT接通次数" scale="1" molecule="_mtConnects" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="10" markKey="1004010"/>
+		<kpi kpiShowName="MO接通率" scale="100" molecule="_moConnects" denominator="_moTrys" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="11" markKey="1003011"/>
+		<kpi kpiShowName="MT接通率" scale="100" molecule="_mtConnects" denominator="_moTrys" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="11" markKey="1004011"/>
+		<kpi kpiShowName="MO掉话率" scale="100" molecule="_moDropcalls" denominator="_moConnects" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="12" markKey="1003012"/>
+		<kpi kpiShowName="MT掉话率" scale="100" molecule="_mtDropcalls" denominator="_mtConnects" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="12" markKey="1004012"/>
+		<kpi kpiShowName="MO平均呼叫时延" scale="0.001" molecule="_moCalldelay" denominator="_moDelaytimes" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="13" markKey="1003013"/>
+		<kpi kpiShowName="MT平均呼叫时延" scale="0.001" molecule="_mtCalldelay" denominator="_mtDelaytimes" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="13" markKey="1004013"/>
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.1.2 CSFB语音" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>		
+		<kpi kpiShowName="MO CSFB尝试次数" scale="1" molecule="_csfb_mo_request" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="16" markKey="1003016"/>
+		<kpi kpiShowName="MT CSFB尝试次数" scale="1" molecule="_csfb_mt_request" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="16" markKey="1004016"/>				
+		<kpi kpiShowName="MO CSFB建立次数" scale="1" molecule="_csfb_mo_Established" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="17" markKey=" 1003017"/>
+		<kpi kpiShowName="MT CSFB建立次数" scale="1" molecule="_csfb_mt_Established" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="17" markKey=" 1004017"/>
+		<kpi kpiShowName="MO CSFB建立成功率" scale="100" molecule="_csfb_mo_Established" denominator="_csfb_mo_request" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="18" markKey=" 1003018"/>
+		<kpi kpiShowName="MT CSFB建立成功率" scale="100" molecule="_csfb_mt_Established" denominator="_csfb_mt_request" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="18" markKey=" 1004018"/>	
+		<kpi kpiShowName="MO CSFB建立时延" scale="0.001" molecule="_csfb_mo_FallbackDelay" denominator="_csfb_mo_proceeding" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="19" markKey=" 1003019"/>
+		<kpi kpiShowName="MT CSFB建立时延" scale="0.001" molecule="_csfb_mt_FallbackDelay" denominator="_csfb_mt_proceeding" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="19" markKey=" 1004019"/>
+		<kpi kpiShowName="MO CSFB时延" scale="0.001" molecule="_csfb_mo_SuccessDelay" denominator="_csfb_mo_Established" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="20" markKey=" 1003020"/>
+		<kpi kpiShowName="MT CSFB时延" scale="0.001" molecule="_csfb_mt_SuccessDelay" denominator="_csfb_mt_Established" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="20" markKey=" 1004020"/>
+		<kpi kpiShowName="MO CSFB掉话次数" scale="1" molecule="_csfb_mo_drop" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="21" markKey="1003021"/>
+		<kpi kpiShowName="MT CSFB掉话次数" scale="1" molecule="_csfb_mt_drop" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="21" markKey="1004021"/>
+		<kpi kpiShowName="MO CSFB掉话率" scale="100" molecule="_csfb_mo_drop" denominator="_csfb_mo_Established" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="22" markKey="1003022"/>
+		<kpi kpiShowName="MT CSFB掉话率" scale="100" molecule="_csfb_mt_drop" denominator="_csfb_mt_Established" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="22" markKey="1004022"/>
+		
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.1.3 MOS质量" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="PESQScore" scale="1" molecule="_pesq_score" denominator="_pesq_scoreCount" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="25" markKey="1003025"/>
+		<kpi kpiShowName="PESQMOS" scale="1" molecule="_pesq_mos" denominator="_pesq_mosCount" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="26" markKey="1003026"/>			
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.1.4 覆盖质量" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="MO GSM语音质量" scale="100" molecule="_moRxQual1s" denominator="_moTotalRxQuals" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="31" markKey="1003031"/>
+		<kpi kpiShowName="MT GSM语音质量" scale="100" molecule="_mtRxQual1s" denominator="_mtTotalRxQuals" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="31" markKey="1004031"/>			
+		<kpi kpiShowName="MO GSM覆盖率1" scale="100" molecule="_moRxLev1s" denominator="_moTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="32" markKey="1003032"/>
+		<kpi kpiShowName="MT GSM覆盖率1" scale="100" molecule="_mtRxLev1s" denominator="_mtTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="32" markKey="1004032"/>
+		<kpi kpiShowName="MO GSM覆盖率2" scale="100" molecule="_moRxLev2s" denominator="_moTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="33" markKey="1003033"/>
+		<kpi kpiShowName="MT GSM覆盖率2" scale="100" molecule="_mtRxLev2s" denominator="_moTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="33" markKey="1004033"/>
+		<kpi kpiShowName="MO GSM切换成功率" scale="100" molecule="_moGsmSwitchSuccs" denominator="_moGsmSwitch" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="34" markKey="1003034"/>
+		<kpi kpiShowName="MT GSM切换成功率" scale="100" molecule="_mtGsmSwitchSuccs" denominator="_mtGsmSwitch" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="34" markKey="1004034"/>				
+
+		<kpi kpiShowName="MO TD测试时长" scale="0.001" molecule="_moTimeLongTD" denominator="" units="s" paramType="5" xlsSheets="0" xlsCols="3" xlsRows="36" markKey="1003036"/>
+		<kpi kpiShowName="MT TD测试时长" scale="0.001" molecule="_mtTimeLongTD" denominator="" units="s" paramType="5" xlsSheets="0" xlsCols="4" xlsRows="36" markKey="1004036"/>
+		<kpi kpiShowName="MO TD语音质量" scale="100" molecule="_moTDBler03s" denominator="_moTDBlerCount" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="37" markKey="1003037"/>
+		<kpi kpiShowName="MT TD语音质量" scale="100" molecule="_mtTDBler03s" denominator="_mtTDBlerCount" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="37" markKey="1004037"/>
+		<kpi kpiShowName="MO TD覆盖率1" scale="100" molecule="_moPccpchRscp1" denominator="_moPccpchRscpCount" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="38" markKey="1003038"/>
+		<kpi kpiShowName="MT TD覆盖率1" scale="100" molecule="_mtPccpchRscp1" denominator="_mtPccpchRscpCount" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="38" markKey="1004038"/>
+		<kpi kpiShowName="MO TD覆盖率2" scale="100" molecule="_moPccpchRscp2" denominator="_moPccpchRscpCount" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="39" markKey="1003039"/>
+		<kpi kpiShowName="MT TD覆盖率2" scale="100" molecule="_mtPccpchRscp2" denominator="_mtPccpchRscpCount" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="39" markKey="1004039"/>
+		<kpi kpiShowName="MO TD覆盖里程" scale="0.0001" molecule="_moTdCoverMileage" denominator="" units="km" paramType="5" xlsSheets="0" xlsCols="3" xlsRows="40" markKey="1003040"/>
+		<kpi kpiShowName="MT TD覆盖里程" scale="0.0001" molecule="_mtTdCoverMileage" denominator="" units="km" paramType="5" xlsSheets="0" xlsCols="4" xlsRows="40" markKey="1004040"/>
+		<kpi kpiShowName="MO TD总里程" scale="0.0001" molecule="_moTdTotalMileage" denominator="" units="km" paramType="5" xlsSheets="0" xlsCols="3" xlsRows="41" markKey="1003041"/>
+		<kpi kpiShowName="MT TD总里程" scale="0.0001" molecule="_mtTdTotalMileage" denominator="" units="km" paramType="5" xlsSheets="0" xlsCols="4" xlsRows="41" markKey="1004041"/>
+		<kpi kpiShowName="MO TD里程覆盖率" scale="100" molecule="_moTdCoverMileage" denominator="_moTdTotalMileage" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="42" markKey="1003042"/>
+		<kpi kpiShowName="MT TD里程覆盖率" scale="100" molecule="_mtTdCoverMileage" denominator="_mtTdTotalMileage" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="42" markKey="1004042"/>
+		<kpi kpiShowName="MO TD接力切换成功率" scale="100" molecule="_moTDBatonHandoverSuccess" denominator="_moTDBatonHandoverRequest" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="43" markKey="1003043"/>
+		<kpi kpiShowName="MT TD接力切换成功率" scale="100" molecule="_mtTDBatonHandoverSuccess" denominator="_mtTDBatonHandoverRequest" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="43" markKey="1004043"/>
+		<kpi kpiShowName="MO TD硬切换成功率" scale="100" molecule="_moTDHardHandoverSuccess" denominator="_moTDHardHandoverRequest" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="44" markKey="1003044"/>
+		<kpi kpiShowName="MT TD硬切换成功率" scale="100" molecule="_mtTDHardHandoverSuccess" denominator="_moTDHardHandoverSuccess" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="44" markKey="1004044"/>			
+		<kpi kpiShowName="MO TD里程互操作比" scale="0.0001" molecule="_moTdCoverMileage" denominator="_moReSetGSM2TD" units="km" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="45" markKey="1003045"/>
+		<kpi kpiShowName="MT TD里程互操作比" scale="0.0001" molecule="_moTdTotalMileage" denominator="_mtReSetGSM2TD" units="km" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="45" markKey="1004045"/>			
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2 数据业务测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2.1 Ping测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="Ping尝试次数" scale="1" molecule="_pingTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="2" xlsRows="5" markKey="2002005"/>		
+		<kpi kpiShowName="Ping成功率" scale="100" molecule="_pingSuccess" denominator="_pingTry" units="%" paramType="3" xlsSheets="1" xlsCols="3" xlsRows="5" markKey="2003005"/>	
+		<kpi kpiShowName="Ping平均时延" scale="1" molecule="_pingDelay" denominator="_pingSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="4" xlsRows="5" markKey="2004005"/>	
+		
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2.2 FTP下载测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="FTP下载尝试次数" scale="1" molecule="_downtrys" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="5" xlsRows="5" markKey="2005005"/>	
+		<kpi kpiShowName="FTP下载成功次数" scale="1" molecule="_downSuccs" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="6" xlsRows="5" markKey="2006005"/>	
+		<kpi kpiShowName="FTP下载掉线率" scale="100" molecule="_downDrops" denominator="_downSuccs" units="%" paramType="3" xlsSheets="1" xlsCols="7" xlsRows="5" markKey="2007005"/>			
+		<kpi kpiShowName="FTP下载平均速率" scale="1" molecule="_downCurrentSize" denominator="_downCurrentTimes" units="kbps" paramType="3" xlsSheets="1" xlsCols="8" xlsRows="5" markKey="2008005"/>	
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2.3 FTP上传测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="FTP上传尝试次数" scale="1" molecule="_uptrys" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="9" xlsRows="5" markKey="2009005"/>	
+		<kpi kpiShowName="FTP上传成功次数" scale="1" molecule="_upSuccs" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="10" xlsRows="5" markKey="2010005"/>
+		<kpi kpiShowName="FTP上传掉线率" scale="100" molecule="_upDrops" denominator="_upSuccs" units="%" paramType="3" xlsSheets="1" xlsCols="11" xlsRows="5" markKey="2011005"/>	
+		<kpi kpiShowName="FTP上传平均速率" scale="1" molecule="_upCurrentSize" denominator="_upCurrentTimes" units="" paramType="3" xlsSheets="1" xlsCols="12" xlsRows="5" markKey="2012005"/>
+			
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2.4 HTTP登录测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="HTTP登录尝试次数" scale="1" molecule="_HttpTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="13" xlsRows="5" markKey="2013005"/>	
+		<kpi kpiShowName="HTTP登录成功次数" scale="1" molecule="_HttpSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="14" xlsRows="5" markKey="2014005"/>			
+		<kpi kpiShowName="HTTP登录成功率" scale="100" molecule="_HttpSuccess" denominator="_HttpTry" units="%" paramType="3" xlsSheets="1" xlsCols="15" xlsRows="5" markKey="2015005"/>	
+		<kpi kpiShowName="HTTP登录平均时延" scale="1" molecule="_HttpDelay" denominator="_HttpSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="16" xlsRows="5" markKey="2016005"/>	
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2.5 HTTP刷新测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="HTTP刷新尝试次数" scale="1" molecule="_HttpRefreshTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="17" xlsRows="5" markKey="2017005"/>			
+		<kpi kpiShowName="HTTP刷新成功次数" scale="1" molecule="_HttpRefreshSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="18" xlsRows="5" markKey="2018005"/>	
+		<kpi kpiShowName="HTTP刷新成功率" scale="100" molecule="_HttpRefreshSuccess" denominator="_HttpRefreshTry" units="%" paramType="3" xlsSheets="1" xlsCols="19" xlsRows="5" markKey="2019005"/>	
+		<kpi kpiShowName="HTTP刷新平均时延" scale="1" molecule="_HttpRefreshDelay" denominator="_HttpRefreshSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="20" xlsRows="5" markKey="2020005"/>
+			
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2.6 HTTP下载测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="HTTP下载尝试次数" scale="1" molecule="_HttpDownTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="21" xlsRows="5" markKey="2021005"/>	
+		<kpi kpiShowName="HTTP下载成功次数" scale="1" molecule="_HttpDownSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="22" xlsRows="5" markKey="2022005"/>	
+		<kpi kpiShowName="HTTP下载成功率" scale="100" molecule="_HttpDownSuccess" denominator="_HttpDownTry" units="%" paramType="3" xlsSheets="1" xlsCols="23" xlsRows="5" markKey="2023005"/>			
+		<kpi kpiShowName="HTTP下载平均速率" scale="1" molecule="_httpDownTotalBytes" denominator="_httpDownTotalTime" units="kbps" paramType="3" xlsSheets="1" xlsCols="24" xlsRows="5" markKey="2024005"/>	
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2.7 Attach测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="23G Attach尝试次数" scale="1" molecule="_attachRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="25" xlsRows="5" markKey="2025005"/>			
+		<kpi kpiShowName="23G Attach成功率" scale="100" molecule="_attachSuccess" denominator="_attachRequest" units="%" paramType="3" xlsSheets="1" xlsCols="26" xlsRows="5" markKey="2026005"/>	
+		<kpi kpiShowName="23G Attach平均时延" scale="1" molecule="_attachDelay" denominator="_attachSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="27" xlsRows="5" markKey="2027005"/>	
+		<kpi kpiShowName="LTE Attach尝试次数" scale="1" molecule="_lteAttachRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="28" xlsRows="5" markKey="2028005"/>
+		<kpi kpiShowName="LTE Attach成功率" scale="100" molecule="_lteAttachSuccess" denominator="_lteAttachRequest" units="%" paramType="3" xlsSheets="1" xlsCols="29" xlsRows="5" markKey="2029005"/>	
+		<kpi kpiShowName="LTE Attach平均时延" scale="1" molecule="_lteAttachDelay" denominator="_lteAttachSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="30" xlsRows="5" markKey="2030005"/>
+			
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2.8 PDP测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="PDP激活尝试次数" scale="1" molecule="_pdpRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="31" xlsRows="5" markKey="2031005"/>			
+		<kpi kpiShowName="PDP激活尝试成功率" scale="100" molecule="_pdpSuccess" denominator="_pdpRequest" units="%" paramType="3" xlsSheets="1" xlsCols="32" xlsRows="5" markKey="2032005"/>	
+		<kpi kpiShowName="PDP激活时间" scale="1" molecule="_pdpDelay" denominator="_pdpSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="33" xlsRows="5" markKey="2033005"/>	
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2.9 LTE覆盖情况" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="LTE覆盖率" scale="100" molecule="_LTErsrp" denominator="_LTErsrpCount" units="%" paramType="4" xlsSheets="1" xlsCols="34" xlsRows="5" markKey="2034005"/>	
+		<kpi kpiShowName="LTE总里程" scale="0.0001" molecule="_LteTotalMileage" denominator="" units="km" paramType="5" xlsSheets="1" xlsCols="35" xlsRows="5" markKey="2035005"/>	
+		<kpi kpiShowName="LTE覆盖里程" scale="0.0001" molecule="_LteCoverMileage" denominator="" units="km" paramType="5" xlsSheets="1" xlsCols="36" xlsRows="5" markKey="2036005"/>	
+		<kpi kpiShowName="LTE里程覆盖率" scale="100" molecule="_LteCoverMileage" denominator="_LteTotalMileage" units="%" paramType="4" xlsSheets="1" xlsCols="37" xlsRows="5" markKey="2037005"/>	
+		<kpi kpiShowName="LTE搜网时延" scale="1" molecule="_lteSearchDelay" denominator="_lteAttachRequest" units="ms" paramType="4" xlsSheets="1" xlsCols="38" xlsRows="5" markKey="2038005"/>	
+	</DTParams>
+	<CQTParams>
+		<kpi kpiShowName="1	CQT测试概述" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="1.1 测试目的" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="基于主流商用手机，从用户感知角度，进行语音和数据业务的室内覆盖和质量测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="1.2 测试项目" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="1.3 测试设备" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2 测试结果汇总" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.1 语音互拨测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.1.1 23G语音" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="MO尝试次数" scale="1" molecule="_moTrys" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="MT尝试次数" scale="1" molecule="_mtTrys" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="9" markKey="1004009"/>
+		<kpi kpiShowName="MO接通次数" scale="1" molecule="_moConnects" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="10" markKey="1003010"/>
+		<kpi kpiShowName="MT接通次数" scale="1" molecule="_mtConnects" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="10" markKey="1004010"/>
+		<kpi kpiShowName="MO接通率" scale="100" molecule="_moConnects" denominator="_moTrys" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="11" markKey="1003011"/>
+		<kpi kpiShowName="MT接通率" scale="100" molecule="_mtConnects" denominator="_moTrys" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="11" markKey="1004011"/>
+		<kpi kpiShowName="MO掉话率" scale="100" molecule="_moDropcalls" denominator="_moConnects" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="12" markKey="1003012"/>
+		<kpi kpiShowName="MT掉话率" scale="100" molecule="_mtDropcalls" denominator="_mtConnects" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="12" markKey="1004012"/>
+		<kpi kpiShowName="MO平均呼叫时延" scale="0.001" molecule="_moCalldelay" denominator="_moDelaytimes" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="13" markKey="1003013"/>
+		<kpi kpiShowName="MT平均呼叫时延" scale="0.001" molecule="_mtCalldelay" denominator="_mtDelaytimes" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="13" markKey="1004013"/>
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.1.2 CSFB语音" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>		
+		<kpi kpiShowName="MO CSFB尝试次数" scale="1" molecule="_csfb_mo_request" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="16" markKey="1003016"/>
+		<kpi kpiShowName="MT CSFB尝试次数" scale="1" molecule="_csfb_mt_request" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="16" markKey="1004016"/>				
+		<kpi kpiShowName="MO CSFB建立次数" scale="1" molecule="_csfb_mo_Established" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="17" markKey=" 1003017"/>
+		<kpi kpiShowName="MT CSFB建立次数" scale="1" molecule="_csfb_mt_Established" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="17" markKey=" 1004017"/>
+		<kpi kpiShowName="MO CSFB建立成功率" scale="100" molecule="_csfb_mo_Established" denominator="_csfb_mo_request" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="18" markKey=" 1003018"/>
+		<kpi kpiShowName="MT CSFB建立成功率" scale="100" molecule="_csfb_mt_Established" denominator="_csfb_mt_request" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="18" markKey=" 1004018"/>	
+		<kpi kpiShowName="MO CSFB建立时延" scale="0.001" molecule="_csfb_mo_FallbackDelay" denominator="_csfb_mo_proceeding" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="19" markKey=" 1003019"/>
+		<kpi kpiShowName="MT CSFB建立时延" scale="0.001" molecule="_csfb_mt_FallbackDelay" denominator="_csfb_mt_proceeding" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="19" markKey=" 1004019"/>
+		<kpi kpiShowName="MO CSFB时延" scale="0.001" molecule="_csfb_mo_SuccessDelay" denominator="_csfb_mo_Established" units="s" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="20" markKey=" 1003020"/>
+		<kpi kpiShowName="MT CSFB时延" scale="0.001" molecule="_csfb_mt_SuccessDelay" denominator="_csfb_mt_Established" units="s" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="20" markKey=" 1004020"/>
+		<kpi kpiShowName="MO CSFB掉话次数" scale="1" molecule="_csfb_mo_drop" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="3" xlsRows="21" markKey="1003021"/>
+		<kpi kpiShowName="MT CSFB掉话次数" scale="1" molecule="_csfb_mt_drop" denominator="" units="" paramType="1" xlsSheets="0" xlsCols="4" xlsRows="21" markKey="1004021"/>
+		<kpi kpiShowName="MO CSFB掉话率" scale="100" molecule="_csfb_mo_drop" denominator="_csfb_mo_Established" units="%" paramType="3" xlsSheets="0" xlsCols="3" xlsRows="22" markKey="1003022"/>
+		<kpi kpiShowName="MT CSFB掉话率" scale="100" molecule="_csfb_mt_drop" denominator="_csfb_mt_Established" units="%" paramType="3" xlsSheets="0" xlsCols="4" xlsRows="22" markKey="1004022"/>
+		
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.1.3 MOS质量" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="PESQScore" scale="1" molecule="_pesq_score" denominator="_pesq_scoreCount" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="25" markKey="1003025"/>
+		<kpi kpiShowName="PESQMOS" scale="1" molecule="_pesq_mos" denominator="_pesq_mosCount" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="26" markKey="1003026"/>			
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.1.4 覆盖质量" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="MO GSM语音质量" scale="100" molecule="_moRxQual1s" denominator="_moTotalRxQuals" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="31" markKey="1003031"/>
+		<kpi kpiShowName="MT GSM语音质量" scale="100" molecule="_mtRxQual1s" denominator="_mtTotalRxQuals" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="31" markKey="1004031"/>			
+		<kpi kpiShowName="MO GSM覆盖率1" scale="100" molecule="_moRxLev1s" denominator="_moTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="32" markKey="1003032"/>
+		<kpi kpiShowName="MT GSM覆盖率1" scale="100" molecule="_mtRxLev1s" denominator="_mtTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="32" markKey="1004032"/>
+		<kpi kpiShowName="MO GSM覆盖率2" scale="100" molecule="_moRxLev2s" denominator="_moTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="33" markKey="1003033"/>
+		<kpi kpiShowName="MT GSM覆盖率2" scale="100" molecule="_mtRxLev2s" denominator="_moTotalRxLevs" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="33" markKey="1004033"/>
+
+		<kpi kpiShowName="MO TD测试时长" scale="0.001" molecule="_moTimeLongTD" denominator="" units="s" paramType="5" xlsSheets="0" xlsCols="3" xlsRows="36" markKey="1003036"/>
+		<kpi kpiShowName="MT TD测试时长" scale="0.001" molecule="_mtTimeLongTD" denominator="" units="s" paramType="5" xlsSheets="0" xlsCols="4" xlsRows="36" markKey="1004036"/>
+		<kpi kpiShowName="MO TD语音质量" scale="100" molecule="_moTDBler03s" denominator="_moTDBlerCount" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="37" markKey="1003037"/>
+		<kpi kpiShowName="MT TD语音质量" scale="100" molecule="_mtTDBler03s" denominator="_mtTDBlerCount" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="37" markKey="1004037"/>
+		<kpi kpiShowName="MO TD覆盖率1" scale="100" molecule="_moPccpchRscp1" denominator="_moPccpchRscpCount" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="38" markKey="1003038"/>
+		<kpi kpiShowName="MT TD覆盖率1" scale="100" molecule="_mtPccpchRscp1" denominator="_mtPccpchRscpCount" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="38" markKey="1004038"/>
+		<kpi kpiShowName="MO TD覆盖率2" scale="100" molecule="_moPccpchRscp2" denominator="_moPccpchRscpCount" units="%" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="39" markKey="1003039"/>
+		<kpi kpiShowName="MT TD覆盖率2" scale="100" molecule="_mtPccpchRscp2" denominator="_mtPccpchRscpCount" units="%" paramType="4" xlsSheets="0" xlsCols="4" xlsRows="39" markKey="1004039"/>
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2 数据业务测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2.1 Ping测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="Ping尝试次数" scale="1" molecule="_pingTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="2" xlsRows="5" markKey="2002005"/>		
+		<kpi kpiShowName="Ping成功率" scale="100" molecule="_pingSuccess" denominator="_pingTry" units="%" paramType="3" xlsSheets="1" xlsCols="3" xlsRows="5" markKey="2003005"/>	
+		<kpi kpiShowName="Ping平均时延" scale="1" molecule="_pingDelay" denominator="_pingSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="4" xlsRows="5" markKey="2004005"/>	
+		
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2.2 FTP下载测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="FTP下载尝试次数" scale="1" molecule="_downtrys" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="5" xlsRows="5" markKey="2005005"/>	
+		<kpi kpiShowName="FTP下载成功次数" scale="1" molecule="_downSuccs" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="6" xlsRows="5" markKey="2006005"/>	
+		<kpi kpiShowName="FTP下载掉线率" scale="100" molecule="_downDrops" denominator="_downSuccs" units="%" paramType="3" xlsSheets="1" xlsCols="7" xlsRows="5" markKey="2007005"/>			
+		<kpi kpiShowName="FTP下载平均速率" scale="1" molecule="_downCurrentSize" denominator="_downCurrentTimes" units="kbps" paramType="3" xlsSheets="1" xlsCols="8" xlsRows="5" markKey="2008005"/>	
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2.3 FTP上传测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="FTP上传尝试次数" scale="1" molecule="_uptrys" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="9" xlsRows="5" markKey="2009005"/>	
+		<kpi kpiShowName="FTP上传成功次数" scale="1" molecule="_upSuccs" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="10" xlsRows="5" markKey="2010005"/>
+		<kpi kpiShowName="FTP上传掉线率" scale="100" molecule="_upDrops" denominator="_upSuccs" units="%" paramType="3" xlsSheets="1" xlsCols="11" xlsRows="5" markKey="2011005"/>	
+		<kpi kpiShowName="FTP上传平均速率" scale="1" molecule="_upCurrentSize" denominator="_upCurrentTimes" units="" paramType="3" xlsSheets="1" xlsCols="12" xlsRows="5" markKey="2012005"/>
+			
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2.4 HTTP登录测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="HTTP登录尝试次数" scale="1" molecule="_HttpTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="13" xlsRows="5" markKey="2013005"/>	
+		<kpi kpiShowName="HTTP登录成功次数" scale="1" molecule="_HttpSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="14" xlsRows="5" markKey="2014005"/>			
+		<kpi kpiShowName="HTTP登录成功率" scale="100" molecule="_HttpSuccess" denominator="_HttpTry" units="%" paramType="3" xlsSheets="1" xlsCols="15" xlsRows="5" markKey="2015005"/>	
+		<kpi kpiShowName="HTTP登录平均时延" scale="1" molecule="_HttpDelay" denominator="_HttpSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="16" xlsRows="5" markKey="2016005"/>	
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2.5 HTTP刷新测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="HTTP刷新尝试次数" scale="1" molecule="_HttpRefreshTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="17" xlsRows="5" markKey="2017005"/>			
+		<kpi kpiShowName="HTTP刷新成功次数" scale="1" molecule="_HttpRefreshSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="18" xlsRows="5" markKey="2018005"/>	
+		<kpi kpiShowName="HTTP刷新成功率" scale="100" molecule="_HttpRefreshSuccess" denominator="_HttpRefreshTry" units="%" paramType="3" xlsSheets="1" xlsCols="19" xlsRows="5" markKey="2019005"/>	
+		<kpi kpiShowName="HTTP刷新平均时延" scale="1" molecule="_HttpRefreshDelay" denominator="_HttpRefreshSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="20" xlsRows="5" markKey="2020005"/>
+			
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2.6 HTTP下载测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="HTTP下载尝试次数" scale="1" molecule="_HttpDownTry" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="21" xlsRows="5" markKey="2021005"/>	
+		<kpi kpiShowName="HTTP下载成功次数" scale="1" molecule="_HttpDownSuccess" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="22" xlsRows="5" markKey="2022005"/>	
+		<kpi kpiShowName="HTTP下载成功率" scale="100" molecule="_HttpDownSuccess" denominator="_HttpDownTry" units="%" paramType="3" xlsSheets="1" xlsCols="23" xlsRows="5" markKey="2023005"/>			
+		<kpi kpiShowName="HTTP下载平均速率" scale="1" molecule="_httpDownTotalBytes" denominator="_httpDownTotalTime" units="kbps" paramType="3" xlsSheets="1" xlsCols="24" xlsRows="5" markKey="2024005"/>	
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2.7 Attach测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="23G Attach尝试次数" scale="1" molecule="_attachRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="25" xlsRows="5" markKey="2025005"/>			
+		<kpi kpiShowName="23G Attach成功率" scale="100" molecule="_attachSuccess" denominator="_attachRequest" units="%" paramType="3" xlsSheets="1" xlsCols="26" xlsRows="5" markKey="2026005"/>	
+		<kpi kpiShowName="23G Attach平均时延" scale="1" molecule="_attachDelay" denominator="_attachSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="27" xlsRows="5" markKey="2027005"/>	
+		<kpi kpiShowName="LTE Attach尝试次数" scale="1" molecule="_lteAttachRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="28" xlsRows="5" markKey="2028005"/>
+		<kpi kpiShowName="LTE Attach成功率" scale="100" molecule="_lteAttachSuccess" denominator="_lteAttachRequest" units="%" paramType="3" xlsSheets="1" xlsCols="29" xlsRows="5" markKey="2029005"/>	
+		<kpi kpiShowName="LTE Attach平均时延" scale="1" molecule="_lteAttachDelay" denominator="_lteAttachSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="30" xlsRows="5" markKey="2030005"/>
+			
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2.8 PDP测试" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="PDP激活尝试次数" scale="1" molecule="_pdpRequest" denominator="" units="" paramType="1" xlsSheets="1" xlsCols="31" xlsRows="5" markKey="2031005"/>			
+		<kpi kpiShowName="PDP激活尝试成功率" scale="100" molecule="_pdpSuccess" denominator="_pdpRequest" units="%" paramType="3" xlsSheets="1" xlsCols="32" xlsRows="5" markKey="2032005"/>	
+		<kpi kpiShowName="PDP激活时间" scale="1" molecule="_pdpDelay" denominator="_pdpSuccess" units="ms" paramType="3" xlsSheets="1" xlsCols="33" xlsRows="5" markKey="2033005"/>	
+
+		<kpi kpiShowName="NULL" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="2.2.9 LTE覆盖情况" scale="1" molecule="_moTrys" denominator="" units="" paramType="4" xlsSheets="0" xlsCols="3" xlsRows="9" markKey="1003009"/>
+		<kpi kpiShowName="LTE覆盖率" scale="100" molecule="_LTErsrp" denominator="_LTErsrpCount" units="%" paramType="4" xlsSheets="1" xlsCols="34" xlsRows="5" markKey="2034005"/>	
+		<kpi kpiShowName="LTE搜网时延" scale="1" molecule="_lteSearchDelay" denominator="_lteAttachRequest" units="ms" paramType="4" xlsSheets="1" xlsCols="38" xlsRows="5" markKey="2038005"/>	
+
+	</CQTParams>
+</KPIList>

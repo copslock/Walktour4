@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_grey_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/task_attach_title"
+        layout="@layout/basic_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/title_layout"
+        android:background="@color/setting_sort_title_bgcolor" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_weight="50" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:background="@color/app_main_bg_color"
+            android:orientation="vertical" >
+
+            <!-- 常规 -->
+
+            <include layout="@layout/task_routine_sort_title" />
+
+            <!-- 任务名称 -->
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_taskname"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/task_taskName" />
+
+                <EditText
+                    android:id="@+id/edit_taskname"
+                    style="@style/task_edit_view"
+                    android:layout_centerVertical="true"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:width="10px" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+            <!-- 测试次数 -->
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_repeat"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:text="@string/task_repeat" />
+
+                <EditText
+                    android:id="@+id/edit_repeat"
+                    style="@style/task_edit_view"
+                    android:layout_centerVertical="true"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <!-- 邮件超时时间 -->
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView 
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:text="@string/task_sendTimeOut" />
+
+                <EditText
+                    android:id="@+id/edit_timeOut_send"
+                    style="@style/task_edit_view"
+                    android:layout_centerVertical="true"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <!-- 邮件超时时间 -->
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView 
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:text="@string/task_receiveTimeOut" />
+
+                <EditText
+                    android:id="@+id/edit_timeOut_receive"
+                    style="@style/task_edit_view"
+                    android:layout_centerVertical="true"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+            
+			<RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_ssl_smtp"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dip"
+                    android:text="@string/task_email_ssl"
+                    android:gravity="left" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/edit_ssl_smtp"
+                    style="@style/task_drop_view"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawSelectorOnTop="true" />
+            </RelativeLayout>
+            <View style="@style/task_listdivider" />
+            
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_emailServer"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:text="@string/task_email_smtp_server" />
+
+                <EditText
+                    android:id="@+id/edit_emailServer"
+                    style="@style/task_edit_view"
+                    android:layout_centerVertical="true"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:text="smtp.163.com" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+            <!-- SMTP服务器端口 -->
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_port"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:text="@string/task_email_smtp_port" />
+
+                <EditText
+                    android:id="@+id/edit_port"
+                    style="@style/task_edit_view"
+                    android:layout_centerVertical="true"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:singleLine="true"
+                    android:text="25" />
+            </RelativeLayout>
+            <View style="@style/task_listdivider" />
+            
+            <!-- SMTP服务器是否需要验证 -->
+            <!-- 
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_smtpAuthentication"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:text="@string/task_smtpAuthentication" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/edit_smtpAuthentication"
+                    style="@style/task_drop_view"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:drawSelectorOnTop="true" />
+            </RelativeLayout>
+             <View style="@style/task_listdivider" />
+ 			-->
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" 
+                    android:text="@string/task_email_server_type_receive"
+                    />
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/edit_serverType_receive"
+                    style="@style/task_drop_view"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:drawSelectorOnTop="true" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_ssl_pop3"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/task_email_ssl"
+                    android:layout_centerVertical="true" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/edit_ssl_pop3"
+                    style="@style/task_drop_view"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:drawSelectorOnTop="true" />
+            </RelativeLayout>
+            <View style="@style/task_listdivider" />
+            
+            <!-- POP3服务器地址 -->
+
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_email_pop_server"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:text="@string/task_email_pop3_server" />
+
+                <EditText
+                    android:id="@+id/edit_email_pop3_server"
+                    style="@style/task_edit_view"
+                    android:layout_centerVertical="true"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:text="pop.163.com" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+            <!-- POP3服务器端口 -->
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_email_pop3_port"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:text="@string/task_email_pop3_port" />
+
+                <EditText
+                    android:id="@+id/edit_email_pop3_port"
+                    style="@style/task_edit_view"
+                    android:layout_centerVertical="true"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:singleLine="true"
+                    android:text="110" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+            
+            <!-- 发件人邮箱 -->
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_account"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:text="@string/task_send_receive_email" />
+
+                <EditText
+                    android:id="@+id/edit_account"
+                    style="@style/task_edit_view"
+                    android:layout_centerVertical="true"
+                    android:maxLength="30"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+            
+            <!-- 发件人邮箱密码 -->
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_password"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:text="@string/task_password" />
+
+                <EditText
+                    android:id="@+id/edit_password"
+                    style="@style/task_edit_view"
+                    android:layout_centerVertical="true"
+                    android:inputType="textPassword"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:text="huan0121" />
+            </RelativeLayout>
+ 			<View style="@style/task_listdivider" />
+ 			
+            <!-- 主题 -->
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_subject"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:text="@string/task_subject" />
+
+                <EditText
+                    android:id="@+id/edit_subject"
+                    style="@style/task_edit_view"
+                    android:layout_centerVertical="true"
+                    android:maxLength="128"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+            <!-- 邮件内容 -->
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_body"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:text="@string/task_body" />
+
+                <EditText
+                    android:id="@+id/edit_body"
+                    style="@style/task_edit_view"
+                    android:layout_centerVertical="true"
+                    android:maxLength="9999"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+            <!-- 邮件附件 -->
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_adjunct"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:text="@string/task_adjunct" />
+
+                <RelativeLayout
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" >
+
+                    <EditText
+                        android:id="@+id/edit_adjunct"
+                        android:layout_width="100dip"
+                        android:layout_height="35dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/btn_view"
+                        android:background="@drawable/app_edt_drop"
+                        android:maxLength="200"
+                        android:paddingLeft="2dip"
+                        android:singleLine="true"
+                        android:textColor="@color/app_main_text_color" />
+
+                    <Button
+                        android:id="@+id/btn_view"
+                        android:layout_width="50dip"
+                        android:layout_height="35dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginTop="3dip"
+                        android:background="@drawable/dialog_btn"
+                        android:text="@string/view"
+                        android:textColor="@color/app_main_text_color" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- 高级 -->
+
+            <include layout="@layout/task_advanced_sort_title" />
+
+            <LinearLayout
+                android:id="@+id/task_advanced_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!-- 邮件测试间隔时间 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txt_interVal"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="left"
+                        android:text="@string/task_interVal" />
+
+                    <EditText
+                        android:id="@+id/edit_interVal"
+                        style="@style/task_edit_view"
+                        android:layout_centerVertical="true"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <View style="@style/task_listdivider" />
+                <!-- 每次断开网络 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txt_disConnect"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="left"
+                        android:text="@string/task_disConnect" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/edit_disConnect"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/task_menu_buttom" />
+
+</LinearLayout>

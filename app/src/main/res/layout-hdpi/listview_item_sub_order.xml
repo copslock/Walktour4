@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 左边图标，右边标题 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="56dip"
+    android:background="@drawable/base_list_item_bg"
+    android:layout_centerInParent="true"
+>
+
+    <RadioButton
+        android:id="@+id/item_radio"
+        android:layout_width="45dip"
+        android:layout_height="wrap_content"
+        android:button="@drawable/radio"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:focusable="false" />
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/item_radio"
+        android:paddingBottom="3dip"
+        android:paddingTop="3dip"
+        >
+        <RelativeLayout 
+        android:id="@+id/ray1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="1dip"
+        android:paddingRight="2dip"
+        android:paddingBottom="2dip"
+        android:paddingTop="2dip"
+        >
+        
+        <TextView
+            android:id="@+id/ItemDescrition"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:text="@string/work_num"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:textSize="15sp" />
+        
+        <ImageView
+            android:id="@+id/pic_status"
+            android:layout_width="18dip"
+            android:layout_height="18dip"
+            android:paddingBottom="2dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/pic_none"
+            android:textColor="@color/setting_sort_title_bgcolor"
+             />
+        
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+        android:id="@+id/rly2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="2dip"
+        >
+        
+        <TextView
+            android:id="@+id/order_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:text="@string/work_num"
+            android:textColor="#B9B9B9"
+            android:layout_centerVertical="true"
+            android:textSize="10sp"
+             />
+        
+        <TextView
+            android:id="@+id/order_task_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dip"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:text="数据业务"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+        
+    </RelativeLayout>
+    
+    <TextView
+        	android:id="@+id/order_pic_adr"
+        	android:padding="2dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:text="@string/work_num"
+            android:textColor="#B9B9B9"
+            android:layout_centerVertical="true"
+            android:textSize="10sp"
+            />
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>

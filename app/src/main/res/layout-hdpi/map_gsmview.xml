@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+<!-- 
+    <com.walktour.gui.map.GsmView
+        android:id="@+id/gsm_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" /> -->
+     <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center"
+	    android:orientation="vertical" >
+	        <com.walktour.framework.view.ScrollLayout
+		        android:id="@+id/srooll_layout"
+		        android:layout_weight="2"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent">
+	         </com.walktour.framework.view.ScrollLayout>
+	         
+	        <com.walktour.framework.view.ScrollLayout
+	            android:visibility="gone"
+		        android:id="@+id/srooll_layout_2"
+		        android:layout_weight="3"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent">
+	         </com.walktour.framework.view.ScrollLayout>
+         </LinearLayout>
+         <LinearLayout 
+                android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_alignParentBottom="true"
+		        android:orientation="horizontal"
+		        android:layout_marginBottom="5dip"
+             >
+         <ImageView 
+             	android:id="@id/switch_1"
+             	android:background="@drawable/lightdot"
+             	android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+             />
+         <ImageView 
+             	android:id="@id/switch_2"
+             	android:layout_marginLeft="2dip"
+             	android:background="@drawable/darkdot"
+             	android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+             />
+         <ImageView 
+             	android:id="@id/switch_3"
+             	android:layout_marginLeft="2dip"
+             	android:background="@drawable/darkdot"
+             	android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+             />
+	</LinearLayout>
+</RelativeLayout>

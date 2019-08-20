@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@drawable/list_divider"
+
+        />
+
+    <TextView
+        android:id="@+id/left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/app_user_label"
+        android:textColor="@color/app_main_text_color"
+        android:textSize="@dimen/app_content_txt_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/gps_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/app_main_text_color"
+            android:textSize="@dimen/app_content_txt_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dip"
+            android:text="@string/app_name"
+            android:textColor="@color/app_main_text_color"
+            android:textSize="@dimen/app_content_txt_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/test_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/left_text"
+        android:layout_marginLeft="2dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/test_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/app_main_text_color"
+            android:textSize="@dimen/app_content_txt_size" />
+
+        <TextView
+            android:id="@+id/test_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/app_main_text_color"
+            android:textSize="@dimen/app_content_txt_size" />
+
+        <TextView
+            android:id="@+id/test_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dip"
+            android:textColor="@color/app_main_text_color"
+            android:textSize="@dimen/app_content_txt_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/location_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test_info"
+        android:textSize="@dimen/app_content_txt_size" />
+
+    <TextView
+        android:id="@+id/latlng"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_text"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:visibility="gone"
+        android:textSize="@dimen/app_content_txt_size" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/latlng"
+        android:background="@drawable/list_divider"
+
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:padding="6dip"
+		    android:orientation="vertical">
+	 <RelativeLayout 
+	 	android:layout_width="fill_parent"
+	 	android:layout_height="wrap_content"
+	 	android:padding="6dip"
+	 	>
+			<TextView android:id="@+id/TextView01" 
+				android:text="@string/lock_locknet"
+				android:textSize="@dimen/app_content_txt_size"
+				android:textColor="@android:color/white"
+				android:layout_width="96dip"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+			/>	
+			 	
+			<Spinner android:id="@+id/Spinner01" 
+				android:layout_width="fill_parent"
+			 	android:layout_height="wrap_content"
+			 	android:layout_toRightOf="@id/TextView01">
+			 </Spinner>
+	 </RelativeLayout>
+	 
+	 <RelativeLayout 
+	 	android:layout_width="fill_parent"
+	 	android:layout_height="wrap_content"
+	 	android:padding="6dip"
+	 	>
+			<TextView android:id="@+id/TextView02" 
+				android:text="@string/lock_lockband"
+				android:textSize="@dimen/app_content_txt_size"
+				android:textColor="@android:color/white"
+				android:layout_width="96dip"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+			/>	
+			 	
+			<Spinner android:id="@+id/Spinner02" 
+				android:layout_width="fill_parent"
+			 	android:layout_height="wrap_content"
+			 	android:layout_toRightOf="@id/TextView02">
+			 </Spinner>
+	 </RelativeLayout>
+	 
+	 <TableLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip"
+    >
+    	<View android:layout_height="2dip" android:background="#FF909090" />
+    	
+    	<TableRow android:padding="6dip">
+    		<TextView android:text="@string/lock_phoneType" 
+    			android:textSize="@dimen/app_content_txt_size"/>
+    		<TextView android:id="@+id/TextView06" android:paddingLeft="6dip"
+    			android:textSize="@dimen/app_content_txt_size"/>
+    	</TableRow>
+    	
+    	<TableRow android:padding="6dip">
+    		<TextView android:text="@string/lock_networkType" 
+    			android:textSize="@dimen/app_content_txt_size"/>
+    		<TextView android:id="@+id/TextView03" android:paddingLeft="6dip"
+    			android:textSize="@dimen/app_content_txt_size"/>
+    	</TableRow><!--
+    	
+    	<TableRow android:padding="6dip">
+    		<TextView android:text="@string/lock_bandMode" 
+    			android:textSize="14sp"/>
+    		<TextView android:id="@+id/TextView04" android:paddingLeft="6dip"
+    			android:textSize="14sp"/>
+    	</TableRow>
+    	
+    	<TableRow android:padding="6dip">
+    		<TextView android:text="@string/lock_zone" 
+    			android:textSize="14sp"/>
+    		<TextView android:id="@+id/TextView05" android:paddingLeft="6dip"
+    			android:textSize="14sp"/>
+    	</TableRow>
+        
+    --></TableLayout>
+	 
+</LinearLayout>

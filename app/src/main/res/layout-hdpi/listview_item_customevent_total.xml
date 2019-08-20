@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/base_list_item_bg" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dip" >
+        <!-- android:descendantFocusability="blocksDescendants" -->
+        <ImageView
+            android:id="@+id/ItemIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="12dip"
+            android:paddingRight="12dip" />
+
+        <TextView
+            android:id="@+id/ItemTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@id/ItemTestable"
+            android:paddingTop="6dip"
+            android:text="Event&apos;s Name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_content_txt_size"/>
+
+        <TextView
+            android:id="@+id/ItemCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ItemTitle"
+            android:layout_below="@id/ItemTitle"
+            android:layout_marginBottom="8dip"
+            android:text="Event Count:4"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/app_content_txt_size" />
+
+        <TextView
+            android:id="@+id/ItemDelay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ItemCount"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dip"
+            android:text="Avarage Delay:5200ms"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/app_content_txt_size" />
+    </RelativeLayout>
+    
+    <com.walktour.gui.total.TotalEventCustomView
+        android:id="@+id/ItemTotal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

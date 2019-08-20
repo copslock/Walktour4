@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_view"
+        layout="@layout/basic_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_voice_service_network"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/base_list_item_bg">
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:text="语音业务发起网络" />
+
+            <TextView
+                android:id="@+id/tv_voice_service_network"
+                style="@style/setting_sort_right_text_2"
+                android:textColor="@color/light_blue" />
+
+
+        </RelativeLayout>
+
+        <View style="@style/sys_routine_setting_divider" />
+
+        <RelativeLayout
+            android:id="@+id/rl_data_service_network"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/base_list_item_bg">
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:text="数据业务测试网络" />
+
+            <TextView
+                android:id="@+id/tv_data_service_network"
+                style="@style/setting_sort_right_text_2"
+                android:textColor="@color/light_blue" />
+
+        </RelativeLayout>
+
+        <View style="@style/sys_routine_setting_divider" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/fragment_main_layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/app_grey_color"
+            android:orientation="vertical"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|start"
+                android:text="@string/single_station_survey_site_description"
+                android:textSize="@dimen/app_content_txt_size"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_site_name"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/site_name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_site_index"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/site_index"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/site_type_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_site_type"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/site_type_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/site_type_txt"
+                android:layout_toStartOf="@+id/site_type"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <Spinner
+                android:id="@+id/site_type"
+                style="@style/task_drop_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:entries="@array/single_station_type"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/site_date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_site_date"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/site_date"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/site_district_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_site_district"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/site_district"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/site_city_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_site_city"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/site_city"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/site_address_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_site_address"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/site_address_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/site_address_txt"
+                android:layout_toStartOf="@+id/site_address"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/site_address"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/site_device_type_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_site_device_type"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/site_device_type_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/site_device_type_txt"
+                android:layout_toStartOf="@+id/site_device_type"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/site_device_type"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/site_configuration_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_site_configuration"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/site_configuration_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/site_configuration_txt"
+                android:layout_toStartOf="@+id/site_configuration"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/site_configuration"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/site_photo_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_site_photo"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <ImageButton
+                android:id="@+id/site_photo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/transparent"
+                android:src="@drawable/singlestation_station_photo"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_survey_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/app_grey_color"
+            android:orientation="vertical"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|start"
+                android:text="@string/single_station_survey_site_parameters"
+                android:textSize="@dimen/app_content_txt_size"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/site_longitude_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_longitude"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/site_longitude_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/site_longitude_txt"
+                android:layout_toStartOf="@+id/site_longitude"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/site_longitude"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/site_latitude_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_latitude"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/site_latitude_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/site_latitude_txt"
+                android:layout_toStartOf="@+id/site_latitude"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/site_latitude"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/site_tac_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_site_tac"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/site_tac_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/site_tac_txt"
+                android:layout_toStartOf="@+id/site_tac"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/site_tac"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:visibility="gone"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/site_enodebid_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_site_enodebid"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/site_enodebid_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/site_enodebid_txt"
+                android:layout_toStartOf="@+id/site_enodebid"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/site_enodebid"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/app_grey_color"
+            android:orientation="vertical"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|start"
+                android:text="@string/single_station_survey_structural_acceptance"
+                android:textSize="@dimen/app_content_txt_size"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/site_actual_site_higher"
+                android:text="@string/single_station_survey_actual_site_higher"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <Spinner
+                android:id="@+id/site_actual_site_higher"
+                style="@style/task_drop_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:entries="@array/single_station_survey"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/site_actual_site_lower"
+                android:text="@string/single_station_survey_actual_site_lower"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <Spinner
+                android:id="@+id/site_actual_site_lower"
+                style="@style/task_drop_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:entries="@array/single_station_survey"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/site_antenna_installation_height"
+                android:text="@string/single_station_survey_antenna_installation_height"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <Spinner
+                android:id="@+id/site_antenna_installation_height"
+                style="@style/task_drop_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:entries="@array/single_station_survey"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/site_spacing_of_sites"
+                android:text="@string/single_station_survey_spacing_of_sites"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <Spinner
+                android:id="@+id/site_spacing_of_sites"
+                style="@style/task_drop_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:entries="@array/single_station_survey"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/app_grey_color"
+            android:orientation="vertical"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|start"
+                android:text="@string/single_station_survey_site_test_information"
+                android:textSize="@dimen/app_content_txt_size"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_site_tester"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/site_tester"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_site_test_device_model"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/site_test_device_model"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_site_test_phone"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/site_test_phone"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:inputType="phone"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_site_test_platform"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/site_test_platform"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

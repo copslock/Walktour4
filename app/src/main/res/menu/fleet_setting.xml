@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+	<item 
+	android:id="@+id/menu_fleet_getTask" 
+	android:icon="@android:drawable/ic_menu_add" 
+	android:title="@string/fleet_downloadtask"/><!--
+	
+	<item 
+	android:id="@+id/menu_fleet_sysTime" 
+	android:icon="@android:drawable/ic_menu_rotate" 
+	android:title="@string/fleet_sysTime"/>
+		
+--></menu>

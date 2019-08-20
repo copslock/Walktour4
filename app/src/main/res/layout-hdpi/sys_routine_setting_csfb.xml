@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/csfb_faild_analysis" />
+
+        <CheckBox 
+            android:id="@+id/csfb_analysis_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:checked="false"
+            android:button="@drawable/switch_button_bg"/>
+    </RelativeLayout>
+
+</LinearLayout>

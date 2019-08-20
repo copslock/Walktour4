@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_menu_bg_color"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txt_note" 
+        style="@style/setting_sort_left_text_2"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:textColor="@color/txt_high_light"
+        android:textSize="@dimen/app_content_txt_size"
+        android:text="@string/str_note_text_no_floor_info"/>
+</RelativeLayout>

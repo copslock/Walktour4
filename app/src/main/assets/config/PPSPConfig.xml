@@ -1,0 +1,16 @@
+﻿<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<PPSPConfig>
+  <nsp_dev>
+    <dev name="iPhone6S" />
+    <dev name="iPhone6S Plus" />
+    <dev name="Genuine iOS iPhone 6s" />
+    <dev name="Genuine iOS iPhone 6s Plus" />
+    <dev name="Genuine iOS iPhone 7" />
+    <dev name="Genuine iOS iPhone 7 Plus" />
+    <dev name="SAMSUNG S6 edge G9250" />
+    <dev name="SAMSUNG S7 G9300" />
+    <dev name="SAMSUNG S7 G9308" />
+    <dev name="SAMSUNG S7 edge G9350" />
+    <dev name="SAMSUNG J5108" />
+  </nsp_dev>
+</PPSPConfig>

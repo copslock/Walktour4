@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 左边图标，右边标题 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="56dip"
+    android:minHeight="56dip"
+    android:background="@drawable/base_list_item_bg"
+>
+
+    <RadioButton
+        android:id="@+id/item_radio"
+        android:layout_width="45dip"
+        android:layout_height="wrap_content"
+        android:button="@drawable/radio"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:visibility="gone"
+        android:focusable="false" />
+    
+    
+
+    <TextView
+        android:id="@+id/ItemTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dip"
+        android:layout_toRightOf="@id/item_radio"
+        android:text="@string/work_num"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_content_txt_size" />
+
+    <TextView
+        android:id="@+id/ItemDescrition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:layout_centerInParent="true"
+        android:text="ll"
+        android:textColor="@color/setting_sort_title_bgcolor"
+        android:textSize="@dimen/app_content_txt_size" />
+
+</RelativeLayout>

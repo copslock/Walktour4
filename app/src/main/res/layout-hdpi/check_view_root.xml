@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 筛选界面布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_menu_bg_color"
+    android:minHeight="150dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_menu_bg_color" >
+
+            <ListView
+            android:id="@+id/ListView02"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="2dip"
+            android:paddingBottom="2dip"
+            android:cacheColorHint="#00000000"
+            android:divider="@android:drawable/divider_horizontal_bright"
+            android:layout_above="@+id/ControlBar"
+            android:visibility="visible" />
+        
+        <LinearLayout
+            android:id="@+id/ControlBar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_ECECEC"
+            android:orientation="horizontal" >
+                    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/box2"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="@string/str_clear"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_defult_btn_txt_size" />
+
+            <CheckBox
+                android:id="@+id/cb_mark"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/str_mark"
+                android:textColor="@drawable/selector_tab_text_color3"
+                android:textSize="@dimen/app_defult_btn_txt_size" />
+
+            <Button
+                android:id="@+id/btn_filter"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="@string/data_manager_screening"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_defult_btn_txt_size" />
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

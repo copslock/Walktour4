@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/basic_title"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_box"  >
+
+        <ImageView
+            android:id="@+id/iv_searchbox_search_magnifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:src="@drawable/common_icon_searchbox_magnifier" />
+
+        <EditText
+            android:id="@+id/search_content_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="2dip"
+            android:layout_marginBottom="2dip"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textSize="@dimen/app_content_txt_size"
+            android:hint="@string/str_search"
+            android:layout_toRightOf="@id/iv_searchbox_search_magnifier"/>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/list_title"
+        layout="@layout/basedata_list_item" />
+
+    <ListView
+        android:id="@+id/basedata_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/setting_bgcolor"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/list_divider"
+        android:fadingEdge="none" >
+    </ListView>
+
+</LinearLayout>

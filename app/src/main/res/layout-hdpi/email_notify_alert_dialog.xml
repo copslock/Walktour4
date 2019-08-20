@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 作为弹出窗口的view: 包含1个Text 和 1个EditText -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/app_main_bg_color">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dip"
+        android:layout_marginTop="4dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:text="@string/use_default_address"
+            android:layout_centerVertical="true"
+            style="@style/setting_sort_left_text_2"/>
+
+        <CheckBox
+            android:id="@+id/email_defualt_ck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:button="@drawable/switch_button_bg"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <View style="@style/task_listdivider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dip"
+        android:layout_marginTop="4dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_weight="1"
+            android:text="@string/email_send_address"
+			style="@style/setting_sort_left_text_2" />
+
+        <EditText
+            android:id="@+id/email_send_address_text"
+            android:layout_width="fill_parent"
+            android:layout_height="38dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_weight="1"
+            style="@style/task_edit_view"
+            android:gravity="center_vertical"
+            android:maxLength="64"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/app_main_text_color" />
+    </LinearLayout>
+
+    <View style="@style/task_listdivider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dip"
+        android:layout_marginTop="4dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            android:layout_weight="1"
+            android:text="@string/pass"
+            style="@style/setting_sort_left_text_2"/>
+
+        <EditText
+            android:id="@+id/email_send_password_text"
+            android:layout_width="fill_parent"
+            android:layout_height="38dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_weight="1"
+            style="@style/task_edit_view"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:maxLength="64"
+            android:paddingLeft="2dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/app_main_text_color" />
+    </LinearLayout>
+
+    <View style="@style/task_listdivider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dip"
+        android:layout_marginTop="4dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            android:layout_weight="1"
+            android:text="@string/task_email_smtp_server"
+            style="@style/setting_sort_left_text_2" />
+
+        <EditText
+            android:id="@+id/email_send_server_text"
+            android:layout_width="fill_parent"
+            android:layout_height="38dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_weight="1"
+            style="@style/task_edit_view"
+            android:gravity="center_vertical"
+            android:maxLength="64"
+            android:paddingLeft="2dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/app_main_text_color" />
+    </LinearLayout>
+
+    <View style="@style/task_listdivider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dip"
+        android:layout_marginTop="4dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            android:layout_weight="1"
+            android:text="@string/task_email_smtp_port"
+            style="@style/setting_sort_left_text_2" />
+
+        <EditText
+            android:id="@+id/email_send_port_text"
+            android:layout_width="fill_parent"
+            android:layout_height="38dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_weight="1"
+            style="@style/task_edit_view"
+            android:gravity="center_vertical"
+            android:maxLength="64"
+            android:paddingLeft="2dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/app_main_text_color" />
+    </LinearLayout>
+
+</LinearLayout>

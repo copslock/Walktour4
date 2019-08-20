@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/ItemTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@id/ItemTestable"
+            android:paddingTop="6dip"
+            android:text="Scheme 1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/app_content_txt_size" />
+
+        <TextView
+            android:id="@+id/ItemDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ItemTitle"
+            android:layout_below="@id/ItemTitle"
+            android:text="BeginDate~EndDate"
+            android:textColor="@color/black"
+            android:textSize="@dimen/app_content_txt_size" />
+
+        <TextView
+            android:id="@+id/ItemTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ItemDate"
+            android:layout_below="@id/ItemDate"
+            android:layout_marginRight="8dip"
+            android:text="StartTime~EndTime"
+            android:textColor="@color/black"
+            android:textSize="@dimen/app_content_txt_size" />
+
+        <RadioButton
+            android:id="@+id/ItemRadio"
+            android:layout_width="45dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/radio"
+            android:clickable="false"
+            android:focusable="false" />
+    </RelativeLayout>
+
+</LinearLayout>

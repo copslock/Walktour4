@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/setting_internt_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/sys_setting_internt_apn" />
+
+        <TextView
+            android:id="@+id/setting_internt_text"
+            style="@style/setting_sort_right_text_2" />
+    </RelativeLayout>
+
+    <View style="@style/setting_divider" />
+
+    <RelativeLayout
+        android:id="@+id/setting_wap_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/sys_setting_internt_wapAPN" />
+
+        <TextView
+            android:id="@+id/setting_wap_text"
+            style="@style/setting_sort_right_text_2" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<html>
+<head>
+<style type="text/css">
+.row div{
+ border:1px solid black;
+ height:20px;
+ float:left;
+ margin-right:-1px;
+ margin-top:-1px;
+ text-align:center;
+ font-weight:bold;
+ display:block;
+}
+#head div{
+ background-color:#CCFFFF;
+ margin-top:0;
+}
+</style>
+<script type="text/javascript" src="js/TestData.js"></script>
+<script type="text/javascript" src="js/dlData.js"></script>
+<script type="text/javascript">
+
+function test()
+{
+  var a = formatJsonResponse(CQTTestBusinessData,true);
+  if (a) {
+    alert(a);
+  }
+}
+
+</script>
+    <script>
+        $.mobile.pushStateEnabled = false;
+    </script>
+</head>
+
+<body>
+<div>
+<a href = "#">
+ <div class="row" id="head" style="width:100%">
+     <div style="width:39%;">标题1</div><div style="width:20%;">标题2</div><div style="width:20%;">标题3</div><div style="width:20%;">标题3</div>
+  </div>
+  </a>
+  <a href = "#" onclick="test();">
+  <div class="row" id="row1" style="width:100%;">
+     <div style="width:39%;">haha</div><div style="width:20%;"></div><div style="width:20%;"></div><div style="width:20%;">标题3</div>
+  </div>
+  </a>
+  <a href = "#">
+  <div class="row" id="row2" style="width:100%;">
+     <div style="width:39%;">hoho</div><div style="width:20%;"></div><div style="width:20%;"></div><div style="width:20%;">标题3</div>
+  </div>
+  </a>
+</div>
+</html>

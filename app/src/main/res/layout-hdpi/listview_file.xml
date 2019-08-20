@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/file_title_isTip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_title_bg"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/pointer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/pointer" />
+
+            <TextView
+                android:id="@+id/title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:text="@string/act_info"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/setting_sort_title_bgcolor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="2dip" >
+
+        <Button
+            android:id="@+id/Button01"
+            style="@style/data_manager_select_btn"
+            android:layout_marginRight="2dip" />
+
+        <Button
+            android:id="@+id/Button03"
+            style="@style/data_manager_select_btn" />
+
+        <Button
+            android:id="@+id/Button02"
+            style="@style/data_manager_select_btn"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip" />
+
+        <Button
+            android:id="@+id/Button04"
+            style="@style/data_manager_select_btn" />
+    </LinearLayout>
+
+    <!--
+           <View  
+      android:layout_below = "@id/linelayout" 
+      style = "@style/divideLine"/>
+    -->
+
+    <RelativeLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/LineraLayoutToolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/app_divier_line_color" />
+
+            <!-- 工具栏 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="fill_horizontal|center_vertical"
+                android:orientation="horizontal" 
+                >
+
+                <Button
+                    android:id="@+id/ButtonOrder"
+                    style="@style/toolbar_button_bg"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/controlbar_muilt"
+                    android:text="@string/monitor_data_order" />
+
+                <Button
+                    android:id="@+id/ButtonCheck"
+                    style="@style/toolbar_button_bg"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/controlbar_select"
+                    android:text="统计" />
+
+                <Button
+                    android:id="@+id/ButtonUncheck"
+                    style="@style/toolbar_button_bg_uncheck"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/controlbar_unallcheck"
+                    android:text="@string/str_checknon" />
+
+                <Button
+                    android:id="@+id/ButtonEdit"
+                    style="@style/toolbar_button_bg"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/controlbar_edit"
+                    android:text="@string/edit" />
+
+                <Button
+                    android:id="@+id/ButtonSend"
+                    style="@style/toolbar_button_bg"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/controlbar_upload"
+                    android:text="@string/upload" />
+
+                <Button
+                    android:id="@+id/ButtonStop"
+                    style="@style/toolbar_button_bg"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/controlbar_stop"
+                    android:text="@string/stop" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 状态栏目 -->
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutStatusBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/LineraLayoutToolbar"
+            android:layout_gravity="bottom"
+            android:background="@color/app_grey_color"
+            android:gravity="top"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/TextViewTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_marginTop="12dip"
+                android:textColor="@color/app_main_text_color" />
+        </RelativeLayout>
+
+        <!-- 文件列表 -->
+
+        <ListView
+            android:id="@+id/ListView01"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/RelativeLayoutStatusBar"
+            android:background="@color/app_main_bg_color"
+            android:divider="@drawable/list_divider"
+            android:fadingEdge="none"
+            android:layoutAnimation="@anim/list_anim_layout" />
+
+        <ProgressBar
+            android:id="@+id/loading_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/task_title" android:id="@+id/title_layout"/>
+    
+    <!-- OTS Test-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/base_list_item_bg"
+        >
+
+        <TextView
+            android:focusable="true"
+        	android:focusableInTouchMode="true"
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/total_report_str" />
+        <CheckBox
+            android:textSize="@dimen/app_content_txt_size"
+            android:id="@+id/is_show_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:button="@drawable/switch_button_bg"/>
+                
+         <View style="@style/setting_divider"/>
+    </RelativeLayout>
+    
+    
+    
+    <!-- sample interval-->
+    <RelativeLayout
+        android:id="@+id/sample_interval_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/base_list_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/total_template_str" />
+        
+         <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/Spinnertotal1"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="100dip"
+                    android:layout_marginRight="11dip"
+                    android:background="@drawable/drop"
+                    style="@style/task_drop_view"
+                    android:drawSelectorOnTop="true" />
+         
+         
+         
+                
+         <View style="@style/setting_divider"/>
+    </RelativeLayout>
+
+    
+    
+    <!-- Division Enable-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/base_list_item_bg"
+        android:visibility="visible"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/total_reportType_str" />
+        <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/Spinnertotal2"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="100dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="11dip"
+                    android:background="@drawable/drop"
+                    style="@style/task_drop_view"
+                    android:drawSelectorOnTop="true" />
+                
+         <View style="@style/setting_divider"/>
+    </RelativeLayout>
+    
+    
+    <!-- Division Size-->
+    <RelativeLayout
+        android:id="@+id/division_size_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:visibility="gone"
+        android:background="@drawable/base_list_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/total_reportKPI_str" />
+        
+         <Button  
+             android:id="@+id/total_default"
+                    android:layout_width="101dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="11dip"
+                    android:text="Default"
+                    android:textColor="@color/app_main_text_color"
+                    android:background="@drawable/dialog_btn" />
+                
+         <View style="@style/setting_divider"/>
+    </RelativeLayout>
+    
+    
+        <!-- DataStorage-->
+    <RelativeLayout
+        android:id="@+id/dataStorage_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/base_list_item_bg"
+        android:visibility="gone"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/total_totalnetWork_str" />
+        
+                 <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/Spinnertotal3"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="100dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="11dip"
+                    android:background="@drawable/drop"
+                    style="@style/task_drop_view"
+                    android:drawSelectorOnTop="true" />
+                
+         <View style="@style/setting_divider"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/dataStorage_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/base_list_item_bg"
+        android:visibility="gone"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/total_totalchannel_str" />
+
+        <EditText
+            android:id="@+id/edit_total_channle"
+            android:layout_centerInParent="true"
+            android:layout_width="100dip"
+            android:layout_height="30dip"
+            android:background="@drawable/edt_drop"
+            android:inputType="number"
+            android:maxLength="30"
+            android:layout_alignParentRight="true"
+			android:layout_marginRight="11dip"
+			android:paddingLeft="5dip"
+			android:text="Eg.0~39649"
+			android:textColor="@color/white"
+            android:singleLine="true"
+            android:textSize="@dimen/app_content_txt_size"
+            android:width="10px" />
+        
+        
+                
+         <View style="@style/setting_divider"/>
+    </RelativeLayout>
+    <View style="@style/setting_divider"/>
+    
+</LinearLayout>

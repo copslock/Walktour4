@@ -1,0 +1,129 @@
+<resources>
+
+   
+    <declare-styleable name="Chart">
+
+        <!-- 图表类型，可选，bar为柱状图，line为折线图，默认为bar -->
+        <attr name="chartType" format="enum">
+            <enum name="bar" value="0" />
+            <enum name="line" value="1" />
+        </attr>
+        <!-- 纵坐标名称，可选 -->
+        <attr name="ordinateName" format="string" />
+        <!-- 横坐标名称，可选 -->
+        <attr name="abscissaName" format="string" />
+        <!-- 纵坐标显示最小值，可选，若设定值大于数据最小值，则取数据最小值，默认为数据最小值 -->
+        <attr name="valueMin" format="float" />
+        <!-- 纵坐标显示最大值，可选，若设定值小于数据最大值，则取数据最大值，默认为数据最大值 -->
+        <attr name="valueMax" format="float" />
+        <!-- 数据名称列表，可选，以“,”分隔 -->
+        <attr name="itemNames" format="string" />
+        <!-- 数据值列表，可选，以“,”分隔 -->
+        <attr name="itemValues" format="string" />
+        <!-- 画板背景颜色，可选，默认为黑色 -->
+        <attr name="canvasColor" format="color" />
+        <!-- 坐标轴颜色，可选，默认为青色 -->
+        <attr name="axisColor" format="color" />
+        <!-- 图形颜色，可选，默认为粉红色 -->
+        <attr name="chartColor" format="color" />
+        <!-- 网格颜色，可选，默认为深灰色 -->
+        <attr name="gridColor" format="color" />
+        <!-- 十字线颜色，可选，默认为白色 -->
+        <attr name="selectionLineColor" format="color" />
+        <!-- 十字线定位的值背景颜色，可选，默认为灰色 -->
+        <attr name="selectionValueBackgroundColor" format="color" />
+        <!-- 十字线定位的值文字颜色，可选，默认为白色 -->
+        <attr name="selectionValueTextColor" format="color" />
+        <!-- 坐标原点与左边界间距，可选，默认为40dp -->
+        <attr name="originMarginLeft" format="dimension" />
+        <!-- 坐标原点与下边界间距，可选，默认为60dp -->
+        <attr name="originMarginBottom" format="dimension" />
+        <!-- 箭头高度，可选，默认为10dp -->
+        <attr name="arrowHeight" format="dimension" />
+        <!-- 箭头宽度，可选，默认为6dp -->
+        <attr name="arrowWidth" format="dimension" />
+        <!-- 横坐标线端（不含箭头）与右边界间距，可选，默认为10dp -->
+        <attr name="abscissaMarginRight" format="dimension" />
+        <!-- 纵坐标线端（不含箭头）长度，可选，默认为300dp -->
+        <attr name="ordinateHeight" format="dimension" />
+        <!-- 纵坐标名称字体颜色，可选，默认为青色 -->
+        <attr name="ordinateNameTextColor" format="color" />
+        <!-- 纵坐标名称字体大小，可选，默认为14sp -->
+        <attr name="ordinateNameTextSize" format="dimension" />
+        <!-- 纵坐标名称与箭头间距，可选，默认为3dp -->
+        <attr name="ordinateNameTextMarginBottom" format="dimension" />
+        <!-- 纵坐标数值字体颜色，可选，默认为红色 -->
+        <attr name="ordinateValueTextColor" format="color" />
+        <!-- 纵坐标数值字体大小，可选，默认为14sp -->
+        <attr name="ordinateValueTextSize" format="dimension" />
+        <!-- 纵坐标数值与纵坐标间距，可选，默认为3dp -->
+        <attr name="ordinateValueTextMarginRight" format="dimension" />
+        <!-- 纵坐标数值分段数，可选，默认为5 -->
+        <attr name="ordinateValueSection" format="integer" />
+        <!-- 横坐标名称字体颜色，可选，默认为青色 -->
+        <attr name="abscissaNameTextColor" format="color" />
+        <!-- 横坐标名称字体大小，可选，默认为14sp -->
+        <attr name="abscissaNameTextSize" format="dimension" />
+        <!-- 数据名称字体颜色，可选，默认为蓝色 -->
+        <attr name="itemNameTextColor" format="color" />
+        <!-- 数据名称字体大小，可选，默认为14sp -->
+        <attr name="itemNameTextSize" format="dimension" />
+        <!-- 数据名称与横坐标间距，可选，默认为3dp -->
+        <attr name="itemNameTextMarginTop" format="dimension" />
+        <!-- 数据名称字体显示方向，可选，horizontal为横向，vertical为纵向，默认为horizontal -->
+        <attr name="itemNameTextOrientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <!-- 折线图线宽，可选，默认为1dp -->
+        <attr name="lineChartStrokeWidth" format="dimension" />
+        <!-- 是否显示数据值，可选，默认为true -->
+        <attr name="displayItemValue" format="boolean" />
+        <!-- 数据值字体颜色，可选，默认为绿色 -->
+        <attr name="itemValueTextColor" format="color" />
+        <!-- 数据值字体大小，可选，默认为14sp -->
+        <attr name="itemValueTextSize" format="dimension" />
+        <!-- 数据值与图形的上下间距，可选，默认为0dp -->
+        <attr name="itemValueTextMarginTopOrBottom" format="dimension" />
+        <!-- 数据值字体显示方向，可选，horizontal为横向，vertical为纵向，默认为horizontal -->
+        <attr name="itemValueTextOrientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <!-- 是否显示网格横线，可选，默认为false -->
+        <attr name="displayHorizontalGridLine" format="boolean" />
+        <!-- 是否显示网格纵线，可选，默认为false -->
+        <attr name="displayVerticalGridLine" format="boolean" />
+        <!-- 数值格式化模式，可选，默认为#.# -->
+        <attr name="valueFormat" format="string" />
+        <!-- 十字线是否使用自由模式，可选，默认为false -->
+        <attr name="selectionFreeMode" format="boolean" />
+        <!-- 是否显示横坐标轴，可选，默认为true -->
+        <attr name="displayAbscissaAxis" format="boolean" />
+        <!-- 是否显示纵坐标轴，可选，默认为true -->
+        <attr name="displayOrdinateAxis" format="boolean" />
+        <!-- 是否显示横坐标名称，可选，默认为true -->
+        <attr name="displayAbscissaName" format="boolean" />
+        <!-- 是否显示纵坐标名称，可选，默认为true -->
+        <attr name="displayOrdinateName" format="boolean" />
+        <!-- 是否显示数据名称，可选，默认为true -->
+        <attr name="displayItemName" format="boolean" />
+        <!-- 是否显示纵坐标数值，可选，默认为true -->
+        <attr name="displayOrdinateValue" format="boolean" />
+        <!-- 是否根据图表图形位置自动调整数据值显示位置，可选，默认为false -->
+        <attr name="autoPositionItemValue" format="boolean" />
+        <!-- 是否显示横坐标刻度线，可选，默认为false -->
+        <attr name="displayAbscissaScale" format="boolean" />
+        <!-- 横坐标刻度线长度，可选，默认为3dp -->
+        <attr name="abscissaScaleLength" format="dimension" />
+        <!-- 横坐标刻度线颜色，可选，默认为浅灰色 -->
+        <attr name="abscissaScaleColor" format="color" />
+        <!-- 是否显示纵坐标刻度线，可选，默认为false -->
+        <attr name="displayOrdinateScale" format="boolean" />
+        <!-- 纵坐标刻度线长度，可选，默认为3dp -->
+        <attr name="ordinateScaleLength" format="dimension" />
+        <!-- 纵坐标刻度线颜色，可选，默认为浅灰色 -->
+        <attr name="ordinateScaleColor" format="color" />
+    </declare-styleable>
+
+</resources>

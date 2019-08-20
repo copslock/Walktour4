@@ -1,0 +1,1420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:overScrollMode="never"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="2dp">
+
+        <!-- DT和CQT开关 -->
+
+        <RelativeLayout
+            android:id="@+id/dt_cqt_check_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp">
+
+                <RadioButton
+                    android:id="@+id/CheckDT"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio"></RadioButton>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:singleLine="true"
+                    android:text="@string/str_dt"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="17sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp">
+
+                <RadioButton
+                    android:id="@+id/CheckCQT"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio"
+                    android:checked="true"></RadioButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:singleLine="true"
+                    android:text="@string/str_cqt"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="17sp"></TextView>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <!-- 地铁测试选择城市 -->
+
+            <LinearLayout
+                android:id="@+id/test_city_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="36dp"
+                android:descendantFocusability="blocksDescendants"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/metro_test_city"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/testcitytxt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:textColor="@color/light_blue"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <!-- 高铁、地铁测试线路 -->
+
+            <LinearLayout
+                android:id="@+id/test_way_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="36dp"
+                android:descendantFocusability="blocksDescendants"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/gaotie_project_test_4"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/testwaytxt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:textColor="@color/light_blue"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/test_no_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="36dp"
+                android:descendantFocusability="blocksDescendants"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/gaotie_test_no"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/test_no_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:textColor="@color/light_blue"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- 外循环 -->
+
+            <RelativeLayout
+                android:id="@+id/outloop_time_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/textviewLoop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_looptimes"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editLooptimes"
+                    style="@style/task_edit_view"
+                    android:layout_marginLeft="120dp"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <!-- 外循环间隔 -->
+            <RelativeLayout
+                android:id="@+id/outloop_interval_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/tv_outloop_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/loop_interval"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_outloop_interval"
+                    style="@style/task_edit_view"
+                    android:layout_marginLeft="120dp"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    android:text="5"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <!-- 业务间间隔 -->
+            <RelativeLayout
+                android:id="@+id/different_task_interval_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/tv_different_task_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_interval"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_different_task_interval"
+                    style="@style/task_edit_view"
+                    android:layout_marginLeft="120dp"
+                    android:digits="0123456789"
+                    android:text="10"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <!-- 外循环断开拨号 -->
+
+            <RelativeLayout
+                android:id="@+id/outLooptimes_ppp_disable_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/str_looptimes_pppdisable"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/outLooptimes_ppp_disable_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:button="@drawable/switch_button_bg"
+                    android:checked="true" />
+            </RelativeLayout>
+
+            <View style="@style/setting_divider" />
+
+            <!-- 测试地址 -->
+
+            <RelativeLayout
+                android:id="@+id/addressLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/TextviewAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/main_address"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EditAddress"
+                    style="@style/task_edit_view"
+                    android:layout_marginLeft="120dp"
+                    android:maxLength="30"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <!-- 测试人员 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/TextviewTester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/main_tester"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EditTester"
+                    style="@style/task_edit_view"
+                    android:layout_marginLeft="120dp"
+                    android:maxLength="30"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <!-- 设备标识 -->
+
+            <RelativeLayout
+                android:id="@+id/RL_DeviceTag"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/TextviewDeviceTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/sys_setting_file_name"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EditDeviceTag"
+                    style="@style/task_edit_view"
+                    android:layout_marginLeft="120dp"
+                    android:maxLength="30"
+                    android:singleLine="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutCU"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:visibility="gone">
+
+            <!-- 省下拉列表 -->
+            <!--
+            <RelativeLayout
+                android:id="@+id/reSpinnerProvince"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextViewProvince"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/app_main_text_color"
+                    android:layout_centerVertical="true"
+                    android:text="@string/main_province"
+                    android:textSize="16sp" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/SpinnerProvince"
+                    android:background="@drawable/drop" 
+                    android:layout_alignParentRight="true"
+                    style="@style/task_drop_view"/>
+            </RelativeLayout>
+            -->
+            <!-- 城市下拉列表 -->
+            <!--
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/TextViewCity"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/app_main_text_color"
+                    android:text="@string/main_city"
+                    android:textSize="16sp" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/SpinnerCity"
+                    android:background="@drawable/drop" 
+                    android:layout_alignParentRight="true"
+                    style="@style/task_drop_view"/>
+            </RelativeLayout>
+            <View style="@style/setting_divider" />
+            -->
+            <!-- 测试区域 -->
+
+            <RelativeLayout
+                android:id="@+id/textView_TestScope"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/main_TestScope"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EditTestScope"
+                    style="@style/task_edit_view"
+                    android:layout_marginLeft="120dp"
+                    android:maxLength="30"
+                    android:singleLine="true" />
+            </RelativeLayout>
+            <!-- 测试公司 -->
+
+            <RelativeLayout
+                android:id="@+id/textView_TestCompany"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/main_TestCompany"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EditTestCompany"
+                    style="@style/task_edit_view"
+                    android:layout_marginLeft="120dp"
+                    android:maxLength="30"
+                    android:singleLine="true" />
+            </RelativeLayout>
+            <!-- 测试网络 -->
+
+            <RelativeLayout
+                android:id="@+id/textView_TestNetwork"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/main_TestNetwork"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/SpinnerNetwork"
+                    style="@style/task_drop_view"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/drop" />
+            </RelativeLayout>
+            <!-- 测试手机号 -->
+
+            <RelativeLayout
+                android:id="@+id/textView_TestMobilePhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/main_TestMobilePhone"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EditTestMobilePhone"
+                    style="@style/task_edit_view"
+                    android:layout_marginLeft="120dp"
+                    android:maxLength="20"
+                    android:singleLine="true" />
+            </RelativeLayout>
+            <!-- 测试附加信息 -->
+
+            <RelativeLayout
+                android:id="@+id/textView_TestExtendInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/main_TestExtendInfo"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EditTestExtendInfo"
+                    style="@style/task_edit_view"
+                    android:layout_marginLeft="120dp"
+                    android:maxLength="50"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <View style="@style/setting_divider" />
+        </LinearLayout>
+
+        <!-- 不保存文件 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <RelativeLayout
+                android:id="@+id/layout_dontsaveFile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingTop="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/previously_dontSaveFile"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/start_dongSaveFile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:button="@drawable/switch_button_bg" />
+            </RelativeLayout>
+
+            <!-- 预打点轨迹 -->
+
+            <RelativeLayout
+                android:id="@+id/previously_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/previously_draw_point"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/checkPreviously"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:button="@drawable/switch_button_bg" />
+            </RelativeLayout>
+
+            <!-- 自动打点轨迹 -->
+
+            <RelativeLayout
+                android:id="@+id/automark_check"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/main_auto_mark"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/start_automark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:button="@drawable/switch_button_bg" />
+            </RelativeLayout>
+
+            <!-- 地铁业务自动手动模式 -->
+
+            <RelativeLayout
+                android:id="@+id/metro_automark_check"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/main_metro_mark_model"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/metro_start_automark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:button="@drawable/metro_switch_button_bg" />
+            </RelativeLayout>
+            <!-- 自动打点方式,传感器、寅时、蓝牙设备 -->
+            <RelativeLayout
+                android:id="@+id/automark_type_check_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/main_metro_mark_model"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/start_automark_type"
+                    style="@style/task_drop_view"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/drop" />
+            </RelativeLayout>
+
+
+            <!-- 格纳微蓝牙模块室内测试 -->
+            <LinearLayout
+                android:id="@+id/ll_glonavin"
+                android:layout_width="match_parent"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/automark_scene_check_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/main_metro_mark_scene"
+                        android:textColor="@color/app_main_text_color"
+                        android:textSize="16sp" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/start_automark_scene"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/drop" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/glonavin_check_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/main_glonvin_type"
+                        android:textColor="@color/app_main_text_color"
+                        android:textSize="16sp" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/glonavin_type"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/drop" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/rl_scan_ble_module"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/et_connected_module"
+                        android:enabled="false"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        style="@style/task_edit_view"
+                        android:singleLine="true" />
+
+                    <Button
+                        android:id="@+id/btn_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/glonavin_auto_mark_scan_module"
+                        android:background="@drawable/dialog_btn"
+                        android:padding="5dp"
+                        android:textAllCaps="false"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:textColor="@color/app_main_text_color"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rl_current_floor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_current_floor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/glonavin_auto_mark_startdialog_current_floor"
+                        android:textColor="@color/app_main_text_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_current_floor"
+                        style="@style/task_edit_view"
+                        android:layout_marginLeft="120dp"
+                        android:inputType="number|numberSigned"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rl_first_floor_height"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_first_floor_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/glonavin_auto_mark_startdialog_first_floor_height"
+                        android:textColor="@color/app_main_text_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_first_floor_height"
+                        style="@style/task_edit_view"
+                        android:layout_marginLeft="120dp"
+                        android:inputType="number|numberDecimal"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rl_floor_height"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_floor_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/glonavin_auto_mark_startdialog_floor_height"
+                        android:textColor="@color/app_main_text_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_floor_height"
+                        style="@style/task_edit_view"
+                        android:layout_marginLeft="120dp"
+                        android:inputType="number|numberDecimal"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rl_map_scale"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_map_scale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:text="楼层比例尺"
+                        android:textColor="@color/app_main_text_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_map_scale"
+                        style="@style/task_edit_view"
+                        android:layout_marginLeft="120dp"
+                        android:inputType="number|numberDecimal"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- TCP/IP抓包 -->
+
+            <RelativeLayout
+                android:id="@+id/netsniffer_check"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/main_packet_capture"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/start_netsniffer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:button="@drawable/switch_button_bg" />
+            </RelativeLayout>
+
+            <!-- 采集VoLTE QCI数据 -->
+            <RelativeLayout
+                android:id="@+id/volte_qciinfo_check"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="3dip"
+                android:paddingTop="3dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/task_volte_qciinfo"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/start_volte_qciinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:button="@drawable/switch_button_bg" />
+            </RelativeLayout>
+
+            <!-- 短信查询流量 -->
+            <RelativeLayout
+                android:id="@+id/check_sms_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="3dip"
+                android:paddingTop="3dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/sms_check_flow"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/check_sms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:button="@drawable/switch_button_bg" />
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/checkGyro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_gyro_point"
+                android:visibility="gone"></CheckBox>
+        </LinearLayout>
+
+        <View style="@style/setting_divider" />
+
+        <!-- 测试项目号 -->
+
+        <RelativeLayout
+            android:id="@+id/testPorNumRly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/TexttestPorNum"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/main_pronum_str"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="16sp" />
+
+            <com.walktour.framework.ui.BasicSpinner
+                android:id="@+id/SpinnerTestPorNum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/TexttestPorNum"
+                android:background="@drawable/drop" />
+        </RelativeLayout>
+
+        <!-- GPS信息显示 -->
+
+        <LinearLayout
+            android:id="@+id/gpsLinearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:visibility="gone">
+
+            <!-- 经度显示 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="85dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/main_indoor_longitude"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp"></TextView>
+
+                <TextView
+                    android:id="@+id/editLongitude"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp"></TextView>
+            </LinearLayout>
+            <!-- 纬度显示 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="85dp"
+                    android:text="@string/main_indoor_latitude"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp"></TextView>
+
+                <TextView
+                    android:id="@+id/editLatitude"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp"></TextView>
+            </LinearLayout>
+            <!-- GPS信息提示 -->
+
+            <TextView
+                android:id="@+id/gpsTip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="16sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cqt_test_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <!-- 室内专项建筑物显示 -->
+
+            <RelativeLayout
+                android:id="@+id/reTextBuild"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/main_building"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textBuild"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            <!-- 业务测试建筑物显示 -->
+
+            <RelativeLayout
+                android:id="@+id/reSpinnerBuild"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/TextViewBuild1"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/main_building"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/SpinnerBuild"
+                    style="@style/task_drop_view"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/drop" />
+            </RelativeLayout>
+            <!-- 楼层显示 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/TextViewFloor"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/main_floor"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/SpinnerFloor"
+                    style="@style/task_drop_view"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/drop" />
+            </RelativeLayout>
+
+            <!-- 楼层显示 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/TextViewScale"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/map_bar_plotting_scale"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EditScale"
+                    style="@style/task_edit_view"
+                    android:layout_marginLeft="120dp"
+                    android:maxLength="30"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <!-- 楼层预览图片 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/floor_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:background="#66FFFFFF"
+                    android:visibility="gone" />
+
+                <Gallery
+                    android:id="@+id/gallery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:spacing="7dp"
+                    android:unselectedAlpha="0.3"></Gallery>
+
+                <TextView
+                    android:id="@+id/floor_image_tip"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/floor_image"
+                    android:layout_marginLeft="72dp"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+            <!-- 楼层拍摄照片 -->
+
+            <LinearLayout
+                android:id="@+id/floorOutviewlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <Button
+                    android:id="@+id/btnCamera"
+                    android:layout_width="105dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/dialog_btn"
+                    android:text="@string/main_indoor_takephotos"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="14sp"></Button>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageCamera"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="170dp"></ImageView>
+
+                    <TextView
+                        android:id="@+id/imgTip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/app_main_text_color"
+                        android:textSize="14sp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 寅时室内测试 -->
+
+        <LinearLayout
+            android:id="@+id/innsmap_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:visibility="gone">
+
+            <!-- 测试城市选择 -->
+
+            <LinearLayout
+                android:id="@+id/innsmap_city_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="36dp"
+                android:descendantFocusability="blocksDescendants"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/metro_test_city"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/innsmap_city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/light_blue"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- 测试建筑物选择 -->
+
+            <LinearLayout
+                android:id="@+id/innsmap_building_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="36dp"
+                android:descendantFocusability="blocksDescendants"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/test_building"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/innsmap_building"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/light_blue"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- 测试楼层选择 -->
+
+            <LinearLayout
+                android:id="@+id/innsmap_floor_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="36dp"
+                android:descendantFocusability="blocksDescendants"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/test_floor"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/innsmap_floor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/light_blue"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 地铁测试注意事项 -->
+
+        <LinearLayout
+            android:id="@+id/metroMessageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/metroMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/metro_message"
+                android:textColor="@color/light_blue"
+                android:textSize="14sp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:gravity="center_vertical"
+        android:background="@color/app_tag_bg" >
+
+         <ImageView
+            android:id="@+id/top_bar_select"
+            android:layout_width="fill_parent"
+            android:layout_height="28dip"
+            android:layout_weight="1"
+            android:background="@drawable/tab_btn_top_2_select_bg_test"  >
+        </ImageView>
+        
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="fill_parent"
+            android:layout_height="28dip"
+            android:layout_weight="1"
+            android:visibility="invisible" >
+        </ImageView>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="28dip"
+            android:layout_weight="1"
+            android:visibility="invisible" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="fill_parent"
+            android:layout_height="28dip"
+            android:layout_weight="1"
+            android:visibility="invisible" >
+        </ImageView>
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="fill_parent"
+            android:layout_height="28dip"
+            android:layout_weight="1"
+            android:visibility="invisible" >
+        </ImageView>
+        <ImageView
+            android:id="@+id/img6"
+            android:layout_width="fill_parent"
+            android:layout_height="28dip"
+            android:layout_weight="1"
+            android:visibility="invisible" >
+        </ImageView>
+        <ImageView
+            android:id="@+id/img7"
+            android:layout_width="fill_parent"
+            android:layout_height="28dip"
+            android:layout_weight="1"
+            android:visibility="invisible" >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:layout_alignParentTop="true"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/tab1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/bg_second_title"
+                android:text="@string/info_event"
+                android:textSize="12sp"
+                android:textColor="@color/app_main_text_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/tab2"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/background_mybutton"
+                android:text="@string/info_l3msg"
+                android:textSize="12sp"
+                android:textColor="@color/app_main_text_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/tab3"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/background_mybutton"
+                android:text="@string/info_chart"
+                android:textSize="10sp"
+                android:textColor="@color/app_main_text_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab4Layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/tab4"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/background_mybutton"
+                android:text="@string/info_data"
+                android:textSize="12sp"
+                android:textColor="@color/app_main_text_color" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/tab5Layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/tab5"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/background_mybutton"
+                android:text="@string/info_volte"
+                android:textSize="12sp"
+                android:textColor="@color/app_main_text_color" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/tab6Layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/tab6"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/background_mybutton"
+                android:text="@string/info_video"
+                android:textSize="12sp"
+                android:textColor="@color/app_main_text_color" />
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/tab7Layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/tab7"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/background_mybutton"
+                android:text="@string/info_video"
+                android:textSize="12sp"
+                android:textColor="@color/app_main_text_color" />
+        </LinearLayout>
+    </LinearLayout>
+    
+        
+        <TabHost
+        android:id="@+id/child_tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearlayout"  >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="0dp"
+                android:background="@drawable/gallery_bg"
+                android:divider="@null"
+                android:padding="0dp"
+                android:visibility="gone"
+                android:textColor="@color/white" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@android:id/tabs"
+                android:focusable="true" 
+ 				 android:focusableInTouchMode="true"
+                android:background="@color/black" >
+            </FrameLayout>
+        </RelativeLayout>
+    </TabHost>
+
+<!--     <com.walktour.framework.view.ScrollLayout
+        android:id="@+id/scrolllayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearlayout" >
+    </com.walktour.framework.view.ScrollLayout> -->
+
+</RelativeLayout>

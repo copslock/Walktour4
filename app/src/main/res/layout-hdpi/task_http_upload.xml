@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/app_grey_color"
+              android:orientation="vertical"
+              tools:context=".task.TaskDNSLookup" >
+
+    <include
+            android:id="@+id/task_dns_title"
+            layout="@layout/basic_title" />
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/setting_sort_title_bgcolor" />
+
+    <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_weight="50" >
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:background="@color/app_main_bg_color"
+                android:orientation="vertical" >
+
+            <!-- 任务名称 -->
+
+            <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                <TextView
+                        android:id="@+id/txt_taskname"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_taskName"
+                        android:textSize="16dip" />
+
+                <EditText
+                        android:id="@+id/edit_taskname"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="text"
+                        android:maxLength="30"
+                        android:singleLine="true"
+                        android:width="10px" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <!-- 测试次数 -->
+
+            <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                <TextView
+                        android:id="@+id/txt_repeat"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_repeat"
+                        android:textSize="16dip" />
+
+                <EditText
+                        android:id="@+id/edit_repeat"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:singleLine="true" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                <TextView
+                        android:id="@+id/txt_testMode"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_httpUp_testMode"
+                        android:textSize="16dip" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/edit_testMode"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                <TextView
+                        android:id="@+id/txt_timeout"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_timeOut"
+                        android:textSize="16dip" />
+
+                <EditText
+                        android:id="@+id/edit_timeout"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:numeric="integer"
+                        android:singleLine="true" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                <TextView
+                        android:id="@+id/txt_serverType"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_httpUp_serverType"
+                        android:textSize="16dip" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/edit_serverType"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <LinearLayout
+                    android:id="@+id/task_count_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                <LinearLayout
+                        android:id="@+id/task_count_layout_inner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible" >
+
+                    <RelativeLayout
+                            style="@style/task_layout_edge"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                        <TextView
+                                android:id="@+id/txt_username"
+                                style="@style/tasK_title_style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="@string/task_account"
+                                android:textSize="16dip" />
+
+                        <EditText
+                                android:id="@+id/edit_username"
+                                style="@style/task_edit_view"
+                                android:layout_centerInParent="true"
+                                android:inputType="text"
+                                android:maxLength="30"
+                                android:singleLine="true" />
+                    </RelativeLayout>
+
+                    <View style="@style/task_listdivider" />
+
+                    <RelativeLayout
+                            style="@style/task_layout_edge"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                        <TextView
+                                android:id="@+id/txt_password"
+                                style="@style/tasK_title_style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="@string/task_password"
+                                android:textSize="16dip" />
+
+                        <EditText
+                                android:id="@+id/edit_password"
+                                style="@style/task_edit_view"
+                                android:layout_centerInParent="true"
+                                android:inputType="text"
+                                android:maxLength="30"
+                                android:password="true"
+                                android:singleLine="true" />
+                    </RelativeLayout>
+
+                    <View style="@style/task_listdivider" />
+                </LinearLayout>
+
+                <RelativeLayout
+                        style="@style/task_layout_edge"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                    <TextView
+                            android:id="@+id/txt_url"
+                            style="@style/tasK_title_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/task_url"
+                            android:textSize="16dip" />
+
+                    <EditText
+                            android:id="@+id/edit_url"
+                            style="@style/task_edit_view"
+                            android:layout_centerInParent="true"
+                            android:inputType="text"
+                            android:maxLength="600"
+                            android:singleLine="true" />
+                </RelativeLayout>
+
+                <View style="@style/task_listdivider" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/task_server_baidu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                <RelativeLayout
+                        style="@style/task_layout_edge"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                    <TextView
+                            android:id="@+id/txt_Account"
+                            style="@style/tasK_title_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/task_httpUp_Account"
+                            android:textSize="16dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                            android:id="@+id/edit_AccountType"
+                            style="@style/task_drop_view"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <View style="@style/task_listdivider" />
+
+                <LinearLayout
+                        android:id="@+id/task_baidu_count_key"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                    <RelativeLayout
+                            style="@style/task_layout_edge"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                        <TextView
+                                style="@style/tasK_title_style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="@string/task_httpUp_Api_Key"
+                                android:textSize="16dip" />
+
+                        <EditText
+                                android:id="@+id/edit_baidu_key"
+                                style="@style/task_edit_view"
+                                android:layout_centerInParent="true"
+                                android:inputType="text"
+                                android:maxLength="100"
+                                android:singleLine="true" />
+                    </RelativeLayout>
+
+                    <View style="@style/task_listdivider" />
+
+                    <RelativeLayout
+                            style="@style/task_layout_edge"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                        <TextView
+                                style="@style/tasK_title_style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="@string/task_httpUp_Secret_Key"
+                                android:textSize="16dip" />
+
+                        <EditText
+                                android:id="@+id/edit_baidu_secret_key"
+                                style="@style/task_edit_view"
+                                android:layout_centerInParent="true"
+                                android:inputType="text"
+                                android:maxLength="100"
+                                android:singleLine="true" />
+                    </RelativeLayout>
+
+                    <View style="@style/task_listdivider" />
+
+                    <RelativeLayout
+                            style="@style/task_layout_edge"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                        <TextView
+                                style="@style/tasK_title_style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="@string/task_httpUp_Server_Path"
+                                android:textSize="16dip" />
+
+                        <EditText
+                                android:id="@+id/edit_baidu_server_path"
+                                style="@style/task_edit_view"
+                                android:layout_centerInParent="true"
+                                android:inputType="text"
+                                android:maxLength="100"
+                                android:singleLine="true" />
+                    </RelativeLayout>
+
+                    <View style="@style/task_listdivider" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                <TextView
+                        android:id="@+id/txt_fileSource"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_httpUp_fileSource"
+                        android:textSize="16dip" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/edit_fileSource"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/filePathLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                <View style="@style/task_listdivider" />
+
+                <RelativeLayout
+                        android:id="@+id/file_view"
+                        style="@style/task_layout_edge"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                    <TextView
+                            android:id="@+id/txt_filePath"
+                            style="@style/tasK_title_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/task_httpUp_filePath"
+                            android:textSize="16dip" />
+
+                    <RelativeLayout
+                            android:layout_width="150dip"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" >
+
+                        <Button
+                                android:id="@+id/btn_view"
+                                android:layout_width="50dip"
+                                android:layout_height="35dip"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="2dip"
+                                android:layout_marginTop="3dip"
+                                android:background="@drawable/base_list_item_bg"
+                                android:text="..."
+                                android:textColor="@color/app_main_text_color" />
+
+                        <EditText
+                                android:id="@+id/edit_filePath"
+                                android:layout_width="100dip"
+                                android:layout_height="35dip"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@id/btn_view"
+                                android:background="@drawable/app_edt_drop"
+                                android:enabled="false"
+                                android:inputType="text"
+                                android:maxLength="200"
+                                android:paddingLeft="2dip"
+                                android:singleLine="true"
+                                android:textColor="@color/app_main_text_color"
+                                android:textSize="15sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                    android:id="@+id/ftp_fileview_id"
+                    style="@style/task_listdivider"
+                    android:visibility="gone" />
+
+            <RelativeLayout
+                    android:id="@+id/filesize_vorg"
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                <TextView
+                        android:id="@+id/txt_fileSize"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_httpUp_size" />
+
+                <EditText
+                        android:id="@+id/edit_fileSize"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:maxLength="7"
+                        android:singleLine="true" />
+            </RelativeLayout>
+
+            <!-- 高级属性部分 -->
+
+            <include layout="@layout/task_advanced_sort_title" />
+
+            <LinearLayout
+                    android:id="@+id/task_advanced_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                <!-- 测试间隔 -->
+
+                <RelativeLayout
+                        style="@style/task_layout_edge"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                    <TextView
+                            android:id="@+id/txt_interval"
+                            style="@style/tasK_title_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/task_interVal"
+                            android:textSize="16dip" />
+
+                    <EditText
+                            android:id="@+id/edit_interval"
+                            style="@style/task_edit_view"
+                            android:layout_centerInParent="true"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:numeric="integer"
+                            android:singleLine="true" />
+                </RelativeLayout>
+
+                <View style="@style/task_listdivider" />
+
+                <!-- 无流量时长 -->
+
+                <RelativeLayout
+                        style="@style/task_layout_edge"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                    <TextView
+                            android:id="@+id/txt_nodatatimeout"
+                            style="@style/tasK_title_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/task_noAnswer"
+                            android:textSize="16dip" />
+
+                    <EditText
+                            android:id="@+id/edit_nodatatimeout"
+                            style="@style/task_edit_view"
+                            android:layout_centerInParent="true"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:numeric="integer"
+                            android:singleLine="true" />
+                </RelativeLayout>
+
+                <View style="@style/task_listdivider" />
+
+                <RelativeLayout
+                        style="@style/task_layout_edge"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                    <TextView
+                            android:id="@+id/txt_disConnect"
+                            style="@style/tasK_title_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/task_disConnect"
+                            android:textSize="16dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                            android:id="@+id/edit_disConnect"
+                            style="@style/task_drop_view"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <View style="@style/task_listdivider" />
+
+                <RelativeLayout
+                        android:id="@+id/rab_time_layout"
+                        style="@style/task_layout_edge"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+
+                    <TextView
+                            android:id="@+id/rab_time_txt"
+                            style="@style/tasK_title_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true" />
+
+                    <EditText
+                            android:id="@+id/rab_time_edt"
+                            style="@style/task_edit_view"
+                            android:layout_centerInParent="true"
+                            android:maxLength="40"
+                            android:singleLine="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/rab_time_rel_layout"
+                        style="@style/task_layout_edge"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+
+                    <TextView
+                            android:id="@+id/rab_time_rel_txt"
+                            style="@style/tasK_title_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true" />
+
+                    <EditText
+                            android:id="@+id/rab_time_rel_edt"
+                            style="@style/task_edit_view"
+                            android:layout_centerInParent="true"
+                            android:editable="false"
+                            android:maxLength="40"
+                            android:singleLine="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/task_menu_buttom" />
+
+</LinearLayout>

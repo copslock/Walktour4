@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/setting_bgcolor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/info_title_bg" >
+
+        <ImageView
+            android:id="@+id/pointer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pointer" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/pointer"
+            android:singleLine="true"
+            android:text="@string/order_list_detail_str"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_first_title_txt_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginBottom="4dip"
+        android:background="@color/setting_sort_title_bgcolor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/work_order_ah_detail_key"
+            android:text="@string/work_num" />
+
+        <TextView
+            android:id="@+id/order_no"
+            style="@style/work_order_ah_detail_value"
+            android:textColor="@color/light_blue"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/work_order_ah_detail_key"
+            android:text="@string/workname"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/order_name"
+            style="@style/work_order_ah_detail_value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/work_order_ah_detail_key"
+            android:text="@string/test_content_desc" />
+
+        <TextView
+            android:id="@+id/order_desc"
+            style="@style/work_order_ah_detail_value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/work_order_ah_detail_key"
+            android:text="@string/work_order_plan_start_date" />
+
+        <TextView
+            android:id="@+id/plan_start_date"
+            style="@style/work_order_ah_detail_value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/work_order_ah_detail_key"
+            android:text="@string/work_order_plan_finish_date" />
+
+        <TextView
+            android:id="@+id/plan_finish_date"
+            style="@style/work_order_ah_detail_value" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/workOrderDetailList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

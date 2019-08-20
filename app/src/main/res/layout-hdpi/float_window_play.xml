@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/big_window_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/reply_bar_bg_color"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/showFilePath"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="8dip"
+                android:layout_weight="1"
+                android:textSize="@dimen/app_second_title_txt_size"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="@string/str_selectfile"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/tv_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/selector_replay_switch" />
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/selector_replay_open" />
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/selector_replay_close" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/opencontrol"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip">
+
+                    <TextView
+                        android:id="@+id/pointStartTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:id="@+id/currentSpeed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1X"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/inordorTxt"
+                            android:layout_width="30dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:gravity="center"
+                            android:text="-->"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/pointEndTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="--"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/wm_pen_color_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="4dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:background="@color/white" />
+
+                    <SeekBar
+                        android:id="@+id/seekBar"
+                        style="@android:style/Widget.SeekBar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:max="100"
+                        android:maxHeight="4dip"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/seekbar_img"
+                        android:thumb="@drawable/thumb" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/list_divider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical">
+
+
+        <ImageView
+            android:id="@+id/inordor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:src="@drawable/selector_replay_order" />
+
+        <ImageView
+            android:id="@+id/speeddown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:src="@drawable/selector_replay_gobcak" />
+
+        <ImageView
+            android:id="@+id/pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:src="@drawable/selector_replay_pre" />
+
+        <FrameLayout
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_margin="5dip"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/start_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_repaly_paly" />
+
+            <ProgressBar
+                android:id="@+id/playProgress"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:src="@drawable/selector_replay_next" />
+
+
+        <ImageView
+            android:id="@+id/speedup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:src="@drawable/selector_replay_forward" />
+
+        <ImageView
+            android:id="@+id/hidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:src="@drawable/selector_replay_pull_down" />
+    </LinearLayout>
+
+</LinearLayout>

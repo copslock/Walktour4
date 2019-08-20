@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 筛选界面布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:background="@color/white"
+    android:minHeight="125dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/nocityway"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical|center"
+                android:gravity="center_vertical|center"
+                android:text="@string/metro_no_route"
+                android:textSize="@dimen/default_txt_size_micro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <ListView
+                android:id="@+id/left_listview"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_weight="0.8"
+                android:background="@color/white"
+                android:orientation="vertical" >
+            </ListView>
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:text="|" />
+
+            <ListView
+                android:id="@+id/right_listview"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_weight="0.2"
+                android:background="@color/white"
+                android:orientation="vertical" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ControlBar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_ECECEC"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/box2"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_reset"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="@string/params_list_reset"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/app_defult_btn_txt_size" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@android:drawable/divider_horizontal_bright" />
+
+                <Button
+                    android:id="@+id/btn_summit"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="@string/data_manager_screening"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/app_defult_btn_txt_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

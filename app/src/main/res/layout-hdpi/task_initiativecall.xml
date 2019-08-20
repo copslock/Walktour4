@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_grey_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/task_attach_title"
+        layout="@layout/basic_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/title_layout"
+        android:background="@color/setting_sort_title_bgcolor" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0.1dip"
+        android:layout_weight="50">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:background="@color/app_main_bg_color"
+            android:orientation="vertical">
+
+            <!-- 常规 -->
+
+            <include layout="@layout/task_routine_sort_title" />
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_taskname"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_taskName" />
+
+                <EditText
+                    android:id="@+id/edit_taskname"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:text="test" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_repeat"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_repeat" />
+
+                <EditText
+                    android:id="@+id/edit_repeat"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_callNumber"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_callNumber" />
+
+                <com.walktour.gui.task.CustomAutoCompleteTextView
+                    android:id="@+id/edit_callNumber"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:digits="0123456789*#+-"
+                    android:dropDownVerticalOffset="3dip"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:popupBackground="#F1F2F6"
+                    android:singleLine="true"
+                    tools:text="10086" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_keepTime"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_keepTime" />
+
+                <EditText
+                    android:id="@+id/edit_keepTime"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:singleLine="true"></EditText>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/task_uniontest_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View style="@style/task_listdivider" />
+
+                <!-- 暂时屏蔽主被叫联合选项，由于在单机版中不需要使用该选项，但是ipad端下发有此权限，解析也正常，故保留此项 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_unionTest"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_union" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/edit_unionTest"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 高级 -->
+
+            <include layout="@layout/task_advanced_sort_title" />
+
+            <LinearLayout
+                android:id="@+id/task_advanced_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_connectTime"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_connectTime" />
+
+                    <EditText
+                        android:id="@+id/edit_connectTime"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_interVal"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_interVal" />
+
+                    <EditText
+                        android:id="@+id/edit_interVal"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:singleLine="true" />
+
+                    <View style="@style/task_listdivider" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/callLength_Layout"
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_callLength"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_CallLength" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/spinner_callLength"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+
+                    <View style="@style/task_listdivider" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/callModeLayout"
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_callMode"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_videoCall" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/spinner_callMode"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+
+                    <View style="@style/task_listdivider" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/callMosLayout"
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txt_callMOSServer"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_callMOSServer" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/edit_callMOSServer"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+
+                    <View style="@style/task_listdivider" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_mos_count"
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_callMOSCountd" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/edit_callMOSCountd"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+
+                    <View style="@style/task_listdivider" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_mos_calc"
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_callrealtimecount" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/mos_calc"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+
+                    <View style="@style/task_listdivider" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_mos_type"
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_callTestType" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/edit_callTestType"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+
+                    <View style="@style/task_listdivider" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_mos_way"
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/two_way_trans_play" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/spinner_mos_way"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+
+                    <View style="@style/task_listdivider" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_match_phone"
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/match_phone" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/spinner_match_phone"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+
+                    <View style="@style/task_listdivider" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_mos_bluetooth"
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_callMOSBluetooth" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/edit_callMOSBluetooth"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+
+                    <View style="@style/task_listdivider" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="多语料开关" />
+
+                    <CheckBox
+                        android:id="@+id/cb_multi_sample"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:button="@drawable/switch_button_bg"
+                        android:paddingRight="10dip" />
+
+
+                    <View style="@style/task_listdivider" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_mos_polqa_simple"
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_callMOS_polqasample" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/edit_callMOS_PolqaSimple"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+
+                    <View style="@style/task_listdivider" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_multi_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        style="@style/task_layout_edge"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/tasK_title_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="语料样本" />
+
+                        <TextView
+                            android:id="@+id/tv_multi_cycle_data"
+                            style="@style/task_edit_view"
+                            android:layout_centerInParent="true"
+                            android:hint="请选择语料样本"
+                            android:singleLine="true" />
+
+                        <View style="@style/task_listdivider" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/task_layout_edge"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/tasK_title_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="语料播放间隔(s)" />
+
+                        <EditText
+                            android:id="@+id/edit_cycle_interval"
+                            style="@style/task_edit_view"
+                            android:layout_centerInParent="true"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:singleLine="true"
+                            android:text="0" />
+
+                        <View style="@style/task_listdivider" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/task_layout_edge"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/tasK_title_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="语料循环次数" />
+
+                        <EditText
+                            android:id="@+id/edit_cycle_times"
+                            style="@style/task_edit_view"
+                            android:layout_centerInParent="true"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:singleLine="true"
+                            android:text="1" />
+
+                        <View style="@style/task_listdivider" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_mos_polqa_calc"
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_callMOS_cale" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/edit_callMOS_PolqaCalc"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+
+                    <View style="@style/task_listdivider" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rab_time_layout"
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/rab_time_txt"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" />
+
+                    <EditText
+                        android:id="@+id/rab_time_edt"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:maxLength="40"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rab_time_rel_layout"
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/rab_time_rel_txt"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" />
+
+                    <EditText
+                        android:id="@+id/rab_time_rel_edt"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:editable="false"
+                        android:maxLength="40"
+                        android:singleLine="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/task_menu_buttom" />
+
+</LinearLayout>

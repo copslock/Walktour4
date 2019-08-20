@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="35dp"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/base_list_item_bg"
+    android:gravity="left|center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textGroup"
+        style="@style/fontstyle14"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="40dp"
+        android:text="No data" />
+
+</LinearLayout>

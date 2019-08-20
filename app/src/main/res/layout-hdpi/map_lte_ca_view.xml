@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <com.walktour.framework.view.ScrollLayout
+        android:id="@+id/srooll_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.walktour.framework.view.ScrollLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@id/switch_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lightdot" />
+
+        <ImageView
+            android:id="@id/switch_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:background="@drawable/darkdot" />
+        <ImageView
+            android:id="@id/switch_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:background="@drawable/darkdot" />
+        <ImageView
+            android:id="@id/switch_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:background="@drawable/darkdot" />
+    </LinearLayout>
+
+</RelativeLayout>

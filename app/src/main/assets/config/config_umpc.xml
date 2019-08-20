@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<umpcconfig>
+	<autostart value="1" />
+	<serverip value="192.168.0.1" />
+	<serverport value="1234" />
+	<connecttime value="10" />
+	
+	<wifiname value="D-Office1" />
+	<wifipassord value="1234567890" />
+	<wificiphermode value="1" />
+	
+	<mobilename value="MSE1" />
+	<mobilepassword value="" />
+</umpcconfig>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+			android:background="@color/app_grey_color"
+		    >
+	<include layout="@layout/basic_title" android:id="@+id/task_attach_title"/>
+     <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/title_layout"
+        android:background="@color/setting_sort_title_bgcolor" />		    
+	<ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="50"
+	    android:id="@+id/scrollview"
+	    android:layout_marginBottom="5dip"
+	    >
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_marginBottom="5dip"
+	    android:background="@color/app_main_bg_color"
+	    >
+	                
+            <!-- 常规 -->
+            <include layout="@layout/task_routine_sort_title" />
+	    
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    style="@style/task_layout_edge">
+	    <TextView 
+	        android:text="@string/task_taskName"
+	        android:textSize="16sp"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_centerVertical="true"
+	        style="@style/tasK_title_style"
+	         />
+	    <EditText
+	        android:id="@+id/cw_task_name_edt"
+	        android:inputType="text"
+	        android:singleLine="true"
+	        android:maxLength="30"
+	        android:width="10px"
+	        android:layout_centerInParent="true"
+	        style="@style/task_edit_view"
+	        />        
+	</RelativeLayout>
+   	<View style="@style/task_listdivider"/>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ra_http_utl"
+                style="@style/task_layout_edge" >
+
+                <TextView
+                    android:text="@string/scan_add_frequency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    style="@style/tasK_title_style"
+                    android:textSize="16dip" />
+                
+                
+                <TextView
+                    android:id="@+id/cw_add_btn"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:drawSelectorOnTop="true" 
+                    android:text="@string/sc_title_add"
+                    style="@style/task_drop_view"
+                     />
+            </RelativeLayout>
+            <View style="@style/task_listdivider" />
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/scan_BandWidth"
+                    style="@style/tasK_title_style"
+                    android:textSize="16sp" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/cw_bandwidth_spn"
+                    style="@style/task_drop_view"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true" 
+                    android:drawSelectorOnTop="true"/>
+            </RelativeLayout>
+	
+   	<View style="@style/task_listdivider" />
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="@string/scan_Uplink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    style="@style/tasK_title_style"
+                    android:textSize="16sp" />
+
+                <CheckBox
+						android:id="@+id/cw_isUp_cbx"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:layout_alignParentRight="true"
+						android:button="@drawable/switch_button_bg"
+						android:paddingRight="10dip"
+						android:layout_centerInParent="true"
+						/>
+            </RelativeLayout>
+	</LinearLayout>
+	</ScrollView>
+
+	<include layout="@layout/task_menu_buttom"/>
+</LinearLayout>

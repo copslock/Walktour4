@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical"
+    tools:context=".task.TaskVoIP" >
+
+    <include
+        android:id="@+id/task_voip_title"
+        layout="@layout/basic_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@color/setting_sort_title_bgcolor" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0.1dip"
+        android:layout_weight="50" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:background="@color/app_main_bg_color"
+            android:orientation="vertical" >
+
+            <!-- 测试控制参数 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/base_second_title_bg"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/task_control_title_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:text="@string/voip_control_para"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="12sp"
+                    style="@style/tasK_title_style" />
+            </RelativeLayout>
+            <!-- 任务名称 -->
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_taskname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_taskName"
+                     />
+
+                <EditText
+                    android:id="@+id/edit_taskname"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:width="10px" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <!-- 呼叫类型 -->
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_tasktype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_taskType"
+                     />
+				
+                <com.walktour.framework.ui.BasicSpinner android:id="@+id/edit_tasktype"
+	            style="@style/task_drop_view"
+	            android:layout_centerInParent="true"
+	            android:layout_alignParentRight="true"
+	        	/>	 
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <!-- 测试次数 -->
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/txt_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_repeat"
+                    android:numeric="integer"
+                     />
+                <EditText
+                    android:id="@+id/edit_repeat"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:width="10px" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <!-- 通话时长 -->
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/txt_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_voip_duration"
+                     />
+                <EditText
+                    android:id="@+id/edit_duration"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:numeric="integer"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:width="10px" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <!-- 测试间隔 -->
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_interVal"
+                     />
+
+                <EditText
+                    android:id="@+id/edit_interval"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:width="10px" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <!-- 连接超时 -->
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_timeout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_timeOut"
+                     />
+
+                <EditText
+                    android:id="@+id/edit_timeout"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:numeric="integer"
+                    android:width="10px" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <!-- 连接超时 -->
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_nodata_timeout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_voip_nodata_timeout"
+                     />
+
+                <EditText
+                    android:id="@+id/edit_nodate_timeout"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:numeric="integer"
+                    android:width="10px" />
+            </RelativeLayout>
+
+            <!-- VoIP帐户信息 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/base_second_title_bg"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:text="@string/voip_account_info"
+                     style="@style/tasK_title_style"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <!-- 注册类型 -->
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/txt_register_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_voip_register_type"
+                     />
+                <com.walktour.framework.ui.BasicSpinner android:id="@+id/edit_registertype"
+		            style="@style/task_drop_view"
+		            android:layout_centerInParent="true"
+		            android:layout_alignParentRight="true"
+	        	/>	
+            </RelativeLayout>
+            <View style="@style/task_listdivider" />
+            
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/txt_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_voip_username"
+                     />
+                <EditText
+                    android:id="@+id/edit_username"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:width="10px" />
+            </RelativeLayout>
+            <View style="@style/task_listdivider" />
+            
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/txt_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_voip_password"
+                     />
+                <EditText
+                    android:id="@+id/edit_password"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:password="true"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:width="10px" />
+            </RelativeLayout>
+            <View style="@style/task_listdivider" />
+            
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/txt_serverip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_voip_serverip"
+                     />
+                <EditText
+                    android:id="@+id/edit_serverip"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:width="10px" />
+            </RelativeLayout>
+            <View style="@style/task_listdivider" />
+            
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/txt_serverport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_voip_serverport"
+                     />
+                <EditText
+                    android:id="@+id/edit_serverport"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:numeric="integer"
+                    android:width="10px" />
+            </RelativeLayout>
+            <View style="@style/task_listdivider" />
+            
+            <LinearLayout android:id="@+id/imsinfo_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+	            <RelativeLayout
+	                style="@style/task_layout_edge"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" >
+	                <TextView
+	                    android:id="@+id/txt_imsinfo"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerVertical="true"
+	                    android:text="@string/task_voip_imsinfo"
+	                     />
+	                <EditText
+	                    android:id="@+id/edit_imsinfo"
+	                    style="@style/task_edit_view"
+	                    android:layout_centerInParent="true"
+	                    android:inputType="text"
+	                    android:maxLength="30"
+	                    android:singleLine="true"
+	                    android:width="10px" />
+	            </RelativeLayout>
+	            <View style="@style/task_listdivider" />
+	            
+	            <RelativeLayout
+	                style="@style/task_layout_edge"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" >
+	                <TextView
+	                    android:id="@+id/txt_imsip"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerVertical="true"
+	                    android:text="@string/task_voip_imsip"
+	                     />
+	                <EditText
+	                    android:id="@+id/edit_imsip"
+	                    style="@style/task_edit_view"
+	                    android:layout_centerInParent="true"
+	                    android:inputType="text"
+	                    android:maxLength="30"
+	                    android:singleLine="true"
+	                    android:width="10px" />
+	            </RelativeLayout>
+	            <View style="@style/task_listdivider" />
+	        </LinearLayout>
+            
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/txt_dialuser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_voip_dialuser"
+                     />
+                <EditText
+                    android:id="@+id/edit_dialuser"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:width="10px" />
+            </RelativeLayout>
+            
+            <!-- VoIP测试方式 -->
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/base_second_title_bg"
+                android:gravity="center_vertical" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:text="@string/voip_test_type"
+                    style="@style/tasK_title_style" 
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/txt_voiptype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_voip_type"
+                     />
+                
+                <com.walktour.framework.ui.BasicSpinner android:id="@+id/edit_voiptype"
+		            style="@style/task_drop_view"
+		            android:layout_centerInParent="true"
+		            android:layout_alignParentRight="true"
+	        	/>	
+            </RelativeLayout>
+            <View style="@style/task_listdivider" />
+            
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/txt_usesample"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_voip_usesample"
+                     />
+                <com.walktour.framework.ui.BasicSpinner android:id="@+id/edit_usesample"
+		            style="@style/task_drop_view"
+		            android:layout_centerInParent="true"
+		            android:layout_alignParentRight="true"
+	        	/>	
+            </RelativeLayout>
+            <View style="@style/task_listdivider" />
+            
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/txt_audiofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_voip_audiofile"
+                     />
+                <EditText
+                    android:id="@+id/edit_audiofile"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:width="10px" />
+            </RelativeLayout>
+            <View style="@style/task_listdivider" />
+            
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/txt_videofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_voip_vediofile"
+                     />
+                <EditText
+                    android:id="@+id/edit_vediofile"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:width="10px" />
+            </RelativeLayout>
+            <View style="@style/task_listdivider" />
+            
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/txt_moscal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_voip_moscal"
+                     />
+                <com.walktour.framework.ui.BasicSpinner android:id="@+id/edit_moscal"
+		            style="@style/task_drop_view"
+		            android:layout_centerInParent="true"
+		            android:layout_alignParentRight="true"
+	        	/>	
+            </RelativeLayout>
+            <View style="@style/task_listdivider" />
+            
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/txt_dosave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_voip_dosave"
+                     />
+                <com.walktour.framework.ui.BasicSpinner android:id="@+id/edit_dosave"
+		            style="@style/task_drop_view"
+		            android:layout_centerInParent="true"
+		            android:layout_alignParentRight="true"
+	        	/>	
+            </RelativeLayout>
+            <View style="@style/task_listdivider" />
+            
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/txt_savepath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_voip_savepath"
+                     />
+                <EditText
+                    android:id="@+id/edit_savepath"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:width="10px" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/task_menu_buttom" />
+
+</LinearLayout>

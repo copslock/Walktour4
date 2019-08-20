@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:textSize="@dimen/default_txt_size_normal"
+    android:gravity="center_vertical"
+    android:checkMark="@drawable/radio"
+    android:paddingLeft="6dip"
+    android:paddingRight="6dip"
+    android:textColor="@color/app_main_text_color"
+    android:background="@color/app_main_bg_color"
+/>
+<!-- android:checkMark="?android:attr/listChoiceIndicatorSingle" -->

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="52dp"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btn_info"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/base_list_item_bg"
+        android:text="@string/intelligent_analysis_nothing"
+        android:textColor="@drawable/selector_tab_text_color3"
+        android:textSize="@dimen/app_defult_btn_txt_size"/>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="fill_parent"
+        android:background="@color/gray" />
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:layout_weight="2.0"
+        android:background="@drawable/base_list_item_bg"
+        android:text="@string/baidumap_offline_state_finish"
+        android:textColor="@drawable/selector_tab_text_color3"
+        android:textSize="@dimen/app_defult_btn_txt_size" />
+
+</LinearLayout>

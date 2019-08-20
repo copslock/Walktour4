@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dip"
+    android:orientation="vertical">
+
+    <RelativeLayout 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_marginTop="32dip">
+    	
+   		<Button android:id="@+id/Button01" 
+   		android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:textStyle="bold"
+   		/>	
+    	<SeekBar
+    		android:id="@+id/SeekBar01"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginLeft="12dip"
+    		android:layout_toRightOf="@id/Button01"
+    		android:layout_centerVertical="true"
+    	/>
+    	
+    </RelativeLayout>
+    
+    <RelativeLayout 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_marginTop="32dip">
+    	<Button android:id="@+id/Button02" 
+   		android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:textStyle="bold"
+   		/>	
+    	<SeekBar
+    		android:id="@+id/SeekBar02"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginLeft="12dip"
+    		android:layout_toRightOf="@id/Button02"
+    		android:layout_centerVertical="true"
+    	/>
+    	
+    </RelativeLayout>
+    
+    <RelativeLayout 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_marginTop="32dip">
+    	<Button android:id="@+id/Button03" 
+   		android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:textStyle="bold"
+   		/>	
+    	<SeekBar
+    		android:id="@+id/SeekBar03"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginLeft="12dip"
+    		android:layout_toRightOf="@id/Button03"
+    		android:layout_centerVertical="true"
+    	/>
+    	
+    </RelativeLayout>
+    
+     <RelativeLayout 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_marginTop="32dip">
+    	<Button android:id="@+id/Button04" 
+   		android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:textStyle="bold"
+   		/>	
+    	<SeekBar
+    		android:id="@+id/SeekBar04"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginLeft="12dip"
+    		android:layout_toRightOf="@id/Button04"
+    		android:layout_centerVertical="true"
+    	/>
+    	
+    </RelativeLayout>
+	       
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:background="@drawable/tips_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:id="@+id/circleProgress_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center|center_vertical"
+        >
+			<TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/total_report_progressing_txt"
+			    android:layout_gravity="center_horizontal"
+			    android:textColor="@color/white"
+			    android:textSize="@dimen/default_txt_size_normal"
+			    />        
+        
+        
+	        <RelativeLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+		        android:layout_marginBottom="20dp"
+	         >
+	        
+	        <com.walktour.framework.view.CircleProgress
+	            android:id="@+id/circleProgress"
+	            android:layout_width="100dip"
+	            android:layout_height="100dip"
+	            android:layout_centerVertical="true"
+	            android:layout_centerInParent="true"
+	             />
+	        
+	         <com.walktour.framework.view.FlashingView
+	            android:id="@+id/flashView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_centerInParent="true"
+	            android:text="0%"
+	            android:textSize="25sp"
+	             />
+	        
+	        
+	    </RelativeLayout>
+	    
+	        <TextView 
+	            android:id="@+id/cancel_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/total_report_stopprogress_txt"
+			    android:layout_gravity="center_horizontal"
+			    android:textColor="@drawable/textview_states"
+			    android:textSize="@dimen/default_txt_size_medium"
+			    android:layout_margin="5dp"
+			    /> 
+	        
+    </LinearLayout>
+
+</LinearLayout>

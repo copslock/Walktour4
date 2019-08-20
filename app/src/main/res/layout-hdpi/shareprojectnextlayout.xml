@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/sharetitle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/infoid"
+            style="@style/fontstyle14"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="选择工程文件" />
+
+        <Button
+            android:id="@+id/historybtn"
+            style="@style/fontstyle14"
+            android:layout_width="wrap_content"
+            android:layout_height="38sp"
+            android:background="@drawable/background_mybutton3"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginRight="4dp"
+            android:text="@string/share_project_devices_release_relation_12" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/single_heng_qian" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/shareobj"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/single_heng_qian"
+            android:dividerHeight="0.5dp" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

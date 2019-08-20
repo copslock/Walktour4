@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<RelativeLayout 
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="172dip"
+ android:layout_height="172dip"
+ android:background="@drawable/panel"
+ >
+	    <Button android:id="@+id/ButtonLeft"
+			 android:layout_width="48dip"
+			 android:layout_height="48dip"
+			 android:layout_centerVertical="true"
+			 android:layout_marginLeft="6dip"
+			 android:background="@drawable/background_panel_left"
+	    />
+	    <Button android:id="@+id/ButtonUp"
+			 android:layout_width="48dip"
+			 android:layout_height="48dip"
+			 android:layout_centerHorizontal="true"
+			 android:layout_marginTop="6dip"
+			 android:background="@drawable/background_panel_up"
+	    />
+	    <Button android:id="@+id/ButtonRight"
+			 android:layout_width="48dip"
+			 android:layout_height="48dip"
+			 android:layout_centerVertical="true"
+			 android:layout_alignParentRight="true"
+			 android:layout_marginRight="6dip"
+			 android:background="@drawable/background_panel_right"
+	    />
+	    <Button android:id="@+id/ButtonDown"
+			 android:layout_width="48dip"
+			 android:layout_height="48dip"
+			 android:layout_alignParentBottom="true"
+			 android:layout_centerHorizontal="true"
+			 android:layout_marginBottom="6dip"
+			 android:background="@drawable/background_panel_down"
+	    />
+	    <Button android:id="@+id/ButtonEnter"
+			 android:layout_width="48dip"
+			 android:layout_height="48dip"
+			 android:layout_centerInParent="true"
+			 android:background="@drawable/background_panel_enter"
+	    />
+</RelativeLayout>

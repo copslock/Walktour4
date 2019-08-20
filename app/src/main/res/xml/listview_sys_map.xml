@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/sys_tab_map_setting">
+   <ListPreference
+          android:key="map.gps"
+          android:title="@string/sys_map_gpsColor"
+   />
+       
+   <PreferenceCategory
+   		android:key="map.parameter"
+   		android:title="@string/sys_map_parameter"
+   		android:persistent="false"
+   >
+	  <ListPreference android:key="map.choice"  android:title="@string/sys_map_choice" />
+      
+      <EditTextPreference android:key= "th1" android:title="@string/sys_map_value1"/>
+      <EditTextPreference android:key= "th2" android:title="@string/sys_map_value2"/>
+      <EditTextPreference android:key= "th3" android:title="@string/sys_map_value3"/>
+      <EditTextPreference android:key= "th4" android:title="@string/sys_map_value4"/>
+		
+		<ListPreference android:key="co1"  android:title="@string/sys_map_color1" />
+		<ListPreference android:key="co2"  android:title="@string/sys_map_color2" />
+		<ListPreference android:key="co3"  android:title="@string/sys_map_color3" />
+		<ListPreference android:key="co4"  android:title="@string/sys_map_color4" />	   		
+   </PreferenceCategory> 
+        
+        
+</PreferenceScreen>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 左边图标，右边标题 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_list_item_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="0dip" >
+
+    <CheckBox
+        android:id="@+id/ItemTestable"
+        android:layout_width="45dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="12dip"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:drawableLeft="@drawable/checkbox"
+        android:button="@null"
+         />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@id/drag_handle"
+        android:layout_toRightOf="@id/ItemTestable"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ItemTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="TextView01"
+            android:textColor="@color/app_main_text_color"
+            android:textSize="@dimen/app_content_txt_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ItemCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3333333 times"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

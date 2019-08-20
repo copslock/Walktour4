@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.walktour.framework.view.Dashboardfor5GView
+                android:id="@+id/item_5g_dashboardview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@color/app_main_color"
+                android:visibility="visible" />
+
+            <com.walktour.framework.view.CustomDLULView
+                android:id="@+id/dlul_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_5g_dashboardview"
+                android:visibility="gone">
+
+            </com.walktour.framework.view.CustomDLULView>
+
+            <com.walktour.framework.view.CustomDashboardDataView
+                android:id="@+id/item_Data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dlul_view"
+                android:background="@color/app_main_color">
+
+            </com.walktour.framework.view.CustomDashboardDataView>
+
+            <com.walktour.framework.view.MLineChartView
+                android:id="@+id/line_chart"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_below="@+id/item_Data"
+                android:layout_alignParentBottom="true"
+                android:background="@color/app_main_color">
+
+            </com.walktour.framework.view.MLineChartView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

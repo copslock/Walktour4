@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/lock" />
+
+        <LinearLayout
+            style="@style/item_layout_white_circle"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/sys_setting_lock_net"
+                android:layout_width="fill_parent"
+                android:layout_height="48dip"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <!--
+                     <TextView
+                    style="@style/setting_sort_left_up_text_2"
+                    android:text="@string/lock" />
+                -->
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/lock_netorband" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/sys_setting_lock_cell"
+                android:layout_width="fill_parent"
+                android:layout_height="48dip"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View style="@style/new_setting_divider" />
+
+                <!--
+                     <TextView
+                    style="@style/setting_sort_left_up_text_2"
+                    android:text="@string/lock" />
+                -->
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/locl_lock_area" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sys_setting_lock_cell_none"
+                android:layout_width="fill_parent"
+                android:layout_height="48dip"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View style="@style/new_setting_divider" />
+
+                <!--
+                     <TextView
+                    style="@style/setting_sort_left_up_text_2"
+                    android:text="@string/lock" />
+                -->
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/locl_lock_cell_none" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_lock_lteca"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="gone">
+
+                <View style="@style/new_setting_divider" />
+
+                <TextView
+                    android:id="@+id/setting_lock_ca_state"
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/lock_lteca" />
+
+                <!--
+                     <CheckBox
+                    android:id="@+id/setting_lock_lteca_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/switch_button_bg"
+                    android:checked="false" />
+                -->
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

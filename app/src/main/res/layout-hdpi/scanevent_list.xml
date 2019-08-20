@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    
+    >
+    
+
+    <ListView
+        android:id="@+id/ListView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@drawable/list_divider"
+        android:background="@color/app_main_bg_color"
+        android:fadingEdge="none"
+        android:layout_below="@id/title_layout"
+        android:transcriptMode="alwaysScroll"
+         />
+        
+
+</merge>

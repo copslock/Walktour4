@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_weight="1"
+        layout="@layout/terminal_top" />
+<!-- -
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"
+        >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/terminal_sub" />
+    </ScrollView>
+ -->
+</LinearLayout>

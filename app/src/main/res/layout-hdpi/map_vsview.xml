@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <!--
+    <com.walktour.gui.map.VSRealTimeParaView
+        android:id="@+id/vs_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.walktour.gui.map.VSRealTimeParaView>
+    -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:gravity="center_vertical|center_horizontal" >
+		<ImageView android:id="@+id/play"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:scaleType="fitXY"
+		    android:adjustViewBounds="true"
+		    android:layout_margin="20dp"/>
+        <!-- <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </SurfaceView> -->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2" >
+
+        <com.walktour.gui.map.VSRealTimeParaView
+            android:id="@+id/vs_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.walktour.gui.map.VSRealTimeParaView>
+    </RelativeLayout>
+
+</LinearLayout>

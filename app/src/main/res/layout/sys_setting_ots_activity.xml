@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/setting_bgcolor"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/task_title" android:id="@+id/title_layout"/>
+    
+    <!-- OTS Test-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/sys_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/sys_setting_ots_test" />
+        <CheckBox 
+            android:id="@+id/ots_test_ck"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:button="@drawable/switch_button_bg"/>
+                
+         <View style="@style/setting_divider"/>
+    </RelativeLayout>
+    
+    
+    
+    <!-- sample interval-->
+    <RelativeLayout
+        android:id="@+id/sample_interval_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/sys_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/sys_setting_sample_interval" />
+        
+         <TextView
+            android:id="@+id/sample_interval_text"
+            style="@style/setting_sort_right_text"/>
+                
+         <View style="@style/setting_divider"/>
+    </RelativeLayout>
+
+    
+    
+    <!-- Division Enable-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/sys_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/sys_setting_division_enable" />
+        <CheckBox 
+            android:id="@+id/division_enable_ck"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:button="@drawable/switch_button_bg"/>
+                
+         <View style="@style/setting_divider"/>
+    </RelativeLayout>
+    
+    
+    <!-- Division Size-->
+    <RelativeLayout
+        android:id="@+id/division_size_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/sys_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/sys_setting_division_size" />
+        
+         <TextView
+            android:id="@+id/division_size_text"
+            style="@style/setting_sort_right_text"/>
+                
+         <View style="@style/setting_divider"/>
+    </RelativeLayout>
+    
+    
+        <!-- DataStorage-->
+    <RelativeLayout
+        android:id="@+id/dataStorage_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/sys_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/sys_setting_data_storage" />
+        
+         <TextView
+            android:id="@+id/dataStorage_text"
+            style="@style/setting_sort_right_text"/>
+                
+         <View style="@style/setting_divider"/>
+    </RelativeLayout>
+    
+    <!--添加端口信息-->
+    <RelativeLayout
+        android:id="@+id/port_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/sys_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/fleet_set_port" />
+        
+         <TextView
+            android:id="@+id/port_text"
+            style="@style/setting_sort_right_text"/>
+                
+         <View style="@style/setting_divider"/>
+    </RelativeLayout>
+    
+    <TextView
+        style="@style/setting_sort_title"
+        android:text="@string/sys_ots_active_mode_str" />
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/sys_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/sys_ots_test_active_str" />
+        <CheckBox 
+            android:id="@+id/test_active_ck"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:button="@drawable/switch_button_bg"/>
+                
+         <View style="@style/setting_divider"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/report_interval_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/sys_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/sys_ots_report_interval_str" />
+        
+         <TextView
+            android:id="@+id/report_interval_text"
+            style="@style/setting_sort_right_text"/>
+                
+         <View style="@style/setting_divider"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/url_device_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/sys_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/sys_ots_url_device_str" />
+        
+        <TextView
+            android:id="@+id/url_device_text"
+            android:ellipsize="none"
+ 			android:maxLines="2"
+ 			android:scrollHorizontally="false"
+ 			android:layout_width="230dip"
+ 			android:layout_height="48dip"
+ 			android:textColor="@color/white"
+ 			android:textSize="14sp"
+ 			android:gravity="right|center_vertical"
+ 			android:layout_marginRight="10dip"
+ 			android:layout_alignParentRight="true"
+ 			/>
+                
+         <View style="@style/setting_divider"/>
+    </RelativeLayout>
+         <View style="@style/setting_divider"/>
+    
+         <RelativeLayout
+        android:id="@+id/url_parameter_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/sys_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/sys_ots_url_para_str" />
+        
+         <TextView
+            android:id="@+id/url_parameter_text"
+            android:ellipsize="none"
+ 			android:maxLines="2"
+ 			android:scrollHorizontally="false"
+ 			android:layout_width="230dip"
+ 			android:layout_height="48dip"
+ 			android:textColor="@color/white"
+ 			android:textSize="14sp"
+ 			android:gravity="right|center_vertical"
+ 			android:layout_marginRight="10dip"
+ 			android:layout_alignParentRight="true"
+ 			/>
+    </RelativeLayout>
+    <View style="@style/setting_divider"/>
+    
+</LinearLayout>

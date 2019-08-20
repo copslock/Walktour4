@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="2dip"
+                android:text="@string/pilot_channel" />
+
+            <EditText
+                android:id="@+id/alert_startFrequency"
+                style="@style/task_edit_view"
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:maxLength="5"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="2dip"
+                android:text="Pilot   PSC/PN"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/isPSCPN"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/checkbox"
+                    android:enabled="false"
+                    android:clickable="false"
+                    android:button="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/pilot_psc" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pl_layout_psc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="2dip"
+                    android:text="Input PSC/PN" />
+
+                <EditText
+                    android:id="@+id/PSC_pns"
+                    style="@style/task_edit_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pl_layout_top"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="2dip"
+                    android:text="@string/pilot_topn" />
+
+                <EditText
+                    android:id="@+id/top_pilots"
+                    style="@style/task_edit_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

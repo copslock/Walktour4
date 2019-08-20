@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><!-- ============================== --><!-- 系统设置的layout文件 --><!-- ============================== -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/basic_title" />
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_layout">
+
+
+        <LinearLayout
+            android:background="@color/app_tag_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_alignParentTop="true"
+                android:divider="@null"
+                android:paddingTop="7dp"
+                android:textColor="@color/white"></TabWidget>
+            <View
+                android:background="@color/transparent_half"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"/>
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"></FrameLayout>
+        </LinearLayout>
+
+    </TabHost>
+</RelativeLayout>

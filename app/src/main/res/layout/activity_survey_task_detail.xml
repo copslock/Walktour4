@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:id="@+id/appbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:background="@color/app_main_color"-->
+            <!--android:minHeight="45dp"-->
+            <!--app:popupTheme="@style/ToolbarPopupTheme"-->
+            <!--app:titleTextAppearance="@style/activity_toolbar">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/toolbar_title"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="start"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textSize="@dimen/app_first_title_txt_size" />-->
+
+        <!--</android.support.v7.widget.Toolbar>-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/app_tag_bg"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/task_test_main_bg"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:src="@drawable/navi_back" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ib_back"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务编号：" />
+
+
+        <TextView
+            android:id="@+id/tv_survey_task_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务地点：" />
+
+
+        <TextView
+            android:id="@+id/tv_survey_task_location_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="经纬度：" />
+
+
+        <TextView
+            android:id="@+id/tv_survey_task_lat_long"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/map_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/survey_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minEms="4"
+                    android:text="近景拍摄" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_capture_close_shot_path"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:text="/sdcard/xxx.jpg" />
+
+                    <ImageView
+                        android:id="@+id/iv_capture_close_shot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_capture" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minEms="4"
+                    android:text="远景拍摄" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_capture_far_shot_path"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:text="/sdcard/xxx.jpg" />
+
+                    <ImageView
+                        android:id="@+id/iv_capture_far_shot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_capture" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minEms="4"
+                    android:text="天线背板" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_capture_antenna_back_path"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:text="/sdcard/xxx.jpg" />
+
+                    <ImageView
+                        android:id="@+id/iv_capture_antenna_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_capture" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minEms="4"
+                    android:text="覆盖方向" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_capture_cover_direction_path"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:text="/sdcard/xxx.jpg" />
+
+                    <ImageView
+                        android:id="@+id/iv_capture_cover_direction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_capture" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--扇区经纬度、方位角、下倾角-->
+            <LinearLayout
+                android:id="@+id/container_cell_info"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minEms="5"
+                        android:text="扇区经纬度" />
+
+                    <TextView
+                        android:id="@+id/tv_cell_lon_lat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="lon:11212,lat23145" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minEms="5"
+                        android:text="方位角" />
+
+                    <TextView
+                        android:id="@+id/tv_azimuth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="124°" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minEms="5"
+                        android:text="下切角" />
+
+                    <TextView
+                        android:id="@+id/tv_downtilt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="124°" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--领取模块底部按钮-->
+        <LinearLayout
+            android:id="@+id/container_claim"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_main_bottom_selector"
+                android:gravity="center"
+                android:text="@string/str_cancle"
+                android:textColor="@drawable/selector_textcolor"
+                android:textSize="@dimen/app_defult_btn_txt_size" />
+
+            <Button
+                android:id="@+id/btn_claim"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_main_bottom_selector"
+                android:gravity="center"
+                android:text="领取"
+                android:textColor="@drawable/selector_textcolor"
+                android:textSize="@dimen/app_defult_btn_txt_size" />
+        </LinearLayout>
+
+        <!--完成模块底部按钮-->
+        <LinearLayout
+            android:id="@+id/container_finishing"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_main_bottom_selector"
+                android:gravity="center"
+                android:text="启动测试"
+                android:textColor="@drawable/selector_textcolor"
+                android:textSize="@dimen/app_defult_btn_txt_size" />
+
+            <Button
+                android:id="@+id/btn_analyze"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_main_bottom_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="获取数据"
+                android:textColor="@drawable/selector_textcolor"
+                android:textSize="@dimen/app_defult_btn_txt_size" />
+
+            <Button
+                android:id="@+id/btn_finish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_main_bottom_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="@drawable/selector_textcolor"
+                android:textSize="@dimen/app_defult_btn_txt_size" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

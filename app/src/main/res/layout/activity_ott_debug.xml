@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical"
+    tools:context=".mos.OttDebugActivity">
+
+<!--    <include layout="@layout/basic_title" />
+
+
+    <Button
+        android:id="@+id/btn_ott_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启动OTT-WECHAT" />
+
+    <Button
+        android:id="@+id/btn_ott_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启动OTT-QQ" />
+
+    <Button
+        android:id="@+id/btn_ott_weibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启动OTT-WEIBO" />
+
+    <Button
+        android:id="@+id/btn_ott_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止OTT" />
+
+    <Button
+        android:id="@+id/btn_vivo_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vivo放音" />-->
+
+
+</LinearLayout>

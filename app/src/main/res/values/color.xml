@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="app_main_color">#2E92D5</color>-->
+    <color name="app_main_color">#0074CC</color>
+    <!--<color name="app_main_color">#165892</color>-->
+    <color name="app_other_color">#48D5E0</color>
+    <color name="app_tag_bg">#0074CC</color>
+    <color name="app_tag_text">#5AB2F6</color>
+
+
+    <color name="tab_text_blue">#006EBB</color>
+    <color name="red_light">#FF3B00</color>
+    <color name="red_press">#990000</color>
+    <color name="black">#000</color>
+    <color name="white">#FFF</color>
+    <color name="red">#F00</color>
+    <color name="green">#0F0</color>
+    <color name="green9">#006600</color>
+    <color name="yellow">#FF0</color>
+    <color name="orange">#EE9A00</color>
+    <color name="blue">#00F</color>
+    <color name="cyan">#9F0</color>
+    <color name="gray">#999</color>
+    <color name="dark_gray">#666</color>
+    <color name="light_gray">#CCC</color>
+    <color name="magenta">#F3F</color>
+    <color name="limpid">#FFFF</color>
+    <color name="limpid_black">#99000022</color>
+    <color name="limpid_yellow">#EEFF9900</color>
+    <color name="limpid_red">#AADF3300</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="transparent_half">#0F000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="map_bar">#4000</color>
+    <color name="light_blue">#00a3e6</color>
+    <color name="light_yellow">#9e7131</color>
+    <color name="light_red">#8e40d0</color>
+    <color name="light_red2">#f04772</color>
+    <color name="light_green">#23a69e</color>
+    <color name="private_yellow">#B8860B</color>
+    <color name="wwhite">#ffffff</color>
+    <color name="grayf8">#f8f8f8</color>
+    <color name="text_color_70">#707070</color>
+
+    <!-- 紫色 -->
+    <color name="light_purple">#800080</color>
+    <!-- 橙色 -->
+    <color name="light_orange"> #ff8c00</color>
+    <!-- 23a69e -->
+    <color name="info_background">#8880</color>
+    <color name="legend">#FFCCCCCC</color>
+    <color name="toastbg">#272727</color>
+    <color name="light_zi">#c4a6e8</color>
+    <color name="tab_title_bgcolor">#0d61b0</color>
+    <color name="setting_sort_title_bgcolor">#15b6f9</color>
+    <color name="setting_bgcolor">#303234</color>
+    <color name="item_pressed">#f5f5f5</color>
+	<color name="item_presseds">#8ecaff</color>
+    <!-- 测试任务底部菜单背景颜色 -->
+    <color name="task_bottom_menu_bg_nomal">#2d3034</color>
+    <color name="task_bottom_menu_bg_select">#232326</color>
+    <color name="task_content_group_bg">#4f5156</color>
+
+    <!-- 测试信息参数 字体颜色 -->
+    <color name="info_param_color">#28aae2</color>
+
+    <!-- 基本list Item点击样式 -->
+    <color name="base_list_item_bg_nomal">#303234</color>
+    <color name="base_list_item_bg_select">#E6E6E6</color> <!-- #28aae2 -->
+    <color name="base_second_title_bg">#55AAAAAA</color> <!-- #28aae2 -->
+    <color name="his_list_item_bg_nomal">#F1F2F6</color>
+    <color name="list_item_bg_expend">#383838</color>
+
+    <!--  -->
+    <color name="progressbar_bg">#4e4e4e</color>
+
+    <!-- 参数View 背景颜色 -->
+    <color name="param_view_bg_color">#FBFAFA</color>
+    <color name="param_view_line_color">#969696</color>
+
+    <!-- pop -->
+    <color name="pop_list_item_nomal">#383A3E</color>
+
+    <!-- 透明颜色 -->
+    <color name="task_main_tm">#00000000</color>
+    <!-- 半透明颜色 -->
+    <color name="task_main_btm">#50000000</color>
+
+    <!-- 界面背景颜色  -深灰色 -->
+    <color name="basic_bg_color">#FBFAFA</color>
+
+    <!-- 地图颜色 -->
+    <color name="track">#A565FE</color>
+    <color name="currenttrack">#A565FE</color>
+    <color name="poi_descr_text">#000000</color>
+    <color name="chart_border">#424542</color>
+    <color name="chart_graph_0">#ffff7200</color>
+    <color name="chart_graph_1">#ffffffff</color>
+    <color name="error_message_backgr">#FF3333</color>
+    <!-- 表格的标题栏的背景色 -->
+    <color name="bg_grid_title">#3032340f</color>
+    <color name="bg_replay_item">#767676</color>
+    <!-- WIFIP2P -->
+    <color name="status_bar_color">#FF000000</color>
+    <color name="layout_border_color">#FF111111</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="about_bg">#7F3e4042</color>
+    <color name="about_item">#838F9197</color>
+    <color name="license_his_list_item_bg_nomal">#c0F1F2F6</color>
+    <color name="csfb_main_bg1">#303234</color>
+    <color name="csfb_txt_color">#2A99C8</color>
+    <color name="csfb_delay_color">#333333</color>
+    <color name="replay_ing_color">#80F3F3F3</color>
+    <color name="csfb_piechart_color">#30323432</color>
+    <color name="search_btn">#0074CC</color>
+    <color name="license_back_1">#fefefe</color>
+    <!-- 常规设置的说明文字的颜色 -->
+    <color name="sys_setting_sort_left_down_text">#BFBFBF</color>
+    <!-- 邻区填充颜色 -->
+    <color name="cell_color">#2F3237</color>
+    <!-- 冻屏按下去颜色 -->
+    <color name="free_press_color">#32CCCCCC</color>
+    <color name="bright_black">#3A3C3E</color>
+    <color name="main_press_btn_color">#66E6E6E6</color>
+    <color name="main_press_color">#dcdcdc</color>
+    <!-- 应用主背景颜色 -->
+    <color name="app_main_bg_color">#FFFFFF</color>
+    <!-- 参数标题颜色 -->
+    <!--<color name="app_main_text_color">#333333</color>-->
+    <color name="app_main_text_color">#707070</color>
+    <!-- 副标题颜色 -->
+    <color name="app_main_second_title_text_color">#555</color>
+    <!-- 参数结果颜色 -->
+    <color name="app_param_color">#019CFF</color>
+    <!-- tab背景颜色 -->
+    <color name="app_tab_bg_color">#F3F3F3</color>
+    <!-- 个性灰色 -->
+    <color name="app_grey_color">#E6E6E6</color>
+    <!-- tab 选项卡背景 -->
+    <color name="app_tab_bg_color_blue">#0065A9</color>
+    <!-- 标题栏背景 -->
+    <color name="app_title_bg_color">#0071BC</color>
+    <!-- 不可点击置灰颜色 -->
+    <color name="app_click_disable_grey_color">#B5B5B5</color>
+    <!-- 浅灰 -->
+    <color name="app_light_grey_color">#AEAEAE</color>
+        <!-- menu bg color #DEE2E9[#F2F2F2]-->
+    <color name="app_menu_bg_color">#F3F3F3</color>
+    <!-- 特殊分割线颜色 -->
+    <color name="app_divier_line_color">#AFAFAF</color>
+    <color name="reply_bar_bg_color">#61000000</color>
+    <color name="text_lgray">#808080</color>
+    <color name="text_gray">#323232</color>
+    <color name="color_ECECEC">#ECECEC</color>
+    <color name="txt_high_light">#cf7f22</color>
+
+    <!-- calendar card 2 -->
+    <color name="calendar_active_month_bg">#fff5f7f9</color>
+    <color name="calendar_bg">#ffffffff</color>
+    <color name="calendar_divider">#ffbababa</color>
+    <color name="calendar_inactive_month_bg">#ffd7d9db</color>
+    <color name="calendar_selected_day_bg">#ff379bff</color>
+    <color name="calendar_highlighted_day_bg">#ccffcc</color>
+    <color name="calendar_selected_range_bg">#ff96caff</color>
+    <color name="calendar_text_inactive">#40778088</color>
+    <color name="calendar_text_active">#ff778088</color>
+    <color name="calendar_text_selected">#ffffffff</color>
+    <color name="calendar_text_unselectable">#7f778088</color>
+    <color name="wblue">#0071bc</color>
+    <color name="tabcolor">#0071bc</color>
+    
+	<!-- 单站的颜色 -->
+    <color name="single_heise">#333333</color>
+    <color name="single_huise">#868686</color>
+    <color name="single_lanse">#29abe2</color>
+    <color name="single_baise">#ffffff</color>
+    <color name="single_luse">#339933</color>
+    <color name="single_chengse">#f7931e</color>
+
+    <color name="text_color_c">#cccccc</color>
+    <color name="auto_text_color">#BCBCBC</color>
+    <color name="main_gridview_bg">#EAF5FA</color>
+
+    <color name="colorBg">#f2f1f1f1</color>
+    <color name="colorSelect">#f2c5c5c5</color>
+</resources>

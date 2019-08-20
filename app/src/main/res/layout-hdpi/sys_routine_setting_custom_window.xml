@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_color"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/setting_level2_title"
+        android:text="@string/sys_map_parameter_setting" />
+
+
+    <RelativeLayout
+        android:id="@+id/setting_base_params_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_layout_height"
+        android:background="@drawable/layout_white_circle"
+        android:gravity="center_vertical"
+        android:paddingRight="10dip" >
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:id="@+id/setting_base_params_title"
+            style="@style/setting_sort_left_up_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/sys_map_radio_parameter_setting" />
+        <TextView
+            android:layout_below="@+id/setting_base_params_title" 
+            style="@style/setting_sort_left_down_text_2"
+            android:text="@string/sys_map_radio_parameter_setting_describe_short"/>
+
+        <Button
+            android:id="@+id/btn_base_params_setting"
+            android:layout_width="102dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_blue_radius_selector"
+            android:gravity="center"
+            android:text="@string/setting"
+            android:textColor="@color/app_main_text_color"
+            android:textSize="@dimen/app_defult_btn_txt_size" />
+    </RelativeLayout>
+
+
+    <TextView
+        style="@style/setting_level2_title"
+        android:text="@string/sys_custom_window2" />
+
+
+    <LinearLayout
+        android:id="@+id/listview_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/layout_white_circle"
+        android:orientation="vertical" >
+
+        <com.walktour.framework.view.dragsortlistview.DragSortListView
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/param_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:choiceMode="multipleChoice"
+            android:divider="@drawable/list_divider"
+            dslv:drag_enabled="true"
+            dslv:drag_handle_id="@id/drag_handle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            dslv:drag_scroll_start="0.33"
+            dslv:drag_start_mode="onDown"
+            dslv:float_alpha="0.6"
+            dslv:remove_enabled="false"
+            dslv:slide_shuffle_speed="0.3" />
+    </LinearLayout>
+
+</LinearLayout>

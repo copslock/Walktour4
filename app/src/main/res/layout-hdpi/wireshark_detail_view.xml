@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        	android:paddingBottom="5dp"
+        	android:paddingTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@color/app_title_bg_color"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dip"
+                android:text="@string/act_info"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_first_title_txt_size" />
+            
+
+            <Button
+                android:id="@+id/btn_close"
+                android:layout_width="45dip"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/app_defult_btn_txt_size"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/dialog_btn"
+                android:text="@string/pref_close"
+                android:textColor="@color/app_main_text_color" />
+            
+            <Button
+                android:textSize="@dimen/app_defult_btn_txt_size"
+                android:layout_width="45dip"
+                android:layout_height="32dp"
+                android:layout_toLeftOf="@id/close_btn"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/dialog_btn"
+                android:text="@string/str_save"
+                android:visibility="invisible"
+                android:textColor="@color/app_main_text_color" />
+        </RelativeLayout>
+
+    <View
+            android:id="@+id/view_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/info_title"
+            android:background="@color/setting_sort_title_bgcolor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/param_view_bg_color"
+        android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <WebView
+                android:id="@+id/webview_detail1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/app_main_bg_color" />
+            <org.xwalk.core.XWalkView
+                android:id="@+id/webview_detail2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/app_main_bg_color"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/textview_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/app_main_bg_color" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_color"
+    android:orientation="vertical"
+    tools:context=".setting.ParamsListActivity" >
+
+    <!-- start title -->
+
+    <include
+        android:id="@+id/task_attach_title"
+        layout="@layout/basic_title" />
+    <!-- end title -->
+
+    <LinearLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/task_attach_title"
+        android:background="@color/app_main_color"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/param_list_selector_shape_button"
+                android:text="@string/params_list_select_all"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_defult_btn_txt_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/setting_sort_center_text"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/param_list_selector_shape_button"
+                android:text="@string/params_list_reverse"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_defult_btn_txt_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/setting_sort_center_text"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/param_list_selector_shape_button"
+                android:text="@string/params_list_search"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_defult_btn_txt_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/setting_sort_center_text"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/param_list_selector_shape_button"
+                android:text="@string/params_list_reset"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_defult_btn_txt_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/skin_searchbar_bg"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:visibility="visible" >
+
+            <EditText
+                android:id="@+id/search_bar_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/search_bar_summit"
+                android:singleLine="true"
+                android:background="@drawable/skin_searchbar_input"
+                android:inputType="none" /><!-- @drawable/skin_searchbar_input -->
+
+            <Button
+                android:id="@+id/search_bar_summit"
+                android:layout_width="60dip"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/param_list_selector_shape_button"
+                android:text="@string/params_list_search"
+                android:textSize="@dimen/app_defult_btn_txt_size"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/search_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/app_main_bg_color"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0.5dp" />
+    </LinearLayout>
+
+    <com.walktour.framework.view.stickyheader.PinnedSectionListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/search_bar"
+        android:background="@color/app_main_bg_color"
+        android:cacheColorHint="#00000000"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:dividerHeight="0.5dp"
+        android:drawSelectorOnTop="true"
+        android:focusable="false"
+        android:gravity="center"
+        android:scrollbarStyle="outsideOverlay" />
+
+</RelativeLayout>

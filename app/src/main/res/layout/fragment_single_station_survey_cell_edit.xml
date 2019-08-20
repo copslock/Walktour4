@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/fragment_main_layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/app_grey_color"
+                android:orientation="vertical"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|start"
+                    android:text="@string/single_station_survey_cell_information"
+                    android:textSize="@dimen/app_content_txt_size"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/cell_carrier_configuration_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/single_station_survey_cell_carrier_configuration"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <TextView
+                    android:id="@+id/cell_carrier_configuration_old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/cell_carrier_configuration_txt"
+                    android:layout_toStartOf="@+id/cell_carrier_configuration"
+                    android:text="(111)"
+                    android:textColor="@color/app_grey_color"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <EditText
+                    android:id="@+id/cell_carrier_configuration"
+                    style="@style/task_edit_view"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/cell_id_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/single_station_survey_cell_id"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <TextView
+                    android:id="@+id/cell_id_old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/cell_id_txt"
+                    android:layout_toStartOf="@+id/cell_id"
+                    android:text="(111)"
+                    android:textColor="@color/app_grey_color"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <EditText
+                    android:id="@+id/cell_id"
+                    style="@style/task_edit_view"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/cell_pci_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/single_station_survey_cell_pci"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <TextView
+                    android:id="@+id/cell_pci_old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/cell_pci_txt"
+                    android:layout_alignBottom="@+id/cell_pci_txt"
+                    android:layout_toEndOf="@+id/cell_pci_txt"
+                    android:text="(111)"
+                    android:textColor="@color/app_grey_color"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <EditText
+                    android:id="@+id/cell_pci"
+                    style="@style/task_edit_view"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/cell_band_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/single_station_survey_cell_band"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <TextView
+                    android:id="@+id/cell_band_old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/cell_band_txt"
+                    android:layout_toStartOf="@+id/cell_band"
+                    android:text="(111)"
+                    android:textColor="@color/app_grey_color"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <EditText
+                    android:id="@+id/cell_band"
+                    style="@style/task_edit_view"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/cell_frequency_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/single_station_survey_cell_frequency"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <TextView
+                    android:id="@+id/cell_frequency_old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/cell_frequency_txt"
+                    android:layout_alignBottom="@+id/cell_frequency_txt"
+                    android:layout_toEndOf="@+id/cell_frequency_txt"
+                    android:text="(111)"
+                    android:textColor="@color/app_grey_color"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <EditText
+                    android:id="@+id/cell_frequency"
+                    style="@style/task_edit_view"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/cell_bandwidth_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/single_station_survey_cell_bandwidth"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <TextView
+                    android:id="@+id/cell_bandwidth_old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/cell_bandwidth_txt"
+                    android:layout_toStartOf="@+id/cell_bandwidth"
+                    android:text="(111)"
+                    android:textColor="@color/app_grey_color"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <EditText
+                    android:id="@+id/cell_bandwidth"
+                    style="@style/task_edit_view"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/cell_root_sequence_index_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/single_station_survey_cell_root_sequence_index"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <TextView
+                    android:id="@+id/cell_root_sequence_index_old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/cell_root_sequence_index_txt"
+                    android:layout_toStartOf="@+id/cell_root_sequence_index"
+                    android:text="(111)"
+                    android:textColor="@color/app_grey_color"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <EditText
+                    android:id="@+id/cell_root_sequence_index"
+                    style="@style/task_edit_view"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/cell_subframe_ratio_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/single_station_survey_cell_subframe_ratio"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <TextView
+                    android:id="@+id/cell_subframe_ratio_old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/cell_subframe_ratio_txt"
+                    android:layout_toStartOf="@+id/cell_subframe_ratio"
+                    android:text="(111)"
+                    android:textColor="@color/app_grey_color"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <EditText
+                    android:id="@+id/cell_subframe_ratio"
+                    style="@style/task_edit_view"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/cell_special_subframe_ratio_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/single_station_survey_cell_special_subframe_ratio"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <TextView
+                    android:id="@+id/cell_special_subframe_ratio_old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/cell_special_subframe_ratio_txt"
+                    android:layout_toStartOf="@+id/cell_special_subframe_ratio"
+                    android:text="(111)"
+                    android:textColor="@color/app_grey_color"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <EditText
+                    android:id="@+id/cell_special_subframe_ratio"
+                    style="@style/task_edit_view"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cell_special_subframe_ratio_old"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/app_grey_color"
+            android:orientation="vertical"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|start"
+                android:text="@string/single_station_survey_cell_network_optimization_parameters"
+                android:textSize="@dimen/app_second_title_txt_size"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:visibility="gone"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/cell_rspower_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_cell_rspower"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/cell_rspower_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/cell_rspower_txt"
+                android:layout_toStartOf="@+id/cell_rspower"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/cell_rspower"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:inputType="number"
+                android:textSize="@dimen/app_content_txt_size"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:visibility="gone"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/cell_pdcch_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_cell_pdcch"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/cell_pdcch_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/cell_pdcch_txt"
+                android:layout_toStartOf="@+id/cell_pdcch"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/cell_pdcch"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:inputType="number"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/cell_pa_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_cell_pa"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/cell_pa_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/cell_pa_txt"
+                android:layout_toStartOf="@+id/cell_pa"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/cell_pa"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cell_pa_old"
+                android:layout_alignParentEnd="true"
+                android:inputType="number"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:visibility="gone"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/cell_pb_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_cell_pb"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/cell_pb_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/cell_pb_txt"
+                android:layout_toStartOf="@+id/cell_pb"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/cell_pb"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:inputType="number"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/cell_aerial_high_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_cell_aerial_high"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/cell_aerial_high_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/cell_aerial_high_txt"
+                android:layout_toStartOf="@+id/cell_aerial_high"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/cell_aerial_high"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/cell_azimuth_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_cell_azimuth"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/cell_azimuth_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/cell_azimuth_txt"
+                android:layout_toStartOf="@+id/cell_azimuth"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/cell_azimuth"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/cell_down_angle_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_cell_down_angle"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/cell_down_angle_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/cell_down_angle_txt"
+                android:layout_toStartOf="@+id/cell_down_angle"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/cell_down_angle"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/cell_electric_down_angle_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_cell_electric_down_angle"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/cell_electric_down_angle_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/cell_electric_down_angle_txt"
+                android:layout_toStartOf="@+id/cell_electric_down_angle"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/cell_electric_down_angle"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/cell_machine_down_angle_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_cell_machine_down_angle"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/cell_machine_down_angle_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/cell_machine_down_angle_txt"
+                android:layout_toStartOf="@+id/cell_machine_down_angle"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/cell_machine_down_angle"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/cell_vertical_falf_power_angle_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_cell_vertical_falf_power_angle"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/cell_vertical_falf_power_angle_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/cell_vertical_falf_power_angle_txt"
+                android:layout_toStartOf="@+id/cell_vertical_falf_power_angle"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/cell_vertical_falf_power_angle"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/cell_horizontal_falf_power_angle_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_cell_horizontal_falf_power_angle"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/cell_horizontal_falf_power_angle_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/cell_horizontal_falf_power_angle_txt"
+                android:layout_toStartOf="@+id/cell_horizontal_falf_power_angle"
+                android:text="(111)"
+                android:textColor="@color/app_grey_color"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/cell_horizontal_falf_power_angle"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_cell_aerial_vender"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <EditText
+                android:id="@+id/cell_aerial_vender"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="@string/single_station_survey_cell_aerial_type"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+
+            <EditText
+                android:id="@+id/cell_aerial_type"
+                style="@style/task_edit_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

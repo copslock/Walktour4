@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/control_play_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="gone" >
+
+        <SurfaceView
+            android:id="@+id/sv_surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center" >
+        </SurfaceView>
+    </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/custom_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="35dp">
+                <com.walktour.gui.map.VideoRealParaView
+                    android:id="@+id/vs_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/control_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="invisible" />
+
+</LinearLayout>

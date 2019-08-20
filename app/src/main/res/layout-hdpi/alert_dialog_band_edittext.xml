@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 作为弹出窗口的view: 包含1个Text 和 1个EditText -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/lte_band"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical"
+            android:text="@string/lock_band"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        
+        <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/edit_lte_band"
+                    style="@style/task_drop_view"
+                    android:layout_width="fill_parent"
+            		android:layout_height="38dip"
+            		android:layout_marginLeft="20dip"
+            		android:layout_marginRight="20dip"
+            		android:layout_marginTop="10dip"
+                    android:layout_alignParentRight="true"
+                    android:drawSelectorOnTop="true"
+                    android:layout_centerInParent="true" 
+                    android:entries="@array/lock_lte_band_value"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/alert_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="38dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical"
+            android:text="Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/alert_textEditText"
+            style="@style/task_edit_view"
+            android:layout_width="fill_parent"
+            android:layout_height="38dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:autoText="false"
+            android:capitalize="none"
+            android:gravity="center_vertical"
+            android:maxLength="9"
+            android:paddingLeft="4dip"
+            android:scrollHorizontally="true"
+            android:numeric="integer"
+            android:singleLine="true" />
+    </LinearLayout>
+
+</LinearLayout>

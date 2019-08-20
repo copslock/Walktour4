@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/task_bottom_menu_bg_nomal"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="56dip"
+    android:orientation="horizontal"
+    android:paddingLeft="10dip" >
+
+    <CheckBox
+        android:id="@+id/cw_task_ck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:checked="false"
+        android:visibility="gone"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/tv_rab_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aa"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/cw_task_ck" />
+
+    <ImageButton
+        android:id="@+id/cw_task_delete"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/controlbar_delete" />
+
+</RelativeLayout>

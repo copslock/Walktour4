@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View style="@style/task_listdivider" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" 
+            android:text="@string/task_httpUp_serverType"
+            android:textSize="16sp" />
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:id="@+id/spinner_serverType"
+            style="@style/task_drop_view"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <View style="@style/task_listdivider" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/sys_setting_upload_https_url"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_url"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"
+            android:inputType="text"
+            android:maxLength="600"
+            android:singleLine="true" />
+        
+        <TextView style="@style/textview_input_nessary"
+            android:layout_toLeftOf="@id/edit_url"/>
+        
+    </RelativeLayout>
+
+    <View style="@style/task_listdivider" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/sys_setting_upload_https_user"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_username"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"
+            android:inputType="text"
+            android:maxLength="30"
+            android:singleLine="true" />
+        
+        <TextView style="@style/textview_input_nessary"
+            android:layout_toLeftOf="@id/edit_username"/>
+    </RelativeLayout>
+
+    <View style="@style/task_listdivider" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/sys_setting_upload_https_pass"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:singleLine="true" />
+        
+        <TextView style="@style/textview_input_nessary"
+            android:layout_toLeftOf="@id/edit_password"/>
+    </RelativeLayout>
+    
+    <View style="@style/task_listdivider" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/sys_setting_upload_https_drive"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_drive"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"
+            android:inputType="text"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:text="Handheld"
+            android:hint="Handheld"
+             />
+        
+        <TextView style="@style/textview_input_nessary"
+            android:layout_toLeftOf="@id/edit_drive"/>
+    </RelativeLayout>
+
+    <View style="@style/task_listdivider" />
+    
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/sys_setting_upload_https_market"
+            android:textSize="16sp" />
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:id="@+id/spinner_market"
+            style="@style/task_drop_view"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    
+     <View style="@style/task_listdivider" />
+     
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/sys_setting_upload_https_scope"
+            android:textSize="16sp" />
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:id="@+id/spinner_scope"
+            style="@style/task_drop_view"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    
+     <View style="@style/task_listdivider" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/sys_setting_upload_https_descrition"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_descrition"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"
+            android:inputType="text"
+            android:maxLength="30"
+            android:singleLine="true" />
+    </RelativeLayout>
+    
+     <View style="@style/task_listdivider" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/sys_setting_upload_https_event"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_event"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"
+            android:inputType="text"
+            android:maxLength="30"
+            android:singleLine="true" />
+    </RelativeLayout>
+    
+     <View style="@style/task_listdivider" />
+     
+     
+     
+
+</LinearLayout>

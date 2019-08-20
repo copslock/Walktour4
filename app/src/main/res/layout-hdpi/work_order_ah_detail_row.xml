@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@color/setting_sort_title_bgcolor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sys_item_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/work_order_ah_detail_key"
+            android:text="@string/work_order_point_name" />
+
+        <TextView
+            android:id="@+id/point_name"
+            style="@style/work_order_ah_detail_value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sys_item_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/work_order_ah_detail_key"
+            android:text="@string/work_order_point_no" />
+
+        <TextView
+            android:id="@+id/point_no"
+            style="@style/work_order_ah_detail_value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sys_item_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/work_order_ah_detail_key"
+            android:text="@string/work_order_point_addr" />
+
+        <TextView
+            android:id="@+id/point_addr"
+            style="@style/work_order_ah_detail_value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sys_item_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/work_order_ah_detail_key"
+            android:text="@string/work_order_point_city" />
+
+        <TextView
+            android:id="@+id/point_city"
+            style="@style/work_order_ah_detail_value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sys_item_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/work_order_ah_detail_key"
+            android:text="@string/work_order_point_region" />
+
+        <TextView
+            android:id="@+id/point_region"
+            style="@style/work_order_ah_detail_value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sys_item_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/work_order_ah_detail_key"
+            android:text="@string/work_order_point_task" />
+
+        <TextView
+            android:id="@+id/point_task"
+            style="@style/work_order_ah_detail_value" />
+    </LinearLayout>
+
+</LinearLayout>

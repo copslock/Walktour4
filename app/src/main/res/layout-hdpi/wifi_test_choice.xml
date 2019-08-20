@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_bg_color"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/task_wifitest_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <View style="@style/task_listdivider" />
+
+        <RelativeLayout
+            style="@style/task_layout_edge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/tasK_title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/task_wifi_test_ssid" />
+
+            <Button
+                android:id="@+id/wifitestssid"
+                style="@style/task_drop_view"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider" />
+
+        <RelativeLayout
+            android:id="@+id/usernamelayout"
+            style="@style/task_layout_edge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/tasK_title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/task_wifi_test_user" />
+
+            <EditText
+                android:id="@+id/wifitestuser"
+                style="@style/task_edit_view"
+                android:layout_centerInParent="true"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider" />
+
+        <RelativeLayout
+            style="@style/task_layout_edge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/tasK_title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/task_wifi_test_password" />
+
+            <EditText
+                android:id="@+id/wifitestpassword"
+                style="@style/task_edit_view"
+                android:layout_centerInParent="true"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

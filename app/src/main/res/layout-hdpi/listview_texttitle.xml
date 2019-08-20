@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout   
+    android:id="@+id/LinearLayout01"   
+    android:layout_width="fill_parent"   
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="6dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+		<ProgressBar android:id="@+id/progress_horizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        />  
+		
+		<TextView
+			android:textSize="@dimen/app_content_txt_size"
+			android:id="@+id/TextView01"
+			android:background="@android:color/transparent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="10dip"
+            android:textColor="@android:color/white"
+		/>
+				    
+		<ListView android:layout_width="wrap_content"   
+          android:layout_height="wrap_content"  
+          android:layout_marginTop="6dip" 
+          android:id="@+id/ListView01" 
+          android:layout_below="@id/TextView01" 
+          />  
+</RelativeLayout> 

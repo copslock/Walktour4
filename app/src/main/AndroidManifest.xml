@@ -1,0 +1,2293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.walktour.gui"
+    android:versionCode="7">
+
+    <uses-sdk android:minSdkVersion="17" />
+    <!-- android:sharedUserId="com.noshufou.android.su" -->
+    <!-- android:sharedUserId="android.uid.system" -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- VOIP必须是2.3以上系统 -->
+
+
+    <!-- 【常用】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+
+    <!-- ========================== -->
+    <!-- 设置手机的权限　　　　　　 -->
+    <!-- ========================== -->
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" /> <!-- 结束Walktour所有相关进程 -->
+    <uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY" /> <!-- 提高进程优先级 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" /> <!-- 拨打电话需要的 -->
+    <uses-permission android:name="com.dinglicom.autotesthandy.testtask.SEND_AUTOTEST_NOTIFICATIONS" />
+    <uses-permission android:name="com.dinglicom.autotesthandy.testtask.RECEIVE_AUTOTEST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 拨打电话需要的 -->
+    <uses-permission android:name="android.permission.GET_TASKS" /> <!-- 获取当前任务 -->
+    <uses-permission android:name="android.permission.RECEIVE_MMS" /> <!-- 接收彩信 -->
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" /> <!-- 接收Wap_Push -->
+    <uses-permission android:name="android.permission.SET_TIME" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ADD_SYSTEM_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.USE_SIP" /> <!-- VOIP业务所用的SIP -->
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="com.vivo.custom.permission.PLUG_IN" />
+
+    <!-- Market filtering -->
+    <uses-feature
+        android:name="android.hardware.wifi.direct"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sip.voip"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".WalktourApplication"
+        android:allowTaskReparenting="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/walktour"
+        android:killAfterRestore="true"
+        android:label="@string/app_name_normal"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme"
+        android:vmSafeMode="false"
+        android:windowSoftInputMode="adjustResize"
+        tools:replace="android:label,android:icon,android:theme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.walktour.gui.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <!-- 寅时室内测试 -->
+        <meta-data
+            android:name="com.innsmap.InnsMap.SDKKEY"
+            android:value="8B460A71BB2A5BB4" />
+        <!-- 信鸽推送配置 -->
+        <!-- 服务器配置:android.ACCESS_ID=2100190790 -->
+        <!-- 服务器配置:android.ACCESS_KEY=A2M4ULKU224R -->
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100194705" />
+        <!-- 【必须】 请修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="A7B73CD1KC7I" />
+        <!-- bugly配置 -->
+        <!-- 配置APP ID -->
+
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="a565205678" />
+
+        <!-- 配置APP渠道号 -->
+
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="MyChannel" />
+
+        <!-- 配置Bugly调试模式（true或者false） -->
+
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="false" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="jQMD2liX5bR0MQ4jsIq7VTmwRZaU3doo" />
+        <!-- 高德地图Service -->
+        <service android:name="com.amap.api.location.APSService" />
+        <!-- 高德地图Key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="76f5565715d3cc789aee17e116462752" />
+
+        <activity
+            android:name=".Main"
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name_normal"
+            android:screenOrientation="portrait"
+            android:theme="@style/StartTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.walktour.framework.ui.dialog.BasicDialogActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.walktour.framework.ui.dialog.SIMStausDialogActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".about.GlsLicenseDetailPage"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/main_manualtest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".about.GlsExpandableActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/main_manualtest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".about.GlsMagDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/main_manualtest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".about.GlsLoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/main_manualtest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".about.AboutActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/main_manualtest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WalkTour"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/main_manualtest"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CaptureImg"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/main_manualtest"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".TotalSettingExcelActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TotalSettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <!-- ========================== -->
+        <!-- 自动 测试的的activity -->
+        <!-- ========================== -->
+        <activity
+            android:name=".auto.AutoTest"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/main_autotest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".auto.Setting"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/main_setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".auto.Event"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/monitor_event"
+            android:screenOrientation="portrait" />
+
+        <!-- ========================== -->
+        <!-- 系统设置子模块的activity -->
+        <!-- ========================== -->
+        <activity
+            android:name=".setting.Sys"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_sys"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.sysroutine.SysRoutineActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.sysroutine.SysRoutineMainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.sysroutine.SysRoutineDataActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.sysroutine.SysRoutineCustomWindowsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.sysroutine.SysRoutineOTSActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.sysroutine.SysRoutineDataUploadActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.sysroutine.SysRoutineDataFilterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.sysroutine.SysRoutineAdvencedActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.sysroutine.SysRoutineDebugModelActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.sysroutine.SysRoutineKPISettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.sysroutine.SysRoutineAPNActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/sys_setting_internt_dataAPN"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.sysroutine.NBSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.sysroutine.SysRoutineTelecomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.customevent.msg.CustomEventMsgListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/sys_setting_defEvent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.customevent.msg.CustomEventMsgEditActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/sys_setting_defEvent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.customevent.param.CustomEventParamListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/sys_setting_defEvent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.customevent.param.CustomEventParamEditActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/sys_setting_defEvent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gps.Gps"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_gps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.SysAlarm"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_sys_alarm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.SysFtp"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_sys_ftp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.SysURL"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/task_http_url_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.SysFtpNew"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/sys_ftp_new"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.SysIndoor"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_sys_indoor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.SysIndoorBuilding"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_sys_indoor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GetPowByNet"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name_normal"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".about.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name_normal"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gps.GpsSetDialog"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name_normal"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".upgrade.UpgradeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name_normal"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".ServiceDialog"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name_normal"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".ProgressActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name_normal"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".RebootDialog"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name_normal"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".AlarmDialog"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name_normal"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".NbPowerOnDialog"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name_normal"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".replayfloatview.ShowDialogTip"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name_normal"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".setting.SysFloorMap"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/sys_indoor_configMap"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.SysFTPGroup"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/task_ftp_servergroup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.CellLinkSetActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.KPIResulActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <!-- ========================== -->
+        <!-- 地图管理子模块的activity -->
+        <!-- ========================== -->
+        <activity
+            android:name=".setting.SysMap"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_sys_map"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.SysChart"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_sys_chart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.msgfilter.MsgFilterSettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_message_filter_setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.msgfilter.MsgFilterDetailSettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_message_filter_setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.eventfilter.EventFilterSettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_event_filter_setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.eventfilter.EventFilterDetailSettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_event_filter_setting"
+            android:screenOrientation="portrait" />
+        <!-- ========================== -->
+        <!-- 数据文件的activity -->
+        <!-- ========================== -->
+        <activity
+            android:name=".data.FileManagerFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/data_file"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Custom.Theme.PageIndicator" />
+        <activity
+            android:name=".data.FileManagerFragmentActivity2"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/data_file"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".data.DateSelector"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/data_indoor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.walktour.service.app.datatrans.smtp.EmailReSendDialog"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <!-- ========================== -->
+        <!-- 锁定网络的activity -->
+        <!-- ========================== -->
+        <activity
+            android:name=".Lock"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/lock"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".locknet.LockDevMachine"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/lock"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".locknet.LockMainPage"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/lock"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".locknet.LockBandwidth"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/lock_lockband"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".locknet.LockCell"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/locl_lock_area"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".locknet.LockNetWork"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/lock_locknet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".locknet.LockFrequency"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/locl_lock_point"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".locknet.dialog.LockActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <!-- ========================== -->
+        <!-- 任务设置activity -->
+        <!-- ========================== -->
+        <activity
+            android:name=".task.SFtpListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.FtpListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.Task"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskAll"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskSet"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_set"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InfoTabActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_info"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/window_title" />
+        <activity
+            android:name=".newmap2.NewInfoTabActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_info"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InfoBlankActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_info"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/window_title" />
+        <activity
+            android:name=".task.TaskAttach"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_attach"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskEmailPop3"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_emailpop3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskEmailSmtp"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_emailsmtp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskEmailSmtpAndPop3"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_emailsmtp_pop3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TestDialog"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".task.TaskEmpty"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_empty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskFtpDownload"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_ftpdownload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskFtpUpload"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_ftpupload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskHistory"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_history"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskHttpLogon"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_httpLogon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskHttpDownload"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_httpDownload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskHttpRefresh"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_httpFresh"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskMOCCall"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_initiativecall"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskInitiativeVideoCall"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_initiativevideocall"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskMmsSend"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_mmssend"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskMmsReceive"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_mmsincept"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskMmsSendReceive"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_mmssendreceive"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskNew"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_new"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskMTCCall"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_passivitycall"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskPassivityVideoCall"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_passivityvideocall"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskPDP"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_pdp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskPing"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_ping"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskSmsIncept"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_smsincept"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskSmsSend"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_smssend"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskSmsSendReceive"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_smssendreceive"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskWapDownload"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_wapdownload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskWapLogin"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_waplogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskWapRefurbish"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_waprefurbish"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskWlanLogin"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_wlanlogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskWlanAp"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_wlanap"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskWlanEteAuth"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_wlaneteauth"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskStreaming"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_stream"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskVoIP"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_voip"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskDNSLookup"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_dnslookup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskSpeedTest"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_speedtest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskSpeedTestServer"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/task_speedtest_urlsetting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskMultiRAB"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_multirab"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskHttpUpload"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_httpupload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskHttpPage"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_httppage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskVideoPlay"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/task_video_play"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskMultiFTPUpload"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_multiftp_upload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskMultiFTPDownload"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_multiftp_download"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskFacebookActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/facebook_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskTraceRouteActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/traceroute_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskIperfActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/iperf_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskPBMActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/pbm_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskWeiBoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="weibo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.phone.TaskGroupExpandListView"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="taskgroup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskWeChatActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/wechat_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskUDPActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/udp_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskReboot"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_reboot"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskOpenSignalActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_reboot"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskMultiHttpDownActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_reboot"
+            android:screenOrientation="portrait" />
+
+        <!-- ========================== -->
+        <!-- map 子模块的activity -->
+        <!-- ========================== -->
+        <activity
+            android:name=".map.MapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskOttWxMocActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_multipleapptest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskOttQQActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_multipleapptest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskOttWeChatActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_multipleapptest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskOttFacebookActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_multipleapptest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskOttInstagramActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_multipleapptest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskOttSinaActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_multipleapptest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskOttSkypeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_multipleapptest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskOttWxMtcActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_multipleapptest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskOttWhatsAppActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_multipleapptest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskOttWhatsAppMocActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_multipleapptest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.TaskOttWhatsAppMtcActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_task_multipleapptest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.MapTabActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.InfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.InfoActivity2"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.ParamActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.ParamActivity2"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.DataDashboardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.AnalysisActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.SignalActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.LTE"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.HspaPlus"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.Chart"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.Para"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.Event"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".map.L3Msg"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.AlarmMsg"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.Gsm"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.TdScdma"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.Edge"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.Umts"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.Hspa"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.Cdma"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.EvDo"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.Wlan"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.BaseEditor"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/map_base_edit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.VideoRealPara"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.TDHspa"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.LteCa"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.TotalReal"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/total_total"
+            android:screenOrientation="portrait" />
+        <!-- 室内专项的Activity -->
+        <activity
+            android:name=".indoor.IndoorTask"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/main_indoorspecial"
+            android:screenOrientation="portrait" />
+        <!-- ========================== -->
+        <!-- Fleet设置子模块的activity -->
+        <!-- ========================== -->
+        <activity
+            android:name=".fleet.Fleet"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_fleet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fleet.FleetSetting"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_fleet_setting"
+            android:screenOrientation="portrait" />
+
+        <!-- 统计子模块 -->
+        <activity
+            android:name=".total.TotalPara"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/total_para"
+            android:screenOrientation="portrait" />
+
+        <!-- ========================== -->
+        <!-- 公共使用的activity -->
+        <!-- ========================== -->
+        <activity
+            android:name=".applet.FileExplorer"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_file_explorer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.walktour.service.test.WlanLogin"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/window_no_title" />
+
+        <!-- ========================== -->
+        <!-- 感知系统的activity -->
+        <!-- ========================== -->
+
+        <activity
+            android:name="com.walktour.service.dmplayer.VideoPlayVitamioActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.walktour.service.dmplayer.VideoPlayYoutubeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+
+        <!-- 多网同步测试子模块 -->
+        <activity
+            android:name=".mutilytester.MutilyTester"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_mutilytester"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mutilytester.MutilyTesterSet"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_mutilytester_set"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mutilytester.MutilyState"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_mutilytester_set"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mutilytester.MultilyTestSetting"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/act_mutilytester_set"
+            android:screenOrientation="portrait" />
+
+        <!-- -WIFIP2P -->
+        <activity
+            android:name="com.walktour.wifip2p.WiFiDirectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:icon="@drawable/monitordata"
+            android:label="@string/wifi_p2p"
+            android:screenOrientation="portrait" />
+
+        <!-- 安徽电信工单 -->
+        <activity
+            android:name=".workorder.ah.WorkOrderMainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workorder.ah.WorkOrderPointActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workorder.ah.WorkOrderDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workorder.ah.WorkOrderFloorActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <!-- 华为工单 -->
+        <activity
+            android:name=".workorder.hw.WorkOrderMainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".newmap.basestation.BaseStationDownloadActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".newmap.basestation.service.BaseStationService"
+            android:enabled="true" />
+
+        <!-- 蓝牙MOS头 -->
+        <activity
+            android:name=".setting.bluetoothmos.BluetoothMOSActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.walktour.service.bluetoothmos.BluetoothMOSService"
+            android:enabled="true"
+            android:process="com.walktour.service.bluetoothmos.BluetoothMOSService" />
+        <service
+            android:name="com.walktour.service.bluetoothmos.BluetoothMTCService"
+            android:enabled="true"
+            android:process="com.walktour.service.bluetoothmos.BluetoothMTCService" />
+
+        <!-- 生成报表预览 -->
+        <activity
+            android:name=".report.ReportPreviewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <!-- 单站验证模块 -->
+        <activity
+            android:name=".singlestation.test.activity.StationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".singlestation.test.activity.ResultActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".singlestation.test.activity.SceneTestActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".singlestation.survey.activity.SurveyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".singlestation.survey.activity.SurveyEditActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".singlestation.setting.activity.SettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <!-- 分享功能 -->
+        <activity
+            android:name=".weifuwu.sharepush.ShareTaskActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".weifuwu.sharepush.ShareProjectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".weifuwu.sharepush.ShareNextActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".weifuwu.sharepush.ShareSendActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <!-- 微服务 -->
+        <activity
+            android:name=".weifuwu.WeiMainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".weifuwu.WeiMain1Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".weifuwu.WeiMain2Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".weifuwu.WeiMain3Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".weifuwu.WeiMainHistoryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".weifuwu.WeiMainJoinGroupActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".weifuwu.WeiMainJoinMemberActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".weifuwu.WeiMainGroupRelationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".weifuwu.WeiMainGroupInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".weifuwu.WeiMainDeviceInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".weifuwu.ShareDialogActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".weifuwu.WeiMainListMemberActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 高铁 -->
+        <activity
+            android:name=".highspeedrail.HighSpeedRailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 室内自动打点 -->
+        <service
+            android:name="com.walktour.service.automark.AutoMarkService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.automark.glonavin.GlonavinAutoMarkService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.automark.glonavin.GlonavinAutoMarkNotCommonService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.automark.glonavin.Glonavin3in1AutoMarkService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.automark.glonavin.Glonavin3in1AutoMarkNotCommonService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.automark.glonavin.Glonavin3in1GService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.automark.glonavin.Glonavin3in1MetroService"
+            android:enabled="true" />
+
+        <!-- 服务 -->
+        <service
+            android:name="com.walktour.service.OtsSocketUploadService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.OtsHttpUploadService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.DatasetRecordService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.DataService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.app.AutoRun"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.app.Killer"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.app.AutoTestService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.app.DataService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.app.StateService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.app.RecordTraceService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.app.DataTransService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.GpsService"
+            android:enabled="true" />
+        <service
+            android:name=".highspeedrail.HighSpeedGpsService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.TestService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.TestInterfaceService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.ApplicationInitService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.DataFeelUtils"
+            android:enabled="true"
+            android:process="com.walktour.service.DataFeelUtils" />
+        <service
+            android:name="com.walktour.service.TraceService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.test.FtpDownTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.FtpDownTest" />
+        <service
+            android:name="com.walktour.service.test.FtpUpTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.FtpUpTest" />
+        <service
+            android:name="com.walktour.service.test.FtpMultiDownTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.FtpMultiDownTest" />
+        <service
+            android:name="com.walktour.service.test.FtpMultiUpTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.FtpMultiUpTest" />
+        <service
+            android:name="com.walktour.service.test.HttpLogon"
+            android:enabled="true"
+            android:process="com.walktour.service.test.HttpLogon" />
+        <service
+            android:name="com.walktour.service.test.HttpRefresh"
+            android:enabled="true"
+            android:process="com.walktour.service.test.HttpRefresh" />
+        <service
+            android:name="com.walktour.service.test.WapLogon"
+            android:enabled="true"
+            android:process="com.walktour.service.test.WapLogon" />
+        <service
+            android:name="com.walktour.service.test.WapRefresh"
+            android:enabled="true"
+            android:process="com.walktour.service.test.WapRefresh" />
+        <service
+            android:name="com.walktour.service.test.HttpDown"
+            android:enabled="true"
+            android:process="com.walktour.service.test.HttpDown" />
+        <service
+            android:name="com.walktour.service.test.PingTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.PingTest" />
+        <service
+            android:name="com.walktour.service.test.PingTestNB"
+            android:enabled="true"
+            android:process="com.walktour.service.test.PingTestNB" />
+        <service
+            android:name="com.walktour.service.test.PingTestCMD"
+            android:enabled="true"
+            android:process="com.walktour.service.test.PingTestCMD" />
+        <service
+            android:name="com.walktour.service.test.MOCTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.MOCTest" />
+        <service
+            android:name="com.walktour.service.test.MTCTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.MTCTest" />
+        <service
+            android:name="com.walktour.service.test.SMSSendTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.SMSSendTest" />
+        <service
+            android:name="com.walktour.service.test.SMSSendReceiveTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.SMSSendReceiveTest" />
+        <service
+            android:name="com.walktour.service.test.SMSReceiveTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.SMSReceiveTest" />
+        <service
+            android:name="com.walktour.service.test.MmsTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.MmsTest" />
+        <service
+            android:name="com.walktour.service.test.PdpTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.PdpTest" />
+        <service
+            android:name="com.walktour.service.test.AttachTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.AttachTest" />
+        <service
+            android:name="com.walktour.service.test.WlanTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.WlanTest" />
+        <service
+            android:name="com.walktour.service.test.IperfTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.IperfTest" />
+        <service
+            android:name="com.walktour.service.test.PBMTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.PBMTest" />
+        <service
+            android:name="com.walktour.service.test.UDPTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.UDPTest" />
+        <service
+            android:name="com.walktour.service.test.WeiBoTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.WeiBoTest" />
+        <service
+            android:name="com.walktour.service.test.WeChatTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.WeChatTest" />
+        <service
+            android:name="com.walktour.service.test.RebootTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.RebootTest" />
+        <service
+            android:name="com.walktour.service.test.TotalService"
+            android:enabled="true" />
+        <service
+            android:name=".share.UpDownService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="UpDownService.action" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.walktour.service.FleetService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.app.LogService"
+            android:enabled="true" />
+        <service
+            android:name=".upgrade.UpgradeService"
+            android:enabled="true" />
+        <service
+            android:name=".upgrade.NoUpgradeService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.TotalDetailByGSM"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.TotalDetailByCDMA"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.CheckLicenseService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.PlatformControlService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.TestTaskPlanService"
+            android:enabled="true" />
+        <service
+            android:name="com.dinglicom.wifi.service.WifiScanService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.test.EmailSend"
+            android:enabled="true"
+            android:process="com.walktour.service.test.EmailSend" />
+        <service
+            android:name="com.walktour.service.test.EmailReceive"
+            android:enabled="true"
+            android:process="com.walktour.service.test.EmailReceive" />
+        <service
+            android:name="com.walktour.service.test.StreamingTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.StreamingTest" />
+        <service
+            android:name="com.walktour.service.test.DNSLookUpTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.DNSLookUpTest" />
+        <service
+            android:name="com.walktour.service.test.SpeedTestService"
+            android:enabled="true"
+            android:process="com.walktour.service.test.SpeedTestService" />
+        <service
+            android:name="com.walktour.service.test.OpenSignalService"
+            android:enabled="true"
+            android:process="com.walktour.service.test.OpenSignalService" />
+        <service
+            android:name="com.walktour.service.test.HttpUploadTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.HttpUploadTest" />
+        <service
+            android:name="com.walktour.service.test.MultiHttpDownload"
+            android:enabled="true"
+            android:process="com.walktour.service.test.MultiHttpDownload" />
+        <service
+            android:name="com.walktour.service.test.VideoPlayTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.VideoPlayTest" />
+        <service
+            android:name="com.walktour.service.test.VideoPlayBeiJingTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.VideoPlayBeiJingTest" />
+        <service
+            android:name="com.walktour.service.test.VideoPlayVitamioTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.VideoPlayVitamioTest" />
+        <service
+            android:name="com.walktour.service.test.VideoPlayYoutubeTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.VideoPlayYoutubeTest" />
+        <service
+            android:name="com.walktour.service.test.FaceBookService"
+            android:enabled="true"
+            android:process="com.walktour.service.test.FaceBookService" />
+        <service
+            android:name="com.walktour.service.test.TraceRouteService"
+            android:enabled="true"
+            android:process="com.walktour.service.test.TraceRouteService" />
+        <service
+            android:name="com.walktour.service.test.TraceRouteServiceS8"
+            android:enabled="true"
+            android:process="com.walktour.service.test.TraceRouteServiceS8" />
+        <!-- 地铁测试业务 -->
+        <service
+            android:name="com.walktour.service.metro.MetroTestService"
+            android:enabled="true" />
+        <!-- 寅时室内测试 -->
+        <service
+            android:name="com.walktour.service.innsmap.InnsmapTestService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.BlueToothControlService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.service.iPackTerminal"
+            android:enabled="true" />
+        <service
+            android:name="com.dingli.seegull.SeeGullService"
+            android:enabled="true" />
+        <!-- 移动网络参数监听服务 -->
+        <service
+            android:name="com.walktour.service.phoneinfo.TelephonyManagerService"
+            android:enabled="true" />
+        <!-- 单站验证模块 -->
+        <service
+            android:name=".singlestation.test.service.SceneTestMonitorStartService"
+            android:enabled="true" />
+        <service
+            android:name=".perceptiontest.notice.service.GetNoticeService"
+            android:enabled="true" />
+        <service
+            android:name="com.walktour.netsniffer.NetSnifferService"
+            android:enabled="true"
+            android:process="com.walktour.netsniffer.NetSnifferService" />
+        <!-- 广播接收 -->
+        <receiver android:name=".WalkBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.walktour.mms.autodownload" />
+                <action android:name="com.walktour.phone.querynetworktype" />
+                <action android:name="com.dingli.uyou.ready" />
+                <action android:name="com.dingli.uyou.start" />
+                <action android:name="com.dingli.uyou.hastart" />
+                <action android:name="walktour.fleet.apn" />
+                <action android:name="walktour.fleet.dataServer.notSet" />
+                <action android:name="walktour.test.data.apn.null" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <!-- 平台交互控制测试计划扫描 -->
+                <action android:name="com.walktour.gui.platform.control.testplan.start" />
+                <action android:name="com.walktour.gui.platform.control.testplan.stop" />
+                <!-- 平台交互控制平台监控 -->
+                <action android:name="com.walktour.gui.platform.control.control.start" />
+                <action android:name="com.walktour.gui.platform.control.control.stop" />
+
+                <!-- WIFI状态监测 -->
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.SCAN_RESULTS" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <!-- 微服务共享信息处理 -->
+                <action android:name="com.walktour.gui.weifuwu.sharereceiver" />
+                <action android:name="com.walktour.gui.weifuwu.sharereceiver.data" />
+                <!-- 重启串口 -->
+                <action android:name="com.walktour.gui.reboot.trace.server.data" />
+                <!--
+               <action android:name="android.intent.action.SCREEN_ON"/>
+               <action android:name="android.intent.action.SCREEN_OFF"/> 在这里注册收不到
+                -->
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".MmsReceiver"
+            android:permission="android.permission.BROADCAST_WAP_PUSH">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED" />
+
+                <data android:mimeType="application/vnd.wap.mms-message" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.SimStateReceive"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SIM_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- <receiver android:name="com.monitor.control.receiver.MonitorFileOperateReceiver" /> -->
+        <!-- <receiver android:name="com.monitor.control.receiver.MonitorFileReUploadReceiver" /> -->
+
+
+        <!-- 百度地图模块 -->
+
+        <activity
+            android:name=".newmap.BaiduMapMainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.walktour.gui.map.googlemap.action.SHOW_POINTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="geo" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <service
+            android:name=".newmap.offline.baidu.BaiduMapOfflineService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".newmap.offline.baidu.BaiduMapOfflineActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <!-- 离线地图模块部分 -->
+
+        <activity
+            android:name=".map.googlemap.GoogleMapMainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="com.walktour.gui.map.googlemap.action.SHOW_POINTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="geo" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".map.googlemap.MainPreferences"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.OfflineMapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <!--
+        <provider
+            android:name="com.walktour.gui.map.googlemap.utils.SearchSuggestionsProvider"
+            android:authorities="com.walktour.gui.map.googlemap.SuggestionProvider" >
+        </provider>
+        -->
+        <activity
+            android:name=".map.googlemap.kml.PoiActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.googlemap.kml.PoiListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.googlemap.kml.PoiCategoryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.googlemap.kml.PoiCategoryListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.googlemap.kml.PoiIconSetActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.googlemap.kml.ImportPoiActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.googlemap.kml.ImportTrackActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.ParmPdfActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.TcpIpListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.DynamicParamInfo"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dinglicom.totalreport.TotalDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dinglicom.totalreport.FleetReportActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dinglicom.totalreport.TotalReportXlsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dinglicom.totalreport.ReportTemplateListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dinglicom.totalreport.CreateReportTemplateActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dinglicom.totalreport.SelectTemplateStyleActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dinglicom.totalreport.SelectTemplateListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dinglicom.totalreport.CustomReportActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <!-- 扫频仪模块 -->
+        <activity
+            android:name=".task.activity.scanner.ui.ScanTaskListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scanner.ui.ChannelListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scanner.ui.ScanTaskColorCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scanner.ui.ScanTaskCwActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scanner.ui.ScanTaskPilotActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scanner.ui.ScanTaskLtePilotActivity"
+            android:screenOrientation="portrait" />
+        <!-- 扫频仪模块2 -->
+        <activity
+            android:name=".task.activity.scannertsma.ui.ScanTSMATaskListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scannertsma.ui.ChannelListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scannertsma.ui.ScanTaskColorCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scannertsma.ui.ScanTaskCwActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scannertsma.ui.ScanTaskBlindActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scannertsma.ui.ScanTaskPilotActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scannertsma.ui.ScanTaskLtePilotActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scannertsma.ui.ScanTaskSpecturmActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".task.activity.scanner.ui.ScanTaskBlindActivity"></activity>
+        <activity
+            android:name=".task.activity.scannertsma.ui.ScannerTSMAInfoActivity"
+            android:screenOrientation="portrait" />
+        <!-- Wlan模块 -->
+        <activity
+            android:name=".map.APListDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.APListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.APCurveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.ChannelParamActivity"
+            android:screenOrientation="portrait" />
+        <!-- 运行状态显示 -->
+        <activity
+            android:name=".RunStatusActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".analysis.csfb.CsfbDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".analysis.csfb.CsfbPieChartActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".analysis.volte.VoLTEPieChartActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.walktour.workorder.WorkOrderDictActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.walktour.workorder.WorkOrderListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.walktour.workorder.WorkOrderDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.walktour.workorder.WorkOrderSubItemDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- scanner界面显示 -->
+        <activity
+            android:name=".task.activity.scanner.ui.ScanRssiInfoView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scanner.ui.ScanCdmaTopNActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scanner.ui.ScanWcdmaPilotActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scanner.ui.ScanColorCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scanner.ui.ScanTdPilotActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scanner.ui.ScanEvent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scanner.ui.ScanLteTopNActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".task.activity.scanner.ui.ScannerInfoActivity"
+            android:screenOrientation="portrait" />
+        <!-- 联网权限控制 -->
+        <activity
+            android:name="com.dingli.droidwall.DroidWallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.sysroutine.SysRoutinePlatformActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.sysroutine.SysRoutineNBModuleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.sysroutine.SysRoutineLockMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.sysroutine.SysExceptionCommitActivity"
+            android:screenOrientation="portrait" />
+        <!-- 参数设置 -->
+        <activity
+            android:name=".setting.ParamsSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.ParamsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.ParamsThresholdSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.GoOrNogoSettingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 地铁测试项目 -->
+        <activity
+            android:name=".metro.MetroSettingCityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".metro.MetroSelectRouteActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 寅时室内测试 -->
+        <activity
+            android:name=".newmap.innsmap.InnsmapSelectActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 智能分析 -->
+        <activity
+            android:name=".analysis.AnalysisMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".analysis.AnalysisDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".analysis.ltedata.LteDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".analysis.ltedata.LteDataDetaiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".about.LicenseViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".singlestation.report.activity.StationReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.bluetoothmos.BluetoothMosTabActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".perceptiontest.notice.MessageListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 信鸽【必须】 (2.30及以上版新增)展示通知的activity -->
+        <activity
+            android:name="com.tencent.android.tpush.XGPushActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+
+                <!-- 若使用AndroidStudio，请设置android:name="android.intent.action" -->
+                <action android:name="android.intent.action" />
+            </intent-filter>
+        </activity>
+        <!-- 信鸽receiver广播接收 -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:process=":xg_service_v3">
+            <intent-filter android:priority="0x7fffffff">
+
+                <!-- 【必须】 信鸽SDK的内部广播 -->
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <!-- 【必须】 系统广播：网络切换 -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <!-- 【必须】 信鸽service -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushServiceV3"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":xg_service_v3" />
+
+        <!-- 【必须】 增强xg_service存活率 -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGDaemonService"
+            android:process=":xg_service_v3" />
+        <!-- 【必须】 通知service，其中android:name部分要改为当前包名 -->
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="true">
+            <intent-filter>
+
+                <!-- 【必须】 请修改为当前APP名包.PUSH_ACTION，如demo的包名为：com.qq.xgdemo -->
+                <action android:name="com.walktour.gui.PUSH_ACTION" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.walktour.service.NBHandlerService"
+            android:enabled="true" />
+
+        <!-- OTT start: 相关系列测试服务 [QQ、微信、skype、微博] -->
+        <service
+            android:name="com.walktour.service.test.OttWeCallMocTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.OttTest" />
+        <service
+            android:name="com.walktour.service.test.OttWecallMtcTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.OttTest" />
+        <service
+            android:name="com.walktour.service.test.OttSkypeTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.OttTest" />
+        <service
+            android:name="com.walktour.service.test.OttQQAppTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.OttTest" />
+        <service
+            android:name="com.walktour.service.test.OttWeChatTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.OttTest" />
+        <service
+            android:name="com.walktour.service.test.OttSinaWeiboTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.OttTest" />
+        <service
+            android:name="com.walktour.service.test.OttWhatsAppTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.OttTest" />
+        <service
+            android:name="com.walktour.service.test.OttWhatsAppMocTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.OttTest" />
+        <service
+            android:name="com.walktour.service.test.OttWhatsAppMtcTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.OttTest" />
+        <service
+            android:name="com.walktour.service.test.OttFacebookTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.OttTest" />
+        <service
+            android:name="com.walktour.service.test.OttInstagramTest"
+            android:enabled="true"
+            android:process="com.walktour.service.test.OttTest" />
+        <!-- OTT end -->
+
+        <service
+            android:name="com.walktour.service.StartDatasetService"
+            android:enabled="true"
+            android:process="com.walktour.service.StartDatasetService" />
+        <!-- 【必须】 【注意】authorities修改为 包名.AUTH_XGPUSH, 如demo的包名为：com.qq.xgdemo -->
+        <provider
+            android:name="com.tencent.android.tpush.XGPushProvider"
+            android:authorities="com.walktour.gui.AUTH_XGPUSH"
+            android:exported="true" />
+
+        <!-- 【必须】 【注意】authorities修改为 包名.TPUSH_PROVIDER, 如demo的包名为：com.qq.xgdemo -->
+        <provider
+            android:name="com.tencent.android.tpush.SettingsContentProvider"
+            android:authorities="com.walktour.gui.TPUSH_PROVIDER"
+            android:exported="false" />
+
+        <!-- 【必须】 【注意】authorities修改为 包名.TENCENT.MID.V3, 如demo的包名为：com.qq.xgdemo -->
+        <provider
+            android:name="com.tencent.mid.api.MidProvider"
+            android:authorities="com.walktour.gui.TENCENT.MID.V3"
+            android:exported="true" />
+
+        <activity
+            android:name=".newmap2.NewMapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".newmap2.RounteActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_dialog2"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.walktour.service.automark.LiftAutoMarkActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".highspeedrail.HsSelectNoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".highspeedrail.HsSelectStationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:name=".newmap2.activity.TagPhotoActivity" />
+
+        <service
+            android:name=".highspeedrail.GService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".map.MeasurePlottingScaleActivity"
+            android:screenOrientation="portrait" />
+        <!-- 解决OPPO定制版拖网拨打弹出无网络框无法返回 -->
+        <service
+            android:name="com.walktour.service.OppoCustomService"
+            android:enabled="true"
+            android:exported="true"
+            android:label="Walktour"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_config" />
+        </service>
+        <!-- 解决小米8自动点击视频通话 -->
+        <service
+            android:name="com.walktour.service.XiaoMi8CustomService"
+            android:enabled="true"
+            android:exported="true"
+            android:label="Walktour小米8视频通话"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_xiaomi8_config" />
+        </service>
+
+        <activity
+            android:name=".perceptiontest.activity.ResourceOverviewActiviity"
+            android:label="@string/title_activity_resource_overview"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".perceptiontest.activity.ResourceOverviewDetailActiviity"
+            android:label="@string/title_activity_resource_overview"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".perceptiontest.activity.QualityOverviewActivity"
+            android:label="@string/title_activity_quality_overview"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".perceptiontest.activity.QualityOverviewDetailActivity"
+            android:label="@string/title_activity_quality_overview"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".perceptiontest.activity.BusinessOverviewActivity"
+            android:label="@string/title_activity_quality_overview"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".perceptiontest.activity.BusinessOverviewDetailActivity"
+            android:label="@string/title_activity_quality_overview"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".newmap2.gis.GisMapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".newmap2.gis.GisMapListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".newmap2.gis.GisMapDetailActivity" />
+        <activity
+            android:name=".perceptiontest.surveytask.claiming.SurveyTaskClaimingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".perceptiontest.surveytask.finishing.SurveyTaskFinishingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".perceptiontest.surveytask.SurveyTaskDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".perceptiontest.surveytask.query.SurveyTaskQueryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".perceptiontest.surveytask.claiming.ClaimingSurveyTaskDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".perceptiontest.surveytask.finishing.FinishingSurveyTaskDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.walktour.externalinterface.zte.WalktourZteService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.walktour.service.external.WalktourZteService.zte.action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".setting.bluetoothmos.BluetoothPipeLineService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".mos.MosOfflineActivity" />
+        <activity android:name=".mos.MosStableActivity" />
+        <activity android:name=".mos.MosMatchActivity" />
+        <activity
+            android:name=".mos.OttDebugActivity"
+            android:process="com.walktour.service.test.OttTest"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".mos.MosTestActivity"
+            android:exported="true">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".task.TaskSelSampleActivity"></activity>
+    </application>
+
+</manifest>

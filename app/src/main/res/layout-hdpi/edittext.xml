@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_marginLeft="6sp"
+  android:layout_marginRight="6sp"
+  android:layout_marginTop="3sp"
+  android:layout_marginBottom="6sp"
+  >
+  
+  <TextView android:id="@+id/TextView01"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+      android:textSize="@dimen/app_content_txt_size"
+  />
+  
+</LinearLayout>

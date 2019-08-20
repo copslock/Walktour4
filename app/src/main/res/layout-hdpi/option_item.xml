@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/license_his_list_item_bg">
+	<RelativeLayout
+	    android:id="@+id/option_item_layout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:clickable="true"
+	    android:descendantFocusability="blocksDescendants"
+	    android:minHeight="35dp">
+		<ImageView 
+		    android:id="@+id/option_item_del" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+			android:src="@drawable/controlbar_delete"
+			android:textSize="18sp"
+			android:layout_alignParentRight="true" 
+			android:focusable="false"
+			android:layout_marginRight="5dp"/>
+		<TextView 
+		    android:id="@+id/option_item_text"  
+		    android:layout_height="wrap_content"
+			android:layout_width="fill_parent" 
+			android:layout_toLeftOf="@id/option_item_del"
+			android:layout_centerVertical="true"
+			android:textColor="#888282"
+			android:paddingLeft="5dp" 
+			android:layout_alignParentLeft="true"/>
+	</RelativeLayout>
+</LinearLayout>

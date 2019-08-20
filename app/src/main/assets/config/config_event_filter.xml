@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filters>
+	<firstType code="NAS" name="NAS Event" isShowList="1" isShowMap="0" color="" checked="1">
+		<secondType code="GPRS_Attach" name="GPRS Attach Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="Msg Attach Request" code="ET_AttachRequestMsg" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Msg Attach Accept" code="ET_AttachAcceptMsg" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Msg Attach Complete" code="ET_AttachCompleteMsg" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Msg Attach Reject" code="ET_AttachRejectMsg" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Msg Detach Request" code="ET_DetachRequestMsg" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Msg Detach Accept" code="ET_DetachAcceptMsg" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="P-TMSI Reallocation Command" code="ET_PTMSIReallocationCommand" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="P-TMSI Reallocation Complete" code="ET_PTMSIReallocationComplete" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="IMSI Detach Indication" code="ET_IMSIDetachIndication" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="GPRS_PDP_Active" name="GPRS PDP Active Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="PDP Active Request" code="ET_PDPActive_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PDP Active Success" code="ET_PDPActive_Accept" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PDP Active Failure" code="ET_PDPActive_Reject" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PDP Deactive Request" code="ET_PDPDeActive_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PDP Deactive Accept" code="ET_PDPDeActive_Accept" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="LAU_RAU" name="LAU RAU Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="Location Update Request" code="ET_LocaltionUpdate_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Location Update Success" code="ET_LocaltionUpdate_Accept" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Location Update Failure" code="ET_LocaltionUpdate_Reject" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Routing Area Update Request" code="ET_RouteUpdate_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Routing Area Update Accept" code="ET_RouteUpdate_Accept" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Routing Area Update Complete" code="ET_RouteUpdate_Complete" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Routing Area Update Failure" code="ET_RouteUpdate_Reject" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="Authentication" name="Authentication Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="Authentication Reject" code="ET_AuthenticationReject" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Authentication Failure" code="ET_AuthenticationFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Authentication Ciphering Reject" code="ET_AuthenticationCipheringReject" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Authentication Ciphering Failure" code="ET_AuthenticationCipheringFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+	</firstType>
+	<firstType code="RRC" name="RRC Event" isShowList="1" isShowMap="0" color="" checked="1">
+		<secondType code="RRC" name="RRC Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="RRC Connection Request" code="ET_RRC_Connection_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="RRC Connection Setup" code="ET_RRC_Connection_Setup" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="RRC Connection Complete" code="ET_RRC_Connection_Setup_Complete" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="RRC Connection Reject" code="ET_RRC_Connection_Reject" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="RRC Connection Release" code="ET_RRC_Release" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="RRC Connection Reestablish Reject" code="ET_RRC_Connection_ReestablishmentReject" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Cell Update Request" code="ET_CellUpdate" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Cell Update Confirm" code="ET_CellUpdate_Confirm" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+	</firstType>
+	<firstType code="WCDMA" name="WCDMA Event" isShowList="1" isShowMap="0" color="" checked="1">
+		<secondType code="RACH" name="RACH Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="WCDMA Rach Failure" code="ET_WCDMARach_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WCDMA Paging Failure" code="ET_WCDMA_PagingFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="RB" name="RB Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="RB Setup Request" code="ET_RAB_Setup" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="RB Setup Completed" code="ET_RAB_Setup_Complete" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="RB Setup Failure" code="ET_RAB_Setup_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+	</firstType>
+	<firstType code="LTE" name="LTE Event" isShowList="1" isShowMap="0" color="" checked="1">
+		<secondType code="LTE" name="LTE Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="LTE Service Request" code="ET_LTE_ServiceRequest" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE Service Success" code="ET_LTE_ServiceSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE Service Drop" code="ET_LTEServiceDrop" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Network Connect Start" code="ET_TDDLTEConnectStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Network Connect Success" code="ET_TDDLTEConnectSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Network Connect Failure" code="ET_TDDLTEConnectFailed" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Network Disconnect" code="ET_TDDLTEDisconnected" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Network Drop" code="ET_TDDLTENetworkDropped" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE Attach Failure" code="ET_TDDLTEAttachFailed" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE Detach Failure" code="ET_TDDLTEDetachFailed" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE Handover Request" code="ET_LTEHandoverRequest" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE Handover Success" code="ET_LTEHandoverSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE Handover Failure" code="ET_LTEHandoverFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE Cell Reselect Failure" code="ET_LTECellReselectFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE Cell Reselect Success" code="ET_LTECellReselectSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Active Default EPS Request" code="ET_LTEActiveDefaultEPSRequest" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Active Default EPS Success" code="ET_LTEActiveDefaultEPSAccept" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Active Default EPS Failure" code="ET_LTEActiveDefaultEPSReject" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Return Back To LTE Request" code="ET_ReturnToLTE_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Return Back To LTE Complete" code="ET_ReturnToLTE_Complete" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Tracking Area Update Request" code="ET_LTETrackingAreaUpdateRequest" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Tracking Area Update Success" code="ET_LTETrackingAreaUpdateAccept" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Tracking Area Update Complete" code="ET_LTETrackingAreaUpdateComplete" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Tracking Area Update Failure" code="ET_LTETrackingAreaUpdateReject" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Paging Attempt" code="ET_LTEPagingRequest" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Received Paging" code="ET_LTEPagingSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Paging Failure" code="ET_LTEPagingFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE Cell PRACH Failure" code="ET_LTEPRACHFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE Cell Search Start" code="ET_LTECellSearchStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE Cell Camp On" code="ET_LTECellCampOn" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE RRC Connection Drop" code="ET_LTERRCConnectionDrop" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE ERAB Abnormal Release" code="ET_LTE_ERAB_AbnormalRelease" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE E-RAB Request" code="ET_LTE_ERAB_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE E-RAB Success" code="ET_LTE_ERAB_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE E-RAB Failure" code="ET_LTE_ERAB_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Cell Searching Start" code="ET_LTEDragnetDelay" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+	</firstType>
+	<firstType code="ENDC" name="ENDC Event" isShowList="1" isShowMap="0" color="" checked="1">
+		<secondType code="PRACH" name="PRACH Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="NR CELL PRACH REQUEST" code="ET_NR_CELL_PRACH_REQUEST" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR CELL PRACH SUCCESS" code="ET_NR_CELL_PRACH_SUCCESS" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR CELL PRACH FAILURE" code="ET_NR_CELL_PRACH_FAILURE" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR PRACH MSG1" code="ET_NR_PRACH_MSG1" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR PRACH MSG2" code="ET_NR_PRACH_MSG2" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR PRACH MSG3" code="ET_NR_PRACH_MSG3" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR PRACH MSG4" code="ET_NR_PRACH_MSG4" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="BASIC" name="BASIC Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="REGISTRATION ACCEPT" code="ET_REGISTRATION_ACCEPT" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="REGISTRATION REJECT" code="ET_REGISTRATION_REJECT" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="RRC RESUME REQUEST" code="ET_RRC_RESUME_REQUEST" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="RRC RESUME ACCEPT" code="ET_RRC_RESUME_ACCEPT" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="RRC RESUME REJECT" code="ET_RRC_RESUME_REJECT" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PDU SESSION ESTABLISHMENT REQUEST" code="ET_PDU_SESSION_ESTABLISHMENT_REQUEST" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PDU SESSION ESTABLISHMENT ACCEPT" code="ET_PDU_SESSION_ESTABLISHMENT_ACCEPT" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PDU SESSION ESTABLISHMENT REJECT" code="ET_PDU_SESSION_ESTABLISHMENT_REJECT" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR HANDOVER REQUEST" code="ET_NR_HANDOVER_REQUEST" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR REGISTRATION REQUEST" code="ET_NR_REGISTRATION_REQUEST" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR HANDOVER SUCCESS" code="ET_NR_HANDOVER_SUCCESS" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR HANDOVER FAILED" code="ET_NR_HANDOVER_FAILED" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR CELL ADD" code="ET_NR_CELL_ADD" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR_CELL FAILURE" code="ET_NR_CELL_FAILURE" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR CELL RELEASE" code="ET_NR_CELL_RELEASE" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR ENDC HANDOVER REQUEST" code="ET_NR_ENDC_HANDOVER_REQUEST" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR ENDC HANDOVER SUCCESS" code="ET_NR_ENDC_HANDOVER_SUCCESS" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR ENDC HANDOVER FAILURE" code="ET_NR_ENDC_HANDOVER_FAILURE" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR SNCHANGE REQUEST" code="ET_NR_SNCHANGE_REQUEST" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR SNCHANGE SUCCESS" code="ET_NR_SNCHANGE_SUCCESS" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR SNCHANGE FILURE" code="ET_NR_SNCHANGE_FILURE" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR EVENT A1" code="ET_NR_EVENT_A1" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR EVENT A2" code="ET_NR_EVENT_A2" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR EVENT A3" code="ET_NR_EVENT_A3" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR EVENT A4" code="ET_NR_EVENT_A4" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR EVENT A5" code="ET_NR_EVENT_A5" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR EVENT A6" code="ET_NR_EVENT_A6" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR BEAM CHANGE COMPLETE" code="ET_NR_BEAM_CHANGE_COMPLETE" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="NR CELL ADDCOMPLETE" code="ET_NR_CELL_ADDCOMPLETE" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+	</firstType>
+	<firstType code="EVDO" name="EVDO Event" isShowList="1" isShowMap="0" color="" checked="1">
+		<secondType code="EVDO" name="EVDO Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="EVDO Connection Request" code="ET_EvdoConnection_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="EVDO Connection Setup" code="ET_EvdoConnection_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="EVDO Connection Failure" code="ET_EvdoConnection_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="EVDO Connection Close" code="ET_EvdoConnection_Close" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="EVDO Connection Drop" code="ET_EvdoConnection_DropForOtherReason" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="EVDO Session Request" code="ET_EvdoSessionRequest" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="EVDO Session Setup" code="ET_EvdoSessionSetup" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+	</firstType>
+	<firstType code="Handover_and_Reselection" name="Handover and Reselection Event" isShowList="1" isShowMap="0" color="" checked="1">
+		<secondType code="Intra-RAT_Handover" name="Intra-RAT Handover Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="CDMA SoftHandoff Failure" code="ET_CDMA_Soft_Handover_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="GSM InterCell Handover Request" code="ET_GSM_Hard_Handover_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="GSM InterCell Handover Success" code="ET_GSM_Hard_Handover_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="GSM InterCell Handover Failure" code="ET_GSM_Hard_Handover_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="GSM IntraCell Handover Request" code="ET_GSM_IntraCell_Handover_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="GSM IntraCell Handover Success" code="ET_GSM_IntraCell_Handover_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="GSM IntraCell Handover Failure" code="ET_GSM_IntraCell_Handover_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WCDMA HardHandover Request" code="ET_WCDMA_Hard_Handover_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WCDMA HardHandover Success" code="ET_WCDMA_Hard_Handover_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WCDMA HardHandover Failure" code="ET_WCDMA_Hard_Handover_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WCDMA SoftHandoff Failure" code="ET_WCDMA_Soft_Handover_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Baton Handover Command(Intra TD-SCDMA)" code="ET_Baton_Handover_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Baton Handover Success(Intra TD-SCDMA)" code="ET_Baton_Handover_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Baton Handover Failure(Intra TD-SCDMA)" code="ET_Baton_Handover_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="TD-SCDMA HardHandover Request" code="ET_TD_Hard_Handover_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="TD-SCDMA HardHandover Success" code="ET_TD_Hard_Handover_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="TD-SCDMA HardHandover Failure" code="ET_TD_Hard_Handover_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CDMA HardHandover Request" code="ET_CDMA_Hard_Handover_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CDMA HardHandover Success" code="ET_CDMA_Hard_Handover_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CDMA HardHandover Failure" code="ET_CDMA_Hard_Handover_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="EVDO Virtual SoftHandoff Failure" code="ET_EvdoVirtualSoftHandover_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="Inter-RAT_Handover" name="Inter-RAT Handover Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="DO to X Handoff Request(Active)" code="ET_EvdoToxActiveHandover_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="DO to X Handoff Success(Active)" code="ET_EvdoToxActiveHandover_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="DO to X Handoff Request(Dormant)" code="ET_EvdoToxSleepHandover_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="DO to X Handoff Success(Dormant)" code="ET_EvdoToxSleepHandover_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="X to DO Handoff Request(Dormant)" code="ET_xToEvdoSleepHandover_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="X to DO Handoff Success(Dormant)" code="ET_xToEvdoSleepHandover_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CS HandOver Request(WCDMA -> GSM)" code="ET_Handover_From_WCDMA_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CS HandOver Success(WCDMA -> GSM)" code="ET_Handover_From_WCDMA_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CS HandOver Failure(WCDMA -> GSM)" code="ET_Handover_From_WCDMA_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CS HandOver Request(TD-SCDMA -> GSM)" code="ET_Handover_From_TD_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CS HandOver Success(TD-SCDMA -> GSM)" code="ET_Handover_From_TD_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CS HandOver Failure(TD-SCDMA -> GSM)" code="ET_Handover_From_TD_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PS HandOver Request(WCDMA -> GSM)" code="ET_PS_Handover_From_WCDMA_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PS HandOver Success(WCDMA -> GSM)" code="ET_PS_Handover_From_WCDMA_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PS HandOver Failure(WCDMA -> GSM)" code="ET_PS_Handover_From_WCDMA_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PS HandOver Request(TD-SCDMA -> GSM)" code="ET_PS_Handover_From_TD_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PS HandOver Success(TD-SCDMA -> GSM)" code="ET_PS_Handover_From_TD_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PS HandOver Failure(TD-SCDMA -> GSM)" code="ET_PS_Handover_From_TD_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CS HandOver Request(GSM -> WCDMA)" code="ET_Handover_To_WCDMA_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CS HandOver Success(GSM -> WCDMA)" code="ET_Handover_To_WCDMA_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CS HandOver Failure(GSM -> WCDMA)" code="ET_Handover_To_WCDMA_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CS HandOver Request(GSM -> TD-SCDMA)" code="ET_Handover_To_TD_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CS HandOver Success(GSM -> TD-SCDMA)" code="ET_Handover_To_TD_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CS HandOver Failure(GSM -> TD-SCDMA)" code="ET_Handover_To_TD_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PS HandOver Request(GSM -> WCDMA)" code="ET_PS_Handover_To_WCDMA_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PS HandOver Success(GSM -> WCDMA)" code="ET_PS_Handover_To_WCDMA_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PS HandOver Failure(GSM -> WCDMA)" code="ET_PS_Handover_To_WCDMA_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PS HandOver Request(GSM -> TD-SCDMA)" code="ET_PS_Handover_To_TD_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PS HandOver Success(GSM -> TD-SCDMA)" code="ET_PS_Handover_To_TD_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PS HandOver Failure(GSM -> TD-SCDMA)" code="ET_PS_Handover_To_TD_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE Handover To WCDMA Request" code="ET_LTE_Handover_To_WCDMA_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE Handover To WCDMA Success" code="ET_LTE_Handover_To_WCDMA_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE Handover To WCDMA Failure" code="ET_LTE_Handover_To_WCDMA_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE Handover To TD-SCDMA Request" code="ET_LTE_Handover_To_TD_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE Handover To TD-SCDMA Success" code="ET_LTE_Handover_To_TD_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="LTE Handover To TD-SCDMA Failure" code="ET_LTE_Handover_To_TD_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="Inter-RAT_Reselection" name="Inter-RAT Reselection Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="CellReSelect Request(WCDMA -> GSM)" code="ET_Inter_CellReselect_WCDMA_To_GSM_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Complete(WCDMA -> GSM)" code="ET_Inter_CellReselect_WCDMA_To_GSM_Complete" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Request(TD-SCDMA -> GSM)" code="ET_Inter_CellReselect_TD_To_GSM_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Complete(TD-SCDMA -> GSM)" code="ET_Inter_CellReselect_TD_To_GSM_Complete" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Request(GSM -> WCDMA)" code="ET_Inter_CellReselect_GSM_To_WCDMA_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Complete(GSM -> WCDMA)" code="ET_Inter_CellReselect_GSM_To_WCDMA_Complete" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Request(GSM -> TD-SCDMA)" code="ET_Inter_CellReselect_GSM_To_TD_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Complete(GSM -> TD-SCDMA)" code="ET_Inter_CellReselect_GSM_To_TD_Complete" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Request(WCDMA -> LTE)" code="ET_Inter_CellReselect_WCDMA_To_LTE_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Complete(WCDMA -> LTE)" code="ET_Inter_CellReselect_WCDMA_To_LTE_Complete" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Failure(WCDMA -> LTE)" code="ET_Inter_CellReselect_WCDMA_To_LTE_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Request(TD-SCDMA -> LTE)" code="ET_Inter_CellReselect_TD_To_LTE_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Complete(TD-SCDMA -> LTE)" code="ET_Inter_CellReselect_TD_To_LTE_Complete" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Failure(TD-SCDMA -> LTE)" code="ET_Inter_CellReselect_TD_To_LTE_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Request(LTE -> WCDMA)" code="ET_Inter_CellReselect_LTE_To_WCDMA_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Complete(LTE -> WCDMA)" code="ET_Inter_CellReselect_LTE_To_WCDMA_Complete" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Failure(LTE -> WCDMA)" code="ET_Inter_CellReselect_LTE_To_WCDMA_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Request(LTE -> TD-SCDMA)" code="ET_Inter_CellReselect_LTE_To_TD_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Complete(LTE -> TD-SCDMA)" code="ET_Inter_CellReselect_LTE_To_TD_Complete" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="CellReSelect Failure(LTE -> TD-SCDMA)" code="ET_Inter_CellReselect_LTE_To_TD_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Research Request(WCDMA -> LTE)" code="ET_Inter_Research_WCDMA_To_LTE_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Research Complete(WCDMA -> LTE)" code="ET_Inter_Research_WCDMA_To_LTE_Complete" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Research Request(TD-SCDMA -> LTE)" code="ET_Inter_Research_TD_To_LTE_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Research Complete(TD-SCDMA -> LTE)" code="ET_Inter_Research_TD_To_LTE_Complete" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Research Request(LTE -> WCDMA)" code="ET_Inter_Research_LTE_To_WCDMA_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Research Complete(LTE -> WCDMA)" code="ET_Inter_Research_LTE_To_WCDMA_Complete" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Research Request(LTE -> TD-SCDMA)" code="ET_Inter_Research_LTE_To_TD_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Research Complete(LTE -> TD-SCDMA)" code="ET_Inter_Research_LTE_To_TD_Complete" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+	</firstType>
+	<firstType code="General_Test" name="General Test Event" isShowList="1" isShowMap="0" color="" checked="1">
+		<secondType code="General_Test" name="General Test Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="PPP Dial Start" code="ET_ATDStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PPP Dial Success" code="ET_ATD_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PPP Dial Failure" code="ET_ATD_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PPP Dial Hangup" code="ET_ATDHangup" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Device Identity" code="ET_DeviceIdentity" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Building GPS Info" code="ET_BuildingGPSInfo" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Tag" code="ET_TagText" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Out of Service" code="ET_OutOfService" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Device SamplePoint Lost" code="ET_DeviceSamplePointLost" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="GPS Lost" code="ET_GPS_Lost" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Stop Logging" code="ET_Stop_Logging" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Stop Test" code="ET_Stop_Test" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Logging Pause" code="ET_Logging_Pause" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+	</firstType>
+	<firstType code="Voice_Service" name="Voice Service Event" isShowList="1" isShowMap="0" color="" checked="1">
+		<secondType code="Voice_Test" name="Voice Test Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="MOC Start" code="ET_DIAL_START" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="MTC Start" code="ET_Dialed_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Voice Hangup" code="ET_DIAL_END" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Outgoing Call Attempt" code="ET_MO_Attempt,ET_IPhoneMOAttempt" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Outgoing Call Attempt Retry" code="ET_MO_Attempt_Retry" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Outgoing Call Setup" code="ET_MO_Alerting,ET_IPhoneMOSetup" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Outgoing Call Established" code="ET_MO_Connect,ET_IPhoneMOEstablished" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="Outgoing Blocked Call" code="ET_MO_Block,ET_IPhoneMOBlock" isShowList="1" isShowMap="0" color="-65536" checked="1" />
+			<event name="Outgoing Call End" code="ET_MO_End,ET_IPhoneMOCallEnd" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Outgoing Dropped Call" code="ET_MO_Drop,ET_IPhoneMODrop" isShowList="1" isShowMap="0" color="-65536" checked="1" />
+			<event name="Originating CSFB Request" code="ET_MO_CSFB_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Originating CSFB Success" code="ET_MO_CSFB_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Originating CSFB Failure" code="ET_MO_CSFB_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Originating CSFB Proceeding" code="ET_MO_CSFB_Proceeding" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Originating CSFB RRC Release" code="ET_MO_CSFB_RRCRelease" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Originating CSFB Coverage" code="ET_MO_CSFB_Coverage" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Incoming Call Attempt" code="ET_MT_Attempt,ET_IPhoneMTAttempt" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Incoming Call Setup" code="ET_MT_Alerting,ET_IPhoneMTSetup" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Incoming Call Established" code="ET_MT_Connect,ET_IPhoneMTEstablished" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="Incoming Blocked Call" code="ET_MT_Block,ET_IPhoneMTBlock" isShowList="1" isShowMap="0" color="-65536" checked="1" />
+			<event name="Incoming Call End" code="ET_MT_End,ET_IPhoneMTCallEnd" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Incoming Dropped Call" code="ET_MT_Drop,ET_IPhoneMTDrop" isShowList="1" isShowMap="0" color="-65536" checked="1" />
+			<event name="Terminating CSFB Request" code="ET_MT_CSFB_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Terminating CSFB Success" code="ET_MT_CSFB_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Terminating CSFB Failure" code="ET_MT_CSFB_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Terminating CSFB Proceeding" code="ET_MT_CSFB_Proceeding" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Terminating CSFB RRC Release" code="ET_MT_CSFB_RRCRelease" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Terminating CSFB Coverage" code="ET_MT_CSFB_Coverage" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="RRC Connection Abnormal Release" code="ET_MO_CSFB_Abnormal" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Logging Pause" code="ET_Logging_Pause" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="MOS" name="MOS Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="PESQ Finished" code="ET_PESQ_score" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="POLQA Result" code="ET_POLQA_Result" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="Logging Pause" code="ET_Logging_Pause" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+	</firstType>
+	<firstType code="Network_Test" name="Network Test Event" isShowList="1" isShowMap="0" color="" checked="1">
+		<secondType code="Attach" name="Attach Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="Attach Start" code="ET_Attach_start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Attach Success" code="ET_ATTACH_SUCCESS" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="Attach Failure" code="ET_ATTACH_FAILURE" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="PDP_Active" name="PDP Active Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="PDP Start" code="ET_PDP_start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PDP Success" code="ET_PDPACTIVE_SUCCESS" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="PDP Failure" code="ET_PDPACTIVE_FAILURE" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="Ping" name="Ping Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="Ping Start" code="ET_Ping_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Ping Success" code="ET_Ping_NSuccess" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="Ping Failure" code="ET_Ping_NFail" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Ping Test" code="ET_PING" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="TraceRoute" name="TraceRoute Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="Trace Route Start" code="ET_TraceRoute_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Trace Route Point Reply" code="ET_TraceRoute_PointReply" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Trace Route Point Timeout" code="ET_TraceRoute_PointTimeOut" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Trace Route Success" code="ET_TraceRoute_Success" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="Trace Route Failure" code="ET_TraceRoute_Fail" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Trace Route Address Reslv Error" code="ET_TraceRoute_ReslvError" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="DNS_Lookup" name="DNS Lookup Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="DNS Lookup Start" code="ET_DNSLookup_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="DNS Lookup Success" code="ET_DNSLookup_Success" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="DNS Lookup Failure" code="ET_DNSLookup_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+	</firstType>
+	<firstType code="Data_Service" name="Data Service Event" isShowList="1" isShowMap="0" color="" checked="1">
+		<secondType code="FTP_Download" name="FTP Download Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="FTP Download Connect Start" code="ET_FTP_DL_SockConnect" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Download Connect Success" code="ET_FTP_DL_ConnectFinish" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Download Connect Failure" code="ET_FTP_DL_ConnectSockFailed" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Download Login Success" code="ET_FTP_DL_LoginSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Download Login Failure" code="ET_FTP_DL_LoginFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Download Reset Support" code="ET_FTP_DL_SupportReset" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Download Send RETR" code="ET_FTP_DL_SendRetrCmd" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Download Failure" code="ET_FTP_DL_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Download First Data" code="ET_FTP_DL_FirstData" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Download Last Data" code="ET_FTP_DL_LastData" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="FTP Download Send Resend CMD" code="ET_FTP_DL_ReSendRetrCmd" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Download Drop" code="ET_FTP_DL_Drop" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Download Disconnect" code="ET_FTP_DL_SockDisconnect" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="FTP_Upload" name="FTP Upload Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="FTP Upload Connect Start" code="ET_FTP_UP_SockConnect" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Upload Connect Success" code="ET_FTP_UP_ConnectFinish" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Upload Connect Failure" code="ET_FTP_UP_ConnectSockFailed" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Upload Login Success" code="ET_FTP_UP_LoginSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Upload Login Failure" code="ET_FTP_UP_LoginFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Upload Reset Support" code="ET_FTP_UP_SupportReset" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Upload Send STOR" code="ET_FTP_UP_SendRetrCmd" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Upload Failure" code="ET_FTP_UP_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Upload First Data" code="ET_FTP_UP_FirstData" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Upload Last Data" code="ET_FTP_UP_LastData" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="FTP Upload Drop" code="ET_FTP_UP_Droped" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="FTP Upload Disconnect" code="ET_FTP_UP_SockDisconnect" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="Multi-FTP_Download" name="Multi-FTP Download Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="Multi FTP Download Connect Start" code="ET_MultiFTPDlConnectStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Download Connect Success" code="ET_MultiFTPDlConnectSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Download Login Success" code="ET_MultiFTPDlLoginSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Download Login Failure" code="ET_MultiFTPDlLoginFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Download Reset Support" code="ET_MultiFTPDlSupportReset" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Download Error Happened" code="ET_MultiFTPDlErrorHappened" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Download All Send STOR" code="ET_MultiFTPDlAllSendStorCmd" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Download Failure" code="ET_MultiFTPDlFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Download All First Data" code="ET_MultiFTPDlAllFirstData" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Download Count Down Start" code="ET_MultiFTPDlCountDownStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Download Last Data" code="ET_MultiFTPDlLastData" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="Multi FTP Download ReSend RETR" code="ET_MultiFTPDlReSendStorCmd" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Download Drop" code="ET_MultiFTPDlDrop" isShowList="1" isShowMap="0" color="-65536" checked="1" />
+			<event name="Multi FTP Download Disconnect" code="ET_MultiFTPDlDisconnect" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="Multi-FTP_Upload" name="Multi-FTP Upload Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="Multi FTP Upload Connect Start" code="ET_MultiFTPUlConnectStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Upload Connect Success" code="ET_MultiFTPUlConnectSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Upload Login Success" code="ET_MultiFTPUlLoginSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Upload Login Failure" code="ET_MultiFTPUlLoginFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Upload Support Reset" code="ET_MultiFTPUlSupportReset" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Upload Error Happened" code="ET_MultiFTPUlErrorHappened" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Upload All Send STOR" code="ET_MultiFTPUlAllSendStorCmd" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Upload Count Down Start" code="ET_MultiFTPUlCountDownStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Upload All First Data" code="ET_MultiFTPUlAllFirstData" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Upload Last Data" code="ET_MultiFTPUlLastData" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="Multi FTP Upload Drop" code="ET_MultiFTPUlDrop" isShowList="1" isShowMap="0" color="-65536" checked="1" />
+			<event name="Multi FTP Upload ReSend STOR" code="ET_MultiFTPUlReSendStorCmd" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Upload Disconnect" code="ET_MultiFTPUlDisconnect" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi FTP Upload Failure" code="ET_MultiFTPUlFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="PBM" name="PBM Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="PBM Start" code="ET_PBM_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PBM Finish" code="ET_PBM_Finish" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="PBM Failure" code="ET_PBM_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="Iperf" name="Iperf Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="Iperf Inited" code="ET_IperfInited" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Iperf Connect Start" code="ET_IperfConnectStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Iperf Connect Success" code="ET_IperfConnectSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Iperf Connect Failure" code="ET_IperfConnectFailed" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Iperf Drop" code="ET_IperfDropped" isShowList="1" isShowMap="0" color="-65536" checked="1" />
+			<event name="Iperf Finished" code="ET_IperfFinished" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="Iperf Quit" code="ET_IperfQuit"  isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+	</firstType>
+	<firstType code="Value-added_Service" name="Value-added Service Event" isShowList="1" isShowMap="0" color="" checked="1">
+		<secondType code="SMS" name="SMS Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="SMS Send Access Request" code="ET_SMS_Access_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="SMS Send Success" code="ET_SMS_Send_Success" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="SMS Send Failure" code="ET_SMS_Send_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="SMS Receive Success" code="ET_SMS_Recv_Success" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="SMS Receive Failure" code="ET_SMS_Recv_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="MMS" name="MMS Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="MMS Send Start" code="ET_MMS_Send_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="MMS Send Socket Connect" code="ET_MMS_Send_SockConnect" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="MMS Send WSP Connect Request" code="ET_MMS_WSPConnect_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="MMS Send WSP Connect Success" code="ET_MMS_Send_WSP_Connect_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="MMS Send WSP Connect Failure" code="ET_MMS_Send_WSP_Connect_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="MMS Send Success" code="ET_MMS_Send_Success" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="MMS Send Failure" code="ET_MMS_Send_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="MMS Push Received" code="ET_MMS_MNotification_Ind" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="MMS Push Timeout" code="ET_MMS_MNotification_Timeout" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="MMS Receive Socket Connect" code="ET_MMS_Recv_SockConnect" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="MMS Receive WSP Connect Request" code="ET_MMS_Recv_WSPConnect_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="MMS Receive WSP Connect Success" code="ET_MMS_Recv_WSP_Connect_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="MMS Receive WSP Connect Failure" code="ET_MMS_Recv_WSP_Connect_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="MMS Receive FirstData" code="ET_MMS_Recv_FirstData" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="MMS Receive Success" code="ET_MMS_Recv_Success" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="MMS Receive Failure" code="ET_MMS_Recv_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="WAP_Page" name="WAP Page Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="WAP Page Start" code="ET_WAP_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Page Connect" code="ET_WAP_SockConnect" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Page Connect Gateway Request" code="ET_WAP_ConnectGateway_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Page Connect Gateway Success" code="ET_Wap_WSP_Connect_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Page Connect Gateway Failure" code="ET_Wap_WSP_Connect_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Page Request" code="ET_WAP_GetRequest" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Page First Data Ex" code="ET_WAP_FirstDataEx" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Page First Data" code="ET_WAP_FirstData" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Page Last Data" code="ET_WAP_LastData" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="WAP Page Url Redirect" code="ET_WAP_UrlRedirect" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Page Drop" code="ET_WAP_Drop" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Page Get Url Success" code="ET_WAP_GetURL_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Page Get Url Failure" code="ET_WAP_GetURL_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="WAP_Download" name="WAP Download Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="WAP Download Start" code="ET_WAPDL_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Download Socket Connect" code="ET_WAPDL_SockConnect" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Download Connect Gateway Request" code="ET_WAPDL_ConnectGateway_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Download Connect Gateway Success" code="ET_WapDown_WSP_Connect_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Download Connect Gateway Failure" code="ET_WapDown_WSP_Connect_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Download Get Request" code="ET_WAPDL_GetRequest" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Download First Data Ex" code="ET_WAPDL_FirstDataEx" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Download First Data" code="ET_WAPDL_FirstData" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Download Last Data" code="ET_WAPDL_LastData" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="WAP Download Drop" code="ET_WAPDL_Drop" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Download Url Redirect" code="ET_WAPDL_UrlRedirect" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Download Get Url Success" code="ET_WAPDL_GetURL_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WAP Download Get Url Failure" code="ET_WAPDL_GetURL_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+	</firstType>
+	<firstType code="QoE_Service" name="QoE Service Event" isShowList="1" isShowMap="0" color="" checked="1">
+		<secondType code="HTTP_Download" name="HTTP Download Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="HTTP Download Start" code="ET_HTTP_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Download Connect" code="ET_HTTP_SockConnect" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Download Connect Success" code="ET_HTTP_ConnectSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Download Connect Failure" code="ET_HTTP_ConnectFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Download Get File Size" code="ET_HTTP_GetFileSize" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Download Send Get" code="ET_HTTP_SendGetCmd" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Download Failure" code="ET_HTTP_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Download Url Redirect" code="ET_HTTP_UrlRedirect" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Download First Data" code="ET_HTTP_FirstData" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Download Last Data" code="ET_HTTP_LastData" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="HTTP Download Drop" code="ET_HTTP_Drop" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Download Disconnect" code="ET_HTTP_SocketDisconnect" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="HTTP_Up" name="HTTP Up Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="HTTP Upload Start" code="ET_HttpUpload_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Upload Login Start" code="ET_HttpUpload_LoginStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Upload Login Success" code="ET_HttpUpload_LoginSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Upload Login Failure" code="ET_HttpUpload_LoginFailed" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Upload Send Start" code="ET_HttpUpload_SendStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Upload First Data" code="ET_HttpUpload_FirstData" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Upload Drop" code="ET_HttpUpload_Drop" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Upload Last Data" code="ET_HttpUpload_LastData" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="HTTP Upload Failure" code="ET_HttpUpload_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="HTTP_Page" name="HTTP Page Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="HTTP Page Start" code="ET_HttpPageStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Page Connect" code="ET_HttpPageSocketConnecting" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Page Connect Success" code="ET_HttpPageSocketSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Page Connect Failure" code="ET_HttpPageSocketFailed" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Page Send CMD" code="ET_HttpPageSendGetCmd" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Page Send CMD Failure" code="ET_HttpPageSendGetCmdFailer" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Page Url Redirect" code="ET_HttpPageUrlRedirect" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Page Failure" code="ET_HttpPageFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Page First Data" code="ET_HttpPageFirstData" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Page MainPage Success" code="ET_HttpPageMainPageOK" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="HTTP Page Last Data" code="ET_HttpPageLastData" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="HTTP Page Drop" code="ET_HttpPageDrop" isShowList="1" isShowMap="0" color="-65536" checked="1" />
+			<event name="HTTP Page Disconnect" code="ET_HttpPageSocketDisconnect" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="Video_Play" name="Video Play Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="Video Play Request" code="ET_HttpVideo_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Video Play First Data" code="ET_HttpVideo_FirstData" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Video Play Request Failure" code="ET_HttpVideo_RequestFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Video Play Reproduction Start" code="ET_HttpVideo_ReproductionStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Video Play Reproduction Start Failure" code="ET_HttpVideo_ReproductionStartFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Video Play Last Data" code="ET_HttpVideo_LastData" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Video Play Drop" code="ET_HttpVideo_Drop" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Video Play Finish" code="ET_HttpVideo_Finished" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="Video Play Rebuffer Start" code="ET_HttpVideo_RebufferStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Video Play Rebuffer End" code="ET_HttpVideo_RebufferEnd" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Video Play Segment Report" code="ET_HttpVideo_SegmentReport" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Video Play VMos Report" code="ET_HttpVideo_VMosReport" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="Email_Download" name="Email Download Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="Email DownLoad Start" code="ET_Email_POP3_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email DownLoad Connect" code="ET_Email_POP3_Connect" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email DownLoad Connect Success" code="ET_Email_POP3_SockConnectSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email DownLoad Connect Failure" code="ET_Email_POP3_SockConnectFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email DownLoad Login Success" code="ET_Email_POP3_LoginSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email DownLoad Login Failure" code="ET_Email_POP3_LoginFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email Download Send RETR" code="ET_Email_POP3_SendCmd" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email Download Content OK" code="ET_Email_POP3_ContentOK" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email Download First Data" code="ET_Email_POP3_FirstData" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email Download Last Data" code="ET_Email_POP3_LastData" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="Email Download Drop" code="ET_Email_POP3_Drop" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email Download Disconnect" code="ET_Email_POP3_RetrFinished" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email DownLoad Failure" code="ET_Email_POP3_Failure"  isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="Email_Upload" name="Email Upload Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="Email Upload Start" code="ET_Email_SMTP_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email Upload Connect" code="ET_Email_SMTP_Connect" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email Upload Connect Success" code="ET_Email_SMTP_SockConnectSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email Upload Connect Failure" code="ET_Email_SMTP_SockConnectFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email Upload Login Success" code="ET_Email_SMTP_LoginSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email Upload Login Failure" code="ET_Email_SMTP_LoginFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email Upload Send MAIL" code="ET_Email_SMTP_SendCmd" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email Upload First Data" code="ET_Email_SMTP_FirstData" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email Upload Last Data" code="ET_Email_SMTP_LastData" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="Email Upload Drop" code="ET_Email_SMTP_Drop" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email Upload Failure" code="ET_Email_SMTP_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Email Upload Disconnect" code="ET_Email_SMTP_EOMACK" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="Speedtest" name="Speedtest Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="SpeedTest Sock Connecting" code="ET_SpeedTest_SockConnecting" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="SpeedTest Connect Sock Success" code="ET_SpeedTest_ConnectSockSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="SpeedTest Connect Sock Failure" code="ET_SpeedTest_ConnectSockFail" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="SpeedTest Ping Start" code="ET_SpeedTest_Ping_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="SpeedTest Ping Success" code="ET_SpeedTest_Ping_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="SpeedTest Download Start" code="ET_SpeedTest_Download_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="SpeedTest Download Success" code="ET_SpeedTest_Download_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="SpeedTest Upload Start" code="ET_SpeedTest_Upload_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="SpeedTest Upload Success" code="ET_SpeedTest_Upload_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="SpeedTest Finish" code="ET_SpeedTest_Finish" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="SpeedTest Failure" code="ET_SpeedTest_Fail" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="SpeedTest Socket Disconnect" code="ET_SpeedTest_SocketDisconnected" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="WeiBo" name="WeiBo Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="WeiBo Start" code="ET_WeiBo_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+		    <event name="WeiBo Action Start" code="ET_WeiBo_ActionStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WeiBo Action Success" code="ET_WeiBo_ActionSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WeiBo Action Failure" code="ET_WeiBo_ActionFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WeiBo Finish" code="ET_WeiBo_Finish" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+		</secondType>
+		<secondType code="Video_Stream" name="Video Stream Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="Video Stream Request" code="ET_NewVideoStream_Request" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Video Stream First Data" code="ET_NewVideoStream_FirstData" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Video Stream Request Failure" code="ET_NewVideoStream_RequestFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Video Stream Reproduction Start" code="ET_NewVideoStream_ReproductionStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Video Stream Reproduction Start Failure" code="ET_NewVideoStream_ReproductionStartFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Video Stream Last Data" code="ET_NewVideoStream_LastData" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Video Stream Drop" code="ET_NewVideoStream_Drop" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Video Stream Finish" code="ET_NewVideoStream_Finished" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="Video Stream Rebuffer Start" code="ET_NewVideoStream_RebufferStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Video Stream Rebuffer End" code="ET_NewVideoStream_RebufferEnd" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="Facebook" name="Facebook Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="Facebook Test Start" code="ET_App_Facebook_TestStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Facebook Action Start" code="ET_App_Facebook_ActionStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Facebook Action Success" code="ET_App_Facebook_ActionSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Facebook Action Failure" code="ET_App_Facebook_ActionFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Facebook Test Success" code="ET_App_Facebook_TestSuccess" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="Facebook Test Failure" code="ET_App_Facebook_TestFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="WeChat" name="WeChat Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="WeChat Test Start" code="ET_WeChat_TestStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WeChat Action Start" code="ET_WeChat_ActionStart" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WeChat Action Success" code="ET_WeChat_ActionSuccess" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WeChat Action Failure" code="ET_WeChat_ActionFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="WeChat Test Success" code="ET_WeChat_TestSuccess" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="WeChat Test Failure" code="ET_WeChat_TestFailure" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="UDP" name="UDP Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="UDP Connect Start" code="ET_UDP_Connect_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="UDP Connect Success" code="ET_UDP_Connect_Success" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="UDP Connect Failure" code="ET_UDP_Connect_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="UDP Start" code="ET_UDP_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="UDP End" code="ET_UDP_End" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="UDP Finish" code="ET_UDP_Finish" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="UDP Failure" code="ET_UDP_Failure" isShowList="1" isShowMap="0" color="" checked="0" />
+			<event name="UDP Disconnect" code="ET_UDP_Disconnect" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="OpenSignal" name="OpenSignal Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="OpenSignal SockConnectiong" code="ET_OpenSignal_SockConnecting" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="OpenSignal ConnectSockSucc" code="ET_OpenSignal_ConnectSockSucc" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="OpenSignal ConnectSockFaile" code="ET_OpenSignal_ConnectSockFaile" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="OpenSignal Ping Start" code="ET_OpenSignal_Ping_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="OpenSignal Ping Suc" code="ET_OpenSignal_Ping_Suc" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="OpenSignal DL Start" code="ET_OpenSignal_DL_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="OpenSignal DL Suc" code="ET_OpenSignal_DL_Suc" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="OpenSignal UL Start" code="ET_OpenSignal_UL_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="OpenSignal UL Suc" code="ET_OpenSignal_UL_Suc" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="OpenSignal Finish" code="ET_OpenSignal_Finish" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="OpenSignal Fail" code="ET_OpenSignal_Fail" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="OpenSignal SocketDisconnected" code="ET_OpenSignal_SocketDisconnected" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+		<secondType code="MultiHttpDownload" name="MultiHttpDownload Event" isShowList="1" isShowMap="0" color="" checked="1">
+			<event name="Multi HTTP Down Start" code="ET_Multi_HTTP_Down_Start" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi HTTP Down First Data" code="ET_Multi_HTTP_Down_First_Data" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi HTTP Down Last Data" code="ET_Multi_HTTP_Down_Last_Data" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<event name="Multi HTTP Down Drop" code="ET_Multi_HTTP_Down_Drop" isShowList="1" isShowMap="0" color="" checked="1" />
+			<event name="Multi HTTP Down Failure" code="ET_Multi_HTTP_Down_Failure" isShowList="1" isShowMap="0" color="" checked="1" />
+		</secondType>
+	</firstType>
+	<firstType code="WifiEvent" name="Wifi Event" isShowList="1" isShowMap="1" color="" checked="1">
+		<secondType code="Wifi_Ap_Event" name="Wifi Ap Event" isShowList="1" isShowMap="1" color="" checked="1">
+		    <event name="WiFi AP Search Start" code="ET_WiFi_SearchStart" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi AP Search Done" code="ET_WiFi_SearchDone" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi AP ConnectStart" code="ET_WiFi_ConnectStart" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi AP ConnectSuccess" code="ET_WiFi_ConnectSuccess" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi AP ConnectFailure" code="ET_WiFi_ConnectFailed" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi AP Disconnected" code="ET_WiFi_Disconnected" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi AP Switch" code="ET_WiFi_Switch" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi AP Disconnect" code="ET_WiFi_Disconnect" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi AP Roam" code="ET_WiFi_Roam" isShowList="1" isShowMap="1" color="" checked="1" />
+		</secondType>
+		<secondType code="Wifi_Dhcp_Event" name="Wifi Dhcp Event" isShowList="1" isShowMap="1" color="" checked="1">
+		    <event name="WiFi DHCP Start" code="ET_WiFi_DHCPStart" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi DHCP Success" code="ET_WiFi_DHCPSuccess" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi DHCP Fail" code="ET_WiFi_DHCPFail" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi DHCP Release Start" code="ET_WiFi_DHCPReleaseStart" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi DHCP Release Success" code="ET_WiFi_DHCPReleaseSuccess" isShowList="1" isShowMap="1" color="" checked="1" />
+		</secondType>
+		<secondType code="WiFi_Auth_Open_Main_Page_Event" name="WiFi Auth Open Main Page Event" isShowList="1" isShowMap="1" color="" checked="1">
+		    <event name="WiFi Auth Open Main Page Start" code="ET_WiFi_AuthMainPageStart" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi Auth Open Main Page First Data" code="ET_WiFi_AuthMainPageFirstData" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi Auth Open Main Page Success" code="ET_WiFi_AuthMainPageSuccess" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi Auth Open Main Page Failure" code="ET_WiFi_AuthMainPageFailed" isShowList="1" isShowMap="1" color="" checked="1" />
+		</secondType>
+		<secondType code="Wifi_Login_Event" name="Wifi Login Event" isShowList="1" isShowMap="1" color="" checked="1">
+		    <event name="WiFi Login Start" code="ET_WiFi_LoginStart" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi Login Success" code="ET_WiFi_LoginSuccess" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi Login Failure" code="ET_WiFi_LoginFailed" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi Logout Start" code="ET_WiFi_LogoutStart" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi Logout Success" code="ET_WiFi_LogoutSuccess" isShowList="1" isShowMap="1" color="" checked="1" />
+		    <event name="WiFi Logout Failure" code="ET_WiFi_LogoutFailed" isShowList="1" isShowMap="1" color="" checked="1" />
+		</secondType>
+	</firstType>
+	<firstType code="TagEvent" name="Other Event" isShowList="1" isShowMap="1" color="" checked="1">
+		<secondType code="Tag_Event" name="Other Event" isShowList="1" isShowMap="1" color="" checked="1">
+			<event name="Tag Event" code="ET_TagText" isShowList="1" isShowMap="1" color="" checked="1" />
+			<event name="RR Connection Request" code="ET_RR_Connection_Request" isShowList="1" isShowMap="1" color="" checked="1" />
+			<event name="RR Connection Setup Success" code="ET_RR_Connection_Setup_Success" isShowList="1" isShowMap="1" color="" checked="1" />
+			<event name="RR Connection Setup Failure" code="ET_RR_Connection_Setup_Failure " isShowList="1" isShowMap="1" color="" checked="1" />
+			<event name="RR Connetion Normal Release" code="ET_RR_Connetion_Normal_Release" isShowList="1" isShowMap="1" color="" checked="1" />
+			<event name="RR Connetion Abnormal Release" code="ET_RR_Connetion_Abnormal_Release" isShowList="1" isShowMap="1" color="" checked="1" />
+			<event name="RRC Connection Setup Response Failure" code="RRC_Connection_Setup_Response_Failure" isShowList="1" isShowMap="1" color="" checked="1" />
+		</secondType>
+	</firstType>
+</filters>

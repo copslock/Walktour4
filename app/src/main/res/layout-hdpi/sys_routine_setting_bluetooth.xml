@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/setting_bluetooth_sync_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/sys_setting_bluetooth_synctest" />
+
+        <CheckBox
+            android:id="@+id/bluetooth_synctest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:button="@drawable/switch_button_bg"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_bluetooth_sync_pairdevice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/bluetooth_sync_pairstate"
+            style="@style/setting_sort_left_text_2"
+            android:singleLine="false"
+            android:layout_marginRight="5dp"
+            android:text="@string/sys_setting_bluetooth_connectstate" 
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_bluetooth_sync_creserver"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/sys_setting_bluetooth_creserver" />
+
+        <CheckBox
+            android:id="@+id/bluetooth_sync_creserver"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:button="@drawable/switch_button_bg"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_bluetooth_sync_creclient"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/sys_setting_bluetooth_creclient" />
+
+        <CheckBox
+            android:id="@+id/bluetooth_sync_creclient"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:button="@drawable/switch_button_bg"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_bluetooth_sync_cennectstate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/sys_setting_bluetooth_connectstate" />
+
+        <TextView
+            android:id="@+id/bluetooth_sync_curstate"
+            style="@style/setting_sort_right_text_2"
+            android:text="@string/sys_setting_bluetooth_connectting" />
+    </RelativeLayout>
+
+</LinearLayout>

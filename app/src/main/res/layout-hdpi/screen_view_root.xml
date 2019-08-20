@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 筛选界面布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="240dp"
+    android:background="@color/white"
+    android:minHeight="240dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        ><!-- android:background="@drawable/box2"  -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/ControlBar"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <RadioButton
+                        android:id="@+id/rb1"
+                        style="@style/setting_sort_center_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/selector_shape_button2"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableRight="@android:drawable/divider_horizontal_bright"
+                        android:text="@string/str_time"
+                        android:textSize="@dimen/default_txt_size_micro"
+                        android:textColor="@color/app_main_text_color" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@android:drawable/divider_horizontal_bright" /><!-- divider_h -->
+
+                    <RadioButton
+                        android:id="@+id/rb2"
+                        style="@style/setting_sort_center_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/selector_shape_button2"
+                        android:button="@null"
+                        android:drawableRight="@android:drawable/divider_horizontal_bright"
+                        android:text="@string/monitor_data_status"
+                        android:textSize="@dimen/default_txt_size_micro"
+                        android:textColor="@color/app_main_text_color" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@android:drawable/divider_horizontal_bright" />
+                    <!-- #DDD9C3 -->
+
+                    <RadioButton
+                        android:id="@+id/rb3"
+                        style="@style/setting_sort_center_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/selector_shape_button2"
+                        android:button="@null"
+                        android:drawableRight="@android:drawable/divider_horizontal_bright"
+                        android:text="@string/sys_setting_kpi_task_str"
+                        android:textSize="@dimen/default_txt_size_micro"
+                        android:textColor="@color/app_main_text_color" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@android:drawable/divider_horizontal_bright" />
+
+                    <RadioButton
+                        android:id="@+id/rb4"
+                        style="@style/setting_sort_center_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/selector_shape_button2"
+                        android:button="@null"
+                        android:clickable="true"
+                        android:textSize="@dimen/default_txt_size_micro"
+                        android:drawableRight="@android:drawable/divider_horizontal_bright"
+                        android:textColor="@color/app_main_text_color" 
+                        android:text="@string/str_network"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:background="@android:drawable/divider_horizontal_bright"
+                android:visibility="gone" /><!-- #DDD9C3 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="#F2F2F2"
+                android:orientation="vertical" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ControlBar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_ECECEC"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/box2"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_clear"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1.5"
+                    android:background="@null"
+                    android:text="@string/str_clear"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/app_defult_btn_txt_size" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@android:drawable/divider_horizontal_bright" />
+
+                <Button
+                    android:id="@+id/btn_filter"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1.5"
+                    android:background="@null"
+                    android:text="@string/data_manager_screening"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/app_defult_btn_txt_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|left"
+    android:background="@drawable/search_item_click"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" >
+
+        <TextView
+            android:id="@+id/keyvalue11"
+            style="@style/fontstyle12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="left|center_vertical"
+            android:text="18:54:22"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/keyvalue22"
+            style="@style/fontstyle12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical" 
+            android:gravity="left|center_vertical"
+            android:text="MOC"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="8dp"
+            android:layout_weight="4"
+            android:gravity="right|center_vertical" >
+
+            <TextView
+                android:id="@+id/keyvalue33"
+                style="@style/fontstyle12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical" 
+                android:layout_marginLeft="8dp"
+                android:gravity="left|center_vertical"
+                android:text="回落频点不一致"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewidx"
+        style="@style/setting_divider"
+android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="gone" />
+
+</LinearLayout>

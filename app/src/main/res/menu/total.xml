@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android">
+	<item 	android:title="@string/total_refurbish" 
+			android:icon="@android:drawable/ic_menu_agenda" 
+			android:id="@+id/menu_refurbish">
+	</item>
+	<item 	android:id="@+id/menu_clean" 
+			android:title="@string/total_clean" 
+			android:icon="@android:drawable/ic_menu_upload">
+	</item>
+</menu>

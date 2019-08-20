@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/loadmodel"
+        android:layout_width="fill_parent"
+        android:layout_height="33dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/isfugai"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:checked="false"
+            android:gravity="center_vertical"
+            android:text="@string/test_task_add_fugai" />
+
+        <RadioButton
+            android:id="@+id/iszhuijia"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="@string/test_task_add_zhujia" />
+    </RadioGroup>
+
+    <View style="@style/sys_routine_setting_divider" />
+
+    <com.walktour.customView.ListViewForScrollView
+        android:id="@+id/ListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="1dip" />
+
+</LinearLayout>

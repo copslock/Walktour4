@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_list_item_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingLeft="30dp" >
+
+    <ImageView
+        android:id="@+id/objimg"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/obj_group" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/name1"
+            style="@style/fontstyle14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="同事A" />
+        <TextView
+            android:id="@+id/name2"
+            style="@style/fontstyle12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="同事A"
+            android:textColor="@color/single_huise" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/joinnumbers"
+            style="@style/fontstyle14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:ellipsize="end"
+            android:gravity="center|center_vertical"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/single_huise" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/addmem"
+                style="@style/fontstyle10"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@drawable/background_mybutton4"
+                android:text="@string/share_project_devices_aggree" />
+            <Button
+                android:id="@+id/refusemem"
+                style="@style/fontstyle10"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/background_mybutton4"
+                android:text="@string/share_project_devices_refuse" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

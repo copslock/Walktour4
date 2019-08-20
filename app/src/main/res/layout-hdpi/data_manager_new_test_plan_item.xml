@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/test_type_name"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        style="@style/setting_sort_left_text_2"
+        android:textColor="@color/txt_high_light"
+        android:background="#eeeeee"
+        android:layout_marginLeft="0dp"
+        android:padding="10dp"
+        android:text="RCU"
+        />
+    <View style="@style/task_listdivider" />
+    <LinearLayout 
+        android:id="@+id/layout_content_test_plan_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+        
+   <View style="@style/task_listdivider"/>
+
+</LinearLayout>

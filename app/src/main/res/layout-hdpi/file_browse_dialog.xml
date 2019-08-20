@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FTP路径 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_upload_ftp_path_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_bg_color" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" >
+
+        <Button
+            android:id="@+id/btn_view"
+            android:layout_width="50dip"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dip"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/dialog_btn"
+            android:text="@string/view"
+            android:textColor="@color/app_main_text_color" />
+
+        <EditText
+            android:id="@+id/setting_upload_ftp_path_edit"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_view"
+            android:paddingLeft="2dip"
+            android:singleLine="true"
+            android:textColor="@color/app_main_text_color" />
+    </RelativeLayout>
+
+    <View style="@style/setting_divider" />
+
+</RelativeLayout>

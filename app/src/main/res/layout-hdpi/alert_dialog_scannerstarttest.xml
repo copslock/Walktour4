@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingTop="8dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+			 >
+
+            <!-- 外循环 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+           		android:paddingRight="5dip"
+                 >
+
+                <TextView
+                    android:id="@+id/textviewLoop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_looptimes"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editLooptimes"
+                    style="@style/task_edit_view"
+                    android:layout_marginLeft="120dip"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    android:numeric="integer"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <!-- 测试人员 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+           		android:paddingRight="5dip"
+                android:layout_marginTop="5dip" >
+
+                <TextView
+                    android:id="@+id/TextviewTester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/main_tester"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EditTester"
+                    style="@style/task_edit_view"
+                    android:layout_marginLeft="120dip"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <!-- 测试地址 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+           		android:paddingRight="5dip"
+                android:layout_marginTop="5dip" >
+
+                <TextView
+                    android:id="@+id/TextviewAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/main_address"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EditAddress"
+                    style="@style/task_edit_view"
+                    android:layout_marginLeft="120dip"
+                    android:singleLine="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginTop="2dip"
+            android:background="@drawable/list_divider" >
+        </View>
+        <!-- 预打点 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip" >
+
+            <CheckBox
+                android:id="@+id/checkGyro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_gyro_point"
+                android:visibility="gone" >
+            </CheckBox>
+        </LinearLayout>
+ 
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:orientation="vertical"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip" >
+
+
+            <RelativeLayout
+                android:id="@+id/reSpinnerBuild"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextViewBuild1"
+                    android:layout_width="72dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/main_building"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/SpinnerBuild"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/TextViewBuild1"
+                    android:background="@drawable/drop" />
+            </RelativeLayout>
+            <!-- 楼层显示 -->
+           
+        </LinearLayout>
+        <!-- 楼层拍摄照片 -->
+    </LinearLayout>
+
+</ScrollView>

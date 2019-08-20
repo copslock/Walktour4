@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/comname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/fontstyle14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="@string/share_project_device_name" />
+
+        <TextView
+            android:id="@+id/groupname"
+            style="@style/fontstyle14"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center|center_vertical"
+            android:text="珠海测试"
+            android:textColor="@color/single_huise" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/fontstyle14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="@string/share_project_device_code" />
+
+        <TextView
+            android:id="@+id/weifuwuhao"
+            style="@style/fontstyle14"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center|center_vertical"
+            android:text="160001"
+            android:textColor="@color/single_huise" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/localhistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/grouplist"
+            style="@style/fontstyle14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="@string/share_project_select_historyc_local" />
+
+        <TextView
+            style="@style/fontstyle18"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center|center_vertical"
+            android:text=">"
+            android:textColor="@color/single_huise" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/devicelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/fontstyle14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="@string/share_project_select_local_device" />
+
+        <TextView
+            style="@style/fontstyle18"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center|center_vertical"
+            android:text=">"
+            android:textColor="@color/single_huise" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/clearhistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/fontstyle14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="@string/share_project_select_historyc_clear" />
+
+        <TextView
+            style="@style/fontstyle18"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center|center_vertical"
+            android:text=">"
+            android:textColor="@color/single_huise" />
+    </LinearLayout>
+
+</LinearLayout>

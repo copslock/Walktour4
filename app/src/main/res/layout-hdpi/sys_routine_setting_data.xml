@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_color"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="8dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/sys_setting_data_collect_save_upload" />
+
+
+        <LinearLayout
+            android:background="@drawable/layout_white_circle"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/sys_setting_data_format"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/setting_sort_left_up_text_2"
+                    android:text="@string/sys_setting_data_format" />
+
+                <TextView
+                    style="@style/setting_sort_left_down_text_2"
+                    android:text="@string/sys_setting_data_format_describe" />
+
+                <View style="@style/new_setting_divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sys_setting_data_upload"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/setting_sort_left_up_text_2"
+                    android:text="@string/sys_setting_data_upload" />
+
+                <TextView
+                    style="@style/setting_sort_left_down_text_2"
+                    android:text="@string/sys_setting_data_upload_describe" />
+
+                <View style="@style/new_setting_divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sys_setting_data_filter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/setting_sort_left_up_text_2"
+                    android:text="@string/sys_setting_data_filter" />
+
+                <TextView
+                    style="@style/setting_sort_left_down_text_2"
+                    android:text="@string/sys_setting_data_filter_describe" />
+
+                <View style="@style/new_setting_divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sys_setting_data_partition"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/setting_sort_left_up_text_2"
+                    android:text="@string/sys_setting_data_partition" />
+
+                <TextView
+                    style="@style/setting_sort_left_down_text_2"
+                    android:text="@string/sys_setting_data_partition_describe" />
+
+                <View style="@style/new_setting_divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sys_setting_data_storage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/setting_sort_left_up_text_2"
+                    android:text="@string/sys_setting_data_storage" />
+
+                <TextView
+                    style="@style/setting_sort_left_down_text_2"
+                    android:text="@string/sys_setting_data_storage_describe" />
+
+                <View style="@style/new_setting_divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sys_setting_data_auto_clear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/setting_sort_left_up_text_2"
+                    android:text="@string/str_auto_clear" />
+
+                <TextView
+                    style="@style/setting_sort_left_down_text_2"
+                    android:text="@string/str_auto_clear_describe" />
+
+                <View style="@style/new_setting_divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sys_setting_data_tcpip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/setting_sort_left_up_text_2"
+                    android:text="@string/sys_setting_tcp_ip_collect" />
+
+                <TextView
+                    style="@style/setting_sort_left_down_text_2"
+                    android:text="@string/sys_setting_tcp_ip_collect_describe" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

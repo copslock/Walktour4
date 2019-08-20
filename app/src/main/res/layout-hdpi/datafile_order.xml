@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/realtive"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <RadioButton
+            android:id="@+id/ascendingRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio"
+            android:drawablePadding="5dip"
+            android:text="@string/file_ascending_order"
+            android:textColor="@color/app_main_text_color"
+            android:textSize="@dimen/app_content_txt_size" >
+        </RadioButton>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dip"
+                android:text="@string/file_descending_order"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" >
+            </TextView>
+
+            <RadioButton
+                android:id="@+id/descendingRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio"
+                android:checked="true" >
+            </RadioButton>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/list_divider" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/list_divider" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory 
+	android:key="PoorCover" android:title="@string/pref_poorcover">
+		<EditTextPreference 
+		android:title="@string/pref_TotalEc" 
+		android:key="EditPoorTotalEc" android:negativeButtonText="@string/str_cancle" android:positiveButtonText="@string/str_ok">
+		</EditTextPreference>
+		<EditTextPreference 
+		android:title="@string/pref_TxPower" 
+		android:key="EditPoorPower" android:negativeButtonText="@string/str_cancle" android:positiveButtonText="@string/str_ok">
+		</EditTextPreference>
+		<EditTextPreference 
+		android:title="@string/pref_poorRSSI" 
+		android:key="EditPoorRSSI" android:negativeButtonText="@string/str_cancle" android:positiveButtonText="@string/str_cancle">
+		</EditTextPreference>
+		<EditTextPreference 
+		android:key="EditPoorLasttime" 
+		android:title="@string/pref_lasttime" android:negativeButtonText="@string/str_cancle" android:positiveButtonText="@string/str_ok">
+		</EditTextPreference>
+</PreferenceCategory>
+<PreferenceCategory 
+	android:key="BadQuality" android:title="@string/pref_badquality">
+		<EditTextPreference 
+		android:title="@string/pref_FFER" 
+		android:key="EditBadFFER" android:negativeButtonText="@string/str_cancle" android:positiveButtonText="@string/str_ok">
+		</EditTextPreference>
+		<EditTextPreference 
+		android:title="@string/pref_lasttime" 
+		android:key="EditBadLasttime" android:negativeButtonText="@string/str_cancle" android:positiveButtonText="@string/str_ok">
+		</EditTextPreference>
+</PreferenceCategory>
+<PreferenceCategory 
+	android:key="EdgeCover" android:title="@string/pref_edgecover">
+		<EditTextPreference 
+		android:title="@string/pref_TotalEc" 
+		android:key="EditEdgeTotalEc" android:negativeButtonText="@string/str_cancle" android:positiveButtonText="@string/str_ok">
+		</EditTextPreference>
+		<EditTextPreference 
+		android:title="@string/pref_RxAGC" 
+		android:key="EditEdgeRxAGC" android:negativeButtonText="@string/str_cancle" android:positiveButtonText="@string/str_ok">
+		</EditTextPreference>
+		<EditTextPreference 
+		android:title="@string/pref_lasttime" 
+		android:key="EditEdgeLasttime" android:negativeButtonText="@string/str_cancle" android:positiveButtonText="@string/str_ok">
+		</EditTextPreference>
+</PreferenceCategory>
+
+<PreferenceCategory 
+	android:key="EditLink" android:title="@string/pref_linkinterup">
+		<EditTextPreference 
+		android:title="@string/pref_TotalEc" 
+		android:key="EditLinkTotal" android:negativeButtonText="@string/str_cancle" android:positiveButtonText="@string/str_ok">
+		</EditTextPreference>
+		<EditTextPreference 
+		android:title="@string/pref_RxAGC" 
+		android:key="EditLinkAGC" android:negativeButtonText="@string/str_cancle" android:positiveButtonText="@string/str_ok">
+		</EditTextPreference>
+		<EditTextPreference 
+		android:title="@string/pref_lasttime" 
+		android:key="EditLinkLasttime" android:negativeButtonText="@string/str_cancle" android:positiveButtonText="@string/str_ok">
+		</EditTextPreference>
+</PreferenceCategory>
+</PreferenceScreen>

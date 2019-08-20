@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+	<sys name="setting">
+	
+		<routine>
+			<item name="device">Android 2.1</item>
+			<item name="tel">13631288292</item>
+			<item name="storge">/sdcard/Walktour/data/</item>
+			<item name="statistic">0</item>
+			<item name="light">1</item>	 		
+		</routine>
+		
+		<dataUpload>
+			<item name="server">ftp1</item>
+			<item name="path">/</item>
+		</dataUpload>
+	
+		<monitor>
+			<uploadOption>
+					<item name="allCall">1</item>
+					<item name="connectFail">1</item>
+					<item name="callFail">1</item>
+					<item name="coverWeak">1</item>
+					<item name="voiceQuality">1</item>
+					<item name="switchFrequently">1</item>
+					<item name="switchFail">1</item>
+			</uploadOption>			
+			<savaOption>
+					<item name="allCall">1</item>
+					<item name="connectFail">1</item>
+					<item name="callFail">1</item>
+					<item name="coverWeak">1</item>
+					<item name="voiceQuality">1</item>
+					<item name="switchFrequently">1</item>
+					<item name="switchFail">1</item>
+			</savaOption>
+						
+			<uploadType>
+					<item name="type">0</item>
+			</uploadType>
+									
+			<uploadDelete>
+					<item name="delete">0</item>
+			</uploadDelete>
+			
+			<uploadOneKey>
+					<item name="oneKey">0</item>
+			</uploadOneKey>						
+		</monitor>
+		
+		<defevent>
+				<switchFrequently>
+					<item name="duration">60</item>
+					<item name="count">2</item>
+				</switchFrequently>
+				<coverWeak>
+					<item name="duration">30</item>
+					<item name="rxLev">1</item>
+				</coverWeak>
+				<RxQuality>
+					<item name="duration">30</item>
+					<item name="RxQualSub">1</item>
+				</RxQuality>				
+		</defevent>
+		
+		<synchronize>
+		</synchronize>
+		
+	</sys>	
+	
+	<alarm>
+		<item name="voice">0</item>
+    	<item name="storge">0</item>
+    	<item name="sdcard">0</item>
+    	<item name="gpsfail">0</item>
+    	<item name="gpslost">0</item>     	   	
+       	<item name="net_err">0</item>
+    	<item name="data_storge_err">0</item>
+    	<item name="connect_fail">0</item>
+    	<item name="call_dis">0</item>
+    	<item name="swicth_fail">0</item>
+	</alarm>
+	
+</config>

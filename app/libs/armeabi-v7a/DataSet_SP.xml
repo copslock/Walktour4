@@ -1,0 +1,3276 @@
+<?xml version="1.0"?>
+<DataSet_SP>
+  <SP Code="0x0001" Name="Common_SP_ID_PPP">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0070" Name="ET_ATDStart"/>
+      <Event Code="0x10001" Name="ET_ATD_Success"/>
+      <Event Code="0x0072" Name="ET_ATDHangup"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0601" Name="ET_TDDLTEConnectStart"/>
+      <Event Code="0x0602" Name="ET_TDDLTEConnectSuccess"/>
+      <Event Code="0x0604" Name="ET_TDDLTEDisconnected"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x10041" Name="ET_DTLog_PPPDialStart"/>
+      <Event Code="0x10042" Name="ET_DTLog_PPPDialSuccess"/>
+      <Event Code="0x10044" Name="ET_DTLog_PPPHangup"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51301" Name="ET_CTI_PPPDial_Start"/>
+      <Event Code="0x51302" Name="ET_CTI_PPPDial_Success"/>
+      <Event Code="0x51304" Name="ET_CTI_PPPDial_Hangup"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x10002" Name="ET_ATD_Failure"/>
+      <Event Code="0x0603" Name="ET_TDDLTEConnectFailed"/>
+      <Event Code="0x10043" Name="ET_DTLog_PPPDialFailure"/>
+      <Event Code="0x51303" Name="ET_CTI_PPPDial_Fail"/>
+      <Event Code="0x71003" Name="ET_CUSP_FTPDownNetConnectFailure"/>
+      <Event Code="0x72003" Name="ET_CUSP_FTPUpNetConnectFailure"/>
+      <Event Code="0x73003" Name="ET_CUSP_EmailUpNetConnectFailure"/>
+      <Event Code="0x74003" Name="ET_CUSP_EmailDownNetConnectFailure"/>
+      <Event Code="0x75003" Name="ET_CUSP_HttpPageNetConnectFailure"/>
+      <Event Code="0x76003" Name="ET_CUSP_VideoPlayNetConnectFailure"/>
+      <Event Code="0x77003" Name="ET_CUSP_HttpDownNetConnectFailure"/>
+      <Event Code="0x78003" Name="ET_CUSP_HttpUpNetConnectFailure"/>
+      <Event Code="0x79003" Name="ET_CUSP_PingNetConnectFailure"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x71001" Name="ET_CUSP_FTPDownNetConnectStart"/>
+      <Event Code="0x71002" Name="ET_CUSP_FTPDownNetConnectSuccess"/>
+      <Event Code="0x71011" Name="ET_CUSP_FTPDownNetConnectClose"/>
+      <Event Code="0x72001" Name="ET_CUSP_FTPUpNetConnectStart"/>
+      <Event Code="0x72002" Name="ET_CUSP_FTPUpNetConnectSuccess"/>
+      <Event Code="0x72011" Name="ET_CUSP_FTPUpNetConnectClose"/>
+      <Event Code="0x73001" Name="ET_CUSP_EmailUpNetConnectStart"/>
+      <Event Code="0x73002" Name="ET_CUSP_EmailUpNetConnectSuccess"/>
+      <Event Code="0x73011" Name="ET_CUSP_EmailUpNetConnectClose"/>
+      <Event Code="0x74001" Name="ET_CUSP_EmailDownNetConnectStart"/>
+      <Event Code="0x74002" Name="ET_CUSP_EmailDownNetConnectSuccess"/>
+      <Event Code="0x74012" Name="ET_CUSP_EmailDownNetConnectClose"/>
+      <Event Code="0x75001" Name="ET_CUSP_HttpPageNetConnectStart"/>
+      <Event Code="0x75002" Name="ET_CUSP_HttpPageNetConnectSuccess"/>
+      <Event Code="0x75012" Name="ET_CUSP_HttpPageNetConnectClose"/>
+      <Event Code="0x76001" Name="ET_CUSP_VideoPlayNetConnectStart"/>
+      <Event Code="0x76002" Name="ET_CUSP_VideoPlayNetConnectSuccess"/>
+      <Event Code="0x76014" Name="ET_CUSP_VideoPlayNetConnectClose"/>
+      <Event Code="0x77001" Name="ET_CUSP_HttpDownNetConnectStart"/>
+      <Event Code="0x77002" Name="ET_CUSP_HttpDownNetConnectSuccess"/>
+      <Event Code="0x7700F" Name="ET_CUSP_HttpDownNetConnectClose"/>
+      <Event Code="0x78001" Name="ET_CUSP_HttpUpNetConnectStart"/>
+      <Event Code="0x78002" Name="ET_CUSP_HttpUpNetConnectSuccess"/>
+      <Event Code="0x7800F" Name="ET_CUSP_HttpUpNetConnectClose"/>
+      <Event Code="0x79001" Name="ET_CUSP_PingNetConnectStart"/>
+      <Event Code="0x79002" Name="ET_CUSP_PingNetConnectSuccess"/>
+      <Event Code="0x7900A" Name="ET_CUSP_PingNetConnectClose"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0002" Name="Common_SP_ID_FtpDown">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0080" Name="ET_FTP_DL_SockConnect"/>
+      <Event Code="0x0081" Name="ET_FTP_DL_SendRetrCmd"/>
+      <Event Code="0x0082" Name="ET_FTP_DL_FirstData"/>
+      <Event Code="0x0083" Name="ET_FTP_DL_LastData"/>
+      <Event Code="0x0085" Name="ET_FTP_DL_SockDisconnect"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0250" Name="ET_MultiFTPDlConnectStart"/>
+      <Event Code="0x0251" Name="ET_MultiFTPDlConnectSuccess"/>
+      <Event Code="0x0254" Name="ET_MultiFTPDlAllSendStorCmd"/>
+      <Event Code="0x0255" Name="ET_MultiFTPDlAllFirstData"/>
+      <Event Code="0x0259" Name="ET_MultiFTPDlLastData"/>
+      <Event Code="0x025A" Name="ET_MultiFTPDlDisconnect"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x10047" Name="ET_DTLog_FTPDownAttempt"/>
+      <Event Code="0x10048" Name="ET_DTLog_FTPDownSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1022A" Name="ET_DTLog_WalktourVirtual_FTPDownRequest"/>
+      <Event Code="0x1022B" Name="ET_DTLog_WalktourVirtual_FTPDownConfirm"/>
+      <Event Code="0x1022C" Name="ET_DTLog_WalktourVirtual_FTPDownSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51320" Name="ET_CTI_FTPDown_ConStart"/>
+      <Event Code="0x51321" Name="ET_CTI_FTPDown_ConSuccess"/>
+      <Event Code="0x51323" Name="ET_CTI_FTPDown_SerLoginAttempt"/>
+      <Event Code="0x51324" Name="ET_CTI_FTPDown_SerLoginSuccess"/>
+      <Event Code="0x51326" Name="ET_CTI_FTPDown_Start"/>
+      <Event Code="0x51327" Name="ET_CTI_FTPDown_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x71007" Name="ET_CUSP_FTPDownConnect"/>
+      <Event Code="0x7100C" Name="ET_CUSP_FTPDownSendRETR"/>
+      <Event Code="0x7100D" Name="ET_CUSP_FTPDownFirstData"/>
+      <Event Code="0x7100E" Name="ET_CUSP_FTPDownLastData"/>
+      <Event Code="0x71010" Name="ET_CUSP_FTPDownDisconnect"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x80301" Name="ET_ECTI_FTPDown_DataConnectionAttempt"/>
+      <Event Code="0x80302" Name="ET_ECTI_FTPDown_DataConnectionSuccess"/>
+      <Event Code="0x80305" Name="ET_ECTI_FTPDown_DataTransferRequest"/>
+      <Event Code="0x80307" Name="ET_ECTI_FTPDown_DataTransferCompletedSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0258" Name="ET_MultiFTPDlDrop"/>
+      <Event Code="0x0084" Name="ET_FTP_DL_Drop"/>
+      <Event Code="0x10049" Name="ET_DTLog_FTPDownFailure"/>
+      <Event Code="0x0089" Name="ET_FTP_DL_ConnectSockFailed"/>
+      <Event Code="0x008B" Name="ET_FTP_DL_LoginFailure"/>
+      <Event Code="0x008C" Name="ET_FTP_DL_Failure"/>
+      <Event Code="0x025C" Name="ET_MultiFTPDlLoginFailure"/>
+      <Event Code="0x025D" Name="ET_MultiFTPDlFailure"/>
+      <Event Code="0x1004A" Name="ET_DTLog_FTPDownServiceDrop"/>
+      <Event Code="0x51322" Name="ET_CTI_FTPDown_ConFailure"/>
+      <Event Code="0x51325" Name="ET_CTI_FTPDown_SerLoginFailure"/>
+      <Event Code="0x51328" Name="ET_CTI_FTPDown_Drop"/>
+      <Event Code="0x71009" Name="ET_CUSP_FTPDownConnectFailure"/>
+      <Event Code="0x7100B" Name="ET_CUSP_FTPDownLoginFailure"/>
+      <Event Code="0x7100F" Name="ET_CUSP_FTPDownDrop"/>
+      <Event Code="0x1022D" Name="ET_DTLog_WalktourVirtual_FTPDownReject"/>
+      <Event Code="0x1022E" Name="ET_DTLog_WalktourVirtual_FTPDownTimeout"/>
+      <Event Code="0x1022F" Name="ET_DTLog_WalktourVirtual_FTPDownFailure"/>
+      <Event Code="0x10230" Name="ET_DTLog_WalktourVirtual_FTPDownDrop"/>
+      <Event Code="0x80303" Name="ET_ECTI_FTPDown_DataConnectionFailed"/>
+      <Event Code="0x80306" Name="ET_ECTI_FTPDown_DataTransferCompletedFailed"/>
+    </EventTable>
+    <EventTable Code="0x0003" Name="OtherEventDefine">
+      <Event Code="0x0088" Name="ET_FTP_DL_ConnectFinish"/>
+      <Event Code="0x008A" Name="ET_FTP_DL_LoginSuccess"/>
+      <Event Code="0x008D" Name="ET_FTP_DL_TCPSlow"/>
+      <Event Code="0x008E" Name="ET_FTP_DL_TCPIPErrorInfo"/>
+      <Event Code="0x025B" Name="ET_MultiFTPDlLoginSuccess"/>
+      <Event Code="0x0252" Name="ET_MultiFTPDlSupportReset"/>
+      <Event Code="0x0256" Name="ET_MultiFTPDlCountDownStart"/>
+      <Event Code="0x71008" Name="ET_CUSP_FTPDownConnectSuccess"/>
+      <Event Code="0x7100A" Name="ET_CUSP_FTPDownLoginSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0006" Name="HighLayerEventDefine">
+      <Event Code="0x0073" Name="ET_ATDDrop"/>
+      <Event Code="0x51305" Name="ET_CTI_PPPDial_Drop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0003" Name="Common_SP_ID_FtpUp">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0090" Name="ET_FTP_UP_SockConnect"/>
+      <Event Code="0x0091" Name="ET_FTP_UP_SendRetrCmd"/>
+      <Event Code="0x0092" Name="ET_FTP_UP_FirstData"/>
+      <Event Code="0x0093" Name="ET_FTP_UP_LastData"/>
+      <Event Code="0x0095" Name="ET_FTP_UP_SockDisconnect"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0260" Name="ET_MultiFTPUlConnectStart"/>
+      <Event Code="0x0261" Name="ET_MultiFTPUlConnectSuccess"/>
+      <Event Code="0x0264" Name="ET_MultiFTPUlAllSendStorCmd"/>
+      <Event Code="0x0265" Name="ET_MultiFTPUlAllFirstData"/>
+      <Event Code="0x0269" Name="ET_MultiFTPUlLastData"/>
+      <Event Code="0x026A" Name="ET_MultiFTPUlDisconnect"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1004B" Name="ET_DTLog_FTPUpAttempt"/>
+      <Event Code="0x1004C" Name="ET_DTLog_FTPUpSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x10231" Name="ET_DTLog_WalktourVirtual_FTPUpRequest"/>
+      <Event Code="0x10232" Name="ET_DTLog_WalktourVirtual_FTPUpConfirm"/>
+      <Event Code="0x10233" Name="ET_DTLog_WalktourVirtual_FTPUpSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51330" Name="ET_CTI_FTPUp_ConStart"/>
+      <Event Code="0x51331" Name="ET_CTI_FTPUp_ConSuccess"/>
+      <Event Code="0x51333" Name="ET_CTI_FTPUp_SerLoginAttempt"/>
+      <Event Code="0x51334" Name="ET_CTI_FTPUp_SerLoginSuccess"/>
+      <Event Code="0x51336" Name="ET_CTI_FTPUp_Start"/>
+      <Event Code="0x51337" Name="ET_CTI_FTPUp_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x72007" Name="ET_CUSP_FTPUpConnect"/>
+      <Event Code="0x7200C" Name="ET_CUSP_FTPUpSendSTOR"/>
+      <Event Code="0x7200D" Name="ET_CUSP_FTPUpFirstData"/>
+      <Event Code="0x7200E" Name="ET_CUSP_FTPUpLastData"/>
+      <Event Code="0x72010" Name="ET_CUSP_FTPUpDisconnect"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x80401" Name="ET_ECTI_FTPUp_DataConnectionAttempt"/>
+      <Event Code="0x80402" Name="ET_ECTI_FTPUp_DataConnectionSuccess"/>
+      <Event Code="0x80405" Name="ET_ECTI_FTPUp_DataTransferRequest"/>
+      <Event Code="0x80407" Name="ET_ECTI_FTPUp_DataTransferCompletedSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0094" Name="ET_FTP_UP_Droped"/>
+      <Event Code="0x0268" Name="ET_MultiFTPUlDrop"/>
+      <Event Code="0x1004D" Name="ET_DTLog_FTPUpFailure"/>
+      <Event Code="0x0099" Name="ET_FTP_UP_ConnectSockFailed"/>
+      <Event Code="0x009B" Name="ET_FTP_UP_LoginFailure"/>
+      <Event Code="0x009C" Name="ET_FTP_UP_Failure"/>
+      <Event Code="0x026C" Name="ET_MultiFTPUlLoginFailure"/>
+      <Event Code="0x026D" Name="ET_MultiFTPUlFailure"/>
+      <Event Code="0x1004E" Name="ET_DTLog_FTPUpServiceDrop"/>
+      <Event Code="0x51332" Name="ET_CTI_FTPUp_ConFailure"/>
+      <Event Code="0x51335" Name="ET_CTI_FTPUp_SerLoginFailure"/>
+      <Event Code="0x51338" Name="ET_CTI_FTPUp_Drop"/>
+      <Event Code="0x10046" Name="ET_DTLog_FTPServerLogonFail"/>
+      <Event Code="0x72009" Name="ET_CUSP_FTPUpConnectFailure"/>
+      <Event Code="0x7200B" Name="ET_CUSP_FTPUpLoginFailure"/>
+      <Event Code="0x7200F" Name="ET_CUSP_FTPUpDrop"/>
+      <Event Code="0x10234" Name="ET_DTLog_WalktourVirtual_FTPUpReject"/>
+      <Event Code="0x10235" Name="ET_DTLog_WalktourVirtual_FTPUpTimeout"/>
+      <Event Code="0x10236" Name="ET_DTLog_WalktourVirtual_FTPUpFailure"/>
+      <Event Code="0x10237" Name="ET_DTLog_WalktourVirtual_FTPUpDrop"/>
+      <Event Code="0x80403" Name="ET_ECTI_FTPUp_DataConnectionFailed"/>
+      <Event Code="0x80406" Name="ET_ECTI_FTPUp_DataTransferCompletedFailed"/>
+    </EventTable>
+    <EventTable Code="0x0003" Name="OtherEventDefine">
+      <Event Code="0x0098" Name="ET_FTP_UP_ConnectFinish"/>
+      <Event Code="0x009A" Name="ET_FTP_UP_LoginSuccess"/>
+      <Event Code="0x009D" Name="ET_FTP_UP_TCPSlow"/>
+      <Event Code="0x009E" Name="ET_FTP_UP_TCPIPErrorInfo"/>
+      <Event Code="0x026B" Name="ET_MultiFTPUlLoginSuccess"/>
+      <Event Code="0x0262" Name="ET_MultiFTPUlSupportReset"/>
+      <Event Code="0x0266" Name="ET_MultiFTPUlCountDownStart"/>
+      <Event Code="0x72008" Name="ET_CUSP_FTPUpConnectSuccess"/>
+      <Event Code="0x7200A" Name="ET_CUSP_FTPUpLoginSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0006" Name="HighLayerEventDefine">
+      <Event Code="0x0073" Name="ET_ATDDrop"/>
+      <Event Code="0x51305" Name="ET_CTI_PPPDial_Drop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0004" Name="Common_SP_ID_Ping">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0190" Name="ET_Ping_Start"/>
+      <Event Code="0x0192" Name="ET_Ping_NSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x03E9" Name="ET_PING"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1004F" Name="ET_DTLog_PingAttempt"/>
+      <Event Code="0x10050" Name="ET_DTLog_PingSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51370" Name="ET_CTI_Ping_Start"/>
+      <Event Code="0x51371" Name="ET_CTI_Ping_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x79007" Name="ET_CUSP_PingAttempt"/>
+      <Event Code="0x79008" Name="ET_CUSP_PingResponse"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x80A05" Name="ET_ECTI_Ping_DataTransferRequest"/>
+      <Event Code="0x80A07" Name="ET_ECTI_Ping_DataTransferCompletedSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0193" Name="ET_Ping_NFail"/>
+      <Event Code="0x10051" Name="ET_DTLog_PingFailure"/>
+      <Event Code="0x51372" Name="ET_CTI_Ping_Failure"/>
+      <Event Code="0x79009" Name="ET_CUSP_PingFailure"/>
+      <Event Code="0x80A06" Name="ET_ECTI_Ping_DataTransferCompletedFailed"/>
+    </EventTable>
+    <EventTable Code="0x0006" Name="HighLayerEventDefine">
+      <Event Code="0x0073" Name="ET_ATDDrop"/>
+      <Event Code="0x51305" Name="ET_CTI_PPPDial_Drop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0005" Name="Common_SP_ID_Http">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x00AB" Name="ET_HTTP_Start"/>
+      <Event Code="0x00A0" Name="ET_HTTP_SockConnect"/>
+      <Event Code="0x00A1" Name="ET_HTTP_SendGetCmd"/>
+      <Event Code="0x00A2" Name="ET_HTTP_FirstData"/>
+      <Event Code="0x00A3" Name="ET_HTTP_LastData"/>
+      <Event Code="0x00A5" Name="ET_HTTP_SocketDisconnect"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x60009" Name="ET_DTLog_HttpAttempt"/>
+      <Event Code="0x6000A" Name="ET_DTLog_HttpSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x10223" Name="ET_DTLog_WalktourVirtual_HTTPDownRequest"/>
+      <Event Code="0x10224" Name="ET_DTLog_WalktourVirtual_HTTPDownConfirm"/>
+      <Event Code="0x10225" Name="ET_DTLog_WalktourVirtual_HTTPDownSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51340" Name="ET_CTI_HTTPDown_Start"/>
+      <Event Code="0x51341" Name="ET_CTI_HTTPDown_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x77007" Name="ET_CUSP_HttpDownConnect"/>
+      <Event Code="0x7700A" Name="ET_CUSP_HttpDownSendGet"/>
+      <Event Code="0x7700B" Name="ET_CUSP_HttpDownFirstData"/>
+      <Event Code="0x7700C" Name="ET_CUSP_HttpDownLastData"/>
+      <Event Code="0x7700E" Name="ET_CUSP_HttpDownDisconnect"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x80501" Name="ET_ECTI_HTTPDown_DataConnectionAttempt"/>
+      <Event Code="0x80502" Name="ET_ECTI_HTTPDown_DataConnectionSuccess"/>
+      <Event Code="0x80505" Name="ET_ECTI_HTTPDown_DataTransferRequest"/>
+      <Event Code="0x80507" Name="ET_ECTI_HTTPDown_DataTransferCompletedSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x00A4" Name="ET_HTTP_Drop"/>
+      <Event Code="0x00A8" Name="ET_HTTP_ConnectFailure"/>
+      <Event Code="0x00A9" Name="ET_HTTP_Failure"/>
+      <Event Code="0x51342" Name="ET_CTI_HTTPDown_Drop"/>
+      <Event Code="0x6000B" Name="ET_DTLog_HttpFailure"/>
+      <Event Code="0x6000C" Name="ET_DTLog_HttpDrop"/>
+      <Event Code="0x77009" Name="ET_CUSP_HttpDownConnectFailure"/>
+      <Event Code="0x7700D" Name="ET_CUSP_HttpDownDrop"/>
+      <Event Code="0x10226" Name="ET_DTLog_WalktourVirtual_HTTPDownReject"/>
+      <Event Code="0x10227" Name="ET_DTLog_WalktourVirtual_HTTPDownTimeout"/>
+      <Event Code="0x10228" Name="ET_DTLog_WalktourVirtual_HTTPDownFailure"/>
+      <Event Code="0x10229" Name="ET_DTLog_WalktourVirtual_HTTPDownDrop"/>
+      <Event Code="0x80503" Name="ET_ECTI_HTTPDown_DataConnectionFailed"/>
+      <Event Code="0x80506" Name="ET_ECTI_HTTPDown_DataTransferCompletedFailed"/>
+    </EventTable>
+    <EventTable Code="0x0003" Name="OtherEventDefine">
+      <Event Code="0x00A7" Name="ET_HTTP_ConnectSuccess"/>
+      <Event Code="0x00AA" Name="ET_HTTP_GetFileSize"/>
+      <Event Code="0x77008" Name="ET_CUSP_HttpDownConnectSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x00A6" Name="ET_HTTP_UrlRedirect"/>
+      <Event Code="0x51343" Name="ET_CTI_HTTPDown_UrlRedirect"/>
+    </EventTable>
+    <EventTable Code="0x0006" Name="HighLayerEventDefine">
+      <Event Code="0x0073" Name="ET_ATDDrop"/>
+      <Event Code="0x51305" Name="ET_CTI_PPPDial_Drop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0006" Name="Common_SP_ID_Email_POP3">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x00B7" Name="ET_Email_POP3_Start"/>
+      <Event Code="0x00B0" Name="ET_Email_POP3_Connect"/>
+      <Event Code="0x00B1" Name="ET_Email_POP3_SendCmd"/>
+      <Event Code="0x00B2" Name="ET_Email_POP3_FirstData"/>
+      <Event Code="0x00B3" Name="ET_Email_POP3_LastData"/>
+      <Event Code="0x00B5" Name="ET_Email_POP3_RetrFinished"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51350" Name="ET_CTI_EMAILPOP3_Start"/>
+      <Event Code="0x51351" Name="ET_CTI_EMAILPOP3_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x60033" Name="ET_DTLog_MailRecvAttempt"/>
+      <Event Code="0x60034" Name="ET_DTLog_MailRecvSuccess"/>
+      <Event Code="0x60036" Name="ET_DTLog_Pop3LoginAttempt"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x74007" Name="ET_CUSP_EmailDownConnect"/>
+      <Event Code="0x7400C" Name="ET_CUSP_EmailDownSendRETR"/>
+      <Event Code="0x7400D" Name="ET_CUSP_EmailDownFirstData"/>
+      <Event Code="0x7400F" Name="ET_CUSP_EmailDownLastData"/>
+      <Event Code="0x74011" Name="ET_CUSP_EmailDownDisconnect"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x80701" Name="ET_ECTI_POP3_DataConnectionAttempt"/>
+      <Event Code="0x80702" Name="ET_ECTI_POP3_DataConnectionSuccess"/>
+      <Event Code="0x80705" Name="ET_ECTI_POP3_DataTransferRequest"/>
+      <Event Code="0x80707" Name="ET_ECTI_POP3_DataTransferCompletedSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x00B4" Name="ET_Email_POP3_Drop"/>
+      <Event Code="0x00B6" Name="ET_Email_POP3_Failure"/>
+      <Event Code="0x00B9" Name="ET_Email_POP3_SockConnectFailure"/>
+      <Event Code="0x00BB" Name="ET_Email_POP3_LoginFailure"/>
+      <Event Code="0x51352" Name="ET_CTI_EMAILPOP3_Drop"/>
+      <Event Code="0x60035" Name="ET_DTLog_MailRecvFailure"/>
+      <Event Code="0x60038" Name="ET_DTLog_Pop3LoginFailure"/>
+      <Event Code="0x6003A" Name="ET_DTLog_MailRecvDrop"/>
+      <Event Code="0x74009" Name="ET_CUSP_EmailDownConnectFailure"/>
+      <Event Code="0x7400A" Name="ET_CUSP_EmailDownLoginFailure"/>
+      <Event Code="0x74010" Name="ET_CUSP_EmailDownDrop"/>
+      <Event Code="0x80703" Name="ET_ECTI_POP3_DataConnectionFailed"/>
+      <Event Code="0x80706" Name="ET_ECTI_POP3_DataTransferCompletedFailed"/>
+    </EventTable>
+    <EventTable Code="0x0003" Name="OtherEventDefine">
+      <Event Code="0x00B8" Name="ET_Email_POP3_SockConnectSuccess"/>
+      <Event Code="0x00BA" Name="ET_Email_POP3_LoginSuccess"/>
+      <Event Code="0x00BC" Name="ET_Email_POP3_ContentOK"/>
+      <Event Code="0x60037" Name="ET_DTLog_Pop3LoginSuccess"/>
+      <Event Code="0x74008" Name="ET_CUSP_EmailDownConnectSuccess"/>
+      <Event Code="0x7400B" Name="ET_CUSP_EmailDownLoginSuccess"/>
+      <Event Code="0x7400E" Name="ET_CUSP_EmailDownContentOK"/>
+    </EventTable>
+    <EventTable Code="0x0006" Name="HighLayerEventDefine">
+      <Event Code="0x0073" Name="ET_ATDDrop"/>
+      <Event Code="0x51305" Name="ET_CTI_PPPDial_Drop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0007" Name="Common_SP_ID_Email_SMTP">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x00C7" Name="ET_Email_SMTP_Start"/>
+      <Event Code="0x00C0" Name="ET_Email_SMTP_Connect"/>
+      <Event Code="0x00C1" Name="ET_Email_SMTP_SendCmd"/>
+      <Event Code="0x00C2" Name="ET_Email_SMTP_FirstData"/>
+      <Event Code="0x00C3" Name="ET_Email_SMTP_LastData"/>
+      <Event Code="0x00C5" Name="ET_Email_SMTP_EOMACK"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51360" Name="ET_CTI_EMAILSMTP_Start"/>
+      <Event Code="0x51361" Name="ET_CTI_EMAILSMTP_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x60030" Name="ET_DTLog_MailSendAttempt"/>
+      <Event Code="0x60031" Name="ET_DTLog_MailSendSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x73007" Name="ET_CUSP_EmailUpConnect"/>
+      <Event Code="0x7300C" Name="ET_CUSP_EmailUpSendMail"/>
+      <Event Code="0x7300D" Name="ET_CUSP_EmailUpFirstData"/>
+      <Event Code="0x7300E" Name="ET_CUSP_EmailUpLastData"/>
+      <Event Code="0x73010" Name="ET_CUSP_EmailUpDisconnect"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x80601" Name="ET_ECTI_SMTP_DataConnectionAttempt"/>
+      <Event Code="0x80602" Name="ET_ECTI_SMTP_DataConnectionSuccess"/>
+      <Event Code="0x80605" Name="ET_ECTI_SMTP_DataTransferRequest"/>
+      <Event Code="0x80607" Name="ET_ECTI_SMTP_DataTransferCompletedSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x00C4" Name="ET_Email_SMTP_Drop"/>
+      <Event Code="0x00C6" Name="ET_Email_SMTP_Failure"/>
+      <Event Code="0x00C9" Name="ET_Email_SMTP_SockConnectFailure"/>
+      <Event Code="0x00CB" Name="ET_Email_SMTP_LoginFailure"/>
+      <Event Code="0x51362" Name="ET_CTI_EMAILSMTP_Drop"/>
+      <Event Code="0x60032" Name="ET_DTLog_MailSendFailure"/>
+      <Event Code="0x60039" Name="ET_DTLog_MailSendDrop"/>
+      <Event Code="0x73009" Name="ET_CUSP_EmailUpConnectFailure"/>
+      <Event Code="0x7300B" Name="ET_CUSP_EmailUpLoginFailure"/>
+      <Event Code="0x7300F" Name="ET_CUSP_EmailUpDrop"/>
+      <Event Code="0x80603" Name="ET_ECTI_SMTP_DataConnectionFailed"/>
+      <Event Code="0x80606" Name="ET_ECTI_SMTP_DataTransferCompletedFailed"/>
+    </EventTable>
+    <EventTable Code="0x0003" Name="OtherEventDefine">
+      <Event Code="0x00C8" Name="ET_Email_SMTP_SockConnectSuccess"/>
+      <Event Code="0x00CA" Name="ET_Email_SMTP_LoginSuccess"/>
+      <Event Code="0x73008" Name="ET_CUSP_EmailUpConnectSuccess"/>
+      <Event Code="0x7300A" Name="ET_CUSP_EmailUpLoginSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0006" Name="HighLayerEventDefine">
+      <Event Code="0x0073" Name="ET_ATDDrop"/>
+      <Event Code="0x51305" Name="ET_CTI_PPPDial_Drop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0008" Name="Common_SP_ID_WapPage">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x00FB" Name="ET_WAP_Start"/>
+      <Event Code="0x00F1" Name="ET_WAP_ConnectGateway_Request"/>
+      <Event Code="0x10028" Name="ET_Wap_WSP_Connect_Success"/>
+      <Event Code="0x00F6" Name="ET_WAP_GetRequest"/>
+      <Event Code="0x00F7" Name="ET_WAP_FirstDataEx"/>
+      <Event Code="0x00F4" Name="ET_WAP_LastData"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x10052" Name="ET_DTLog_WAPGatewayConnected"/>
+      <Event Code="0x10053" Name="ET_DTLog_WAPLoginAttempt"/>
+      <Event Code="0x10054" Name="ET_DTLog_WAPLoginSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x10056" Name="ET_DTLog_WAPRefreshAttempt"/>
+      <Event Code="0x10057" Name="ET_DTLog_WAPRefreshSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51310" Name="ET_CTI_WAPLogin_GatewayRequest"/>
+      <Event Code="0x51311" Name="ET_CTI_WAPLogin_GatewaySuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x80801" Name="ET_ECTI_WAPBrowsing_DataConnectionAttempt"/>
+      <Event Code="0x80802" Name="ET_ECTI_WAPBrowsing_DataConnectionSuccess"/>
+      <Event Code="0x80805" Name="ET_ECTI_WAPBrowsing_DataTransferRequest"/>
+      <Event Code="0x80807" Name="ET_ECTI_WAPBrowsing_DataTransferCompletedSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x10029" Name="ET_Wap_WSP_Connect_Failure"/>
+      <Event Code="0x00F5" Name="ET_WAP_Drop"/>
+      <Event Code="0x10055" Name="ET_DTLog_WAPLoginFailure"/>
+      <Event Code="0x10058" Name="ET_DTLog_WAPRefreshFailure"/>
+      <Event Code="0x51312" Name="ET_CTI_WAPLogin_GatewayFailure"/>
+      <Event Code="0x51315" Name="ET_CTI_WAPLogin_Fail"/>
+      <Event Code="0x51318" Name="ET_CTI_WAPRefresh_Fail"/>
+      <Event Code="0x80803" Name="ET_ECTI_WAPBrowsing_DataConnectionFailed"/>
+      <Event Code="0x80806" Name="ET_ECTI_WAPBrowsing_DataTransferCompletedFailed"/>
+    </EventTable>
+    <EventTable Code="0x0003" Name="OtherEventDefine">
+      <Event Code="0x51313" Name="ET_CTI_WAPLogin_Attempt"/>
+      <Event Code="0x51314" Name="ET_CTI_WAPLogin_Success"/>
+      <Event Code="0x51316" Name="ET_CTI_WAPRefresh_Attempt"/>
+      <Event Code="0x51317" Name="ET_CTI_WAPRefresh_Success"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x00F8" Name="ET_WAP_UrlRedirect"/>
+    </EventTable>
+    <EventTable Code="0x0006" Name="HighLayerEventDefine">
+      <Event Code="0x0073" Name="ET_ATDDrop"/>
+      <Event Code="0x51305" Name="ET_CTI_PPPDial_Drop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0009" Name="Common_SP_ID_WapDown">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x010A" Name="ET_WAPDL_Start"/>
+      <Event Code="0x0100" Name="ET_WAPDL_SockConnect"/>
+      <Event Code="0x0101" Name="ET_WAPDL_ConnectGateway_Request"/>
+      <Event Code="0x1002A" Name="ET_WapDown_WSP_Connect_Success"/>
+      <Event Code="0x0106" Name="ET_WAPDL_GetRequest"/>
+      <Event Code="0x0107" Name="ET_WAPDL_FirstDataEx"/>
+      <Event Code="0x0104" Name="ET_WAPDL_LastData"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x10059" Name="ET_DTLog_WAPDownloadStart"/>
+      <Event Code="0x1005A" Name="ET_DTLog_WAPDownloadSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51319" Name="ET_CTI_WAPDown_GatewayRequest"/>
+      <Event Code="0x5131A" Name="ET_CTI_WAPDown_GatewaySuccess"/>
+      <Event Code="0x5131C" Name="ET_CTI_WAPDown_Attempt"/>
+      <Event Code="0x5131D" Name="ET_CTI_WAPDown_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x1002B" Name="ET_WapDown_WSP_Connect_Failure"/>
+      <Event Code="0x0105" Name="ET_WAPDL_Drop"/>
+      <Event Code="0x1005B" Name="ET_DTLog_WAPDownloadFailure"/>
+      <Event Code="0x5131B" Name="ET_CTI_WAPDown_GatewayFailure"/>
+      <Event Code="0x5131E" Name="ET_CTI_WAPDown_Fail"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x0108" Name="ET_WAPDL_UrlRedirect"/>
+    </EventTable>
+    <EventTable Code="0x0006" Name="HighLayerEventDefine">
+      <Event Code="0x0073" Name="ET_ATDDrop"/>
+      <Event Code="0x51305" Name="ET_CTI_PPPDial_Drop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x000A" Name="Common_SP_ID_SendMM">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x00E9" Name="ET_MMS_Send_Start"/>
+      <Event Code="0x00EA" Name="ET_MMS_Send_SockConnect"/>
+      <Event Code="0x00E0" Name="ET_MMS_WSPConnect_Request"/>
+      <Event Code="0x10020" Name="ET_MMS_Send_WSP_Connect_Success"/>
+      <Event Code="0x10022" Name="ET_MMS_Send_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51390" Name="ET_CTI_MMSSend_WSPRequest"/>
+      <Event Code="0x51391" Name="ET_CTI_MMSSend_WSPSuccess"/>
+      <Event Code="0x51393" Name="ET_CTI_MMSSend_Request"/>
+      <Event Code="0x51394" Name="ET_CTI_MMSSend_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x60020" Name="ET_DTLog_MMSSendAttempt"/>
+      <Event Code="0x60021" Name="ET_DTLog_MMSSendSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x80208" Name="ET_ECTI_MMS_SendAttempt"/>
+      <Event Code="0x80209" Name="ET_ECTI_MMS_SendSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x10021" Name="ET_MMS_Send_WSP_Connect_Failure"/>
+      <Event Code="0x10023" Name="ET_MMS_Send_Failure"/>
+      <Event Code="0x51392" Name="ET_CTI_MMSSend_WSPFailure"/>
+      <Event Code="0x51395" Name="ET_CTI_MMSSend_Failure"/>
+      <Event Code="0x60022" Name="ET_DTLog_MMSSendFail"/>
+      <Event Code="0x8020A" Name="ET_ECTI_MMS_SendFailed"/>
+    </EventTable>
+    <EventTable Code="0x0006" Name="HighLayerEventDefine">
+      <Event Code="0x0073" Name="ET_ATDDrop"/>
+      <Event Code="0x51305" Name="ET_CTI_PPPDial_Drop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x000B" Name="Common_SP_ID_RcvMM">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x00EB" Name="ET_MMS_Recv_SockConnect"/>
+      <Event Code="0x00E5" Name="ET_MMS_Recv_WSPConnect_Request"/>
+      <Event Code="0x10024" Name="ET_MMS_Recv_WSP_Connect_Success"/>
+      <Event Code="0x10026" Name="ET_MMS_Recv_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51398" Name="ET_CTI_MMSReceive_WSPRequest"/>
+      <Event Code="0x51399" Name="ET_CTI_MMSReceive_WSPSuccess"/>
+      <Event Code="0x5139B" Name="ET_CTI_MMSReceive_Request"/>
+      <Event Code="0x5139C" Name="ET_CTI_MMSReceive_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x60023" Name="ET_DTLog_MMSReceiveAttempt"/>
+      <Event Code="0x60024" Name="ET_DTLog_MMSReceiveSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x8020B" Name="ET_ECTI_MMS_ReceiveAttempt"/>
+      <Event Code="0x8020C" Name="ET_ECTI_MMS_ReceiveSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x10025" Name="ET_MMS_Recv_WSP_Connect_Failure"/>
+      <Event Code="0x10027" Name="ET_MMS_Recv_Failure"/>
+      <Event Code="0x5139A" Name="ET_CTI_MMSReceive_WSPFailure"/>
+      <Event Code="0x5139D" Name="ET_CTI_MMSReceive_Failure"/>
+      <Event Code="0x60025" Name="ET_DTLog_MMSReceiveFail"/>
+      <Event Code="0x8020D" Name="ET_ECTI_MMS_ReceiveFailed"/>
+    </EventTable>
+    <EventTable Code="0x0003" Name="OtherEventDefine">
+      <Event Code="0x00EC" Name="ET_MMS_Recv_FirstData"/>
+    </EventTable>
+    <EventTable Code="0x0006" Name="HighLayerEventDefine">
+      <Event Code="0x0073" Name="ET_ATDDrop"/>
+      <Event Code="0x51305" Name="ET_CTI_PPPDial_Drop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x000C" Name="Common_SP_ID_Fetion_Login">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0230" Name="ET_Fetion_LoginStart"/>
+      <Event Code="0x0231" Name="ET_Fetion_LoginSuccess"/>
+      <Event Code="0x60040" Name="ET_DTLog_FetionLogonSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0232" Name="ET_Fetion_LoginFailed"/>
+      <Event Code="0x60041" Name="ET_DTLog_FetionLogonFailure"/>
+    </EventTable>
+    <EventTable Code="0x0006" Name="HighLayerEventDefine">
+      <Event Code="0x0073" Name="ET_ATDDrop"/>
+      <Event Code="0x51305" Name="ET_CTI_PPPDial_Drop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x000D" Name="Common_SP_ID_Fetion_Logout">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0233" Name="ET_Fetion_LogoutStart"/>
+      <Event Code="0x0234" Name="ET_Fetion_LogoutSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0235" Name="ET_Fetion_LogoutFailed"/>
+    </EventTable>
+    <EventTable Code="0x0006" Name="HighLayerEventDefine">
+      <Event Code="0x0073" Name="ET_ATDDrop"/>
+      <Event Code="0x51305" Name="ET_CTI_PPPDial_Drop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x000E" Name="Common_SP_ID_Fetion_QueryStatus"/>
+  <SP Code="0x000F" Name="Common_SP_ID_Fetion_Call"/>
+  <SP Code="0x0010" Name="Common_SP_ID_Fetion_Send">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x023C" Name="ET_Fetion_SendStart"/>
+      <Event Code="0x023D" Name="ET_Fetion_SendSuccess"/>
+      <Event Code="0x60042" Name="ET_DTLog_FetionMsgFromSMSSuccess"/>
+      <Event Code="0x60045" Name="ET_DTLog_FetionMsgToSMSSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x023E" Name="ET_Fetion_SendFailed"/>
+      <Event Code="0x60043" Name="ET_DTLog_FetionMsgFromSMSFailure"/>
+      <Event Code="0x60046" Name="ET_DTLog_FetionMsgToSMSFailure"/>
+    </EventTable>
+    <EventTable Code="0x0006" Name="HighLayerEventDefine">
+      <Event Code="0x0073" Name="ET_ATDDrop"/>
+      <Event Code="0x51305" Name="ET_CTI_PPPDial_Drop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0011" Name="Common_SP_ID_Fetion_Rcv">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x023F" Name="ET_Fetion_RecvSuccess"/>
+      <Event Code="0x60044" Name="ET_DTLog_FetionSMSReceieved"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0240" Name="ET_Fetion_RecvFailed"/>
+    </EventTable>
+    <EventTable Code="0x0006" Name="HighLayerEventDefine">
+      <Event Code="0x0073" Name="ET_ATDDrop"/>
+      <Event Code="0x51305" Name="ET_CTI_PPPDial_Drop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0012" Name="Common_SP_ID_Video_Stream">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0170" Name="ET_Stream_Request"/>
+      <Event Code="0x0171" Name="ET_Stream_first_data_packet"/>
+      <Event Code="0x0172" Name="ET_Stream_reproduction_starts"/>
+      <Event Code="0x0175" Name="ET_Stream_reproduction_end"/>
+      <Event Code="0x0173" Name="ET_Stream_End"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1030" Name="ET_NewVideoStream_Request"/>
+      <Event Code="0x1031" Name="ET_NewVideoStream_FirstData"/>
+      <Event Code="0x1033" Name="ET_NewVideoStream_ReproductionStart"/>
+      <Event Code="0x1035" Name="ET_NewVideoStream_LastData"/>
+      <Event Code="0x1037" Name="ET_NewVideoStream_Finished"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x513C0" Name="ET_CTI_VideoStream_Start"/>
+      <Event Code="0x513C1" Name="ET_CTI_VideoStream_FirData"/>
+      <Event Code="0x513C2" Name="ET_CTI_VideoStream_RepStart"/>
+      <Event Code="0x513C3" Name="ET_CTI_VideoStream_RepEnd"/>
+      <Event Code="0x513C4" Name="ET_CTI_VideoStream_ReqSuccess"/>
+      <Event Code="0x513C6" Name="ET_CTI_VideoStream_Finished"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x80B01" Name="ET_ECTI_Streaming_DataConnectionAttempt"/>
+      <Event Code="0x80B02" Name="ET_ECTI_Streaming_DataConnectionSuccess"/>
+      <Event Code="0x80B05" Name="ET_ECTI_Streaming_DataTransferRequest"/>
+      <Event Code="0x80B07" Name="ET_ECTI_Streaming_DataTransferCompletedSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0174" Name="ET_Stream_Drop"/>
+      <Event Code="0x0177" Name="ET_Stream_Request_Failed"/>
+      <Event Code="0x1032" Name="ET_NewVideoStream_RequestFailure"/>
+      <Event Code="0x1034" Name="ET_NewVideoStream_ReproductionStartFailure"/>
+      <Event Code="0x1036" Name="ET_NewVideoStream_Drop"/>
+      <Event Code="0x513C5" Name="ET_CTI_VideoStream_ReqFailure"/>
+      <Event Code="0x513C7" Name="ET_CTI_VideoStream_Drop"/>
+      <Event Code="0x80B03" Name="ET_ECTI_Streaming_DataConnectionFailed"/>
+      <Event Code="0x80B06" Name="ET_ECTI_Streaming_DataTransferCompletedFailed"/>
+    </EventTable>
+    <EventTable Code="0x0003" Name="OtherEventDefine">
+      <Event Code="0x0176" Name="ET_Stream_Request_Success"/>
+      <Event Code="0x0178" Name="ET_Stream_Receive_Overtime"/>
+    </EventTable>
+    <EventTable Code="0x0006" Name="HighLayerEventDefine">
+      <Event Code="0x0073" Name="ET_ATDDrop"/>
+      <Event Code="0x51305" Name="ET_CTI_PPPDial_Drop"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x1038" Name="ET_NewVideoStream_RebufferStart"/>
+      <Event Code="0x1039" Name="ET_NewVideoStream_RebufferEnd"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0013" Name="Common_SP_ID_SendCE">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x01E0" Name="ET_CE_Send_ConnectRequest"/>
+      <Event Code="0x1002C" Name="ET_CE_Send_Connect_Success"/>
+      <Event Code="0x1002E" Name="ET_CE_Send_Auth_Success"/>
+      <Event Code="0x10030" Name="ET_CE_Send_Success_Success"/>
+      <Event Code="0x10032" Name="ET_CE_Send_Logout_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x1002D" Name="ET_CE_Send_Connect_Failure"/>
+      <Event Code="0x1002F" Name="ET_CE_Send_Auth_Failure"/>
+      <Event Code="0x10031" Name="ET_CE_Send_Success_Failure"/>
+      <Event Code="0x10033" Name="ET_CE_Send_Logout_Failure"/>
+    </EventTable>
+    <EventTable Code="0x0006" Name="HighLayerEventDefine">
+      <Event Code="0x0073" Name="ET_ATDDrop"/>
+      <Event Code="0x51305" Name="ET_CTI_PPPDial_Drop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0014" Name="Common_SP_ID_RcvCE">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x01E6" Name="ET_CE_Receive_ConnectRequest"/>
+      <Event Code="0x10034" Name="ET_CE_Receive_Connect_Success"/>
+      <Event Code="0x10036" Name="ET_CE_Receive_Auth_Success"/>
+      <Event Code="0x10038" Name="ET_CE_Receive_ContentDetail_Success"/>
+      <Event Code="0x1003A" Name="ET_CE_Receive_Success_Success"/>
+      <Event Code="0x1003C" Name="ET_CE_Receive_Logout_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x10035" Name="ET_CE_Receive_Connect_Failure"/>
+      <Event Code="0x10037" Name="ET_CE_Receive_Auth_Failure"/>
+      <Event Code="0x10039" Name="ET_CE_Receive_ContentDetail_Failure"/>
+      <Event Code="0x1003B" Name="ET_CE_Receive_Success_Failure"/>
+      <Event Code="0x1003D" Name="ET_CE_Receive_Logout_Failure"/>
+    </EventTable>
+    <EventTable Code="0x0006" Name="HighLayerEventDefine">
+      <Event Code="0x0073" Name="ET_ATDDrop"/>
+      <Event Code="0x51305" Name="ET_CTI_PPPDial_Drop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0015" Name="Common_SP_ID_Attach">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0130" Name="ET_Attach_start"/>
+      <Event Code="0x000C" Name="ET_ATTACH_SUCCESS"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x000D" Name="ET_ATTACH_FAILURE"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0016" Name="Common_SP_ID_PDP">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0140" Name="ET_PDP_start"/>
+      <Event Code="0x000E" Name="ET_PDPACTIVE_SUCCESS"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x000F" Name="ET_PDPACTIVE_FAILURE"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0017" Name="Common_SP_ID_MicroBlogCaller">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0D01" Name="ET_MicroBlogCallerTestStart"/>
+      <Event Code="0x0D02" Name="ET_MicroBlogCallerLoginStart"/>
+      <Event Code="0x0D03" Name="ET_MicroBlogCallerLoginSuccess"/>
+      <Event Code="0x0D0A" Name="ET_MicroBlogCallerLogoutStart"/>
+      <Event Code="0x0D0B" Name="ET_MicroBlogCallerLogoutSuccess"/>
+      <Event Code="0x0D0E" Name="ET_MicroBlogCallerFinish"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0D04" Name="ET_MicroBlogCallerLoginFailed"/>
+      <Event Code="0x0D0D" Name="ET_MicroBlogCallerDrop"/>
+      <Event Code="0x0D0C" Name="ET_MicroBlogCallerLogoutFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0018" Name="Common_SP_ID_MicroBlogCalled">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0D0F" Name="ET_MicroBlogCalledTestStart"/>
+      <Event Code="0x0D10" Name="ET_MicroBlogCalledLoginStart"/>
+      <Event Code="0x0D11" Name="ET_MicroBlogCalledLoginSuccess"/>
+      <Event Code="0x0D1B" Name="ET_MicroBlogCalledLogoutStart"/>
+      <Event Code="0x0D1C" Name="ET_MicroBlogCalledLogoutSuccess"/>
+      <Event Code="0x0D1F" Name="ET_MicroBlogCalledFinish"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0D12" Name="ET_MicroBlogCalledLoginFailed"/>
+      <Event Code="0x0D1E" Name="ET_MicroBlogCalledDrop"/>
+      <Event Code="0x0D1D" Name="ET_MicroBlogCalledLogoutFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0019" Name="Common_SP_ID_QQCaller">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0110" Name="ET_QQCallerLoginStart"/>
+      <Event Code="0x0111" Name="ET_QQCallerLoginSuccess"/>
+      <Event Code="0x0117" Name="ET_QQCallerLogoutStart"/>
+      <Event Code="0x0118" Name="ET_QQCallerLogoutSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0112" Name="ET_QQCallerLoginFailed"/>
+      <Event Code="0x0116" Name="ET_QQCallerDrop"/>
+      <Event Code="0x0119" Name="ET_QQCallerLogoutFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x001A" Name="Common_SP_ID_QQCalled">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x011A" Name="ET_QQCalledLoginStart"/>
+      <Event Code="0x011B" Name="ET_QQCalledLoginSuccess"/>
+      <Event Code="0x0120" Name="ET_QQCalledLogoutStart"/>
+      <Event Code="0x0121" Name="ET_QQCalledLogoutSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x011C" Name="ET_QQCalledLoginFailed"/>
+      <Event Code="0x011F" Name="ET_QQCalledDrop"/>
+      <Event Code="0x0122" Name="ET_QQCalledLogoutFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x001B" Name="Common_SP_ID_HttpPage">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0F0C" Name="ET_HttpPageStart"/>
+      <Event Code="0x0F01" Name="ET_HttpPageSocketConnecting"/>
+      <Event Code="0x0F02" Name="ET_HttpPageSendGetCmd"/>
+      <Event Code="0x0F03" Name="ET_HttpPageFirstData"/>
+      <Event Code="0x0F04" Name="ET_HttpPageLastData"/>
+      <Event Code="0x0F06" Name="ET_HttpPageSocketDisconnect"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x10200" Name="ET_DTLog_WalktourVirtual_HTTPPageRequest"/>
+      <Event Code="0x10201" Name="ET_DTLog_WalktourVirtual_HTTPPageConfirm"/>
+      <Event Code="0x10202" Name="ET_DTLog_WalktourVirtual_HTTPPageSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x513B0" Name="ET_CTI_HTTPPage_Start"/>
+      <Event Code="0x513B1" Name="ET_CTI_HTTPPage_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x75007" Name="ET_CUSP_HttpPageConnect"/>
+      <Event Code="0x7500A" Name="ET_CUSP_HttpPageSendCMD"/>
+      <Event Code="0x7500C" Name="ET_CUSP_HttpPageFirstData"/>
+      <Event Code="0x7500F" Name="ET_CUSP_HttpPageLastData"/>
+      <Event Code="0x75011" Name="ET_CUSP_HttpPageDisconnect"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x6006A" Name="ET_DTLog_HttpBrowseAttempt"/>
+      <Event Code="0x6006C" Name="ET_DTLog_HttpBrowseSuccess"/>
+      <Event Code="0x6006E" Name="ET_DTLog_HttpBrowseRespStart"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x80901" Name="ET_ECTI_HTTPBrowsing_DataConnectionAttempt"/>
+      <Event Code="0x80902" Name="ET_ECTI_HTTPBrowsing_DataConnectionSuccess"/>
+      <Event Code="0x80905" Name="ET_ECTI_HTTPBrowsing_DataTransferRequest"/>
+      <Event Code="0x80907" Name="ET_ECTI_HTTPBrowsing_DataTransferCompletedSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0F08" Name="ET_HttpPageSocketFailed"/>
+      <Event Code="0x0F05" Name="ET_HttpPageDrop"/>
+      <Event Code="0x0F0B" Name="ET_HttpPageFailure"/>
+      <Event Code="0x0F09" Name="ET_HttpPageSendGetCmdFailer"/>
+      <Event Code="0x513B2" Name="ET_CTI_HTTPPage_Failure"/>
+      <Event Code="0x6006B" Name="ET_DTLog_HttpBrowseFail"/>
+      <Event Code="0x6006D" Name="ET_DTLog_HttpBrowseDrop"/>
+      <Event Code="0x75009" Name="ET_CUSP_HttpPageConnectFailure"/>
+      <Event Code="0x75010" Name="ET_CUSP_HttpPageDrop"/>
+      <Event Code="0x7500B" Name="ET_CUSP_HttpPageSendCMDFailure"/>
+      <Event Code="0x7500E" Name="ET_CUSP_HttpPageMainpageFailure"/>
+      <Event Code="0x10203" Name="ET_DTLog_WalktourVirtual_HTTPPageReject"/>
+      <Event Code="0x10204" Name="ET_DTLog_WalktourVirtual_HTTPPageTimeout"/>
+      <Event Code="0x10205" Name="ET_DTLog_WalktourVirtual_HTTPPageFailure"/>
+      <Event Code="0x10206" Name="ET_DTLog_WalktourVirtual_HTTPPageDrop"/>
+      <Event Code="0x80903" Name="ET_ECTI_HTTPBrowsing_DataConnectionFailed"/>
+      <Event Code="0x80906" Name="ET_ECTI_HTTPBrowsing_DataTransferCompletedFailed"/>
+    </EventTable>
+    <EventTable Code="0x0003" Name="OtherEventDefine">
+      <Event Code="0x0F0A" Name="ET_HttpPageSocketSuccess"/>
+      <Event Code="0x0F0D" Name="ET_HttpPageMainPageOK"/>
+      <Event Code="0x75008" Name="ET_CUSP_HttpPageConnectSuccess"/>
+      <Event Code="0x7500D" Name="ET_CUSP_HttpPageMainpageOK"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x0F07" Name="ET_HttpPageUrlRedirect"/>
+      <Event Code="0x513B3" Name="ET_CTI_HTTPPage_UrlRedirect"/>
+    </EventTable>
+    <EventTable Code="0x0006" Name="HighLayerEventDefine">
+      <Event Code="0x0073" Name="ET_ATDDrop"/>
+      <Event Code="0x51305" Name="ET_CTI_PPPDial_Drop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x001C" Name="Common_SP_ID_TraceRoute">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0290" Name="ET_TraceRoute_Start"/>
+      <Event Code="0x0293" Name="ET_TraceRoute_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x513D0" Name="ET_CTI_TraceRoute_Start"/>
+      <Event Code="0x513D3" Name="ET_CTI_TraceRoute_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x80D05" Name="ET_ECTI_TraceRoute_DataTransferRequest"/>
+      <Event Code="0x80D07" Name="ET_ECTI_TraceRoute_DataTransferCompletedSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0294" Name="ET_TraceRoute_Fail"/>
+      <Event Code="0x0295" Name="ET_TraceRoute_ReslvError"/>
+      <Event Code="0x513D4" Name="ET_CTI_TraceRoute_Failure"/>
+      <Event Code="0x513D5" Name="ET_CTI_TraceRoute_ReslvError"/>
+      <Event Code="0x80D06" Name="ET_ECTI_TraceRoute_DataTransferCompletedFailed"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x0291" Name="ET_TraceRoute_PointReply"/>
+      <Event Code="0x0292" Name="ET_TraceRoute_PointTimeOut"/>
+      <Event Code="0x513D1" Name="ET_CTI_TraceRoute_Reply"/>
+      <Event Code="0x513D2" Name="ET_CTI_TraceRoute_Timeout"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x001D" Name="Common_SP_ID_VOIP_MO">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0F10" Name="ET_Voip_OutgoingStart"/>
+      <Event Code="0x0F12" Name="ET_Voip_OutgoingLoginStart"/>
+      <Event Code="0x0F14" Name="ET_Voip_OutgoingLoginSuccess"/>
+      <Event Code="0x0F18" Name="ET_Voip_OutgoingCallRequest"/>
+      <Event Code="0x0F1A" Name="ET_Voip_OutgoingCallRinging"/>
+      <Event Code="0x0F1C" Name="ET_Voip_OutgoingCallSuccess"/>
+      <Event Code="0x0F24" Name="ET_Voip_Finish"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0F16" Name="ET_Voip_OutgoingLoginFailure"/>
+      <Event Code="0x0F1E" Name="ET_Voip_OutgoingCallFailure"/>
+      <Event Code="0x0F25" Name="ET_Voip_Drop"/>
+    </EventTable>
+    <EventTable Code="0x0003" Name="OtherEventDefine">
+      <Event Code="0x0F20" Name="ET_Voip_ReceiveAudioFirstPackage"/>
+      <Event Code="0x0F21" Name="ET_Voip_ReceiveVideoFirstPackage"/>
+      <Event Code="0x0F22" Name="ET_Voip_SendAudioStart"/>
+      <Event Code="0x0F23" Name="ET_Voip_SendVideoStart"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x001E" Name="Common_SP_ID_VOIP_MT">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0F11" Name="ET_Voip_IncomingStart"/>
+      <Event Code="0x0F13" Name="ET_Voip_IncomingLoginStart"/>
+      <Event Code="0x0F15" Name="ET_Voip_IncomingLoginSuccess"/>
+      <Event Code="0x0F19" Name="ET_Voip_IncomingCallRequest"/>
+      <Event Code="0x0F1B" Name="ET_Voip_IncomingCallRinging"/>
+      <Event Code="0x0F1D" Name="ET_Voip_IncomingCallSuccess"/>
+      <Event Code="0x0F24" Name="ET_Voip_Finish"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0F17" Name="ET_Voip_IncomingLoginFailure"/>
+      <Event Code="0x0F1F" Name="ET_Voip_IncomingCallFailure"/>
+      <Event Code="0x0F25" Name="ET_Voip_Drop"/>
+    </EventTable>
+    <EventTable Code="0x0003" Name="OtherEventDefine">
+      <Event Code="0x0F20" Name="ET_Voip_ReceiveAudioFirstPackage"/>
+      <Event Code="0x0F21" Name="ET_Voip_ReceiveVideoFirstPackage"/>
+      <Event Code="0x0F22" Name="ET_Voip_SendAudioStart"/>
+      <Event Code="0x0F23" Name="ET_Voip_SendVideoStart"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x001F" Name="Common_SP_ID_HttpUpload">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1000" Name="ET_HttpUpload_Start"/>
+      <Event Code="0x1001" Name="ET_HttpUpload_LoginStart"/>
+      <Event Code="0x1002" Name="ET_HttpUpload_LoginSuccess"/>
+      <Event Code="0x1004" Name="ET_HttpUpload_SendStart"/>
+      <Event Code="0x1005" Name="ET_HttpUpload_FirstData"/>
+      <Event Code="0x1007" Name="ET_HttpUpload_LastData"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x1003" Name="ET_HttpUpload_LoginFailed"/>
+      <Event Code="0x1008" Name="ET_HttpUpload_Failure"/>
+      <Event Code="0x1006" Name="ET_HttpUpload_Drop"/>
+      <Event Code="0x78009" Name="ET_CUSP_HttpUpConnectFailure"/>
+      <Event Code="0x7800D" Name="ET_CUSP_HttpUpDrop"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x78007" Name="ET_CUSP_HttpUpConnect"/>
+      <Event Code="0x78008" Name="ET_CUSP_HttpUpConnectSuccess"/>
+      <Event Code="0x7800A" Name="ET_CUSP_HttpUpSendPost"/>
+      <Event Code="0x7800B" Name="ET_CUSP_HttpUpFirstData"/>
+      <Event Code="0x7800C" Name="ET_CUSP_HttpUpLastData"/>
+      <Event Code="0x7800E" Name="ET_CUSP_HttpUpDisconnect"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0020" Name="Common_SP_ID_HttpVideo">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1010" Name="ET_HttpVideo_Request"/>
+      <Event Code="0x1011" Name="ET_HttpVideo_FirstData"/>
+      <Event Code="0x1013" Name="ET_HttpVideo_ReproductionStart"/>
+      <Event Code="0x1015" Name="ET_HttpVideo_LastData"/>
+      <Event Code="0x1017" Name="ET_HttpVideo_Finished"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x60050" Name="ET_DTLog_StreamingPlayAttempt"/>
+      <Event Code="0x60051" Name="ET_DTLog_StreamingPlaySuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1021C" Name="ET_DTLog_WalktourVirtual_HTTPVideoRequest"/>
+      <Event Code="0x1021D" Name="ET_DTLog_WalktourVirtual_HTTPVideoConnect"/>
+      <Event Code="0x100CC" Name="ET_DTLog_Walktour_HttpVideo_FileBegin"/>
+      <Event Code="0x100C9" Name="ET_DTLog_Walktour_HttpVideo_StartPlay"/>
+      <Event Code="0x100CD" Name="ET_DTLog_Walktour_HttpVideo_FileEnd"/>
+      <Event Code="0x1021E" Name="ET_DTLog_WalktourVirtual_HTTPVideoSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x1012" Name="ET_HttpVideo_RequestFailure"/>
+      <Event Code="0x1014" Name="ET_HttpVideo_ReproductionStartFailure"/>
+      <Event Code="0x1016" Name="ET_HttpVideo_Drop"/>
+      <Event Code="0x101E" Name="ET_HttpVideo_SendGetCommandFailure"/>
+      <Event Code="0x60052" Name="ET_DTLog_StreamingPlayFailure"/>
+      <Event Code="0x60056" Name="ET_DTLog_StreamingPlayDrop"/>
+      <Event Code="0x1021F" Name="ET_DTLog_WalktourVirtual_HTTPVideoReject"/>
+      <Event Code="0x10220" Name="ET_DTLog_WalktourVirtual_HTTPVideoTimeout"/>
+      <Event Code="0x10221" Name="ET_DTLog_WalktourVirtual_HTTPVideoFailure"/>
+      <Event Code="0x10222" Name="ET_DTLog_WalktourVirtual_HTTPVideoDrop"/>
+      <Event Code="0x7600B" Name="ET_CUSP_VideoPlayRequestFailure"/>
+      <Event Code="0x7600D" Name="ET_CUSP_VideoPlayReproductionStartFailure"/>
+      <Event Code="0x76011" Name="ET_CUSP_VideoPlayDrop"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x1018" Name="ET_HttpVideo_RebufferStart"/>
+      <Event Code="0x1019" Name="ET_HttpVideo_RebufferEnd"/>
+      <Event Code="0x102E" Name="ET_HttpVideo_SegmentReport"/>
+      <Event Code="0x60054" Name="ET_DTLog_StreamingBufferBegin"/>
+      <Event Code="0x60055" Name="ET_DTLog_StreamingBufferEnd"/>
+      <Event Code="0x100CA" Name="ET_DTLog_Walktour_HttpVideo_RebufferStart"/>
+      <Event Code="0x100CB" Name="ET_DTLog_Walktour_HttpVideo_RebufferEnd"/>
+      <Event Code="0x7600E" Name="ET_CUSP_VideoPlayRebufferingStart"/>
+      <Event Code="0x7600F" Name="ET_CUSP_VideoPlayRebufferingEnd"/>
+    </EventTable>
+    <EventTable Code="0x0003" Name="OtherEventDefine">
+      <Event Code="0x101A" Name="ET_HttpVideo_ConnectStart"/>
+      <Event Code="0x101B" Name="ET_HttpVideo_ConnectSuccess"/>
+      <Event Code="0x101C" Name="ET_HttpVideo_ConnectFailure"/>
+      <Event Code="0x101D" Name="ET_HttpVideo_SendGetCommand"/>
+      <Event Code="0x101F" Name="ET_HttpVideo_URLParseSuccess"/>
+      <Event Code="0x102F" Name="ET_HttpVideo_VMosReport"/>
+      <Event Code="0x60053" Name="ET_DTLog_StreamingRealPlay"/>
+      <Event Code="0x76007" Name="ET_CUSP_VideoPlayConnect"/>
+      <Event Code="0x76008" Name="ET_CUSP_VideoPlayConnectSuccess"/>
+      <Event Code="0x76009" Name="ET_CUSP_VideoPlayConnectFailure"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x7600A" Name="ET_CUSP_VideoPlayFirstData"/>
+      <Event Code="0x76010" Name="ET_CUSP_VideoPlayLastData"/>
+      <Event Code="0x7600C" Name="ET_CUSP_VideoPlayReproductionStart"/>
+      <Event Code="0x76012" Name="ET_CUSP_VideoPlayFinished"/>
+      <Event Code="0x76013" Name="ET_CUSP_VideoPlayDisconnect"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0021" Name="Common_SP_ID_DNSLookup">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1020" Name="ET_DNSLookup_Start"/>
+      <Event Code="0x1021" Name="ET_DNSLookup_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x1022" Name="ET_DNSLookup_Failure"/>
+      <Event Code="0x71006" Name="ET_CUSP_FTPDownDNSLookupFailure"/>
+      <Event Code="0x72006" Name="ET_CUSP_FTPUpDNSLookupFailure"/>
+      <Event Code="0x73006" Name="ET_CUSP_EmailUpDNSLookupFailure"/>
+      <Event Code="0x74006" Name="ET_CUSP_EmailDownDNSLookupFailure"/>
+      <Event Code="0x75006" Name="ET_CUSP_HttpPageDNSLookupFailure"/>
+      <Event Code="0x76006" Name="ET_CUSP_VideoPlayDNSLookupFailure"/>
+      <Event Code="0x77006" Name="ET_CUSP_HttpDownDNSLookupFailure"/>
+      <Event Code="0x78006" Name="ET_CUSP_HttpUpDNSLookupFailure"/>
+      <Event Code="0x79006" Name="ET_CUSP_PingDNSLookupFailure"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x71004" Name="ET_CUSP_FTPDownDNSLookupStart"/>
+      <Event Code="0x71005" Name="ET_CUSP_FTPDownDNSLookupSuccess"/>
+      <Event Code="0x72004" Name="ET_CUSP_FTPUpDNSLookupStart"/>
+      <Event Code="0x72005" Name="ET_CUSP_FTPUpDNSLookupSuccess"/>
+      <Event Code="0x73004" Name="ET_CUSP_EmailUpDNSLookupStart"/>
+      <Event Code="0x73005" Name="ET_CUSP_EmailUpDNSLookupSuccess"/>
+      <Event Code="0x74004" Name="ET_CUSP_EmailDownDNSLookupStart"/>
+      <Event Code="0x74005" Name="ET_CUSP_EmailDownDNSLookupSuccess"/>
+      <Event Code="0x75004" Name="ET_CUSP_HttpPageDNSLookupStart"/>
+      <Event Code="0x75005" Name="ET_CUSP_HttpPageDNSLookupSuccess"/>
+      <Event Code="0x76004" Name="ET_CUSP_VideoPlayDNSLookupStart"/>
+      <Event Code="0x76005" Name="ET_CUSP_VideoPlayDNSLookupSuccess"/>
+      <Event Code="0x77004" Name="ET_CUSP_HttpDownDNSLookupStart"/>
+      <Event Code="0x77005" Name="ET_CUSP_HttpDownDNSLookupSuccess"/>
+      <Event Code="0x78004" Name="ET_CUSP_HttpUpDNSLookupStart"/>
+      <Event Code="0x78005" Name="ET_CUSP_HttpUpDNSLookupSuccess"/>
+      <Event Code="0x79004" Name="ET_CUSP_PingDNSLookupStart"/>
+      <Event Code="0x79005" Name="ET_CUSP_PingDNSLookupSuccess"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0022" Name="Common_SP_ID_Facebook">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1040" Name="ET_Facebook_LoginStart"/>
+      <Event Code="0x1041" Name="ET_Facebook_LoginSuccess"/>
+      <Event Code="0x1052" Name="ET_Facebook_Finish"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x1053" Name="ET_Facebook_Failure"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x1042" Name="ET_Facebook_BlogSendStart"/>
+      <Event Code="0x1043" Name="ET_Facebook_BlogSendSuccess"/>
+      <Event Code="0x1044" Name="ET_Facebook_BlogReceiveStart"/>
+      <Event Code="0x1045" Name="ET_Facebook_BlogReceiveSuccess"/>
+      <Event Code="0x1046" Name="ET_Facebook_CommentSendStart"/>
+      <Event Code="0x1047" Name="ET_Facebook_CommentSendSuccess"/>
+      <Event Code="0x1048" Name="ET_Facebook_CommentReceiveStart"/>
+      <Event Code="0x1049" Name="ET_Facebook_CommentReceiveSuccess"/>
+      <Event Code="0x104A" Name="ET_Facebook_UploadStart"/>
+      <Event Code="0x104B" Name="ET_Facebook_UploadSuccess"/>
+      <Event Code="0x104C" Name="ET_Facebook_MessageLoginStart"/>
+      <Event Code="0x104D" Name="ET_Facebook_MessageLoginSuccess"/>
+      <Event Code="0x104E" Name="ET_Facebook_MessageSendStart"/>
+      <Event Code="0x104F" Name="ET_Facebook_MessageSendSuccess"/>
+      <Event Code="0x1050" Name="ET_Facebook_MessageReceiveStart"/>
+      <Event Code="0x1051" Name="ET_Facebook_MessageReceiveSuccess"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0023" Name="Common_SP_ID_PBM">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1060" Name="ET_PBM_Start"/>
+      <Event Code="0x1061" Name="ET_PBM_Finish"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x7A004" Name="ET_CUSP_SBMRequest"/>
+      <Event Code="0x7A005" Name="ET_CUSP_SBMFinish"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x80F01" Name="ET_ECTI_ABM_DataConnectionAttempt"/>
+      <Event Code="0x80F07" Name="ET_ECTI_ABM_DataTransferCompletedSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x1062" Name="ET_PBM_Failure"/>
+      <Event Code="0x7A006" Name="ET_CUSP_SBMFailure"/>
+      <Event Code="0x80F06" Name="ET_ECTI_ABM_DataTransferCompletedFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0024" Name="Common_SP_ID_WeiBo">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1079" Name="ET_WeiBo_Start"/>
+      <Event Code="0x107A" Name="ET_WeiBo_Finish"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x1073" Name="ET_WeiBo_ActionStart"/>
+      <Event Code="0x1074" Name="ET_WeiBo_ActionSuccess"/>
+      <Event Code="0x1075" Name="ET_WeiBo_ActionFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0025" Name="Common_SP_ID_App_WeiXin_Caller">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1080" Name="ET_App_WeiXin_CallerStart"/>
+      <Event Code="0x1081" Name="ET_App_WeiXin_CallerLoginStart"/>
+      <Event Code="0x1082" Name="ET_App_WeiXin_CallerLoginSuccess"/>
+      <Event Code="0x108A" Name="ET_App_WeiXin_CallerLogoutStart"/>
+      <Event Code="0x108B" Name="ET_App_WeiXin_CallerLogoutSuccess"/>
+      <Event Code="0x108D" Name="ET_App_WeiXin_CallerEnd"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x1083" Name="ET_App_WeiXin_CallerLoginFailure"/>
+      <Event Code="0x108C" Name="ET_App_WeiXin_CallerLogoutFailure"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x1084" Name="ET_App_WeiXin_CallerSendMsgStart"/>
+      <Event Code="0x1085" Name="ET_App_WeiXin_CallerSendMsgSuccess"/>
+      <Event Code="0x1086" Name="ET_App_WeiXin_CallerSendMsgFailure"/>
+      <Event Code="0x1087" Name="ET_App_WeiXin_CallerRefreshFriendQStart"/>
+      <Event Code="0x1088" Name="ET_App_WeiXin_CallerRefreshFriendQSuccess"/>
+      <Event Code="0x1089" Name="ET_App_WeiXin_CallerRefreshFriendQFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0026" Name="Common_SP_ID_App_WeiXin_Called">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x108E" Name="ET_App_WeiXin_CalledStart"/>
+      <Event Code="0x108F" Name="ET_App_WeiXin_CalledLoginStart"/>
+      <Event Code="0x1090" Name="ET_App_WeiXin_CalledLoginSuccess"/>
+      <Event Code="0x1095" Name="ET_App_WeiXin_CalledLogoutStart"/>
+      <Event Code="0x1096" Name="ET_App_WeiXin_CalledLogoutSuccess"/>
+      <Event Code="0x1098" Name="ET_App_WeiXin_CalledEnd"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x1091" Name="ET_App_WeiXin_CalledLoginFailure"/>
+      <Event Code="0x1097" Name="ET_App_WeiXin_CalledLogoutFailure"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x1092" Name="ET_App_WeiXin_CalledRecvMsgStart"/>
+      <Event Code="0x1093" Name="ET_App_WeiXin_CalledRecvMsgSuccess"/>
+      <Event Code="0x1094" Name="ET_App_WeiXin_CalledRecvMsgFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0027" Name="Common_SP_ID_App_YiXin_Caller">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x10A0" Name="ET_App_YiXin_CallerStart"/>
+      <Event Code="0x10A1" Name="ET_App_YiXin_CallerLoginStart"/>
+      <Event Code="0x10A2" Name="ET_App_YiXin_CallerLoginSuccess"/>
+      <Event Code="0x10AA" Name="ET_App_YiXin_CallerLogoutStart"/>
+      <Event Code="0x10AB" Name="ET_App_YiXin_CallerLogoutSuccess"/>
+      <Event Code="0x10AD" Name="ET_App_YiXin_CallerEnd"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x10A3" Name="ET_App_YiXin_CallerLoginFailure"/>
+      <Event Code="0x10AC" Name="ET_App_YiXin_CallerLogoutFailure"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x10A4" Name="ET_App_YiXin_CallerSendMsgStart"/>
+      <Event Code="0x10A5" Name="ET_App_YiXin_CallerSendMsgSuccess"/>
+      <Event Code="0x10A6" Name="ET_App_YiXin_CallerSendMsgFailure"/>
+      <Event Code="0x10A7" Name="ET_App_YiXin_CallerRefreshFriendQStart"/>
+      <Event Code="0x10A8" Name="ET_App_YiXin_CallerRefreshFriendQSuccess"/>
+      <Event Code="0x10A9" Name="ET_App_YiXin_CallerRefreshFriendQFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0028" Name="Common_SP_ID_App_YiXin_Called">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x10AE" Name="ET_App_YiXin_CalledStart"/>
+      <Event Code="0x10AF" Name="ET_App_YiXin_CalledLoginStart"/>
+      <Event Code="0x10B0" Name="ET_App_YiXin_CalledLoginSuccess"/>
+      <Event Code="0x10B5" Name="ET_App_YiXin_CalledLogoutStart"/>
+      <Event Code="0x10B6" Name="ET_App_YiXin_CalledLogoutSuccess"/>
+      <Event Code="0x10B8" Name="ET_App_YiXin_CalledEnd"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x10B1" Name="ET_App_YiXin_CalledLoginFailure"/>
+      <Event Code="0x10B7" Name="ET_App_YiXin_CalledLogoutFailure"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x10B2" Name="ET_App_YiXin_CalledRecvMsgStart"/>
+      <Event Code="0x10B3" Name="ET_App_YiXin_CalledRecvMsgSuccess"/>
+      <Event Code="0x10B4" Name="ET_App_YiXin_CalledRecvMsgFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0029" Name="Common_SP_ID_App_WeCall_Caller">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x10D0" Name="ET_App_WeCall_CallerStart"/>
+      <Event Code="0x10D1" Name="ET_App_WeCall_CallerDialStart"/>
+      <Event Code="0x10D2" Name="ET_App_WeCall_CallerDialRing"/>
+      <Event Code="0x10D3" Name="ET_App_WeCall_CallerDialSuccess"/>
+      <Event Code="0x10D5" Name="ET_App_WeCall_CallerSessionSuccess"/>
+      <Event Code="0x10D7" Name="ET_App_WeCall_CallerEnd"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x10D4" Name="ET_App_WeCall_CallerDialFailure"/>
+      <Event Code="0x10D6" Name="ET_App_WeCall_CallerSessionFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x002A" Name="Common_SP_ID_App_WeCall_Called">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x10D8" Name="ET_App_WeCall_CalledStart"/>
+      <Event Code="0x10D9" Name="ET_App_WeCall_CalledDialStart"/>
+      <Event Code="0x10DA" Name="ET_App_WeCall_CalledDialRing"/>
+      <Event Code="0x10DB" Name="ET_App_WeCall_CalledDialSuccess"/>
+      <Event Code="0x10DD" Name="ET_App_WeCall_CalledSessionSuccess"/>
+      <Event Code="0x10DF" Name="ET_App_WeCall_CalledEnd"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x10DC" Name="ET_App_WeCall_CalledDialFailure"/>
+      <Event Code="0x10DE" Name="ET_App_WeCall_CalledSessionFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x002B" Name="Common_SP_ID_UDPProbe">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x10F0" Name="ET_UDP_Probe_Start"/>
+      <Event Code="0x10F1" Name="ET_UDP_Probe_Finish"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x002C" Name="Common_SP_ID_AppWeChat">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1100" Name="ET_App_WeChat_TestStart"/>
+      <Event Code="0x1104" Name="ET_App_WeChat_TestSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x1105" Name="ET_App_WeChat_TestFailure"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x1101" Name="ET_App_WeChat_ActionStart"/>
+      <Event Code="0x1102" Name="ET_App_WeChat_ActionSuccess"/>
+      <Event Code="0x1103" Name="ET_App_WeChat_ActionFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x002D" Name="Common_SP_ID_AppFacebook">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1110" Name="ET_App_Facebook_TestStart"/>
+      <Event Code="0x1114" Name="ET_App_Facebook_TestSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x1115" Name="ET_App_Facebook_TestFailure"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x1111" Name="ET_App_Facebook_ActionStart"/>
+      <Event Code="0x1112" Name="ET_App_Facebook_ActionSuccess"/>
+      <Event Code="0x1113" Name="ET_App_Facebook_ActionFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x002F" Name="Common_SP_ID_MultiHttpDown">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1301" Name="ET_MultiHttpDownStart"/>
+      <Event Code="0x1303" Name="ET_MultiHttpDownLastData"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x1304" Name="ET_MultiHttpDownDrop"/>
+      <Event Code="0x1305" Name="ET_MultiHttpDownFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0030" Name="Common_SP_ID_eLTE_UDP">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1068" Name="ET_eLTE_UDP_Start"/>
+      <Event Code="0x1069" Name="ET_eLTE_UDP_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x106A" Name="ET_eLTE_UDP_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0031" Name="Common_SP_ID_UDP">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1310" Name="ET_UDP_ConnectStart"/>
+      <Event Code="0x1311" Name="ET_UDP_ConnectSuccess"/>
+      <Event Code="0x1313" Name="ET_UDP_Start"/>
+      <Event Code="0x1314" Name="ET_UDP_End"/>
+      <Event Code="0x1316" Name="ET_UDP_Finish"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x1312" Name="ET_UDP_ConnectFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0032" Name="Common_SP_ID_App_Skype_Caller">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1340" Name="ET_App_Skype_CallerStart"/>
+      <Event Code="0x1341" Name="ET_App_Skype_CallerDialStart"/>
+      <Event Code="0x1342" Name="ET_App_Skype_CallerDialRing"/>
+      <Event Code="0x1343" Name="ET_App_Skype_CallerDialSuccess"/>
+      <Event Code="0x1345" Name="ET_App_Skype_CallerSessionSuccess"/>
+      <Event Code="0x1347" Name="ET_App_Skype_CallerEnd"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x1344" Name="ET_App_Skype_CallerDialFailure"/>
+      <Event Code="0x1346" Name="ET_App_Skype_CallerSessionFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0033" Name="Common_SP_ID_App_Skype_Called">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1348" Name="ET_App_Skype_CalledStart"/>
+      <Event Code="0x1349" Name="ET_App_Skype_CalledDialStart"/>
+      <Event Code="0x134A" Name="ET_App_Skype_CalledDialRing"/>
+      <Event Code="0x134B" Name="ET_App_Skype_CalledDialSuccess"/>
+      <Event Code="0x134D" Name="ET_App_Skype_CalledSessionSuccess"/>
+      <Event Code="0x134F" Name="ET_App_Skype_CalledEnd"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x134C" Name="ET_App_Skype_CalledDialFailure"/>
+      <Event Code="0x134E" Name="ET_App_Skype_CalledSessionFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0034" Name="Common_SP_ID_AppSkypeChat">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1360" Name="ET_App_SkypeChat_TestStart"/>
+      <Event Code="0x1364" Name="ET_App_SkypeChat_TestSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x1365" Name="ET_App_SkypeChat_TestFailure"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x1361" Name="ET_App_SkypeChat_ActionStart"/>
+      <Event Code="0x1362" Name="ET_App_SkypeChat_ActionSuccess"/>
+      <Event Code="0x1363" Name="ET_App_SkypeChat_ActionFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0035" Name="Common_SP_ID_Bass">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1370" Name="ET_Bass_Start"/>
+      <Event Code="0x1371" Name="ET_Bass_FirstData"/>
+      <Event Code="0x1374" Name="ET_Bass_Finish"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x1372" Name="ET_Bass_Drop"/>
+      <Event Code="0x1373" Name="ET_Bass_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0036" Name="Common_SP_ID_App_QQ">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1380" Name="ET_App_QQ_TestStart"/>
+      <Event Code="0x10300" Name="ET_App_QQ_Test_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x10301" Name="ET_App_QQ_Test_Failure"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x1381" Name="ET_App_QQ_ActionStart"/>
+      <Event Code="0x1382" Name="ET_App_QQ_ActionSuccess"/>
+      <Event Code="0x1383" Name="ET_App_QQ_ActionFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0037" Name="Common_SP_ID_App_SinaWeibo">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1390" Name="ET_App_Sina_Weibo_TestStart"/>
+      <Event Code="0x10302" Name="ET_App_Sina_Weibo_Test_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x10303" Name="ET_App_Sina_Weibo_Test_Failure"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x1391" Name="ET_App_Sina_Weibo_ActionStart"/>
+      <Event Code="0x1392" Name="ET_App_Sina_Weibo_ActionSuccess"/>
+      <Event Code="0x1393" Name="ET_App_Sina_Weibo_ActionFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0038" Name="Common_SP_ID_USSD">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x13A0" Name="ET_USSD_TestStart"/>
+      <Event Code="0x13A3" Name="ET_USSD_TestSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x13A4" Name="ET_USSD_TestFailure"/>
+    </EventTable>
+    <EventTable Code="0x0003" Name="OtherEventDefine">
+      <Event Code="0x13A2" Name="ET_USSD_SMSResult"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x13A1" Name="ET_USSD_MenuLoad"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0039" Name="Common_SP_ID_Whatsapp">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x13B0" Name="ET_Whatsapp_TestStart"/>
+      <Event Code="0x10304" Name="ET_Whatsapp_Test_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x10305" Name="ET_Whatsapp_Test_Failure"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x13B1" Name="ET_Whatsapp_ActionStart"/>
+      <Event Code="0x13B2" Name="ET_Whatsapp_ActionSuccess"/>
+      <Event Code="0x13B3" Name="ET_Whatsapp_ActionFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x003A" Name="Common_SP_ID_WhatsappCall_Caller">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x13C0" Name="ET_WhatsappCall_CallerStart"/>
+      <Event Code="0x13C1" Name="ET_WhatsappCall_CallerDialStart"/>
+      <Event Code="0x13C2" Name="ET_WhatsappCall_CallerDialRing"/>
+      <Event Code="0x13C3" Name="ET_WhatsappCall_CallerDialSuccess"/>
+      <Event Code="0x13C5" Name="ET_WhatsappCall_CallerSessionSuccess"/>
+      <Event Code="0x13C7" Name="ET_WhatsappCall_CallerEnd"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x13C4" Name="ET_WhatsappCall_CallerDialFailure"/>
+      <Event Code="0x13C6" Name="ET_WhatsappCall_CallerSessionFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x003B" Name="Common_SP_ID_WhatsappCall_Called">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x13C8" Name="ET_WhatsappCall_CalledStart"/>
+      <Event Code="0x13C9" Name="ET_WhatsappCall_CalledDialStart"/>
+      <Event Code="0x13CA" Name="ET_WhatsappCall_CalledDialRing"/>
+      <Event Code="0x13CB" Name="ET_WhatsappCall_CalledDialSuccess"/>
+      <Event Code="0x13CD" Name="ET_WhatsappCall_CalledSessionSuccess"/>
+      <Event Code="0x13CF" Name="ET_WhatsappCall_CalledEnd"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x13CC" Name="ET_WhatsappCall_CalledDialFailure"/>
+      <Event Code="0x13CE" Name="ET_WhatsappCall_CalledSessionFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x003C" Name="Common_SP_ID_MultiAppFacebook">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x13E0" Name="ET_MultiAppFacebook_TestStart"/>
+      <Event Code="0x13E5" Name="ET_MultiAppFacebook_TestSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x13E6" Name="ET_MultiAppFacebook_TestFailure"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x13E1" Name="ET_MultiAppFacebook_ActionStart"/>
+      <Event Code="0x13E2" Name="ET_MultiAppFacebook_ActionSuccess"/>
+      <Event Code="0x13E3" Name="ET_MultiAppFacebook_ActionFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x003D" Name="Common_SP_ID_MultiAppInstagram">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x13F0" Name="ET_MultiAppInstagram_TestStart"/>
+      <Event Code="0x13F5" Name="ET_MultiAppInstagram_TestSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x13F6" Name="ET_MultiAppInstagram_TestFailure"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x13F1" Name="ET_MultiAppInstagram_ActionStart"/>
+      <Event Code="0x13F2" Name="ET_MultiAppInstagram_ActionSuccess"/>
+      <Event Code="0x13F3" Name="ET_MultiAppInstagram_ActionFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0501" Name="Common_SP_ID_SendSM">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x00D0" Name="ET_SMS_Access_Request"/>
+      <Event Code="0x10003" Name="ET_SMS_Send_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51380" Name="ET_CTI_SMSSend_Requst"/>
+      <Event Code="0x51381" Name="ET_CTI_SMSSend_Success"/>
+      <Event Code="0x51383" Name="ET_CTI_SMSReport_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x60010" Name="ET_DTLog_SMSSendAttempt"/>
+      <Event Code="0x60011" Name="ET_DTLog_SMSSendSuccess"/>
+      <Event Code="0x60016" Name="ET_DTLog_SMSP2PSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x80101" Name="ET_ECTI_SMS_SendAttempt"/>
+      <Event Code="0x80102" Name="ET_ECTI_SMS_SendSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x10004" Name="ET_SMS_Send_Failure"/>
+      <Event Code="0x51382" Name="ET_CTI_SMSSend_Failure"/>
+      <Event Code="0x51384" Name="ET_CTI_SMSReport_Failure"/>
+      <Event Code="0x60012" Name="ET_DTLog_SMSSendFail"/>
+      <Event Code="0x60017" Name="ET_DTLog_SMSP2PFail"/>
+      <Event Code="0x80103" Name="ET_ECTI_SMS_SendFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0502" Name="Common_SP_ID_RcvSM">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x00D4" Name="ET_SMS_Receive_Request"/>
+      <Event Code="0x10005" Name="ET_SMS_Recv_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51385" Name="ET_CTI_SMSReceive_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x60013" Name="ET_DTLog_SMSReceiveAttempt"/>
+      <Event Code="0x60014" Name="ET_DTLog_SMSReceiveSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x80104" Name="ET_ECTI_SMS_ReceiveAttempt"/>
+      <Event Code="0x80105" Name="ET_ECTI_SMS_ReceiveSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x10006" Name="ET_SMS_Recv_Failure"/>
+      <Event Code="0x51386" Name="ET_CTI_SMSReceive_Failure"/>
+      <Event Code="0x60015" Name="ET_DTLog_SMSReceiveFail"/>
+      <Event Code="0x80106" Name="ET_ECTI_SMS_ReceiveFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0503" Name="Common_SP_ID_MMSPush">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x00E4" Name="ET_MMS_MNotification_Ind"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51396" Name="ET_CTI_MMSPush_Received"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x60029" Name="ET_DTLog_MMSPushMsgReceived"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x00E7" Name="ET_MMS_MNotification_Timeout"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51397" Name="ET_CTI_MMSPush_Timeout"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x6002A" Name="ET_DTLog_MMSPushMsgFail"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0504" Name="Common_SP_ID_CEPush">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x01E5" Name="ET_CE_Push_Received"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0505" Name="Common_SP_ID_WIFILogin">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0280" Name="ET_WiFi_LoginStart"/>
+      <Event Code="0x0281" Name="ET_WiFi_LoginSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0282" Name="ET_WiFi_LoginFailed"/>
+      <Event Code="0x6005C" Name="ET_DTLog_WebAuthenticFailure"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x6005A" Name="ET_DTLog_WebAuthenticAttempt"/>
+      <Event Code="0x6005B" Name="ET_DTLog_WebAuthenticSuccess"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0506" Name="Common_SP_ID_WIFILogout">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0283" Name="ET_WiFi_LogoutStart"/>
+      <Event Code="0x0284" Name="ET_WiFi_LogoutSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0285" Name="ET_WiFi_LogoutFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0507" Name="Common_SP_ID_WIFIDHCP">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0300" Name="ET_WiFi_DHCPStart"/>
+      <Event Code="0x0301" Name="ET_WiFi_DHCPSuccess"/>
+      <Event Code="0x0303" Name="ET_WiFi_DHCPReleaseStart"/>
+      <Event Code="0x0304" Name="ET_WiFi_DHCPReleaseSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0302" Name="ET_WiFi_DHCPFail"/>
+      <Event Code="0x60072" Name="ET_DTLog_DHCPFailure"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x60070" Name="ET_DTLog_DHCPStart"/>
+      <Event Code="0x60071" Name="ET_DTLog_DHCPSuccess"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0508" Name="Common_SP_ID_WIFIConnect">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0503" Name="ET_WiFi_ConnectStart"/>
+      <Event Code="0x0504" Name="ET_WiFi_ConnectSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0505" Name="ET_WiFi_ConnectFailed"/>
+      <Event Code="0x60062" Name="ET_DTLog_APCorrelationFailure"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x60060" Name="ET_DTLog_APCorrelationAttempt"/>
+      <Event Code="0x60061" Name="ET_DTLog_APCorrelationSuccess"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0509" Name="Common_SP_ID_WIFISearch">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0501" Name="ET_WiFi_SearchStart"/>
+      <Event Code="0x0502" Name="ET_WiFi_SearchDone"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x050A" Name="Common_SP_ID_WIFIAuth">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0286" Name="ET_WiFi_AuthMainPageStart"/>
+      <Event Code="0x0287" Name="ET_WiFi_AuthMainPageFirstData"/>
+      <Event Code="0x0288" Name="ET_WiFi_AuthMainPageSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0289" Name="ET_WiFi_AuthMainPageFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0510" Name="Common_SP_ID_WIFIDisconnected">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0506" Name="ET_WiFi_Disconnected"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0511" Name="Common_SP_ID_WIFISwitch">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0507" Name="ET_WiFi_Switch"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0512" Name="Common_SP_ID_WIFIRoam">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0508" Name="ET_WiFi_Disconnect"/>
+      <Event Code="0x0509" Name="ET_WiFi_Roam"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0513" Name="Common_SP_ID_WiMaxSearch">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0401" Name="ET_WiMax_SearchStart"/>
+      <Event Code="0x0402" Name="ET_WiMax_SearchDone"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0514" Name="Common_SP_ID_WiMaxConnect">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0403" Name="ET_WiMax_ConnectStart"/>
+      <Event Code="0x0404" Name="ET_WiMax_ConnectSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0405" Name="ET_WiMax_ConnectFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0515" Name="Common_SP_ID_WiMaxNetworkDropped">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0407" Name="ET_WiMax_NetworkDropped"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0516" Name="Common_SP_ID_WiMaxGainIpAddress">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0408" Name="ET_WiMax_GainIpAddress"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0517" Name="Common_SP_ID_CMMBScanChannel">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0270" Name="ET_CMMB_ScanChannelStart"/>
+      <Event Code="0x0271" Name="ET_CMMB_ScanChannelFinished"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0518" Name="Common_SP_ID_CMMBConnectChannel">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0272" Name="ET_CMMB_ConnectChannelStart"/>
+      <Event Code="0x0273" Name="ET_CMMB_ConnectChannelSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0274" Name="ET_CMMB_ConnectChannelFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0519" Name="Common_SP_ID_CMMBChannelDrop">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0275" Name="ET_CMMB_ChannelDrop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0520" Name="Common_SP_ID_CMMBChannelFinished">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0276" Name="ET_CMMB_ChannelFinished"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0521" Name="Common_SP_ID_CMMBSwitchChannel">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0277" Name="ET_CMMB_SwitchChannel"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0522" Name="Common_SP_ID_CMMBDump">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0278" Name="ET_CMMB_DumpStart"/>
+      <Event Code="0x0279" Name="ET_CMMB_DumpFinished"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0524" Name="Common_SP_ID_gpsOne">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0701" Name="ET_gpsOne_Request"/>
+      <Event Code="0x0703" Name="ET_gpsOne_Success"/>
+      <Event Code="0x0705" Name="ET_gpsOne_DeviationOutOfThreshold"/>
+      <Event Code="0x0706" Name="ET_gpsOne_DelayOutOfThreshold"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x513E0" Name="ET_CTI_gpsOne_Request"/>
+      <Event Code="0x513E1" Name="ET_CTI_gpsOne_Response"/>
+      <Event Code="0x513E2" Name="ET_CTI_gpsOne_Success"/>
+      <Event Code="0x513E4" Name="ET_CTI_gpsOne_Deviation_OutOfThreshold"/>
+      <Event Code="0x513E5" Name="ET_CTI_gpsOne_Delay_OutOfThreshold"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0704" Name="ET_gpsOne_Failure"/>
+      <Event Code="0x513E3" Name="ET_CTI_gpsOne_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0525" Name="Common_SP_ID_gpsOnePassive">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0707" Name="ET_gpsOne_PassiveRequest"/>
+      <Event Code="0x0708" Name="ET_gpsOne_PassiveSuccess"/>
+      <Event Code="0x070A" Name="ET_gpsOne_PassiveDeviationOutOfThreshold"/>
+      <Event Code="0x070B" Name="ET_gpsOne_PassiveDelayOutOfThreshold"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x513E6" Name="ET_CTI_gpsOne_PassiveRequest"/>
+      <Event Code="0x513E7" Name="ET_CTI_gpsOne_PassiveSuccess"/>
+      <Event Code="0x513E9" Name="ET_CTI_gpsOne_Success_Deviation"/>
+      <Event Code="0x513EA" Name="ET_CTI_gpsOne_Success_Delay"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0709" Name="ET_gpsOne_PassiveFailure"/>
+      <Event Code="0x513E8" Name="ET_CTI_gpsOne_PassiveFailure"/>
+    </EventTable>
+    <EventTable Code="0x0003" Name="OtherEventDefine">
+      <Event Code="0x30189" Name="ET_PassivegpsOneRequestFromMPC"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0526" Name="Common_SP_ID_SpeedTest">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0C20" Name="ET_SpeedTest_SockConnecting"/>
+      <Event Code="0x0C21" Name="ET_SpeedTest_ConnectSockSuccess"/>
+      <Event Code="0x0C23" Name="ET_SpeedTest_Ping_Start"/>
+      <Event Code="0x0C24" Name="ET_SpeedTest_Ping_Success"/>
+      <Event Code="0x0C26" Name="ET_SpeedTest_Download_Start"/>
+      <Event Code="0x0C27" Name="ET_SpeedTest_Download_Success"/>
+      <Event Code="0x0C2A" Name="ET_SpeedTest_Upload_Start"/>
+      <Event Code="0x0C2B" Name="ET_SpeedTest_Upload_Success"/>
+      <Event Code="0x0C2E" Name="ET_SpeedTest_Finish"/>
+      <Event Code="0x0C31" Name="ET_SpeedTest_SocketDisconnected"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0C22" Name="ET_SpeedTest_ConnectSockFail"/>
+      <Event Code="0x0C2F" Name="ET_SpeedTest_Fail"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0527" Name="Common_SP_ID_Iperf">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0E01" Name="ET_IperfInited"/>
+      <Event Code="0x0E02" Name="ET_IperfConnectStart"/>
+      <Event Code="0x0E03" Name="ET_IperfConnectSuccess"/>
+      <Event Code="0x0E06" Name="ET_IperfFinished"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x10238" Name="ET_DTLog_WalktourVirtual_IPerfRequest"/>
+      <Event Code="0x10239" Name="ET_DTLog_WalktourVirtual_IPerfSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0E04" Name="ET_IperfConnectFailed"/>
+      <Event Code="0x0E05" Name="ET_IperfDropped"/>
+      <Event Code="0x1023A" Name="ET_DTLog_WalktourVirtual_IPerfFailure"/>
+      <Event Code="0x1023B" Name="ET_DTLog_WalktourVirtual_IPerfDrop"/>
+    </EventTable>
+    <EventTable Code="0x0003" Name="OtherEventDefine">
+      <Event Code="0x0E07" Name="ET_IperfQuit"/>
+      <Event Code="0x0E08" Name="ET_IperfFirstData"/>
+      <Event Code="0x0E09" Name="ET_IperfLastData"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0528" Name="Common_SP_ID_TDDLTE_PowerTest">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0613" Name="ET_TDDLTEPowerOff"/>
+      <Event Code="0x061A" Name="ET_TDDLTEPowerRequest"/>
+      <Event Code="0x0612" Name="ET_TDDLTEPowerSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x061B" Name="ET_TDDLTEPowerFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0529" Name="Common_SP_ID_MicroBlogSendMsg">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0D05" Name="ET_MicroBlogCallerSendMsgStart"/>
+      <Event Code="0x0D06" Name="ET_MicroBlogCallerSendMsgSuccess"/>
+      <Event Code="0x1003E" Name="ET_MicroBlogCallerRcvNormalComment"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x1003F" Name="ET_MicroBlogCallerRcvUnNormalComment"/>
+      <Event Code="0x0D09" Name="ET_MicroBlogCallerRcvCommentFailed"/>
+      <Event Code="0x0D07" Name="ET_MicroBlogCallerSendMsgFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x052A" Name="Common_SP_ID_MicroBlogResponseMsg">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0D13" Name="ET_MicroBlogCalledRcvMsgSuccess"/>
+      <Event Code="0x0D15" Name="ET_MicroBlogCalledRepostMsgStart"/>
+      <Event Code="0x0D16" Name="ET_MicroBlogCalledRepostMsgSuccess"/>
+      <Event Code="0x0D18" Name="ET_MicroBlogCalledSendCommentStart"/>
+      <Event Code="0x10111" Name="ET_MicroBlogCalledSendCommentSuccessNormal"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0D14" Name="ET_MicroBlogCalledRcvMsgFailed"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0D17" Name="ET_MicroBlogCalledRepostMsgFailed"/>
+      <Event Code="0x0D1A" Name="ET_MicroBlogCalledSendCommentFailed"/>
+      <Event Code="0x10112" Name="ET_MicroBlogCalledSendCommentSuccessUnNormal"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x052C" Name="Common_SP_ID_QQSendMsg">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0113" Name="ET_QQCallerSendMsg"/>
+      <Event Code="0x0114" Name="ET_QQCallerRcvReplySuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0115" Name="ET_QQCallerRcvReplyFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x052D" Name="Common_SP_ID_QQResponseMsg">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x011D" Name="ET_QQCalledRcvMsgSuccess"/>
+      <Event Code="0x011E" Name="ET_QQCalledSendReply"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x052E" Name="Common_SP_ID_OpenSignal">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1320" Name="ET_OpenSignal_SockConnecting"/>
+      <Event Code="0x1321" Name="ET_OpenSignal_ConnectSockSuccess"/>
+      <Event Code="0x1323" Name="ET_OpenSignal_Ping_Start"/>
+      <Event Code="0x1324" Name="ET_OpenSignal_Ping_Success"/>
+      <Event Code="0x1326" Name="ET_OpenSignal_Download_Start"/>
+      <Event Code="0x1327" Name="ET_OpenSignal_Download_Success"/>
+      <Event Code="0x132A" Name="ET_OpenSignal_Upload_Start"/>
+      <Event Code="0x132B" Name="ET_OpenSignal_Upload_Success"/>
+      <Event Code="0x132E" Name="ET_OpenSignal_Finish"/>
+      <Event Code="0x1331" Name="ET_OpenSignal_SocketDisconnected"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x1322" Name="ET_OpenSignal_ConnectSockFail"/>
+      <Event Code="0x132F" Name="ET_OpenSignal_Fail"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0601" Name="Common_SP_ID_TDDLTE_DelayTest">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0614" Name="ET_TDDLTEDelayTestStart"/>
+      <Event Code="0x0615" Name="ET_TDDLTEDelayTestSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0616" Name="ET_TDDLTEDelayTestFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0602" Name="Common_SP_ID_TDDLTE_Connect">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0601" Name="ET_TDDLTEConnectStart"/>
+      <Event Code="0x0602" Name="ET_TDDLTEConnectSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x60001" Name="ET_DTLog_LTEConnectStart"/>
+      <Event Code="0x60002" Name="ET_DTLog_LTEConnectSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0603" Name="ET_TDDLTEConnectFailed"/>
+      <Event Code="0x60003" Name="ET_DTLog_LTEConnectFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0603" Name="Common_SP_ID_TDDLTE_Attach">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0606" Name="ET_TDDLTEAttachStart"/>
+      <Event Code="0x0607" Name="ET_TDDLTEAttachSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0608" Name="ET_TDDLTEAttachFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0604" Name="Common_SP_ID_TDDLTE_Detach">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0609" Name="ET_TDDLTEDetachStart"/>
+      <Event Code="0x0610" Name="ET_TDDLTEDetachSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0611" Name="ET_TDDLTEDetachFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x0605" Name="Common_SP_ID_TDDLTE_Disconnect">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0617" Name="ET_TDDLTEDisconnectStart"/>
+      <Event Code="0x0618" Name="ET_TDDLTEDisconnectSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x0619" Name="ET_TDDLTEDisconnectFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x1001" Name="Common_SP_ID_MO">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x000A" Name="ET_DIAL_START"/>
+      <Event Code="0x000B" Name="ET_DIAL_END"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0038" Name="ET_DIAL_START_P"/>
+      <Event Code="0x0039" Name="ET_DIAL_END_P"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51000" Name="ET_CTI_MO_Dial"/>
+      <Event Code="0x51005" Name="ET_CTI_MO_Hangup"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30176" Name="ET_MO_Block"/>
+      <Event Code="0x30174" Name="ET_MO_Drop"/>
+    </EventTable>
+    <EventTable Code="0x0007" Name="SelfSPMsgEventDefine">
+      <Event Code="0x30170" Name="ET_MO_Attempt"/>
+      <Event Code="0x30171" Name="ET_MO_Alerting"/>
+      <Event Code="0x30172" Name="ET_MO_Connect"/>
+      <Event Code="0x30173" Name="ET_MO_End"/>
+    </EventTable>
+    <EventTable Code="0x0003" Name="OtherEventDefine">
+      <Event Code="0x30318" Name="ET_MO_CSFB_Request"/>
+      <Event Code="0x30319" Name="ET_MO_CSFB_Success"/>
+      <Event Code="0x3031A" Name="ET_MO_CSFB_Failure"/>
+      <Event Code="0x3031B" Name="ET_MO_CSFB_Proceeding"/>
+      <Event Code="0x3031C" Name="ET_MO_CSFB_RRCRelease"/>
+      <Event Code="0x3031D" Name="ET_MO_CSFB_Coverage"/>
+      <Event Code="0x30337" Name="ET_MO_CSFB_Abnormal"/>
+      <Event Code="0x3033A" Name="ET_MO_VoLTE_Abnormal"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x1002" Name="Common_SP_ID_MT">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0064" Name="ET_Dialed_Start"/>
+      <Event Code="0x000B" Name="ET_DIAL_END"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30185" Name="ET_MT_Block"/>
+      <Event Code="0x30184" Name="ET_MT_Drop"/>
+    </EventTable>
+    <EventTable Code="0x0007" Name="SelfSPMsgEventDefine">
+      <Event Code="0x30180" Name="ET_MT_Attempt"/>
+      <Event Code="0x30181" Name="ET_MT_Alerting"/>
+      <Event Code="0x30182" Name="ET_MT_Connect"/>
+      <Event Code="0x30183" Name="ET_MT_End"/>
+    </EventTable>
+    <EventTable Code="0x0003" Name="OtherEventDefine">
+      <Event Code="0x3031E" Name="ET_MT_CSFB_Request"/>
+      <Event Code="0x3031F" Name="ET_MT_CSFB_Success"/>
+      <Event Code="0x30320" Name="ET_MT_CSFB_Failure"/>
+      <Event Code="0x30321" Name="ET_MT_CSFB_Proceeding"/>
+      <Event Code="0x30322" Name="ET_MT_CSFB_RRCRelease"/>
+      <Event Code="0x30323" Name="ET_MT_CSFB_Coverage"/>
+      <Event Code="0x30338" Name="ET_MT_CSFB_Abnormal"/>
+      <Event Code="0x3033B" Name="ET_MT_VoLTE_Abnormal"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x1003" Name="Common_SP_ID_VideoMO">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0188" Name="ET_Video_MOC_Start"/>
+      <Event Code="0x0180" Name="ET_Video_Telephony_Start"/>
+      <Event Code="0x0186" Name="ET_Video_H245_Setup"/>
+      <Event Code="0x0181" Name="ET_Start_audio_data"/>
+      <Event Code="0x0182" Name="ET_Start_video_data"/>
+      <Event Code="0x0183" Name="ET_Video_Telephony_End"/>
+      <Event Code="0x0189" Name="ET_Video_MOC_Hangup"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30176" Name="ET_MO_Block"/>
+      <Event Code="0x30174" Name="ET_MO_Drop"/>
+      <Event Code="0x0185" Name="ET_Video_Setup_TimeOut"/>
+      <Event Code="0x0187" Name="ET_Video_H245_Timeout"/>
+      <Event Code="0x0184" Name="ET_Video_Telephony_Drop"/>
+    </EventTable>
+    <EventTable Code="0x0007" Name="SelfSPMsgEventDefine">
+      <Event Code="0x30170" Name="ET_MO_Attempt"/>
+      <Event Code="0x30171" Name="ET_MO_Alerting"/>
+      <Event Code="0x30172" Name="ET_MO_Connect"/>
+      <Event Code="0x30173" Name="ET_MO_End"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x1004" Name="Common_SP_ID_VideoMT">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x018A" Name="ET_Video_MTC_Start"/>
+      <Event Code="0x0180" Name="ET_Video_Telephony_Start"/>
+      <Event Code="0x0186" Name="ET_Video_H245_Setup"/>
+      <Event Code="0x0181" Name="ET_Start_audio_data"/>
+      <Event Code="0x0182" Name="ET_Start_video_data"/>
+      <Event Code="0x0183" Name="ET_Video_Telephony_End"/>
+      <Event Code="0x0189" Name="ET_Video_MOC_Hangup"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30185" Name="ET_MT_Block"/>
+      <Event Code="0x30184" Name="ET_MT_Drop"/>
+      <Event Code="0x0185" Name="ET_Video_Setup_TimeOut"/>
+      <Event Code="0x0187" Name="ET_Video_H245_Timeout"/>
+      <Event Code="0x0184" Name="ET_Video_Telephony_Drop"/>
+    </EventTable>
+    <EventTable Code="0x0007" Name="SelfSPMsgEventDefine">
+      <Event Code="0x30180" Name="ET_MT_Attempt"/>
+      <Event Code="0x30181" Name="ET_MT_Alerting"/>
+      <Event Code="0x30182" Name="ET_MT_Connect"/>
+      <Event Code="0x30183" Name="ET_MT_End"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x1100" Name="Common_SP_ID_QChat">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x0901" Name="ET_PTTStart"/>
+      <Event Code="0x30200" Name="ET_QChatInitAttempt"/>
+      <Event Code="0x30201" Name="ET_QChatInitSuccess"/>
+      <Event Code="0x0902" Name="ET_PTTEnd"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x513F0" Name="ET_CTI_PTTStart"/>
+      <Event Code="0x513F2" Name="ET_CTI_PTTInitialAttempt"/>
+      <Event Code="0x513F3" Name="ET_CTI_PTTInitialSuccess"/>
+      <Event Code="0x513F1" Name="ET_CTI_PTTEnd"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30202" Name="ET_QChatInitFailure"/>
+      <Event Code="0x513F4" Name="ET_CTI_PTTInitialFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x1101" Name="Common_SP_ID_QChated">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x090C" Name="ET_PTTStarted"/>
+      <Event Code="0x090D" Name="ET_PTTEnded"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x1200" Name="Common_SP_ID_LTEDataService">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30311" Name="ET_LTEDataServiceConnectRequest"/>
+      <Event Code="0x30312" Name="ET_LTEDataServiceConnectSuccess"/>
+      <Event Code="0x30315" Name="ET_LTEDataServiceFinished"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30313" Name="ET_LTEDataServiceConnectFailure"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x30314" Name="ET_LTEDataServiceDrop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x1201" Name="Common_SP_ID_IdleTest">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x10C0" Name="ET_IdleTest_Start"/>
+      <Event Code="0x10C1" Name="ET_IdleTest_End"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x1202" Name="Common_SP_ID_StatisticsTag">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x1201" Name="ET_StatisticsTag_Start"/>
+      <Event Code="0x1202" Name="ET_StatisticsTag_End"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2001" Name="Common_SP_ID_RRC_Connect">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20001" Name="ET_RRC_Connection_Request"/>
+      <Event Code="0x20003" Name="ET_RRC_Connection_Setup_Complete"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x8100C" Name="ET_ECTI_RRA"/>
+      <Event Code="0x8100D" Name="ET_ECTI_RRC"/>
+    </EventTable>
+    <EventTable Code="0x0005" Name="RepeatEventDefine">
+      <Event Code="0x20002" Name="ET_RRC_Connection_Setup"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20004" Name="ET_RRC_Connection_Failure"/>
+      <Event Code="0x8100E" Name="ET_ECTI_RRF"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2002" Name="Common_SP_ID_RRC_Release">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20005" Name="ET_RRC_Release"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x8100F" Name="ET_ECTI_RRD"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2003" Name="Common_SP_ID_RAB_Setup">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20010" Name="ET_RAB_Setup"/>
+      <Event Code="0x20011" Name="ET_RAB_Setup_Complete"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20012" Name="ET_RAB_Setup_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2004" Name="Common_SP_ID_RAB_Release"/>
+  <SP Code="0x2005" Name="Common_SP_ID_ActiveSet_Update">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20020" Name="ET_ActiveSet_Update"/>
+      <Event Code="0x20021" Name="ET_ActiveSet_Update_Complete"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20022" Name="ET_ActiveSet_Update_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2006" Name="Common_SP_ID_Physical_Channel_Reconfig">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20040" Name="ET_PhysicalChannelReconfig"/>
+      <Event Code="0x20041" Name="ET_PhysicalChannelReconfig_Complete"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20042" Name="ET_PhysicalChannelReconfig_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2007" Name="Common_SP_ID_RAB_Reconfig">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20050" Name="ET_RABReconfig"/>
+      <Event Code="0x20051" Name="ET_RABReconfig_Complete"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20052" Name="ET_RABReconfig_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2008" Name="Common_SP_ID_Transport_Channel_Reconfig">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20060" Name="ET_TransportChannelReconfig"/>
+      <Event Code="0x20061" Name="ET_TransportChannelReconfig_Complete"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20062" Name="ET_TransportChannelReconfig_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2009" Name="Common_SP_ID_LocationUpdate">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x200E0" Name="ET_LocaltionUpdate_Request"/>
+      <Event Code="0x200E1" Name="ET_LocaltionUpdate_Accept"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x200E2" Name="ET_LocaltionUpdate_Reject"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x200A" Name="Common_SP_ID_RouteUpdate">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x200E3" Name="ET_RouteUpdate_Request"/>
+      <Event Code="0x200E4" Name="ET_RouteUpdate_Accept"/>
+      <Event Code="0x200E6" Name="ET_RouteUpdate_Complete"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x200E5" Name="ET_RouteUpdate_Reject"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x200B" Name="Common_SP_ID_CellUpdate">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20100" Name="ET_CellUpdate"/>
+      <Event Code="0x20101" Name="ET_CellUpdate_Confirm"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x200E" Name="Common_SP_ID_EvdoSession">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20140" Name="ET_EvdoSessionRequest"/>
+      <Event Code="0x20141" Name="ET_EvdoSessionSetup"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x200F" Name="Common_SP_ID_PDPActiveMsg">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20030" Name="ET_PDPActive_Request"/>
+      <Event Code="0x20031" Name="ET_PDPActive_Accept"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20032" Name="ET_PDPActive_Reject"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2010" Name="Common_SP_ID_PDPDeActiveMsg">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20033" Name="ET_PDPDeActive_Request"/>
+      <Event Code="0x20034" Name="ET_PDPDeActive_Accept"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2011" Name="Common_SP_ID_CDMA_Registration">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20142" Name="ET_CDMARegistrationRequest"/>
+      <Event Code="0x20147" Name="ET_CDMARegistrationAccept"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51066" Name="ET_CTI_PagingZone_Update"/>
+      <Event Code="0x5107B" Name="ET_CTI_PagingZone_Update_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20148" Name="ET_CDMARegistrationReject"/>
+      <Event Code="0x51067" Name="ET_CTI_PagingZone_Update_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2012" Name="Common_SP_ID_DaTang_Intra_TDD_Reselection">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20200" Name="ET_DaTang_Intra_TDD_Reselection_Start"/>
+      <Event Code="0x20201" Name="ET_DaTang_Intra_TDD_Reselection_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20202" Name="ET_DaTang_Intra_TDD_Reselection_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2013" Name="Common_SP_ID_DaTang_Handover_To_GSM">
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20203" Name="ET_DaTang_Handover_To_GSM_Start"/>
+      <Event Code="0x20204" Name="ET_DaTang_Handover_To_GSM_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20205" Name="ET_DaTang_Handover_To_GSM_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2014" Name="Common_SP_ID_DaTang_Inter_Reselection_To_GSM">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20206" Name="ET_DaTang_Inter_Reselection_To_GSM_Start"/>
+      <Event Code="0x20207" Name="ET_DaTang_Inter_Reselection_To_GSM_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20282" Name="ET_DingXing_Inter_Reselection_To_GSM_Start"/>
+      <Event Code="0x20283" Name="ET_DingXing_Inter_Reselection_23G_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20208" Name="ET_DaTang_Inter_Reselection_To_GSM_Failure"/>
+    </EventTable>
+    <EventTable Code="0x0004" Name="MutexSPDefine">
+      <Event Code="0x2018" Name="Common_SP_ID_DaTang_Inter_Reselection_To_TDD"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2015" Name="Common_SP_ID_DaTang_GSM_Handover">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20209" Name="ET_DaTang_GSM_Handover_Start"/>
+      <Event Code="0x2020A" Name="ET_DaTang_GSM_Handover_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x2020B" Name="ET_DaTang_GSM_Handover_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2016" Name="Common_SP_ID_DaTang_Intra_GSM_Reselection">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x2020C" Name="ET_DaTang_Intra_GSM_Reselection_Start"/>
+      <Event Code="0x2020D" Name="ET_DaTang_Intra_GSM_Reselection_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x2020E" Name="ET_DaTang_Intra_GSM_Reselection_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2017" Name="Common_SP_ID_DaTang_RAT_Measure">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x2020F" Name="ET_DaTang_RAT_Measure_Start"/>
+      <Event Code="0x20210" Name="ET_DaTang_RAT_Measure_Stop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2018" Name="Common_SP_ID_DaTang_Inter_Reselection_To_TDD">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20211" Name="ET_DaTang_Inter_Reselection_To_TDD_Start"/>
+      <Event Code="0x20212" Name="ET_DaTang_Inter_Reselection_To_TDD_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20281" Name="ET_DingXing_Inter_Reselection_To_TDD_Start"/>
+      <Event Code="0x20283" Name="ET_DingXing_Inter_Reselection_23G_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20213" Name="ET_DaTang_Inter_Reselection_To_TDD_Failure"/>
+    </EventTable>
+    <EventTable Code="0x0004" Name="MutexSPDefine">
+      <Event Code="0x2014" Name="Common_SP_ID_DaTang_Inter_Reselection_To_GSM"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2019" Name="Common_SP_ID_MCTrafficChannel">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20143" Name="ET_MCTrafficChannelAssignment"/>
+      <Event Code="0x20144" Name="ET_MCTrafficChannelComplete"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x201A" Name="Common_SP_ID_RRCConnectionReestablish">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20007" Name="ET_RRC_Connection_ReestablishmentRequest"/>
+      <Event Code="0x20009" Name="ET_RRC_Connection_ReestablishmentComplete"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x81010" Name="ET_ECTI_RRRESuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x2000A" Name="ET_RRC_Connection_ReestablishmentReject"/>
+      <Event Code="0x81011" Name="ET_ECTI_RRREFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x201B" Name="Common_SP_ID_Authentication">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20070" Name="ET_AuthenticationRequest"/>
+      <Event Code="0x20071" Name="ET_AuthenticationResponse"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20072" Name="ET_AuthenticationReject"/>
+      <Event Code="0x20073" Name="ET_AuthenticationFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x201C" Name="Common_SP_ID_AuthenticationCiphering">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20074" Name="ET_AuthenticationCipheringRequest"/>
+      <Event Code="0x20075" Name="ET_AuthenticationCipheringResponse"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20076" Name="ET_AuthenticationCipheringReject"/>
+      <Event Code="0x20077" Name="ET_AuthenticationCipheringFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x201D" Name="Common_SP_ID_AttachMsg">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20078" Name="ET_AttachRequestMsg"/>
+      <Event Code="0x20079" Name="ET_AttachAcceptMsg"/>
+      <Event Code="0x2007B" Name="ET_AttachCompleteMsg"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x2007A" Name="ET_AttachRejectMsg"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x201E" Name="Common_SP_ID_DetachMsg">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x2007C" Name="ET_DetachRequestMsg"/>
+      <Event Code="0x2007D" Name="ET_DetachAcceptMsg"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x201F" Name="Common_SP_ID_TMSIReallocation">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x2007E" Name="ET_PTMSIReallocationCommand"/>
+      <Event Code="0x2007F" Name="ET_PTMSIReallocationComplete"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2020" Name="Common_SP_ID_CipherMode">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20093" Name="ET_CipheringModeCommand"/>
+      <Event Code="0x20094" Name="ET_CipheringModeComplete"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2021" Name="Common_SP_ID_Assignment">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20095" Name="ET_AssignmentCommand"/>
+      <Event Code="0x20096" Name="ET_AssignmentComplete"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2100" Name="Common_SP_ID_Ranging"/>
+  <SP Code="0x2101" Name="Common_SP_ID_SBC"/>
+  <SP Code="0x2102" Name="Common_SP_ID_WiMaxAuthentication"/>
+  <SP Code="0x2103" Name="Common_SP_ID_Register"/>
+  <SP Code="0x2104" Name="Common_SP_ID_Flow"/>
+  <SP Code="0x2105" Name="Common_SP_ID_InitialAccess"/>
+  <SP Code="0x2106" Name="Common_SP_ID_Access"/>
+  <SP Code="0x2107" Name="Common_SP_ID_HOHandover"/>
+  <SP Code="0x2108" Name="Common_SP_ID_TargetBSRanging"/>
+  <SP Code="0x2200" Name="Common_SP_ID_ActivateDefaultEPS">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20400" Name="ET_LTEActiveDefaultEPSRequest"/>
+      <Event Code="0x20401" Name="ET_LTEActiveDefaultEPSAccept"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20402" Name="ET_LTEActiveDefaultEPSReject"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2201" Name="Common_SP_ID_TrackingAreaUpdate">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20403" Name="ET_LTETrackingAreaUpdateRequest"/>
+      <Event Code="0x20419" Name="ET_LTETrackingAreaUpdateComplete"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x81000" Name="ET_ECTI_TAUAttempt"/>
+      <Event Code="0x81001" Name="ET_ECTI_TAUSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0003" Name="OtherEventDefine">
+      <Event Code="0x20404" Name="ET_LTETrackingAreaUpdateAccept"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20405" Name="ET_LTETrackingAreaUpdateReject"/>
+      <Event Code="0x81002" Name="ET_ECTI_TAUFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2202" Name="Common_SP_ID_LTERRCReconfig">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20406" Name="ET_LTERRCReconfigRequest"/>
+      <Event Code="0x20407" Name="ET_LTERRCReconfigComplete"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2203" Name="Common_SP_ID_LTETerminalReselect">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20408" Name="ET_LTECellReselectStart"/>
+      <Event Code="0x20409" Name="ET_LTECellReselectSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x2040A" Name="ET_LTECellReselectFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2204" Name="Common_SP_ID_LTEPRACH">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x2040B" Name="ET_LTEPRACHStart"/>
+      <Event Code="0x2040C" Name="ET_LTEPRACHSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x2040D" Name="ET_LTEPRACHFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2205" Name="Common_SP_ID_LTECellCampOn">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x2040E" Name="ET_LTECellSearchStart"/>
+      <Event Code="0x2040F" Name="ET_LTECellCampOn"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2206" Name="Common_SP_ID_LTEMIBToCampOn">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20416" Name="ET_LTEMIB"/>
+      <Event Code="0x2040F" Name="ET_LTECellCampOn"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2207" Name="Common_SP_ID_LTEEPSAttach">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20412" Name="ET_LTEMsgAttachRequest"/>
+      <Event Code="0x20407" Name="ET_LTERRCReconfigComplete"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2208" Name="Common_SP_ID_LTEIdleToActive">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20001" Name="ET_RRC_Connection_Request"/>
+      <Event Code="0x20002" Name="ET_RRC_Connection_Setup"/>
+      <Event Code="0x20003" Name="ET_RRC_Connection_Setup_Complete"/>
+      <Event Code="0x20407" Name="ET_LTERRCReconfigComplete"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x2209" Name="Common_SP_ID_LTEMsgAttach">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20412" Name="ET_LTEMsgAttachRequest"/>
+      <Event Code="0x20414" Name="ET_LTEMsgAttachComplete"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x81004" Name="ET_ECTI_AttachAttempt"/>
+      <Event Code="0x81005" Name="ET_ECTI_AttachSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20415" Name="ET_LTEMsgAttachReject"/>
+      <Event Code="0x81006" Name="ET_ECTI_AttachFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x220A" Name="Common_SP_ID_ActivateDedicatedEPS">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x2041F" Name="ET_LTEActiveDedicatedEPSRequest"/>
+      <Event Code="0x20420" Name="ET_LTEActiveDedicatedEPSAccept"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20421" Name="ET_LTEActiveDedicatedEPSReject"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x220B" Name="Common_SP_ID_NBService">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20424" Name="ET_LTE_NBServiceRequest"/>
+      <Event Code="0x20425" Name="ET_LTE_NBServiceAccept"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20426" Name="ET_LTE_NBServiceReject"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3001" Name="Common_SP_ID_WCDMA_Soft_Handover">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30033" Name="ET_WCDMA_Soft_Handover_Request"/>
+      <Event Code="0x30034" Name="ET_WCDMA_Soft_Handover_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30035" Name="ET_WCDMA_Soft_Handover_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3002" Name="Common_SP_ID_GSM_Hard_Handover">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30000" Name="ET_GSM_Hard_Handover_Request"/>
+      <Event Code="0x30001" Name="ET_GSM_Hard_Handover_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30002" Name="ET_GSM_Hard_Handover_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3003" Name="Common_SP_ID_Handover_Intra_Baton">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30130" Name="ET_Baton_Handover_Request"/>
+      <Event Code="0x30131" Name="ET_Baton_Handover_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30132" Name="ET_Baton_Handover_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3004" Name="Common_SP_ID_Handover_To_WCDMA">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30080" Name="ET_Handover_To_WCDMA_Request"/>
+      <Event Code="0x30081" Name="ET_Handover_To_WCDMA_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30082" Name="ET_Handover_To_WCDMA_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3005" Name="Common_SP_ID_Handover_From_WCDMA">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300B0" Name="ET_Handover_From_WCDMA_Request"/>
+      <Event Code="0x300B1" Name="ET_Handover_From_WCDMA_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x300B2" Name="ET_Handover_From_WCDMA_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3006" Name="Common_SP_ID_PS_Handover_From_WCDMA">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300C0" Name="ET_PS_Handover_From_WCDMA_Request"/>
+      <Event Code="0x300C1" Name="ET_PS_Handover_From_WCDMA_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x300C2" Name="ET_PS_Handover_From_WCDMA_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3008" Name="Common_SP_ID_Intra_WCDMA_CellReselect">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30090" Name="ET_Intra_WCDMA_CellReselect"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3009" Name="Common_SP_ID_HSPA_CellReselect">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300A0" Name="ET_HSPA_Reselect_Request"/>
+      <Event Code="0x300A1" Name="ET_HSPA_Reselect_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x300A2" Name="ET_HSPA_Reselect_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x300A" Name="Common_SP_ID_Inter_CellReselect_WCDMA_To_GSM">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30091" Name="ET_Inter_CellReselect_WCDMA_To_GSM_Request"/>
+      <Event Code="0x30092" Name="ET_Inter_CellReselect_WCDMA_To_GSM_Complete"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x3009E" Name="ET_Inter_CellReselect_WCDMA_To_GSM_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x300B" Name="Common_SP_ID_Inter_CellReselect_GSM_To_WCDMA">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30093" Name="ET_Inter_CellReselect_GSM_To_WCDMA_Request"/>
+      <Event Code="0x30094" Name="ET_Inter_CellReselect_GSM_To_WCDMA_Complete"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x3009F" Name="ET_Inter_CellReselect_GSM_To_WCDMA_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x300C" Name="Common_SP_ID_Intra_GSM_CellReselect">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30095" Name="ET_Intra_GSM_CellReselect"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x300D" Name="Common_SP_ID_WCDMA_Hard_Handover">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30070" Name="ET_WCDMA_Hard_Handover_Request"/>
+      <Event Code="0x30071" Name="ET_WCDMA_Hard_Handover_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30072" Name="ET_WCDMA_Hard_Handover_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x300E" Name="Common_SP_ID_Evdo_Soft_Handover">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30140" Name="ET_EvdoSoftHandover_Request"/>
+      <Event Code="0x30141" Name="ET_EvdoSoftHandover_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x5106F" Name="ET_CTI_EVDO_Reverse_Soft_Handoff_Request"/>
+      <Event Code="0x51070" Name="ET_CTI_EVDO_Reverse_Soft_Handoff_Success"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x300F" Name="Common_SP_ID_Evdo_To_1x_Active_Handover">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30150" Name="ET_EvdoTo1xActiveHandover_Request"/>
+      <Event Code="0x30151" Name="ET_EvdoTo1xActiveHandover_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51074" Name="ET_CTI_DOto1X_Handoff_Request_Active"/>
+      <Event Code="0x51075" Name="ET_CTI_DOto1X_Handoff_Success_Active"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3010" Name="Common_SP_ID_Evdo_To_1x_Sleep_Handover">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30153" Name="ET_EvdoTo1xSleepHandover_Request"/>
+      <Event Code="0x30154" Name="ET_EvdoTo1xSleepHandover_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51076" Name="ET_CTI_DOto1X_Handoff_Request_Dormant"/>
+      <Event Code="0x51077" Name="ET_CTI_DOto1X_Handoff_Success_Dormant"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3011" Name="Common_SP_ID_1x_To_Evdo_Sleep_Handover">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30156" Name="ET_1xToEvdoSleepHandover_Request"/>
+      <Event Code="0x30157" Name="ET_1xToEvdoSleepHandover_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51078" Name="ET_CTI_1XtoDO_Handoff_Request_Dormant"/>
+      <Event Code="0x51079" Name="ET_CTI_1XtoDO_Handoff_Success_Dormant"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3012" Name="Common_SP_ID_Evdo_Virtual_SoftHandover">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30160" Name="ET_EvdoVirtualSoftHandover_Request"/>
+      <Event Code="0x30161" Name="ET_EvdoVirtualSoftHandover_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51071" Name="ET_CTI_Virtual_Soft_Handoff_Request"/>
+      <Event Code="0x51072" Name="ET_CTI_Virtual_Soft_Handoff_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30162" Name="ET_EvdoVirtualSoftHandover_Failure"/>
+      <Event Code="0x51073" Name="ET_CTI_Virtual_Soft_Handoff_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3013" Name="Common_SP_ID_Intra_CDMA_CellReselect">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30096" Name="ET_Intra_CDMA_CellReselect"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51065" Name="ET_CTI_Cell_Reselect"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3014" Name="Common_SP_ID_Intra_Evdo_CellReselect">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30097" Name="ET_Intra_Evdo_CellReselect"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3015" Name="Common_SP_ID_EvdoConnection">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30142" Name="ET_EvdoConnection_Request"/>
+      <Event Code="0x30143" Name="ET_EvdoConnection_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x5106A" Name="ET_CTI_EVDO_Connection_Attempt"/>
+      <Event Code="0x5106C" Name="ET_CTI_EVDO_Connection_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30146" Name="ET_EvdoConnection_Failure"/>
+      <Event Code="0x5106B" Name="ET_CTI_EVDO_Connection_Fail"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3016" Name="Common_SP_ID_PS_Handover_To_WCDMA">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300D0" Name="ET_PS_Handover_To_WCDMA_Request"/>
+      <Event Code="0x300D1" Name="ET_PS_Handover_To_WCDMA_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x300D2" Name="ET_PS_Handover_To_WCDMA_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3017" Name="Common_SP_ID_CDMA_HardHandover">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30010" Name="ET_CDMA_Hard_Handover_Request"/>
+      <Event Code="0x30011" Name="ET_CDMA_Hard_Handover_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51080" Name="ET_CTI_Hard_Handoff_Attempt_1X"/>
+      <Event Code="0x51081" Name="ET_CTI_Hard_Handoff_Success_1X"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30012" Name="ET_CDMA_Hard_Handover_Failure"/>
+      <Event Code="0x51082" Name="ET_CTI_Hard_Handoff_Failure_1X"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3018" Name="Common_SP_ID_WCDMA_Rach">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30110" Name="ET_WCDMARach_Request"/>
+      <Event Code="0x30111" Name="ET_WCDMARach_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30112" Name="ET_WCDMARach_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3019" Name="Common_SP_ID_MultiCarrierHandover">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30186" Name="ET_MultiCarrierHandoverRequest"/>
+      <Event Code="0x30187" Name="ET_MultiCarrierHandoverSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30188" Name="ET_MultiCarrierHandoverFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x301A" Name="Common_SP_ID_EVDOConnectionDrop">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30145" Name="ET_EvdoConnection_Drop"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30147" Name="ET_EvdoConnection_DropForOtherReason"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x5106E" Name="ET_CTI_EVDO_Connection_Drop"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x301B" Name="Common_SP_ID_CDMA_Soft_Handover">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30030" Name="ET_CDMA_Soft_Handover_Request"/>
+      <Event Code="0x30031" Name="ET_CDMA_Soft_Handover_Success"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51060" Name="ET_CTI_Soft_Handoff_Attempt"/>
+      <Event Code="0x51061" Name="ET_CTI_Soft_Handoff_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30032" Name="ET_CDMA_Soft_Handover_Failure"/>
+      <Event Code="0x51062" Name="ET_CTI_Soft_Handoff_Fail"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x301C" Name="Common_SP_ID_TD_Hard_Handover">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30073" Name="ET_TD_Hard_Handover_Request"/>
+      <Event Code="0x30074" Name="ET_TD_Hard_Handover_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30075" Name="ET_TD_Hard_Handover_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x301D" Name="Common_SP_ID_Handover_To_TD">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30083" Name="ET_Handover_To_TD_Request"/>
+      <Event Code="0x30084" Name="ET_Handover_To_TD_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30085" Name="ET_Handover_To_TD_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x301E" Name="Common_SP_ID_Handover_From_TD">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300B3" Name="ET_Handover_From_TD_Request"/>
+      <Event Code="0x300B4" Name="ET_Handover_From_TD_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x300B5" Name="ET_Handover_From_TD_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x301F" Name="Common_SP_ID_PS_Handover_From_TD">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300C3" Name="ET_PS_Handover_From_TD_Request"/>
+      <Event Code="0x300C4" Name="ET_PS_Handover_From_TD_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x300C5" Name="ET_PS_Handover_From_TD_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3020" Name="Common_SP_ID_PS_Handover_To_TD">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300D3" Name="ET_PS_Handover_To_TD_Request"/>
+      <Event Code="0x300D4" Name="ET_PS_Handover_To_TD_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x300D5" Name="ET_PS_Handover_To_TD_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3021" Name="Common_SP_ID_Inter_CellReselect_TD_To_GSM">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30098" Name="ET_Inter_CellReselect_TD_To_GSM_Request"/>
+      <Event Code="0x30099" Name="ET_Inter_CellReselect_TD_To_GSM_Complete"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3022" Name="Common_SP_ID_Intra_TD_CellReselect">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x3009A" Name="ET_Intra_TD_CellReselect"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3023" Name="Common_SP_ID_Inter_CellReselect_GSM_To_TD">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x3009B" Name="ET_Inter_CellReselect_GSM_To_TD_Request"/>
+      <Event Code="0x3009C" Name="ET_Inter_CellReselect_GSM_To_TD_Complete"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3024" Name="Common_SP_ID_WCDMA_MTPaging">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30120" Name="ET_WCDMA_PagingRequest"/>
+      <Event Code="0x30121" Name="ET_WCDMA_PagingSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30122" Name="ET_WCDMA_PagingFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3025" Name="Common_SP_ID_Inter_CellReselect_WCDMA_To_LTE">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300A5" Name="ET_Inter_CellReselect_WCDMA_To_LTE_Request"/>
+      <Event Code="0x300A6" Name="ET_Inter_CellReselect_WCDMA_To_LTE_Complete"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x300AE" Name="ET_Inter_CellReselect_WCDMA_To_LTE_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3026" Name="Common_SP_ID_Inter_CellReselect_LTE_To_WCDMA">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300A3" Name="ET_Inter_CellReselect_LTE_To_WCDMA_Request"/>
+      <Event Code="0x300A4" Name="ET_Inter_CellReselect_LTE_To_WCDMA_Complete"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x300AD" Name="ET_Inter_CellReselect_LTE_To_WCDMA_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3027" Name="Common_SP_ID_Terminal_CellReselect_TD_To_LTE">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300A9" Name="ET_Terminal_TDtoLTE_CellReselectionStart"/>
+      <Event Code="0x300AA" Name="ET_Terminal_TDtoLTE_CellReselectionSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x300AC" Name="ET_Terminal_TDtoLTE_CellReselectionFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3028" Name="Common_SP_ID_Terminal_CellReselect_LTE_To_TD">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300A7" Name="ET_Terminal_LTEtoTD_CellReselectionStart"/>
+      <Event Code="0x300A8" Name="ET_Terminal_LTEtoTD_CellReselectionSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x300AB" Name="ET_Terminal_LTEtoTD_CellReselectionFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3029" Name="Common_SP_ID_Inter_Research_WCDMA_To_LTE">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300F2" Name="ET_Inter_Research_WCDMA_To_LTE_Request"/>
+      <Event Code="0x300F3" Name="ET_Inter_Research_WCDMA_To_LTE_Complete"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x302A" Name="Common_SP_ID_Inter_Research_LTE_To_WCDMA">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300F0" Name="ET_Inter_Research_LTE_To_WCDMA_Request"/>
+      <Event Code="0x300F1" Name="ET_Inter_Research_LTE_To_WCDMA_Complete"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x302B" Name="Common_SP_ID_Inter_Research_TD_To_LTE">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300F6" Name="ET_Inter_Research_TD_To_LTE_Request"/>
+      <Event Code="0x300F7" Name="ET_Inter_Research_TD_To_LTE_Complete"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x302C" Name="Common_SP_ID_Inter_Research_LTE_To_TD">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300F4" Name="ET_Inter_Research_LTE_To_TD_Request"/>
+      <Event Code="0x300F5" Name="ET_Inter_Research_LTE_To_TD_Complete"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x302D" Name="Common_SP_ID_LTE_Handover_To_WCDMA">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30100" Name="ET_LTE_Handover_To_WCDMA_Request"/>
+      <Event Code="0x30101" Name="ET_LTE_Handover_To_WCDMA_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30102" Name="ET_LTE_Handover_To_WCDMA_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x302E" Name="Common_SP_ID_LTE_Handover_To_TD">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30103" Name="ET_LTE_Handover_To_TD_Request"/>
+      <Event Code="0x30104" Name="ET_LTE_Handover_To_TD_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30105" Name="ET_LTE_Handover_To_TD_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x302F" Name="Common_SP_ID_GSM_IntraCell_Handover">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30003" Name="ET_GSM_IntraCell_Handover_Request"/>
+      <Event Code="0x30004" Name="ET_GSM_IntraCell_Handover_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30005" Name="ET_GSM_IntraCell_Handover_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3030" Name="Common_SP_ID_Inter_CellReselect_GSM_To_LTE">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300E0" Name="ET_Inter_CellReselect_GSM_To_LTE_Request"/>
+      <Event Code="0x300E1" Name="ET_Inter_CellReselect_GSM_To_LTE_Complete"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x300E2" Name="ET_Inter_CellReselect_GSM_To_LTE_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3031" Name="Common_SP_ID_Inter_CellReselect_LTE_To_GSM">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300E3" Name="ET_Inter_CellReselect_LTE_To_GSM_Request"/>
+      <Event Code="0x300E4" Name="ET_Inter_CellReselect_LTE_To_GSM_Complete"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x300E5" Name="ET_Inter_CellReselect_LTE_To_GSM_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3032" Name="Common_SP_ID_Terminal_CellReselect_GSM_To_LTE">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20300" Name="ET_Terminal_GSMToLTEReselectionStart"/>
+      <Event Code="0x20301" Name="ET_Terminal_GSMToLTEReselectionSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20302" Name="ET_Terminal_GSMToLTEReselectionFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3033" Name="Common_SP_ID_Terminal_CellReselect_LTE_To_GSM">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20303" Name="ET_Terminal_LTEToGSMReselectionStart"/>
+      <Event Code="0x20304" Name="ET_Terminal_LTEToGSMReselectionSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20305" Name="ET_Terminal_LTEToGSMReselectionFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3034" Name="Common_SP_ID_PSToCS_Handover_To_GSM">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300B6" Name="ET_PSToCS_Handover_To_GSM_Request"/>
+      <Event Code="0x300B7" Name="ET_PSToCS_Handover_To_GSM_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x300B8" Name="ET_PSToCS_Handover_To_GSM_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3035" Name="Common_SP_ID_Terminal_CellReselect_EVDO_To_LTE">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30403" Name="ET_Terminal_EVDOtoLTE_CellReselectionStart"/>
+      <Event Code="0x30404" Name="ET_Terminal_EVDOtoLTE_CellReselectionSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30405" Name="ET_Terminal_EVDOtoLTE_CellReselectionFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3036" Name="Common_SP_ID_Terminal_CellReselect_LTE_To_EVDO">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30400" Name="ET_Terminal_LTEtoEVDO_CellReselectionStart"/>
+      <Event Code="0x30401" Name="ET_Terminal_LTEtoEVDO_CellReselectionSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30402" Name="ET_Terminal_LTEtoEVDO_CellReselectionFailed"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3037" Name="Common_SP_ID_Inter_CellReselect_EVDO_To_LTE">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300E6" Name="ET_Inter_CellReselect_EVDO_To_LTE_Request"/>
+      <Event Code="0x300E7" Name="ET_Inter_CellReselect_EVDO_To_LTE_Complete"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x300E8" Name="ET_Inter_CellReselect_EVDO_To_LTE_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3038" Name="Common_SP_ID_Inter_CellReselect_LTE_To_EVDO_TeleCom">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300E9" Name="ET_Inter_CellReselect_LTE_To_EVDO_Request_TeleCom"/>
+      <Event Code="0x300EA" Name="ET_Inter_CellReselect_LTE_To_EVDO_Complete_TeleCom"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x300EB" Name="ET_Inter_CellReselect_LTE_To_EVDO_Failure_TeleCom"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3039" Name="Common_SP_ID_Inter_CellReselect_LTE_To_EVDO">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300EC" Name="ET_Inter_CellReselect_LTE_To_EVDO_Request"/>
+      <Event Code="0x300ED" Name="ET_Inter_CellReselect_LTE_To_EVDO_Complete"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x300EE" Name="ET_Inter_CellReselect_LTE_To_EVDO_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x303B" Name="Common_SP_ID_Inter_CellReselect_TD_To_LTE">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x303ED" Name="ET_Inter_CellReselect_TD_To_LTE_Request"/>
+      <Event Code="0x303EE" Name="ET_Inter_CellReselect_TD_To_LTE_Complete"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x303EF" Name="ET_Inter_CellReselect_TD_To_LTE_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x303C" Name="Common_SP_ID_Inter_CellReselect_LTE_To_TD">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x303EA" Name="ET_Inter_CellReselect_LTE_To_TD_Request"/>
+      <Event Code="0x303EB" Name="ET_Inter_CellReselect_LTE_To_TD_Complete"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x303EC" Name="ET_Inter_CellReselect_LTE_To_TD_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3050" Name="Common_SP_ID_QChatInCall">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30210" Name="ET_QChatInCallAttempt"/>
+      <Event Code="0x30211" Name="ET_QChatInCallSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x51412" Name="ET_CTI_QChatInCallAttempt"/>
+      <Event Code="0x51413" Name="ET_CTI_QChatInCallSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30212" Name="ET_QChatInCallFailure"/>
+      <Event Code="0x51414" Name="ET_CTI_QChatInCallFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3051" Name="Common_SP_ID_QChatStream1">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20080" Name="ET_QChatStream1Request"/>
+      <Event Code="0x20081" Name="ET_QChatStream1Accept"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20082" Name="ET_QChatStream1Reject"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3052" Name="Common_SP_ID_QChatStream2">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20083" Name="ET_QChatStream2Request"/>
+      <Event Code="0x20084" Name="ET_QChatStream2Accept"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20085" Name="ET_QChatStream2Reject"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3053" Name="Common_SP_ID_QChatStream3">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x20086" Name="ET_QChatStream3Request"/>
+      <Event Code="0x20087" Name="ET_QChatStream3Accept"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x20088" Name="ET_QChatStream3Reject"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3100" Name="Common_SP_ID_LTEHandover">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30300" Name="ET_LTEHandoverRequest"/>
+      <Event Code="0x30301" Name="ET_LTEHandoverSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30302" Name="ET_LTEHandoverFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3101" Name="Common_SP_ID_LTEPaging">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30306" Name="ET_LTEPagingRequest"/>
+      <Event Code="0x30307" Name="ET_LTEPagingSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30308" Name="ET_LTEPagingFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3102" Name="Common_SP_ID_LTEAccess">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30309" Name="ET_LTEAccessRequest"/>
+      <Event Code="0x3030A" Name="ET_LTEAccessSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x3030B" Name="ET_LTEAccessFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3104" Name="Common_SP_ID_Intra_TDDLTE_CellReselect">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x3009D" Name="ET_Intra_TDDLTE_CellReselect"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3105" Name="Common_SP_ID_LTEService">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30316" Name="ET_LTE_ServiceRequest"/>
+      <Event Code="0x30317" Name="ET_LTE_ServiceSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30334" Name="ET_LTE_ServiceFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3106" Name="Common_SP_ID_ReturnToLTE">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30324" Name="ET_ReturnToLTE_Request"/>
+      <Event Code="0x30325" Name="ET_ReturnToLTE_Complete"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x3032C" Name="ET_ReturnToLTE_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3107" Name="Common_SP_ID_LTEERABService">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30326" Name="ET_LTE_ERAB_Request"/>
+      <Event Code="0x30327" Name="ET_LTE_ERAB_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30328" Name="ET_LTE_ERAB_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3108" Name="Common_SP_ID_LTESIPRegister">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30329" Name="ET_LTE_SIPRegister_Request"/>
+      <Event Code="0x3032A" Name="ET_LTE_SIPRegister_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x3032B" Name="ET_LTE_SIPRegister_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3109" Name="Common_SP_ID_LTERedirectionToCDMA">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30335" Name="ET_LTE_RedirectionToCDMA2000_HRPD_RRCRelease"/>
+      <Event Code="0x30336" Name="ET_LTE_ToCDMA_HRPD_Coverage"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30339" Name="ET_LTE_ToCDMA_HRPD_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x310A" Name="Common_SP_ID_LTERedirectionToWCDMA">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30340" Name="ET_Redirection_LTEToWCDMA_Request"/>
+      <Event Code="0x30341" Name="ET_Redirection_LTEToWCDMA_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30342" Name="ET_Redirection_LTEToWCDMA_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x310B" Name="Common_SP_ID_LTERedirectionToGSM">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30343" Name="ET_Redirection_LTEToGSM_Request"/>
+      <Event Code="0x30344" Name="ET_Redirection_LTEToGSM_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30345" Name="ET_Redirection_LTEToGSM_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x310C" Name="Common_SP_ID_GSMRedirectionToWCDMA">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30346" Name="ET_Redirection_GSMToWCDMA_Request"/>
+      <Event Code="0x30347" Name="ET_Redirection_GSMToWCDMA_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30348" Name="ET_Redirection_GSMToWCDMA_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x310D" Name="Common_SP_ID_GSMRedirectionToLTE">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30349" Name="ET_Redirection_GSMToLTE_Request"/>
+      <Event Code="0x3034A" Name="ET_Redirection_GSMToLTE_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x3034B" Name="ET_Redirection_GSMToLTE_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x310E" Name="Common_SP_ID_WCDMARedirectionToGSM">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x3034C" Name="ET_Redirection_WCDMAToGSM_Request"/>
+      <Event Code="0x3034D" Name="ET_Redirection_WCDMAToGSM_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x3034E" Name="ET_Redirection_WCDMAToGSM_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x310F" Name="Common_SP_ID_WCDMARedirectionToLTE">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x3034F" Name="ET_Redirection_WCDMAToLTE_Request"/>
+      <Event Code="0x30350" Name="ET_Redirection_WCDMAToLTE_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30351" Name="ET_Redirection_WCDMAToLTE_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3110" Name="Common_SP_ID_LTERedirectionToTDSCDMA">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30352" Name="ET_Redirection_LTEToTDSCDMA_Request"/>
+      <Event Code="0x30353" Name="ET_Redirection_LTEToTDSCDMA_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30354" Name="ET_Redirection_LTEToTDSCDMA_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3111" Name="Common_SP_ID_TDSCDMARedirectionToLTE">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30355" Name="ET_Redirection_TDSCDMAToLTE_Request"/>
+      <Event Code="0x30356" Name="ET_Redirection_TDSCDMAToLTE_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30357" Name="ET_Redirection_TDSCDMAToLTE_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3112" Name="Common_SP_ID_GSMRedirectionToTDSCDMA">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30358" Name="ET_Redirection_GSMToTDSCDMA_Request"/>
+      <Event Code="0x30359" Name="ET_Redirection_GSMToTDSCDMA_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x3035A" Name="ET_Redirection_GSMToTDSCDMA_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3113" Name="Common_SP_ID_TDSCDMARedirectionToGSM">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x3035B" Name="ET_Redirection_TDSCDMAToGSM_Request"/>
+      <Event Code="0x3035C" Name="ET_Redirection_TDSCDMAToGSM_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x3035D" Name="ET_Redirection_TDSCDMAToGSM_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3114" Name="Common_SP_ID_LTEIntraRedirection">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x3035E" Name="ET_IntraRedirection_LTE_Request"/>
+      <Event Code="0x3035F" Name="ET_IntraRedirection_LTE_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30360" Name="ET_IntraRedirection_LTE_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3115" Name="Common_SP_ID_LTESIPUnRegister">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30361" Name="ET_LTE_SIPUnRegister_Request"/>
+      <Event Code="0x30362" Name="ET_LTE_SIPUnRegister_Success"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30363" Name="ET_LTE_SIPUnRegister_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3116" Name="Common_SP_ID_LTESCellConfiguration">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x30303" Name="ET_LTESCellConfigurationRequest"/>
+      <Event Code="0x30304" Name="ET_LTESCellConfigurationSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x30305" Name="ET_LTESCellConfigurationFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3117" Name="Common_SP_ID_Intra_NBIot_CellReselect">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x300BA" Name="ET_Intra_NBIot_CellReselect_Start"/>
+      <Event Code="0x300B9" Name="ET_Intra_NBIot_CellReselect"/>
+    </EventTable>
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x81012" Name="ET_ECTI_CREL"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x300BB" Name="ET_Intra_NBIot_CellReselect_Failure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3300" Name="Common_SP_ID_5GNR_CellPrach">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x3100F" Name="ET_5GNR_CellPrachRequest"/>
+      <Event Code="0x31010" Name="ET_5GNR_CellPrachSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x31011" Name="ET_5GNR_CellPrachFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3301" Name="Common_SP_ID_5GNR_ENDCHandover">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x31016" Name="ET_ENDCHandoverRequest"/>
+      <Event Code="0x31017" Name="ET_ENDCHandoverSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x31018" Name="ET_ENDCHandoverFailure"/>
+    </EventTable>
+  </SP>
+  <SP Code="0x3302" Name="Common_SP_ID_5GNR_SNChange">
+    <EventTable Code="0x0001" Name="SelfSPEventDefine">
+      <Event Code="0x31019" Name="ET_SNChangeRequest"/>
+      <Event Code="0x3101A" Name="ET_SNChangeSuccess"/>
+    </EventTable>
+    <EventTable Code="0x0002" Name="SelfErrorEventDefine">
+      <Event Code="0x3101B" Name="ET_SNChangeFailure"/>
+    </EventTable>
+  </SP>
+</DataSet_SP>

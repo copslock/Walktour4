@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color" >
+
+    <LinearLayout
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dip"
+        android:background="@drawable/base_list_item_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/setting_sort_title"
+            android:text="@string/act_message_filter_setting"
+            android:textColor="@color/app_main_text_color" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/setting_sort_title_bgcolor" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/setting_sort_title"
+            android:text=""
+            android:textColor="@color/app_main_text_color" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/setting_sort_title_bgcolor" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/message_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/top_title"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="2dip"
+        android:orientation="vertical" >
+    </ListView>
+
+</RelativeLayout>

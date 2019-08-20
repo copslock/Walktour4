@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout   
+    android:layout_width="fill_parent"   
+    android:layout_height="fill_parent" 
+    xmlns:android="http://schemas.android.com/apk/res/android">  
+    
+    <LinearLayout
+     	android:layout_width="fill_parent"   
+    	android:layout_height="fill_parent" 
+    	android:orientation="vertical"
+    	android:background="@color/app_main_bg_color"
+    	>
+        
+    
+    <include layout="@layout/basic_title" android:id="@+id/task_ftp_title"/>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@color/setting_sort_title_bgcolor" android:visibility="gone"/>
+    	
+    <LinearLayout
+    android:id="@+id/RelativeLayout01"   
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"
+    android:minHeight="35dip"   
+    android:paddingLeft="12dip" 
+    android:gravity="center_vertical"
+    android:background="@color/base_second_title_bg"  
+    android:visibility="gone"
+    android:weightSum="5"
+>  
+    
+ <TextView  android:id="@+id/ItemTime"  
+    android:text="@string/str_time"  
+    android:layout_height="wrap_content"   
+    android:layout_width="fill_parent" 
+    android:singleLine="true"
+    android:textSize="@dimen/app_second_title_txt_size"
+    android:paddingLeft="15dip"
+    android:layout_weight="1.9"
+    android:textColor="@color/app_main_text_color" 
+/> 
+     
+<TextView  android:id="@+id/taskType"
+    android:text="@string/csfb_faild_type_str"  
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+    android:singleLine="true"
+	android:textSize="@dimen/app_second_title_txt_size"
+    android:layout_weight="2"
+    android:gravity="center"
+    android:textColor="@color/app_main_text_color" 
+/> 
+
+
+<TextView  android:id="@+id/errDetail"  
+    android:text="@string/csfb_faild_reasion"  
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+	android:layout_weight="1.1"
+	android:textSize="@dimen/app_second_title_txt_size"
+    android:gravity="right"
+    android:paddingRight="40dip"
+    android:singleLine="true"
+    android:textColor="@color/app_main_text_color" 
+/> 
+
+    
+</LinearLayout>
+    
+    
+		<!-- 文件列表-->		    
+		<ListView android:id="@+id/ListView01" 
+			  android:layout_width="fill_parent"   
+	          android:layout_height="fill_parent"  
+	          android:divider="@drawable/list_divider"
+	          android:background="@color/app_main_bg_color"
+	          android:fadingEdge="none"
+	          android:fastScrollEnabled="true"
+	          android:cacheColorHint="#00000000"
+         />  
+         
+		 </LinearLayout>   
+		
+		<TextView 
+		    android:visibility="gone"
+		    android:id="@+id/select_data"
+		     android:background="@drawable/csfb_state_button_shape" 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"		    
+		    android:text="@string/csfb_faild_selectfile"
+		    android:textColor="@color/app_main_text_color"
+			android:textSize="@dimen/app_second_title_txt_size"
+		    android:padding="10dip"
+		    android:drawableRight="@drawable/gallery_bg_right"
+		    android:drawablePadding="10dip"
+		    android:layout_marginBottom="15dip"
+		    android:layout_marginRight="15dip"
+		    />
+		
+		         
+</RelativeLayout> 

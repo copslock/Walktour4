@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/floor_check"
+        style="@style/setting_sort_left_text_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_main_bg_color"
+        android:layout_marginLeft="0dp"
+        android:button="@null"
+        android:drawableRight="@drawable/menu_item_check"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:checked="true"
+        android:text="红星影院" />
+

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_main_color"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="@dimen/btn_width_ul"
+            android:layout_height="@dimen/btn_height_ul"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_c3_radius_selector"
+            android:gravity="center"
+            android:text="NR"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:text="MAX: 1211.00"
+                android:id="@+id/nr_max"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="0dp" />
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:text="Mean: 1028.29"
+                android:id="@+id/nr_mean"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="0dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="@dimen/btn_width_ul"
+            android:layout_height="@dimen/btn_height_ul"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_baby_yellow_radius_selector"
+            android:gravity="center"
+            android:text="LTE"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:text="MAX: 1211.00"
+                android:id="@+id/lte_max"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="0dp" />
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:text="Mean: 1028.29"
+                android:id="@+id/lte_mean"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:drawableLeft="@drawable/icon_dl"
+            android:gravity="center"
+            android:text="DL"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:drawableLeft="@drawable/icon_ul"
+            android:gravity="center"
+            android:text="UL"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:drawableLeft="@drawable/icon_dl"
+            android:gravity="center"
+            android:text="DL"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:drawableLeft="@drawable/icon_ul"
+            android:gravity="center"
+            android:text="UL"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!--PDCP-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:text="PDCP"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/btn_baby_blue_radius_selector"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/pdcp_nr_dl"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:text="11228.21"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/pdcp_nr_ul"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:text="11228.21"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/pdcp_lte_dl"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:text="11228.21"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/pdcp_lte_ul"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:text="11228.21"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <!--RLC-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:text="RLC"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/btn_baby_blue_radius_selector"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:textSize="16sp" />
+        <TextView
+             android:id="@+id/rlc_nr_dl"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:text="11228.21"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+             android:id="@+id/rlc_nr_ul"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:text="11228.21"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+        <TextView
+             android:id="@+id/rlc_lte_dl"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:text="11228.21"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+        <TextView
+             android:id="@+id/rlc_lte_ul"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:text="11228.21"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <!--MAC-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:text="MAC"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/btn_baby_blue_radius_selector"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:textSize="16sp" />
+        <TextView
+             android:id="@+id/mac_nr_dl"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:text="11228.21"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+             android:id="@+id/mac_nr_ul"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:text="11228.21"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+        <TextView
+             android:id="@+id/mac_lte_dl"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:text="11228.21"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+        <TextView
+             android:id="@+id/mac_lte_ul"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:text="11228.21"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <!--PHY-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:text="PHY"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/btn_baby_blue_radius_selector"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:textSize="16sp" />
+        <TextView
+             android:id="@+id/phy_nr_dl"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:text="11228.21"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+             android:id="@+id/phy_nr_ul"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:text="11228.21"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+        <TextView
+             android:id="@+id/phy_lte_dl"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:text="11228.21"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+        <TextView
+             android:id="@+id/phy_lte_ul"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_ul"
+            android:gravity="center"
+            android:text="11228.21"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/task_attach_title"
+        layout="@layout/basic_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/title_layout"
+        android:background="@color/setting_sort_title_bgcolor" 
+        android:visibility="gone"/>
+    
+
+        <com.walktour.framework.view.HeadListView
+            android:id="@+id/show_kpi_setting_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/app_main_bg_color"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/list_divider"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+             />
+
+</LinearLayout>

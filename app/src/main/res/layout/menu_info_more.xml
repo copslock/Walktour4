@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dip"
+        android:background="@drawable/app_main_shape"
+        android:orientation="vertical"
+        android:padding="1dp">
+
+        <TextView
+            android:id="@+id/txt_params_setting"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/base_list_item_bg"
+            android:gravity="center"
+            android:text="@string/sys_map_parameter_setting"
+            android:textColor="@color/app_main_text_color"
+            android:textSize="@dimen/app_content_txt_size" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/list_divider" />
+
+        <TextView
+            android:id="@+id/txt_tab"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/base_list_item_bg"
+            android:gravity="center"
+            android:text="@string/str_tag"
+            android:textColor="@color/app_main_text_color"
+            android:textSize="@dimen/app_content_txt_size" />
+
+        <!-- 事件menu -->
+        <LinearLayout
+            android:id="@+id/ll_event_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@drawable/list_divider" />
+
+            <TextView
+                android:id="@+id/txt_search"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/base_list_item_bg"
+                android:gravity="center"
+                android:text="@string/fleet_eventsearch"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@drawable/list_divider" />
+
+            <TextView
+                android:id="@+id/txt_clear_text"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/base_list_item_bg"
+                android:gravity="center"
+                android:text="@string/fleet_clearEvent"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@drawable/list_divider" />
+
+            <TextView
+                android:id="@+id/txt_save"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/base_list_item_bg"
+                android:gravity="center"
+                android:text="@string/str_save"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+
+
+            <TextView
+                android:id="@+id/txt_add_label"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/base_list_item_bg"
+                android:gravity="center"
+                android:text="@string/info_add_label"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@drawable/list_divider" />
+
+            <TextView
+                android:id="@+id/txt_fleet_complain"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/base_list_item_bg"
+                android:gravity="center"
+                android:text="@string/complain_title"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@drawable/list_divider" />
+
+            <TextView
+                android:id="@+id/txt_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/base_list_item_bg"
+                android:gravity="center"
+                android:text="@string/str_setting"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+        </LinearLayout>
+        <!-- 信令menu -->
+        <LinearLayout
+            android:id="@+id/ll_l3msg_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@drawable/list_divider" />
+
+            <TextView
+                android:id="@+id/tv_msg_search"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/base_list_item_bg"
+                android:gravity="center"
+                android:text="@string/str_sreach"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@drawable/list_divider" />
+
+            <TextView
+                android:id="@+id/tv_msg_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/base_list_item_bg"
+                android:gravity="center"
+                android:text="@string/str_setting"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@drawable/list_divider" />
+
+            <TextView
+                android:id="@+id/tv_refresh_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/base_list_item_bg"
+                android:gravity="center"
+                android:text="@string/l3msg_refresh"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@drawable/list_divider" />
+
+            <TextView
+                android:id="@+id/tv_save_msg_list"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/base_list_item_bg"
+                android:gravity="center"
+                android:text="@string/str_save"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

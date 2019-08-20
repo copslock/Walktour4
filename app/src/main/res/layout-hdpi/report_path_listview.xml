@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color" >
+
+    <include
+        android:id="@+id/report_tempL_title"
+        layout="@layout/basic_title" />
+
+    <!-- 文件列表 -->
+
+    <ListView
+        android:id="@+id/report_path_listview_id"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/report_tempL_title"
+        android:layout_marginBottom="58dip"
+        android:background="@color/app_main_bg_color"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/list_divider"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_above="@id/report_path_listview_id"
+        android:background="@color/setting_sort_title_bgcolor" />
+    <!-- 底部工具栏 -->
+
+    <com.walktour.gui.applet.ControlBar
+        android:id="@+id/ControlBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="fill_horizontal" />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+        <!-- start title -->
+    <include
+        layout="@layout/basic_title" />
+ 
+    <!-- end title -->
+        <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:background="@color/app_main_bg_color" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:orientation="vertical" >
+              <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="6dip"
+                android:paddingLeft="11dip"
+                android:paddingRight="9dip"
+                android:paddingTop="6dip" 
+                android:background="#F1F1F1">
+
+                <TextView
+                    android:id="@+id/TextViewParameter"
+                    android:layout_width="135dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:text="@string/sys_map_parameter_setting"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/app_second_title_txt_size" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/SpinnerParameter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dip"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/TextViewParameter"
+                    android:background="@drawable/drop"
+                    android:drawSelectorOnTop="true" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <include layout="@layout/sys_map_param_threshold_view" android:visibility="visible"/>
+        </LinearLayout>
+        
+        </ScrollView>
+</LinearLayout>

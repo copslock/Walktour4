@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 左边图标，右边标题 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="56dip"
+    android:minHeight="56dip"
+    android:background="@drawable/base_list_item_bg"
+>
+
+
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="5dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ItemTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:layout_marginRight="50dip"
+            android:textSize="@dimen/app_content_txt_size" />
+        
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+        	android:layout_marginTop="5dip"
+            >
+            
+            <TextView
+                android:id="@+id/data_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="8dip"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="ll"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_content_txt_size" />
+            
+            <TextView
+                android:id="@+id/data_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="8dip"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="ll"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_content_txt_size" />
+            
+        </LinearLayout>
+
+        
+    </LinearLayout>
+
+    <RadioButton
+        android:id="@+id/item_radio"
+        android:layout_width="45dip"
+        android:layout_height="wrap_content"
+        android:button="@drawable/radio"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:clickable="false"
+        android:focusable="false" />
+
+</RelativeLayout>

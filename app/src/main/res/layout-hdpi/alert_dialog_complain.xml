@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <CheckBox
+            android:id="@+id/complain_singlePass_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/complain_singlePass"
+            android:textColor="@color/app_main_text_color" />
+
+        <CheckBox
+            android:id="@+id/complain_mute_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/complain_mute"
+            android:textColor="@color/app_main_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <CheckBox
+            android:id="@+id/complain_noise_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/complain_noise"
+            android:textColor="@color/app_main_text_color" />
+
+        <CheckBox
+            android:id="@+id/complain_echo_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/complain_echo"
+            android:textColor="@color/app_main_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <CheckBox
+            android:id="@+id/complain_crossTalk_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/complain_crossTalk"
+            android:textColor="@color/app_main_text_color" />
+
+        <CheckBox
+            android:id="@+id/complain_volumeSmall_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/complain_volumeSmall"
+            android:textColor="@color/app_main_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <CheckBox
+            android:id="@+id/complain_voiceInterruption_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/complain_voiceInterruption"
+            android:textColor="@color/app_main_text_color" />
+
+        <CheckBox
+            android:id="@+id/complain_voiceVague_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/complain_voiceVague"
+            android:textColor="@color/app_main_text_color" />
+    </LinearLayout>
+
+</LinearLayout>

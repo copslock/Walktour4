@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout01" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    > 
+    
+    <include layout="@layout/basic_title" android:id="@+id/title_layout"/>
+    
+		<ListView android:layout_width="fill_parent"   
+	        android:layout_height="fill_parent"   
+	        android:layout_marginBottom="56dip"
+	        android:background="@color/app_main_bg_color"
+	        android:id="@+id/ListView01"  
+	        android:divider="@drawable/list_divider"
+	        android:cacheColorHint="#00000000"
+	        android:fadingEdge="none"
+	        android:layout_below="@+id/title_layout"
+	      />
+		
+		
+			           
+	  	    <LinearLayout android:id="@+id/LineraLayout01"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom" 
+	        android:background="@color/white"
+	        android:orientation="horizontal"
+	        android:weightSum="1"
+	        android:layout_alignParentBottom="true"
+	        >
+	        		
+	        		<!-- 返回 -->
+			        <LinearLayout android:id="@+id/back"
+			        			android:layout_height="fill_parent"
+			        			android:layout_width="64dip"
+					       		android:layout_weight="0.25"
+					       		android:layout_margin="5dip"
+					       		android:background="@drawable/background_toolbar_item"
+					       		android:orientation="vertical"
+			        			android:gravity="center"
+			        		>
+								
+						<ImageView
+							android:src="@drawable/controlbar_backward"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+						/>
+							        			
+				       	<TextView android:id="@+id/TextView00"
+				       		android:layout_width="wrap_content"
+				       		android:layout_height="wrap_content"
+				       		android:text="@string/str_return"
+				       		android:textColor="@color/app_main_text_color"
+
+							android:textSize="@dimen/app_content_txt_size"
+				       	/>
+			       	
+			       	</LinearLayout>
+	        		
+	        		<!-- 添加到任务 -->
+	        		<LinearLayout android:id="@+id/addToTask"
+	        			android:layout_height="fill_parent"
+	        			android:layout_width="64dip"
+	        			android:layout_weight="0.25"
+					       		android:layout_margin="5dip"
+			       		android:background="@drawable/background_toolbar_item"
+			       		android:orientation="vertical"
+	        			android:gravity="center"
+	        		>
+						
+						<ImageView
+							android:src="@drawable/controlbar_addto"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+						/>
+							        			
+				       	<TextView android:id="@+id/TextView01"
+				       		android:layout_width="wrap_content"
+				       		android:layout_height="wrap_content"
+				       		android:text="@string/task_addToTask"
+				       		android:textColor="@color/app_main_text_color"
+				       		android:textSize="@dimen/app_content_txt_size"
+				       	/>
+			       	
+			       	</LinearLayout>
+			       	
+			       	<!-- 删除 -->
+			       	<LinearLayout android:id="@+id/delHisTask"
+	        			android:layout_height="fill_parent"
+	        			android:layout_width="64dip"
+	        			android:layout_weight="0.25"
+					       		android:layout_margin="5dip"
+			       		android:background="@drawable/background_toolbar_item"
+			       		android:orientation="vertical"
+	        			android:gravity="center"
+	        		>
+						
+						<ImageView
+							android:src="@drawable/controlbar_delete"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+						/>
+							        			
+				       	<TextView android:id="@+id/TextView02"
+				       		android:layout_width="wrap_content"
+				       		android:layout_height="wrap_content"
+				       		android:text="@string/task_delHisTask"
+				       		android:textColor="@color/app_main_text_color"
+				       		android:textSize="@dimen/app_content_txt_size"
+				       	/>
+			       	
+			       	</LinearLayout>
+			       	
+			       	<!-- 选择全部任务 -->
+		       		<LinearLayout android:id="@+id/selAllTask"
+        			android:layout_height="fill_parent"
+        			android:layout_width="64dip"
+        			android:layout_weight="0.25"
+					       		android:layout_margin="5dip"
+		       		android:background="@drawable/background_toolbar_item"
+		       		android:orientation="vertical"
+        			android:gravity="center"
+	        		>
+						
+						<ImageView
+							android:src="@drawable/controlbar_allcheck"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+						/>
+							        			
+				       	<TextView android:id="@+id/TextView03"
+				       		android:layout_width="wrap_content"
+				       		android:layout_height="wrap_content"
+				       		android:text="@string/task_selAllTask"
+				       		android:textColor="@color/app_main_text_color"
+				       		android:textSize="@dimen/app_content_txt_size"
+				       	/>
+			       	
+			       	</LinearLayout>
+			       	
+
+		 </LinearLayout>
+		 
+	  	    <View
+    	    android:layout_above="@id/LineraLayout01"
+			android:layout_gravity="top"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/app_divier_line_color"
+            />
+</RelativeLayout> 

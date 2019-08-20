@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/setting_bgcolor" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/run_status_title"
+            layout="@layout/basic_title" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/setting_sort_title_bgcolor" />
+
+        <TextView
+            style="@style/setting_sort_title"
+            android:layout_gravity="center_vertical"
+            android:text="@string/total_setting_lte_str" />
+        
+    <RelativeLayout
+        android:id="@+id/rsrp_ral"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/sys_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="RSRP >=" />
+        
+         <TextView
+            android:id="@+id/rsrp_txt"
+            android:text="-85" 
+            style="@style/setting_sort_right_text"/>
+                
+    </RelativeLayout>
+    
+    <View style="@style/setting_divider"/>
+    
+    <RelativeLayout
+        android:id="@+id/sinr_ral"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/sys_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="SINR >=" />
+        
+         <TextView
+             android:id="@+id/sinr_txt"
+            android:text="-20" 
+            style="@style/setting_sort_right_text"/>
+                
+    </RelativeLayout>
+
+
+        
+
+        <TextView
+            style="@style/setting_sort_title"
+            android:text="@string/total_setting_tdscdma_str" />
+        
+            <RelativeLayout
+        android:id="@+id/pcch_ral"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/sys_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="PCCPCH RSCP >=" />
+        
+         <TextView
+             android:id="@+id/pcch_txt"
+            android:text="-94" 
+            style="@style/setting_sort_right_text"/>
+                
+    </RelativeLayout>
+        
+<View style="@style/setting_divider" />
+
+ <RelativeLayout
+        android:id="@+id/ci_ral"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/sys_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="PCCPCH C/I >=" />
+        
+         <TextView
+             android:id="@+id/ci_txt"
+            android:text="-3" 
+            style="@style/setting_sort_right_text"/>
+                
+    </RelativeLayout>
+
+
+        <TextView
+            style="@style/setting_sort_title"
+            android:text="@string/total_setting_gsm_str" />
+        
+        <RelativeLayout
+        android:id="@+id/rxLev_ral"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/sys_item_bg"
+        >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="RxLev>=" />
+        
+         <TextView
+             android:id="@+id/rxLev_txt"
+            android:text="-90" 
+            style="@style/setting_sort_right_text"/>
+                
+    </RelativeLayout>
+    <View style="@style/setting_divider"/>
+    </LinearLayout>
+
+</ScrollView>

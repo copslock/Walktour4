@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport = "true"
+    android:layout_weight = "1">
+
+<RelativeLayout
+ 	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft = "10dip"
+    android:paddingRight = "10dip">
+    
+    	
+	
+	
+<LinearLayout
+android:id = "@+id/linearlayout"
+android:layout_alignParentTop = "true"
+  android:layout_marginTop = "12dip"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation = "vertical"
+ 
+>
+<!--  
+  <LinearLayout 
+	  android:layout_width = "fill_parent"
+	  android:layout_height = "wrap_content">
+		<CheckBox android:id = "@+id/checkOpenindoor"
+		android:textSize = "18sp"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"/>
+		<TextView
+		android:text = "@string/main_indoortest"
+		android:textSize = "18sp"
+		android:layout_marginLeft = "40dip"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content">
+		</TextView>
+  </LinearLayout>
+  -->
+    <!-- 建筑 -->
+  <LinearLayout 
+	  android:layout_width = "fill_parent"
+	  android:layout_height = "wrap_content">
+	  <TextView
+	 	 android:text = "@string/main_building"  
+		android:layout_width = "wrap_content"
+		 android:layout_gravity = "center_vertical"
+		android:textSize = "18sp"
+		android:width = "85dip"
+		android:layout_height = "wrap_content">
+		</TextView>
+	  <com.walktour.framework.ui.BasicSpinner 
+		android:id = "@+id/spinnerBuilding"
+		style="@style/task_drop_view"
+		android:layout_width = "fill_parent"
+		android:layout_height = "wrap_content">
+		</com.walktour.framework.ui.BasicSpinner>
+  </LinearLayout>
+  
+  <!-- 楼层 -->
+  <!--  <LinearLayout 
+	  android:layout_width = "fill_parent"
+	  android:layout_height = "wrap_content"
+	  >
+	  <TextView 
+	  android:text = "@string/main_indoor_f"
+	  android:layout_width = "wrap_content"
+	  android:textSize = "18sp"
+	  android:layout_gravity = "center_vertical"
+	  
+	  android:width = "85dip"
+	  android:layout_height = "wrap_content">
+	  </TextView>
+	<Spinner android:id = "@+id/spinnerFloor"
+	 android:layout_width = "fill_parent"
+	 android:layout_height = "wrap_content">
+	</Spinner>
+  </LinearLayout>-->
+  
+  <!-- 楼层地图以及提示 -->
+ <!-- 	<LinearLayout 
+  	  android:layout_width = "fill_parent"
+	  android:layout_height = "wrap_content"
+	  android:layout_marginTop = "5dip"
+	  android:orientation = "vertical">
+  	
+  
+  	<ImageView android:id = "@+id/imageFloor"
+  	android:layout_width = "wrap_content"
+  	android:layout_height = "wrap_content"
+  	android:layout_gravity = "center_horizontal"
+  	android:adjustViewBounds = "true">
+  	</ImageView>
+  	<TextView android:id = "@+id/textTip"
+  		android:textSize = "16sp"
+  	  android:layout_width = "fill_parent"
+	  android:layout_height = "wrap_content">
+  	
+  	</TextView>
+  		</LinearLayout> -->
+    <LinearLayout
+	  android:layout_width = "fill_parent"
+	  android:layout_height = "wrap_content"
+	  android:layout_marginTop = "7dip"
+	  >
+	  <TextView 
+	  android:text = "@string/main_indoor_testtime"
+	  android:layout_width = "wrap_content"
+	  android:textSize = "18sp"
+	  android:width = "85dip"
+	  android:layout_height = "wrap_content">
+	  </TextView>
+	 <TextView
+	 android:id = "@+id/editTesttime" 
+	 android:textSize = "18sp"
+	 android:layout_width = "fill_parent"
+	 android:layout_height = "wrap_content">
+	 </TextView>
+  </LinearLayout>
+  
+    <LinearLayout
+	  android:layout_width = "fill_parent"
+	  android:layout_height = "wrap_content"
+	  android:layout_marginTop = "7dip"
+	  >
+	  <TextView 
+	  android:text = "@string/main_indoor_testperson"
+	  android:layout_width = "wrap_content"
+	  android:textSize = "18sp"
+	  android:width = "85dip"
+	  android:layout_height = "wrap_content">
+	  </TextView>
+	 <EditText
+	 android:id = "@+id/editTestperson" 
+		 android:textSize = "18sp"
+		 android:focusable = "false"
+		 android:singleLine = "true"
+		 android:layout_width = "fill_parent"
+		 style="@style/task_edit_view">
+	 </EditText>
+  </LinearLayout>
+  <LinearLayout  
+   	  android:layout_width = "fill_parent"
+	  android:layout_height = "wrap_content"
+	  android:layout_marginTop = "7dip"
+	  
+	  android:orientation = "horizontal">
+  		<Button 
+	  	android:id = "@+id/btnCamera"
+	  	android:text = "@string/main_indoor_takephotos"
+	  	android:background="@drawable/dialog_btn"
+	  	android:textColor="@color/white"
+	  	android:layout_width = "wrap_content"
+	  	android:layout_height = "wrap_content">
+  		</Button>
+  		<LinearLayout 
+  			android:layout_width = "fill_parent"
+	  		android:layout_height = "wrap_content"
+	  		android:orientation = "vertical">
+  			<ImageView android:id = "@+id/imageView"
+	  		android:adjustViewBounds = "true"
+	  		android:layout_marginTop = "3dip"
+	  		android:layout_marginLeft = "10dip"
+	  		android:maxHeight = "150dip"
+	  		android:layout_width = "fill_parent"
+	  		android:layout_height = "wrap_content">
+	  		</ImageView>
+	  		<TextView android:id = "@+id/buildTip"
+  			android:layout_width = "wrap_content"
+  			android:layout_height = "wrap_content"
+  			android:layout_marginTop = "5dip"
+  			android:textSize = "18dip"
+  			android:layout_gravity = "center_horizontal"
+  			android:visibility = "gone">
+	  		</TextView>
+  		</LinearLayout>
+  		
+  </LinearLayout>
+ 
+ <View  android:layout_marginTop = "7dip"
+ 		android:layout_width = "fill_parent" 
+ 		android:background = "@drawable/dividerbar" 
+ 		android:layout_height = "3dip"></View>
+  <LinearLayout 
+	  android:layout_width = "fill_parent"
+	  android:layout_height = "wrap_content"
+	  android:layout_marginTop = "2dip">
+		<CheckBox android:id = "@+id/checkOpengps"
+		android:textSize = "18sp"
+		android:button="@drawable/checkbox"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"/>
+		<TextView
+		android:text = "@string/main_indoor_resetgps"
+		android:textSize = "18sp"
+		android:layout_marginLeft = "45dip"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content">
+		</TextView>
+  </LinearLayout>
+  
+  <!-- 经度，纬度 -->
+  <LinearLayout 
+      android:layout_marginTop = "2dip"
+      android:paddingLeft = "3dip"
+	  android:layout_width = "fill_parent"
+	  android:layout_height = "wrap_content"
+	  >
+	  <TextView
+	 	 android:text = "@string/main_indoor_longitude"  
+		android:layout_width = "wrap_content"
+		android:gravity = "center_vertical"
+		android:textSize = "18sp"
+		android:width = "85dip"
+		android:layout_height = "wrap_content">
+		</TextView>
+	  <TextView
+	 android:id = "@+id/editLongitude" 
+	 android:textSize = "18sp"
+	 android:layout_width = "fill_parent"
+	 android:layout_height = "wrap_content">
+	 </TextView>
+  </LinearLayout>
+  
+    <LinearLayout 
+      android:layout_marginTop = "4dip"
+      android:paddingLeft = "3dip"
+	  android:layout_width = "fill_parent"
+	  android:layout_height = "wrap_content"
+	  >
+	  <TextView 
+	  android:text = "@string/main_indoor_latitude"
+	  android:layout_width = "wrap_content"
+	  android:textSize = "18sp"
+	  android:width = "85dip"
+	  android:layout_height = "wrap_content">
+	  </TextView>
+	 <TextView
+	 android:id = "@+id/editLatitude" 
+	 android:textSize = "18sp"
+	 android:layout_width = "fill_parent"
+	 android:layout_height = "wrap_content">
+	 </TextView>
+  </LinearLayout>
+  
+ <!--   <LinearLayout
+  	android:layout_width = "fill_parent"
+  	android:layout_height = "wrap_content"
+  	android:layout_marginTop = "10dip"
+  	android:layout_marginBottom = "10dip">
+  	<TextView android:id = "@+id/textGps" 
+  	android:layout_width = "wrap_content"
+  	android:textSize = "18sp"
+  	android:layout_height = "wrap_content">
+  	</TextView>
+  </LinearLayout>-->
+  
+   
+</LinearLayout>
+
+ 	<LinearLayout
+  	android:layout_width = "fill_parent"
+  	android:layout_height = "fill_parent"
+  	android:layout_alignParentBottom = "true"
+  	android:gravity = "bottom"
+  	android:layout_below = "@id/linearlayout"
+  	android:layout_marginBottom = "8dip"
+  	android:layout_marginTop = "6dip"
+  	android:weightSum = "2">
+	  	<Button android:id = "@+id/btnConfig"
+	  	android:text = "@string/main_indoor_config"
+	  	android:layout_weight = "1"
+	  	android:background="@drawable/dialog_btn"
+	  	android:textColor="@color/white"
+	  	android:layout_width = "fill_parent"
+	  	android:layout_height = "wrap_content">
+	  	</Button>
+	  	<Button android:id = "@+id/btnNext"
+	  	android:text = "@string/str_next"
+	  	android:layout_weight = "1"
+	  	android:background="@drawable/dialog_btn"
+	  	android:textColor="@color/white"
+	  	android:layout_width = "fill_parent"
+	  	android:layout_height = "wrap_content">
+		</Button>
+	</LinearLayout>
+	
+</RelativeLayout>
+</ScrollView>

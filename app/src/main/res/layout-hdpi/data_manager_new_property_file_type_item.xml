@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/file_type_name"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        style="@style/setting_sort_left_text_2"
+        android:textColor="@color/txt_high_light"
+        android:background="#eeeeee"
+        android:layout_marginLeft="0dp"
+        android:padding="10dp"
+        android:text="RCU"
+        />
+    <View style="@style/task_listdivider" />
+        <RelativeLayout
+            style="@style/task_layout_edge"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp" >
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:layout_marginLeft="0dp"
+                android:text="@string/str_file_size" />
+
+            <TextView
+                android:id="@+id/txt_1"
+                style="@style/setting_sort_right_text_2"
+                android:layout_marginRight="0dp"
+                android:maxWidth="200dp"
+                android:text="100k" />
+        </RelativeLayout>
+        <View style="@style/task_listdivider" android:layout_height="5dp"  android:background="@drawable/dashed_shape_gray"/>
+      
+        <RelativeLayout
+            style="@style/task_layout_edge"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp" >
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:layout_marginLeft="0dp"
+                android:text="@string/str_file_path" />
+
+            <TextView
+                android:id="@+id/txt_2"
+                style="@style/setting_sort_right_text_2"
+                android:layout_marginRight="0dp"
+                android:maxWidth="170dp"
+                android:text="/mnt/sdcard/Walktour/data/file/" />
+        </RelativeLayout>
+        <LinearLayout 
+            android:id="@+id/layout_building"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:visibility="gone">
+		    <View android:visibility="visible" style="@style/task_listdivider" android:layout_height="5dp"  android:background="@drawable/dashed_shape_gray"/>
+		        <RelativeLayout
+            
+            style="@style/task_layout_edge"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:visibility="visible" >
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:layout_marginLeft="0dp"
+                android:text="@string/main_building" />
+
+            <TextView
+                android:id="@+id/txt_3"
+                style="@style/setting_sort_right_text_2"
+                android:layout_marginRight="0dp"
+                android:maxWidth="170dp"
+                android:text="鼎利大厦" />
+        </RelativeLayout>
+        <View android:visibility="visible" style="@style/task_listdivider" android:layout_height="5dp"  android:background="@drawable/dashed_shape_gray"/>
+        
+                <RelativeLayout
+            style="@style/task_layout_edge"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp" 
+            android:visibility="visible">
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:layout_marginLeft="0dp"
+                android:text="@string/main_floor" />
+
+            <TextView
+                android:id="@+id/txt_4"
+                style="@style/setting_sort_right_text_2"
+                android:layout_marginRight="0dp"
+                android:maxWidth="200dp"
+                android:text="" />
+        </RelativeLayout>
+		</LinearLayout>
+
+        <View style="@style/task_listdivider" android:layout_height="5dp"  android:background="@drawable/dashed_shape_gray"/>
+        
+                <RelativeLayout
+            style="@style/task_layout_edge"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp" 
+            >
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:layout_marginLeft="0dp"
+                android:text="@string/str_upload_state" />
+
+            <TextView
+                android:id="@+id/txt_5"
+                style="@style/setting_sort_right_text_2"
+                android:layout_marginRight="0dp"
+                android:maxWidth="200dp"
+                android:text="@string/str_unuploaded" />
+        </RelativeLayout>
+        <View android:visibility="gone" style="@style/task_listdivider" android:layout_height="5dp"  android:background="@drawable/dashed_shape_gray"/>
+        
+                <RelativeLayout
+            style="@style/task_layout_edge"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp" 
+            android:visibility="gone">
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:layout_marginLeft="0dp"
+                android:text="测试模式" />
+
+            <TextView
+                android:id="@+id/txt_6"
+                style="@style/setting_sort_right_text_2"
+                android:layout_marginRight="0dp"
+                android:maxWidth="200dp"
+                android:text="DT" />
+        </RelativeLayout>
+        <View style="@style/task_listdivider"/>
+
+</LinearLayout>

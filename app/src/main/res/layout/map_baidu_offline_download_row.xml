@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_list_item_bg" >
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/city_name"
+        style="@style/setting_sort_left_up_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:text=""
+        android:textColor="@color/app_main_text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/map_size"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_toLeftOf="@+id/state"
+        android:layout_toRightOf="@id/city_name"
+        android:gravity="right"
+        android:text=""
+        android:textColor="@color/app_main_text_color"
+        android:textSize="@dimen/app_content_txt_size" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_toLeftOf="@+id/check"
+        android:text=""
+        android:textColor="@color/app_main_text_color"
+        android:textSize="@dimen/app_content_txt_size" />
+
+</RelativeLayout>

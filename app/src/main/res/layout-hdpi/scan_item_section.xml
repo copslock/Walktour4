@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_city_section"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@color/base_second_title_bg"
+  >
+
+    
+    
+    <TextView
+        	android:id="@+id/head_txt"
+            style="@style/setting_level2_title"
+            android:layout_height="25dip"
+            android:textColor="@color/app_main_text_color"
+            android:text="Ftp download" />
+</LinearLayout>

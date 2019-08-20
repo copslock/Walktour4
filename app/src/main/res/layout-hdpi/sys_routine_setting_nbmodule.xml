@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/nb_module_setting" />
+
+        <LinearLayout
+            style="@style/item_layout_white_circle"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/nbmodule_setting_device_type" />
+
+                <Button
+                    android:id="@+id/nbmodule_select_deviname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginRight="10dip"
+                    android:checked="true"
+                    android:text="@string/setting" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/nbmodule_setting_serial_port" />
+
+                <Button
+                    android:id="@+id/nbmodule_select_port"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:checked="true"
+                    android:text="@string/setting" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/nbmodule_setting_at_command_port" />
+
+                <Button
+                    android:id="@+id/nbmodule_select_atport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:checked="true"
+                    android:text="@string/setting" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/nbmodule_setting_device_power_on_off_delay" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/nbmodule_power_on_delay"
+                        style="@style/task_edit_view"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:checked="true"
+                        android:text="60" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text="@string/second"
+                        android:textColor="@color/app_main_text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View style="@style/new_setting_divider" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/nbmodule_setting_device_power_on_off" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/nbmodule_power_on"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:checked="true"
+                        android:text="@string/nbmodule_setting_device_power_on" />
+
+                    <Button
+                        android:id="@+id/nbmodule_power_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:checked="true"
+                        android:text="@string/nbmodule_setting_device_power_off" />
+                </LinearLayout>
+
+                <View style="@style/new_setting_divider" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/nbmodule_setting_device_attach_detach" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/nbmodule_attach"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:checked="true"
+                        android:text="@string/nbmodule_setting_device_attach" />
+
+                    <Button
+                        android:id="@+id/nbmodule_detach"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:checked="true"
+                        android:text="@string/nbmodule_setting_device_detach" />
+                </LinearLayout>
+
+                <View style="@style/new_setting_divider" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nbmodule_remo_scramble_state_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/nbmodule_setting_remo_scramble_state" />
+
+                <Button
+                    android:id="@+id/nbmodule_scramble_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:checked="true"
+                    android:text="Open" />
+
+                <View style="@style/new_setting_divider" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nbmodule_set_apn_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/nbmodule_setting_apn" />
+
+                <Button
+                    android:id="@+id/nbmodule_set_apn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:checked="true"
+                    android:text="---" />
+
+                <View style="@style/new_setting_divider" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nbmodule_set_volte_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/nbmodule_setting_volte" />
+
+                <Button
+                    android:id="@+id/nbmodule_volte_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:checked="true"
+                    android:text="open" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nbmodule_set_psm_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/nbmodule_setting_psm" />
+
+                <Button
+                    android:id="@+id/nbmodule_psm_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:checked="true"
+                    android:text="open" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nbmodule_set_edrx_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/nbmodule_setting_edrx" />
+
+                <Button
+                    android:id="@+id/nbmodule_edrx_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:checked="true"
+                    android:text="open" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/map_popup_normal"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+       >
+       
+        <TextView
+            android:id="@+id/event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:maxWidth="185dp"
+            android:text="title"
+            android:textColor="@color/poi_descr_text"
+            android:textSize="14dp"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:textStyle="bold" >
+        </TextView>
+    <TextView
+        android:id="@+id/event_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="content"
+        android:textSize="12dp"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:textColor="@color/poi_descr_text"
+        android:textStyle="bold" >
+    </TextView>
+        <TextView
+            android:id="@+id/even_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="content"
+            android:textSize="12dp"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingBottom="5dip"
+            android:textColor="@color/poi_descr_text"
+            android:textStyle="bold" >
+        </TextView>
+
+    </LinearLayout>
+
+    

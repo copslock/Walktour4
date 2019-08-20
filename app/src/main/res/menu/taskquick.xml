@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/edittask" android:title="@string/edit" ></item>
+<item android:id="@+id/moveup" android:title="@string/up" ></item>
+<item android:id="@+id/movedown" android:title="@string/down" ></item>
+<item android:id="@+id/movetask" android:title="@string/delete" ></item>
+<item android:id="@+id/moveall" android:title="@string/delete_all" ></item>
+</menu>

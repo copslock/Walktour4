@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<selector xmlns:android="http://schemas.android.com/apk/res/android"> 
+
+<!--测试任务编辑时的保存和取消按键 -->
+	<item android:state_window_focused="false" 
+        android:drawable="@drawable/backlogo1" /> <!-- 默认 -->
+        
+    <item android:state_focused="true" 
+  		android:state_pressed="true" 
+        android:drawable="@drawable/backlogo" /> <!-- 获得焦点按下 -->
+        
+    <item android:state_focused="false" 
+  		android:state_pressed="true" 
+        android:drawable="@drawable/backlogo" /> <!-- 未获得焦点按下 -->
+        
+</selector>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/work_order_fj_message_record"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:visibility="visible" >
+
+    <View
+        style="@style/setting_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/work_order_fj_sub_detail_name" />
+
+        <TextView
+            android:id="@+id/work_order_fj_msg_record_name"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/work_order_fj_sub_detail_phone" />
+
+        <TextView
+            android:id="@+id/work_order_fj_msg_record_phone"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/work_order_fj_job_num" />
+
+        <TextView
+            android:id="@+id/work_order_fj_job_num"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/work_order_fj_customer_confirm" />
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:id="@+id/Spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/drop"
+            android:drawSelectorOnTop="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/work_order_fj_test_time_begin" />
+
+        <EditText
+            android:id="@+id/work_order_fj_test_time_begin"
+            style="@style/task_edit_view"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dip"
+            android:background="@null"
+            android:editable="false"
+            android:maxWidth="200dp"
+            android:singleLine="true"
+            android:textSize="@dimen/normal_txt_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/work_order_fj_test_time_end" />
+
+        <EditText
+            android:id="@+id/work_order_fj_test_time_end"
+            style="@style/task_edit_view"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dip"
+            android:background="@null"
+            android:editable="false"
+            android:maxWidth="200dp"
+            android:singleLine="true"
+            android:textSize="@dimen/normal_txt_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/work_order_fj_sub_detail_lal" />
+
+        <TextView
+            android:id="@+id/work_order_fj_longitude"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dialog_btn"
+            android:text="@string/work_order_fj_sub_get_detail_lal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingTop="2dp"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/work_order_fj_latitude" />
+
+        <TextView
+            android:id="@+id/work_order_fj_latitude"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/work_order_fj_complaint_network_type" />
+
+        <TextView
+            android:id="@+id/work_order_fj_complaint_network_type"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/work_order_fj_real_network_type" />
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:id="@+id/Spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/drop"
+            android:drawSelectorOnTop="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/work_order_fj_phone_network_type" />
+
+        <EditText
+            android:id="@+id/work_order_fj_phone_network_type"
+            style="@style/task_edit_view"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dip"
+            android:gravity="center_vertical"
+            android:maxWidth="110dp"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="@dimen/normal_txt_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/work_order_fj_is_terminals_issue" />
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:id="@+id/Spinner3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/drop"
+            android:drawSelectorOnTop="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/work_order_fj_test_description" />
+
+        <EditText
+            android:id="@+id/work_order_fj_test_description"
+            style="@style/task_edit_view"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dip"
+            android:gravity="center_vertical"
+            android:maxWidth="110dp"
+            android:singleLine="true"
+            android:textSize="@dimen/normal_txt_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/work_order_fj_complaint_confirm" />
+
+        <EditText
+            android:id="@+id/work_order_fj_complaint_confirm"
+            style="@style/task_edit_view"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dip"
+            android:gravity="center_vertical"
+            android:maxWidth="110dp"
+            android:singleLine="true"
+            android:textSize="@dimen/normal_txt_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/work_order_fj_issue_confirm" />
+
+        <EditText
+            android:id="@+id/work_order_fj_issue_confirm"
+            style="@style/task_edit_view"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dip"
+            android:gravity="center_vertical"
+            android:maxWidth="110dp"
+            android:singleLine="true"
+            android:textSize="@dimen/normal_txt_size" />
+    </RelativeLayout>
+
+</LinearLayout>

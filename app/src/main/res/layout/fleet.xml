@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/app_main_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_white_circle">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:text="@string/fleet_autoTest"
+            android:textColor="@color/app_main_color"
+            android:textSize="@dimen/app_second_title_txt_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="33dp">
+
+                <TextView
+                    android:id="@+id/tv_auto_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:text="@string/fleet_autoTest"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/app_content_txt_size" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_auto_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:button="@drawable/walktour_cb_2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/auto_layout_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:text="@string/fleet_set_ip"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/app_content_txt_size" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/auto_layout_height">
+                <EditText
+                    android:id="@+id/tv_server_ip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="14dip"
+                    android:gravity="left"
+                    android:textColor="@color/auto_text_color"
+                    android:textSize="@dimen/app_content_txt_size"
+                    tools:text="192.168.0.1" />
+                <View
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_below="@+id/tv_server_ip"
+                    android:layout_marginTop="8dp"
+                    android:background="#EDEDED"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/auto_layout_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:text="@string/fleet_set_port"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/app_content_txt_size" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/auto_layout_height">
+                <EditText
+                    android:id="@+id/tv_port"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="14dip"
+                    android:gravity="left"
+                    android:textColor="@color/auto_text_color"
+                    android:textSize="@dimen/app_content_txt_size"
+                    tools:text="192.168.0.1" />
+                <View
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_below="@+id/tv_port"
+                    android:layout_marginTop="8dp"
+                    android:background="#EDEDED"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/fleet_set_apn"
+            android:textColor="@color/app_main_color"
+            android:textSize="@dimen/app_second_title_txt_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/auto_layout_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:text="@string/sys_setting_internt"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/app_content_txt_size" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/auto_layout_height">
+                <EditText
+                    android:editable="false"
+                    android:id="@+id/tv_apn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="14dip"
+                    android:gravity="left"
+                    android:textColor="@color/auto_text_color"
+                    android:textSize="@dimen/app_content_txt_size"
+                    tools:text="192.168.0.1" />
+                <View
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_below="@+id/tv_apn"
+                    android:layout_marginTop="8dp"
+                    android:background="#EDEDED"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/auto_layout_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:text="@string/sys_setting_internt_wapAPN"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/app_content_txt_size" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/auto_layout_height">
+                <EditText
+                    android:editable="false"
+                    android:id="@+id/tv_wap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="14dip"
+                    android:gravity="left"
+                    android:textColor="@color/auto_text_color"
+                    android:textSize="@dimen/app_content_txt_size"
+                    tools:text="192.168.0.1" />
+                <View
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_below="@+id/tv_wap"
+                    android:layout_marginTop="8dp"
+                    android:background="#EDEDED"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:paddingLeft="30dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/auto_btn_update_task"
+            android:gravity="center_vertical"
+            android:id="@+id/btn_start"
+            android:layout_width="215dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_blue_radius_selector"
+            android:text="@string/fleet_downloadtask"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_first_title_txt_size"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+</LinearLayout>

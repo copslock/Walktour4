@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TAB 按钮事件样式 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_pressed="true" android:drawable="@drawable/tab_btn_top_select_bg" />
+	<item android:state_selected="true" android:drawable="@drawable/tab_btn_top_select_bg" />
+</selector>

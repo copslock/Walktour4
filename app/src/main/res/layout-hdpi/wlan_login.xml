@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+<!-- 状态 -->
+<!--<ScrollView 
+ 		android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+>
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@drawable/login_bg"
+	    android:orientation="vertical"
+	    android:weightSum="4"
+	    android:id="@+id/scrollview"
+>
+	<!--页面顶部 -->
+	<LinearLayout
+				android:layout_width="fill_parent"	android:layout_height="wrap_content"
+				android:layout_marginLeft="32dip" android:layout_marginRight="32dip"
+				android:layout_weight="1" android:orientation="vertical"
+	>
+			<!-- CMCC logo -->
+			<LinearLayout android:layout_width="fill_parent"	android:layout_height="wrap_content"
+							android:layout_alignParentTop="true"  android:layout_marginTop="12dip"
+							android:gravity="center" android:orientation="horizontal"
+							android:id="@+id/LinerLayout01"
+			>
+				<ImageView android:layout_width="wrap_content"	android:layout_height="wrap_content"
+							android:src="@drawable/cm_logo"
+				/>
+				<ImageView android:layout_width="wrap_content"	android:layout_height="wrap_content"
+							android:src="@drawable/welcome" android:layout_marginLeft="12dip"
+				/>
+			</LinearLayout>
+			
+			<!--状态-->
+			<LinearLayout
+				android:layout_width="fill_parent"	android:layout_height="fill_parent"
+				android:gravity="bottom|center_horizontal" android:orientation="horizontal"
+				android:id="@+id/LinearLayoutTitle" 
+			>
+				<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+				
+						<!--状态图-->
+						<ImageView android:layout_width="wrap_content"	android:layout_height="wrap_content"
+									android:layout_alignParentLeft="true"
+									android:layout_centerVertical="true"
+						   		   android:src="@drawable/status_info" 
+						   		   android:id="@+id/ImageViewInfo"
+						/>
+						
+						<!--标题-->
+						<TextView android:layout_width="wrap_content"	android:layout_height="wrap_content"
+									android:layout_toRightOf="@id/ImageViewInfo"
+									android:layout_marginLeft="8dip"
+									android:text="status" android:textSize="20sp"
+									android:id="@+id/TextViewTitle"
+						/>
+						
+						<!--信号图标 -->
+						<ImageView android:layout_width="wrap_content"	android:layout_height="wrap_content"
+									android:layout_alignParentRight="true"
+									android:layout_alignBottom="@id/TextViewTitle"
+									android:src="@drawable/wifi_1"
+									android:id="@+id/ImageViewWifi" 
+						/>
+						
+						<!--场强 -->
+						<TextView android:layout_width="wrap_content"	android:layout_height="wrap_content"
+									android:id="@+id/TextViewRssi" android:visibility="invisible"
+						/>
+					</RelativeLayout>
+		</LinearLayout>	
+	
+	</LinearLayout>
+	
+	
+	<!--页面中间 -->
+	<RelativeLayout
+				android:id="@+id/RelativeLayout01"
+				android:layout_width="fill_parent"	android:layout_height="wrap_content"
+				 android:layout_marginLeft="32dip" android:layout_marginRight="32dip"
+				android:layout_centerInParent="true" android:layout_weight="1"
+	>
+		
+		<!--状态框 -->
+		<LinearLayout android:layout_width="wrap_content"	android:layout_height="wrap_content"
+					  android:layout_centerInParent="true"
+					  android:orientation="vertical" android:gravity="center|left"
+					  android:background="@drawable/bg_status"
+					  android:id="@+id/LinearLayoutStatus"
+		>
+			<TextView android:layout_width="wrap_content"	android:layout_height="wrap_content"
+					  android:layout_marginLeft="24dip" android:layout_marginRight="24dip"
+					  android:layout_marginBottom="6dip" 
+					  android:textSize="16sp" android:textColor="@color/black"
+					  android:id="@+id/TextViewInfo" 
+			/>
+		</LinearLayout>
+		
+		<!--时间框 -->
+		<LinearLayout android:layout_width="wrap_content"	android:layout_height="wrap_content"
+					  android:layout_centerInParent="true"
+					  android:gravity="center"
+					  android:background="@drawable/bg_time"
+					  android:id="@+id/LinearLayoutTime"
+		>
+			<TextView android:layout_width="wrap_content"	android:layout_height="wrap_content"
+					  android:textSize="48sp" android:textColor="@color/black"
+					  android:id="@+id/TextViewTime"
+			/>
+		</LinearLayout>
+		
+		<!--进度条 -->
+		<LinearLayout android:layout_width="fill_parent"	android:layout_height="wrap_content"
+					  android:layout_above="@id/LinearLayoutStatus"
+				      android:layout_marginLeft="12dip" android:layout_marginRight="12dip"	
+				      android:gravity="center" android:id="@+id/LinerLayoutProgress"
+		>
+				<!--信号图标 -->
+				<ImageView android:id="@+id/ImageViewDot1"  android:layout_width="wrap_content"	android:layout_height="wrap_content" android:src="@drawable/dot_1" />
+				<ImageView android:id="@+id/ImageViewDot2"  android:layout_width="wrap_content"	android:layout_height="wrap_content" android:src="@drawable/dot_1" />
+				<ImageView android:id="@+id/ImageViewDot3"  android:layout_width="wrap_content"	android:layout_height="wrap_content" android:src="@drawable/dot_1" />
+				<ImageView android:id="@+id/ImageViewDot4"  android:layout_width="wrap_content"	android:layout_height="wrap_content" android:src="@drawable/dot_1" />
+				<ImageView android:id="@+id/ImageViewDot5"  android:layout_width="wrap_content"	android:layout_height="wrap_content" android:src="@drawable/dot_1" />
+				<ImageView android:id="@+id/ImageViewDot6"  android:layout_width="wrap_content"	android:layout_height="wrap_content" android:src="@drawable/dot_1" />
+				<ImageView android:id="@+id/ImageViewDot7"  android:layout_width="wrap_content"	android:layout_height="wrap_content" android:src="@drawable/dot_1" />
+				<ImageView android:id="@+id/ImageViewDot8"  android:layout_width="wrap_content"	android:layout_height="wrap_content" android:src="@drawable/dot_1" />
+				
+		</LinearLayout>
+		
+	</RelativeLayout>
+	
+	<!--操作按钮 -->
+	<LinearLayout android:layout_width="fill_parent"	android:layout_height="wrap_content"
+				  android:padding="12dip" android:layout_weight="1"
+				  android:orientation="horizontal" android:gravity="top|center_horizontal"
+				  android:id="@+id/LinearLayoutButton"
+	>
+			<Button android:layout_width="wrap_content"	android:layout_height="wrap_content"
+					android:background="@drawable/manual_btn_login" android:text="@string/offline"
+					android:textSize="20sp"
+					android:id="@+id/btn_offline" 
+			/>
+			<Button android:layout_width="wrap_content"	android:layout_height="wrap_content"
+					android:background="@drawable/manual_btn_login" android:text="@string/login"
+					android:textSize="20sp"
+					android:id="@+id/btn_connect" 
+			/>
+	</LinearLayout>
+	
+	<!-- WebView -->
+	<LinearLayout
+		android:orientation="vertical" android:layout_width="fill_parent" android:id="@+id/WebViewLayout"
+		android:layout_height="0dip" android:layout_below="@id/LinearLayoutButton">
+			<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:id="@+id/TextViewTip"
+			 />
+		<WebView android:id="@+id/WebView" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></WebView>
+		<WebView android:id="@+id/WebView1" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></WebView>
+	</LinearLayout>
+	
+</LinearLayout>
+
+
+
+<!--</ScrollView>-->

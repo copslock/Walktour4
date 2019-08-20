@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- view的各种状态(正常无焦点,焦点,onclick按下、放开等等) -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape>
+            <gradient android:angle="270" android:endColor="@color/light_blue" android:startColor="@color/light_blue" />
+
+            <stroke android:width="0dp" android:color="@color/light_blue" />
+
+            <corners android:radius="2dp" />
+
+            <padding android:bottom="0dp" android:left="10dp" android:right="10dp" android:top="0dp" />
+        </shape></item>
+    <item android:state_focused="true"> <!-- 焦点 -->
+<shape>
+            <gradient android:angle="270" android:endColor="#ffc2b7" android:startColor="#ffc2b7" />
+
+            <stroke android:width="2dp" android:color="#dcdcdc" />
+
+            <corners android:radius="2dp" />
+
+            <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
+        </shape></item>
+    <item> <!-- 无焦点 -->
+<shape>
+            <gradient android:angle="270" android:endColor="@color/app_main_color" android:startColor="@color/app_main_color" />
+
+            <stroke android:width="0dp" android:color="#fad3cf" />
+
+            <corners android:radius="2dp" />
+
+            <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
+        </shape></item>
+
+</selector>

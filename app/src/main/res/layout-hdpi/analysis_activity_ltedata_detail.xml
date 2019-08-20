@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/task_attach_title"
+        layout="@layout/basic_title" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/run_state_shape"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal" >
+	<!-- 
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="速率异常时间:" />
+ 	-->
+                    <TextView
+                        android:id="@+id/lteexception1"
+                        style="@style/fontstyle12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/light_blue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/reasonidsid"
+                        style="@style/fontstyle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/csfb_faild_reasion" />
+
+                    <TextView
+                        android:id="@+id/lteexception2"
+                        style="@style/fontstyle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/light_blue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            style="@style/fontstyle12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EARFCN:" />
+
+                        <TextView
+                            style="@style/fontstyle12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            style="@style/fontstyle12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PCI:" />
+
+                        <TextView
+                            style="@style/fontstyle12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" 
+                    android:layout_marginLeft="4dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            style="@style/fontstyle12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RSRP:" />
+
+                        <TextView
+                            style="@style/fontstyle12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            style="@style/fontstyle12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SINR:" />
+
+                        <TextView
+                            style="@style/fontstyle12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" 
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:layout_marginRight="8dp"
+                            android:textColor="@color/info_param_color" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_gravity="left|center_vertical"
+                android:background="#E5E5E5"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="2"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/keyvalue1"
+                        style="@style/fontstyle14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="left|center_vertical"
+                        android:text="Serving Cell"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="left|center_vertical"
+                        android:text="EARFCN:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/lteexception3"
+                        style="@style/fontstyle12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:gravity="right|center_vertical"
+                        android:layout_marginRight="8dp"
+                        android:text="-"
+                        android:textColor="@color/light_blue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical" 
+                        android:gravity="left|center_vertical"
+                        android:text="PCI:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/lteexception4"
+                        style="@style/fontstyle12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:gravity="right|center_vertical"
+                        android:text="-"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/light_blue" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="left|center_vertical"
+                        android:text="RSRP:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:id="@+id/lteexception5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:gravity="right|center_vertical"
+                        android:layout_marginRight="8dp"
+                        android:text="-"
+                        android:textColor="@color/light_blue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical" 
+                        android:gravity="left|center_vertical"
+                        android:text="SINR:"
+                        style="@style/fontstyle12"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:id="@+id/lteexception6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:gravity="right|center_vertical"
+                        android:text="-"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/light_blue" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_gravity="left|center_vertical"
+                android:background="#E5E5E5"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="2"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/fontstyle14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/intelligent_analysis_ltedata_title_10"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="left|center_vertical"
+                        android:text="EARFCN:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/lteexception7"
+                        style="@style/fontstyle12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:gravity="right|center_vertical"
+                        android:layout_marginRight="8dp"
+                        android:text="-"
+                        android:textColor="@color/light_blue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical" 
+                        android:gravity="left|center_vertical"
+                        android:text="PCI:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/lteexception8"
+                        style="@style/fontstyle12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:gravity="right|center_vertical"
+                        android:text="-"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/light_blue" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="left|center_vertical"
+                        android:text="RSRP:"
+                        style="@style/fontstyle12"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/lteexception9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:gravity="right|center_vertical"
+                        android:text="-"
+                        style="@style/fontstyle12"
+                        android:layout_marginRight="8dp"
+                        android:textColor="@color/light_blue" />
+                </LinearLayout>
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+            
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/replaybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center"
+        android:layout_margin="8dp"
+        android:background="@drawable/main_replay_2"
+        android:gravity="center_vertical|center" />
+
+</LinearLayout>

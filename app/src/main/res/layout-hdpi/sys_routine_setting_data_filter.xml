@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/app_main_color">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/app_main_color"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/setting_level2_title"
+                android:text="@string/sys_setting_data_filter" />
+
+
+            <TextView
+                style="@style/setting_level2_title"
+                android:text="@string/data_acquisition_Frame" />
+
+            <LinearLayout
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_white_circle"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="Schedule Information" />
+
+                    <CheckBox
+                        android:id="@+id/sch_ckb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:button="@drawable/walktour_cb_2" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="RLC PDU Information" />
+
+                    <CheckBox
+                        android:id="@+id/rlc_pdu_ckb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:button="@drawable/walktour_cb_2" />
+
+                    <View style="@style/new_setting_divider" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="MAC PDU Information" />
+
+                    <CheckBox
+                        android:id="@+id/mac_pdu_ckb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:button="@drawable/walktour_cb_2" />
+
+                    <View style="@style/new_setting_divider" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="ML1 Information" />
+
+                    <CheckBox
+                        android:id="@+id/ml1_ckb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:button="@drawable/walktour_cb_2" />
+
+                    <View style="@style/new_setting_divider" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="PDCP PDU Information" />
+
+                    <CheckBox
+                        android:id="@+id/pdcp_pdu_ckb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:button="@drawable/walktour_cb_2" />
+
+                    <View style="@style/new_setting_divider" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="Grant List" />
+
+                    <CheckBox
+                        android:id="@+id/grant_ckb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:button="@drawable/walktour_cb_2" />
+
+                    <View style="@style/new_setting_divider" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="MCS Statistic" />
+
+                    <CheckBox
+                        android:id="@+id/mcs_ckb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:button="@drawable/walktour_cb_2" />
+
+                    <View style="@style/new_setting_divider" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/custom_export_l3msg" />
+
+                    <CheckBox
+                        android:id="@+id/l3_ckb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:button="@drawable/walktour_cb_2" />
+
+                    <View style="@style/new_setting_divider" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="DCI Information" />
+
+                    <CheckBox
+                        android:id="@+id/dci_ckb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:button="@drawable/walktour_cb_2" />
+
+                    <View style="@style/new_setting_divider" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="RB Resource Block Information" />
+
+                    <CheckBox
+                        android:id="@+id/rb_ckb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:button="@drawable/walktour_cb_2" />
+
+                    <View style="@style/new_setting_divider" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/setting_level2_title"
+                android:text="@string/data_acquisition_para" />
+
+            <LinearLayout
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_white_circle"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/data_acquisition_Settings" />
+
+                    <CheckBox
+                        android:id="@+id/cusom_ckb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:button="@drawable/walktour_cb_2" />
+
+                    <View style="@style/new_setting_divider" />
+
+                </RelativeLayout>
+
+
+                <ListView
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/multirab_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="1dip"
+                    android:divider="@drawable/list_divider"
+                    android:fadingEdge="none"></ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

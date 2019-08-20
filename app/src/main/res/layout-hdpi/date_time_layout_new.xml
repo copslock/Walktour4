@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/fontstyle14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:gravity="center_vertical|left"
+                android:text="@string/data_manager_select_date" />
+
+            <View style="@style/sys_routine_setting_divider" />
+
+            <DatePicker
+                android:id="@+id/date_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:calendarViewShown="false"
+                android:endYear="2100"
+                android:startYear="2000" />
+
+            <TextView
+                style="@style/fontstyle14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:gravity="center_vertical|left"
+                android:text="@string/data_manager_select_date_time" />
+
+            <View style="@style/sys_routine_setting_divider" />
+
+            <TimePicker
+                android:id="@+id/time_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

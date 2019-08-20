@@ -1,0 +1,603 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<TestPlanConfig>
+    <TestPlanInfo>
+        <TestPlanID></TestPlanID>
+        <TestPlanVersion>3</TestPlanVersion>
+        <TestPlanFormatVersion>20141209</TestPlanFormatVersion>
+        <CreateTime></CreateTime>
+        <LastUpdateTime>2015-12-24 13:54:49</LastUpdateTime>
+    </TestPlanInfo>
+    <TestSchemas>
+        <TestSchemaConfig IsCheck="True">
+            <SchemaID>S358108067180975</SchemaID>
+            <SchemaName></SchemaName>
+            <PortNumber>0</PortNumber>
+            <Enable>False</Enable>
+            <TaskGroups>
+                <TaskGroupConfig
+                    IsCheck="True">
+                    <TimeDuration IsCheck="False">
+                        <TaskExecuteDuration>
+                            <StartTime></StartTime>
+                            <Duration>0</Duration>
+                        </TaskExecuteDuration>
+                    </TimeDuration>
+                    <GroupRepeatCount>1</GroupRepeatCount>
+                    <GroupInterval>0</GroupInterval>
+                    <GroupID>S358108067180975_G3</GroupID>
+                    <GroupSequence>3</GroupSequence>
+                    <GroupStatus>2</GroupStatus>
+                    <GroupName>ABC世纪鼎利室分站RRU1</GroupName>
+                    <Tasks>
+                        <TaskConfig IsCheck="False">
+                            <TaskType>FTP Download</TaskType>
+                            <TaskID>S358108067180975_G3_T10</TaskID>
+                            <TaskSequence>5</TaskSequence>
+                            <TaskName>覆盖_FTP_Download</TaskName>
+
+                            <TaskRepeatCount>10</TaskRepeatCount>
+                            <TaskStatus>2</TaskStatus>
+                            <Interval>15000</Interval>
+                            <Infinite>False</Infinite>
+                            <ParallelStartConditon IsAvailable="False">
+                                <ParallelStartAfterDelay>50000</ParallelStartAfterDelay>
+                                <ParallelStartAtTime>12:00</ParallelStartAtTime>
+                            </ParallelStartConditon>
+                            <FTPDownloadTestConfig>
+                                <SaveDirectory></SaveDirectory>
+                                <DownloadFile>/5M.rar</DownloadFile>
+                                <DownloadTimeout>0</DownloadTimeout>
+                                <NoDataTimeout>60000</NoDataTimeout>
+                                <ThreadCount>3</ThreadCount>
+                                <IsSaveFile>False</IsSaveFile>
+                                <PSCallMode>By Time</PSCallMode>
+                                <DownloadDuration>300000</DownloadDuration>
+                                <FTPHostSetting
+                                    Address="61.143.60.83"
+                                    ConnectionMode="Passive"
+                                    FTPServerID=""
+                                    IsAnonymous="False"
+                                    IsCheck="True"
+                                    Password="tangwq"
+                                    Port="21"
+                                    SiteName="test"
+                                    TransferMode=""
+                                    Username="twq"
+                                    />
+                            </FTPDownloadTestConfig>
+                            <NetworkConnectionSetting IsAvailable="False">
+                                <ConnectionProtocol>PPP</ConnectionProtocol>
+                                <DetachStrategy></DetachStrategy>
+                                <SingleTimeout>0</SingleTimeout>
+                                <ReconnectCount>3</ReconnectCount>
+                                <ConnectionType></ConnectionType>
+                                <TotalTimeout>0</TotalTimeout>
+                                <ConnectionDisconnectStrategy>Each Repeat Finish
+                                </ConnectionDisconnectStrategy>
+                                <ConnectionUseWifi>False</ConnectionUseWifi>
+                                <WifiConnectionList/>
+                            </NetworkConnectionSetting>
+                        </TaskConfig>
+                        <TaskConfig IsCheck="False">
+                            <TaskType>Idle</TaskType>
+                            <TaskID>S358108067180975_G3_T11</TaskID>
+                            <TaskSequence>6</TaskSequence>
+                            <TaskName>外泄_Idle</TaskName>
+
+                            <TaskRepeatCount>1</TaskRepeatCount>
+                            <TaskStatus>2</TaskStatus>
+                            <Interval>0</Interval>
+                            <Infinite>False</Infinite>
+                            <ParallelStartConditon
+                                IsAvailable="False">
+                                <ParallelStartAfterDelay>50000</ParallelStartAfterDelay>
+                                <ParallelStartAtTime></ParallelStartAtTime>
+                            </ParallelStartConditon>
+                            <IdleTestConfig>
+                                <CollectData>False</CollectData>
+                                <Duration>600000</Duration>
+                            </IdleTestConfig>
+                        </TaskConfig>
+                        <TaskConfig IsCheck="False">
+                            <TaskType>FTP Download</TaskType>
+                            <TaskID>S358108067180975_G3_T12</TaskID>
+                            <TaskSequence>7</TaskSequence>
+                            <TaskName>切换_GATE_FTP_Download</TaskName>
+
+                            <TaskRepeatCount>10</TaskRepeatCount>
+                            <TaskStatus>2</TaskStatus>
+                            <Interval>15000</Interval>
+                            <Infinite>False</Infinite>
+                            <ParallelStartConditon
+                                IsAvailable="False">
+                                <ParallelStartAfterDelay>50000</ParallelStartAfterDelay>
+                                <ParallelStartAtTime>12:00</ParallelStartAtTime>
+                            </ParallelStartConditon>
+                            <FTPDownloadTestConfig>
+                                <SaveDirectory></SaveDirectory>
+                                <DownloadFile>/5M.rar</DownloadFile>
+                                <DownloadTimeout>0</DownloadTimeout>
+                                <NoDataTimeout>60000</NoDataTimeout>
+                                <ThreadCount>3</ThreadCount>
+                                <IsSaveFile>False</IsSaveFile>
+                                <PSCallMode>By Time</PSCallMode>
+                                <DownloadDuration>300000</DownloadDuration>
+                                <FTPHostSetting
+                                    Address="61.143.60.83"
+                                    ConnectionMode="Passive"
+                                    FTPServerID=""
+                                    IsAnonymous="False"
+                                    IsCheck="True"
+                                    Password="tangwq"
+                                    Port="21"
+                                    SiteName="test"
+                                    TransferMode=""
+                                    Username="twq"
+                                    />
+                            </FTPDownloadTestConfig>
+                            <NetworkConnectionSetting IsAvailable="False">
+                                <ConnectionProtocol>PPP</ConnectionProtocol>
+                                <DetachStrategy></DetachStrategy>
+                                <SingleTimeout>0</SingleTimeout>
+                                <ReconnectCount>3</ReconnectCount>
+                                <ConnectionType></ConnectionType>
+                                <TotalTimeout>0</TotalTimeout>
+                                <ConnectionDisconnectStrategy>Each Repeat Finish
+                                </ConnectionDisconnectStrategy>
+                                <ConnectionUseWifi>False</ConnectionUseWifi>
+                                <WifiConnectionList/>
+                            </NetworkConnectionSetting>
+                        </TaskConfig>
+                        <TaskConfig IsCheck="False">
+                            <TaskType>MOC</TaskType>
+                            <TaskID>S358108067180975_G3_T14</TaskID>
+                            <TaskSequence>13</TaskSequence>
+                            <TaskName>切换_GATE_MOC_VOLTE</TaskName>
+
+                            <TaskRepeatCount>10</TaskRepeatCount>
+                            <TaskStatus>2</TaskStatus>
+                            <Interval>15000</Interval>
+                            <Infinite>False</Infinite>
+                            <ParallelStartConditon
+                                IsAvailable="False">
+                                <ParallelStartAfterDelay>50000</ParallelStartAfterDelay>
+                                <ParallelStartAtTime>12:00</ParallelStartAtTime>
+                            </ParallelStartConditon>
+                            <MOCTestConfig>
+                                <MTCDevicePort>0</MTCDevicePort>
+                                <LongCall>False</LongCall>
+                                <MOSDeviceVer></MOSDeviceVer>
+                                <SampleType>NB 8k</SampleType>
+                                <CallingNumber></CallingNumber>
+                                <CallType>Voice Call</CallType>
+                                <CalcMode>NB</CalcMode>
+                                <RealtimeCalculation>True</RealtimeCalculation>
+                                <LowMOSThreshold></LowMOSThreshold>
+                                <CDMAAMRRate></CDMAAMRRate>
+                                <UMTSAMRRate></UMTSAMRRate>
+                                <CalledNumber>10086</CalledNumber>
+                                <MOSTest>False</MOSTest>
+                                <Connection>30000</Connection>
+                                <Duration>60000</Duration>
+                                <TestType>Mobile to Mobile Sync</TestType>
+                                <MOSAlgorithm>PESQ</MOSAlgorithm>
+                                <UseRandomTimeDial IsAvailable="False">
+                                    <MaxDuration>0</MaxDuration>
+                                    <MinDuration>0</MinDuration>
+                                </UseRandomTimeDial>
+                                <RedialActionSetting IsAvailable="False">
+                                    <CallDropAction>0</CallDropAction>
+                                    <CallDropWait>0</CallDropWait>
+                                    <AccessFailAction>0</AccessFailAction>
+                                    <AccessFailWait>0</AccessFailWait>
+                                </RedialActionSetting>
+                            </MOCTestConfig>
+                        </TaskConfig>
+                        <TaskConfig IsCheck="False">
+                            <TaskType>FTP Download</TaskType>
+                            <TaskID>S358108067180975_G3_T15</TaskID>
+                            <TaskSequence>14</TaskSequence>
+                            <TaskName>切换_INDOOR_FTP_Download</TaskName>
+
+                            <TaskRepeatCount>10</TaskRepeatCount>
+                            <TaskStatus>2</TaskStatus>
+                            <Interval>15000</Interval>
+                            <Infinite>False</Infinite>
+                            <ParallelStartConditon
+                                IsAvailable="False">
+                                <ParallelStartAfterDelay>50000</ParallelStartAfterDelay>
+                                <ParallelStartAtTime>12:00</ParallelStartAtTime>
+                            </ParallelStartConditon>
+                            <FTPDownloadTestConfig>
+                                <SaveDirectory></SaveDirectory>
+                                <DownloadFile>/5M.rar</DownloadFile>
+                                <DownloadTimeout>0</DownloadTimeout>
+                                <NoDataTimeout>60000</NoDataTimeout>
+                                <ThreadCount>3</ThreadCount>
+                                <IsSaveFile>False</IsSaveFile>
+                                <PSCallMode>By Time</PSCallMode>
+                                <DownloadDuration>300000</DownloadDuration>
+                                <FTPHostSetting
+                                    Address="61.143.60.83"
+                                    ConnectionMode="Passive"
+                                    FTPServerID=""
+                                    IsAnonymous="False"
+                                    IsCheck="True"
+                                    Password="tangwq"
+                                    Port="21"
+                                    SiteName="test"
+                                    TransferMode=""
+                                    Username="twq"
+                                    />
+                            </FTPDownloadTestConfig>
+                            <NetworkConnectionSetting IsAvailable="False">
+                                <ConnectionProtocol>PPP</ConnectionProtocol>
+                                <DetachStrategy></DetachStrategy>
+                                <SingleTimeout>0</SingleTimeout>
+                                <ReconnectCount>3</ReconnectCount>
+                                <ConnectionType></ConnectionType>
+                                <TotalTimeout>0</TotalTimeout>
+                                <ConnectionDisconnectStrategy>Each Repeat Finish
+                                </ConnectionDisconnectStrategy>
+                                <ConnectionUseWifi>False</ConnectionUseWifi>
+                                <WifiConnectionList/>
+                            </NetworkConnectionSetting>
+                        </TaskConfig>
+                        <TaskConfig IsCheck="False">
+                            <TaskType>MOC</TaskType>
+                            <TaskID>S358108067180975_G3_T16</TaskID>
+                            <TaskSequence>15</TaskSequence>
+                            <TaskName>切换_INDOOR_MOC_VOLTE</TaskName>
+
+                            <TaskRepeatCount>10</TaskRepeatCount>
+                            <TaskStatus>2</TaskStatus>
+                            <Interval>15000</Interval>
+                            <Infinite>False</Infinite>
+                            <ParallelStartConditon
+                                IsAvailable="False">
+                                <ParallelStartAfterDelay>50000</ParallelStartAfterDelay>
+                                <ParallelStartAtTime>12:00</ParallelStartAtTime>
+                            </ParallelStartConditon>
+                            <MOCTestConfig>
+                                <MTCDevicePort>0</MTCDevicePort>
+                                <LongCall>False</LongCall>
+                                <MOSDeviceVer></MOSDeviceVer>
+                                <SampleType>NB 8k</SampleType>
+                                <CallingNumber></CallingNumber>
+                                <CallType>Voice Call</CallType>
+                                <CalcMode>NB</CalcMode>
+                                <RealtimeCalculation>True</RealtimeCalculation>
+                                <LowMOSThreshold></LowMOSThreshold>
+                                <CDMAAMRRate></CDMAAMRRate>
+                                <UMTSAMRRate></UMTSAMRRate>
+                                <CalledNumber>10086</CalledNumber>
+                                <MOSTest>False</MOSTest>
+                                <Connection>30000</Connection>
+                                <Duration>60000</Duration>
+                                <TestType>Mobile to Mobile Sync</TestType>
+                                <MOSAlgorithm>PESQ</MOSAlgorithm>
+                                <UseRandomTimeDial IsAvailable="False">
+                                    <MaxDuration>0</MaxDuration>
+                                    <MinDuration>0</MinDuration>
+                                </UseRandomTimeDial>
+                                <RedialActionSetting IsAvailable="False">
+                                    <CallDropAction>0</CallDropAction>
+                                    <CallDropWait>0</CallDropWait>
+                                    <AccessFailAction>0</AccessFailAction>
+                                    <AccessFailWait>0</AccessFailWait>
+                                </RedialActionSetting>
+                            </MOCTestConfig>
+                        </TaskConfig>
+                        <TaskConfig IsCheck="False">
+                            <TaskType>FTP Download</TaskType>
+                            <TaskID>S358108067180975_G3_T16</TaskID>
+                            <TaskSequence>15</TaskSequence>
+                            <TaskName>切换_PARK_FTP_Download</TaskName>
+
+                            <TaskRepeatCount>10</TaskRepeatCount>
+                            <TaskStatus>2</TaskStatus>
+                            <Interval>15000</Interval>
+                            <Infinite>False</Infinite>
+                            <ParallelStartConditon
+                                IsAvailable="False">
+                                <ParallelStartAfterDelay>50000</ParallelStartAfterDelay>
+                                <ParallelStartAtTime>12:00</ParallelStartAtTime>
+                            </ParallelStartConditon>
+                            <FTPDownloadTestConfig>
+                                <SaveDirectory></SaveDirectory>
+                                <DownloadFile>/5M.rar</DownloadFile>
+                                <DownloadTimeout>0</DownloadTimeout>
+                                <NoDataTimeout>60000</NoDataTimeout>
+                                <ThreadCount>3</ThreadCount>
+                                <IsSaveFile>False</IsSaveFile>
+                                <PSCallMode>By Time</PSCallMode>
+                                <DownloadDuration>300000</DownloadDuration>
+                                <FTPHostSetting
+                                    Address="61.143.60.83"
+                                    ConnectionMode="Passive"
+                                    FTPServerID=""
+                                    IsAnonymous="False"
+                                    IsCheck="True"
+                                    Password="tangwq"
+                                    Port="21"
+                                    SiteName="test"
+                                    TransferMode=""
+                                    Username="twq"
+                                    />
+                            </FTPDownloadTestConfig>
+                            <NetworkConnectionSetting IsAvailable="False">
+                                <ConnectionProtocol>PPP</ConnectionProtocol>
+                                <DetachStrategy></DetachStrategy>
+                                <SingleTimeout>0</SingleTimeout>
+                                <ReconnectCount>3</ReconnectCount>
+                                <ConnectionType></ConnectionType>
+                                <TotalTimeout>0</TotalTimeout>
+                                <ConnectionDisconnectStrategy>Each Repeat Finish
+                                </ConnectionDisconnectStrategy>
+                                <ConnectionUseWifi>False</ConnectionUseWifi>
+                                <WifiConnectionList/>
+                            </NetworkConnectionSetting>
+                        </TaskConfig>
+                        <TaskConfig IsCheck="False">
+                            <TaskType>MOC</TaskType>
+                            <TaskID>S358108067180975_G3_T17</TaskID>
+                            <TaskSequence>16</TaskSequence>
+                            <TaskName>切换_PARK_MOC_VOLTE</TaskName>
+
+                            <TaskRepeatCount>10</TaskRepeatCount>
+                            <TaskStatus>2</TaskStatus>
+                            <Interval>15000</Interval>
+                            <Infinite>False</Infinite>
+                            <ParallelStartConditon
+                                IsAvailable="False">
+                                <ParallelStartAfterDelay>50000</ParallelStartAfterDelay>
+                                <ParallelStartAtTime>12:00</ParallelStartAtTime>
+                            </ParallelStartConditon>
+                            <MOCTestConfig>
+                                <MTCDevicePort>0</MTCDevicePort>
+                                <LongCall>False</LongCall>
+                                <MOSDeviceVer></MOSDeviceVer>
+                                <SampleType>NB 8k</SampleType>
+                                <CallingNumber></CallingNumber>
+                                <CallType>Voice Call</CallType>
+                                <CalcMode>NB</CalcMode>
+                                <RealtimeCalculation>True</RealtimeCalculation>
+                                <LowMOSThreshold></LowMOSThreshold>
+                                <CDMAAMRRate></CDMAAMRRate>
+                                <UMTSAMRRate></UMTSAMRRate>
+                                <CalledNumber>10086</CalledNumber>
+                                <MOSTest>False</MOSTest>
+                                <Connection>30000</Connection>
+                                <Duration>60000</Duration>
+                                <TestType>Mobile to Mobile Sync</TestType>
+                                <MOSAlgorithm>PESQ</MOSAlgorithm>
+                                <UseRandomTimeDial IsAvailable="False">
+                                    <MaxDuration>0</MaxDuration>
+                                    <MinDuration>0</MinDuration>
+                                </UseRandomTimeDial>
+                                <RedialActionSetting IsAvailable="False">
+                                    <CallDropAction>0</CallDropAction>
+                                    <CallDropWait>0</CallDropWait>
+                                    <AccessFailAction>0</AccessFailAction>
+                                    <AccessFailWait>0</AccessFailWait>
+                                </RedialActionSetting>
+                            </MOCTestConfig>
+                        </TaskConfig>
+                        <TaskConfig IsCheck="False">
+                            <TaskType>Attach</TaskType>
+                            <TaskID>S358108067180975_G3_T5</TaskID>
+                            <TaskSequence>8</TaskSequence>
+                            <TaskName>性能_Attach</TaskName>
+
+                            <TaskRepeatCount>3</TaskRepeatCount>
+                            <TaskStatus>2</TaskStatus>
+                            <Interval>5000</Interval>
+                            <Infinite>False</Infinite>
+                            <ParallelStartConditon
+                                IsAvailable="False">
+                                <ParallelStartAfterDelay>50000</ParallelStartAfterDelay>
+                                <ParallelStartAtTime></ParallelStartAtTime>
+                            </ParallelStartConditon>
+                            <AttachTestConfig>
+                                <Duration>15000</Duration>
+                                <Timeout>15000</Timeout>
+                                <Port>0</Port>
+                                <BaudRate>57600</BaudRate>
+                            </AttachTestConfig>
+                        </TaskConfig>
+                        <TaskConfig IsCheck="False">
+                            <TaskType>FTP Upload</TaskType>
+                            <TaskID>S358108067180975_G3_T6</TaskID>
+                            <TaskSequence>9</TaskSequence>
+                            <TaskName>性能_FTP_Upload</TaskName>
+
+                            <TaskRepeatCount>10</TaskRepeatCount>
+                            <TaskStatus>2</TaskStatus>
+                            <Interval>10000</Interval>
+                            <Infinite>False</Infinite>
+                            <ParallelStartConditon IsAvailable="False">
+                                <ParallelStartAfterDelay>50000</ParallelStartAfterDelay>
+                                <ParallelStartAtTime>12:00</ParallelStartAtTime>
+                            </ParallelStartConditon>
+                            <FTPUploadTestConfig>
+                                <FileSource>Creat File</FileSource>
+                                <LocalFile></LocalFile>
+                                <FileSize>1000</FileSize>
+                                <RemoteDirectory>/</RemoteDirectory>
+                                <UploadTimeout>0</UploadTimeout>
+                                <NoDataTimeout>60000</NoDataTimeout>
+                                <ThreadCount>1</ThreadCount>
+                                <PSCallMode>By
+                                    Time
+                                </PSCallMode>
+                                <UploadDuration>300000</UploadDuration>
+                                <FTPHostSetting
+                                    Address="61.143.60.83"
+                                    ConnectionMode="Passive"
+                                    FTPServerID=""
+                                    IsAnonymous="False"
+                                    IsCheck="True"
+                                    Password="tangwq"
+                                    Port="21"
+                                    SiteName="test"
+                                    TransferMode=""
+                                    Username="twq"/>
+                            </FTPUploadTestConfig>
+                            <NetworkConnectionSetting IsAvailable="False">
+                                <ConnectionProtocol>PPP</ConnectionProtocol>
+                                <DetachStrategy></DetachStrategy>
+                                <SingleTimeout>0</SingleTimeout>
+                                <ReconnectCount>3</ReconnectCount>
+                                <ConnectionType></ConnectionType>
+                                <TotalTimeout>0</TotalTimeout>
+                                <ConnectionDisconnectStrategy>Each Repeat Finish
+                                </ConnectionDisconnectStrategy>
+                                <ConnectionUseWifi>False</ConnectionUseWifi>
+                                <WifiConnectionList/>
+                            </NetworkConnectionSetting>
+                        </TaskConfig>
+                        <TaskConfig IsCheck="False">
+                            <TaskType>FTP Download</TaskType>
+                            <TaskID>S358108067180975_G3_T7</TaskID>
+                            <TaskSequence>10</TaskSequence>
+                            <TaskName>性能_FTP_Download</TaskName>
+
+                            <TaskRepeatCount>10</TaskRepeatCount>
+                            <TaskStatus>2</TaskStatus>
+                            <Interval>15000</Interval>
+                            <Infinite>False</Infinite>
+                            <ParallelStartConditon
+                                IsAvailable="False">
+                                <ParallelStartAfterDelay>50000</ParallelStartAfterDelay>
+                                <ParallelStartAtTime>12:00</ParallelStartAtTime>
+                            </ParallelStartConditon>
+                            <FTPDownloadTestConfig>
+                                <SaveDirectory></SaveDirectory>
+                                <DownloadFile>/5M.rar</DownloadFile>
+                                <DownloadTimeout>0</DownloadTimeout>
+                                <NoDataTimeout>60000</NoDataTimeout>
+                                <ThreadCount>3</ThreadCount>
+                                <IsSaveFile>False</IsSaveFile>
+                                <PSCallMode>By Time</PSCallMode>
+                                <DownloadDuration>300000</DownloadDuration>
+                                <FTPHostSetting
+                                    Address="61.143.60.83"
+                                    ConnectionMode="Passive"
+                                    FTPServerID=""
+                                    IsAnonymous="False"
+                                    IsCheck="True"
+                                    Password="tangwq"
+                                    Port="21"
+                                    SiteName="test"
+                                    TransferMode=""
+                                    Username="twq"
+                                    />
+                            </FTPDownloadTestConfig>
+                            <NetworkConnectionSetting IsAvailable="False">
+                                <ConnectionProtocol>PPP</ConnectionProtocol>
+                                <DetachStrategy></DetachStrategy>
+                                <SingleTimeout>0</SingleTimeout>
+                                <ReconnectCount>3</ReconnectCount>
+                                <ConnectionType></ConnectionType>
+                                <TotalTimeout>0</TotalTimeout>
+                                <ConnectionDisconnectStrategy>Each Repeat Finish
+                                </ConnectionDisconnectStrategy>
+                                <ConnectionUseWifi>False</ConnectionUseWifi>
+                                <WifiConnectionList/>
+                            </NetworkConnectionSetting>
+                        </TaskConfig>
+                        <TaskConfig IsCheck="False">
+                            <TaskType>MOC</TaskType>
+                            <TaskID>S358108067180975_G3_T8</TaskID>
+                            <TaskSequence>11</TaskSequence>
+                            <TaskName>性能_MOC_CSFB</TaskName>
+
+                            <TaskRepeatCount>10</TaskRepeatCount>
+                            <TaskStatus>2</TaskStatus>
+                            <Interval>15000</Interval>
+                            <Infinite>False</Infinite>
+                            <ParallelStartConditon
+                                IsAvailable="False">
+                                <ParallelStartAfterDelay>50000</ParallelStartAfterDelay>
+                                <ParallelStartAtTime>12:00</ParallelStartAtTime>
+                            </ParallelStartConditon>
+                            <MOCTestConfig>
+                                <MTCDevicePort>0</MTCDevicePort>
+                                <LongCall>False</LongCall>
+                                <MOSDeviceVer></MOSDeviceVer>
+                                <SampleType>NB 8k</SampleType>
+                                <CallingNumber></CallingNumber>
+                                <CallType>Voice Call</CallType>
+                                <CalcMode>NB</CalcMode>
+                                <RealtimeCalculation>True</RealtimeCalculation>
+                                <LowMOSThreshold></LowMOSThreshold>
+                                <CDMAAMRRate></CDMAAMRRate>
+                                <UMTSAMRRate></UMTSAMRRate>
+                                <CalledNumber>10086</CalledNumber>
+                                <MOSTest>False</MOSTest>
+                                <Connection>30000</Connection>
+                                <Duration>60000</Duration>
+                                <TestType>Mobile to Mobile Sync</TestType>
+                                <MOSAlgorithm>PESQ</MOSAlgorithm>
+                                <UseRandomTimeDial IsAvailable="False">
+                                    <MaxDuration>0</MaxDuration>
+                                    <MinDuration>0</MinDuration>
+                                </UseRandomTimeDial>
+                                <RedialActionSetting IsAvailable="False">
+                                    <CallDropAction>0</CallDropAction>
+                                    <CallDropWait>0</CallDropWait>
+                                    <AccessFailAction>0</AccessFailAction>
+                                    <AccessFailWait>0</AccessFailWait>
+                                </RedialActionSetting>
+                            </MOCTestConfig>
+                        </TaskConfig>
+                        <TaskConfig IsCheck="False">
+                            <TaskType>MOC</TaskType>
+                            <TaskID>S358108067180975_G3_T9</TaskID>
+                            <TaskSequence>12</TaskSequence>
+                            <TaskName>性能_MOC_VOLTE</TaskName>
+
+                            <TaskRepeatCount>10</TaskRepeatCount>
+                            <TaskStatus>2</TaskStatus>
+                            <Interval>15000</Interval>
+                            <Infinite>False</Infinite>
+                            <ParallelStartConditon IsAvailable="False">
+                                <ParallelStartAfterDelay>50000</ParallelStartAfterDelay>
+                                <ParallelStartAtTime>12:00</ParallelStartAtTime>
+                            </ParallelStartConditon>
+                            <MOCTestConfig>
+                                <MTCDevicePort>0</MTCDevicePort>
+                                <LongCall>False</LongCall>
+                                <MOSDeviceVer></MOSDeviceVer>
+                                <SampleType>NB 8k</SampleType>
+                                <CallingNumber></CallingNumber>
+                                <CallType>Voice Call</CallType>
+                                <CalcMode>NB</CalcMode>
+                                <RealtimeCalculation>True</RealtimeCalculation>
+                                <LowMOSThreshold></LowMOSThreshold>
+                                <CDMAAMRRate></CDMAAMRRate>
+                                <UMTSAMRRate></UMTSAMRRate>
+                                <CalledNumber>10086</CalledNumber>
+                                <MOSTest>False</MOSTest>
+                                <Connection>30000</Connection>
+                                <Duration>60000</Duration>
+                                <TestType>Mobile to Mobile Sync</TestType>
+                                <MOSAlgorithm>PESQ</MOSAlgorithm>
+                                <UseRandomTimeDial IsAvailable="False">
+                                    <MaxDuration>0</MaxDuration>
+                                    <MinDuration>0</MinDuration>
+                                </UseRandomTimeDial>
+                                <RedialActionSetting IsAvailable="False">
+                                    <CallDropAction>0</CallDropAction>
+                                    <CallDropWait>0</CallDropWait>
+                                    <AccessFailAction>0</AccessFailAction>
+                                    <AccessFailWait>0</AccessFailWait>
+                                </RedialActionSetting>
+                            </MOCTestConfig>
+                        </TaskConfig>
+                    </Tasks>
+                </TaskGroupConfig>
+            </TaskGroups>
+        </TestSchemaConfig>
+    </TestSchemas>
+</TestPlanConfig>

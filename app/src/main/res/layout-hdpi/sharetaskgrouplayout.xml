@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/sharetitle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/typedevice"
+                style="@style/fontstyle14"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/single_lanse"
+                android:gravity="center_vertical|center"
+                android:text="@string/share_project_devices_release_relation_13"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/typegroup"
+                style="@style/fontstyle14"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/single_huise"
+                android:gravity="center_vertical|center"
+                android:text="@string/share_project_devices_group"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/inputxt"
+            style="@style/fontstyle12"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/login_input"
+            android:gravity="center_vertical|left"
+            android:hint="@string/share_project_input_device_number"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/single_heng_qian" />
+
+        <ListView
+            android:id="@+id/id_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/single_heng_qian"
+            android:dividerHeight="0.5dp" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/single_heng_qian" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/titlename"
+                style="@style/fontstyle14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/share_project_select_task" >
+            </TextView>
+
+            <Button
+                android:id="@+id/historybtn"
+                style="@style/fontstyle14"
+                android:layout_width="wrap_content"
+                android:layout_height="38sp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/background_mybutton3"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/share_project_devices_release_relation_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/single_heng_qian" />
+
+            <ListView
+                android:id="@+id/shareresource"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/single_heng_qian"
+                android:dividerHeight="0.5dp" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/backlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/background_tab_pressed"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/latop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/showxp"
+                    style="@style/fontstyle14"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center|center_vertical"
+                    android:text="您已经选择了3个"
+                    android:textColor="@color/red_press"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/obj_downup"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/obj_up" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/receiveobjlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tableborder"
+                android:orientation="vertical" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

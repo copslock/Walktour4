@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_color">
+
+    <include
+        android:id="@+id/about_title"
+        layout="@layout/basic_title" />
+
+
+    <LinearLayout
+        android:id="@+id/about_logo_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/about_version"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/about_walktour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_logo_no_text" />
+
+
+        <ImageView
+            android:id="@+id/about_logo_hw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/logo_hw"
+            android:scaleType="centerInside"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/about_version"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/about_panel_item"
+        android:gravity="center"
+        android:paddingTop="13dp"
+        android:text="Pilot Walktour 3.2.3.0918"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_txt_size_medium" />
+
+    <LinearLayout
+        android:id="@+id/about_panel_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/layout_white_circle"
+        android:orientation="vertical"
+        android:padding="3dip">
+
+        <RelativeLayout
+            android:id="@+id/about_license_item"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_layout_height"
+            
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:drawableRight="@drawable/gallery_bg_right"
+                android:text="License Detail"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/default_txt_size_small" />
+            <View style="@style/new_setting_divider" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/about_getlicense_item"
+            android:layout_width="fill_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="@dimen/item_layout_height">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:drawableRight="@drawable/gallery_bg_right"
+                android:text="@string/about_get_license"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+            <View style="@style/new_setting_divider" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/about_gls_item"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:drawableRight="@drawable/gallery_bg_right"
+                android:text="GLS Management"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+            <View style="@style/new_setting_divider" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/about_update_item"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_layout_height">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:drawableRight="@drawable/gallery_bg_right"
+                android:text="@string/about_check_updates"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+            <View style="@style/new_setting_divider" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/about_license_item_item"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_layout_height">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:drawableRight="@drawable/gallery_bg_right"
+                android:text="@string/about_license"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+            <View style="@style/new_setting_divider" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/about_help_item"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_layout_height">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:drawableRight="@drawable/gallery_bg_right"
+                android:text="@string/about_help"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/about_panel_item"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="13dip"
+        android:paddingLeft="13dp"
+        android:background="@drawable/layout_white_circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/app_content_txt_size"
+            android:id="@+id/about_device_imei_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="14dp"
+            android:text="*ID:"
+            android:textColor="#1D7EC7" />
+        <TextView
+            android:textSize="@dimen/app_content_txt_size"
+            android:id="@+id/about_license_valid_txt"
+            android:layout_width="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="14dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_device_imei_txt"
+            android:text="*License valid for 231 More Day(s)."
+            android:textColor="@color/app_main_text_color" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dip"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_namex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:text="www.dingli.com"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_content_txt_size" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutus_copy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_content_txt_size"/>
+        <TextView
+            android:id="@+id/web_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/app_content_txt_size" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

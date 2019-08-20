@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/droidwall_platform_interactive_control" />
+
+
+        <!-- OTS Test -->
+        <LinearLayout
+            style="@style/item_layout_white_circle"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/droidwall_platform_testtask_search" />
+
+                <CheckBox
+                    android:id="@+id/platform_testtsk_control_ck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/walktour_cb_2"
+                    android:checked="true" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/droidwall_platform_control" />
+
+                <CheckBox
+                    android:id="@+id/platform_control_ck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/walktour_cb_2"
+                    android:checked="true" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

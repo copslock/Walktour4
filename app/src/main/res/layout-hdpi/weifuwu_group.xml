@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/tableheader2"
+        android:orientation="vertical" >
+
+       
+        <TextView
+            android:id="@+id/txt_tab"
+            style="@style/fontstyle14"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|center"
+            android:background="@drawable/base_list_item_bg"
+            android:gravity="center_vertical|center" 
+            android:singleLine="true"
+            android:text="Create a Group" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/list_divider" />
+
+        
+         <TextView
+            android:id="@+id/txt_params_setting"
+            style="@style/fontstyle14"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|center"
+            android:background="@drawable/base_list_item_bg"
+            android:gravity="center_vertical|center" 
+            android:text="@string/sys_map_parameter_setting" />
+    </LinearLayout>
+
+</RelativeLayout>

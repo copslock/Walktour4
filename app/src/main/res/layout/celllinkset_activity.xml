@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/sys_serving_reference_cell" />
+
+        <View style="@style/task_listdivider" />
+
+        <LinearLayout
+            style="@style/item_layout_white_circle"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dip"
+                android:layout_marginLeft="8dip"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/sys_cell_link" />
+
+                <CheckBox
+                    android:id="@+id/serving_reference_cell_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="8dip"
+                    android:button="@drawable/switch_button_bg" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dip"
+                android:layout_marginLeft="8dip"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/sys_width" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/serving_reference_width_spinner"
+                    android:layout_width="102dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="8dip"
+                    android:background="@drawable/drop"
+                    android:drawSelectorOnTop="true" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dip"
+                android:layout_marginLeft="8dip"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/sys_colour" />
+
+                <com.walktour.framework.view.colorpicker.ColorPanelView
+                    android:id="@+id/serving_reference_color_panel"
+                    android:layout_width="100dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="8dip" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/sys_active_set" />
+
+        <View style="@style/task_listdivider" />
+
+        <LinearLayout
+            style="@style/item_layout_white_circle"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dip"
+                android:layout_marginLeft="8dip"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/sys_cell_link" />
+
+                <CheckBox
+                    android:id="@+id/active_set_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="8dip"
+                    android:button="@drawable/switch_button_bg" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dip"
+                android:layout_marginLeft="8dip"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/sys_width" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/active_set_width_spinner"
+                    android:layout_width="102dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="8dip"
+                    android:background="@drawable/drop"
+                    android:drawSelectorOnTop="true" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dip"
+                android:layout_marginLeft="8dip"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/sys_colour" />
+
+                <com.walktour.framework.view.colorpicker.ColorPanelView
+                    android:id="@+id/active_set_color_panel"
+                    android:layout_width="100dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="8dip" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/sys_monitor_candidate_set" />
+
+        <View style="@style/task_listdivider" />
+
+        <LinearLayout
+            style="@style/item_layout_white_circle"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dip"
+                android:layout_marginLeft="8dip"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/sys_cell_link" />
+
+                <CheckBox
+                    android:id="@+id/monitor_candidate_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="8dip"
+                    android:button="@drawable/switch_button_bg" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dip"
+                android:layout_marginLeft="8dip"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/sys_width" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/monitor_candidate_width_spinner"
+                    android:layout_width="102dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="8dip"
+                    android:background="@drawable/drop"
+                    android:drawSelectorOnTop="true" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dip"
+                android:layout_marginLeft="8dip"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/sys_colour" />
+
+                <com.walktour.framework.view.colorpicker.ColorPanelView
+                    android:id="@+id/monitor_candidate_color_panel"
+                    android:layout_width="100dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="8dip" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/sys_neighbor_cell_set" />
+
+        <View style="@style/task_listdivider" />
+
+        <LinearLayout
+            style="@style/item_layout_white_circle"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dip"
+                android:layout_marginLeft="8dip"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/sys_cell_link" />
+
+                <CheckBox
+                    android:id="@+id/neighbor_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="8dip"
+                    android:button="@drawable/switch_button_bg" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dip"
+                android:layout_marginLeft="8dip"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/sys_width" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/neighbor_width_spinner"
+                    android:layout_width="102dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="8dip"
+                    android:background="@drawable/drop"
+                    android:drawSelectorOnTop="true" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dip"
+                android:layout_marginLeft="8dip"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/sys_colour" />
+
+                <com.walktour.framework.view.colorpicker.ColorPanelView
+                    android:id="@+id/neighbor_color_panel"
+                    android:layout_width="100dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="8dip" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/work_order_fj_cqt_voice_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:layout_marginBottom="10dp">
+            <View
+            android:id="@+id/dt_cqt_divider"
+            style="@style/setting_divider"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/setting_sort_title_bgcolor" 
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/work_order_fj_cqt_voice_test"
+            android:textColor="@color/white"
+            android:textSize="15sp" 
+            android:visibility="gone"/>
+                    <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp" >
+
+                <TextView
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/work_order_fj_business_template" />
+
+                <Button
+                    android:id="@+id/work_order_fj_cqt_template_edit"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/dialog_btn"
+                    android:drawSelectorOnTop="true"
+                    android:gravity="center"
+                    android:text="@string/work_order_fj_template_edit"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        
+        <LinearLayout
+            android:id="@+id/cqt_voice_test_message_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/cqt_voice_test_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text=""
+                android:textColor="@color/light_blue"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/voice_testing_rg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" 
+            android:checkedButton="@+id/voice_testing_button1">
+
+            <RadioButton
+                android:id="@+id/voice_testing_button1"
+                style="@style/setting_sort_center_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_shape_button"
+                android:button="@null"
+                android:gravity="center"
+                android:text=""
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/voice_testing_button2"
+                style="@style/setting_sort_center_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_shape_button"
+                android:button="@null"
+                android:gravity="center"
+                android:text=""
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/voice_testing_button3"
+                style="@style/setting_sort_center_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_shape_button"
+                android:button="@null"
+                android:gravity="center"
+                android:text=""
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/voice_testing_button4"
+                style="@style/setting_sort_center_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_shape_button"
+                android:button="@null"
+                android:gravity="center"
+                android:text=""
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/voice_testing_button5"
+                style="@style/setting_sort_center_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_shape_button"
+                android:button="@null"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RadioGroup>
+		<LinearLayout 
+		    android:id="@+id/params"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+		    <include layout="@layout/work_order_fj_cqt_voice_params_layout"/>
+		</LinearLayout>
+</LinearLayout>

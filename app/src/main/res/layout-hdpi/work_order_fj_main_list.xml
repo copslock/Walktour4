@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/setting_bgcolor" >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_title_bg" >
+
+            <LinearLayout
+                android:id="@+id/control_btn_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true" >
+
+                <Button
+                    android:id="@+id/update_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:background="@drawable/dialog_btn"
+                    android:text="@string/work_order_fj_update"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/pointer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/pointer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/control_btn_layout"
+                android:layout_toRightOf="@id/pointer"
+                android:ellipsize="end"
+                android:maxWidth="50dip"
+                android:singleLine="true"
+                android:text="@string/work_order_fj_main_title"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/workOrderList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ControlBar"
+   		android:background="@color/base_list_item_bg_nomal"
+        	android:layout_below="@+id/top" >
+    </ListView>
+    <!-- 状态栏目 -->
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutStatusBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ControlBar"
+        android:layout_gravity="bottom"
+        android:background="@drawable/statusbar_bg"
+        android:gravity="top"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/TextViewTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="12dip" />
+    </RelativeLayout>
+    <!-- 底部工具栏 -->
+
+    <com.walktour.gui.applet.ControlBar
+        android:id="@+id/ControlBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

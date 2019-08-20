@@ -1,0 +1,8 @@
+exec /data/local/chat -v \
+ ABORT	'\nBUSY\r'	\
+ ABORT	'\nNO ANSWER\r'	\
+ ABORT	'\nNO CARRIER\r'	\
+ ABORT	'\nRING\r\n\r\nRINGING\r'	\
+ TIMEOUT	60	\
+ ''	ATD*99#	\
+ CONNECT

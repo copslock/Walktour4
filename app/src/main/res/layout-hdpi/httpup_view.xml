@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+
+	    <LinearLayout android:layout_width="fill_parent"
+			android:layout_marginTop="5dip" android:layout_marginRight="10dip"
+			android:layout_height="fill_parent" android:orientation="horizontal">
+			 <TextView
+				 android:textSize="@dimen/app_content_txt_size"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="str_local_if"
+	            android:layout_marginLeft="3dip" />
+	        <EditText
+				android:textSize="@dimen/app_content_txt_size"
+	            android:id="@+id/et_httpup_local_if"
+	            android:layout_width="80dip"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dip"
+	            android:completionThreshold="1"
+		        android:dropDownHeight="wrap_content" />
+			<CheckBox android:id="@+id/cb_httpup_ps_call"  android:textSize="@dimen/app_content_txt_size"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="str_ps_call" android:layout_marginLeft="30dip" />
+			
+		</LinearLayout>
+		
+	    <LinearLayout
+	        android:layout_width="fill_parent" android:textSize="@dimen/app_content_txt_size"
+	        android:layout_height="fill_parent"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginTop="5dip"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:layout_height="wrap_content"
+	            android:text="str_qos_inv_ms"
+	            android:layout_marginLeft="3dip" />
+
+	        <EditText
+	            android:id="@+id/et_httpup_qos_inv_ms"
+	            android:layout_width="150dip"
+	            android:layout_height="wrap_content"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:layout_marginLeft="15dip"
+	            android:completionThreshold="1"
+		        android:dropDownHeight="wrap_content"
+		        android:inputType="number" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginRight="10dip"
+			android:textSize="@dimen/app_content_txt_size"
+	        android:layout_marginTop="5dip"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:text="str_play_time_ms"
+	            android:layout_marginLeft="3dip" />
+
+	        <EditText
+	            android:id="@+id/et_httpup_play_time_ms"
+	            android:layout_width="150dip"
+	            android:layout_height="wrap_content"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:layout_marginLeft="15dip"
+	            android:completionThreshold="1"
+		        android:dropDownHeight="wrap_content"
+		        android:inputType="number" />
+	    </LinearLayout>	    
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginTop="5dip"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:text="str_nodata_timeout_ms"
+	            android:layout_marginLeft="3dip" />
+
+	        <EditText
+	            android:id="@+id/et_httpup_nodata_timeout_ms"
+	            android:layout_width="150dip"
+	            android:layout_height="wrap_content"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:layout_marginLeft="15dip"
+	            android:completionThreshold="1"
+		        android:dropDownHeight="wrap_content"
+		        android:inputType="number" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginTop="5dip"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:text="str_work_type"
+	            android:layout_marginLeft="3dip" />
+
+	        <EditText
+	            android:id="@+id/et_httpup_work_type"
+	            android:layout_width="150dip"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dip"
+	            android:completionThreshold="1"
+				android:textSize="@dimen/app_content_txt_size"
+		        android:dropDownHeight="wrap_content"
+		        android:inputType="number" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginTop="5dip"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:text="str_upload_url"
+	            android:layout_marginLeft="3dip" />
+
+	        <EditText
+	            android:id="@+id/et_httpup_upload_url"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:layout_width="200dip"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dip"
+	            android:completionThreshold="1"
+		        android:dropDownHeight="wrap_content" />
+	    </LinearLayout>
+		
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginTop="5dip"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:text="str_uploadfile"
+	            android:layout_marginLeft="3dip" />
+
+	        <EditText
+	            android:id="@+id/et_httpup_uploadfile"
+	            android:layout_width="200dip"
+	            android:layout_height="wrap_content"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:layout_marginLeft="15dip"
+	            android:completionThreshold="1"
+		        android:dropDownHeight="wrap_content" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginTop="5dip"
+	        android:orientation="horizontal" >
+
+	        <TextView
+
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="str_user_name"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:layout_marginLeft="3dip" />
+
+	        <EditText
+	            android:id="@+id/et_httpup_user_name"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:layout_width="200dip"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dip"
+	            android:completionThreshold="1"
+		        android:dropDownHeight="wrap_content" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginTop="5dip"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:text="str_password"
+	            android:layout_marginLeft="3dip" />
+
+	        <EditText
+	            android:id="@+id/et_httpup_password"
+	            android:layout_width="200dip"
+	            android:layout_height="wrap_content"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:layout_marginLeft="15dip"
+	            android:completionThreshold="1"
+		        android:dropDownHeight="wrap_content" />
+	    </LinearLayout>
+ 
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginTop="5dip"
+	        android:orientation="horizontal" >
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginTop="5dip"
+	        android:orientation="horizontal" >
+
+	        <Button
+	            android:id="@+id/btn_httpup_start"
+	            android:layout_width="100dip"
+	            android:layout_height="wrap_content"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:text="str_start" />
+
+	        <Button
+	            android:id="@+id/btn_httpup_stop"
+	            android:layout_width="100dip"
+	            android:layout_height="wrap_content"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:layout_marginLeft="10dip"
+	            android:text="str_stop" />
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginTop="5dip"
+	        android:background="#ffffff"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:id="@+id/tv_event_list"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:textColor="#000000" />
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginTop="5dip"
+	        android:gravity="right"
+	        android:orientation="horizontal" >
+
+	        <Button
+
+				android:textSize="@dimen/app_content_txt_size"
+	            android:id="@+id/btn_httpup_clear"
+	            android:layout_width="70dip"
+	            android:layout_height="wrap_content"
+	            android:text="str_clear" />
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginTop="5dip"
+	        android:layout_weight="6.75"
+	        android:background="#ffffff"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:id="@+id/tv_qos"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="#000000" />
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginTop="5dip"
+	        android:gravity="right"
+	        android:orientation="horizontal" >
+
+	        <Button
+	            android:id="@+id/btn_httpup_close"
+	            android:layout_width="70dip"
+				android:textSize="@dimen/app_content_txt_size"
+	            android:layout_height="wrap_content"
+	            android:text="str_close" />
+	    </LinearLayout>
+	</LinearLayout>
+
+</ScrollView>

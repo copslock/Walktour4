@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 楼房建筑物item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/floor_check"
+        style="@style/setting_sort_left_text_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:button="@null"
+        android:drawableRight="@drawable/checkbox"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="红星影院" />
+
+    <View
+        android:id="@+id/floor_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:drawable/divider_horizontal_bright" />
+
+</LinearLayout>

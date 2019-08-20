@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 左边图标，右边标题 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="56dip"
+    android:background="@drawable/base_list_item_bg"
+    android:padding="4dip" >
+
+    <!-- android:descendantFocusability="blocksDescendants" -->
+
+    <ImageView
+        android:id="@+id/ItemIcon"
+        android:layout_width="36dip"
+        android:layout_height="36dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/task_test_main_bg"
+        android:descendantFocusability="blocksDescendants"
+        android:padding="8dip"
+        android:src="@drawable/speedtest_fail" />
+
+    <TextView
+        android:id="@+id/ItemTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dip"
+        android:layout_toRightOf="@id/ItemIcon"
+        android:paddingTop="6dip"
+        android:text="Event&apos;s Name"
+        android:textColor="@color/app_main_text_color"
+        android:textSize="@dimen/app_content_txt_size"/>
+
+    <TextView
+        android:id="@+id/ItemContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ItemTitle"
+        android:layout_below="@id/ItemTitle"
+        android:layout_marginBottom="4dip"
+        android:text="Layer3 Message 1"
+        android:textColor="@color/app_main_text_color"
+        android:textSize="@dimen/app_second_content_txt_size" />
+
+    <CheckBox
+        android:id="@+id/ItemCheckble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+    <!--
+<ImageView
+	android:id="@+id/ItemCheckble"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_alignParentRight="true"
+	android:layout_centerVertical="true"
+/>
+    -->
+
+</RelativeLayout>

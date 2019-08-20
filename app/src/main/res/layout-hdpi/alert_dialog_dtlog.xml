@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View style="@style/task_listdivider" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/ip"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_ip"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"
+            android:digits="0.123456789"
+            android:maxLength="15"
+            android:singleLine="true" 
+            />
+        
+        <TextView style="@style/textview_input_nessary"
+            android:layout_toLeftOf="@id/edit_ip"/>
+        
+    </RelativeLayout>
+
+    <View style="@style/task_listdivider" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/port"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_port"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"
+            android:inputType="number"
+            android:maxLength="5"
+            android:singleLine="true" />
+        
+        <TextView style="@style/textview_input_nessary"
+            android:layout_toLeftOf="@id/edit_port"/>
+    </RelativeLayout>
+
+    <View style="@style/task_listdivider" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="BoxId"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_boxId"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"
+            android:inputType="number"
+            android:maxLength="10"
+            android:singleLine="true" />
+        
+        <TextView style="@style/textview_input_nessary"
+            android:layout_toLeftOf="@id/edit_boxId"/>
+    </RelativeLayout>
+    <View style="@style/task_listdivider" />
+    
+    <RelativeLayout
+        android:id="@+id/passwordlayout"
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/pass"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_pass"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:singleLine="true" 
+            android:hint="@string/server_pass_hint" 
+            />
+        
+        <TextView style="@style/textview_input_nessary"
+            android:layout_toLeftOf="@id/edit_pass"/>
+    </RelativeLayout>
+   
+    
+     
+     
+
+</LinearLayout>

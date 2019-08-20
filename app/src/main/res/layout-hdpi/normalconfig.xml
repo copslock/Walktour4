@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:paddingLeft = "10dip"
+  android:paddingTop = "25dip"
+  android:paddingRight = "10dip"
+  android:layout_gravity = "center_horizontal"
+  android:stretchColumns = "1">
+  <TableRow>
+  	<TextView 
+ 	android:text = "@string/monitor_normal_devices"
+ 	android:layout_width = "wrap_content"
+ 	android:layout_height = "wrap_content"/>
+ 	<EditText
+ 	android:id = "@+id/EditTextDevicesId" 
+ 	android:layout_width = "wrap_content"
+ 	android:layout_marginLeft = "20dip"
+ 	android:layout_height = "wrap_content"/>
+  </TableRow>
+  <TableRow>
+  	<TextView 
+ 	android:text = "@string/monitor_normal_savepath"
+ 	android:layout_width = "wrap_content"
+ 	android:layout_height = "wrap_content"/>
+ 	<EditText 
+	android:id = "@+id/EditTextShowpath"
+	android:layout_marginLeft = "20dip"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"/>
+  </TableRow>
+  <TableRow>
+  	<TextView
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:text = "@string/monitor_normal_filesize"/>
+	<EditText
+	android:id = "@+id/EditTextFilesize"
+	android:layout_marginLeft = "20dip"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:inputType = "number"/>
+  </TableRow>
+  <TableRow>
+	<TextView 
+	android:text = "@string/monitor_normal_server"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:paddingTop = "8dip"/>
+	<Spinner
+	android:id = "@+id/SpinnerServer"
+	android:layout_marginLeft = "20dip"
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"/>
+  </TableRow>
+  <TableRow>
+  	<TextView
+  	android:text = "@string/monitor_systemset_uploadway"
+  	android:paddingTop = "8dip"
+  	android:layout_width = "wrap_content"
+  	android:layout_height = "wrap_content"/>
+  	<Spinner
+  	android:id = "@+id/spinnerupload"
+  	android:layout_marginLeft = "20dip"
+  	android:layout_width = "wrap_content"
+  	android:layout_height = "wrap_content"/>
+  </TableRow>
+</TableLayout>

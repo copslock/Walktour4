@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<!--====================================================================-->
+	<!--作为弹出对话框 的内容:包含5个TextView、4个EditText、1EditText password -->
+	<!--====================================================================-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="3dip"
+	    android:paddingLeft="12dip"  
+	    android:paddingRight="12dip"
+	    android:orientation="horizontal"
+	    android:weightSum="3"
+	    >
+	
+	    <TextView 
+	        android:id="@+id/TextView01"
+	        android:textSize="18dip"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_weight="2"
+	        android:text="ItemText"
+	    />
+	            
+	    <EditText
+	        android:id="@+id/EditText01"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_weight="1"
+	        android:maxLines="1"
+	        android:maxLength="64" 
+	        android:singleLine="true"       
+	    />        
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="3dip"
+	    android:paddingLeft="12dip"  
+	    android:paddingRight="12dip"
+	    android:orientation="horizontal"
+	    android:weightSum="3"
+	    >
+	
+	    <TextView 
+	        android:id="@+id/TextView02"
+	        android:textSize="18dip"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_weight="2"
+	        android:text="ItemText"
+	    />
+	            
+	    <EditText
+	        android:id="@+id/EditText02"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_weight="1"
+	        android:maxLines="1"
+	        android:maxLength="64" android:singleLine="true"          
+	    />        
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="3dip"
+	    android:paddingLeft="12dip"  
+	    android:paddingRight="12dip"
+	    android:orientation="horizontal"
+	    android:weightSum="3"
+	    >
+	
+	    <TextView 
+	        android:id="@+id/TextView03"
+	        android:textSize="18dip"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_weight="2"
+	        android:text="ItemText"
+	    />
+	            
+	    <EditText
+	        android:id="@+id/EditText03"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_weight="1"
+	        android:maxLines="1"
+	        android:maxLength="9" android:singleLine="true" 
+	        android:inputType = "number"         
+	        android:digits = "0123456789"
+	    />        
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="3dip"
+	    android:paddingLeft="12dip"  
+	    android:paddingRight="12dip"
+	    android:orientation="horizontal"
+	    android:weightSum="3"
+	    >
+	
+	    <TextView 
+	        android:id="@+id/TextView04"
+	        android:textSize="18dip"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_weight="2"
+	        android:text="ItemText"
+	    />
+	            
+	    <EditText
+	        android:id="@+id/EditText04"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_weight="1"
+	        android:maxLines="1"
+	        android:maxLength="12" android:singleLine="true"          
+	        android:inputType = "number"
+	        android:digits = "0123456789-."
+	    />        
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="3dip"
+	    android:paddingLeft="12dip"  
+	    android:paddingRight="12dip"
+	    android:orientation="horizontal"
+	    android:weightSum="3"
+	    >
+	
+	    <TextView 
+	        android:id="@+id/TextView05"
+	        android:textSize="18dip"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_weight="2"
+	        android:text="ItemText"
+	    />
+	            
+	    <EditText
+	        android:id="@+id/EditText05"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_weight="1"
+	        android:maxLines="1"
+	        android:maxLength="12" android:singleLine="true"          
+	        android:digits = "0123456789-."
+	        android:inputType = "number"
+	    />        
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="3dip"
+	    android:paddingLeft="12dip"  
+	    android:paddingRight="12dip"
+	    android:orientation="horizontal"
+	    android:weightSum="3"
+	    >
+	
+	    <TextView 
+	        android:id="@+id/TextView06"
+	        android:textSize="18dip"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_weight="2"
+	        android:text="ItemText"
+	    />
+	            
+	    <EditText
+	        android:id="@+id/EditText06"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_weight="1"
+	        android:maxLines="1"
+	        android:maxLength="3" android:singleLine="true"  
+	        android:inputType = "number"
+	        android:digits = "0123456789"        
+	    />        
+	</LinearLayout>
+	
+	
+
+</LinearLayout>

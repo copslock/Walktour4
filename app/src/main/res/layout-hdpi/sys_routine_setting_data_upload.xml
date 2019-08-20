@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_color">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/sys_setting_data_upload" />
+
+        <!-- 是否自动上传 -->
+
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/sys_setting_data_upload_describe" />
+
+        <LinearLayout
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_white_circle"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/auto_upload"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/is_auto_upload_str" />
+
+                <CheckBox
+                    android:id="@+id/auto_upload_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/walktour_cb_2"
+                    android:checked="false" />
+                <View style="@style/new_setting_divider" />s
+            </RelativeLayout>
+
+            <!-- 网络 -->
+
+            <RelativeLayout
+                android:id="@+id/setting_upload_network_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_dataOrwifi" />
+
+                <TextView
+                    android:id="@+id/setting_upload_network_text"
+                    style="@style/setting_sort_right_text_2" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+            <!-- 数据上传设置 -->
+
+            <RelativeLayout
+                android:id="@+id/setting_upload_server_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_upload_server" />
+
+                <TextView
+                    android:id="@+id/setting_upload_server_text"
+                    style="@style/setting_sort_right_text_2" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+            <!-- https服务器 -->
+
+            <RelativeLayout
+                android:id="@+id/setting_upload_http_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_upload_https_url" />
+
+                <TextView
+                    android:id="@+id/setting_upload_http_text"
+                    style="@style/setting_sort_right_text_2"
+                    android:layout_marginLeft="120dip"
+                    android:singleLine="true"
+                    android:text="https://gng.wireless.att.com/HandheldUpload" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+            <!-- FTP服务器 -->
+
+            <LinearLayout
+                android:id="@+id/setting_upload_ftp_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_setting_upload_ftp_name" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/setting_upload_ftp_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="5dip"
+                        android:drawSelectorOnTop="true" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+                <!-- FTP路径 -->
+
+                <RelativeLayout
+                    android:id="@+id/setting_upload_ftp_path_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/task_upload_file_path" />
+
+                    <TextView
+                        android:id="@+id/setting_upload_ftp_path_txt"
+                        style="@style/setting_sort_right_text_2"
+                        android:ellipsize="end"
+                        android:maxEms="10"
+                        android:singleLine="true" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- fleet服务器设置 -->
+
+            <LinearLayout
+                android:id="@+id/fleet_server_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/setting_fleet_server_type_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_setting_server_type" />
+
+                    <CheckBox
+                        android:id="@+id/setting_fleet_server_type_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:button="@drawable/switch_button_bg"
+                        android:checked="false" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setting_upload_fleet_server_ip_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_setting_upload_fleet_ip" />
+
+                    <TextView
+                        android:id="@+id/setting_upload_fleet_server_ip_text"
+                        style="@style/setting_sort_right_text_2" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setting_upload_fleet_server_port_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_setting_upload_fleet_port" />
+
+                    <TextView
+                        android:id="@+id/setting_upload_fleet_server_port_text"
+                        style="@style/setting_sort_right_text_2" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setting_download_fleet_server_ip_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_setting_download_fleet_ip" />
+
+                    <TextView
+                        android:id="@+id/setting_download_fleet_server_ip_text"
+                        style="@style/setting_sort_right_text_2" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setting_download_fleet_server_port_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_setting_download_fleet_port" />
+
+                    <TextView
+                        android:id="@+id/setting_download_fleet_server_port_text"
+                        style="@style/setting_sort_right_text_2" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setting_upload_fleet_server_account_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_setting_upload_fleet_account" />
+
+                    <TextView
+                        android:id="@+id/setting_upload_fleet_server_account_text"
+                        style="@style/setting_sort_right_text_2" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setting_upload_fleet_server_password_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_setting_upload_fleet_password" />
+
+                    <TextView
+                        android:id="@+id/setting_upload_fleet_server_password_text"
+                        style="@style/setting_sort_right_text_2" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 联通一级平台设置 -->
+            <LinearLayout
+                android:id="@+id/unicom_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View style="@style/new_setting_divider" />
+
+                <!-- IP -->
+
+                <RelativeLayout
+                    android:id="@+id/setting_upload_unicom_server_ip_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_setting_upload_unicom_ip" />
+
+                    <TextView
+                        android:id="@+id/setting_upload_unicom_server_ip_text"
+                        style="@style/setting_sort_right_text_2" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/unicom_split_ip"
+                    style="@style/new_setting_divider" />
+
+                <!-- 端口 -->
+
+                <RelativeLayout
+                    android:id="@+id/setting_upload_unicom_server_port_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_setting_upload_unicom_port" />
+
+                    <TextView
+                        android:id="@+id/setting_upload_unicom_server_port_text"
+                        style="@style/setting_sort_right_text_2" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/unicom_split_port"
+                    style="@style/new_setting_divider" />
+
+                <!-- 用户名 -->
+
+                <RelativeLayout
+                    android:id="@+id/setting_upload_unicom_server_account_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_setting_upload_unicom_account" />
+
+                    <TextView
+                        android:id="@+id/setting_upload_unicom_server_account_text"
+                        style="@style/setting_sort_right_text_2" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/unicom_split_account"
+                    style="@style/new_setting_divider" />
+
+                <!-- 密码 -->
+
+                <RelativeLayout
+                    android:id="@+id/setting_upload_unicom_server_password_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_setting_upload_unicom_password" />
+
+                    <TextView
+                        android:id="@+id/setting_upload_unicom_server_password_text"
+                        style="@style/setting_sort_right_text_2" />
+                </RelativeLayout>
+                <!-- end 联通一级平台设置 end -->
+
+            </LinearLayout>
+
+
+            <!-- 寅时服务器设置 -->
+            <LinearLayout
+                android:id="@+id/inns_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View style="@style/new_setting_divider" />
+                <!-- IP -->
+                <RelativeLayout
+                    android:id="@+id/setting_upload_inns_server_ip_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_setting_upload_inns_ip" />
+
+                    <TextView
+                        android:id="@+id/setting_upload_inns_server_ip_text"
+                        style="@style/setting_sort_right_text_2" />
+                </RelativeLayout>
+
+                <View style="@style/new_setting_divider" />
+
+                <!-- UserID -->
+                <RelativeLayout
+                    android:id="@+id/setting_upload_inns_server_user_id_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_setting_upload_inns_user_id" />
+
+                    <TextView
+                        android:id="@+id/setting_upload_inns_server_user_id_text"
+                        style="@style/setting_sort_right_text_2" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- DTLog服务器 -->
+
+            <RelativeLayout
+                android:id="@+id/setting_upload_dtlog_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="IP/Port/BoxId" />
+
+                <TextView
+                    android:id="@+id/setting_upload_dtlog_text"
+                    style="@style/setting_sort_right_text_2"
+                    android:layout_marginLeft="120dip"
+                    android:singleLine="true" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+            <!-- 英彬说屏蔽GMCC功能,将fleet事件上报选项屏蔽 -->
+
+            <RelativeLayout
+                android:id="@+id/setting_upload_fleet_server_event_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_upload_fleet_event" />
+
+                <CheckBox
+                    android:id="@+id/fleet_event_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/switch_button_bg"
+                    android:checked="true" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_upload_file_type_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_data_upload_file_type" />
+
+                <TextView
+                    android:id="@+id/setting_upload_file_type_text"
+                    style="@style/setting_sort_right_text_2"
+                    android:singleLine="true" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_upload_mos_file_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_data_upload_mos_file" />
+
+                <CheckBox
+                    android:id="@+id/setting_upload_mos_file_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/walktour_cb_2"
+                    android:checked="false" />
+
+                <View style="@style/new_setting_divider" />
+        </RelativeLayout>
+
+        <!--是否上传标注内容-->
+        <RelativeLayout
+            android:id="@+id/setting_upload_tagging_file_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground" >
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:text="@string/sys_setting_data_upload_tagging_file" />
+
+            <CheckBox
+                android:id="@+id/setting_upload_tagging_file_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:button="@drawable/switch_button_bg"
+                android:checked="false" />
+
+            <View style="@style/new_setting_divider" />
+        </RelativeLayout>
+        </LinearLayout>
+        <!-- 邮件通知设置 -->
+
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/sys_setting_data_upload_mail_title" />
+
+        <LinearLayout
+            style="@style/item_layout_white_circle"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/email_toggle_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/email_notification" />
+
+                <CheckBox
+                    android:id="@+id/toggle_email_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/walktour_cb_2"
+                    android:checked="true" />
+        <View
+            style="@style/new_setting_divider"
+            />
+            </RelativeLayout>
+
+            <!-- 发件人设置 -->
+
+            <RelativeLayout
+                android:id="@+id/email_send_address_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/email_send_address" />
+
+                <TextView
+                    android:id="@+id/email_send_address_text"
+                    style="@style/setting_sort_right_text_2" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+            <!-- 收件人设置 -->
+
+            <RelativeLayout
+                android:id="@+id/email_receive_address_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/email_receive_address" />
+
+                <TextView
+                    android:id="@+id/email_receive_address_text"
+                    style="@style/setting_sort_right_text_2" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+            <!-- 日志上传设置 -->
+        </LinearLayout>
+
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/sys_setting_data_upload_log_title" />
+
+        <LinearLayout
+            style="@style/item_layout_white_circle"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_data_upload_log_title" />
+
+                <Button
+                    android:id="@+id/upload_log"
+                    android:layout_width="102dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_blue_radius_selector"
+                    android:gravity="center"
+                    android:text="@string/sys_setting_data_upload_log_select"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/default_txt_size_normal" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

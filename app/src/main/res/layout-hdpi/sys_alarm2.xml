@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 接入点设置 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_color">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- 设备告警设置 -->
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/sys_alarm_device" /><!-- @style/setting_level2_title -->
+        <LinearLayout
+            style="@style/item_layout_white_circle"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/setting_alarm_device"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_alarm_types" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/toolbar_item_more"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View style="@style/new_setting_divider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_alarm_sound" />
+
+                <CheckBox
+                    android:id="@+id/check_device_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/walktour_cb_2" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 网络告警设置 -->
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/sys_alarm_network" />
+
+        <LinearLayout
+            style="@style/item_layout_white_circle"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/setting_alarm_network"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_alarm_types" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/toolbar_item_more"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View style="@style/new_setting_divider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_alarm_sound" />
+
+                <CheckBox
+                    android:id="@+id/check_network_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/walktour_cb_2" />
+            </RelativeLayout>
+
+            <View style="@style/new_setting_divider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_alarm_map" />
+
+                <CheckBox
+                    android:id="@+id/check_network_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/walktour_cb_2" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- 网络告警设置 -->
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/sys_alarm_test" />
+
+        <LinearLayout
+            style="@style/item_layout_white_circle"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/setting_alarm_test"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_alarm_types" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/toolbar_item_more"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View style="@style/new_setting_divider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_alarm_sound" />
+
+                <CheckBox
+                    android:id="@+id/check_test_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/walktour_cb_2" />
+            </RelativeLayout>
+
+            <View style="@style/new_setting_divider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_alarm_map" />
+
+                <CheckBox
+                    android:id="@+id/check_test_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/walktour_cb_2" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- 自定义 -->
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/sys_alarm_define" />
+
+        <LinearLayout
+            style="@style/item_layout_white_circle"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/setting_alarm_define_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_alarm_define_msg" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/toolbar_item_more"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View style="@style/new_setting_divider" />
+
+            <RelativeLayout
+                android:id="@+id/setting_alarm_define_param"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_alarm_define_param" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/toolbar_item_more"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

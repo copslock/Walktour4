@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+
+    android:orientation="vertical"
+    tools:context=".task.activity.scannertsma.ui.ScannerTSMAInfoActivity">
+    <RelativeLayout
+        style="@style/setting_chart_table_row"
+        android:layout_marginTop="20dp"
+        android:paddingRight="10dip">
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:layout_width="110dip"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/sys_setting_use__tsma_scanner" />
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:id="@+id/sp_scan_type"
+            style="@style/task_drop_view"
+            android:layout_width="@dimen/sys_map_width"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/drop"
+            android:drawSelectorOnTop="false" />
+    </RelativeLayout>
+    <com.walktour.customView.tableview.FreeScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.walktour.customView.tableview.TableLayout
+            android:id="@+id/main_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:backgroundColorSelected="@color/colorAccent"
+            app:tableColumnPadding="34dp"
+            app:tableDividerColor="#ddd"
+            app:tableDividerSize="1px"
+            app:tableRowHeight="48dp"
+            app:tableTextColor="#333"
+            app:tableTextColorSelected="#fff"
+            app:tableTextSize="14dp" />
+    </com.walktour.customView.tableview.FreeScrollView>
+
+</LinearLayout>

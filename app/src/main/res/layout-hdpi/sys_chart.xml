@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_color">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/sys_chart_line_setting" />
+
+        <LinearLayout
+            android:id="@+id/curve_set_list"
+            style="@style/item_layout_white_circle"
+            android:orientation="vertical" />
+
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/sys_chart_custom_param" />
+
+        <LinearLayout
+            style="@style/item_layout_white_circle"
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/setting_chart_custom_param"
+            style="@style/setting_chart_table_row"
+            android:layout_height="@dimen/item_layout_height"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/TextViewValue5"
+                style="@style/setting_sort_left_up_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="@string/sys_chart_select_custom_param" />
+
+            <TextView
+                style="@style/setting_sort_left_down_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextViewValue5"
+                android:layout_marginLeft="10dip"
+                android:text="@string/sys_chart_param_description" />
+        </RelativeLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

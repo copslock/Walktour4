@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/base_list_item_bg"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/test_scene_type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/app_grey_color"
+        android:orientation="vertical"
+        android:paddingEnd="5dp"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:id="@+id/test_scene_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|start"
+            android:textSize="@dimen/app_content_txt_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/test_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingEnd="5dp"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/threshold_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical|start"
+            android:textSize="@dimen/app_content_txt_size"/>
+
+        <TextView
+            android:id="@+id/threshold_value"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/app_content_txt_size"/>
+
+        <TextView
+            android:id="@+id/test_result"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            android:textSize="@dimen/app_content_txt_size"/>
+    </LinearLayout>
+</LinearLayout>

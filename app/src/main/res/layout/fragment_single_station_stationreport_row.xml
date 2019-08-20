@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="left|center_vertical"
+              android:background="@drawable/base_list_item_bg"
+              android:descendantFocusability="blocksDescendants"
+              android:gravity="left|center_vertical"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/test_task_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left|center_vertical"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp">
+
+        <ImageButton
+            android:id="@+id/station_check"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:paddingBottom="13dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="13dp"
+            android:src="@drawable/btn_check_off"/>
+
+        <ImageView
+            android:id="@+id/station_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/singlestation_indoor_tested"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/station_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/task_check"
+                android:layout_toStartOf="@+id/result_upload"
+                android:gravity="start|center_vertical"
+                android:paddingStart="5dp"
+                android:text="heelo"
+                android:textSize="@dimen/app_second_title_txt_size"/>
+
+            <TextView
+                android:id="@+id/station_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/task_check"
+                android:layout_toStartOf="@+id/result_upload"
+                android:gravity="start|center_vertical"
+                android:paddingStart="5dp"
+                android:text="xxx"
+                android:textSize="@dimen/app_content_txt_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:gravity="center|center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:gravity="center|center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/report_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/local_station_report"
+                    android:visibility="visible"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:padding="0dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/report_msg_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/single_station_test_status_fault"
+                    android:visibility="visible"
+                    android:textSize="@dimen/app_content_txt_size"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

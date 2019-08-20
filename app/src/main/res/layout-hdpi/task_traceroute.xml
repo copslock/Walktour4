@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_grey_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/task_attach_title"
+        layout="@layout/basic_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/title_layout"
+        android:background="@color/setting_sort_title_bgcolor" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_weight="50" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:background="@color/app_main_bg_color"
+            android:orientation="vertical" >
+
+            <!-- 常规 -->
+
+            <include layout="@layout/task_routine_sort_title" />
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_taskname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/tasK_title_style"
+                    android:layout_centerVertical="true"
+                     />
+
+                <EditText
+                    android:id="@+id/edit_taskname"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:width="10px" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    style="@style/tasK_title_style"
+                     />
+
+                <EditText
+                    android:id="@+id/edit_repeat"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="@string/traceroute_host"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/tasK_title_style"
+                    android:layout_centerVertical="true"
+                     />
+
+                <EditText
+                    android:id="@+id/edit_host"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="text"
+                    android:singleLine="true" />
+            </RelativeLayout>
+            
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/tasK_title_style"
+                    android:layout_centerVertical="true"
+					android:text="@string/traceroute_IpPacket"                    
+                     />
+
+                <EditText
+                    android:id="@+id/edit_IpPacket"
+                    style="@style/task_edit_view"
+                    android:inputType="number"
+                    android:layout_centerInParent="true"
+                    android:maxLength="4"
+                    />
+            </RelativeLayout>
+
+            <!-- 高级 -->
+
+            <include layout="@layout/task_advanced_sort_title" />
+
+            <LinearLayout
+                android:id="@+id/task_advanced_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:text="@string/traceroute_hopTime"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                         />
+
+                    <EditText
+                        android:id="@+id/edit_hopTimeOut"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <View style="@style/task_listdivider" />
+                
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:text="@string/traceroute_hopInterval"
+                        android:layout_width="wrap_content"
+                        style="@style/tasK_title_style"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                         />
+
+                    <EditText
+                        android:id="@+id/edit_hopInterval"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:singleLine="true" />
+                </RelativeLayout>
+                
+                <View style="@style/task_listdivider" />
+                
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:text="@string/traceroute_HopProbeNum"
+                        android:layout_width="wrap_content"
+                        style="@style/tasK_title_style"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                         />
+
+                    <EditText
+                        android:id="@+id/edit_HopProbeNum"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:singleLine="true" />
+                </RelativeLayout>
+                
+                <View style="@style/task_listdivider" />
+                
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txt_interVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/tasK_title_style"
+                        android:layout_centerVertical="true"
+                         />
+
+                    <EditText
+                        android:id="@+id/edit_interVal"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:singleLine="true" />
+                </RelativeLayout>
+                
+                 <View style="@style/task_listdivider" />
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txt_disConnect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/tasK_title_style"
+                        android:layout_centerVertical="true"
+                         />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/edit_disConnect"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+                </RelativeLayout> 
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/task_menu_buttom" />
+
+</LinearLayout>

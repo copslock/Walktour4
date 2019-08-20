@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/work_order_fj_sub_detail"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:visibility="gone" >
+
+    <View
+        style="@style/setting_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_sub_detail_name" />
+
+        <TextView
+            android:id="@+id/work_order_fj_sub_detail_name"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_sub_detail_phone" />
+
+        <TextView
+            android:id="@+id/work_order_fj_sub_detail_phone"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_sub_detail_local" />
+
+        <TextView
+            android:id="@+id/work_order_fj_sub_detail_local"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_sub_detail_serial_num" />
+
+        <TextView
+            android:id="@+id/work_order_fj_sub_detail_serial_num"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_sub_detail_complaints_location" />
+
+        <TextView
+            android:id="@+id/work_order_fj_sub_detail_complaints_location"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_sub_detail_address" />
+
+        <TextView
+            android:id="@+id/work_order_fj_sub_detail_address"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:maxWidth="200dp"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_sub_detail_lal" />
+
+        <TextView
+            android:id="@+id/work_order_fj_sub_detail_lal"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_sub_detail_business_type" />
+
+        <TextView
+            android:id="@+id/work_order_fj_sub_detail_business_type"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_sub_detail_complaints_expression" />
+
+        <TextView
+            android:id="@+id/work_order_fj_sub_detail_complaints_expression"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:maxWidth="200dp"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_sub_detail_retry" />
+
+        <TextView
+            android:id="@+id/work_order_fj_sub_detail_retry"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_sub_detail_urgency" />
+
+        <TextView
+            android:id="@+id/work_order_fj_sub_detail_urgency"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_sub_detail_order_time" />
+
+        <TextView
+            android:id="@+id/work_order_fj_sub_detail_order_time"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_sub_detail_accepted_time" />
+
+        <TextView
+            android:id="@+id/work_order_fj_sub_detail_accepted_time"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_sub_detail_reply_time" />
+
+        <TextView
+            android:id="@+id/work_order_fj_sub_detail_reply_time"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_sub_detail_complete_time" />
+
+        <TextView
+            android:id="@+id/work_order_fj_sub_detail_complete_time"
+            style="@style/setting_sort_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="" />
+    </RelativeLayout>
+
+</LinearLayout>

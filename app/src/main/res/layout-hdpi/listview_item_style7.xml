@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout   
+    xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:id="@+id/RelativeLayout01"   
+    android:layout_width="fill_parent"   
+    android:layout_height="wrap_content"   
+    android:paddingLeft="2dip"  
+    android:paddingRight="2dip"
+    android:background="@drawable/base_list_item_bg"
+    >  
+  
+<TextView
+    android:textSize="@dimen/app_content_txt_size"
+    android:layout_height="wrap_content"  
+    android:layout_width="fill_parent" 
+    android:paddingBottom="1dip"
+    android:textColor="@color/app_main_text_color"
+    android:id="@+id/ItemText"  
+    /> 
+
+</RelativeLayout>  

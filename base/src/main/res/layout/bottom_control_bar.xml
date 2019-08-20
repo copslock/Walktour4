@@ -1,0 +1,122 @@
+<!-- 底部工具栏 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:layout_alignParentBottom="true"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/control_bar_divider_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="fill_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/control_bar_divider_color"/>
+
+        <Button
+            android:id="@+id/control_bar_button01"
+            style="@style/control_bar_button_bg"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/control_bar_divider01"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/control_bar_divider_color"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/control_bar_button02"
+            style="@style/control_bar_button_bg"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/control_bar_divider02"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/control_bar_divider_color"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/control_bar_button03"
+            style="@style/control_bar_button_bg"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/control_bar_divider03"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/control_bar_divider_color"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/control_bar_button04"
+            style="@style/control_bar_button_bg"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/control_bar_divider04"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/control_bar_divider_color"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/control_bar_button05"
+            style="@style/control_bar_button_bg"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/control_bar_divider05"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/control_bar_divider_color"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/control_bar_button06"
+            style="@style/control_bar_button_bg"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/control_bar_divider06"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/control_bar_divider_color"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/control_bar_button07"
+            style="@style/control_bar_button_bg"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/control_bar_divider07"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/control_bar_divider_color"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/control_bar_divider_color"/>
+
+</LinearLayout>

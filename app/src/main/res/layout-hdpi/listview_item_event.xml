@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_list_item_bg"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:paddingRight="2dip" >
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/ItemTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dip"
+        android:text="19:58:30"
+        android:textColor="@color/app_main_text_color"
+        android:textSize="@dimen/app_content_txt_size" />
+
+    <TextView
+        android:id="@+id/ItemInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_main_text_color"
+        android:paddingBottom="1dip"
+        android:layout_toRightOf="@id/ItemTime"
+        android:text="Drop Call"
+        android:textSize="@dimen/app_content_txt_size" />
+    <ImageView
+        android:id="@+id/iv_define_icon"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="18dp"
+        android:layout_height="18dp" />
+
+</RelativeLayout>

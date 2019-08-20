@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/task_attach_title"
+        layout="@layout/basic_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/title_layout"
+        android:background="@color/setting_sort_title_bgcolor" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/run_state_shape"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" >
+
+            <TextView
+                android:textSize="@dimen/app_content_txt_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+				android:textColor="@color/app_main_text_color"
+                android:text="Data" />
+
+            <TextView
+                android:textSize="@dimen/app_content_txt_size"
+                android:id="@+id/show_dataName"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/info_param_color" />
+        </RelativeLayout>
+
+        <View style="@style/setting_divider" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" >
+
+            <TextView
+                android:textSize="@dimen/app_content_txt_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:textColor="@color/app_main_text_color"
+                android:layout_centerVertical="true"
+                android:text="Time" />
+
+            <TextView
+                android:textSize="@dimen/app_content_txt_size"
+                android:id="@+id/show_time"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/info_param_color" />
+        </RelativeLayout>
+
+        <View style="@style/setting_divider" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" >
+
+            <TextView
+                android:textSize="@dimen/app_content_txt_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+				android:textColor="@color/app_main_text_color"
+                android:text="Result" />
+
+            <TextView
+                android:textSize="@dimen/app_content_txt_size"
+                android:id="@+id/show_result"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:text="No-Go"
+                android:textColor="@color/info_param_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_marginTop="10dip"
+        android:background="#969696" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:background="@color/app_main_bg_color"
+        android:minHeight="25dip" >
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="#969696" />
+
+        <TextView
+                android:textSize="@dimen/app_defult_btn_txt_size"
+            android:id="@+id/text_KPI"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="KPI" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="#969696" />
+
+        <TextView
+                android:textSize="@dimen/app_defult_btn_txt_size"
+            android:id="@+id/text_Threshold"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Threshold"/>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="#969696" />
+
+        <TextView
+                android:textSize="@dimen/app_defult_btn_txt_size"
+            android:id="@+id/text_ActualValue"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ActualValue"/>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="#969696" />
+
+        <TextView
+                android:textSize="@dimen/app_defult_btn_txt_size"
+            android:id="@+id/text_Result"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Result" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="#969696" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:background="#969696" />
+
+    <ListView
+        android:id="@+id/show_kpi_setting_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:cacheColorHint="@android:color/transparent"
+         android:background="@color/app_main_bg_color"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="1.0dip"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

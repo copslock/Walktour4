@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.walktour.framework.view.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout
+        android:tag="Bottom2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+       
+        <ImageView
+            android:id="@+id/trash"
+            android:src="@drawable/trash"
+            android:layout_width="70dp"
+            android:background="@drawable/red"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_height="40dp" 
+            android:contentDescription="@string/name"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/go_or_nogo_setting_child_item_view"/>
+    </LinearLayout>
+</com.walktour.framework.view.SwipeLayout>

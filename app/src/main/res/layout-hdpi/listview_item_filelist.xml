@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_list_item_bg"
+    android:orientation="vertical" >
+
+    <!-- 未展开的Item -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip" >
+
+        <!-- android:descendantFocusability="blocksDescendants" -->
+
+        <ImageView
+            android:id="@+id/ItemCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/btn_check_on" />
+
+        <TextView
+            android:id="@+id/ItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/ItemCheckBox"
+            android:text="Android-IN20140522-142355-Dial-FTPD"
+            android:textColor="@color/app_main_text_color"
+            android:textSize="@dimen/app_content_txt_size" />
+
+        <TextView
+            android:id="@+id/ItemDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ItemName"
+            android:layout_below="@id/ItemName"
+            android:text="ItemDate"
+            android:textColor="@color/app_main_second_title_text_color"
+            android:textSize="@dimen/app_second_content_txt_size" />
+
+        <ProgressBar
+            android:id="@+id/ItemProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="3dip"
+            android:layout_alignLeft="@id/ItemName"
+            android:layout_below="@id/ItemDate"
+            android:progress="50"
+            android:progressDrawable="@drawable/data_progress_horizontal" />
+
+        <TextView
+            android:id="@+id/ItemStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ItemDate"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:text="Uploading"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/app_content_txt_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="0dip"
+        >
+
+        <!-- 展开后的Item中包含的ListView -->
+
+        <com.walktour.gui.applet.FileListView
+            android:id="@+id/ItemList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/list_item_bg_expend"
+            android:divider="@color/list_item_bg_expend" />
+    </LinearLayout>
+
+</LinearLayout>

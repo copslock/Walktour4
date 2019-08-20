@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    > 
+    	<RelativeLayout
+    	    android:id="@+id/RelativeLayout01"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginTop="3dip"
+    		android:layout_marginLeft="6dip"
+    		android:layout_marginRight="6dip"
+    	> 
+    		<Button
+				android:textSize="@dimen/app_content_txt_size"
+				android:id="@+id/ButtonSearch"
+	    		android:layout_width="120dip"
+	    		android:layout_height="wrap_content"
+	    		android:layout_alignParentRight="true"
+	    		android:text="@string/str_search"
+    		/>
+    		<EditText
+				android:textSize="@dimen/app_content_txt_size"
+				android:id="@+id/EditTextSearch"
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:layout_toLeftOf="@id/ButtonSearch"
+	    		android:hint="@string/map_base_name"
+    		/>
+		</RelativeLayout>
+    		
+    	<LinearLayout android:id="@+id/LinearLayout"    
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:layout_alignParentBottom="true"
+    		    android:weightSum="4"
+   	    >
+    	    <Button android:id="@+id/ButtonCheckAll"
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="1"
+				android:textSize="@dimen/app_content_txt_size"
+	    		android:text="@string/str_checkall"
+    		/>
+    	    <Button android:id="@+id/ButtonUnCheckAll"
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="1"
+				android:textSize="@dimen/app_content_txt_size"
+	    		android:text="@string/str_uncheckall"
+    		/>
+    	    <Button android:id="@+id/ButtonDelete"
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+				android:textSize="@dimen/app_content_txt_size"
+	    		android:layout_weight="1"
+	    		android:text="@string/delete"
+    		/>
+    	    <Button android:id="@+id/ButtonLoad"
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+				android:textSize="@dimen/app_content_txt_size"
+	    		android:layout_weight="1"
+	    		android:text="@string/load"
+    		/>
+    	    
+    	</LinearLayout>    
+    	    
+		<ListView android:layout_width="fill_parent"   
+	         android:layout_height="wrap_content"   
+	         android:id="@+id/ListView"  
+	         android:layout_below="@id/RelativeLayout01"
+	         android:layout_above="@id/LinearLayout"
+	    /> 
+		       
+</RelativeLayout> 

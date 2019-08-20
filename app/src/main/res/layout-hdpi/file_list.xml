@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/radiogroup_top"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:background="#FFFFFF">
+
+        <Button
+            android:id="@+id/Button01"
+            style="@style/data_manager_new_select_btn"
+            android:button="@null"
+            android:textColor="@drawable/selector_tab_text_color3"
+            android:textSize="@dimen/default_txt_size_special"
+            android:background="@drawable/spinner_ab_holo_light"/>
+		<View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@android:drawable/divider_horizontal_bright"/>
+        <Button
+            android:id="@+id/Button02"
+            android:button="@null"
+            android:textColor="@drawable/selector_tab_text_color3"
+            style="@style/data_manager_new_select_btn"
+            android:textSize="@dimen/default_txt_size_special"
+            android:background="@drawable/spinner_ab_holo_light" />
+		<View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@android:drawable/divider_horizontal_bright"/>
+        <Button
+            android:id="@+id/Button03"
+            style="@style/data_manager_new_select_btn"
+            android:button="@null"
+            android:textColor="@drawable/selector_tab_text_color3"
+            android:textSize="@dimen/default_txt_size_special"
+            android:background="@drawable/spinner_ab_holo_light"/>
+        <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@android:drawable/divider_horizontal_bright"/>
+        <Button
+            android:id="@+id/Button_other"
+            style="@style/data_manager_new_select_btn"
+            android:button="@null"
+            android:textColor="@drawable/selector_tab_text_color3"
+            android:textSize="@dimen/default_txt_size_special"
+            android:visibility="gone" 
+            android:background="@drawable/spinner_ab_holo_light"/>
+        <View android:id="@+id/divider_other" android:visibility="gone" android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@android:drawable/divider_horizontal_bright"/>
+
+        <Button
+            android:id="@+id/Button04"
+            android:button="@null"
+            android:textColor="@drawable/selector_tab_text_color3"
+            style="@style/data_manager_new_select_btn"
+            android:textSize="@dimen/default_txt_size_special"
+            android:background="@drawable/spinner_ab_holo_light" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@android:drawable/divider_horizontal_bright"/>
+    <!-- 文件列表 -->
+<ListView
+        android:id="@+id/ListView01"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@color/app_main_bg_color"
+        android:divider="@android:drawable/divider_horizontal_bright"
+        android:fadingEdge="none"
+         />
+	<LinearLayout
+	    android:id="@+id/content_list" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:visibility="gone"></LinearLayout>
+
+</LinearLayout>

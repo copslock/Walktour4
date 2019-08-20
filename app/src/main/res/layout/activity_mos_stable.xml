@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mos.MosOfflineActivity">
+
+    <include layout="@layout/basic_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="算分方案：" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="POLQA" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_DF" />
+
+            <!--            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:gravity="center_vertical"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="POLQA License：" />
+
+                            <TextView
+                                android:id="@+id/tv_license"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:text="" />
+
+                            <Button
+                                android:id="@+id/btn_license"
+                                android:layout_width="46dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="8dp"
+                                android:background="@drawable/selector_mos_test"
+                                android:padding="0dp"
+                                android:text="选择"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:visibility="gone"
+                            android:background="@color/line_DF" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="8K语料目录：" />
+
+                <TextView
+                    android:id="@+id/tv_8k_dir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btn_8k_dir"
+                    android:layout_width="46dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/selector_mos_test"
+                    android:padding="0dp"
+                    android:text="选择"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_DF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="48K语料目录：" />
+
+                <TextView
+                    android:id="@+id/tv_48k_dir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btn_48k_dir"
+                    android:layout_width="46dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/selector_mos_test"
+                    android:padding="0dp"
+                    android:text="选择"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_DF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="蓝牙mos：" />
+
+                <TextView
+                    android:id="@+id/tv_mos_mac"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="未连接" />
+
+                <Button
+                    android:id="@+id/btn_match_mos"
+                    android:layout_width="46dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/selector_mos_test"
+                    android:padding="0dp"
+                    android:text="配对"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_DF" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="有效文件个数：" />
+
+                <TextView
+                    android:id="@+id/tv_valid_file"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="8K 0 个；48K 0 个" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_DF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Mos算分结果：" />
+
+                <TextView
+                    android:id="@+id/tv_mos_result"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/right_btn1" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_DF" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="1.预置条件:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="  1.1 准备多个不同采样率的语料，48k标准语料35个，8k标准语料26个，男女声个数相当；\n  1.2 软件连接MOS盒，采取MOS盒自环连接方式；" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="2.测试步骤："
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="  2.1 语料直接输入MOS盒打分；\n  2.2 每个语料测试25次，导出MOS数据，存为exel文件；\n  2.3 计算统计波动概率（r=num（波动语料）/num（测试语料））和波动值（方差）" />
+
+
+            <Button
+                android:id="@+id/btn_begin"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/selector_mos_test"
+                android:padding="0dp"
+                android:text="开始算分"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

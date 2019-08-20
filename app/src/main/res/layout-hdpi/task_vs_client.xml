@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#666666">
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:text="配置" />
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:text="开始" />
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:text="结束" />
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:text="退出" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+        <LinearLayout
+            android:id="@+id/layout_dmplayer"
+            android:layout_width="180dp"
+            android:layout_height="150dp" >
+        </LinearLayout>
+        <EditText
+            android:id="@+id/text_event"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:focusable="false" 
+            android:cursorVisible="false"
+            android:clickable="false"
+            android:longClickable="false"
+            android:scrollbars="vertical" >
+        </EditText>
+    </LinearLayout>
+       
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="当前速率:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_recv_speed_cur"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="最大速率:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_recv_speed_max"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="最小速率:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_recv_speed_min"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="平均速率:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_recv_speed_avg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="接收字节:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_recv_total_kbytes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="下载进度:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_download_progress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="缓冲次数:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_waitdata_times"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="缓冲时间:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_waitdata_seconds"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="丢包数:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_audio_loss_pkt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="丢包率:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_audio_loss_pkt_fraction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="包抖动:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_audio_jitter_inter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="包间隔:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_audio_packet_gap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="丢包数:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_video_loss_pkt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="丢包率:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_video_loss_pkt_fraction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="包抖动:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_video_jitter_inter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="包间隔:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_video_packet_gap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="当前帧率:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_fps_cur"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="A-V位置差:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_delay_a_v"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="播放帧数:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_play_frames"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="解码帧数:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_decode_frames"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="CPU使用率:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_cpu_percent"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="内存使用率:"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text_memory_percent"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

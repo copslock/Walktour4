@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 新数据管理menu -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="@android:color/transparent"
+    android:minHeight="60dp"
+    android:orientation="horizontal" 
+    android:gravity="right">
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:minWidth="140dp"
+    android:layout_height="60dp"
+    android:background="@drawable/data_manager_menu_shape_bg"
+    android:minHeight="60dp"
+    android:orientation="horizontal" 
+    > 
+     <Button
+        android:id="@+id/button_1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@null"
+         android:textSize="@dimen/app_defult_btn_txt_size"
+        android:text="@string/delete"
+		android:visibility="gone"/>
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="fill_parent"
+        android:background="@color/txt_high_light"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="0dp"
+        android:minWidth="70dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@null"
+        android:textSize="@dimen/app_defult_btn_txt_size"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:text="@string/attribute" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="fill_parent"
+        android:background="@color/white" />
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="0dp"
+        android:minWidth="70dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:textSize="@dimen/app_defult_btn_txt_size"
+        android:background="@null"
+        android:text="@string/str_more_ellipsis" />
+    </LinearLayout>
+
+   
+
+</LinearLayout>

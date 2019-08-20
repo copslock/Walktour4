@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/upgrade_message"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_content_txt_size" />
+
+    <EditText
+        android:id="@+id/upgrade_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:background="@null"
+        android:editable="false"
+        android:gravity="top"
+        android:lines="15"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textColor="@color/app_main_text_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:textSize="@dimen/app_content_txt_size"
+        android:textColor="@color/app_main_text_color"
+        android:id="@+id/text_download_progressrogress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

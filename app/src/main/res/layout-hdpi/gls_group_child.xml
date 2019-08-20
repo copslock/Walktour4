@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 注意： 将复选框设置为不可点击，不可在触摸时点击，不可获得焦点 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dip"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/ly1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:textSize="@dimen/app_content_txt_size"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_marginRight="5dip" />
+        
+         <CheckBox
+             android:textSize="@dimen/app_content_txt_size"
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_centerVertical="true"
+            android:button="@drawable/checkbox"
+            android:focusableInTouchMode="false" />
+        
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/checkBox"
+            android:padding="5dip"
+            >
+            <TextView
+                android:textSize="@dimen/app_content_txt_size"
+                android:id="@+id/gls_contract_name" 
+                android:layout_height="wrap_content"
+            	android:layout_width="wrap_content"
+                android:text="DL3300AA00001"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/gls_contract_expireDate" 
+                android:layout_height="wrap_content"
+            	android:layout_width="wrap_content"
+                android:text="DL3300AA00001"
+                android:textColor="@color/info_param_color"
+                android:textSize="@dimen/app_content_txt_size"
+                />
+            
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:padding="5dip"
+            >
+            <TextView
+                android:id="@+id/gls_contract_project" 
+                android:layout_height="wrap_content"
+            	android:layout_width="wrap_content"
+                android:text="Ericsson ATU Project"
+                android:layout_gravity="right"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_content_txt_size"
+                />
+            <TextView
+                android:id="@+id/gls_contract_available" 
+                android:layout_height="wrap_content"
+            	android:layout_width="wrap_content"
+                android:text="Available Number: 1/9"
+                android:textColor="@color/info_param_color"
+                android:textSize="@dimen/app_content_txt_size"
+                />
+            
+            
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/line"
+            android:visibility="visible" 
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/list_divider"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

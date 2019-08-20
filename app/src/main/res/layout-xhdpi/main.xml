@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_logoImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="33dp"
+        android:background="@color/app_main_color"
+        android:paddingTop="67dip" >
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/logoImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_logo" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/main_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/ll_logoImage">
+
+        <android.support.v4.view.ViewPager
+            android:paddingTop="20dp"
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/ll_dot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+
+    <!-- 底部菜单 -->
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/layout_about"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/communications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/communications_corp"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/layout_about"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="53dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/about_btn"
+                style="@style/main_button_bottom_2"
+                android:drawableTop="@drawable/main_about"
+                android:text="@string/main_menu_about"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/help_btn"
+                style="@style/main_button_bottom_2"
+                android:drawableTop="@drawable/main_help"
+                android:text="@string/str_help"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/exit_btn"
+                style="@style/main_button_bottom_2"
+                android:drawableTop="@drawable/main_exit"
+                android:text="@string/main_exit"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/progressBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="110dip"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/xlistview_header_progress2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_initializing"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

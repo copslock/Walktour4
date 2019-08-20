@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dip"
+        android:background="@drawable/app_main_shape"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <RelativeLayout
+            android:id="@+id/map_export"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/base_list_item_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/map_export"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider" />
+
+        <RelativeLayout
+            android:id="@+id/import_basedata"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/base_list_item_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/import_basedata"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider" />
+
+        <RelativeLayout
+            android:id="@+id/map_clean_all"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="40dp"
+            android:background="@drawable/base_list_item_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/map_bar_clear"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider" />
+
+        <RelativeLayout
+            android:id="@+id/setting_btn"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="40dp"
+            android:background="@drawable/base_list_item_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/setting"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider" />
+
+        <RelativeLayout
+            android:id="@+id/map_plotting_scale_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/base_list_item_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/map_bar_plotting_scale"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+        </RelativeLayout>
+        <View style="@style/task_listdivider" />
+        <RelativeLayout
+            android:id="@+id/map_switch_point"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/base_list_item_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/map_switch_point_type"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

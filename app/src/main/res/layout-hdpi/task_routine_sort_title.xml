@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:visibility="gone"
+    android:background="@drawable/sort_title_bg" >
+
+    
+    <TextView
+        android:id="@+id/task_sort_title_txt"
+        android:layout_marginLeft="8dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="@string/act_sys_routine"
+        android:textColor="@color/white" />
+    
+    <ImageView
+        android:background="@drawable/pointer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

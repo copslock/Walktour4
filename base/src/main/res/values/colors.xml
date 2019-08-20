@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="app_main_color">#2E92D5</color>-->
+    <color name="app_main_color">#0074CC</color>
+    <!--<color name="app_main_color">#165892</color>-->
+    <color name="app_other_color">#48D5E0</color>
+    <color name="app_tag_bg">#0074CC</color>
+    <color name="app_tag_text">#5AB2F6</color>
+
+
+    <color name="colorPrimary">#197CC8</color>
+    <color name="colorPrimaryDark">#48D5E0</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--控制栏按钮分割颜色-->
+    <color name="control_bar_divider_color">#AFAFAF</color>
+    <!-- 透明颜色 -->
+    <color name="title_bg">#0071BC</color>
+    <color name="transparent">#00000000</color>
+    <!-- tab背景颜色 -->
+    <color name="app_tab_bg_color">#F3F3F3</color>
+    <!-- tab选中字体颜色 -->
+    <color name="tab_selected_text_color">#28aae2</color>
+    <!-- tab未选中字体颜色 -->
+    <color name="tab_unselected_text_color">#F3F3F3</color>
+    <!--列表行选中颜色-->
+    <color name="base_list_item_bg_select">#E6E6E6</color> <!-- #28aae2 -->
+    <!-- 应用文本颜色 -->
+    <!--<color name="app_main_text_color">#333333</color>-->
+    <color name="app_main_text_color">#707070</color>
+    <!-- 应用主背景颜色 -->
+    <color name="app_main_bg_color">#FFFFFF</color>
+    <!-- 参数结果颜色 -->
+    <color name="app_param_color">#019CFF</color>
+    <!-- 个性灰色 -->
+    <color name="app_grey_color">#E6E6E6</color>
+    <!--标题背景色-->
+    <color name="title_bg_color">#15b6f9</color>
+    <!--线-->
+    <color name="line_DF">#DFDFDF</color>
+</resources>

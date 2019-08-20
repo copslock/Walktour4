@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/run_status_title"
+            layout="@layout/basic_title" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/setting_sort_title_bgcolor" />
+        <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/setting_sort_title"
+            android:layout_marginBottom="5dip"
+            android:text="@string/network_status" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" >
+
+            <TextView
+                android:textSize="@dimen/app_content_txt_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_network" />
+
+            <TextView
+                android:textSize="@dimen/app_content_txt_size"
+                android:id="@+id/currentNet_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="WCDMA"
+                android:textColor="@color/info_param_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" >
+
+            <TextView
+                android:textSize="@dimen/app_content_txt_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/network_status" />
+
+            <TextView
+                android:textSize="@dimen/app_content_txt_size"
+                android:id="@+id/netstate_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Connecting"
+                android:textColor="@color/info_param_color" />
+        </RelativeLayout>
+
+        <View style="@style/setting_divider" />
+
+        <TextView
+            style="@style/setting_sort_title"
+            android:layout_marginBottom="5dip"
+            android:text="@string/service_status" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" >
+
+            <TextView
+                android:textSize="@dimen/app_content_txt_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_service" />
+
+            <TextView
+                android:textSize="@dimen/app_content_txt_size"
+                android:id="@+id/currentjon_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="-"
+                android:textColor="@color/info_param_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/app_content_txt_size"
+                android:layout_height="wrap_content"
+                android:text="@string/test_count" />
+
+            <TextView
+                android:textSize="@dimen/app_content_txt_size"
+                android:id="@+id/testtimes_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="5/10"
+                android:textColor="@color/info_param_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/app_content_txt_size"
+                android:text="@string/success_ratio" />
+
+            <TextView
+                android:id="@+id/successrate_txt"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/app_content_txt_size"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="80%"
+                android:textColor="@color/info_param_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/app_content_txt_size"
+                android:text="@string/delay" />
+
+            <TextView
+                android:id="@+id/delay_txt"
+                android:textSize="@dimen/app_content_txt_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="-"
+                android:textColor="@color/info_param_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/app_content_txt_size"
+                android:text="@string/mean_rate" />
+
+            <TextView
+                android:id="@+id/avgThrRate_txt"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/app_content_txt_size"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1898kbps"
+                android:textColor="@color/info_param_color" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/setting_sort_title"
+            android:layout_marginBottom="5dip"
+            android:text="@string/device_status" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/run_state_shape"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_height="wrap_content"
+                    android:text="@string/model_number" />
+
+                <TextView
+                    android:id="@+id/phone_version"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="i747"
+                    android:textColor="@color/info_param_color" />
+            </RelativeLayout>
+
+            <View style="@style/setting_divider"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:text="@string/system_os_version" />
+
+                <TextView
+                    android:id="@+id/system_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:text="Android 4.0.4"
+                    android:textColor="@color/info_param_color" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_device_status_imei"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+                <View style="@style/setting_divider" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:text="IMEI" />
+
+                <TextView
+                    android:id="@+id/device_status_imei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_alignParentRight="true"
+                    android:text="---"
+                    android:textColor="@color/info_param_color" />
+            </RelativeLayout>
+
+            <View style="@style/setting_divider"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:text="@string/temperature" />
+
+                <TextView
+                    android:id="@+id/temperature_txt"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="56C"
+                    android:textColor="@color/info_param_color" />
+            </RelativeLayout>
+
+            <View style="@style/setting_divider"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_height="wrap_content"
+                    android:text="@string/run_duration" />
+
+                <TextView
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:id="@+id/keep_duration_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="0"
+                    android:textColor="@color/info_param_color" />
+            </RelativeLayout>
+
+            <View style="@style/setting_divider"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:text="@string/connection_status" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:text="Connected"
+                    android:textColor="@color/info_param_color" />
+            </RelativeLayout>
+            
+            <View style="@style/setting_divider"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:text="@string/phone_status" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:text="Power On"
+                    android:textColor="@color/info_param_color" />
+            </RelativeLayout>
+            
+
+            <View style="@style/setting_divider"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_height="wrap_content"
+                    android:text="@string/path" />
+
+                <TextView
+                    android:id="@+id/storagePath_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:text="/Sdcard/Walktour/data"
+                    android:textColor="@color/info_param_color" />
+            </RelativeLayout>
+            <View style="@style/setting_divider"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log_records_state" />
+
+                <TextView
+                    android:id="@+id/log_record_txt"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="0"
+                    android:textColor="@color/info_param_color" />
+            </RelativeLayout>
+            <View style="@style/setting_divider"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+
+                <TextView
+                    android:id="@+id/tv_log_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:text="@string/log_name" />
+
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/log_name_txt"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_alignParentRight="true"
+                    android:text="-"
+					android:gravity="center_vertical|right"
+                    android:textColor="@color/info_param_color" />
+            </RelativeLayout>
+
+            <View style="@style/setting_divider"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:text="@string/historical_exception_count" />
+
+                <TextView
+                    android:id="@+id/tv_exception_times"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:text="-"
+					android:gravity="center_vertical"
+                    android:textColor="@color/info_param_color" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/app_content_txt_size"
+                android:text="Remain Space" />
+
+            <TextView
+                android:id="@+id/surplusSize_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/app_content_txt_size"
+                android:layout_alignParentRight="true"
+                android:text="2.3G"
+                android:textColor="@color/info_param_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/app_content_txt_size"
+                android:text="CPU" />
+
+            <TextView
+                android:id="@+id/cpuState_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="67%"
+                android:textSize="@dimen/app_content_txt_size"
+                android:textColor="@color/info_param_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:textSize="@dimen/app_content_txt_size"
+                android:id="@+id/cpu_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cpu" />
+
+            <RelativeLayout
+                android:id="@+id/cpu_rly"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cpu_id" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="12dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/speedkuang" >
+                </ImageView>
+
+                <ProgressBar
+                    android:id="@+id/cpu_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="12dip"
+                    android:progress="50"
+                    android:progressDrawable="@drawable/seekbar_img" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cpu_rly"
+                android:layout_marginRight="2dip"
+                android:gravity="right" >
+
+                <ImageView
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/speedprogress" />
+
+                <TextView
+                    android:id="@+id/cpuState_txt"
+                    android:layout_width="90dip"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="2dip"
+                    android:text="Used67%"
+                    android:textColor="@color/info_param_color" />
+
+                <ImageView
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/speedkuang" />
+
+                <TextView
+                    android:id="@+id/freecpu_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="2dip"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:text="Free23%"
+                    android:textColor="@color/info_param_color" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:id="@+id/sdcard_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SDCard 16GB"
+                android:textSize="@dimen/app_content_txt_size"
+                android:textColor="@color/info_param_color" />
+            
+            <RelativeLayout
+                android:id="@+id/sdcard_rly"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sdcard_title_txt" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="12dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/speedkuang" >
+                </ImageView>
+                
+                <ProgressBar
+	                android:id="@+id/sdcard_progress"
+	                style="?android:attr/progressBarStyleHorizontal"
+	                android:layout_width="fill_parent"
+	                android:layout_height="12dip"
+	                android:progress="50"
+	                android:progressDrawable="@drawable/seekbar_img" />
+            </RelativeLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sdcard_rly"
+                android:layout_marginRight="2dip"
+                android:gravity="right" >
+
+                <ImageView
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/speedprogress" />
+
+                <TextView
+                    android:id="@+id/sdcard_used_txt"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="2dip"
+                    android:text="Used18.88GB"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:textColor="@color/info_param_color" />
+
+                <ImageView
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/speedkuang" />
+
+                <TextView
+                    android:id="@+id/sdcard_free_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="2dip"
+                    android:text="Free10.80GB"
+                    android:textColor="@color/info_param_color" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+	</LinearLayout>
+	
+</LinearLayout>

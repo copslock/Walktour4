@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_bg_color"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/param1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/app_main_text_color" />
+
+    <com.walktour.gui.newmap2.ui.AutoScaleTextView
+        android:gravity="left"
+        android:id="@+id/param2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/app_main_text_color" />
+
+</LinearLayout>

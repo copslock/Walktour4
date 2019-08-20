@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<!--====================================================================-->
+	<!--作为弹出对话框 的内容:包含5个TextView、4个EditText、1EditText password -->
+	<!--====================================================================-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="6dip"   
+	    android:paddingLeft="12dip"  
+	    android:paddingRight="12dip">
+	
+	    <TextView 
+	        android:id="@+id/alert_textView0"
+	        android:textSize="18dip"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_marginTop="8dip"        
+	        android:gravity="right"
+	         />
+	            
+	    <EditText
+	        android:id="@+id/alert_textEditText0"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_marginLeft="15dip"        
+	        android:layout_marginRight="10dip"
+	        android:layout_toRightOf="@id/alert_textView0" 
+	        android:maxLines="1"
+	        android:maxLength="30"        
+	        />        
+	</RelativeLayout>
+	
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="6dip"   
+	    android:paddingLeft="12dip"  
+	    android:paddingRight="12dip">
+	
+	    <TextView 
+	        android:id="@+id/alert_textView1"
+	        android:textSize="18dip"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_marginTop="8dip"        
+	        android:gravity="left"
+	         />
+	            
+	    <EditText
+	        android:id="@+id/alert_textEditText1"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_marginLeft="15dip"        
+	        android:layout_marginRight="10dip"
+	        android:layout_toRightOf="@id/alert_textView1" 
+	        android:maxLines="1"
+	        android:maxLength="30"        
+	        />        
+	</RelativeLayout>
+	
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="6dip"   
+	    android:paddingLeft="12dip"  
+	    android:paddingRight="12dip">
+	
+	    <TextView 
+	        android:id="@+id/alert_textView2"
+	        android:textSize="18dip"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_marginTop="8dip"        
+	        android:gravity="left"
+	         />
+	            
+	    <EditText
+	        android:id="@+id/alert_textEditText2"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_marginLeft="15dip"        
+	        android:layout_marginRight="10dip"
+	        android:layout_toRightOf="@id/alert_textView2" 
+	        android:maxLines="1"
+	        android:maxLength="30"        
+	        />        
+	</RelativeLayout>
+	
+	
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="6dip"   
+	    android:paddingLeft="12dip"  
+	    android:paddingRight="12dip">
+	
+	    <TextView 
+	        android:id="@+id/alert_textView3"
+	        android:textSize="18dip"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_marginTop="8dip"        
+	        android:gravity="left"
+	         />
+	            
+	    <EditText
+	        android:id="@+id/alert_textEditText3"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_marginLeft="15dip"        
+	        android:layout_marginRight="10dip"
+	        android:layout_toRightOf="@id/alert_textView3" 
+	        android:maxLines="1"
+	        android:maxLength="30"        
+	        />        
+	</RelativeLayout>
+	
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="6dip"   
+	    android:paddingLeft="12dip"  
+	    android:paddingRight="12dip">
+	
+	    <TextView 
+	        android:id="@+id/alert_textView4"
+	        android:textSize="18dip"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_marginTop="8dip"        
+	        android:gravity="left"
+	         />
+	            
+	    <EditText
+	        android:id="@+id/alert_textEditText4"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_marginLeft="15dip"        
+	        android:layout_marginRight="10dip"
+	        android:layout_toRightOf="@id/alert_textView4" 
+	        android:maxLines="1"
+	        android:maxLength="30"  
+	        android:password="true"      
+	        />        
+	</RelativeLayout>
+
+</LinearLayout>

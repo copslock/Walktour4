@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 筛选界面布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="300dp"
+    android:background="@color/app_menu_bg_color"
+    android:minHeight="125dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_menu_bg_color" >
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/ControlBar" >
+
+                <LinearLayout
+                    android:id="@+id/content_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    
+                </LinearLayout>
+            </ScrollView>
+            
+
+        <LinearLayout
+            android:id="@+id/ControlBar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_ECECEC"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/box2"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_reset"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="@string/params_list_reset"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/app_content_txt_size" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@android:drawable/divider_horizontal_bright" />
+
+                <Button
+                    android:id="@+id/btn_summit"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="@string/data_manager_screening"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/app_content_txt_size"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

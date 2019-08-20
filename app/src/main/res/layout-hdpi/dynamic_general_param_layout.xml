@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/small_window_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/legend" />
+
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_main_bg_color"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:id="@+id/network_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="WCDMA"
+                    android:textColor="@color/light_blue"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:id="@+id/param_left_name_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="RSRP"
+                    android:textColor="@color/app_main_text_color" />
+
+                <TextView
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:id="@+id/param_left_value_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="2dp"
+                    android:text="-89.81"
+                    android:textColor="@color/app_param_color" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/legend" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:id="@+id/param_left_name_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="MCC/MNC"
+                    android:textColor="@color/app_main_text_color" />
+
+                <TextView
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:id="@+id/param_left_value_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="460/0"
+                    android:textColor="@color/app_param_color" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/legend" />
+        </LinearLayout>
+        <!-- ============================================================================ -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="25dp" >
+
+                <TextView
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:id="@+id/param_right_name_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="TAC"
+                    android:textColor="@color/app_main_text_color" />
+
+                <TextView
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:id="@+id/param_right_value_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="9879"
+                    android:textColor="@color/app_param_color" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/legend" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="25dp" >
+
+                <TextView
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:id="@+id/param_right_name_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="ECI"
+                    android:textColor="@color/app_main_text_color" />
+
+                <TextView
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:id="@+id/param_right_value_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="173358860,677183,12"
+                    android:textColor="@color/app_param_color" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/legend" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="25dp" >
+
+                <TextView
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:id="@+id/param_right_name_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="SINR"
+                    android:textColor="@color/app_main_text_color" />
+
+                <TextView
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:id="@+id/param_right_value_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="38"
+                    android:textColor="@color/app_param_color" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/legend" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="25dp" >
+
+                <TextView
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:id="@+id/param_right_name_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="PCI"
+                    android:textColor="@color/app_main_text_color" />
+
+                <TextView
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:id="@+id/param_right_value_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="49"
+                    android:textColor="@color/app_param_color" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/legend" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chart_view_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" />
+
+</LinearLayout>

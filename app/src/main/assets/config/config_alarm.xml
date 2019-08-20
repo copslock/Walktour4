@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<alarm>
+	<item name="voice" value="0"/>
+   	<item name="storge" value="0" />
+   	<item name="sdcardlow" value="0" />
+   	<item name="sdcardnon" value="0" />
+   	<item name="gpsstatus" value="0" />
+   	<item name="gpsfail" value="0" />
+   	<item name="gpslost" value="0" />     	   	
+    <item name="net_err" value="0" />
+   	<item name="data_storge_err" value="0" />
+   	<item name="connect_fail" value="0" />
+   	<item name="call_dis" value="0" />
+   	<item name="swicth_fail" value="0" />
+   	<item name="low_battery" value="0" threshold="20"/>
+   	<item name="phone_overheat" value="0" threshold="38"/>
+   	<item name="traffic_monitor" value="0" threshold="10"/>
+   	<item name="baterry_charging" value="0"/>
+   	<item name="phone_down" value="0" />
+   	<item name="drop_call" value="0" />
+   	<item name="block_call" value="0" />
+   	<item name="sim_faild" value="0" />
+   	<item name="ppp_faild" value="0" />
+   	<item name="device_reboot" value="0" />
+   	<item name="usbdevice_faild" value="0" />
+   	<item name="ftpthroughput_low" value="0" />
+   	<item name="moslow2" value="0" />
+   	<item name="datarw_faild" value="0" />
+</alarm>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<nbmodule>
+    <item devicename="Lierda" devicevalue="Lierda USB Dongle" chipvendor="D402"/>
+    <item devicename="Remo" devicevalue="Remo 1526" chipvendor="D111"/>
+    <item devicename="Longsung" devicevalue="Longsung A9500" chipvendor="D111"/>
+    <item devicename="BroadMobi" devicevalue="BroadMobi BM817C" chipvendor="D111"/>
+    <item devicename="QualcomLiteprobe" devicevalue="QualcomLiteprobe" chipvendor="D111"/>
+</nbmodule>
+

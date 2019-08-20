@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/task_attach_title"
+        layout="@layout/basic_title" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|left"
+                android:background="@color/base_second_title_bg"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" >
+
+                <TextView
+                    style="@style/fontstyle14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/intelligent_analysis_ltedata_title_1"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/fontstyle14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/intelligent_analysis_ltedata_title_2"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/fontstyle14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/intelligent_analysis_ltedata_title_3"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" >
+
+                <TextView
+                    style="@style/fontstyle12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/intelligent_analysis_ltedata_title_4"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="-"
+                        android:textColor="@color/info_param_color" />
+
+                    <TextView
+                        android:id="@+id/ltedown1"
+                        style="@style/fontstyle12"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="-"
+                        android:textColor="@color/info_param_color" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/setting_divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" >
+
+                <TextView
+                    style="@style/fontstyle12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/intelligent_analysis_ltedata_title_5"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="-"
+                        android:textColor="@color/info_param_color" />
+
+                    <TextView
+                        android:id="@+id/ltedown2"
+                        style="@style/fontstyle12"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="-"
+                        android:textColor="@color/info_param_color" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/setting_divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" >
+
+                <TextView
+                    style="@style/fontstyle12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/intelligent_analysis_ltedata_title_6"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="-"
+                        android:textColor="@color/info_param_color" />
+
+                    <TextView
+                        android:id="@+id/ltedown3"
+                        style="@style/fontstyle12"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="-"
+                        android:textColor="@color/info_param_color" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/setting_divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" >
+
+                <TextView
+                    style="@style/fontstyle12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/total_AppAverageSpeed"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="-"
+                        android:textColor="@color/info_param_color" />
+
+                    <TextView
+                        android:id="@+id/ltedown4"
+                        style="@style/fontstyle12"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="-"
+                        android:textColor="@color/info_param_color" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/setting_divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RSRP(dBm):"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/ltersrp"
+                        style="@style/fontstyle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="-"
+                        android:textColor="@color/info_param_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RSRQ(db):"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/ltersrq"
+                        style="@style/fontstyle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="-"
+                        android:textColor="@color/info_param_color" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SINR(dB):"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/ltesinr"
+                        style="@style/fontstyle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="-"
+                        android:textColor="@color/info_param_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RB Count/s"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="-"
+                        android:textColor="@color/info_param_color" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CQI:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/fontstyle12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="-"
+                        android:textColor="@color/info_param_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/setting_divider" />
+
+            <TextView
+                style="@style/fontstyle14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center"
+                android:gravity="center_vertical|center"
+                android:text="@string/intelligent_analysis_ltedata_title_8"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/exception1Layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                style="@style/fontstyle14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center"
+                android:gravity="center_vertical|center"
+                android:text="@string/intelligent_analysis_ltedata_title_9"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/exception2Layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

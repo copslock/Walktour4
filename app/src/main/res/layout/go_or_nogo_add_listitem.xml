@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:clickable="true"
+    android:longClickable="true"
+    ><!-- @drawable/param_item_shape_bg -->
+    
+        <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text=""
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/divider"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:textSize="@dimen/app_content_txt_size" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0.1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/imageViewIcon"
+        android:background="@color/gray" 
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_action_discover" 
+        android:contentDescription="@string/name"/>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	URL_BUILDER_TYPE, // 0 - OSM,
+		1 - Google,
+		2 - Yandex,
+		3 - Yandex.Traffic,
+		4 - Google.Sattelite,
+		5 - openspace,
+		6 - microsoft,
+		7 - Docelu.pl
+		8 - VFR Chart
+		9 - http://www.avcharts.com/
+		10 - Soviet Military Maps
+	TILE_SOURCE_TYPE, //
+		0 - internet,
+		3 - MapNav file,
+		4 - TAR,
+		5 - sqlitedb
+	PROJECTION; //
+		1-меркатор на сфероид,
+		2- на эллипсоид,
+		3- OSGB 36 British national grid reference system
+	-->
+
+<root>
+
+	<map id="googlemap" cat="Google" name="Google.Map Online" descr="" baseurl="http://mt.google.com/vt/lyrs=m@179000000&amp;" IMAGE_FILENAMEENDING=".png" ZOOM_MINLEVEL="0" ZOOM_MAXLEVEL="19" MAPTILE_SIZEPX="512" URL_BUILDER_TYPE="1" TILE_SOURCE_TYPE="0" PROJECTION="1" YANDEX_TRAFFIC_ON="0"></map>
+
+</root>

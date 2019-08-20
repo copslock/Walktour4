@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="fill_parent"
+			  android:layout_height="fill_parent"
+			  android:orientation="vertical" >
+
+
+
+	<RelativeLayout
+		android:id="@+id/setting_upload_ftp_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+		<TextView
+			style="@style/setting_sort_left_text"
+			android:text="@string/scan_Frequency_band" />
+
+		<com.walktour.framework.ui.BasicSpinner
+			android:id="@+id/sp_bandCode"
+			android:layout_alignParentRight="true"
+			style="@style/task_drop_view"
+			android:layout_marginRight="5dip"
+			android:layout_centerInParent="true"
+			android:drawSelectorOnTop="true"
+			/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="50dip"
+		android:visibility="visible"
+		android:id="@+id/channel_range"
+
+		>
+
+		<TextView
+			android:id="@+id/channel_range_txt"
+			android:layout_centerVertical="true"
+			android:gravity="right"
+			android:textColor="@color/app_main_text_color"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="pppppppppppp"
+			android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip"
+			/>
+		<View  style="@style/setting_divider" />
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+
+		<TextView
+			android:text="frequency"
+			style="@style/setting_sort_left_text"
+			/>
+
+		<EditText
+			android:id="@+id/txt_startChannel"
+			android:singleLine="true"
+			android:maxLength="7"
+			android:inputType="numberDecimal"
+			android:layout_width="145dip"
+			android:layout_marginRight="7dip"
+			android:layout_alignParentRight="true"
+			android:layout_centerInParent="true"
+			style="@style/task_edit_view"
+			/>
+		<View style="@style/setting_divider"/>
+	</RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Groups>
+	<version value="20161202"/>
+	<Group level="1" code="10000001" GroupName="数据业务" GroupNameEN="Data Task">
+	<!--  GroupName：	   指标分类第一层级中文名称  GroupNameEN  指标分类第一层级中文名称 -->
+		<Business level="2" code="20000001" BusinessName="PBM" BusinessNameEN="PBM">
+				<!--  BusinessName：指标分类第二层级中文名称   -->
+			<Style level="3" code="30000001" StyleName="汇总" StyleNameEN="Summary" StyleFileName="PBM Name Summary" StyleFileNameEN="PBM Name Summary">
+				<!--  StyleName：指标分类第三层级中文名称   -->
+				<Tag level="4" code="40000001" TagNameSum="PBM Countsummary" TagNameSumEN="PBM Countsummary" TagNamebylog="PBM Count" TagNamebylogEN="PBM Count" OutputResultCount="4">
+						<!--  TagNameSum：样式xml文件中的汇总类指标标签中文名称  TagNamebylog：样式xml文件中的bylog类指标标签中文名称 -->
+						<Result ExcelTitle="尝试次数" ExcelTitleEN="Attempt Counts" Descripton="指标意义及定义公式" DescriptonEN="" />
+						<!--  ExcelTitle：Excel标题中文名称  OutputResultCount：输出结果个数  Descripton：指标描述定义-->
+						<Result ExcelTitle="成功次数" ExcelTitleEN="Attempt Counts" Descripton="指标意义及定义公式" DescriptonEN="" />
+						<Result ExcelTitle="失败次数" ExcelTitleEN="Attempt Counts" Descripton="指标意义及定义公式" DescriptonEN="" />
+						<Result ExcelTitle="成功率(%)" ExcelTitleEN="Attempt Counts" Descripton="指标意义及定义公式" DescriptonEN="" />
+				</Tag>	
+				<Tag level="4" code="40000002" TagNameSum="PBMQos Down Bandwidth_Summary"  TagNameSumEN="PBMQos Down Bandwidth_Summary" TagNamebylog="PBMQos Down Bandwidth_Log"  TagNamebylogEN="PBMQos Down Bandwidth_Log" OutputResultCount="2">
+						<Result ExcelTitle="平均速率均值(kbps)" ExcelTitleEN="" Descripton="指标意义及定义公式" DescriptonEN=""/>
+						<Result ExcelTitle="峰值速率(kbps)" ExcelTitleEN="" Descripton="指标意义及定义公式" DescriptonEN=""/>
+				</Tag>	
+				<Tag level="4" code="40000003" TagNameSum="PBM Throughput Summary"  TagNameSumEN="PBM Throughput Summary" TagNamebylog="PBM Throughput"  TagNamebylogEN="PBM Throughput" OutputResultCount="1">
+						<Result ExcelTitle="PBM Packet Loss downlink counts" ExcelTitleEN="" Descripton="指标意义及定义公式" DescriptonEN=""/>
+				</Tag>	
+			</Style>
+			<Style level="3" code="30000001" StyleName="PBM次数" StyleNameEN="" StyleFileName=" StyleFileNameEN=">
+				<Tag level="4" code="40000001" TagNameSum="PBM Countsummary" TagNameSumEN="PBM Countsummary" TagNamebylog="PBM Count" TagNamebylogEN="PBM Count" OutputResultCount="4">
+						<Result ExcelTitle="尝试次数" ExcelTitleEN="Attempt Counts" Descripton="指标意义及定义公式" DescriptonEN="" />
+						<Result ExcelTitle="成功次数" ExcelTitleEN="Attempt Counts" Descripton="指标意义及定义公式" DescriptonEN="" />
+						<Result ExcelTitle="失败次数" ExcelTitleEN="Attempt Counts" Descripton="指标意义及定义公式" DescriptonEN="" />
+						<Result ExcelTitle="成功率(%)" ExcelTitleEN="Attempt Counts" Descripton="指标意义及定义公式" DescriptonEN="" />
+				</Tag>	
+			</Style>
+			<Style level="3" code="30000001" StyleName="PBM速率" StyleNameEN="" StyleFileName=" TagNameEN=">
+				<Tag level="4" code="40000003" TagNameSum="PBMQos Down Bandwidth_Summary"  TagNameSumEN="PBMQos Down Bandwidth_Summary" TagNamebylog="PBMQos Down Bandwidth_Log" TagNamebylogEN="PBMQos Down Bandwidth_Log" OutputResultCount="2">
+						<Result ExcelTitle="平均速率均值(kbps)" ExcelTitleEN="Attempt Counts" Descripton="指标意义及定义公式" DescriptonEN=""/>
+						<Result ExcelTitle="峰值速率(kbps)" ExcelTitleEN="Attempt Counts" Descripton="指标意义及定义公式" DescriptonEN=""/>
+				</Tag>	
+			
+			</Style>
+			<Style level="3" code="20000001" StyleName="PBM下行丢包数" StyleNameEN="" StyleFileName="" TagNameEN="">
+				<Tag level="4" code="40000003" TagNameSum="PBM Throughput Summary"  TagNameSumEN="PBM Throughput Summary" TagNamebylog="PBM Throughput"  TagNamebylogEN="PBM Throughput" OutputResultCount="1">
+						<Result ExcelTitle="PBM Packet Loss downlink counts" ExcelTitleEN="" Descripton="指标意义及定义公式" DescriptonEN=""/>
+				</Tag>	
+			</Style>
+		</Business>
+	</Group>
+ 
+	<Group level="1" code="10000001" GroupName="常规" GroupNameEN="Data Task">
+		<Business level="2" code="20000001" BusinessName="文件属性" BusinessNameEN="File attributes">
+			<Style level="3" code="30000001" StyleName="文件名称" StyleNameEN="File Name" StyleFileName="" StyleFileNameEN="">
+				<Tag level="4" code="40000001" TagNameSum="Summary" TagNameSumEN="" TagNamebylog="PBM Name Summary" TagNamebylogEN="PBM Name Summary" OutputResultCount="4">
+						<Result ExcelTitle="Summary" ExcelTitleEN="Attempt Counts" Descripton="指标意义及定义公式" DescriptonEN="" />	
+				</Tag>
+			</Style>
+		</Business>
+	</Group>
+</Groups>	
+<!--
+     
+     GroupName：	   指标分类第一层级中文名称
+     GroupNameEN:    指标分类第一层级英文名称
+     BusinessName：  指标分类第二层级中文名称
+     BusinessNameEN: 指标分类第二层级英文名称
+     StyleName:      指标分类第三层级中文名称
+     StyleNameEN:    指标分类第三层级中文名称
+     TagName:        指标对应报表xml中的TagName
+     Count：         样式中包含的指标个数
+     ExcelTitle：    每个指标对应的Excel标题名称
+     DescriptonCN：  样式中文描述信息
+     DescriptonEN：  样式英文描述信息
+
+-->

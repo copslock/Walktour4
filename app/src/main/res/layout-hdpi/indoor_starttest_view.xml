@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop = "8dip"
+    android:fillViewport = "true"
+    android:layout_weight = "1">
+   
+    <RelativeLayout 
+    android:layout_width = "fill_parent"
+    android:layout_height = "fill_parent"
+    android:paddingLeft = "10dip"
+    android:paddingRight = "10dip"
+    android:paddingBottom = "8dip">
+    
+   
+    <LinearLayout
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:layout_alignParentTop= "true"
+    android:orientation="vertical"
+    android:id="@+id/LinearLayout01"
+    >
+    		<!-- 室内专项建筑物显示 -->
+		    <RelativeLayout
+		    android:id = "@+id/reTextBuild"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    >
+		    	<TextView android:id="@+id/TextViewBuild"
+		    		android:layout_width="72dip" 
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/main_building"
+		    		android:layout_alignParentLeft="true"
+		    		android:layout_centerVertical="true"
+		    		android:textSize = "@dimen/app_content_txt_size"
+		    	/>
+		    	
+		    	<TextView android:id="@+id/textBuild"
+					android:layout_width="fill_parent" 
+		    		android:layout_height="wrap_content"
+		    		android:layout_toRightOf="@id/TextViewBuild"
+		    		android:paddingLeft = "3dip"
+					android:textSize = "@dimen/app_content_txt_size"
+		    	/>
+		    
+		    </RelativeLayout>
+		    <!-- 业务测试建筑物显示 -->
+		<RelativeLayout 
+			android:id = "@+id/reSpinnerBuild"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    >
+		    	<TextView android:id="@+id/TextViewBuild1"
+		    		android:layout_width="72dip" 
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/main_building"
+		    		android:layout_alignParentLeft="true"
+		    		android:layout_centerVertical="true"
+					android:textSize = "@dimen/app_content_txt_size"
+		    	/>
+		    	
+		    	<Spinner android:id="@+id/SpinnerBuild"
+					android:layout_width="fill_parent" 
+		    		android:layout_height="wrap_content"
+		    		android:layout_toRightOf="@id/TextViewBuild1"
+		    	/>
+		    </RelativeLayout>
+		    <!-- 楼层显示 -->
+		     <RelativeLayout 
+		    android:layout_marginTop="10dip"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    >
+		    	<TextView android:id="@+id/TextViewFloor"
+		    		android:layout_width="72dip" 
+		    		android:layout_height="wrap_content"
+		    		android:text="@string/main_floor"
+		    		android:layout_alignParentLeft="true"
+		    		android:layout_centerVertical="true"
+					android:textSize = "@dimen/app_content_txt_size"
+		    	/>
+		    	
+		    	<Spinner android:id="@+id/SpinnerFloor"
+					android:layout_width="fill_parent" 
+		    		android:layout_height="wrap_content"
+		    		android:layout_toRightOf="@id/TextViewFloor"
+		    	/>
+		    </RelativeLayout>
+		    
+		    <!-- 楼层预览图片 -->
+		    <RelativeLayout 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		     android:layout_marginTop = "10dip"
+		    >
+		    
+		    	<ImageView android:id="@+id/ImageView01"
+					android:background="#66FFFFFF"
+		            android:adjustViewBounds="true"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" 
+		            android:layout_centerHorizontal="true"
+		            android:visibility = "gone"
+				/>
+				<Gallery android:id = "@+id/gallery"
+					android:spacing = "7dip"
+					android:layout_width = "fill_parent"
+					android:layout_height = "wrap_content"
+					android:unselectedAlpha="0.3"
+					>
+				</Gallery>
+		    	<TextView android:id="@+id/TextViewTip"
+		    		android:layout_width="wrap_content" 
+		    		android:layout_height="wrap_content"
+					android:textSize = "@dimen/app_content_txt_size"
+		    		android:layout_marginTop = "5dip"
+		    		android:layout_marginLeft = "72dip"
+		    		android:layout_below="@id/ImageView01"
+		    	/>
+			</RelativeLayout>
+			
+		   <!-- 楼层拍摄照片 -->
+		     <LinearLayout 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:orientation = "horizontal"
+		    android:layout_marginTop = "10dip"
+		    android:id = "@+id/floorOutviewlayout"
+		    >
+		    	<Button
+					android:textSize = "@dimen/app_defult_btn_txt_size"
+		    		android:id = "@+id/btnCamera"
+		    		android:text = "@string/main_indoor_takephotos"
+		    		android:layout_width = "wrap_content"
+		    		android:layout_height = "wrap_content">
+		    	</Button>
+		    	<LinearLayout 
+		    		android:layout_width = "fill_parent"
+		    		android:layout_height = "wrap_content"
+		    		android:orientation = "vertical">
+			    	<ImageView
+			    		android:id = "@+id/imageCamera"
+			    		android:maxHeight = "160dip"
+			    		android:adjustViewBounds = "true"
+			    		android:layout_gravity = "center"
+			    		android:layout_height = "wrap_content"
+			    		android:layout_width = "fill_parent">
+			    	</ImageView>
+			    	<TextView android:id = "@+id/imgTip"
+			    		android:layout_width = "wrap_content"
+			    		android:layout_height = "wrap_content"
+			    		android:textSize = "16dip"
+			    		android:layout_gravity = "center_horizontal"
+			    		>
+			    	</TextView>
+		    	</LinearLayout>
+		    </LinearLayout>
+		    
+		   
+	</LinearLayout>
+	
+		     <LinearLayout
+		    	android:layout_gravity = "bottom"
+		    	android:layout_width = "fill_parent"
+		    	android:layout_height = "wrap_content"
+		    	android:layout_alignParentBottom = "true"
+		    	android:weightSum = "2">
+		    	<Button
+					android:textSize = "@dimen/app_defult_btn_txt_size"
+		    	android:text = "@string/str_return"
+		    	android:layout_width = "wrap_content"
+		    	android:layout_height = "wrap_content"
+		    	android:layout_weight  ="1">
+		    	</Button>
+		    	<Button
+					android:textSize = "@dimen/app_defult_btn_txt_size"
+		    	android:text = "@string/str_next"
+		    	android:layout_width = "wrap_content"
+		    	android:layout_height = "wrap_content"
+		    	android:layout_weight  ="1">
+		    	</Button>
+		    </LinearLayout>
+	</RelativeLayout>
+</ScrollView>

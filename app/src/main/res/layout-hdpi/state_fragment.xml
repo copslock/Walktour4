@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:background="#F2F2F2"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/radio0"
+            style="@style/center_text"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:drawableRight="@drawable/menu_item_check"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:text="@string/str_unuploaded"
+            android:textSize="@dimen/default_txt_size_micro"
+            android:textColor="@drawable/selector_tab_text_color3" />
+
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:drawable/divider_horizontal_bright" />
+
+        <CheckBox
+            android:id="@+id/radio1"
+            style="@style/center_text"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:text="@string/str_unuploaderror"
+            android:drawableRight="@drawable/menu_item_check"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:textSize="@dimen/default_txt_size_micro"
+            android:textColor="@drawable/selector_tab_text_color3" />
+
+                <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:drawable/divider_horizontal_bright" />
+
+        <CheckBox
+            android:id="@+id/radio2"
+            style="@style/center_text"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:text="@string/str_upload_waiting"
+            android:drawableRight="@drawable/menu_item_check"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:textSize="@dimen/default_txt_size_micro"
+            android:textColor="@drawable/selector_tab_text_color3" />
+                <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:drawable/divider_horizontal_bright" />
+
+        <CheckBox
+            android:id="@+id/radio3"
+            style="@style/center_text"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:text="@string/str_uploaded"
+            android:drawableRight="@drawable/menu_item_check"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:textSize="@dimen/default_txt_size_micro"
+            android:textColor="@drawable/selector_tab_text_color3" />
+
+    </RadioGroup>  
+</LinearLayout>

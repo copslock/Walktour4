@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 选中状态获得焦点-->
+    <item android:state_checked="true" android:state_focused="true" android:state_enabled="true"
+        android:drawable="@drawable/cb_check_2" />
+    <!-- 未选中状态获得焦点 -->
+    <item android:state_checked="false" android:state_focused="true" android:state_enabled="true"
+        android:drawable="@drawable/cb_uncheck_2" />
+    <!-- 未被选中时-->
+    <item android:state_checked="false" android:state_enabled="true"
+        android:drawable="@drawable/cb_uncheck_2" />
+    <!-- 被选中时 -->
+    <item android:state_checked="true" android:state_enabled="true"
+        android:drawable="@drawable/cb_check_2" />
+
+    <item android:state_checked="true" android:state_enabled="false"
+        android:drawable="@drawable/cb_check_dismiss2" />
+
+    <!-- 未被选中时-->
+    <item android:state_checked="false" android:state_enabled="false"
+        android:drawable="@drawable/cb_uncheck_dissmiss2" />
+
+</selector>

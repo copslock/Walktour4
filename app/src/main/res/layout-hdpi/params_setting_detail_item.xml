@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dragAndDrop="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="@string/string_voice"
+            android:textColor="@color/app_main_text_color" 
+            style="@style/setting_level2_title"/>
+
+        <ImageView
+            android:id="@+id/voice_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/name"
+            android:src="@drawable/add" />
+    </RelativeLayout>
+
+    <com.walktour.framework.view.draganddropgridview.CoolDragAndDropGridView
+        android:id="@+id/coolDragAndDropGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        dragAndDrop:itemMargin="2dp"
+        dragAndDrop:numColumns="@integer/col_count" >
+    </com.walktour.framework.view.draganddropgridview.CoolDragAndDropGridView>
+
+</LinearLayout>

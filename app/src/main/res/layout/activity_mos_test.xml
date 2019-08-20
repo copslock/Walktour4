@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mos.MosTestActivity">
+
+    <Button
+        android:id="@+id/btn_mos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="连接MOS头" />
+
+    <Button
+        android:id="@+id/btn_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="连接手机" />
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="循环播放" />
+
+    <Button
+        android:id="@+id/btn_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="循环录音" />
+
+    <Button
+        android:id="@+id/btn_start_moc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="主叫开始" />
+
+    <Button
+        android:id="@+id/btn_start_mtc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="被叫开始" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="结束任务" />
+
+
+    <Button
+        android:id="@+id/btn_offline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="离线测试" />
+
+    <Button
+        android:id="@+id/btn_stable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="稳定性测试" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/basic_bg_color"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/info_title" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/setting_sort_title_bgcolor" />
+    
+   	<LinearLayout
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:background="#303434"
+   	    android:padding="5dip"
+   	    android:orientation="vertical"
+ 		>
+
+   	    <RelativeLayout
+   	        android:layout_width="fill_parent"
+   	        android:layout_height="wrap_content"
+   	        android:background="@drawable/list_default_round" >
+
+   	        <ImageView
+   	            android:id="@+id/iv_searchbox_search_magnifier"
+   	            android:layout_width="wrap_content"
+   	            android:layout_height="wrap_content"
+   	            android:layout_centerVertical="true"
+   	            android:layout_marginLeft="8dip"
+   	            android:src="@drawable/common_icon_searchbox_magnifier" />
+
+   	        <EditText
+   	            android:id="@+id/search_content_edit"
+   	            android:layout_width="fill_parent"
+   	            android:layout_height="30dip"
+   	            android:layout_centerInParent="true"
+   	            android:layout_marginBottom="2dip"
+   	            android:layout_marginLeft="8dip"
+   	            android:layout_marginRight="8dip"
+   	            android:layout_marginTop="2dip"
+   	            android:layout_toRightOf="@id/iv_searchbox_search_magnifier"
+   	            android:background="@null"
+   	            android:hint="@string/str_search"
+   	            android:textColor="@color/black"
+   	            android:textSize="16sp" 
+   	          />
+   	          
+   	            <ImageView 
+   	                android:id="@+id/ivDeleteText"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_alignParentRight="true"  
+                    android:src="@drawable/controlbar_clear"  
+                    android:layout_centerInParent="true"  
+                    android:visibility="gone"
+                 /> 
+   	            
+   	   			 </RelativeLayout>
+   	</LinearLayout>
+   	
+   	
+   	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_list_item_bg_nomal"
+       >
+   	    <View  android:layout_width="fill_parent" android:layout_height="2dip" android:background="@drawable/list_divider"/>
+    </LinearLayout>
+   	
+    <ListView
+        android:id="@+id/list_work_order"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/base_list_item_bg_nomal"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/list_divider" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_get_work_order_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/menu_bottom_bg"
+        android:text="@string/get_work_order_list"
+        android:textColor="@color/white" />
+
+</LinearLayout>

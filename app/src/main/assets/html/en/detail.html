@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="ui-mobile">
+	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+		<title>鼎利报表</title>
+		<meta http-equiv="keywords" content="ichartjs demo,Html5 demo,ichart demo"></meta>
+   	<meta http-equiv="description" content="ichartjs 示例"></meta>
+   	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="jQuery/jquery.min.js"></script>
+    <script type="text/javascript" src="jQuery/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="jQuery/jquery-mobile-navbar.js"></script>
+    <link rel="stylesheet" href="jQuery/jquery.mobile-1.4.5.min.css">
+    <script type="text/javascript" src="js/highcharts.js"></script>
+    <script type="text/javascript" src="js/dlUtils.js"></script>
+    <script type="text/javascript" src="js/dlData.js"></script>
+    <script type="text/javascript" src="js/DLDefine.js"></script>
+        <script>
+        $.mobile.pushStateEnabled = false;
+    </script>
+		<link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/dlChart.css">
+	</head>
+  <body >  
+    <div data-role="page" data-theme="a" id = "dl-chart-page">
+<!--       <div data-role="header">
+        <a href="#" data-role="button" data-icon="back" onclick="dlLoadData('')">返回</a>
+        <h1>详细报表</h1>
+      </div>  -->
+      <div class="ui-content" role="main">
+      <div data-role="navbar" id="divtab" class="ui-corner-all ui-mini">
+          <ul>
+            <li id="showBar" class="dl-Text"><a href="#" class="ui-btn-active">Bar Chart</a></li>
+            <li id="showPie" class="dl-Text"><a href="#">Pie Chart</a></li>
+          </ul>
+        </div>
+        <ul data-role="listview" id='detail-ul' data-inset="false">
+	       </ul>
+          <script type="text/javascript" src="js/DetailModel.js"></script>
+
+
+<!--           测试 -->
+          <script type="text/javascript" src="js/TestData.js"></script>
+          <script type="text/javascript" src="js/dlChart.js"></script>
+          <script type="text/javascript">
+          $('#divtab').hide();
+            function dlLoadData(json,goNogo,threshold)
+            {
+                $('#divtab').hide();
+              dlLoadSetting('DLGoNogoSetting',goNogo);
+              dlLoadSetting('DLThreholdSetting',threshold);
+              var business = dlGetUrlParam('biz');
+              var sence = dlGetUrlParam('sen');
+              var model = new DLDetailData(business,sence);
+              if (model.initWithJson(json)) {
+                model.renderToDoc($('#detail-ul'));
+              }
+            }
+          </script>
+        </div>
+
+
+
+<!--   <div data-role="footer" data-position="fixed" data-fullscreen="true" >
+    <a href="#" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-search">选择文件</a>
+    <a href="#" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">生成报表</a>
+  </div>  -->
+  </div>
+</body>
+</html>

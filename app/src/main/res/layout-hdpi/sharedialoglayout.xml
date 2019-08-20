@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/fontstyle14"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/share_project_devices_release_relation_14" />
+
+    <View style="@style/task_listdivider" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.93"
+        android:background="#fff"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/single_heng_qian"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

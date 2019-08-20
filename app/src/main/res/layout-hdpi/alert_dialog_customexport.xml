@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/start_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/custom_export_starttime" />
+
+        <TextView
+            android:id="@+id/start_time_txt"
+            style="@style/setting_sort_right_text"
+            android:text="2013-11-21 10:40:30"
+            android:textColor="@color/info_param_color" />
+    </RelativeLayout>
+
+    <View style="@style/setting_divider" />
+
+    <RelativeLayout
+        android:id="@+id/end_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/custom_export_endtime" />
+
+        <TextView
+            android:id="@+id/end_time_txt"
+            style="@style/setting_sort_right_text"
+            android:text="2013-11-21 10:48:33"
+            android:textColor="@color/info_param_color" />
+    </RelativeLayout>
+
+    <View style="@style/setting_divider" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/info_chartyw" />
+
+        <CheckBox
+            android:id="@+id/custom_check_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/switch_button_bg"
+            android:checked="true" />
+    </RelativeLayout>
+
+    <View style="@style/setting_divider" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/custom_export_l3msg" />
+
+        <CheckBox
+            android:id="@+id/custom_check_l3msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/switch_button_bg"
+            android:checked="true" />
+    </RelativeLayout>
+
+    <View style="@style/setting_divider" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/info_gps" />
+
+        <CheckBox
+            android:id="@+id/custom_check_gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/switch_button_bg"
+            android:checked="true" />
+    </RelativeLayout>
+
+    <View style="@style/setting_divider" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/info_parameter" />
+
+        <CheckBox
+            android:id="@+id/custom_check_parm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/switch_button_bg"
+            android:checked="true" />
+    </RelativeLayout>
+
+    <View style="@style/setting_divider" />
+
+    <RelativeLayout
+        android:id="@+id/show_para_ral"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/custom_export_network" />
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:id="@+id/data_custom_notwork_type"
+            style="@style/task_drop_view"
+            android:layout_width="102dip"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drop"
+            android:drawSelectorOnTop="true" />
+    </RelativeLayout>
+
+    <View style="@style/setting_divider" />
+
+    <RelativeLayout
+        android:id="@+id/show_para_show_ral"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/sys_map_parameter_setting" />
+
+        <Button
+            android:id="@+id/parm_btn"
+            style="@style/task_drop_view"
+            android:layout_width="102dip"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drop"
+            android:drawSelectorOnTop="true"
+            android:gravity="center_vertical|center"
+            android:text="@string/sys_chart_line_setting"
+            android:textColor="@color/app_main_text_color"
+            android:textSize="@dimen/default_txt_size_normal" />
+    </RelativeLayout>
+
+    <View style="@style/setting_divider" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:text="@string/custom_export_format" />
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:id="@+id/data_custom_format_type"
+            style="@style/task_drop_view"
+            android:layout_width="102dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drop"
+            android:drawSelectorOnTop="true" />
+    </RelativeLayout>
+
+</LinearLayout>

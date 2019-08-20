@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dip"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:padding="5dip"
+        android:layout_height="wrap_content" >
+
+        <CheckBox
+            android:id="@+id/server_ck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox" />
+
+        <TextView
+            android:id="@+id/txt_ftpServer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:text="@string/task_ftpServer"
+            style="@style/tasK_title_style"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/task_ftpServer"
+            style="@style/tasK_title_style"
+            android:textSize="16sp" />
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:id="@+id/edit_ftpServer"
+            style="@style/task_drop_view"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawSelectorOnTop="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/filesource_layout"
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txt_fileSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/task_httpUp_fileSource"
+            style="@style/tasK_title_style"
+            android:textSize="16sp" />
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:id="@+id/edit_fileSource"
+            style="@style/task_drop_view"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true" />
+
+        <View style="@style/task_listdivider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/file_view_layout"
+        style="@style/task_layout_edge"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txt_localFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/task_local_file"
+            style="@style/tasK_title_style"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <Button 
+                android:id="@+id/btn_default"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/dialog_btn"
+                android:text="@string/view"
+                android:textColor="@color/app_main_text_color"/>
+            
+            
+            <EditText
+                android:id="@+id/edit_localFile"
+                android:layout_width="100dip"
+                android:layout_height="35dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/btn_view"
+                android:background="@drawable/app_edt_drop"
+                android:maxLength="200"
+                android:paddingLeft="2dip"
+                android:singleLine="true"
+                android:textColor="@color/app_main_text_color" />
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/filesize_vorg_layout"
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/task_httpUp_size"
+            style="@style/tasK_title_style"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_fileSize"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"
+            android:inputType="number"
+            android:maxLength="8"
+            android:singleLine="true" />
+
+        <View style="@style/task_listdivider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/uploadfile_layout"
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/task_upload_file_path"
+            style="@style/tasK_title_style"
+            android:textSize="16sp" />
+        
+                       <RelativeLayout
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+        <Button 
+            android:id="@+id/btn_upload"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/dialog_btn"
+            android:text="@string/view"
+            android:textColor="@color/app_main_text_color"/>
+
+        <EditText
+            android:id="@+id/edit_upload_file_path"
+	            android:layout_width="100dip"
+                android:layout_height="35dip"
+	            android:layout_toLeftOf="@id/btn_upload"
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/app_edt_drop"
+            android:maxLength="200"
+            android:singleLine="true"
+            android:textColor="@color/app_main_text_color"
+            android:text="/" />
+
+        </RelativeLayout>
+        <View style="@style/task_listdivider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/downloadfile_layout"
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/task_download_file_path"
+            style="@style/tasK_title_style"
+            android:textSize="16sp" />
+               <RelativeLayout
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+           <Button
+                android:id="@+id/btn_download"
+                android:layout_width="50dip"
+                android:layout_height="35dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dip"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/dialog_btn"
+                android:text="@string/view"
+                android:textColor="@color/app_main_text_color" />
+
+	        <EditText
+	            android:id="@+id/edit_download_file_path"
+	            android:layout_width="100dip"
+                android:layout_height="35dip"
+	            android:layout_toLeftOf="@id/btn_download"
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/app_edt_drop"
+                android:paddingLeft="2dip"
+	            android:maxLength="200"
+	            android:singleLine="true"
+	            android:textColor="@color/app_main_text_color"
+	            android:text="/" />
+        </RelativeLayout>
+
+        <View style="@style/task_listdivider" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/savefile_layout"
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/task_savefile"
+            style="@style/tasK_title_style"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/savefile_ck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:button="@drawable/switch_button_bg"
+            android:drawSelectorOnTop="true" />
+
+        <View style="@style/task_listdivider" />
+    </RelativeLayout>
+<View style="@style/task_listdivider" />
+</LinearLayout>

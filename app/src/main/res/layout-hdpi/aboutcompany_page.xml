@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+   android:layout_gravity = "center_horizontal"
+   android:orientation = "vertical">
+
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_gravity="center_vertical" >
+
+       <ImageView
+           android:layout_width="54dip"
+           android:layout_height="54dip"
+           android:layout_gravity="center_vertical"
+           android:src="@mipmap/walktour" />
+
+       <TextView
+           style="@style/aboutus"
+           android:text="@string/aboutus_walktour"
+           android:layout_gravity="center_vertical"
+           android:textSize="21dip"
+           android:textStyle="bold" />
+   </LinearLayout>
+
+   <!-- TextView 
+ 		style = "@style/aboutus"
+ 		android:id = "@+id/textnetType"
+ 		android:text = "@string/aboutus_walktourGSM" android:layout_marginLeft="20dip"/-->
+     <TextView 
+  		style = "@style/aboutus"
+  		android:id = "@+id/aboutusBuildId"
+  		android:text = "@string/aboutus_buildId"/>
+<!--      <TextView 
+  		style = "@style/aboutus"
+  		android:text = "@string/aboutus_name"/> -->
+     <TextView 
+  		style = "@style/aboutus"
+  		android:text = "@string/aboutus_copy"/>
+     <TextView 
+   		style = "@style/aboutus"
+   		android:text = "@string/aboutus_url"/>
+     <TextView 
+   		style = "@style/aboutus"
+   		android:id="@+id/activeTime"
+   		android:text = "License剩余"/>
+     
+<!--    	<TextView 
+  		style = "@style/aboutus"
+  		android:text = "@string/aboutus_allright"/> -->
+</LinearLayout>

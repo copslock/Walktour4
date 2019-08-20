@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".task.TaskSelSampleActivity">
+
+    <include
+        android:id="@+id/task_attach_title"
+        layout="@layout/basic_title" />
+
+    <com.walktour.framework.view.dragsortlistview.DragSortListView
+        android:id="@+id/param_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ControlBar"
+        android:layout_below="@+id/title_layout"
+        android:background="@color/app_main_bg_color"
+        android:cacheColorHint="#00000000"
+        android:choiceMode="multipleChoice"
+        android:divider="@drawable/list_divider"
+        dslv:drag_enabled="true"
+        dslv:drag_handle_id="@id/drag_handle"
+        dslv:drag_scroll_start="0.33"
+        dslv:drag_start_mode="onDown"
+        dslv:float_alpha="0.6"
+        dslv:remove_enabled="false"
+        dslv:slide_shuffle_speed="0.3" />
+
+
+</LinearLayout>

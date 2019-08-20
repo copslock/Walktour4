@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/basic_bg_color"
+     >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_top"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/basic_title" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/setting_sort_title_bgcolor" />
+
+        <View style="@style/task_listdivider" />
+        </LinearLayout>
+        <ListView
+			android:layout_below="@id/layout_top"
+            android:id="@+id/list_data_partition"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_list_item_bg_nomal"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/list_divider"
+            android:layout_marginBottom="58dip"
+            android:footerDividersEnabled="true" />
+    
+    
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="58dip"
+    android:background="@drawable/menu_bottom_bg"
+	android:layout_alignParentBottom="true"	
+    android:orientation="horizontal"
+    android:weightSum="2" >
+
+    <Button
+        android:id="@+id/Button01"
+        style="@style/toolbar_button_bg"
+        android:layout_weight="1"
+        android:text="@string/str_cancle"
+         />
+    <View
+        android:layout_marginTop="2dip"
+        android:layout_width="0.5dip"
+        android:layout_height="fill_parent"
+        android:background="@drawable/list_divider"
+        />
+
+    <Button
+        android:id="@+id/Button02"
+        style="@style/toolbar_button_bg"
+        android:layout_weight="1"
+        android:text="@string/str_ok"
+        />
+
+</LinearLayout>
+
+</RelativeLayout>

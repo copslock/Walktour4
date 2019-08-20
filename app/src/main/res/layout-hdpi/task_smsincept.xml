@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_grey_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/task_attach_title"
+        layout="@layout/basic_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/title_layout"
+        android:background="@color/setting_sort_title_bgcolor" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dip"
+        android:layout_weight="50">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:orientation="vertical" 
+            
+        android:background="@color/app_main_bg_color" >
+            
+            <!-- 常规 -->
+            <include layout="@layout/task_routine_sort_title" />
+            
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_taskname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    style="@style/tasK_title_style"
+                     />
+
+                <EditText
+                    android:id="@+id/edit_taskname"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:width="10px" />
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider" />
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/tasK_title_style"
+                    android:layout_centerVertical="true"
+                     />
+
+                <EditText
+                    android:id="@+id/edit_repeat"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:singleLine="true" />
+            </RelativeLayout>
+            
+            <LinearLayout
+                android:id="@+id/task_uniontest_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+	            <View
+	                style="@style/task_listdivider" />
+	
+	            <!-- 暂时屏蔽主被叫联合选项，由于在单机版中不需要使用该选项，但是ipad端下发有此权限，解析也正常，故保留此项 -->
+	            <RelativeLayout
+	                style="@style/task_layout_edge"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content">
+	                <TextView
+	                    android:id="@+id/txt_unionTest"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    style="@style/tasK_title_style"
+	                    android:layout_centerVertical="true"
+	                    android:text="@string/task_union"
+	                     />
+	
+	                <com.walktour.framework.ui.BasicSpinner
+	                    android:id="@+id/edit_unionTest"
+	                    style="@style/task_drop_view"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_centerInParent="true"
+	                    android:drawSelectorOnTop="true" />
+	            </RelativeLayout>
+            </LinearLayout>
+            
+            <!-- 高级 -->
+
+            <include layout="@layout/task_advanced_sort_title" />
+
+            <LinearLayout
+                android:id="@+id/task_advanced_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txt_timeOut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        style="@style/tasK_title_style"
+                         />
+
+                    <EditText
+                        android:id="@+id/edit_timeOut"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        android:singleLine="true" />
+                </RelativeLayout>
+                
+                <View style="@style/task_listdivider" />
+
+				<RelativeLayout
+                android:id="@+id/rab_time_layout"
+                style="@style/task_layout_edge"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/rab_time_txt"
+                    android:layout_width="wrap_content"
+                    style="@style/tasK_title_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                     />
+
+                <EditText
+                    android:id="@+id/rab_time_edt"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:maxLength="40"
+                    android:singleLine="true" />
+            </RelativeLayout>
+            
+              <RelativeLayout
+                android:id="@+id/rab_time_rel_layout"
+                style="@style/task_layout_edge"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/rab_time_rel_txt"
+                    android:layout_width="wrap_content"
+                    style="@style/tasK_title_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                     />
+
+                <EditText
+                    android:id="@+id/rab_time_rel_edt"
+                    style="@style/task_edit_view"
+                    android:editable="false"
+                    android:layout_centerInParent="true"
+                    android:maxLength="40"
+                    android:singleLine="true" />
+            </RelativeLayout>
+            </LinearLayout>
+            <!--
+   	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="6dip"   
+	    android:paddingLeft="12dip"  
+	    android:paddingRight="12dip">
+	    <TextView 
+	        android:id="@+id/txt_interVal"
+	        
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_marginTop="8dip"        
+	        android:gravity="left"
+	         />
+	    <EditText
+	        android:id="@+id/edit_interVal"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_marginLeft="120dip"        
+	        android:layout_marginRight="10dip"
+	        android:inputType="number" 
+	        android:singleLine="true"
+	        android:maxLength="9"        
+	        
+	        />        
+	</RelativeLayout>
+   	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="6dip"   
+	    android:paddingLeft="12dip"  
+	    android:paddingRight="12dip">
+	    <TextView 
+	        android:id="@+id/txt_saveSms"
+	        
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_marginTop="8dip"        
+	        android:gravity="left"
+         />
+        <com.walktour.framework.ui.BasicSpinner android:id="@+id/edit_saveSms"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+ 	        android:layout_marginLeft="120dip"        
+	        android:layout_marginRight="10dip"
+        />	             
+	</RelativeLayout>
+            -->
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/task_menu_buttom" />
+
+</LinearLayout>

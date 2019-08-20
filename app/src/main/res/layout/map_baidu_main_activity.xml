@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/baidumap"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="none"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/message_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LineraLayoutToolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+
+        <Button
+            android:id="@+id/map_btn"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_controlbar_map"
+            android:text="@string/map_bar_load" />
+
+        <Button
+            android:id="@+id/clear_btn"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_clear"
+            android:text="@string/map_bar_clear" />
+
+        <Button
+            android:id="@+id/undo_btn"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_undo"
+            android:text="@string/map_bar_undo"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/import_basedata"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_station"
+            android:text="@string/import_basedata" />
+
+        <Button
+            android:id="@+id/search_btn"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_search"
+            android:text="@string/str_search" />
+
+        <Button
+            android:id="@+id/more_btn"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_more"
+            android:text="@string/str_more" />
+    </LinearLayout>
+
+    <!-- 阀值图例 -->
+
+    <com.walktour.gui.map.ThresholdView
+        android:id="@+id/threshold_view"
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:layout_above="@id/LineraLayoutToolbar" />
+
+    <!-- 地图主界面 -->
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/main_title" />
+
+    <RelativeLayout
+        android:id="@+id/map_area"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/threshold_view"
+        android:layout_below="@id/title" >
+
+        <FrameLayout
+            android:id="@+id/main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </FrameLayout>
+
+        <com.walktour.gui.newmap2.ui.MapFrameView
+            android:id="@+id/drag_scale_view"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/map_type_change"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/map_type_satellite" />
+
+        <ImageButton
+            android:id="@+id/btn_rounte"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/map_type_change"
+            android:background="@color/white"
+            android:src="@drawable/ic_route" />
+
+        <ImageButton
+            android:id="@+id/btn_measure"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/btn_rounte"
+            android:background="@color/white"
+            android:src="@drawable/ic_measure" />
+
+        <ImageButton
+            android:id="@+id/btn_frame"
+            android:layout_width="36dp"
+            android:layout_below="@id/btn_measure"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_frame" />
+
+        <ImageButton
+            android:id="@+id/btn_heat"
+            android:layout_width="36dp"
+            android:layout_below="@id/btn_frame"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_heat" />
+
+        <ImageView
+            android:id="@+id/zoom_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/zoom_in"
+            android:layout_below="@+id/zoom_in"
+            android:src="@drawable/btn_zoom_down"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/zoom_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/btn_zoom_up"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/auto_follow"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_below="@id/btn_heat"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/main_icon_follow" />
+        <ImageButton
+            android:id="@+id/auto_action_center"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@color/transparent"
+            android:layout_below="@id/auto_follow"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/selector_icon_map_location" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

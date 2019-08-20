@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dictionary>
+	<DictionaryType value="1">
+		<TypeValues value="1001" enName="Manual" zhName="手动测试" />
+		<TypeValues value="1002" enName="Auto" zhName="自动测试" />
+		<TypeValues value="1003" enName="Multi-Test" zhName="多网测试" />
+		<TypeValues value="1004" enName="BTU" zhName="BTU平台" />
+		<TypeValues value="1005" enName="Anhui" zhName="安徽工单" />
+		<TypeValues value="1006" enName="Huawei" zhName="华为工单" />
+		<TypeValues value="1007" enName="Fujian" zhName="福建工单" />
+		<TypeValues value="1008" enName="Single Site" zhName="单站验证" />
+		<TypeValues value="1009" enName="Multi-ATU" zhName="多网ATU" />
+		<TypeValues value="1010" enName="ATU" zhName="单机ATU" />
+		<TypeValues value="1011" enName="Scanner" zhName="扫频仪测试" />
+		<TypeValues value="1012" enName="Wone" zhName="Wone" />
+		<TypeValues value="1013" enName="Metro" zhName="Metro" />
+		<TypeValues value="1014" enName="HighSpeedRail" zhName="HighSpeedRail" />
+		<TypeValues value="1015" enName="Perception" zhName="Perception" />
+	</DictionaryType>
+	<DictionaryType value="2">
+		<TypeValues value="2001" enName="RCU" zhName="RCU" />
+		<TypeValues value="2002" enName="DDIB" zhName="DDIB" />
+		<TypeValues value="2003" enName="DCF" zhName="DCF" />
+		<TypeValues value="2004" enName="DTLOG" zhName="DTLOG" />
+		<TypeValues value="2005" enName="PCAP" zhName="PCAP" />
+		<TypeValues value="2006" enName="ORG RCU" zhName="ORG RCU" />
+		<TypeValues value="2007" enName="Floor Plan" zhName="楼层平面图" />
+		<TypeValues value="2008" enName="Building Appearance" zhName="建筑外观图" />
+		<TypeValues value="2009" enName="TXT" zhName="文本文件" />
+		<TypeValues value="2010" enName="JSON" zhName="Json文件" />
+		<TypeValues value="2011" enName="LOCUS JPEG" zhName="导出轨迹" />
+		<TypeValues value="2012" enName="LTE" zhName="导出轨迹" />
+		<TypeValues value="2013" enName="CU" zhName="导出轨迹" />
+		<TypeValues value="2014" enName="LOL" zhName="导出轨迹" />
+		<TypeValues value="2015" enName="WAV" zhName="导出轨迹" />
+		<TypeValues value="2016" enName="ECTI" zhName="eCTI文件格式" />
+		<TypeValues value="2017" enName="OTSPARAM" zhName="otsparam文件格式" />
+	</DictionaryType>
+	<DictionaryType value="3">
+		<TypeValues value="3001" enName="Idle" zhName="Idle" />
+		<TypeValues value="3002" enName="MOC" zhName="MOC" />
+		<TypeValues value="3003" enName="MTC" zhName="MTC" />
+		<TypeValues value="3004" enName="FTP DL" zhName="FTP DL" />
+		<TypeValues value="3005" enName="FTP UL" zhName="FTP UL" />
+		<TypeValues value="3006" enName="HTTP Page" zhName="HTTP Page" />
+		<TypeValues value="3007" enName="HTTP DL" zhName="HTTP DL" />
+		<TypeValues value="3008" enName="HTTP UL" zhName="HTTP UL" />
+		<TypeValues value="3009" enName="Video Play" zhName="Video Play" />
+		<TypeValues value="3010" enName="Ping" zhName="Ping" />
+		<TypeValues value="3011" enName="Email" zhName="Email" />
+		<TypeValues value="3012" enName="PBM" zhName="PBM" />
+		<TypeValues value="3013" enName="Multi-FTP DL" zhName="Multi-FTP DL" />
+		<TypeValues value="3014" enName="Multi-FTP UL" zhName="Multi-FTP UL" />
+		<TypeValues value="3015" enName="Parallel Service" zhName="Parallel Service" />
+		<TypeValues value="3016" enName="Speedtest" zhName="Speedtest" />
+		<TypeValues value="3017" enName="DNS Lookup" zhName="DNS Lookup" />
+		<TypeValues value="3018" enName="Facebook" zhName="Facebook" />
+		<TypeValues value="3019" enName="iPerf" zhName="iPerf" />
+		<TypeValues value="3020" enName="Trace Route" zhName="Trace Route" />
+		<TypeValues value="3021" enName="Attach" zhName="Attach" />
+		<TypeValues value="3022" enName="PDP" zhName="PDP" />
+		<TypeValues value="3023" enName="WAP Logon" zhName="WAP Logon" />
+		<TypeValues value="3024" enName="WAP Refresh" zhName="WAP Refresh" />
+		<TypeValues value="3025" enName="WAP DL" zhName="WAP DL" />
+		<TypeValues value="3026" enName="SMS" zhName="SMS" />
+		<TypeValues value="3027" enName="MMS" zhName="MMS" />
+		<TypeValues value="3028" enName="weibo" zhName="weibo" />
+		<TypeValues value="3029" enName="QQ" zhName="QQ" />
+		<TypeValues value="3030" enName="Fetion" zhName="Fetion" />
+		<TypeValues value="3031" enName="WlanLogin" zhName="WlanLogin" />
+		<TypeValues value="3032" enName="WlanAP" zhName="WlanAP" />
+		<TypeValues value="3033" enName="WlanEteAuth" zhName="WlanEteAuth" />
+		<TypeValues value="3034" enName="Wchat" zhName="Wchat" />
+		<TypeValues value="3035" enName="Line" zhName="Line" />
+		<TypeValues value="3036" enName="WhatsApp" zhName="WhatsApp" />
+		<TypeValues value="3037" enName="Twitter" zhName="Twitter" />
+		<TypeValues value="3038" enName="Instagram" zhName="Instagram" />
+		<TypeValues value="3039" enName="UDP" zhName="UDP" />
+		<TypeValues value="3040" enName="OpenSignal" zhName="OpenSignal" />
+		<TypeValues value="3041" enName="MultiHttpDownload" zhName="MultiHttpDownload" />
+        <TypeValues value="3042" enName="REBOOT" zhName="REBOOT" />
+        <TypeValues value="3043" enName="WeCallMoc" zhName="WeCallMoc" />
+		<TypeValues value="3044" enName="WeCallMtc" zhName="WeCallMtc" />
+		<TypeValues value="3045" enName="SkypeChat" zhName="SkypeChat" />
+		<TypeValues value="3046" enName="SinaWeibo" zhName="SinaWeibo" />
+		<TypeValues value="3047" enName="QQ" zhName="QQ" />
+
+	</DictionaryType>
+	<DictionaryType value="4">
+		<TypeValues value="1073938804" enName="Outgoing Dropped Call" zhName="Outgoing Dropped Call" />
+		<TypeValues value="1073938806" enName="Outgoing Blocked Call" zhName="Outgoing Blocked Call" />
+		<TypeValues value="1073938820" enName="Incoming Dropped Call" zhName="Incoming Dropped Call" />
+		<TypeValues value="1073938821" enName="Incoming Blocked Call" zhName="Incoming Blocked Call" />
+		<TypeValues value="1073939226" enName="Originating CSFB Failure" zhName="Originating CSFB Failure" />
+		<TypeValues value="1073939255" enName="Originating CSFB Abnormal" zhName="Originating CSFB Abnormal" />
+		<TypeValues value="1073939232" enName="Terminating CSFB Failure" zhName="Terminating CSFB Failure" />
+		<TypeValues value="1073939256" enName="Terminating CSFB Abnormal" zhName="Terminating CSFB Abnormal" />
+		<TypeValues value="1073939244" enName="Return Back To LTE Failure" zhName="Return Back To LTE Failure" />
+		<TypeValues value="1090716020" enName="VoLTE Outgoing Dropped Call" zhName="VoLTE Outgoing Dropped Call" />
+		<TypeValues value="1090716022" enName="VoLTE Outgoing Blocked Call" zhName="VoLTE Outgoing Blocked Call" />
+		<TypeValues value="1090716036" enName="VoLTE Incoming Dropped Call" zhName="VoLTE Incoming Dropped Call" />
+		<TypeValues value="1090716037" enName="VoLTE Incoming Blocked Call" zhName="VoLTE Incoming Blocked Call" />
+		<TypeValues value="1073938610" enName="CS Handover Failure(WCDMA -> GSM)" zhName="CS Handover Failure(WCDMA -> GSM)" />
+		<TypeValues value="1073938562" enName="CS Handover Failure(GSM -> WCDMA)" zhName="CS Handover Failure(GSM -> WCDMA)" />
+		<TypeValues value="1073938613" enName="CS Handover Failure(TD-SCDMA -> GSM)" zhName="CS Handover Failure(TD-SCDMA -> GSM)" />
+		<TypeValues value="1073938565" enName="CS Handover Failure(GSM -> TD-SCDMA)" zhName="CS Handover Failure(GSM -> TD-SCDMA)" />
+		<TypeValues value="1073938626" enName="PS Handover Failure(WCDMA -> GSM)" zhName="PS Handover Failure(WCDMA -> GSM)" />
+		<TypeValues value="1073938642" enName="PS Handover Failure(GSM ->WCDMA )" zhName="PS Handover Failure(GSM ->WCDMA )" />
+		<TypeValues value="1073938629" enName="PS Handover Failure(TD-SCDMA -> GSM)" zhName="PS Handover Failure(TD-SCDMA -> GSM)" />
+		<TypeValues value="1073938645" enName="PS Handover Failure(GSM -> TD-SCDMA)" zhName="PS Handover Failure(GSM -> TD-SCDMA)" />
+		<TypeValues value="1073938690" enName="LTE Handover To WCDMA Failure" zhName="LTE Handover To WCDMA Failure" />
+		<TypeValues value="1073938693" enName="LTE Handover To TD-SCDMA Failure" zhName="LTE Handover To TD-SCDMA Failure" />
+		<TypeValues value="1073758291" enName="CellReselect Failure(WCDMA -> LTE)" zhName="CellReselect Failure(WCDMA -> LTE)" />
+		<TypeValues value="1073758292" enName="CellReselect Failure(TD-SCDMA -> LTE)" zhName="CellReselect Failure(TD-SCDMA -> LTE)" />
+		<TypeValues value="1073758293" enName="CellReselect Failure(LTE -> WCDMA)" zhName="CellReselect Failure(LTE -> WCDMA)" />
+		<TypeValues value="1073758294" enName="CellReselect Failure(LTE -> TD-SCDMA)" zhName="CellReselect Failure(LTE -> TD-SCDMA)" />
+		<TypeValues value="1073939202" enName="LTE Handover Failure" zhName="LTE Handover Failure" />
+		<TypeValues value="1073741956" enName="FTP Download Drop" zhName="FTP Download Drop" />
+		<TypeValues value="1073741972" enName="FTP Upload Drop" zhName="FTP Upload Drop" />
+		<TypeValues value="1073745669" enName="HTTP Page Drop" zhName="HTTP Page Drop" />
+		<TypeValues value="1073741988" enName="HTTP Download Drop" zhName="HTTP Download Drop" />
+		<TypeValues value="1073745926" enName="HTTP Upload Drop" zhName="HTTP Upload Drop" />
+		<TypeValues value="1073745942" enName="Video Play Drop" zhName="Video Play Drop" />
+		<TypeValues value="1073742227" enName="Ping Failure" zhName="Ping Failure" />
+		<TypeValues value="1073742020" enName="Email Send Drop" zhName="Email Send Drop" />
+		<TypeValues value="1073742004" enName="Email Receive Drop" zhName="Email Receive Drop" />
+	</DictionaryType>
+	<DictionaryType value="5">
+		<TypeValues value="5001" enName="DT" zhName="DT" />
+		<TypeValues value="5002" enName="CQT" zhName="CQT" />
+	</DictionaryType>
+	<DictionaryType value="6">
+		<TypeValues value="6001" enName="WCDMA" zhName="WCDMA" />
+		<TypeValues value="6002" enName="GSM" zhName="GSM" />
+		<TypeValues value="6003" enName="CDMA" zhName="CDMA" />
+		<TypeValues value="6004" enName="EVDO" zhName="EVDO" />
+		<TypeValues value="6005" enName="TDSCDMA" zhName="TDSCDMA" />
+		<TypeValues value="6006" enName="LTE" zhName="LTE" />
+		<TypeValues value="6007" enName="NoService" zhName="NoService" />
+		<TypeValues value="6008" enName="NBIoT" zhName="NBIoT" />
+		<TypeValues value="6009" enName="CatM" zhName="CatM" />
+		<TypeValues value="6010" enName="ENDC" zhName="ENDC" />
+	</DictionaryType>
+</Dictionary>

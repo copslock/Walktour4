@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <View style="@style/task_listdivider" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:paddingLeft="0dp">
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/sys_alarm_msg1" />
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:id="@+id/spinner_msg1"
+            style="@style/task_drop_view"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    
+    <View style="@style/task_listdivider" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="0dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/sys_alarm_msg2" />
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:id="@+id/spinner_msg2"
+            style="@style/task_drop_view"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    
+    <View style="@style/task_listdivider" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:paddingLeft="0dp">
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/sys_alarm_compare" />
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:id="@+id/spinner_com"
+            style="@style/task_drop_view"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    
+    <View style="@style/task_listdivider" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:paddingLeft="0dp">
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/sys_alarm_delay" />
+
+        <EditText
+            android:id="@+id/edit_delay"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"
+            android:maxLength="8"
+            android:digits=".0123456789"
+            android:singleLine="true" 
+            android:inputType="numberDecimal"/>
+    </RelativeLayout>
+    
+    <View style="@style/task_listdivider" />
+
+</LinearLayout>

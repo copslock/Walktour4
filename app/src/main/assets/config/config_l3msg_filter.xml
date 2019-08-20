@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filters>
+	<nettype code="gsm" name="GSM" isShowList="1" isShowMap="0" color="" checked="1">
+		<subtype code="gsm_rr" name="GSM RR" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="RR Initialisation Request" code="0x512F063C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Additional Assignment" code="0x512F063B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Immediate Assignment" code="0x512F063F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Immediate Assignment Extended" code="0x512F0639" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Immediate Assignment Reject" code="0x512F063A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Ciphering Mode Command" code="0x512F0635" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Ciphering Mode Complete" code="0x512F0632" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Configuration Change Command" code="0x512F0630" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Configuration Change ACK." code="0x512F0631" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Configuration Change Reject" code="0x512F0633" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Assignment Command" code="0x512F062E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Assignment Complete" code="0x512F0629" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Assignment Failure" code="0x512F062F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Handover Command" code="0x512F062B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Handover Complete" code="0x512F062C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Handover Failure" code="0x512F0628" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Physical Information" code="0x512F062D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Cell Change Order" code="0x512F0608" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR PDCH Assignment Command" code="0x512F0623" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Channel Request" code="0x512F067F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Channel Release" code="0x512F060D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Partial Release" code="0x512F060A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Partial Release Complete" code="0x512F060F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Paging Request Type 1" code="0x512F0621" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Paging Request Type 2" code="0x512F0622" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Paging Request Type 3" code="0x512F0624" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Paging Response" code="0x512F0627" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Notification NCH" code="0x512F0620" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Notification FACCH" code="0x512F0625" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 8" code="0x512F0618" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 1" code="0x512F0619" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 2" code="0x512F061A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 3" code="0x512F061B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 4" code="0x512F061C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 5" code="0x512F061D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 6" code="0x512F061E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 7" code="0x512F061F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 2 bis" code="0x512F0602" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 2 ter" code="0x512F0603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 2 quater" code="0x512F0607" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 5 bis" code="0x512F0605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 5 ter" code="0x512F0606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 9" code="0x512F0604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 13" code="0x512F0600" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 16" code="0x512F063D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 17" code="0x512F063E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Channel Mode Modify" code="0x512F0610" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Status" code="0x512F0612" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Channel Mode Modify Acknowledge" code="0x512F0617" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Frequency Redefinition" code="0x512F0614" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Measurement Report" code="0x512F0615" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Classmark Change" code="0x512F0616" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Classmark Enquiry" code="0x512F0613" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Extended Measurement Report" code="0x512F0636" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Extended Measurement Order" code="0x512F0637" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR GPRS Suspension Request" code="0x512F0634" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR VGCS Uplink Grant" code="0x512F0609" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Uplink Free" code="0x512F060C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Uplink Release" code="0x512F060E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Talker Indication" code="0x512F0611" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Uplink Busy" code="0x512F062A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Application Information" code="0x512F0638" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 14" code="0x512F0601" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 15" code="0x512F0643" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 18" code="0x512F0640" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 19" code="0x512F0641" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 20" code="0x512F0642" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 13 alt" code="0x512F0644" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR DTM ASSIGNMENT FAILURE" code="0x512F0648" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR DTM REJECT" code="0x512F0649" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR DTM REQUEST" code="0x512F064A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR PACKET ASSIGNMENT" code="0x512F064B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR DTM ASSIGNMENT COMMAND" code="0x512F064C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR DTM INFORMATION" code="0x512F064D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR PACKET NOTIFICATION" code="0x512F064E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR UTRAN CLASSMARK CHANGE" code="0x512F0660" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR CDMA 2000 CLASSMARK CHANGE" code="0x512F0662" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR INTER SYSTEM TO UTRAN HANDOVER COMMAND" code="0x512F0663" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR INTER SYSTEM TO CDMA2000 HANDOVER COMMAND" code="0x512F0664" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR GERAN IU MODE CLASSMARK CHANGE" code="0x512F0665" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 10" code="0x512F066A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Notification FACCH" code="0x512F066B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Uplink Free" code="0x512F066C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Enhanced Measurement Report (uplink)" code="0x512F066E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Measurement Information (downlink)" code="0x512F066F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR VBS VGCS Reconfigure" code="0x512F0670" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR VBS VGCS Reconfigure 2" code="0x512F0671" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR VGCS Additional Information" code="0x512F0672" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR VGCS SMS Information" code="0x512F0673" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 10bis" code="0x512F0674" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR System Information Type 10ter" code="0x512F0675" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR VGCS Neighbour Cell Information" code="0x512F0676" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RR Notify Application Data" code="0x512F0677" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="gprs_mac" name="GPRS MAC" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="Packet Cell Change Failure" code="0x52260100" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Control Acknowledgement" code="0x52260101" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Downlink Ack Nack" code="0x52260102" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Uplink Dummy Control Block" code="0x52260103" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Measurement Report" code="0x52260104" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Resource Request" code="0x52260105" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Mobile TBF Status" code="0x52260106" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet PSI Status" code="0x52260107" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="EGPRS Packet Downlink Ack Nack" code="0x52260108" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Pause" code="0x52260109" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Additional MS Radio Access" code="0x5226010A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Enhanced Measurement Report" code="0x5226010B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Cell Change Order" code="0x52260001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Downlink Assignment" code="0x52260002" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Measurement Order" code="0x52260003" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Polling Request" code="0x52260004" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Power Control Timing Advance" code="0x52260005" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Queueing Notification" code="0x52260006" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Timeslot Reconfigure" code="0x52260007" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet TBF Release" code="0x52260008" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Uplink Ack Nack" code="0x52260009" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Uplink Assignment" code="0x5226000A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Access Reject" code="0x52260021" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Paging Request" code="0x52260022" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet PDCH Release" code="0x52260023" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet PRACH Parameters" code="0x52260024" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Downlink Dummy Control Block" code="0x52260025" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet System Information Type 1" code="0x52260031" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet System Information Type 2" code="0x52260032" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet System Information Type 3" code="0x52260033" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet System Information Type 3bis" code="0x52260034" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet System Information Type 4" code="0x52260035" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet System Information Type 5" code="0x52260036" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet System Information Type 6" code="0x52260020" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet System Information Type 7" code="0x52260038" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet System Information Type 8" code="0x52260039" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet System Information Type 13" code="0x52260037" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Serving Cell Data" code="0x5226000D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Packet Neighbour Cell Data" code="0x5226000C" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="rlc_mac" name="RLC/MAC" isShowList="0" isShowMap="0" color="" checked="0">
+			<msg name="GPRS EGPRS RLC Downlink Header" code="0xD1005206" isShowList="1" isShowMap="0" color="" checked="0" />
+			<msg name="GPRS EGPRS RLC Uplink Header" code="0xD1005205" isShowList="1" isShowMap="0" color="" checked="0" />
+			<msg name="GPRS MAC Uplink TBF establish" code="0xD1005228" isShowList="1" isShowMap="0" color="" checked="0" />
+			<msg name="GPRS MAC Downlink TBF establish" code="0xD100522A" isShowList="1" isShowMap="0" color="" checked="0" />
+			<msg name="GPRS MAC Uplink TBF release" code="0xD1005229" isShowList="1" isShowMap="0" color="" checked="0" />
+			<msg name="GPRS MAC Downlink TBF release" code="0xD100522B" isShowList="1" isShowMap="0" color="" checked="0" />
+		</subtype>
+	</nettype>
+	<nettype code="tdscdma" name="TDSCDMA" isShowList="1" isShowMap="0" color="" checked="1">
+		<subtype code="rrc" name="RRC" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="TDS->CellUpdate(UL_CCCH)" code="0x413F0001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->rrcConnectionRequest(UL_CCCH)" code="0x413F0002" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->uraUpdate(UL_CCCH)" code="0x413F0003" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->activeSetUpdateComplete(UL_DCCH)" code="0x413F0101" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->activeSetUpdateFailure(UL_DCCH)" code="0x413F0102" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->cellChangeOrderFromUTRANFailure(UL_DCCH)" code="0x413F0103" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->counterCheckResponse(UL_DCCH)" code="0x413F0104" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->handoverToUTRANComplete(UL_DCCH)" code="0x413F0105" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->initialDirectTransfer(UL_DCCH)" code="0x413F0106" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->handoverFromUTRANFailure(UL_DCCH)" code="0x413F0107" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->measurementControlFailure(UL_DCCH)" code="0x413F0108" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->measurementReport(UL_DCCH)" code="0x413F0109" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->physicalChannelReconfigurationComplete(UL_DCCH)" code="0x413F010A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->physicalChannelReconfigurationFailure(UL_DCCH)" code="0x413F010B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->radioBearerReconfigurationComplete(UL_DCCH)" code="0x413F010C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->radioBearerReconfigurationFailure(UL_DCCH)" code="0x413F010D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->radioBearerReleaseComplete(UL_DCCH)" code="0x413F010E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->radioBearerReleaseFailure(UL_DCCH)" code="0x413F010F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->radioBearerSetupComplete(UL_DCCH)" code="0x413F0110" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->radioBearerSetupFailure(UL_DCCH)" code="0x413F0111" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->rrcConnectionReleaseComplete(UL_DCCH)" code="0x413F0112" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->rrcConnectionSetupComplete(UL_DCCH)" code="0x413F0113" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->rrcStatus(UL_DCCH)" code="0x413F0114" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->securityModeComplete(UL_DCCH)" code="0x413F0115" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->securityModeFailure(UL_DCCH)" code="0x413F0116" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->signallingConnectionReleaseIndication(UL_DCCH)" code="0x413F0117" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->transportChannelReconfigurationComplete(UL_DCCH)" code="0x413F0118" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->transportChannelReconfigurationFailure(UL_DCCH)" code="0x413F0119" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->transportFormatCombinationControlFailure(UL_DCCH)" code="0x413F011A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->ueCapabilityInformation(UL_DCCH)" code="0x413F011B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->uplinkDirectTransfer(UL_DCCH)" code="0x413F011C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->utranMobilityInformationConfirm(UL_DCCH)" code="0x413F011D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->utranMobilityInformationFailure(UL_DCCH)" code="0x413F011E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->mbmsModificationRequest(UL_DCCH)" code="0x413F011F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->cellUpdateConfirm(DL_CCCH)" code="0x413F0201" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->rrcConnectionReject(DL_CCCH)" code="0x413F0202" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->rrcConnectionRelease(DL_CCCH)" code="0x413F0203" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->rrcConnectionSetup(DL_CCCH)" code="0x413F0204" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->uraUpdateConfirm(DL_CCCH)" code="0x413F0205" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->etwsPrimaryNotificationWithSecurity(DL_CCCH)" code="0x413F0206" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->activeSetUpdate(DL_DCCH)" code="0x413F0301" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->assistanceDataDelivery(DL_DCCH)" code="0x413F0302" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->cellChangeOrderFromUTRAN(DL_DCCH)" code="0x413F0303" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->cellUpdateConfirm(DL_DCCH)" code="0x413F0304" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->counterCheck(DL_DCCH)" code="0x413F0305" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->downlinkDirectTransfer(DL_DCCH)" code="0x413F0306" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->handoverFromUTRANCommand-GSM(DL_DCCH)" code="0x413F0307" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->handoverFromUTRANCommand-CDMA2000(DL_DCCH)" code="0x413F0308" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->measurementControl(DL_DCCH)" code="0x413F0309" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->pagingType2(DL_DCCH)" code="0x413F030A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->physicalChannelReconfiguration(DL_DCCH)" code="0x413F030B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->physicalSharedChannelAllocation(DL_DCCH)" code="0x413F030C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->radioBearerReconfiguration(DL_DCCH)" code="0x413F030D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->radioBearerRelease(DL_DCCH)" code="0x413F030E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->radioBearerSetup(DL_DCCH)" code="0x413F030F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->rrcConnectionRelease(DL_DCCH)" code="0x413F0310" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->securityModeCommand(DL_DCCH)" code="0x413F0311" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->signallingConnectionRelease(DL_DCCH)" code="0x413F0312" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->transportChannelReconfiguration(DL_DCCH)" code="0x413F0313" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->transportFormatCombinationControl(DL_DCCH)" code="0x413F0314" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->ueCapabilityEnquiry(DL_DCCH)" code="0x413F0315" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->ueCapabilityInformationConfirm(DL_DCCH)" code="0x413F0316" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->uplinkPhysicalChannelControl(DL_DCCH)" code="0x413F0317" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->uraUpdateConfirm(DL_DCCH)" code="0x413F0318" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->utranMobilityInformation(DL_DCCH)" code="0x413F0319" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->handoverFromUTRANCommand_GERANIu(DL_DCCH)" code="0x413F031A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->mbmsModifiedServicesInformation(DL_DCCH)" code="0x413F031B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->etwsPrimaryNotificationWithSecurity(DL_DCCH)" code="0x413F031C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->handoverFromUTRANCommand_EUTRA(DL_DCCH)" code="0x413F031D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->puschCapacityRequest(UL_SHCCH)" code="0x413F0701" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->physicalSharedChannelAllocation(DL_SHCCH)" code="0x413F0801" isShowList="1" isShowMap="0" color="" checked="1" />								
+		</subtype>
+		<subtype code="sib" name="SIB" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="TDS->masterInformationBlock" code="0x413F0401" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType1" code="0x413F0402" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType2" code="0x413F0403" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType3" code="0x413F0404" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType4" code="0x413F0405" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType5" code="0x413F0406" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType6" code="0x413F0407" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType7" code="0x413F0408" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType8" code="0x413F0409" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType9" code="0x413F040A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType10" code="0x413F040B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType11" code="0x413F040C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType12" code="0x413F040D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType13" code="0x413F040E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType13_1" code="0x413F040F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType13_2" code="0x413F0410" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType13_3" code="0x413F0411" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType13_4" code="0x413F0412" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType14" code="0x413F0413" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType15" code="0x413F0414" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType15_1" code="0x413F0415" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType15_2" code="0x413F0416" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType15_3" code="0x413F0417" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType16" code="0x413F0418" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType17" code="0x413F0419" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType15_4" code="0x413F041A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType18" code="0x413F041B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->schedulingBlock1" code="0x413F041C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->schedulingBlock2" code="0x413F041D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType15_5" code="0x413F041E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType5bis" code="0x413F041F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType19" code="0x413F0420" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationBlockType20" code="0x413F0421" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformation(BCCH_FACH)" code="0x413F0501" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->systemInformationChangeIndication(BCCH_FACH)" code="0x413F0502" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS->pagingType1(DL_PCCH)" code="0x413F0601" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="rlc_mac" name="RLC/MAC" isShowList="0" isShowMap="0" color="" checked="0">
+			<msg name="TDSCDMA DL RLC AM STAT LOG PACKET" code="0xD100D08F" isShowList="1" isShowMap="0" color="" checked="0" />
+			<msg name="TDSCDMA UL RLC AM STAT LOG PACKET" code="0xD100D08A" isShowList="1" isShowMap="0" color="" checked="0" />
+			<msg name="TDSCDMA MAC UL TVM CFG LOG PACKET" code="0xD100D0B1" isShowList="1" isShowMap="0" color="" checked="0" />
+			<msg name="TDSCDMA MAC RACH CFG LOG PACKET" code="0xD100D0B4" isShowList="1" isShowMap="0" color="" checked="0" />
+		</subtype>
+	</nettype>
+	<nettype code="wcdma" name="WCDMA" isShowList="1" isShowMap="0" color="" checked="1">
+		<subtype code="rrc" name="RRC" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="W->CellUpdate(UL_CCCH)" code="0x412F0001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->rrcConnectionRequest(UL_CCCH)" code="0x412F0002" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->uraUpdate(UL_CCCH)" code="0x412F0003" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->activeSetUpdateComplete(UL_DCCH)" code="0x412F0101" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->activeSetUpdateFailure(UL_DCCH)" code="0x412F0102" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->cellChangeOrderFromUTRANFailure(UL_DCCH)" code="0x412F0103" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->counterCheckResponse(UL_DCCH)" code="0x412F0104" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->handoverToUTRANComplete(UL_DCCH)" code="0x412F0105" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->initialDirectTransfer(UL_DCCH)" code="0x412F0106" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->handoverFromUTRANFailure(UL_DCCH)" code="0x412F0107" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->measurementControlFailure(UL_DCCH)" code="0x412F0108" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->measurementReport(UL_DCCH)" code="0x412F0109" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->physicalChannelReconfigurationComplete(UL_DCCH)" code="0x412F010A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->physicalChannelReconfigurationFailure(UL_DCCH)" code="0x412F010B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->radioBearerReconfigurationComplete(UL_DCCH)" code="0x412F010C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->radioBearerReconfigurationFailure(UL_DCCH)" code="0x412F010D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->radioBearerReleaseComplete(UL_DCCH)" code="0x412F010E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->radioBearerReleaseFailure(UL_DCCH)" code="0x412F010F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->radioBearerSetupComplete(UL_DCCH)" code="0x412F0110" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->radioBearerSetupFailure(UL_DCCH)" code="0x412F0111" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->rrcConnectionReleaseComplete(UL_DCCH)" code="0x412F0112" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->rrcConnectionSetupComplete(UL_DCCH)" code="0x412F0113" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->rrcStatus(UL_DCCH)" code="0x412F0114" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->securityModeComplete(UL_DCCH)" code="0x412F0115" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->securityModeFailure(UL_DCCH)" code="0x412F0116" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->signallingConnectionReleaseIndication(UL_DCCH)" code="0x412F0117" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->transportChannelReconfigurationComplete(UL_DCCH)" code="0x412F0118" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->transportChannelReconfigurationFailure(UL_DCCH)" code="0x412F0119" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->transportFormatCombinationControlFailure(UL_DCCH)" code="0x412F011A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->ueCapabilityInformation(UL_DCCH)" code="0x412F011B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->uplinkDirectTransfer(UL_DCCH)" code="0x412F011C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->utranMobilityInformationConfirm(UL_DCCH)" code="0x412F011D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->utranMobilityInformationFailure(UL_DCCH)" code="0x412F011E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->mbmsModificationRequest(UL_DCCH)" code="0x412F011F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->cellUpdateConfirm(DL_CCCH)" code="0x412F0201" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->rrcConnectionReject(DL_CCCH)" code="0x412F0202" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->rrcConnectionRelease(DL_CCCH)" code="0x412F0203" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->rrcConnectionSetup(DL_CCCH)" code="0x412F0204" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->uraUpdateConfirm(DL_CCCH)" code="0x412F0205" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->etwsPrimaryNotificationWithSecurity(DL_CCCH)" code="0x412F0206" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->activeSetUpdate(DL_DCCH)" code="0x412F0301" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->assistanceDataDelivery(DL_DCCH)" code="0x412F0302" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->cellChangeOrderFromUTRAN(DL_DCCH)" code="0x412F0303" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->cellUpdateConfirm(DL_DCCH)" code="0x412F0304" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->counterCheck(DL_DCCH)" code="0x412F0305" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->downlinkDirectTransfer(DL_DCCH)" code="0x412F0306" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->handoverFromUTRANCommand-GSM(DL_DCCH)" code="0x412F0307" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->handoverFromUTRANCommand-CDMA2000(DL_DCCH)" code="0x412F0308" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->measurementControl(DL_DCCH)" code="0x412F0309" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->pagingType2(DL_DCCH)" code="0x412F030A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->physicalChannelReconfiguration(DL_DCCH)" code="0x412F030B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->physicalSharedChannelAllocation(DL_DCCH)" code="0x412F030C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->radioBearerReconfiguration(DL_DCCH)" code="0x412F030D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->radioBearerRelease(DL_DCCH)" code="0x412F030E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->radioBearerSetup(DL_DCCH)" code="0x412F030F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->rrcConnectionRelease(DL_DCCH)" code="0x412F0310" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->securityModeCommand(DL_DCCH)" code="0x412F0311" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->signallingConnectionRelease(DL_DCCH)" code="0x412F0312" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->transportChannelReconfiguration(DL_DCCH)" code="0x412F0313" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->transportFormatCombinationControl(DL_DCCH)" code="0x412F0314" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->ueCapabilityEnquiry(DL_DCCH)" code="0x412F0315" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->ueCapabilityInformationConfirm(DL_DCCH)" code="0x412F0316" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->uplinkPhysicalChannelControl(DL_DCCH)" code="0x412F0317" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->uraUpdateConfirm(DL_DCCH)" code="0x412F0318" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->utranMobilityInformation(DL_DCCH)" code="0x412F0319" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->handoverFromUTRANCommand_GERANIu(DL_DCCH)" code="0x412F031A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->mbmsModifiedServicesInformation(DL_DCCH)" code="0x412F031B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->etwsPrimaryNotificationWithSecurity(DL_DCCH)" code="0x412F031C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->handoverFromUTRANCommand_EUTRA(DL_DCCH)" code="0x412F031D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->puschCapacityRequest(UL_SHCCH)" code="0x412F0701" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->physicalSharedChannelAllocation(DL_SHCCH)" code="0x412F0801" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="sib" name="SIB" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="W->masterInformationBlock" code="0x412F0401" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType1" code="0x412F0402" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType2" code="0x412F0403" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType3" code="0x412F0404" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType4" code="0x412F0405" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType5" code="0x412F0406" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType6" code="0x412F0407" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType7" code="0x412F0408" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType8" code="0x412F0409" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType9" code="0x412F040A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType10" code="0x412F040B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType11" code="0x412F040C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType12" code="0x412F040D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType13" code="0x412F040E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType13_1" code="0x412F040F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType13_2" code="0x412F0410" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType13_3" code="0x412F0411" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType13_4" code="0x412F0412" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType14" code="0x412F0413" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType15" code="0x412F0414" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType15_1" code="0x412F0415" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType15_2" code="0x412F0416" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType15_3" code="0x412F0417" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType16" code="0x412F0418" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType17" code="0x412F0419" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType15_4" code="0x412F041A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType18" code="0x412F041B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->schedulingBlock1" code="0x412F041C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->schedulingBlock2" code="0x412F041D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType15_5" code="0x412F041E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType5bis" code="0x412F041F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType19" code="0x412F0420" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationBlockType20" code="0x412F0421" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformation(BCCH_FACH)" code="0x412F0501" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->systemInformationChangeIndication(BCCH_FACH)" code="0x412F0502" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W->pagingType1(DL_PCCH)" code="0x412F0601" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="rlc_mac" name="RLC/MAC" isShowList="0" isShowMap="0" color="" checked="0">
+			<msg name="WCDMA RLC Downlink AM Statistics" code="0xD100414A" isShowList="1" isShowMap="0" color="" checked="0" />
+			<msg name="WCDMA RLC Uplink AM Statistics V2" code="0xD1004138" isShowList="1" isShowMap="0" color="" checked="0" />
+			<msg name="EUL Combined L1 MAC Log Packet" code="0xD1004309" isShowList="1" isShowMap="0" color="" checked="0" />
+			<msg name="MAC HS Configuration Log Packet V2" code="0xD1004220" isShowList="1" isShowMap="0" color="" checked="0" />
+		</subtype>
+	</nettype>
+	<nettype code="umts" name="UMTS" isShowList="1" isShowMap="0" color="" checked="1">
+		<subtype code="cc" name="CC" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="Alerting" code="0x713A0301" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<msg name="Call Confirmed" code="0x713A0308" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Call Proceeding" code="0x713A0302" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Connect" code="0x713A0307" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<msg name="Connect Acknowledge" code="0x713A030F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Emergency Setup" code="0x713A030E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Progress" code="0x713A0303" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CC Establishment" code="0x713A0304" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CC Establishment Confirmed" code="0x713A0306" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Recall" code="0x713A030B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Start CC" code="0x713A0309" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Setup" code="0x713A0305" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<msg name="Modify" code="0x713A0317" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Modify Complete" code="0x713A031F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Modify Reject" code="0x713A0313" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="User Information" code="0x713A0310" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Hold" code="0x713A0318" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Hold Acknowledge" code="0x713A0319" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Hold Reject" code="0x713A031A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Retrieve" code="0x713A031C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Retrieve Acknowledge" code="0x713A031D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Retrieve Reject" code="0x713A031E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Disconnect" code="0x713A0325" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<msg name="Release" code="0x713A032D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Release Complete" code="0x713A032A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Congestion Control" code="0x713A0339" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Notify" code="0x713A033E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Status" code="0x713A033D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Status Enquiry" code="0x713A0334" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Start DTMF" code="0x713A0335" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Stop DTMF" code="0x713A0331" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Stop DTMF Acknowledge" code="0x713A0332" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Start DTMF Acknowledge" code="0x713A0336" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Start DTMF Reject" code="0x713A0337" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Facility" code="0x713A033A" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="mm" name="MM" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="IMSI Detach Indication" code="0x713A0501" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Location Updating Accept" code="0x713A0502" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Location Updating Reject" code="0x713A0504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Location Updating Request" code="0x713A0508" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Authentication Reject" code="0x713A0511" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Authentication Request" code="0x713A0512" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Authentication Response" code="0x713A0514" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Authentication Failure" code="0x713A051C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Identity Request" code="0x713A0518" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Identity Response" code="0x713A0519" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TMSI Reallocation Command" code="0x713A051A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TMSI Reallocation Complete" code="0x713A051B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CM Service Accept" code="0x713A0521" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CM Service Reject" code="0x713A0522" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CM Service Abort" code="0x713A0523" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CM Service Request" code="0x713A0524" isShowList="1" isShowMap="0" color="-16732161" checked="1" />
+			<msg name="CM Service Prompt" code="0x713A0525" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Notification Response" code="0x713A0526" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CM Reestablishment Request" code="0x713A0528" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Abort" code="0x713A0529" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="MM Null" code="0x713A0530" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="MM Status" code="0x713A0531" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="MM Information" code="0x713A0532" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="sms" name="SMS" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="CP DATA" code="0x713A0901" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CP ACK" code="0x713A0904" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CP ERROR" code="0x713A0910" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="gprs_mm" name="GPRS MM" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="Attach Request" code="0x713A0801" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Attach Accept" code="0x713A0802" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Attach Complete" code="0x713A0803" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Attach Reject" code="0x713A0804" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Detach Request" code="0x713A0805" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Detach Accept" code="0x713A0806" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Routing Area Update Request" code="0x713A0808" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Routing Area Update Accept" code="0x713A0809" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Routing Area Update Complete" code="0x713A080A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Routing Area Update Reject" code="0x713A080B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="GMM Service Request" code="0x713A080C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="GMM Service Accept" code="0x713A080D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="GMM Service Reject" code="0x713A080E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="P TMSI Reallocation Command" code="0x713A0810" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="P TMSI Reallocation Complete" code="0x713A0811" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Authentication Ciphering Request" code="0x713A0812" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Authentication Ciphering Response" code="0x713A0813" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Authentication Ciphering Reject" code="0x713A0814" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Authentication Ciphering Failure" code="0x713A081C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="GMM Identity Request" code="0x713A0815" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="GMM Identity Response" code="0x713A0816" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="GMM Status" code="0x713A0820" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="GMM Information" code="0x713A0821" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="gprs_sm" name="GPRS SM" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="Activate PDP Context Request" code="0x713A0A41" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Activate PDP Context Accept" code="0x713A0A42" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Activate PDP Context Reject" code="0x713A0A43" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Request PDP Context Activation" code="0x713A0A44" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Request PDP Context Activation Reject" code="0x713A0A45" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Deactivate PDP Context Request" code="0x713A0A46" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Deactivate PDP Context Accept" code="0x713A0A47" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Modify PDP Context Request Downlink" code="0x713A0A48" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Modify PDP Context Accept  UpLink" code="0x713A0A49" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Modify PDP Context Request UpLink" code="0x713A0A4A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Modify PDP Context Accept  Downlink" code="0x713A0A4B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Modify PDP Context reject" code="0x713A0A4C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Activate secondary PDP context request" code="0x713A0A4D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Activate secondary PDP context accept" code="0x713A0A4E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Activate secondary PDP context reject" code="0x713A0A4F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Activate AA PDP Context Request" code="0x713A0A50" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Activate AA PDP Context Accept" code="0x713A0A51" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Activate AA PDP Context Reject" code="0x713A0A52" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Deactivate AA PDP Context Request" code="0x713A0A53" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Deactivate AA PDP Context Accept" code="0x713A0A54" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="SM Status" code="0x713A0A55" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+	</nettype>
+	<nettype code="lte" name="LTE" isShowList="1" isShowMap="0" color="" checked="1">
+		<subtype code="mm" name="MM" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="Attach request" code="0x40000741" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Attach accept" code="0x40000742" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Attach complete" code="0x40000743" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Attach reject" code="0x40000744" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Detach request" code="0x40000745" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Detach accept" code="0x40000746" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Tracking area update request" code="0x40000748" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Tracking area update accept" code="0x40000749" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Tracking area update complete" code="0x4000074a" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Tracking area update reject" code="0x4000074b" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Extended service request" code="0x4000074c" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="service Accept" code="0x4000074d" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Service reject" code="0x4000074e" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Service request" code="0x400007fe" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="GUTI reallocation command" code="0x40000750" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="GUTI reallocation complete" code="0x40000751" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Authentication request" code="0x40000752" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Authentication response" code="0x40000753" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Authentication reject" code="0x40000754" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Authentication Failure" code="0x4000075C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Identity request" code="0x40000755" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Identity response" code="0x40000756" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Security mode command" code="0x4000075d" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Security mode complete" code="0x4000075e" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Security mode reject" code="0x4000075f" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="EMM status" code="0x40000760" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="EMM information" code="0x40000761" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Downlink NAS transport" code="0x40000762" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Uplink NAS transport" code="0x40000763" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CS Service notification" code="0x40000764" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="DL Generic NAS Transport" code="0x40000768" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="UL Generic NAS Transport" code="0x40000769" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="rrc" name="RRC" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="CSFB Parameters Request CDMA2000" code="0x30000200" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Measurement Report" code="0x30000201" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRC Connection Reconfiguration Complete" code="0x30000202" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRC Connection Reestablishment Complete" code="0x30000203" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRC Connection Setup Complete" code="0x30000204" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Security Mode Complete" code="0x30000205" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Security Mode Failure" code="0x30000206" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="UE Capability Information" code="0x30000207" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="UL Handover Preparation Transfer" code="0x30000208" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="UL Information Transfer" code="0x30000209" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Counter Check Response" code="0x3000020a" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="UE Information Response" code="0x3000020b" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Proximity Indication" code="0x3000020c" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RN Reconfiguration Complete" code="0x3000020d" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="MBMS Counting Response" code="0x3000020e" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="InterFreqRSTDMeasurementIndication" code="0x3000020f" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="UE Assistance Information" code="0x30000210" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="In Device Coex Indication" code="0x30000211" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="MBMS Interest Indication" code="0x30000212" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="SCG Failure Information" code="0x30000213" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Sidelink UE Information" code="0x30000214" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRC Connection Reestablishment" code="0x30000300" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRC Connection Reestablishment Reject" code="0x30000301" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRC Connection Reject" code="0x30000302" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRC Connection Setup" code="0x30000303" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Paging" code="0x30000400" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CSFB Parameters Response CDMA2000" code="0x30000600" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="DL Information Transfer" code="0x30000601" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Handover From EUTRA Preparation Request" code="0x30000602" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Mobility From EUTRA Command" code="0x30000603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRC Connection Reconfiguration" code="0x30000604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRC Connection Release" code="0x30000605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Security Mode Command" code="0x30000606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="UE Capability Enquiry" code="0x30000607" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Counter Check" code="0x30000608" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="UE Information Request" code="0x30000609" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LoggedMeasurementConfiguration" code="0x3000060a" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RN Reconfiguration" code="0x3000060b" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="DL DCCH Spare4" code="0x3000060c" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="DL DCCH Spare3" code="0x3000060d" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="DL DCCH Spare2" code="0x3000060e" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="DL DCCH Spare1" code="0x3000060f" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Connection Reestablishment Request" code="0x30000700" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRC Connection Request" code="0x30000701" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="MBSFN Area Configuration" code="0x30000900" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="MBMS Counting Request" code="0x30000901" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="sib" name="SIB" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="Master Information Block" code="0x30000100" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="L->MIB " code="0xD100B0C1" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Blocks" code="0x30000500" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 1" code="0x30000501" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 2" code="0x30000502" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 3" code="0x30000503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 4" code="0x30000504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 5" code="0x30000505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 6" code="0x30000506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 7" code="0x30000507" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 8" code="0x30000508" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 9" code="0x30000509" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 10" code="0x3000050a" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 11" code="0x3000050b" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 12" code="0x3000050c" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 13" code="0x3000050d" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 14" code="0x3000050e" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 15" code="0x3000050f" isShowList="1" isShowMap="0" color="" checked="1" />>
+			<msg name="System Information Block Type 16" code="0x30000510" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="sm" name="SM" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="Activate default EPS bearer context request" code="0x400002c1" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Activate default EPS bearer context accept" code="0x400002c2" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Activate default EPS bearer context reject" code="0x400002c3" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Activate dedicated EPS bearer context request" code="0x400002c5" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Activate dedicated EPS bearer context accept" code="0x400002c6" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Activate dedicated EPS bearer context reject" code="0x400002c7" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Modify EPS bearer context request" code="0x400002c9" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Modify EPS bearer context accept" code="0x400002ca" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Modify EPS bearer context reject" code="0x400002cb" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Deactivate EPS bearer context request" code="0x400002cd" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Deactivate EPS bearer context accept" code="0x400002ce" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="PDN connectivity request" code="0x400002d0" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="PDN connectivity reject" code="0x400002d1" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="PDN disconnect request" code="0x400002d2" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="PDN disconnect reject" code="0x400002d3" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Bearer resource allocation request" code="0x400002d4" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Bearer resource allocation reject" code="0x400002d5" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Bearer resource modification request" code="0x400002d6" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Bearer resource modification reject" code="0x400002d7" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="ESM information request" code="0x400002d9" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="ESM information response" code="0x400002da" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Notification" code="0x400002DD" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="ESM status" code="0x400002e8" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="ESM Remote UE Report" code="0x400002e9" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="ESM Remote UE Report Response" code="0x400002ea" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="ESM Data Transport" code="0x400002eb" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="rlc_mac" name="RLC/MAC" isShowList="0" isShowMap="0" color="" checked="0">
+			<msg name="LTE RLC DL configuration" code="0xD100B081" isShowList="1" isShowMap="0" color="" checked="0" />
+			<msg name="LTE RLC UL configuration" code="0xD100B091" isShowList="1" isShowMap="0" color="" checked="0" />
+			<msg name="LTE MAC configuration" code="0xD100B060" isShowList="1" isShowMap="0" color="" checked="0" />
+			<msg name="LTE Thr" code="0xFFF04003" isShowList="1" isShowMap="0" color="" checked="0" />
+		</subtype>
+		<subtype code="nb" name="rrc" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="MasterInformationBlock NB" code="0x30003100" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block NB" code="0x30003500" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 1 NB" code="0x30003501" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 2 NB" code="0x30003502" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 3 NB" code="0x30003503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 4 NB" code="0x30003504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 5 NB" code="0x30003505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 14 NB" code="0x3000350E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Information Block Type 16 NB" code="0x30003510" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRCConnectionReestablishment NB" code="0x30003300" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRCConnectionReestablishmentReject NB" code="0x30003301" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRCConnectionReject NB" code="0x30003302" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRCConnectionSetup NB" code="0x30003303" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRCConnectionReestablishmentRequest NB" code="0x30003700" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRCConnectionRequest NB" code="0x30003701" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRCConnectionResumeRequest NB" code="0x30003702" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="DLInformationTransfer NB" code="0x30003600" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRCConnectionReconfiguration NB" code="0x30003601" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRCConnectionRelease NB" code="0x30003602" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="SecurityModeCommand NB" code="0x30003603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="UECapabilityEnquiry NB" code="0x30003604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRCConnectionResume NB" code="0x30003605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRCConnectionReconfigurationComplete NB" code="0x30003200" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRCConnectionReestablishmentComplete NB" code="0x30003201" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRCConnectionSetupComplete NB" code="0x30003202" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="SecurityModeComplete NB" code="0x30003203" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="SecurityModeFailure NB" code="0x30003204" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="UECapabilityInformation NB" code="0x30003205" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="ULInformationTransfer NB" code="0x30003206" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RRCConnectionResumeComplete NB" code="0x30003207" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+	</nettype>
+	<nettype code="cdma" name="CDMA" isShowList="1" isShowMap="0" color="" checked="1">
+		<subtype code="cdma" name="CDMA" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="Universal Neighbor List Message" code="0x10072100" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Universal Handoff Direction Message" code="0x10082200" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TMSI Assignment Message" code="0x10081600" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TMSI Assignment Message" code="0x10071300" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TMSI Assignment Completion Message" code="0x10051100" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TMSI Assignment Completion Message" code="0x10040800" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="System Parameters Message" code="0x10070100" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Sync channel message" code="0x10060100" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Supplemental Channel Request Message" code="0x10051200" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Supplemental Channel Assignment Message" code="0x10081800" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Status Response Message" code="0x10040700" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Status Request Message" code="0x10081000" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Status Request Message" code="0x10070F00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Status Message" code="0x10050800" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Service Response Message" code="0x10081300" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Service Response Message" code="0x10050D00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Service Request Message" code="0x10081200" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Service Request Message" code="0x10050C00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Service Redirection Message" code="0x10081700" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Service Option Control Message" code="0x10081500" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Service Option Control Message" code="0x10050F00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Service Connect Message" code="0x10081400" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Service Connect Completion Message" code="0x10050E00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Send Burst DTMF Message" code="0x10080900" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Send Burst DTMF Message" code="0x10050700" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC Order->Stop Continuous DTMF Tone" code="0x10050165" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC Order->Service Option Response" code="0x10050150" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC Order->Service Option Request" code="0x1005014C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC Order->Service Option Control" code="0x10050174" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC Order->Release" code="0x10050154" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC Order->Mobile Station Reject" code="0x1005017C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC Order->Mobile Station Acknowledgement" code="0x10050140" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC Order->Connect" code="0x10050160" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Resource Allocation  Message" code="0x10082000" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Registration Message" code="0x10040100" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Power Measurement Report Message" code="0x10050600" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Pilot Strength Measurement Message" code="0x10050500" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Periodic Pilot Strength Measurement Message" code="0x10051500" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="PCH Order->Release" code="0x10070754" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="PCH Order->Registration Request" code="0x1007076D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="PCH Order->Registration Rejected" code="0x1007076E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="PCH Order->Registration Accepted" code="0x1007076C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="PCH Order->Base Station Acknowledgement" code="0x10070740" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Page Response Message" code="0x10040500" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Page Message" code="0x10070600" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Origination Message" code="0x10040400" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Neighbor List Update Message" code="0x10080800" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Neighbor List Message" code="0x10070300" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Mobile Station Registered Message" code="0x10080F00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="In-Traffic System Parameter Message" code="0x10080700" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Handoff Direction Message" code="0x10080500" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Handoff Completion Message" code="0x10050A00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="General Page Message" code="0x10071100" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="General Neighbor List Message" code="0x10071600" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="General Handoff Direction Message" code="0x10081F00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC Order->Stop Continuous DTMF Tone" code="0x10080165" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC Order->Status Request" code="0x10080168" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC Order->Service Option Response" code="0x10080150" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC Order->Service Option Request" code="0x1008014C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC Order->Service Option Control" code="0x10080174" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC Order->Release" code="0x10080154" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC Order->Pilot Measurement Request" code="0x10080144" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC Order->Periodic Pilot Measurement Request" code="0x10080145" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC Order->Continuous DTMF Tone" code="0x10080164" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC Order->Base Station Acknowledgement" code="0x10080140" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Extended System Parameters Message" code="0x10070D00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Extended Pilot Strength Measurement Message" code="0x10051C00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Extended Neighbor List Update Message" code="0x10081A00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Extended Neighbor List Message" code="0x10070E00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Extended Handoff Direction Message" code="0x10081100" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Extended Handoff Completion Message" code="0x10051D00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Extended Channel Assignment Message" code="0x10071500" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Extended CDMA Channel List Message" code="0x10071B00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Extended Alert With Information Message" code="0x10082800" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Enhanced Access Parameters Message" code="0x10072000" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Data Burst Response Message" code="0x10052000" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Data Burst Message" code="0x10080400" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Data Burst Message" code="0x10070900" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Data Burst Message" code="0x10050400" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Data Burst message" code="0x10040300" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Channel Assigment Message" code="0x10070800" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CDMA Channel List Message" code="0x10070400" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Candidate Frequency Search Response Message" code="0x10051300" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Candidate Frequency Search Request Message" code="0x10081B00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Candidate Frequency Search Report Message" code="0x10051400" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Candidate Frequency Search Control Message" code="0x10081C00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Base Station Status Request Message" code="0x10083100" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Analog Handoff Direction Message" code="0x10080600" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Alert with Information Message" code="0x10080300" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Access Parameters Message" code="0x10070200" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC Order->Release" code="0x10040254" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC Order->Mobile Station Reject" code="0x1004027C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC Order->Mobile Station Acknowledgement" code="0x10040240" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC Order->Base Station Challenge" code="0x10040208" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="evdo" name="EVDO" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="RTC->SessionMgmt/SessionClose" code="0x10771001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->RouteUpdate/TrafficChannelComplete" code="0x10770E02" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->RouteUpdate/RouteUpdate" code="0x10770E00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MPAStream3/LocationRequest" code="0x10772703" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MPAStream3/LocationNotification" code="0x10772704" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MPAStream3/LocationComplete" code="0x10772706" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MPAStream3/LocationAssignment" code="0x10772705" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MPAStream2/LocationRequest" code="0x10772603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MPAStream2/LocationNotification" code="0x10772604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MPAStream2/LocationComplete" code="0x10772606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MPAStream2/LocationAssignment" code="0x10772605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MPAStream1/LocationRequest" code="0x10772503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MPAStream1/LocationNotification" code="0x10772504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MPAStream1/LocationComplete" code="0x10772506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MPAStream1/LocationAssignment" code="0x10772505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MMPAStream3/LocationRequest" code="0x10775703" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MMPAStream3/LocationNotification" code="0x10775704" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MMPAStream3/LocationComplete" code="0x10775706" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MMPAStream3/LocationAssignment" code="0x10775705" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MMPAStream2/LocationRequest" code="0x10775603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MMPAStream2/LocationNotification" code="0x10775604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MMPAStream2/LocationComplete" code="0x10775606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MMPAStream2/LocationAssignment" code="0x10775605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MMPAStream1/LocationRequest" code="0x10775503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MMPAStream1/LocationNotification" code="0x10775504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MMPAStream1/LocationComplete" code="0x10775506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->MMPAStream1/LocationAssignment" code="0x10775505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->EMPAStream3/LocationRequest" code="0x10774703" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->EMPAStream3/LocationNotification" code="0x10774704" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->EMPAStream3/LocationComplete" code="0x10774706" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->EMPAStream3/LocationAssignment" code="0x10774705" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->EMPAStream2/LocationRequest" code="0x10774603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->EMPAStream2/LocationNotification" code="0x10774604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->EMPAStream2/LocationComplete" code="0x10774606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->EMPAStream2/LocationAssignment" code="0x10774605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->EMPAStream1/LocationRequest" code="0x10774503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->EMPAStream1/LocationNotification" code="0x10774504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->EMPAStream1/LocationComplete" code="0x10774506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->EMPAStream1/LocationAssignment" code="0x10774505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->DefaultStream3/LocationRequest" code="0x10771703" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->DefaultStream3/LocationNotification" code="0x10771704" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->DefaultStream3/LocationComplete" code="0x10771706" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->DefaultStream3/LocationAssignment" code="0x10771705" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->DefaultStream2/LocationRequest" code="0x10771603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->DefaultStream2/LocationNotification" code="0x10771604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->DefaultStream2/LocationComplete" code="0x10771606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->DefaultStream2/LocationAssignment" code="0x10771605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->DefaultStream1/LocationRequest" code="0x10771503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->DefaultStream1/LocationNotification" code="0x10771504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->DefaultStream1/LocationComplete" code="0x10771506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->DefaultStream1/LocationAssignment" code="0x10771505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->ConnectState/ConnectionClose" code="0x10770D00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->AddressMgmt/UATIComplete" code="0x10771102" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="RTC->3G1XCSNAStream2/ParametersResetAck" code="0x10773604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->SubType4RTCMAC/RTCAck" code="0x10795400" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->SubType3RTCMAC/RTCAck" code="0x10794400" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->SubType1RTCMAC/RTCAck" code="0x10792400" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->SignalingStream0/Reset" code="0x10791400" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->SessionMgmt/SessionClose" code="0x10791001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->RouteUpdate/TrafficChannelAssignment" code="0x10790E01" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->RouteUpdate/RouteUpdateRequest" code="0x10790E07" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->RouteUpdate/NeighborList" code="0x10790E04" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MPAStream3/LocationRequest" code="0x10792703" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MPAStream3/LocationNotification" code="0x10792704" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MPAStream3/LocationComplete" code="0x10792706" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MPAStream3/LocationAssignment" code="0x10792705" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MPAStream2/LocationRequest" code="0x10792603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MPAStream2/LocationNotification" code="0x10792604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MPAStream2/LocationComplete" code="0x10792606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MPAStream2/LocationAssignment" code="0x10792605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MPAStream1/LocationNotification" code="0x10792504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MPAStream1/LocationComplete" code="0x10792506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MPAStream1/LocationAssignment" code="0x10792505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MMPAStream3/LocationRequest" code="0x10795703" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MMPAStream3/LocationNotification" code="0x10795704" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MMPAStream3/LocationComplete" code="0x10795706" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MMPAStream3/LocationAssignment" code="0x10795705" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MMPAStream2/LocationRequest" code="0x10795603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MMPAStream2/LocationNotification" code="0x10795604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MMPAStream2/LocationComplete" code="0x10795606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MMPAStream2/LocationAssignment" code="0x10795605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MMPAStream1/LocationRequest" code="0x10795503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MMPAStream1/LocationNotification" code="0x10795504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MMPAStream1/LocationComplete" code="0x10795506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->MMPAStream1/LocationAssignment" code="0x10795505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->EMPAStream3/LocationRequest" code="0x10794703" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->EMPAStream3/LocationNotification" code="0x10794704" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->EMPAStream3/LocationComplete" code="0x10794706" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->EMPAStream3/LocationAssignment" code="0x10794705" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->EMPAStream2/LocationRequest" code="0x10794603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->EMPAStream2/LocationNotification" code="0x10794604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->EMPAStream2/LocationComplete" code="0x10794606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->EMPAStream2/LocationAssignment" code="0x10794605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->EMPAStream1/LocationRequest" code="0x10794503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->EMPAStream1/LocationNotification" code="0x10794504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->EMPAStream1/LocationComplete" code="0x10794506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->EMPAStream1/LocationAssignment" code="0x10794505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->DefaultStream3/LocationRequest" code="0x10791703" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->DefaultStream3/LocationNotification" code="0x10791704" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->DefaultStream3/LocationComplete" code="0x10791706" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->DefaultStream3/LocationAssignment" code="0x10791705" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->DefaultStream2/LocationRequest" code="0x10791603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->DefaultStream2/LocationNotification" code="0x10791604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->DefaultStream2/LocationComplete" code="0x10791606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->DefaultStream2/LocationAssignment" code="0x10791605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->DefaultStream1/LocationRequest" code="0x10791503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->DefaultStream1/LocationNotification" code="0x10791504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->DefaultStream1/LocationComplete" code="0x10791506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->DefaultStream1/LocationAssignment" code="0x10791505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->ConnectState/ConnectionClose" code="0x10790D00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->ConnectState/ConfigurationResponse" code="0x10790D51" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->ConnectState/ConfigurationRequest" code="0x10790D50" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="FTC->AddressMgmt/UATIAssignment" code="0x10791101" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->SessionMgmt/SessionClose" code="0x10781001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->RouteUpdate/TrafficChannelAssignment" code="0x10780E01" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->QuickIdleState/Page" code="0x10782C00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->OverheadMsgs/SectorParameters" code="0x10780F01" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->OverheadMsgs/QuickConfig" code="0x10780F00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MultiCarrierRouteUpdate/TrafficChannelAssignment" code="0x10781E01" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MPAStream3/LocationRequest" code="0x10782703" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MPAStream3/LocationNotification" code="0x10782704" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MPAStream3/LocationComplete" code="0x10782706" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MPAStream3/LocationAssignment" code="0x10782705" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MPAStream3/ConfigurationResponse" code="0x10782751" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MPAStream3/ConfigurationRequest" code="0x10782750" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MPAStream2/LocationRequest" code="0x10782603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MPAStream2/LocationNotification" code="0x10782604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MPAStream2/LocationComplete" code="0x10782606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MPAStream2/LocationAssignment" code="0x10782605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MPAStream2/ConfigurationResponse" code="0x10782651" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MPAStream2/ConfigurationRequest" code="0x10782650" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MPAStream1/LocationRequest" code="0x10782503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MPAStream1/LocationNotification" code="0x10782504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MPAStream1/LocationComplete" code="0x10782506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MPAStream1/LocationAssignment" code="0x10782505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MPAStream1/ConfigurationResponse" code="0x10782551" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MPAStream1/ConfigurationRequest" code="0x10782550" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MMPAStream3/LocationRequest" code="0x10785703" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MMPAStream3/LocationNotification" code="0x10785704" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MMPAStream3/LocationComplete" code="0x10785706" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MMPAStream3/LocationAssignment" code="0x10785705" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MMPAStream3/ConfigurationResponse" code="0x10785751" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MMPAStream3/ConfigurationRequest" code="0x10785750" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MMPAStream2/LocationRequest" code="0x10785603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MMPAStream2/LocationNotification" code="0x10785604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MMPAStream2/LocationComplete" code="0x10785606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MMPAStream2/LocationAssignment" code="0x10785605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MMPAStream2/ConfigurationResponse" code="0x10785651" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MMPAStream2/ConfigurationRequest" code="0x10785650" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MMPAStream1/LocationRequest" code="0x10785503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MMPAStream1/LocationNotification" code="0x10785504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MMPAStream1/LocationComplete" code="0x10785506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MMPAStream1/LocationAssignment" code="0x10785505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MMPAStream1/ConfigurationResponse" code="0x10785551" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->MMPAStream1/ConfigurationRequest" code="0x10785550" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->InitState/Sync" code="0x10780B00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->IdleState/Page" code="0x10780C00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->HeaderOnly" code="0x10780000" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EnhancedIdleState/Page" code="0x10781C00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EMPAStream3/LocationRequest" code="0x10784703" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EMPAStream3/LocationNotification" code="0x10784704" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EMPAStream3/LocationComplete" code="0x10784706" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EMPAStream3/LocationAssignment" code="0x10784705" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EMPAStream3/ConfigurationResponse" code="0x10784751" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EMPAStream3/ConfigurationRequest" code="0x10784750" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EMPAStream2/LocationRequest" code="0x10784603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EMPAStream2/LocationNotification" code="0x10784604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EMPAStream2/LocationComplete" code="0x10784606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EMPAStream2/LocationAssignment" code="0x10784605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EMPAStream2/ConfigurationResponse" code="0x10784651" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EMPAStream2/ConfigurationRequest" code="0x10784650" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EMPAStream1/LocationRequest" code="0x10784503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EMPAStream1/LocationNotification" code="0x10784504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EMPAStream1/LocationComplete" code="0x10784506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EMPAStream1/LocationAssignment" code="0x10784505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EMPAStream1/ConfigurationResponse" code="0x10784551" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->EMPAStream1/ConfigurationRequest" code="0x10784550" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->DefaultStream3/LocationRequest" code="0x10781703" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->DefaultStream3/LocationNotification" code="0x10781704" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->DefaultStream3/LocationComplete" code="0x10781706" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->DefaultStream3/LocationAssignment" code="0x10781705" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->DefaultStream3/ConfigurationResponse" code="0x10781751" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->DefaultStream3/ConfigurationRequest" code="0x10781750" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->DefaultStream2/LocationRequest" code="0x10781603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->DefaultStream2/LocationComplete" code="0x10781606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->DefaultStream2/LocationAssignment" code="0x10781605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->DefaultStream2/ConfigurationResponse" code="0x10781651" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->DefaultStream2/ConfigurationRequest" code="0x10781650" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->DefaultStream1/LocationRequest" code="0x10781503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->DefaultStream1/LocationNotification" code="0x10781504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->DefaultStream1/LocationComplete" code="0x10781506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->DefaultStream1/LocationAssignment" code="0x10781505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->DefaultStream1/ConfigurationResponse" code="0x10781551" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->DefaultStream1/ConfigurationRequest" code="0x10781550" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->CCMAC/AccessParameters" code="0x10780201" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->CCMAC/AC Ack" code="0x10780200" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->AirLinkMgmt/ConfigurationResponse" code="0x10780A51" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->AirLinkMgmt/ConfigurationRequest" code="0x10780A50" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCD->AddressMgmt/UATIAssignment" code="0x10781101" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->SessionMgmt/SessionClose" code="0x107C1001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->RouteUpdate/TrafficChannelAssignment" code="0x107C0E01" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->QuickIdleState/Page" code="0x107C2C00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->OverheadMsgs/SectorParameters" code="0x107C0F01" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->OverheadMsgs/QuickConfig" code="0x107C0F00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->MultiCarrierRouteUpdate/TrafficChannelAssignment" code="0x107C1E01" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->MPAStream1/LocationRequest" code="0x107C2503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->MPAStream1/LocationNotification" code="0x107C2504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->MPAStream1/LocationComplete" code="0x107C2506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->MPAStream1/LocationAssignment" code="0x107C2505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->MPAStream1/ConfigurationResponse" code="0x107C2551" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->MPAStream1/ConfigurationRequest" code="0x107C2550" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->MMPAStream1/LocationRequest" code="0x107C5503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->MMPAStream1/LocationNotification" code="0x107C5504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->MMPAStream1/LocationComplete" code="0x107C5506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->MMPAStream1/LocationAssignment" code="0x107C5505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->MMPAStream1/ConfigurationResponse" code="0x107C5551" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->MMPAStream1/ConfigurationRequest" code="0x107C5550" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->InitState/Sync" code="0x107C0B00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->IdleState/Page" code="0x107C0C00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->HeaderOnly" code="0x107C0000" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->EnhancedIdleState/Page" code="0x107C1C00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->EMPAStream1/LocationRequest" code="0x107C4503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->EMPAStream1/LocationNotification" code="0x107C4504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->EMPAStream1/LocationComplete" code="0x107C4506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->EMPAStream1/LocationAssignment" code="0x107C4505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->EMPAStream1/ConfigurationResponse" code="0x107C4551" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->EMPAStream1/ConfigurationRequest" code="0x107C4550" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->DefaultStream1/LocationRequest" code="0x107C1503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->DefaultStream1/LocationNotification" code="0x107C1504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->DefaultStream1/LocationComplete" code="0x107C1506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->DefaultStream1/LocationAssignment" code="0x107C1505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->DefaultStream1/ConfigurationResponse" code="0x107C1551" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->DefaultStream1/ConfigurationRequest" code="0x107C1550" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->CCMAC/AccessParameters" code="0x107C0201" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="CCB->AddressMgmt/UATIAssignment" code="0x107C1101" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->SessionMgmt/SessionClose" code="0x10761001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->RouteUpdate/RouteUpdate" code="0x10760E00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->QuickIdleState/ConnectionRequest" code="0x10762C01" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MultiCarrierRouteUpdate/RouteUpdate" code="0x10761E00" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MPAStream3/LocationRequest" code="0x10762703" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MPAStream3/LocationNotification" code="0x10762704" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MPAStream3/LocationComplete" code="0x10762706" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MPAStream2/LocationRequest" code="0x10762603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MPAStream2/LocationNotification" code="0x10762604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MPAStream2/LocationComplete" code="0x10762606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MPAStream2/LocationAssignment" code="0x10762605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MPAStream1/LocationRequest" code="0x10762503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MPAStream1/LocationNotification" code="0x10762504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MPAStream1/LocationComplete" code="0x10762506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MPAStream1/LocationAssignment" code="0x10762505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MMPAStream3/LocationRequest" code="0x10765703" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MMPAStream3/LocationNotification" code="0x10765704" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MMPAStream3/LocationComplete" code="0x10765706" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MMPAStream3/LocationAssignment" code="0x10765705" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MMPAStream2/LocationRequest" code="0x10765603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MMPAStream2/LocationNotification" code="0x10765604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MMPAStream2/LocationComplete" code="0x10765606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MMPAStream2/LocationAssignment" code="0x10765605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MMPAStream1/LocationRequest" code="0x10765503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MMPAStream1/LocationNotification" code="0x10765504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MMPAStream1/LocationComplete" code="0x10765506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->MMPAStream1/LocationAssignment" code="0x10765505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->IdleState/ConnectionRequest" code="0x10760C01" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->EnhancedIdleState/ConnectionRequest" code="0x10761C01" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->EMPAStream3/LocationRequest" code="0x10764703" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->EMPAStream3/LocationNotification" code="0x10764704" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->EMPAStream3/LocationComplete" code="0x10764706" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->EMPAStream3/LocationAssignment" code="0x10764705" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->EMPAStream2/LocationRequest" code="0x10764603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->EMPAStream2/LocationNotification" code="0x10764604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->EMPAStream2/LocationComplete" code="0x10764606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->EMPAStream2/LocationAssignment" code="0x10764605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->EMPAStream1/LocationRequest" code="0x10764503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->EMPAStream1/LocationNotification" code="0x10764504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->EMPAStream1/LocationComplete" code="0x10764506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->EMPAStream1/LocationAssignment" code="0x10764505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->DefaultStream3/LocationRequest" code="0x10761703" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->DefaultStream3/LocationNotification" code="0x10761704" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->DefaultStream3/LocationComplete" code="0x10761706" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->DefaultStream3/LocationAssignment" code="0x10761705" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->DefaultStream2/LocationRequest" code="0x10761603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->DefaultStream2/LocationNotification" code="0x10761604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->DefaultStream2/LocationComplete" code="0x10761606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->DefaultStream2/LocationAssignment" code="0x10761605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->DefaultStream1/LocationRequest" code="0x10761503" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->DefaultStream1/LocationNotification" code="0x10761504" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->DefaultStream1/LocationComplete" code="0x10761506" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->DefaultStream1/LocationAssignment" code="0x10761505" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->AddressMgmt/UATIRequest" code="0x10761100" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="AC->AddressMgmt/UATIComplete" code="0x10761102" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+	</nettype>
+	<nettype code="ims" name="IMS" isShowList="1" isShowMap="0" color="" checked="1">
+		<subtype code="ims" name="IMS" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="IMS_SIP_REGISTER" code="0x15000001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_REGISTER->Request" code="0x1500F004" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_REGISTER->OK" code="0x1500F005" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_REGISTER->Unauthorized" code="0x1500F006" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_INVITE" code="0x15000002" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_INVITE->Request" code="0x1500F001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_INVITE->Ringing" code="0x1500F002" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_INVITE->Trying" code="0x1500F009" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_INVITE->OK" code="0x1500F003" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_INVITE->Server Internal Error" code="0x1500F00A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_INVITE->Forbidden" code="0x1500F00B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_PRACK" code="0x15000003" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_CANCEL" code="0x15000004" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_ACK" code="0x15000005" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_BYE" code="0x15000006" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_BYE->Request" code="0x1500F007" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_BYE->OK" code="0x1500F008" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_SUBSCRIBE" code="0x15000007" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_NOTIFY" code="0x15000008" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_UPDATE" code="0x15000009" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_REFER" code="0x1500000A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_MESSAGE" code="0x1500000B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_INFO" code="0x1500000C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_PUBLISH" code="0x1500000D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="IMS_SIP_OPTIONS" code="0x1500000E" isShowList="1" isShowMap="0" color="" checked="1" />
+	</subtype>
+	</nettype>
+	<nettype code="event" name="Event" isShowList="1" isShowMap="0" color="" checked="1">
+		<subtype code="intra_lte_reselection" name="Intra-LTE Reselection" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="LTE Cell Reselection Start(Event)" code="0xEE00E001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE Cell Reselection Success(Event)" code="0xEE00E002" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE Cell Reselection Failed(Event)" code="0xEE00E003" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE Search PLMN(Event)" code="0xEE00E010" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE Cell selection start(Event)" code="0xEE00E011" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE Camped On(Event)" code="0xEE00E012" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE Prach start(Event)" code="0xEE00E021" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE Prach End Success(Event)" code="0xEE00E022" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE Prach End Failed(Event)" code="0xEE00E023" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Prach: MSG0" code="0xEE00E024" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Prach: MSG1(RA)" code="0xEE00E025" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Prach: MSG2(RAR)" code="0xEE00E026" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Prach: MSG3" code="0xEE00E027" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="Prach: MSG4" code="0xEE00E028" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="lte_tds_reselection" name="LTE-TDS Reselection" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="LTE to TDS cell reselection start(Event)" code="0xEE1D0001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE to TDS Cell reselection success(Event)" code="0xEE1D0002" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE to TDS Cell reselection failed(Event)" code="0xEE1D0003" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE to TDS Cell handover start(Event)" code="0xEE1D0011" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE to TDS Cell handover success(Event)" code="0xEE1D0012" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE to TDS Cell handover failed(Event)" code="0xEE1D0013" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS to LTE cell reselection start(Event)" code="0xEE1D1001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS to LTE Cell reselection success(Event)" code="0xEE1D1002" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS to LTE Cell reselection failed(Event)" code="0xEE1D1003" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS to LTE Cell handover start(Event)" code="0xEE1D1011" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS to LTE Cell handover success(Event)" code="0xEE1D1012" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="TDS to LTE Cell handover failed(Event)" code="0xEE1D1013" isShowList="1" isShowMap="0" color="" checked="1" />
+ 		</subtype>
+		<subtype code="lte_gsm_reselection" name="LTE-GSM Reselection" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="LTE to GSM cell reselection start(Event)" code="0xEE1D2001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE to GSM Cell reselection success(Event)" code="0xEE1D2002" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE to GSM Cell reselection failed(Event)" code="0xEE1D2003" isShowList="1" isShowMap="0" color="" checked="1" />	
+			<msg name="LTE to GSM Cell handover start(Event)" code="0xEE1D2011" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE to GSM Cell handover success(Event)" code="0xEE1D2012" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE to GSM Cell handover failed(Event)" code="0xEE1D2013" isShowList="1" isShowMap="0" color="" checked="1" />	
+			<msg name="GSM to LTE cell reselection start(Event)" code="0xEE1D3001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="GSM to LTE Cell reselection success(Event)" code="0xEE1D3002" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="GSM to LTE Cell reselection failed(Event)" code="0xEE1D3003" isShowList="1" isShowMap="0" color="" checked="1" />	
+			<msg name="GSM to LTE Cell handover start(Event)" code="0xEE1D3011" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="GSM to LTE Cell handover success(Event)" code="0xEE1D3012" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="GSM to LTE Cell handover failed(Event)" code="0xEE1D3013" isShowList="1" isShowMap="0" color="" checked="1" />
+ 		</subtype>
+		<subtype code="lte_wcdma_reselection" name="LTE-WCDMA Reselection" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="LTE To W Reselection Start(Event)" code="0xEE1F1001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE To W Reselection Success(Event)" code="0xEE1F1002" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE To W Reselection Failed(Event)" code="0xEE1F1003" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W To LTE Reselection Start(Event)" code="0xEE1F2001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W To LTE Reselection Success(Event)" code="0xEE1F2002" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="W To LTE Reselection Failed(Event)" code="0xEE1F2003" isShowList="1" isShowMap="0" color="" checked="1" />
+ 		</subtype>
+		<subtype code="lte_ml1_reselection" name="LTE-ML1 Reselection" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="LTE ML1 random access request (MSG1) report" code="0xD100B167" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="LTE ML1 random access response (MSG2) report" code="0xD100B168" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+	</nettype>
+	<nettype code="ENDC" name="ENDC" isShowList="1" isShowMap="0" color="" checked="1">
+		<subtype code="5GS EMM" name="5GS EMM" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="NR->Registration request" code="0x60000741" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->Registration accept" code="0x60000742" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->Registration complete" code="0x60000743" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->Registration reject" code="0x60000744" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->UE originating Deregistration request" code="0x60000745" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->UE originating Deregistration accept" code="0x60000746" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->UE terminated Deregistration request" code="0x60000747" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->UE terminated Deregistration accept" code="0x60000748" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->Service request" code="0x6000074C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->Service reject" code="0x6000074D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->Service accept" code="0x6000074E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->Configuration update command" code="0x60000754" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->Configuration update complete" code="0x60000755" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->SAuthentication request" code="0x60000756" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->Authentication response" code="0x60000757" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->Authentication reject" code="0x60000758" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->Authentication failure" code="0x60000759" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->Authentication result" code="0x6000075A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->AIdentity request" code="0x6000075B" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->Identity response" code="0x6000075C" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->Security mode command" code="0x6000075D" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->Security mode complete" code="0x6000075E" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->Security mode reject" code="0x6000075F" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->5GMM status" code="0x60000764" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->Notification" code="0x60000765" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->Notification response" code="0x60000766" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->UL NAS transport" code="0x60000767" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->DL NAS transport" code="0x60000768" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="5GS ESM" name="5GS ESM" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="NR->PDU session establishment request" code="0x600002C1" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->PDU session establishment accept" code="0x600002C2" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->PDU session establishment reject" code="0x600002C3" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->PDU session authentication command" code="0x600002C5" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->PDU session authentication complete" code="0x600002C6" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->NPDU session authentication result" code="0x600002C7" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->PDU session modification request" code="0x600002C9" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->PDU session modification reject" code="0x600002CA" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->PDU session modification command" code="0x600002CB" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->PDU session modification complete" code="0x600002CC" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->PDU session modification command reject" code="0x600002CD" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->PDU session release request" code="0x600002D1" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->PDU session release reject" code="0x600002D2" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->PDU session release command" code="0x600002D3" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->PDU session release complete" code="0x600002D4" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->5GSM status" code="0x600002D6" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="BCCH BCH"  name="BCCH BCH" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="NR->MIB" code="0x50000100" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="BCCH SCH" name="BCCH SCH" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="NR->SIBs" code="0x50000500" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->SIBType1" code="0x50000501" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="CCCH DL" name="CCCH DL" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="NR->RRCReject" code="0x50000300" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->RRCSetup" code="0x50000301" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="DCCH DL" name="DCCH DL"  isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="NR->RRCReconfiguration" code="0x50000600" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->RRCResume" code="0x50000601" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->RRCRelease" code="0x50000602" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->RRCReestablishment" code="0x50000603" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->SecurityModeCommand" code="0x50000604" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->DLInformationTransfer" code="0x50000605" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->UECapabilityEnquiry" code="0x50000606" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->CounterCheck" code="0x50000607" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->MobilityFromNRCommand" code="0x50000608" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="PCCH" name="PCCH" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="NR->Paging" code="0x50000400" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="CCCH UL" name="CCCH UL"  isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="NR->RRCSetupRequest" code="0x50000700" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->RRCResumeRequest" code="0x50000701" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->RRCReestablishmentRequest" code="0x50000702" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->RRCSystemInfoRequest" code="0x50000703" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="CCCH1 UL" name="CCCH1 UL" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="NR->RRCResumeRequest1" code="0x50000A00" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="DCCH UL" name="DCCH UL"  isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="NR->MeasurementReport" code="0x50000200" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->RRCReconfigurationComplete" code="0x50000201" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->RRCSetupComplete" code="0x50000202" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->RRCReestablishmentComplete" code="0x50000203" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->RRCResumeComplete" code="0x50000204" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->SecurityModeComplete" code="0x50000205" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->SecurityModeFailure" code="0x50000206" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->ULInformationTransfer" code="0x50000207" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->LocationMeasurementIndication" code="0x50000208" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->UECapabilityInformation" code="0x50000209" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->CounterCheckResponse" code="0x5000020A" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->UEAssistanceInformation" code="0x5000020B" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="SIB" name="SIB" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="NR->SIB1" code="0x51010001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->SIB2" code="0x51010002" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->SIB3" code="0x51010003" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->SIB4" code="0x51010004" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->SIB5" code="0x51010005" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->SIB6" code="0x51010006" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->SIB7" code="0x51010007" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->SIB8" code="0x51010008" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->SIB9" code="0x51010009" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="RS Control" name="RS Control" isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="NR->RRCReconfiguration" code="0x51020000" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->CellGroupConfig" code="0x51020001" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->RadioBearerConfig" code="0x51020002" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->RRCReconfigurationComplete" code="0x51020003" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->MeasResultSCG-Failure" code="0x51020004" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+		<subtype code="UE Capability" name="UE Capability"  isShowList="1" isShowMap="0" color="" checked="1">
+			<msg name="NR->NR Capability" code="0x51030000" isShowList="1" isShowMap="0" color="" checked="1" />
+			<msg name="NR->MRDC Capability" code="0x51030001" isShowList="1" isShowMap="0" color="" checked="1" />
+		</subtype>
+	</nettype>
+</filters>

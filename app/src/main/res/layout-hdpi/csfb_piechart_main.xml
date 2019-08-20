@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color" >
+
+    <include
+        android:id="@+id/task_attach_title"
+        layout="@layout/basic_title" />
+
+    <RelativeLayout
+        android:id="@+id/csfb_title"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_below="@+id/task_attach_title"
+        android:background="@color/base_second_title_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/csfb_Call_Type"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/setting_sort_right_text1"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="@string/csfb_faild_type_mo"
+                android:textSize="14sp" />
+
+            <TextView
+                style="@style/setting_sort_right_text1"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="@string/csfb_faild_type_mt"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/csfb_title"
+        android:background="@color/app_main_bg_color" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/app_main_bg_color"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/csfb_Coverage_Rate_rtl"
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/base_list_item_bg" >
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/csfb_Coverage_Rate"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/csfb_fgl_txt"
+                        style="@style/setting_sort_right_text1"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textColor="@color/info_param_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View style="@style/setting_divider" />
+
+            <LinearLayout
+                android:id="@+id/csfb_fallback_lnl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/total_csfb_fallback_to_2g_Rate"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="110dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/csfb_fallback_to_2g_Rate_txt"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_width="45dip"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/csfb_fallback_to_2g_Rate_txt_mt"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_width="45dip"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/total_csfb_fallback_to_3g_Rate"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="110dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/csfb_fallback_to_3g_Rate_text"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_width="45dip"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/csfb_fallback_to_3g_Rate_text_mt"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_width="45dip"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/total_csfb_Call_Connected_Rate"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="110dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/csfb_Call_Connected_Rate_txt"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_width="45dip"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/csfb_Call_Connected_Rate_txt_mt"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_width="45dip"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/total_csfb_Call_Dropped_Rate"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="110dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/total_csfb_Call_Dropped_Rate_txt"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_width="45dip"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/total_csfb_Call_Dropped_Rate_txt_mt"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_width="45dip"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/setting_divider" />
+
+            <LinearLayout
+                android:id="@+id/csfb_Delay_llyt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/total_csfb_fallback_to_2g_Delay"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="110dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/total_csfb_fallback_to_2g_Delay_text"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_width="45dip"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/total_csfb_fallback_to_2g_Delay_text_mt"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_width="45dip"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/total_csfb_fallback_to_3g_Delay"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="110dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/total_csfb_fallback_to_3g_Delay_text"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_width="45dip"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/total_csfb_fallback_to_3g_Delay_text_mt"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_width="45dip"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/setting_divider" />
+
+            <LinearLayout
+                android:id="@+id/Return_to_LTE_lnl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/total_csfb_2G_Return_to_LTE_Delay"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="110dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/total_csfb_2G_Return_to_LTE_Delay_text"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_width="45dip"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/total_csfb_2G_Return_to_LTE_Delay_text_mt"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_width="45dip"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/total_csfb_3G_Return_to_LTE_Delay"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="110dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/total_csfb_3G_Return_to_LTE_Delay_text"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_width="45dip"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/total_csfb_3G_Return_to_LTE_Delay_text_mt"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_width="45dip"
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <include
+            android:id="@+id/about_title"
+            layout="@layout/basic_title" />
+    
+    <View
+		    android:id="@+id/title_blue_color"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/setting_sort_title_bgcolor" />
+
+    <ExpandableListView
+        android:id="@+id/elistview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/setting_bgcolor"
+        android:childDivider="@drawable/list_divider"
+        android:divider="@android:color/transparent"
+        android:groupIndicator="@null"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/setting_bgcolor" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dip"
+            android:text="Ericsson GLS"
+            android:textColor="@color/info_param_color"
+            android:textSize="@dimen/app_content_txt_size" />
+    </RelativeLayout>
+
+</LinearLayout>

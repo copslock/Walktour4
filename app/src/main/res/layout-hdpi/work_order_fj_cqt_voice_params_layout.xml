@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:visibility="visible" 
+    android:id="@+id/work_order_fj_cqt_voice_param">
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0" >
+
+                <TextView
+                    android:id="@+id/work_order_fj_cqt_voice_p1"
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/work_order_fj_voice_test_param9" />
+
+                <TextView
+                    android:id="@+id/work_order_fj_voice_test_param9"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.0" >
+
+                <TextView
+                    android:id="@+id/work_order_fj_cqt_voice_p2"
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/work_order_fj_voice_test_param10" />
+
+                <TextView
+                    android:id="@+id/work_order_fj_voice_test_param10"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0" >
+
+                <TextView
+                    android:id="@+id/work_order_fj_cqt_voice_p3"
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/work_order_fj_voice_test_param11" />
+
+                <TextView
+                    android:id="@+id/work_order_fj_voice_test_param11"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.0" >
+
+                <TextView
+                    android:id="@+id/work_order_fj_cqt_voice_p4"
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/work_order_fj_voice_test_param12" />
+
+                <TextView
+                    android:id="@+id/work_order_fj_voice_test_param12"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0" >
+
+                <TextView
+                    android:id="@+id/work_order_fj_cqt_voice_p5"
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/work_order_fj_voice_test_param13" />
+
+                <TextView
+                    android:id="@+id/work_order_fj_voice_test_param13"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue" />
+            </RelativeLayout>
+
+            <RelativeLayout
+             	android:id="@+id/work_order_fj_cqt_voice_p6_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.0" 
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/work_order_fj_cqt_voice_p6"
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/work_order_fj_voice_test_param14" />
+
+                <TextView
+                    android:id="@+id/work_order_fj_voice_test_param14"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp" >
+
+            <TextView
+                style="@style/setting_sort_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/work_order_fj_testing_address" />
+
+            <com.walktour.framework.ui.BasicSpinner
+                android:id="@+id/work_order_fj_testing_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/drop"
+                android:drawSelectorOnTop="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp" >
+
+            <TextView
+                style="@style/setting_sort_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/work_order_fj_testing_exception" />
+
+            <com.walktour.framework.ui.BasicSpinner
+                android:id="@+id/work_order_fj_testing_exception"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/drop"
+                android:drawSelectorOnTop="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/issue_detail_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingTop="2dp" >
+
+            <TextView
+                style="@style/setting_sort_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/work_order_fj_issue_detail" />
+
+            <Button
+                android:id="@+id/work_order_fj_issue_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/drop"
+                android:drawSelectorOnTop="true"
+                android:maxWidth="250dp"
+                android:minHeight="30dp"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+</LinearLayout>

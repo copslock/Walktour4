@@ -1,0 +1,164 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'walktour'
+            keyPassword '123456'
+            storeFile file('walktour.keystore')//已经改成相对路径，防止别的电脑使用路径不正确
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+    defaultConfig {
+        applicationId "com.walktour.gui"
+        minSdkVersion 18
+        targetSdkVersion 18
+        versionCode 1
+        versionName "4.0.0.0706 Build 201907062035"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled = true
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi', 'armeabi-v7a' //支持x23 webview
+//            abiFilters 'armeabi' //支持通用版
+        }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            if (output.outputFile != null && output.outputFile.name.endsWith('.apk')) {
+                // 输出apk名称为Walktour-1.0-release.apk
+                String fileName = "app-debug.apk"
+                if (variant.buildType.name.equals('release')) {
+                    fileName = "Walktour-${defaultConfig.versionName}-release.apk"
+                } else if (variant.buildType.name.equals('debug')) {
+                    fileName = "Walktour-${defaultConfig.versionName}-debug.apk"
+                }
+                output.outputFile = new File(output.outputFile.parent, fileName)
+            }
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    buildTypes {
+        release {
+            lintOptions {
+                checkReleaseBuilds false
+                abortOnError false
+            }
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明，后一个文件是自己的定义混淆文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize = '4g'
+        preDexLibraries = false
+    }
+    greendao {
+        //数据库版本号
+        schemaVersion 1
+        //设置DaoMaster、DaoSession、Dao包名
+        daoPackage 'com.walktour.greendao'
+        //设置DaoMaster、DaoSession、Dao目录
+//        targetGenDir 'src/main/java'
+        //设置生成单元测试目录
+        //targetGenDirTest：
+        //设置自动生成单元测试用例
+        //generateTests：
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+dependencies {
+    //compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile project(':base')
+    compile project(':report')
+    provided 'com.android.tools.layoutlib:layoutlib-api:25.3.2'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.google.dagger:dagger:2.11'
+    apt 'com.google.dagger:dagger-compiler:2.11'
+    compile 'com.jakewharton:butterknife:8.6.0'
+    apt 'com.jakewharton:butterknife-compiler:8.6.0'
+    compile 'org.greenrobot:greendao:3.2.2'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    provided files('libs/netcustom.jar')
+    compile files('libs/activation.jar')
+    compile files('libs/additionnal.jar')
+    compile files('libs/aliyun-oss-sdk-android-2.3.0.jar')
+    compile files('libs/apache-ant-zip.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/big-planet3.jar')
+    compile files('libs/com.huawei.steadyspeed.jar')
+    compile files('libs/commons-net-3.6.jar')
+    compile files('libs/dmplayersdktestjar.jar')
+    compile files('libs/dolitSiteparser.jar')
+    compile files('libs/httpmime-4.2.1.jar')
+    compile files('libs/HttpUtil.jar')
+    compile files('libs/INNSMap_AndroidSdk.jar')
+    compile files('libs/jaxen-1.1-beta-6.jar')
+    compile files('libs/jg_filter_sdk_1.1.jar')
+    compile files('libs/mail.jar')
+    compile files('libs/maplib.jar')
+    compile files('libs/mid-core-sdk-3.7.2.jar')
+    compile files('libs/samsungvolte.jar')
+    compile files('libs/script.jar')
+    compile files('libs/uiautomator.jar')
+    compile files('libs/vovjar.jar')
+    compile files('libs/walktourlib.jar')
+    compile files('libs/wup-1.0.0.E-SNAPSHOT.jar')
+    compile files('libs/Xg_sdk_v3.1_20170417_0946.jar')
+    compile 'com.tencent.bugly:crashreport:2.6.6.1'
+    compile 'com.tencent.bugly:nativecrashreport:3.3.1'
+    compile files('libs/methodManager.jar')
+    //高德地图SDK
+    compile files('libs/AMap3DMap_6.5.0_AMapNavi_6.5.0_20181122.jar')
+    compile files('libs/AMap_Location_V4.4.0_20181122.jar')
+    compile files('libs/AMap_Search_V6.5.0_20180930.jar')
+    //    图表
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    compile files('libs/Common.jar')
+    compile files('libs/ShareUtility.jar')
+    compile files('libs/RootTools-3.4.jar')
+    compile(name: 'multipleapptest', ext: 'aar')
+    compile(name: 'crosswalk-23.53.589.4', ext: 'aar')
+    //Excel操作
+    compile 'net.sourceforge.jexcelapi:jxl:2.6.12'
+    compile files('libs/samsung1.2.3.jar')
+    compile files('libs/jsch-0.1.55.jar')
+}

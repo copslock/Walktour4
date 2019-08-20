@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/work_order_fj_detail_list_step4"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:visibility="gone" >
+
+    <View
+        style="@style/setting_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/work_order_fj_test_data_upload" />
+
+        <Button
+            android:id="@+id/work_order_fj_start_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/dialog_btn"
+            android:drawSelectorOnTop="true"
+            android:gravity="center"
+            android:text="@string/work_order_fj_upload"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/upload_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/upload_file"
+                style="@style/setting_sort_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/upload_status"
+                style="@style/setting_sort_right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_uploading"
+                android:textColor="@color/light_blue" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/upload_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/data_progress_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

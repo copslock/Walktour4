@@ -1,0 +1,3552 @@
+var TestStaticsData = {
+	"EndTime":[
+		{
+			"ENDTIME":"42078.79139162"
+		}
+	],
+	"FTPDownload":[
+		{
+			"BUSINESSCOUNT":"2.0",
+			"SUCCESSCOUNT":"2.0",
+			"SUCCESSRATE":"1.0",
+			"TRANSFERSIZE":"2287.177",
+			"TRANSFERTIME":"20.098981",
+			"TRANSFERRATE":"113.795669541655"
+		}
+	],
+	"FTPUpload":[
+		{
+			"BUSINESSCOUNT":"1.0",
+			"SUCCESSCOUNT":"1.0",
+			"SUCCESSRATE":"1.0",
+			"TRANSFERSIZE":"524.288",
+			"TRANSFERTIME":"4.50503",
+			"TRANSFERRATE":"116.378359300604"
+		}
+	],
+	"Network_Connect":[{"BUSINESSCOUNT":"9.0","SUCCESSCOUNT":"9.0","SUCCESSRATE":"1.0","BUSINESSDELAY":"23.99957456"}],
+	"OutOfServiceMileage":[{"OUTOFSERVICEMILEAGE":"0.0"}],
+	"OutOfServiceTime":[{"OUTOFSERVICETIME":"0.191144"}],
+	"Ping_CellDch":[{"BUSINESSCOUNT":"5.0","SUCCESSCOUNT":"5.0","SUCCESSRATE":"1.0","BUSINESSDELAY":"0.4210888"}],
+	"Ping_WCDMATotal":[{"BUSINESSCOUNT":"5.0","SUCCESSCOUNT":"5.0","SUCCESSRATE":"1.0","BUSINESSDELAY":"0.4210888"}],
+	"StartTime":[{"STARTTIME":"42078.78573095"}],
+	"TestTotalMileage":[{"TESTTOTALMILEAGE":"0.0"}],
+	"TestTotalTime":[{"TESTTOTALTIME":"489.081871"}],
+	"WCDMACoverage":[{"SAMPLECOVERAGERATE":"0.894545454545455"}],
+	"WCDMA_CQI_Mean_FTPDownload_Sum":[
+		{
+			"AVERAGE":"-63.51","MAX":"-30","MIN":"-140","TOTALCOUNT":"1184","TOTALVALUE":"-75197"
+		}
+	],
+	"WCDMA_CQI_Mean_FTPDownload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"5",
+			"INTERVALNAME":"(-95,-85]",
+			"TOTALVALUE":"-38752",
+			"TOTAL":"431",
+			"AVERAGE":"-89.905584354275",
+			"PDF":"0.337605445160684",
+			"CDF":"0.645281304582801",
+			"MAX":"-85",
+			"MIN":"-94.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"WCDMA_CQI_Mean_FTPUpload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_CQI_Mean_FTPUpload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"WCDMA_DL_RLC_Thr_FTPDownload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_DL_RLC_Thr_FTPDownload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"5",
+			"INTERVALNAME":"(-95,-85]",
+			"TOTALVALUE":"-38752",
+			"TOTAL":"431",
+			"AVERAGE":"-89.905584354275",
+			"PDF":"0.337605445160684",
+			"CDF":"0.645281304582801",
+			"MAX":"-85",
+			"MIN":"-94.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"WCDMA_DL_RLC_Thr_FTPUpload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_DL_RLC_Thr_FTPUpload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"5",
+			"INTERVALNAME":"(-95,-85]",
+			"TOTALVALUE":"-38752",
+			"TOTAL":"431",
+			"AVERAGE":"-89.905584354275",
+			"PDF":"0.337605445160684",
+			"CDF":"0.645281304582801",
+			"MAX":"-85",
+			"MIN":"-94.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"WCDMA_DL_RLC_Thr_Ping_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_DL_RLC_Thr_Ping":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"WCDMA_MAC_Thr_FTPDownload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_MAC_Thr_FTPDownload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"5",
+			"INTERVALNAME":"(-95,-85]",
+			"TOTALVALUE":"-38752",
+			"TOTAL":"431",
+			"AVERAGE":"-89.905584354275",
+			"PDF":"0.337605445160684",
+			"CDF":"0.645281304582801",
+			"MAX":"-85",
+			"MIN":"-94.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"WCDMA_MAC_Thr_FTPUpload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_MAC_Thr_FTPUpload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"WCDMA_Phys_Request_Thr_FTPDownload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_Phys_Request_Thr_FTPDownload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"5",
+			"INTERVALNAME":"(-95,-85]",
+			"TOTALVALUE":"-38752",
+			"TOTAL":"431",
+			"AVERAGE":"-89.905584354275",
+			"PDF":"0.337605445160684",
+			"CDF":"0.645281304582801",
+			"MAX":"-85",
+			"MIN":"-94.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"WCDMA_Phys_Request_Thr_FTPUpload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_Phys_Request_Thr_FTPUpload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"5",
+			"INTERVALNAME":"(-95,-85]",
+			"TOTALVALUE":"-38752",
+			"TOTAL":"431",
+			"AVERAGE":"-89.905584354275",
+			"PDF":"0.337605445160684",
+			"CDF":"0.645281304582801",
+			"MAX":"-85",
+			"MIN":"-94.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"WCDMA_Phys_Schedule_Thr_FTPDownload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_Phys_Schedule_Thr_FTPDownload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"5",
+			"INTERVALNAME":"(-95,-85]",
+			"TOTALVALUE":"-38752",
+			"TOTAL":"431",
+			"AVERAGE":"-89.905584354275",
+			"PDF":"0.337605445160684",
+			"CDF":"0.645281304582801",
+			"MAX":"-85",
+			"MIN":"-94.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"WCDMA_Phys_Schedule_Thr_FTPUpload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_Phys_Schedule_Thr_FTPUpload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"5",
+			"INTERVALNAME":"(-95,-85]",
+			"TOTALVALUE":"-38752",
+			"TOTAL":"431",
+			"AVERAGE":"-89.905584354275",
+			"PDF":"0.337605445160684",
+			"CDF":"0.645281304582801",
+			"MAX":"-85",
+			"MIN":"-94.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"WCDMA_Phys_Service_Thr_FTPDownload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_Phys_Service_Thr_FTPDownload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"WCDMA_Phys_Service_Thr_FTPUpload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_Phys_Service_Thr_FTPUpload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"5",
+			"INTERVALNAME":"(-95,-85]",
+			"TOTALVALUE":"-38752",
+			"TOTAL":"431",
+			"AVERAGE":"-89.905584354275",
+			"PDF":"0.337605445160684",
+			"CDF":"0.645281304582801",
+			"MAX":"-85",
+			"MIN":"-94.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"WCDMA_Total_RSCP_FTPDownload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_Total_RSCP_FTPDownload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"5",
+			"INTERVALNAME":"(-95,-85]",
+			"TOTALVALUE":"-38752",
+			"TOTAL":"431",
+			"AVERAGE":"-89.905584354275",
+			"PDF":"0.337605445160684",
+			"CDF":"0.645281304582801",
+			"MAX":"-85",
+			"MIN":"-94.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"WCDMA_Total_RSCP_FTPUpload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_Total_RSCP_FTPUpload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"WCDMA_Total_RSCP_Ping_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_Total_RSCP_Ping":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"5",
+			"INTERVALNAME":"(-95,-85]",
+			"TOTALVALUE":"-38752",
+			"TOTAL":"431",
+			"AVERAGE":"-89.905584354275",
+			"PDF":"0.337605445160684",
+			"CDF":"0.645281304582801",
+			"MAX":"-85",
+			"MIN":"-94.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"WCDMA_Total_RSCP_Sum":[
+		{
+			"WCDMA_TOTAL_RSCP_SUM.AVERAGE":"-81.59190788","WCDMA_TOTAL_RSCP_SUM.MAX":"-53.496","WCDMA_TOTAL_RSCP_SUM.MIN":"-102.309","WCDMA_TOTAL_RSCP_SUM.TOTALCOUNT":"825.0","WCDMA_TOTAL_RSCP_SUM.TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_UL_RLC_Thr_FTPDownload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_UL_RLC_Thr_FTPDownload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"5",
+			"INTERVALNAME":"(-95,-85]",
+			"TOTALVALUE":"-38752",
+			"TOTAL":"431",
+			"AVERAGE":"-89.905584354275",
+			"PDF":"0.337605445160684",
+			"CDF":"0.645281304582801",
+			"MAX":"-85",
+			"MIN":"-94.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"WCDMA_UL_RLC_Thr_FTPUpload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_UL_RLC_Thr_FTPUpload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"5",
+			"INTERVALNAME":"(-95,-85]",
+			"TOTALVALUE":"-38752",
+			"TOTAL":"431",
+			"AVERAGE":"-89.905584354275",
+			"PDF":"0.337605445160684",
+			"CDF":"0.645281304582801",
+			"MAX":"-85",
+			"MIN":"-94.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"WCDMA_UL_RLC_Thr_Ping_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"WCDMA_UL_RLC_Thr_Ping":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"5",
+			"INTERVALNAME":"(-95,-85]",
+			"TOTALVALUE":"-38752",
+			"TOTAL":"431",
+			"AVERAGE":"-89.905584354275",
+			"PDF":"0.337605445160684",
+			"CDF":"0.645281304582801",
+			"MAX":"-85",
+			"MIN":"-94.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"DL_App_Layer_Thr_Mean_FTPUpload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"DL_App_Layer_Thr_Mean_FTPUpload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"5",
+			"INTERVALNAME":"(-95,-85]",
+			"TOTALVALUE":"-38752",
+			"TOTAL":"431",
+			"AVERAGE":"-89.905584354275",
+			"PDF":"0.337605445160684",
+			"CDF":"0.645281304582801",
+			"MAX":"-85",
+			"MIN":"-94.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"UL_App_Layer_Thr_Mean_FTPUpload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"UL_App_Layer_Thr_Mean_FTPUpload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"5",
+			"INTERVALNAME":"(-95,-85]",
+			"TOTALVALUE":"-38752",
+			"TOTAL":"431",
+			"AVERAGE":"-89.905584354275",
+			"PDF":"0.337605445160684",
+			"CDF":"0.645281304582801",
+			"MAX":"-85",
+			"MIN":"-94.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],	
+	"DL_App_Layer_Thr_Mean_FTPDownload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"DL_App_Layer_Thr_Mean_FTPDownload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"5",
+			"INTERVALNAME":"(-95,-85]",
+			"TOTALVALUE":"-38752",
+			"TOTAL":"431",
+			"AVERAGE":"-89.905584354275",
+			"PDF":"0.337605445160684",
+			"CDF":"0.645281304582801",
+			"MAX":"-85",
+			"MIN":"-94.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],
+	"UL_App_Layer_Thr_Mean_FTPDownload_Sum":[
+		{
+			"AVERAGE":"-81.59190788","MAX":"-53.496","MIN":"-102.309","TOTALCOUNT":"825.0","TOTALVALUE":"-67313.324"
+		}
+	],
+	"UL_App_Layer_Thr_Mean_FTPDownload":[
+		{
+			"INDEX":"1",
+			"INTERVALNAME":"<=-110",
+			"TOTALVALUE":"-6567",
+			"TOTAL":"56",
+			"AVERAGE":"-116.076984711256",
+			"PDF":"0.0443124231434994",
+			"CDF":"0.0443124231434994",
+			"MAX":"-110",
+			"MIN":"-140",
+			"MAXPDFTHRESHOLDNAME":"-85"
+		},
+		{
+			"INDEX":"2",
+			"INTERVALNAME":"(-110,-105]",
+			"TOTALVALUE":"-6993",
+			"TOTAL":"65",
+			"AVERAGE":"-107.234807942367",
+			"PDF":"0.0510797114503458",
+			"CDF":"0.0953921345938452",
+			"MAX":"-105",
+			"MIN":"-109.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"3",
+			"INTERVALNAME":"(-105,-100]",
+			"TOTALVALUE":"-11036",
+			"TOTAL":"107",
+			"AVERAGE":"-102.243527080351",
+			"PDF":"0.0845456752798164",
+			"CDF":"0.179937809873662",
+			"MAX":"-100",
+			"MIN":"-104.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"4",
+			"INTERVALNAME":"(-100,-95]",
+			"TOTALVALUE":"-15872",
+			"TOTAL":"163",
+			"AVERAGE":"-97.3235547287452",
+			"PDF":"0.127738049548456",
+			"CDF":"0.307675859422117",
+			"MAX":"-95",
+			"MIN":"-99.93",
+			"MAXPDFTHRESHOLDNAME":null
+		},
+		{
+			"INDEX":"5",
+			"INTERVALNAME":"(-95,-85]",
+			"TOTALVALUE":"-38752",
+			"TOTAL":"431",
+			"AVERAGE":"-89.905584354275",
+			"PDF":"0.337605445160684",
+			"CDF":"0.645281304582801",
+			"MAX":"-85",
+			"MIN":"-94.93",
+			"MAXPDFTHRESHOLDNAME":null
+		}
+	],	
+};
+
+var CQTTestBusinessData = {
+    "<DingLi#Floor1>_CDMACoverage": [
+        {
+            "SAMPLECOVERAGERATE": "0.0"
+        }
+    ],
+    "<DingLi#Floor1>_DNSLookup": [
+        {
+            "BUSINESSCOUNT": "603.0",
+            "FAILURECOUNT": "1.0",
+            "SUCCESSCOUNT": "602.0",
+            "SUCCESSRATE": "0.998341625207297",
+            "BUSINESSDELAY": "0.19551824"
+        }
+    ],
+    "<DingLi#Floor1>_EVDOCoverage": [
+        {
+            "SAMPLECOVERAGERATE": "0.0"
+        }
+    ],
+    "<DingLi#Floor1>_EmailRecv": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "TRANSFERSIZE": null,
+            "TRANSFERTIME": null,
+            "TRANSFERRATE": null
+        }
+    ],
+    "<DingLi#Floor1>_EmailSend": [
+        {
+            "BUSINESSCOUNT": "96.0",
+            "SUCCESSCOUNT": "90.0",
+            "SUCCESSRATE": "0.9375",
+            "TRANSFERSIZE": "595954.47",
+            "TRANSFERTIME": "1256.062277",
+            "TRANSFERRATE": "474.462517434556"
+        }
+    ],
+    "<DingLi#Floor1>_EndTime": [
+        {
+            "ENDTIME": "41668.06674369"
+        }
+    ],
+    "<DingLi#Floor1>_FTPDownload": [
+        {
+            "BUSINESSCOUNT": "104.0",
+            "SUCCESSCOUNT": "102.0",
+            "SUCCESSRATE": "0.980769230769231",
+            "TRANSFERSIZE": "5356278.79399999",
+            "TRANSFERTIME": "2034.18135",
+            "TRANSFERRATE": "2633.13730312196"
+        }
+    ],
+    "<DingLi#Floor1>_FTPUpload": [
+        {
+            "BUSINESSCOUNT": "104.0",
+            "SUCCESSCOUNT": "103.0",
+            "SUCCESSRATE": "0.990384615384615",
+            "TRANSFERSIZE": "2125215.7",
+            "TRANSFERTIME": "4320.422407",
+            "TRANSFERRATE": "491.899981019611"
+        }
+    ],
+    "<DingLi#Floor1>_GSMCoverage": [
+        {
+            "SAMPLECOVERAGERATE": "0.0"
+        }
+    ],
+    "<DingLi#Floor1>_HTTPDownload": [
+        {
+            "BUSINESSCOUNT": "98.0",
+            "SUCCESSCOUNT": "94.0",
+            "SUCCESSRATE": "0.959183673469388",
+            "BUSINESSDELAY": "16.79044643",
+            "TRANSFERSIZE": "2638381.462",
+            "TRANSFERTIME": "1600.262",
+            "TRANSFERRATE": "1648.71843610609"
+        }
+    ],
+    "<DingLi#Floor1>_HTTPPage_Login": [
+        {
+            "BUSINESSCOUNT": "604.0",
+            "SUCCESSCOUNT": "602.0",
+            "SUCCESSRATE": "0.996688741721854",
+            "BUSINESSDELAY": "3.41848717"
+        }
+    ],
+    "<DingLi#Floor1>_HTTPPage_Refresh": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi#Floor1>_HTTPUpload": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null,
+            "TRANSFERSIZE": null,
+            "TRANSFERTIME": null,
+            "TRANSFERRATE": null
+        }
+    ],
+    "<DingLi#Floor1>_LTECoverage": [
+        {
+            "SAMPLECOVERAGERATE": "0.510498314139335"
+        }
+    ],
+    "<DingLi#Floor1>_MMSRecv": [],
+    "<DingLi#Floor1>_MMSSend": [],
+    "<DingLi#Floor1>_MO_CS": [
+        {
+            "AVERAGE_CONNECTDELAY": "",
+            "BUSINESSCOUNT_ATTEMPTS": "0.0",
+            "BUSINESSCOUNT_BLOCKEDCALL": "0.0",
+            "BUSINESSCOUNT_DROPPEDCALL": "0.0",
+            "SUCCESSRATE_SUCCESSRATE": null,
+            "DROPPEDRATE_DROPPEDRATE": null,
+            "BUSINESSDELAY_CALLDELAY": null
+        }
+    ],
+    "<DingLi#Floor1>_MO_CSFB": [
+        {
+            "AVERAGE_CONNECTDELAY": "0.0",
+            "BUSINESSCOUNT_ATTEMPTS": "1.0",
+            "BUSINESSCOUNT_BLOCKEDCALL": "1.0",
+            "BUSINESSCOUNT_DROPPEDCALL": "0.0",
+            "SUCCESSRATE_SUCCESSRATE": "0.0",
+            "DROPPEDRATE_DROPPEDRATE": null,
+            "BUSINESSDELAY_CALLDELAY": null
+        }
+    ],
+    "<DingLi#Floor1>_MT_CS": [
+        {
+            "AVERAGE_CONNECTDELAY": "",
+            "BUSINESSCOUNT_ATTEMPTS": "0.0",
+            "BUSINESSCOUNT_BLOCKEDCALL": "0.0",
+            "BUSINESSCOUNT_DROPPEDCALL": "0.0",
+            "SUCCESSRATE_SUCCESSRATE": null,
+            "DROPPEDRATE_DROPPEDRATE": null,
+            "BUSINESSDELAY_CALLDELAY": null
+        }
+    ],
+    "<DingLi#Floor1>_MT_CSFB": [
+        {
+            "AVERAGE_CONNECTDELAY": "",
+            "BUSINESSCOUNT_ATTEMPTS": "0.0",
+            "BUSINESSCOUNT_BLOCKEDCALL": "0.0",
+            "BUSINESSCOUNT_DROPPEDCALL": "0.0",
+            "SUCCESSRATE_SUCCESSRATE": null,
+            "DROPPEDRATE_DROPPEDRATE": null,
+            "BUSINESSDELAY_CALLDELAY": null
+        }
+    ],
+    "<DingLi#Floor1>_MultiFTPDownload": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "TRANSFERSIZE": null,
+            "TRANSFERTIME": null,
+            "TRANSFERRATE": null
+        }
+    ],
+    "<DingLi#Floor1>_MultiFTPUpload": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "TRANSFERSIZE": null,
+            "TRANSFERTIME": null,
+            "TRANSFERRATE": null
+        }
+    ],
+    "<DingLi#Floor1>_Network_Connect": [
+        {
+            "BUSINESSCOUNT": "7.0",
+            "SUCCESSCOUNT": "7.0",
+            "SUCCESSRATE": "1.0",
+            "BUSINESSDELAY": "207.68982143"
+        }
+    ],
+    "<DingLi#Floor1>_OutOfServiceMileage": [
+        {
+            "OUTOFSERVICEMILEAGE": "320.61731186"
+        }
+    ],
+    "<DingLi#Floor1>_OutOfServiceTime": [
+        {
+            "OUTOFSERVICETIME": "56.299252"
+        }
+    ],
+    "<DingLi#Floor1>_PBM": [],
+    "<DingLi#Floor1>_Ping_CellDch": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi#Floor1>_Ping_CellFach": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi#Floor1>_Ping_GSMTotal": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi#Floor1>_Ping_Other": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi#Floor1>_Ping_TBFClose": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi#Floor1>_Ping_TBFOpen": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi#Floor1>_Ping_WCDMATotal": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi#Floor1>_SMSRecv": [],
+    "<DingLi#Floor1>_SMSSend": [],
+    "<DingLi#Floor1>_Speedtest": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null,
+            "AVERAGE_SPEEDTEST_DOWNSPEED": null,
+            "AVERAGE_SPEEDTEST_UPSPEED": null
+        }
+    ],
+    "<DingLi#Floor1>_StartTime": [
+        {
+            "STARTTIME": "41666.03927762"
+        }
+    ],
+    "<DingLi#Floor1>_TDSCDMACoverage": [
+        {
+            "SAMPLECOVERAGERATE": "0.946760563380282"
+        }
+    ],
+    "<DingLi#Floor1>_TestTotalMileage": [
+        {
+            "TESTTOTALMILEAGE": "172867.36051357"
+        }
+    ],
+    "<DingLi#Floor1>_TestTotalTime": [
+        {
+            "TESTTOTALTIME": "29321.154667"
+        }
+    ],
+    "<DingLi#Floor1>_TraceRoute": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "BUSINESSDELAY": null,
+            "SUCCESSRATE": null,
+            "TOTAL_TRACEROUTE_HOP_TOTALCOUNT": null
+        }
+    ],
+    "<DingLi#Floor1>_VideoPlay": [
+        {
+            "BUSINESSCOUNT": "111.0",
+            "SUCCESSCOUNT": "111.0",
+            "SUCCESSRATE": "1.0",
+            "DROPPEDCOUNT": "0.0",
+            "DROPPEDRATE": "0.0",
+            "TRANSFERSIZE": "243191.769",
+            "TRANSFERTIME": "1311.786",
+            "TRANSFERRATE": "185.389818918635"
+        }
+    ],
+    "<DingLi#Floor1>_WCDMACoverage": [
+        {
+            "SAMPLECOVERAGERATE": "0.0"
+        }
+    ],
+    "<DingLi#Floor2>_CDMACoverage": [
+        {
+            "SAMPLECOVERAGERATE": "0.0"
+        }
+    ],
+    "<DingLi#Floor2>_DNSLookup": [
+        {
+            "BUSINESSCOUNT": "603.0",
+            "FAILURECOUNT": "1.0",
+            "SUCCESSCOUNT": "602.0",
+            "SUCCESSRATE": "0.998341625207297",
+            "BUSINESSDELAY": "0.19551824"
+        }
+    ],
+    "<DingLi#Floor2>_EVDOCoverage": [
+        {
+            "SAMPLECOVERAGERATE": "0.0"
+        }
+    ],
+    "<DingLi#Floor2>_EmailRecv": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "TRANSFERSIZE": null,
+            "TRANSFERTIME": null,
+            "TRANSFERRATE": null
+        }
+    ],
+    "<DingLi#Floor2>_EmailSend": [
+        {
+            "BUSINESSCOUNT": "96.0",
+            "SUCCESSCOUNT": "90.0",
+            "SUCCESSRATE": "0.9375",
+            "TRANSFERSIZE": "595954.47",
+            "TRANSFERTIME": "1256.062277",
+            "TRANSFERRATE": "474.462517434556"
+        }
+    ],
+    "<DingLi#Floor2>_EndTime": [
+        {
+            "ENDTIME": "41668.06674369"
+        }
+    ],
+    "<DingLi#Floor2>_FTPDownload": [
+        {
+            "BUSINESSCOUNT": "104.0",
+            "SUCCESSCOUNT": "102.0",
+            "SUCCESSRATE": "0.980769230769231",
+            "TRANSFERSIZE": "5356278.79399999",
+            "TRANSFERTIME": "2034.18135",
+            "TRANSFERRATE": "2633.13730312196"
+        }
+    ],
+    "<DingLi#Floor2>_FTPUpload": [
+        {
+            "BUSINESSCOUNT": "104.0",
+            "SUCCESSCOUNT": "103.0",
+            "SUCCESSRATE": "0.990384615384615",
+            "TRANSFERSIZE": "2125215.7",
+            "TRANSFERTIME": "4320.422407",
+            "TRANSFERRATE": "491.899981019611"
+        }
+    ],
+    "<DingLi#Floor2>_GSMCoverage": [
+        {
+            "SAMPLECOVERAGERATE": "0.0"
+        }
+    ],
+    "<DingLi#Floor2>_HTTPDownload": [
+        {
+            "BUSINESSCOUNT": "98.0",
+            "SUCCESSCOUNT": "94.0",
+            "SUCCESSRATE": "0.959183673469388",
+            "BUSINESSDELAY": "16.79044643",
+            "TRANSFERSIZE": "2638381.462",
+            "TRANSFERTIME": "1600.262",
+            "TRANSFERRATE": "1648.71843610609"
+        }
+    ],
+    "<DingLi#Floor2>_HTTPPage_Login": [
+        {
+            "BUSINESSCOUNT": "604.0",
+            "SUCCESSCOUNT": "602.0",
+            "SUCCESSRATE": "0.996688741721854",
+            "BUSINESSDELAY": "3.41848717"
+        }
+    ],
+    "<DingLi#Floor2>_HTTPPage_Refresh": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi#Floor2>_HTTPUpload": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null,
+            "TRANSFERSIZE": null,
+            "TRANSFERTIME": null,
+            "TRANSFERRATE": null
+        }
+    ],
+    "<DingLi#Floor2>_LTECoverage": [
+        {
+            "SAMPLECOVERAGERATE": "0.510498314139335"
+        }
+    ],
+    "<DingLi#Floor2>_MMSRecv": [],
+    "<DingLi#Floor2>_MMSSend": [],
+    "<DingLi#Floor2>_MO_CS": [
+        {
+            "AVERAGE_CONNECTDELAY": "",
+            "BUSINESSCOUNT_ATTEMPTS": "0.0",
+            "BUSINESSCOUNT_BLOCKEDCALL": "0.0",
+            "BUSINESSCOUNT_DROPPEDCALL": "0.0",
+            "SUCCESSRATE_SUCCESSRATE": null,
+            "DROPPEDRATE_DROPPEDRATE": null,
+            "BUSINESSDELAY_CALLDELAY": null
+        }
+    ],
+    "<DingLi#Floor2>_MO_CSFB": [
+        {
+            "AVERAGE_CONNECTDELAY": "0.0",
+            "BUSINESSCOUNT_ATTEMPTS": "1.0",
+            "BUSINESSCOUNT_BLOCKEDCALL": "1.0",
+            "BUSINESSCOUNT_DROPPEDCALL": "0.0",
+            "SUCCESSRATE_SUCCESSRATE": "0.0",
+            "DROPPEDRATE_DROPPEDRATE": null,
+            "BUSINESSDELAY_CALLDELAY": null
+        }
+    ],
+    "<DingLi#Floor2>_MT_CS": [
+        {
+            "AVERAGE_CONNECTDELAY": "",
+            "BUSINESSCOUNT_ATTEMPTS": "0.0",
+            "BUSINESSCOUNT_BLOCKEDCALL": "0.0",
+            "BUSINESSCOUNT_DROPPEDCALL": "0.0",
+            "SUCCESSRATE_SUCCESSRATE": null,
+            "DROPPEDRATE_DROPPEDRATE": null,
+            "BUSINESSDELAY_CALLDELAY": null
+        }
+    ],
+    "<DingLi#Floor2>_MT_CSFB": [
+        {
+            "AVERAGE_CONNECTDELAY": "",
+            "BUSINESSCOUNT_ATTEMPTS": "0.0",
+            "BUSINESSCOUNT_BLOCKEDCALL": "0.0",
+            "BUSINESSCOUNT_DROPPEDCALL": "0.0",
+            "SUCCESSRATE_SUCCESSRATE": null,
+            "DROPPEDRATE_DROPPEDRATE": null,
+            "BUSINESSDELAY_CALLDELAY": null
+        }
+    ],
+    "<DingLi#Floor2>_MultiFTPDownload": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "TRANSFERSIZE": null,
+            "TRANSFERTIME": null,
+            "TRANSFERRATE": null
+        }
+    ],
+    "<DingLi#Floor2>_MultiFTPUpload": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "TRANSFERSIZE": null,
+            "TRANSFERTIME": null,
+            "TRANSFERRATE": null
+        }
+    ],
+    "<DingLi#Floor2>_Network_Connect": [
+        {
+            "BUSINESSCOUNT": "7.0",
+            "SUCCESSCOUNT": "7.0",
+            "SUCCESSRATE": "1.0",
+            "BUSINESSDELAY": "207.68982143"
+        }
+    ],
+    "<DingLi#Floor2>_OutOfServiceMileage": [
+        {
+            "OUTOFSERVICEMILEAGE": "320.61731186"
+        }
+    ],
+    "<DingLi#Floor2>_OutOfServiceTime": [
+        {
+            "OUTOFSERVICETIME": "56.299252"
+        }
+    ],
+    "<DingLi#Floor2>_PBM": [],
+    "<DingLi#Floor2>_Ping_CellDch": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi#Floor2>_Ping_CellFach": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi#Floor2>_Ping_GSMTotal": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi#Floor2>_Ping_Other": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi#Floor2>_Ping_TBFClose": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi#Floor2>_Ping_TBFOpen": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi#Floor2>_Ping_WCDMATotal": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi#Floor2>_SMSRecv": [],
+    "<DingLi#Floor2>_SMSSend": [],
+    "<DingLi#Floor2>_Speedtest": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null,
+            "AVERAGE_SPEEDTEST_DOWNSPEED": null,
+            "AVERAGE_SPEEDTEST_UPSPEED": null
+        }
+    ],
+    "<DingLi#Floor2>_StartTime": [
+        {
+            "STARTTIME": "41666.03927762"
+        }
+    ],
+    "<DingLi#Floor2>_TDSCDMACoverage": [
+        {
+            "SAMPLECOVERAGERATE": "0.946760563380282"
+        }
+    ],
+    "<DingLi#Floor2>_TestTotalMileage": [
+        {
+            "TESTTOTALMILEAGE": "172867.36051357"
+        }
+    ],
+    "<DingLi#Floor2>_TestTotalTime": [
+        {
+            "TESTTOTALTIME": "29321.154667"
+        }
+    ],
+    "<DingLi#Floor2>_TraceRoute": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "BUSINESSDELAY": null,
+            "SUCCESSRATE": null,
+            "TOTAL_TRACEROUTE_HOP_TOTALCOUNT": null
+        }
+    ],
+    "<DingLi#Floor2>_VideoPlay": [
+        {
+            "BUSINESSCOUNT": "111.0",
+            "SUCCESSCOUNT": "111.0",
+            "SUCCESSRATE": "1.0",
+            "DROPPEDCOUNT": "0.0",
+            "DROPPEDRATE": "0.0",
+            "TRANSFERSIZE": "243191.769",
+            "TRANSFERTIME": "1311.786",
+            "TRANSFERRATE": "185.389818918635"
+        }
+    ],
+    "<DingLi#Floor2>_WCDMACoverage": [
+        {
+            "SAMPLECOVERAGERATE": "0.0"
+        }
+    ],
+    "<DingLi>_CDMACoverage": [
+        {
+            "SAMPLECOVERAGERATE": "0.0"
+        }
+    ],
+    "<DingLi>_DNSLookup": [
+        {
+            "BUSINESSCOUNT": "1206.0",
+            "FAILURECOUNT": "2.0",
+            "SUCCESSCOUNT": "1204.0",
+            "SUCCESSRATE": "0.998341625207297",
+            "BUSINESSDELAY": "0.19551824"
+        }
+    ],
+    "<DingLi>_EVDOCoverage": [
+        {
+            "SAMPLECOVERAGERATE": "0.0"
+        }
+    ],
+    "<DingLi>_EmailRecv": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "TRANSFERSIZE": null,
+            "TRANSFERTIME": null,
+            "TRANSFERRATE": null
+        }
+    ],
+    "<DingLi>_EmailSend": [
+        {
+            "BUSINESSCOUNT": "192.0",
+            "SUCCESSCOUNT": "180.0",
+            "SUCCESSRATE": "0.9375",
+            "TRANSFERSIZE": "1191908.94",
+            "TRANSFERTIME": "2512.124554",
+            "TRANSFERRATE": "474.462517434556"
+        }
+    ],
+    "<DingLi>_EndTime": [
+        {
+            "ENDTIME": "41668.06674369"
+        }
+    ],
+    "<DingLi>_FTPDownload": [
+        {
+            "BUSINESSCOUNT": "208.0",
+            "SUCCESSCOUNT": "204.0",
+            "SUCCESSRATE": "0.980769230769231",
+            "TRANSFERSIZE": "10712557.588",
+            "TRANSFERTIME": "4068.3627",
+            "TRANSFERRATE": "2633.13730312196"
+        }
+    ],
+    "<DingLi>_FTPUpload": [
+        {
+            "BUSINESSCOUNT": "208.0",
+            "SUCCESSCOUNT": "206.0",
+            "SUCCESSRATE": "0.990384615384615",
+            "TRANSFERSIZE": "4250431.4",
+            "TRANSFERTIME": "8640.844814",
+            "TRANSFERRATE": "491.899981019611"
+        }
+    ],
+    "<DingLi>_GSMCoverage": [
+        {
+            "SAMPLECOVERAGERATE": "0.0"
+        }
+    ],
+    "<DingLi>_HTTPDownload": [
+        {
+            "BUSINESSCOUNT": "196.0",
+            "SUCCESSCOUNT": "188.0",
+            "SUCCESSRATE": "0.959183673469388",
+            "BUSINESSDELAY": "16.79044643",
+            "TRANSFERSIZE": "5276762.924",
+            "TRANSFERTIME": "3200.524",
+            "TRANSFERRATE": "1648.71843610609"
+        }
+    ],
+    "<DingLi>_HTTPPage_Login": [
+        {
+            "BUSINESSCOUNT": "1208.0",
+            "SUCCESSCOUNT": "1204.0",
+            "SUCCESSRATE": "0.996688741721854",
+            "BUSINESSDELAY": "3.41848717"
+        }
+    ],
+    "<DingLi>_HTTPPage_Refresh": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi>_HTTPUpload": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null,
+            "TRANSFERSIZE": null,
+            "TRANSFERTIME": null,
+            "TRANSFERRATE": null
+        }
+    ],
+    "<DingLi>_LTECoverage": [
+        {
+            "SAMPLECOVERAGERATE": "0.510498314139335"
+        }
+    ],
+    "<DingLi>_MMSRecv": [],
+    "<DingLi>_MMSSend": [],
+    "<DingLi>_MO_CS": [
+        {
+            "AVERAGE_CONNECTDELAY": "",
+            "BUSINESSCOUNT_ATTEMPTS": "0.0",
+            "BUSINESSCOUNT_BLOCKEDCALL": "0.0",
+            "BUSINESSCOUNT_DROPPEDCALL": "0.0",
+            "SUCCESSRATE_SUCCESSRATE": null,
+            "DROPPEDRATE_DROPPEDRATE": null,
+            "BUSINESSDELAY_CALLDELAY": null
+        }
+    ],
+    "<DingLi>_MO_CSFB": [
+        {
+            "AVERAGE_CONNECTDELAY": "0.0",
+            "BUSINESSCOUNT_ATTEMPTS": "2.0",
+            "BUSINESSCOUNT_BLOCKEDCALL": "2.0",
+            "BUSINESSCOUNT_DROPPEDCALL": "0.0",
+            "SUCCESSRATE_SUCCESSRATE": "0.0",
+            "DROPPEDRATE_DROPPEDRATE": null,
+            "BUSINESSDELAY_CALLDELAY": null
+        }
+    ],
+    "<DingLi>_MT_CS": [
+        {
+            "AVERAGE_CONNECTDELAY": "",
+            "BUSINESSCOUNT_ATTEMPTS": "0.0",
+            "BUSINESSCOUNT_BLOCKEDCALL": "0.0",
+            "BUSINESSCOUNT_DROPPEDCALL": "0.0",
+            "SUCCESSRATE_SUCCESSRATE": null,
+            "DROPPEDRATE_DROPPEDRATE": null,
+            "BUSINESSDELAY_CALLDELAY": null
+        }
+    ],
+    "<DingLi>_MT_CSFB": [
+        {
+            "AVERAGE_CONNECTDELAY": "",
+            "BUSINESSCOUNT_ATTEMPTS": "0.0",
+            "BUSINESSCOUNT_BLOCKEDCALL": "0.0",
+            "BUSINESSCOUNT_DROPPEDCALL": "0.0",
+            "SUCCESSRATE_SUCCESSRATE": null,
+            "DROPPEDRATE_DROPPEDRATE": null,
+            "BUSINESSDELAY_CALLDELAY": null
+        }
+    ],
+    "<DingLi>_MultiFTPDownload": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "TRANSFERSIZE": null,
+            "TRANSFERTIME": null,
+            "TRANSFERRATE": null
+        }
+    ],
+    "<DingLi>_MultiFTPUpload": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "TRANSFERSIZE": null,
+            "TRANSFERTIME": null,
+            "TRANSFERRATE": null
+        }
+    ],
+    "<DingLi>_Network_Connect": [
+        {
+            "BUSINESSCOUNT": "14.0",
+            "SUCCESSCOUNT": "14.0",
+            "SUCCESSRATE": "1.0",
+            "BUSINESSDELAY": "207.68982143"
+        }
+    ],
+    "<DingLi>_OutOfServiceMileage": [
+        {
+            "OUTOFSERVICEMILEAGE": "641.23462372"
+        }
+    ],
+    "<DingLi>_OutOfServiceTime": [
+        {
+            "OUTOFSERVICETIME": "112.598504"
+        }
+    ],
+    "<DingLi>_PBM": [],
+    "<DingLi>_Ping_CellDch": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi>_Ping_CellFach": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi>_Ping_GSMTotal": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi>_Ping_Other": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi>_Ping_TBFClose": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi>_Ping_TBFOpen": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi>_Ping_WCDMATotal": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null
+        }
+    ],
+    "<DingLi>_SMSRecv": [],
+    "<DingLi>_SMSSend": [],
+    "<DingLi>_Speedtest": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "SUCCESSRATE": null,
+            "BUSINESSDELAY": null,
+            "AVERAGE_SPEEDTEST_DOWNSPEED": null,
+            "AVERAGE_SPEEDTEST_UPSPEED": null
+        }
+    ],
+    "<DingLi>_StartTime": [
+        {
+            "STARTTIME": "41666.03927762"
+        }
+    ],
+    "<DingLi>_TDSCDMACoverage": [
+        {
+            "SAMPLECOVERAGERATE": "0.946760563380282"
+        }
+    ],
+    "<DingLi>_TestTotalMileage": [
+        {
+            "TESTTOTALMILEAGE": "345734.72102714"
+        }
+    ],
+    "<DingLi>_TestTotalTime": [
+        {
+            "TESTTOTALTIME": "58642.309334"
+        }
+    ],
+    "<DingLi>_TraceRoute": [
+        {
+            "BUSINESSCOUNT": "0.0",
+            "SUCCESSCOUNT": "0.0",
+            "BUSINESSDELAY": null,
+            "SUCCESSRATE": null,
+            "TOTAL_TRACEROUTE_HOP_TOTALCOUNT": null
+        }
+    ],
+    "<DingLi>_VideoPlay": [
+        {
+            "BUSINESSCOUNT": "222.0",
+            "SUCCESSCOUNT": "222.0",
+            "SUCCESSRATE": "1.0",
+            "DROPPEDCOUNT": "0.0",
+            "DROPPEDRATE": "0.0",
+            "TRANSFERSIZE": "486383.538",
+            "TRANSFERTIME": "2623.572",
+            "TRANSFERRATE": "185.389818918635"
+        }
+    ],
+    "<DingLi>_WCDMACoverage": [
+        {
+            "SAMPLECOVERAGERATE": "0.0"
+        }
+    ]
+};
+
+var TestGoroNogoSetting = {
+  "FTPUpload" : [
+    {
+      "display" : "成功率(%)",
+      "paramter" : "SUCCESSRATE",
+      "condiction" : ">95"
+    },
+    {
+      "display" : "上传速率",
+      "paramter" : "TRANSFERRATE",
+      "condiction" : ">8000"
+    }
+  ],
+  "HTTPUpload" : [
+    {
+      "display" : "网盘上传成功率(%)",
+      "paramter" : "SUCCESSRATE",
+      "condiction" : ">95"
+    },
+    {
+      "display" : "网盘文件上传速率",
+      "paramter" : "TRANSFERRATE",
+      "condiction" : ">8000"
+    }
+  ],
+  "LTE" : [
+    {
+      "display" : "LTE_RSRP",
+      "paramter" : "RSRP",
+      "condiction" : ">-110"
+    },
+    {
+      "display" : "LTE_SINR",
+      "paramter" : "SINR",
+      "condiction" : ">12"
+    }
+  ],
+  "MultiFTPUpload" : [
+    {
+      "display" : "成功率(%)",
+      "paramter" : "SUCCESSRATE",
+      "condiction" : ">95"
+    },
+    {
+      "display" : "上传速率",
+      "paramter" : "TRANSFERRATE",
+      "condiction" : ">8000"
+    }
+  ],
+  "VideoPlay" : [
+    {
+      "display" : "掉线率(%)",
+      "paramter" : "DROPPEDRATE",
+      "condiction" : "<5"
+    },
+    {
+      "display" : "VideoPlay_SUCCESSRATE",
+      "paramter" : "SUCCESSRATE",
+      "condiction" : ">90"
+    },
+    {
+      "display" : "VideoPlay_TRANSFERRATE",
+      "paramter" : "TRANSFERRATE",
+      "condiction" : ">1600"
+    }
+  ],
+  "TDSCDMA" : [
+    {
+      "display" : "TDSCDMA_DPCH_RSCP",
+      "paramter" : "DPCH_RSCP",
+      "condiction" : ">-110"
+    },
+    {
+      "display" : "TDSCDMA_BLER",
+      "paramter" : "BLER",
+      "condiction" : ">5"
+    }
+  ],
+  "CDMA" : [
+    {
+      "display" : "CDMA_TotalEc",
+      "paramter" : "TotalEc",
+      "condiction" : ">-110"
+    },
+    {
+      "display" : "CDMA_RxAGC",
+      "paramter" : "RxAGC",
+      "condiction" : ">-110"
+    }
+  ],
+  "SMSSend" : [
+    {
+      "display" : "成功率(%)",
+      "paramter" : "SUCCESSRATE",
+      "condiction" : ">95"
+    }
+  ],
+  "Speedtest" : [
+    {
+      "display" : "成功率(%)",
+      "paramter" : "SUCCESSRATE",
+      "condiction" : ">95"
+    }
+  ],
+  "Ping" : [
+    {
+      "display" : "成功率(%)",
+      "paramter" : "SUCCESSRATE",
+      "condiction" : ">95"
+    },
+    {
+      "display" : "平均时延(s)",
+      "paramter" : "BUSINESSDELAY",
+      "condiction" : "<5"
+    }
+  ],
+  "SMSRecv" : [
+    {
+      "display" : "成功率(%)",
+      "paramter" : "SUCCESSRATE",
+      "condiction" : ">95"
+    }
+  ],
+  "EmailSend" : [
+    {
+      "display" : "成功率(%)",
+      "paramter" : "SUCCESSRATE",
+      "condiction" : ">95"
+    },
+    {
+      "display" : "平均发送文件速率",
+      "paramter" : "TRANSFERRATE",
+      "condiction" : ">8000"
+    }
+  ],
+  "MultiFTPDownload" : [
+    {
+      "display" : "成功率(%)",
+      "paramter" : "SUCCESSRATE",
+      "condiction" : ">95"
+    },
+    {
+      "display" : "下载速率",
+      "paramter" : "TRANSFERRATE",
+      "condiction" : ">10000"
+    }
+  ],
+  "Call" : [
+    {
+      "display" : "Call_SUCCESSRATE",
+      "paramter" : "SUCCESSRATE.SUCCESSRATE",
+      "condiction" : ">95"
+    },
+    {
+      "display" : "Call_DROPPEDRATE",
+      "paramter" : "DROPPEDRATE.DROPPEDRATE",
+      "condiction" : "<5"
+    },
+    {
+      "display" : "Call_CALLDELAY",
+      "paramter" : "CALLDELAY.BUSINESSDELAY",
+      "condiction" : "<2"
+    }
+  ],
+  "PBM" : [
+    {
+      "display" : "下行平均速率",
+      "paramter" : "PBM_DownSpeed.Average",
+      "condiction" : ">25000"
+    },
+    {
+      "display" : "上行平均速率",
+      "paramter" : "PBM_UpSpeed.Average",
+      "condiction" : ">10000"
+    }
+  ],
+  "GSM" : [
+    {
+      "display" : "GSM_RxLevelFull",
+      "paramter" : "RxLevelFull",
+      "condiction" : ">-100"
+    },
+    {
+      "display" : "GSM_TxPower_G",
+      "paramter" : "TxPower_G",
+      "condiction" : ">20"
+    }
+  ],
+  "DefaultColor" : "#FF0000",
+  "HTTPPage" : [
+    {
+      "display" : "成功率(%)",
+      "paramter" : "SUCCESSRATE",
+      "condiction" : ">95"
+    },
+    {
+      "display" : "平均时延(S)",
+      "paramter" : "BUSINESSDELAY",
+      "condiction" : "<3"
+    }
+  ],
+  "DNSLookup" : [
+    {
+      "display" : "成功率(%)",
+      "paramter" : "SUCCESSRATE",
+      "condiction" : ">95"
+    },
+    {
+      "display" : "平均时延(s)",
+      "paramter" : "BUSINESSDELAY",
+      "condiction" : "<5"
+    }
+  ],
+  "EmailRecv" : [
+    {
+      "display" : "成功率(%)",
+      "paramter" : "SUCCESSRATE",
+      "condiction" : ">95"
+    },
+    {
+      "display" : "平均接收文件速率",
+      "paramter" : "TRANSFERRATE",
+      "condiction" : ">10000"
+    }
+  ],
+  "MMSSend" : [
+    {
+      "display" : "成功率(%)",
+      "paramter" : "SUCCESSRATE",
+      "condiction" : ">95"
+    }
+  ],
+  "TraceRoute" : [
+    {
+      "display" : "成功率(%)",
+      "paramter" : "SUCCESSRATE",
+      "condiction" : ">95"
+    },
+    {
+      "display" : "平均时延(s)",
+      "paramter" : "BUSINESSDELAY",
+      "condiction" : "<5"
+    }
+  ],
+  "WCDMA" : [
+    {
+      "display" : "WCDMA_TotalRSCP",
+      "paramter" : "TotalRSCP",
+      "condiction" : ">-110"
+    },
+    {
+      "display" : "WCDMA_BLER",
+      "paramter" : "BLER",
+      "condiction" : ">5"
+    }
+  ],
+  "EVDO" : [
+    {
+      "display" : "EVDO_TxAGC",
+      "paramter" : "TxAGC",
+      "condiction" : ">-110"
+    },
+    {
+      "display" : "EVDO_RxPER",
+      "paramter" : "RxPER",
+      "condiction" : ">20"
+    },
+    {
+      "display" : "EVDO_TxPER",
+      "paramter" : "TxPER",
+      "condiction" : ">20"
+    }
+  ],
+  "FTPDownload" : [
+    {
+      "display" : "成功率(%)",
+      "paramter" : "SUCCESSRATE",
+      "condiction" : ">95"
+    },
+    {
+      "display" : "下载速率",
+      "paramter" : "TRANSFERRATE",
+      "condiction" : ">10000"
+    }
+  ],
+  "HTTPDownload" : [
+    {
+      "display" : "网盘下载成功率(%)",
+      "paramter" : "SUCCESSRATE",
+      "condiction" : ">95"
+    },
+    {
+      "display" : "网盘文件下载速率",
+      "paramter" : "TRANSFERRATE",
+      "condiction" : ">8000"
+    }
+  ]
+};
+
+var TestThresholdSet = {
+    "PUBLIC": {
+        "DL_APP_LayerThr_Mean": {
+            "<=1024": "#FFC0CB",
+            "(1024,15360]": "#8B008B",
+            "(15360,20480]": "#9932CC",
+            ">20480": "#FF0000"
+        },
+        "UL_APP_Layer_Thr_Mean": {
+            "<=50": "#FFC0CB",
+            "(50,1000]": "#8B008B",
+            "(1000,1500]": "#9932CC",
+            ">1500": "#FF0000"
+        },
+    },
+    "TDSDMA": {
+        "UTRA_CarrierRSSI": {
+            "<=-90": "#FFC0CB",
+            "(-90,-80]": "#8B008B",
+            "(-80,-70]": "#9932CC",
+            "(-70,-60]": "#0000FF",
+            "(-60,-50]": "#FFA500",
+            ">-50": "#FF0000"
+        },
+        "UE_TxPower": {
+            "<=-85": "#FFC0CB",
+            "(-85,-75]": "#9932CC",
+            "(-75,-70]": "#0000FF",
+            ">-70": "#FF0000"
+        },
+        "DPCH_RSCP": {
+            "<=-100": "#FFC0CB",
+            "(-100,-90]": "#9932CC",
+            "(-90,-80]": "#0000FF",
+            ">-80": "#FF0000"
+        },
+        "DPCH_C/I": {
+            "<=-10": "#FFC0CB",
+            "(-10,-5]": "#8B008B",
+            "(-5,0]": "#9932CC",
+            "(0,5]": "#0000FF",
+            "(5,10]": "#FFA500",
+            ">10": "#FF0000"
+        },
+        "BLER": {
+            "<=5": "#FFC0CB",
+            "(5,10]": "#8B008B",
+            "(10,15]": "#9932CC",
+            "(15,20]": "#0000FF",
+            ">20": "#FF0000"
+        },
+        "PCCPCH_RSCP": {
+            "<=-110": "#FFC0CB",
+            "(-110,-100]": "#8B008B",
+            "(-100,-90]": "#9932CC",
+            "(-90,-80]": "#0000FF",
+            "(-80,-70]": "#FFA500",
+            ">-70": "#FF0000"
+        },
+        "PCCPCH_C/I": {
+            "<=-10": "#FFC0CB",
+            "(-10,-5]": "#8B008B",
+            "(-5,0]": "#9932CC",
+            "(0,5]": "#0000FF",
+            "(5,10]": "#FFA500",
+            ">10": "#FF0000"
+        },
+        "DL_RLC_Thr": {
+            "<=100": "#FFC0CB",
+            "(100,150]": "#8B008B",
+            "(150,200]": "#9932CC",
+            ">200": "#FF0000"
+        },
+        "UL_RLC_Thr": {
+            "<=50": "#FFC0CB",
+            "(50,100]": "#8B008B",
+            "(100,150]": "#9932CC",
+            ">150": "#FF0000"
+        },
+        "Phys_Schedule_Thr": {
+            "<=100": "#FFC0CB",
+            "(100,150]": "#8B008B",
+            "(150,200]": "#9932CC",
+            ">200": "#FF0000"
+        },
+        "Phys_Service_Thr": {
+            "<=100": "#FFC0CB",
+            "(100,150]": "#8B008B",
+            "(150,200]": "#9932CC",
+            ">200": "#FF0000"
+        },
+    },
+    "WCDMA": {
+        "TotalEcIo": {
+            "<-20": "#FFC0CB",
+            "(-20,-14]": "#8B008B",
+            "(-14,-8]": "#9932CC",
+            "(-8,-6]": "#0000FF",
+            ">-6": "#FFA500"
+        },
+        "TotalRSCP": {
+            "<-110": "#FFC0CB",
+            "(-110,-100]": "#8B008B",
+            "(-100,-90]": "#9932CC",
+            "(-90,-80]": "#0000FF",
+            ">-80": "#FFA500"
+        },
+        "RxPower": {
+            "<-90": "#FFC0CB",
+            "(-90,-80]": "#8B008B",
+            "(-80,-70]": "#9932CC",
+            "(-70,-60]": "#0000FF",
+            ">-60": "#FFA500"
+        },
+        "TxPower": {
+            "<-25": "#FFC0CB",
+            "(-25,-15]": "#8B008B",
+            "(-15,0]": "#9932CC",
+            "(0,15]": "#0000FF",
+            "(15,25]": "#00FFFF",
+            ">25": "#FFA500"
+        },
+        "BLER": {
+            "<=2": "#FFC0CB",
+            "(2,5]": "#8B008B",
+            "(5,10]": "#9932CC",
+            "(10,20]": "#00FFFF",
+            ">20": "#FFA500"
+        },
+        "DL_RLC_Thr": {
+            "<=128": "#FFC0CB",
+            "(128,192]": "#8B008B",
+            "(192,256]": "#9932CC",
+            "(256,384]": "#00FFFF",
+            ">384": "#FFA500"
+        },
+        "UL_RLC_Thr": {
+            "<=32": "#FFC0CB",
+            "(32,64]": "#8B008B",
+            "(64,96]": "#9932CC",
+            "(96,128]": "#00FFFF",
+            ">128": "#FFA500"
+        },
+        "CQI_Mean": {
+            "<=5": "#FFC0CB",
+            "(5,10]": "#8B008B",
+            "(10,16]": "#9932CC",
+            "(16,19]": "#00FFFF",
+            "(19,22]": "#0000FF",
+            ">22": "#FFA500"
+        },
+        "Phys_Request_Thr": {
+            "<=2880": "#FFC0CB",
+            "(2880,5760]": "#8B008B",
+            "(5760,8640]": "#9932CC",
+            "(8640,11520]": "#00FFFF",
+            ">11520": "#FFA500"
+        },
+        "Phys_Schedule_Thr": {
+            "<=2880": "#FFC0CB",
+            "(2880,5760]": "#8B008B",
+            "(5760,8640]": "#9932CC",
+            "(8640,11520]": "#00FFFF",
+            ">11520": "#FFA500"
+        },
+        "Phys_Service_Thr": {
+            "<=2880": "#FFC0CB",
+            "(2880,5760]": "#8B008B",
+            "(5760,8640]": "#9932CC",
+            "(8640,11520]": "#00FFFF",
+            ">11520": "#FFA500"
+        },
+        "MAC_Thr": {
+            "<=2880": "#FFC0CB",
+            "(2880,5760]": "#8B008B",
+            "(5760,8640]": "#9932CC",
+            "(8640,11520]": "#00FFFF",
+            ">11520": "#FFA500"
+        },
+        "HSPA_DC_CQI_Mean_1st": {
+            "<=6": "#FFC0CB",
+            "(6,12]": "#8B008B",
+            "(12,18]": "#9932CC",
+            "(18,24]": "#00FFFF",
+            "(24,31]": "#0000FF",
+            ">31": "#FFA500"
+        },
+        "HSPA_DC_CQI_Mean_2nd": {
+            "<=6": "#FFC0CB",
+            "(6,12]": "#8B008B",
+            "(12,18]": "#9932CC",
+            "(18,24]": "#00FFFF",
+            "(24,31]": "#0000FF",
+            ">31": "#FFA500"
+        },
+        "HSPA_DC_Phys_Request_Thr_1st": {
+            "<=16": "#FFC0CB",
+            "(16,32]": "#8B008B",
+            "(32,48]": "#9932CC",
+            "(48,64]": "#00FFFF",
+            "(64,80]": "#0000FF",
+            ">80": "#FFA500"
+        },
+        "HSPA_DC_Phys_Schedule_Thr_1st": {
+            "<=16": "#FFC0CB",
+            "(16,32]": "#8B008B",
+            "(32,48]": "#9932CC",
+            "(48,64]": "#00FFFF",
+            "(64,80]": "#0000FF",
+            ">80": "#FFA500"
+        },
+        "HSPA_DC_Phys_Service_Thr_1st": {
+            "<=16": "#FFC0CB",
+            "(16,32]": "#8B008B",
+            "(32,48]": "#9932CC",
+            "(48,64]": "#00FFFF",
+            "(64,80]": "#0000FF",
+            ">80": "#FFA500"
+        },
+        "HSPA_DC_Phys_Schedule_Thr_2nd": {
+            "<=16": "#FFC0CB",
+            "(16,32]": "#8B008B",
+            "(32,48]": "#9932CC",
+            "(48,64]": "#00FFFF",
+            "(64,80]": "#0000FF",
+            ">80": "#FFA500"
+        },
+        "HSPA_DC_Phys_Schedule_Thr_2nd": {
+            "<=16": "#FFC0CB",
+            "(16,32]": "#8B008B",
+            "(32,48]": "#9932CC",
+            "(48,64]": "#00FFFF",
+            "(64,80]": "#0000FF",
+            ">80": "#FFA500"
+        },
+        "HSPA_DC_Phys_Service_Thr_2nd": {
+            "<=16": "#FFC0CB",
+            "(16,32]": "#8B008B",
+            "(32,48]": "#9932CC",
+            "(48,64]": "#00FFFF",
+            "(64,80]": "#0000FF",
+            ">80": "#FFA500"
+        },
+    },
+    "GSM": {
+        "RxLevelFull": {
+            "<=-94": "#FFC0CB",
+            "(-94,-75]": "#9932CC",
+            ">-75": "#0000FF"
+        },
+        "RxLevelSub": {
+            "<=-105": "#FFC0CB",
+            "(-105,-95]": "#8B008B",
+            "(-95,-85]": "#9932CC",
+            "(-85,-75]": "#0000FF",
+            ">-75": "#00FFFF"
+        },
+        "BCCHLevel": {
+            "<=-94": "#FFC0CB",
+            "(-94,-75]": "#9932CC",
+            ">-75": "#0000FF"
+        },
+        "TA": {
+            "<=50": "#FFC0CB",
+            "(50,100]": "#8B008B",
+            "(100,150]": "#9932CC",
+            ">150": "#0000FF"
+        },
+        "TxPower": {
+            "<=5": "#FFC0CB",
+            "(5,10]": "#8B008B",
+            "(10,15]": "#9932CC",
+            "(15,31]": "#0000FF",
+            ">31": "#00FFFF"
+        },
+        "VoiceCode": {
+            "<=0": "#FFC0CB",
+            "(0,1]": "#8B008B",
+            "(1,2]": "#9932CC",
+            "(2,3]": "#0000FF",
+            ">3": "#00FFFF"
+        },
+        "RLC_DL_Throughput": {
+            "<=9.6": "#FFC0CB",
+            "(9.6,23.4]": "#8B008B",
+            "(23.4,34.92]": "#9932CC",
+            "(34.92,76.8]": "#0000FF",
+            ">76.8": "#00FFFF"
+        },
+        "RLC_UL_Throughput": {
+            "<=4.8": "#FFC0CB",
+            "(4.8,9.6]": "#8B008B",
+            "(9.6,23.4]": "#9932CC",
+            "(23.4,57.6]": "#0000FF",
+            ">57.6": "#00FFFF"
+        },
+        "BLER": {
+            "<=5": "#FFC0CB",
+            "(5,10]": "#8B008B",
+            "(10,20]": "#9932CC",
+            ">20": "#00FFFF"
+        },
+    },
+    "EVDO": {
+        "RXAGC0": {
+            "<=-100": "#FFC0CB",
+            "(-100,-80]": "#8B008B",
+            "(-80,-70]": "#9932CC",
+            "(-70,-60]": "#0000FF",
+            ">-60": "#FFA500"
+        },
+        "RXAGC1": {
+            "<=-100": "#FFC0CB",
+            "(-100,-80]": "#8B008B",
+            "(-80,-70]": "#9932CC",
+            "(-70,-60]": "#0000FF",
+            ">-60": "#FFA500"
+        },
+        "TxAGC": {
+            "<=-80": "#FFC0CB",
+            "(-80,-10]": "#8B008B",
+            "(-10,0]": "#9932CC",
+            "(0,20]": "#0000FF",
+            ">20": "#FFA500"
+        },
+        "Total_SINR": {
+            "<=-15": "#FFC0CB",
+            "(-15,-5]": "#8B008B",
+            "(-5,5]": "#9932CC",
+            "(5,15]": "#0000FF",
+            ">15": "#FFA500"
+        },
+        "Thr_Inst": {
+            "<=1952": "#FFC0CB",
+            "(1952,5856]": "#8B008B",
+            "(5856,7808]": "#9932CC",
+            "(7808,9760]": "#0000FF",
+            ">9760": "#FFA500"
+        },
+        "TxRLP_Thr_Inst": {
+            "<=1952": "#FFC0CB",
+            "(1952,5856]": "#8B008B",
+            "(5856,7808]": "#9932CC",
+            "(7808,9760]": "#0000FF",
+            ">9760": "#FFA500"
+        },
+    },
+    "CDMA": {
+        "TotalEcIo": {
+            "<-15": "#FFC0CB",
+            "(-15,-12]": "#8B008B",
+            "(-12,-9]": "#9932CC",
+            "(-9,-7]": "#0000FF",
+            ">-7": "#FFA500"
+        },
+        "TotalEc": {
+            "<=-120": "#FFC0CB",
+            "(-120,-100]": "#8B008B",
+            "(-100,-90]": "#9932CC",
+            "(-90,-80]": "#0000FF",
+            ">-80": "#FFA500"
+        },
+        "FFER": {
+            "<=1": "#FFC0CB",
+            "(1,2]": "#8B008B",
+            "(2,3]": "#9932CC",
+            "(3,5]": "#0000FF",
+            ">5": "#FFA500"
+        },
+        "RxAGC": {
+            "<=-100": "#FFC0CB",
+            "(-100,-90]": "#8B008B",
+            "(-90,-80]": "#9932CC",
+            "(-80,-70]": "#0000FF",
+            ">-70": "#FFA500"
+        },
+        "TxPower": {
+            "<=-15": "#FFC0CB",
+            "(-15,0]": "#8B008B",
+            "(0,10]": "#9932CC",
+            "(10,15]": "#0000FF",
+            ">15": "#FFA500"
+        },
+        
+    },
+    "LTE": {
+        "RSRP": {
+            "<=-110": "#FFC0CB",
+            "(-110,-105]": "#8B008B",
+            "(-105,-100]": "#9932CC",
+            "(-100,-95]": "#0000FF",
+            "(-95,-85]": "#FFA500",
+            ">-85": "#FF0000"
+        },
+        "RSRQ": {
+            "<=-35": "#FFC0CB",
+            "(-35,-30]": "#8B008B",
+            "(-30,-25]": "#9932CC",
+            "(-25,-20]": "#0000FF",
+            "(-20,-15]": "#FFA500",
+            ">-15": "#FF0000"
+        },
+        "RSSI": {
+            "<=-110": "#FFC0CB",
+            "(-110,-100]": "#8B008B",
+            "(-100,-90]": "#9932CC",
+            "(-90,-80]": "#0000FF",
+            "(-80,-70]": "#FFA500",
+            ">-70": "#FF0000"
+        },
+        "SINR": {
+            "<=-3": "#FFC0CB",
+            "(-3,0]": "#8B008B",
+            "(0,5]": "#9932CC",
+            "(5,10]": "#0000FF",
+            "(10,15]": "#FFA500",
+            ">15": "#FF0000"
+        },
+        "UL_PDCP_Thr": {
+            "<=256": "#FFC0CB",
+            "(256,512]": "#8B008B",
+            "(512,1000]": "#9932CC",
+            "(1000,2000]": "#0000FF",
+            "(2000,4000]": "#FFA500",
+            ">4000": "#FF0000"
+        },
+        "UL_RLC_Thr": {
+            "<=256": "#FFC0CB",
+            "(256,512]": "#8B008B",
+            "(512,1000]": "#9932CC",
+            "(1000,2000]": "#0000FF",
+            "(2000,4000]": "#FFA500",
+            ">4000": "#FF0000"
+        },
+        "UL_MAC_Thr": {
+            "<=256": "#FFC0CB",
+            "(256,512]": "#8B008B",
+            "(512,1000]": "#9932CC",
+            "(1000,2000]": "#0000FF",
+            "(2000,4000]": "#FFA500",
+            ">4000": "#FF0000"
+        },
+        "UL_Phy_Thr": {
+            "<=256": "#FFC0CB",
+            "(256,512]": "#8B008B",
+            "(512,1000]": "#9932CC",
+            "(1000,2000]": "#0000FF",
+            "(2000,4000]": "#FFA500",
+            ">4000": "#FF0000"
+        },
+        "DL_PDCP_Thr": {
+            "<=1000": "#FFC0CB",
+            "(1000,4000]": "#8B008B",
+            "(4000,10000]": "#9932CC",
+            "(10000,15000]": "#0000FF",
+            "(15000,20000]": "#FFA500",
+            ">20000": "#FF0000"
+        },
+        "DL_RLC_Thr": {
+            "<=1000": "#FFC0CB",
+            "(1000,4000]": "#8B008B",
+            "(4000,10000]": "#9932CC",
+            "(10000,15000]": "#0000FF",
+            "(15000,20000]": "#FFA500",
+            ">20000": "#FF0000"
+        },
+        "DL_MAC_Thr": {
+            "<=1000": "#FFC0CB",
+            "(1000,4000]": "#8B008B",
+            "(4000,10000]": "#9932CC",
+            "(10000,15000]": "#0000FF",
+            "(15000,20000]": "#FFA500",
+            ">20000": "#FF0000"
+        },
+        "DL_Phy_Thr": {
+            "<=1000": "#FFC0CB",
+            "(1000,4000]": "#8B008B",
+            "(4000,10000]": "#9932CC",
+            "(10000,15000]": "#0000FF",
+            "(15000,20000]": "#FFA500",
+            ">20000": "#FF0000"
+        },
+        "DL_PhyThrCode0": {
+            "<=1000": "#FFC0CB",
+            "(1000,4000]": "#8B008B",
+            "(4000,10000]": "#9932CC",
+            "(10000,15000]": "#0000FF",
+            "(15000,20000]": "#FFA500",
+            ">20000": "#FF0000"
+        },
+        "DL_PhyThrCode1": {
+            "<=1000": "#FFC0CB",
+            "(1000,4000]": "#8B008B",
+            "(4000,10000]": "#9932CC",
+            "(10000,15000]": "#0000FF",
+            "(15000,20000]": "#FFA500",
+            ">20000": "#FF0000"
+        },
+        "PDSCH_BLER": {
+            "<=5": "#FFC0CB",
+            "(5,10]": "#8B008B",
+            "(10,15]": "#9932CC",
+            ">15": "#FF0000"
+        },
+        "PDCCH_BLER": {
+            "<=5": "#FFC0CB",
+            "(5,10]": "#8B008B",
+            "(10,15]": "#9932CC",
+            ">15": "#FF0000"
+        },
+        "PUSCH_BLER": {
+            "<=5": "#FFC0CB",
+            "(5,10]": "#8B008B",
+            "(10,15]": "#9932CC",
+            ">15": "#FF0000"
+        },
+    },
+};
+
+var mmmPterData = {
+  "<DT_EFGH>_CDMACoverage" : [
+    {
+      "SAMPLECOVERAGERATE" : "0.0"
+    }
+  ],
+  "<DT>_LTE_PDSCH_BLER_Ping_Sum" : [
+    {
+      "MAX_LTE_PDSCH_BLER_PING_SUM" : "0.0",
+      "MIN_LTE_PDSCH_BLER_PING_SUM" : "0.0",
+      "AVERAGE_LTE_PDSCH_BLER_PING_SUM" : "0.0"
+    }
+  ],
+  "<DT_EFGH>_WCDMACoverage" : [
+    {
+      "SAMPLECOVERAGERATE" : "0.0"
+    }
+  ],
+  "<DT>_LTE_PDCCH_BLER_Ping" : [
+    {
+      "TOTALCOUNT" : null,
+      "INTERVALNAME" : null,
+      "CDF" : null,
+      "PDF" : null,
+      "INDEX" : null
+    },
+    {
+      "TOTALCOUNT" : "5.0",
+      "INTERVALNAME" : "<=5",
+      "CDF" : "1.000000000",
+      "PDF" : "1.000000000",
+      "INDEX" : "1"
+    },
+    {
+      "TOTALCOUNT" : "0.0",
+      "INTERVALNAME" : "(5,10]",
+      "CDF" : "1.000000000",
+      "PDF" : "0.000000000",
+      "INDEX" : "2"
+    },
+    {
+      "TOTALCOUNT" : "0.0",
+      "INTERVALNAME" : "(10,15]",
+      "CDF" : "1.000000000",
+      "PDF" : "0.000000000",
+      "INDEX" : "3"
+    },
+    {
+      "TOTALCOUNT" : "0.0",
+      "INTERVALNAME" : ">15",
+      "CDF" : "1.000000000",
+      "PDF" : "0.000000000",
+      "INDEX" : "4"
+    }
+  ],
+  "<DT_EFGH>_TestTotalTime" : [
+    {
+      "TESTTOTALTIME" : "82.246459"
+    }
+  ],
+  "<DT>_LTE_PDSCH_BLER_Ping" : [
+    {
+      "TOTALCOUNT" : null,
+      "INTERVALNAME" : null,
+      "CDF" : null,
+      "PDF" : null,
+      "INDEX" : null
+    },
+    {
+      "TOTALCOUNT" : "1.0",
+      "INTERVALNAME" : "<=5",
+      "CDF" : "1.000000000",
+      "PDF" : "1.000000000",
+      "INDEX" : "1"
+    },
+    {
+      "TOTALCOUNT" : "0.0",
+      "INTERVALNAME" : "(5,10]",
+      "CDF" : "1.000000000",
+      "PDF" : "0.000000000",
+      "INDEX" : "2"
+    },
+    {
+      "TOTALCOUNT" : "0.0",
+      "INTERVALNAME" : "(10,15]",
+      "CDF" : "1.000000000",
+      "PDF" : "0.000000000",
+      "INDEX" : "3"
+    },
+    {
+      "TOTALCOUNT" : "0.0",
+      "INTERVALNAME" : ">15",
+      "CDF" : "1.000000000",
+      "PDF" : "0.000000000",
+      "INDEX" : "4"
+    }
+  ],
+  "<DT>_LTE_PUSCH_RB_Count_Ping_Sum" : [
+    {
+      "AVERAGE_LTE_PUSCH_RB_COUNT_PING_SUM" : "851.33333333",
+      "MAX_LTE_PUSCH_RB_COUNT_PING_SUM" : "990.0",
+      "MIN_LTE_PUSCH_RB_COUNT_PING_SUM" : "604.0"
+    }
+  ],
+  "<DT_EFGH>_Ping_TBFClose" : [
+    {
+      "BUSINESSDELAY" : null,
+      "SUCCESSRATE" : null,
+      "SUCCESSCOUNT" : "0.0",
+      "BUSINESSCOUNT" : "0.0"
+    }
+  ],
+  "<DT_EFGH>_Ping_Other" : [
+    {
+      "BUSINESSDELAY" : "0.25725",
+      "SUCCESSRATE" : "0.9",
+      "SUCCESSCOUNT" : "9.0",
+      "BUSINESSCOUNT" : "10.0"
+    }
+  ],
+  "<DT_EFGH>_EVDOCoverage" : [
+    {
+      "SAMPLECOVERAGERATE" : "0.0"
+    }
+  ],
+  "<DT_EFGH>_EndTime" : [
+    {
+      "ENDTIME" : "42131.57571714"
+    }
+  ],
+  "<DT_EFGH>_OutOfServiceTime" : [
+    {
+      "OUTOFSERVICETIME" : "0.8953925"
+    }
+  ],
+  "<DT>_LTE_WideBand_CQI_Code0_Ping_Sum" : [
+    {
+      "MIN_LTE_WIDEBAND_CQI_CODE0_PING_SUM" : "11.0",
+      "AVERAGE_LTE_WIDEBAND_CQI_CODE0_PING_SUM" : "11.87889273",
+      "MAX_LTE_WIDEBAND_CQI_CODE0_PING_SUM" : "13.0"
+    }
+  ],
+  "<DT>_LTE_PDCCH_BLER_Ping_Sum" : [
+    {
+      "AVERAGE_LTE_PDCCH_BLER_PING_SUM" : "0.0",
+      "MIN_LTE_PDCCH_BLER_PING_SUM" : "0.0",
+      "MAX_LTE_PDCCH_BLER_PING_SUM" : "0.0"
+    }
+  ],
+  "<DT>_LTE_WideBand_CQI_Ping_Sum" : [
+    {
+      "AVERAGE_LTE_WIDEBAND_CQI_PING_SUM" : "11.87889273",
+      "MAX_LTE_WIDEBAND_CQI_PING_SUM" : "13.0",
+      "MIN_LTE_WIDEBAND_CQI_PING_SUM" : "11.0"
+    }
+  ],
+  "<DT_EFGH>_LTECoverage" : [
+    {
+      "SAMPLECOVERAGERATE" : "0.0"
+    }
+  ],
+  "<DT_EFGH>_Ping_TBFOpen" : [
+    {
+      "BUSINESSDELAY" : null,
+      "SUCCESSRATE" : null,
+      "SUCCESSCOUNT" : "0.0",
+      "BUSINESSCOUNT" : "0.0"
+    }
+  ],
+  "<DT_EFGH>_Network_Connect" : [
+    {
+      "BUSINESSDELAY" : null,
+      "SUCCESSRATE" : null,
+      "SUCCESSCOUNT" : "0.0",
+      "BUSINESSCOUNT" : "0.0"
+    }
+  ],
+  "<DT>_LTE_PUSCH_BLER_Ping" : [
+    {
+      "TOTALCOUNT" : null,
+      "INTERVALNAME" : null,
+      "CDF" : null,
+      "PDF" : null,
+      "INDEX" : null
+    },
+    {
+      "TOTALCOUNT" : "1.0",
+      "INTERVALNAME" : "<=5",
+      "CDF" : "0.333333333",
+      "PDF" : "0.333333333",
+      "INDEX" : "1"
+    },
+    {
+      "TOTALCOUNT" : "0.0",
+      "INTERVALNAME" : "(5,10]",
+      "CDF" : "0.333333333",
+      "PDF" : "0.000000000",
+      "INDEX" : "2"
+    },
+    {
+      "TOTALCOUNT" : "1.0",
+      "INTERVALNAME" : "(10,15]",
+      "CDF" : "0.666666667",
+      "PDF" : "0.333333333",
+      "INDEX" : "3"
+    },
+    {
+      "TOTALCOUNT" : "1.0",
+      "INTERVALNAME" : ">15",
+      "CDF" : "1.000000000",
+      "PDF" : "0.333333333",
+      "INDEX" : "4"
+    }
+  ],
+  "<DT_EFGH>_Ping_CellFach" : [
+    {
+      "BUSINESSDELAY" : null,
+      "SUCCESSRATE" : null,
+      "SUCCESSCOUNT" : "0.0",
+      "BUSINESSCOUNT" : "0.0"
+    }
+  ],
+  "<DT_EFGH>_GSMCoverage" : [
+    {
+      "SAMPLECOVERAGERATE" : "0.0"
+    }
+  ],
+  "<DT>_LTE_PDSCH_RB_Count_Ping_Sum" : [
+    {
+      "AVERAGE_LTE_PDSCH_RB_COUNT_PING_SUM" : "64.0",
+      "MAX_LTE_PDSCH_RB_COUNT_PING_SUM" : "64.0",
+      "MIN_LTE_PDSCH_RB_COUNT_PING_SUM" : "64.0"
+    }
+  ],
+  "<DT_EFGH>_OutOfServiceMileage" : [
+    {
+      "OUTOFSERVICEMILEAGE" : "0.0"
+    }
+  ],
+  "<DT_EFGH>_DNSLookup" : [
+    {
+      "FAILURECOUNT" : "0.0",
+      "BUSINESSDELAY" : "0.072",
+      "SUCCESSRATE" : "1.0",
+      "SUCCESSCOUNT" : "10.0",
+      "BUSINESSCOUNT" : "10.0"
+    }
+  ],
+  "<DT_EFGH>_Ping_CellDch" : [
+    {
+      "BUSINESSDELAY" : null,
+      "SUCCESSRATE" : null,
+      "SUCCESSCOUNT" : "0.0",
+      "BUSINESSCOUNT" : "0.0"
+    }
+  ],
+  "<DT_EFGH>_Ping_GSMTotal" : [
+    {
+      "BUSINESSDELAY" : null,
+      "SUCCESSRATE" : null,
+      "SUCCESSCOUNT" : "0.0",
+      "BUSINESSCOUNT" : "0.0"
+    }
+  ],
+  "<DT_EFGH>_StartTime" : [
+    {
+      "STARTTIME" : "42131.57476522"
+    }
+  ],
+  "<DT_EFGH>_TDSCDMACoverage" : [
+    {
+      "SAMPLECOVERAGERATE" : "0.0"
+    }
+  ],
+  "<DT>_LTE_PUSCH_BLER_Ping_Sum" : [
+    {
+      "AVERAGE_LTE_PUSCH_BLER_PING_SUM" : "9.17666667",
+      "MAX_LTE_PUSCH_BLER_PING_SUM" : "15.25",
+      "MIN_LTE_PUSCH_BLER_PING_SUM" : "0.0"
+    }
+  ],
+  "<DT_EFGH>_TestTotalMileage" : [
+    {
+      "TESTTOTALMILEAGE" : "0.0"
+    }
+  ],
+  "<DT_EFGH>_Ping_WCDMATotal" : [
+    {
+      "BUSINESSDELAY" : null,
+      "SUCCESSRATE" : null,
+      "SUCCESSCOUNT" : "0.0",
+      "BUSINESSCOUNT" : "0.0"
+    }
+  ]
+}
+    
+
+
+

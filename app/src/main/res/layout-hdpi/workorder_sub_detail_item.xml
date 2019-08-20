@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<!-- 注意： 将复选框设置为不可点击，不可在触摸时点击，不可获得焦点 -->  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="32dip"
+                android:background="@color/about_bg" >
+                
+
+        <TextView
+            android:id="@+id/detail_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="32dip"
+			android:textColor="@color/white"
+			android:textSize="14sp"
+			android:gravity="center"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dip"
+            android:layout_alignParentLeft="true"
+            android:text="txt" />
+        
+        
+        
+        <TextView
+            android:id="@+id/detail_txt"
+            android:paddingTop="3dip"
+            android:paddingBottom="3dip"
+            android:ellipsize="none"
+ 			android:maxLines="3"
+ 			android:scrollHorizontally="false"
+			android:layout_centerVertical="true"
+ 			android:layout_width="235dip"
+ 			android:layout_height="wrap_content"
+ 			android:textColor="@color/info_param_color"
+ 			android:textSize="14sp"
+ 			android:gravity="right|center_vertical"
+ 			android:layout_marginRight="10dip"
+ 			android:text="斯蒂芬福建斯蒂芬福建斯蒂芬福建斯蒂芬福建斯蒂芬福建斯蒂芬福建斯蒂"
+ 			android:layout_alignParentRight="true"
+ 			/>
+                
+ </RelativeLayout> 

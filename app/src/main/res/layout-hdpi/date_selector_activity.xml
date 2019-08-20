@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/task_attach_title"
+        layout="@layout/basic_title" />
+
+    <LinearLayout
+        android:id="@+id/content" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        
+    </LinearLayout>
+    <!--  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/ControlBar"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:background="#F2F2F2"
+                    android:gravity="center"
+                    android:text="@string/fleet_set_location_start"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/default_txt_size_normal" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+
+                    <com.walktour.framework.view.calendarcard.CalendarPickerView
+                        android:id="@+id/calendar_view_start"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@color/app_main_bg_color"
+                        android:clipToPadding="false"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:scrollbarStyle="outsideOverlay" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="2.5"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="center" >
+
+                            <com.walktour.framework.view.CustomWheelView
+                                android:id="@+id/wv_hour_start"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"
+                            android:textColor="@color/light_blue"
+                            android:textSize="@dimen/default_txt_size_medium" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="center" >
+
+                            <com.walktour.framework.view.CustomWheelView
+                                android:id="@+id/wv_min_start"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:visibility="visible" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:background="#F2F2F2"
+                    android:gravity="center"
+                    android:text="@string/fleet_set_location_end"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/default_txt_size_normal" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+
+                    <com.walktour.framework.view.calendarcard.CalendarPickerView
+                        android:id="@+id/calendar_view_end"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@color/app_main_bg_color"
+                        android:clipToPadding="false"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:scrollbarStyle="outsideOverlay" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="2.5"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="center" >
+
+                            <com.walktour.framework.view.CustomWheelView
+                                android:id="@+id/wv_hour_end"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"
+                            android:textColor="@color/light_blue"
+                            android:textSize="@dimen/default_txt_size_medium" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="center" >
+
+                            <com.walktour.framework.view.CustomWheelView
+                                android:id="@+id/wv_min_end"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:visibility="visible" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ControlBar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_ECECEC"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/box2"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.5"
+                    android:background="@null"
+                    android:text="@string/str_cancle"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/default_txt_size_normal" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/menu_divider_v" />
+
+                <Button
+                    android:id="@+id/btn_summit"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.5"
+                    android:background="@null"
+                    android:text="@string/str_ok"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/default_txt_size_normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout> -->
+   
+
+</LinearLayout>

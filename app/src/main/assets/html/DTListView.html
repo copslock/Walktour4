@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DT</title>
+<link rel="stylesheet" href="jQuery/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/dlChart.css">
+<script type="text/javascript" src="jQuery/jquery.min.js"></script>
+<script type="text/javascript" src="jQuery/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/dlUtils.js"></script>
+<script type="text/javascript" src="js/dlData.js"></script>
+<script type="text/javascript" src="js/DLDefine.js"></script>
+  <script>
+        $.mobile.pushStateEnabled = false;
+    </script>
+</head>
+<body >
+<div data-role="page" id="dt-list-page">
+  <div role="main" class="ui-content">
+    <ul data-role="listview" id = "DTList">
+    </ul>
+  </div>
+  <script type="text/javascript" src="js/DTListModel.js"></script> 
+  <!-- 测试 --> 
+  <!--   // <script type="text/javascript" src="js/TestData.js"></script> --> 
+  <script type="text/javascript" >
+  function dlLoadData(json,goNogo,threshold)
+  {
+    dlLoadSetting('DLGoNogoSetting',goNogo);
+    dlLoadSetting('DLThreholdSetting',threshold);
+    var model = new DLDTListData();
+    if (model.initWithJson(json)) {
+      model.renderToDoc($('#DTList'));
+    }
+  }
+  </script> 
+</div>
+</body>
+</html>

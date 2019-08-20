@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:background="@color/app_title_bg_color"
+        android:gravity="center_vertical|left" >
+
+        <ImageButton
+            android:id="@+id/pointer"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/task_test_main_bg"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:src="@drawable/navi_back" />
+
+        <TextView
+            android:id="@+id/title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/pointer"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="@string/share_project_devices_release_relation_13"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/single_heng_qian" />
+
+        <EditText
+            android:id="@+id/inputxt"
+            style="@style/fontstyle12"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/login_input"
+            android:gravity="center_vertical|left"
+            android:hint="@string/share_project_input_device_number"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/single_heng_qian" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/id_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/single_heng_qian"
+        android:dividerHeight="0.5dp" >
+    </ListView>
+
+</LinearLayout>

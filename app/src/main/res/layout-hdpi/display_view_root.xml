@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 筛选界面布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:background="@color/app_menu_bg_color"
+    android:minHeight="150dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_menu_bg_color" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/ControlBar"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/check_exception"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/str_title_display_execption" 
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/check_exception"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/app_main_text_color"
+	 				android:textSize="@dimen/app_content_txt_size"
+                    android:text="@string/str_title_display_execption"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:button="@null"
+                    android:drawableRight="@drawable/menu_item_check"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:drawable/divider_horizontal_bright" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/check_go_nogo"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/str_title_go_nogo" 
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/check_go_nogo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/app_main_text_color"
+	 				android:textSize="@dimen/app_content_txt_size"
+	 				android:text="@string/str_title_go_nogo"
+                    android:button="@null" 
+                    android:drawableRight="@drawable/menu_item_check"/><!-- @drawable/menu_item_check//switch_button_bg -->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_work_order"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:visibility="gone"
+                 >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:drawable/divider_horizontal_bright" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/check_work_order"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/str_title_work_order"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/check_work_order"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                   	android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/app_main_text_color"
+	 				android:textSize="@dimen/app_content_txt_size"
+	 				android:text="@string/str_title_work_order"
+                    android:button="@null" 
+                    android:drawableRight="@drawable/menu_item_check"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ControlBar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_ECECEC"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/box2"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_clear"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="@string/params_list_reset"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/app_defult_btn_txt_size" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@android:drawable/divider_horizontal_bright" />
+
+                <Button
+                    android:id="@+id/btn_filter"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="@string/str_ok"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/app_defult_btn_txt_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

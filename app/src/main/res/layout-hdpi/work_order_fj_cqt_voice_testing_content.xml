@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/work_order_fj_cqt_voice_testing_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="0dp"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_detail_step3_2"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/txt_cqt_voice_testing_business"
+                style="@style/setting_sort_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/work_order_fj_cqt_voice_test" />
+
+            <Button
+                android:id="@+id/work_order_fj_cqt_voice_start_testing"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/dialog_btn"
+                android:drawSelectorOnTop="true"
+                android:gravity="center"
+                android:text="@string/work_order_fj_start_testing"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <!-- CQT语音测试layout -->
+
+        <LinearLayout
+            android:id="@+id/cqt_voice_testing"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <include layout="@layout/work_order_fj_cqt_voice_view" />
+        </LinearLayout>
+
+     
+    </LinearLayout>
+
+</LinearLayout>

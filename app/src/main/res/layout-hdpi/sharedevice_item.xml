@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical|left"
+    android:background="@drawable/base_list_item_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical|left"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/objimg"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/obj_android" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name1"
+            style="@style/fontstyle14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="aaaa" />
+
+        <TextView
+            android:id="@+id/name2"
+            style="@style/fontstyle12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="aaaa"
+            android:textColor="@color/single_huise" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkid"
+        style="@style/checkboxtheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center"
+        android:background="@null"
+        android:focusable="true"
+        android:enabled="true"   
+        android:focusableInTouchMode="true"   
+        android:clickable="true" 
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical|center" />
+
+</LinearLayout>

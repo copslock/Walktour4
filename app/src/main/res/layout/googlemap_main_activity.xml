@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:walktour="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="none"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/message_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LineraLayoutToolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+         >
+
+        <Button
+            android:id="@+id/map_btn"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_load"
+            android:text="@string/map_bar_load" />
+
+        <Button
+            android:id="@+id/clear_btn"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_clear"
+            android:text="@string/map_bar_clear" />
+
+        <Button
+            android:id="@+id/undo_btn"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_undo"
+            android:text="@string/map_bar_undo"
+            android:visibility="gone" />
+        
+
+        
+        <Button
+            android:id="@+id/import_basedata"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_station"
+            android:text="@string/import_basedata"/>
+        
+        
+        <Button
+            android:id="@+id/search_btn"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_search"
+            android:text="@string/str_search" />
+
+        <Button
+            android:id="@+id/more_btn"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_more"
+            android:text="@string/str_more" />
+    </LinearLayout>
+    
+     <!-- 阀值图例 -->
+    <com.walktour.gui.map.ThresholdView
+        android:id="@+id/threshold_view"
+        android:layout_width="fill_parent"
+        android:layout_above="@id/LineraLayoutToolbar"
+        android:layout_height="20dip"
+        ></com.walktour.gui.map.ThresholdView>
+
+   
+
+    
+    
+
+    <!-- 地图主界面 -->
+    
+      <include
+        android:layout_alignParentTop="true"
+        android:id="@+id/title"
+        layout="@layout/main_title" />
+      
+    <RelativeLayout
+        android:id="@+id/map_area"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/threshold_view" 
+        android:layout_below="@id/title"
+        >
+        
+        <com.walktour.gui.map.googlemap.view.MapView
+            android:id="@+id/main"
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	walktour:ScaleBarVisible="1"
+        	walktour:SideInOutButtons="1"
+            />
+
+        <ImageButton
+            android:id="@+id/auto_follow"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="15dip"
+            android:background="@drawable/main_locatebutton"
+            android:src="@drawable/location_item" />
+        
+    </RelativeLayout>
+
+
+</RelativeLayout>

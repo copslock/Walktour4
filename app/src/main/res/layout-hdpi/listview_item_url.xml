@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<!-- 左边图标，右边标题 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_list_item_bg"
+    android:minHeight="56dip"
+    android:padding="4dip" >
+
+ <!--android:descendantFocusability="blocksDescendants"-->
+  <ImageView
+	android:id="@+id/ItemTestable"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_alignParentLeft="true"
+	android:layout_centerVertical="true"
+	android:paddingLeft="12dip"  
+    android:paddingRight="12dip"
+/>  
+ 
+     
+<TextView  android:id="@+id/ItemTitle"  
+    android:text="TextView01"  
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+	android:layout_marginLeft="8dip"
+	android:layout_toRightOf="@id/ItemTestable"
+
+	android:textSize="@dimen/app_content_txt_size"
+    android:textColor="@color/app_main_text_color" 
+    android:layout_centerInParent="true"
+/> 
+
+<ImageView
+	android:id="@+id/ItemCheckble"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_alignParentRight="true"
+	android:layout_centerVertical="true"
+	android:paddingLeft="12dip"  
+    android:paddingRight="12dip"
+/>
+    
+</RelativeLayout>  

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:angle="270" android:endColor="#F328aae2" android:startColor="#F31e90ff" />
+			<stroke android:width="1dip"  android:color="#838F9197"/>
+
+            <corners 
+                android:bottomLeftRadius="15dp"  
+       			android:bottomRightRadius="0dp"  
+			    android:topLeftRadius="15dp"  
+			    android:topRightRadius="0dp" 
+                />
+            <padding android:bottom="5dp" android:left="5dp" android:right="5dp" android:top="5dp" />
+        </shape>       
+     </item>
+    
+    <item android:state_focused="true">
+        <shape>
+            <gradient android:angle="270" android:endColor="#F328aae2" android:startColor="#F31e90ff" />
+			<stroke android:width="1dip"  android:color="#838F9197"/>
+
+            <corners 
+                android:bottomLeftRadius="15dp"  
+       			android:bottomRightRadius="0dp"  
+			    android:topLeftRadius="15dp"  
+			    android:topRightRadius="0dp" 
+                />
+            <padding android:bottom="5dp" android:left="5dp" android:right="5dp" android:top="5dp" />
+        </shape>       
+     </item>
+    
+    <item>
+        <shape>
+            <gradient android:angle="270" android:endColor="#9328aae2" android:startColor="#931e90ff" />
+			<stroke android:width="1dip"  android:color="#838F9197"/>
+
+            <corners 
+                android:bottomLeftRadius="15dp"  
+       			android:bottomRightRadius="0dp"  
+			    android:topLeftRadius="15dp"  
+			    android:topRightRadius="0dp" 
+                />
+
+            <padding android:bottom="5dip" android:left="5dip" android:right="5dip" android:top="5dip" />
+        </shape>
+        
+     </item>
+
+</selector>

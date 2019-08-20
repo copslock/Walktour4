@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 左边图标，右边标题 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+
+        <TextView
+            android:id="@+id/ItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_marginLeft="0dip"
+            android:text="TextView01"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            style="@style/setting_sort_left_text_2"
+            />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="right" >
+        
+        <TextView
+            android:id="@+id/time_value"
+            android:layout_width="80dip"
+            android:layout_marginRight="10dip"
+            android:textColor="@color/info_param_color"
+            style="@style/task_edit_view"
+            android:text="500000"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:maxLength="6"
+            android:layout_height="35dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="8dip"
+            android:text="ms"
+            android:layout_height="wrap_content" 
+            style="@style/setting_sort_right_text_2"/>
+    </LinearLayout>
+
+</LinearLayout>

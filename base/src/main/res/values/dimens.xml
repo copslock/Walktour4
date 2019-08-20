@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <dimen name="default_txt_size_micro_mm">10sp</dimen>
+    <dimen name="default_txt_size_micro">12sp</dimen>
+    <dimen name="default_txt_size_small">14sp</dimen>
+    <dimen name="default_txt_size_normal">16sp</dimen>
+    <dimen name="default_txt_size_medium">18sp</dimen>
+    <dimen name="default_txt_size_large">22sp</dimen>
+    <dimen name="default_txt_size_special">13dp</dimen>
+    <!--一级：14-->
+    <!--二级：14-->
+    <!--三级：12-->
+    <!--内文：12-->
+    <!--注释：10-->
+    <dimen name="app_first_title_txt_size">18sp</dimen>
+    <dimen name="app_second_title_txt_size">16sp</dimen>
+    <dimen name="app_third_title_txt_size">14sp</dimen>
+    <dimen name="app_content_txt_size">14sp</dimen>
+    <dimen name="app_second_content_txt_size">12sp</dimen>
+    <dimen name="app_defult_btn_txt_size">12sp</dimen>
+
+
+</resources>

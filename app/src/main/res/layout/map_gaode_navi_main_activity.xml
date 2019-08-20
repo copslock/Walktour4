@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gaodemap"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="none"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/message_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LineraLayoutToolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+
+        <Button
+            android:id="@+id/map_btn"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_controlbar_map"
+            android:text="@string/map_bar_load" />
+
+        <Button
+            android:id="@+id/clear_btn"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_clear"
+            android:text="@string/map_bar_clear" />
+
+        <Button
+            android:id="@+id/undo_btn"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_undo"
+            android:text="@string/map_bar_undo"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/import_basedata"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_station"
+            android:text="@string/import_basedata" />
+
+        <Button
+            android:id="@+id/search_btn"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_search"
+            android:text="@string/str_search" />
+
+        <Button
+            android:id="@+id/more_btn"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_more"
+            android:text="@string/str_more" />
+    </LinearLayout>
+
+    <!-- 阀值图例 -->
+
+    <com.walktour.gui.map.ThresholdView
+        android:id="@+id/threshold_view"
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:layout_above="@id/LineraLayoutToolbar" />
+
+    <!-- 地图主界面 -->
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    <RelativeLayout
+        android:id="@+id/screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@drawable/list_divider"
+
+            />
+
+        <TextView
+            android:id="@+id/left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/app_user_label"
+            android:textColor="@color/app_main_text_color"
+            android:textSize="@dimen/app_content_txt_size"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/gps_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dip"
+                android:text="@string/app_name"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/test_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/left_text"
+            android:layout_marginLeft="2dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/test_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+
+            <TextView
+                android:id="@+id/test_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+
+            <TextView
+                android:id="@+id/test_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="2dip"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test_info"
+            android:textSize="@dimen/app_content_txt_size" />
+
+        <TextView
+            android:id="@+id/latlng"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_text"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:textSize="@dimen/app_content_txt_size" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/latlng"
+            android:background="@drawable/list_divider"
+
+            />
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/map_area"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/threshold_view"
+        android:layout_below="@id/title" >
+
+        <FrameLayout
+            android:id="@+id/main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </FrameLayout>
+
+        <com.walktour.gui.newmap2.ui.MapFrameView
+            android:id="@+id/drag_scale_view"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/map_type_change"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="8dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/map_type_satellite" />
+
+        <ImageButton
+            android:id="@+id/btn_rounte"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"
+            android:layout_below="@+id/map_type_change"
+            android:background="@color/white"
+            android:src="@drawable/ic_route" />
+
+        <ImageButton
+            android:id="@+id/btn_measure"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/btn_rounte"
+            android:background="@color/white"
+            android:src="@drawable/ic_measure" />
+
+        <ImageButton
+            android:id="@+id/btn_frame"
+            android:layout_width="36dp"
+            android:layout_below="@id/btn_measure"
+            android:layout_height="36dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:src="@drawable/ic_frame" />
+
+        <ImageButton
+            android:id="@+id/btn_heat"
+            android:layout_width="36dp"
+            android:layout_below="@id/btn_frame"
+            android:layout_height="36dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:src="@drawable/ic_heat" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/zoom_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/btn_zoom_down" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/zoom_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/zoom_out"
+            android:layout_toRightOf="@+id/zoom_out"
+            android:src="@drawable/btn_zoom_up" />
+
+        <ImageButton
+            android:id="@+id/auto_follow"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_below="@id/btn_heat"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"
+            android:src="@drawable/main_icon_follow" />
+        <ImageButton
+            android:background="@color/transparent"
+            android:id="@+id/auto_action_center"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_below="@id/auto_follow"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/selector_icon_map_location" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

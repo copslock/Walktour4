@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false"  >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/app_other_color"/>
+            <corners
+                android:bottomLeftRadius = "0dp"
+                android:bottomRightRadius = "5dp"
+                android:topLeftRadius = "0dp"
+                android:topRightRadius = "0dp"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/task_main_btm"/>
+            <corners
+                android:bottomLeftRadius = "0dp"
+                android:bottomRightRadius = "5dp"
+                android:topLeftRadius = "0dp"
+                android:topRightRadius = "0dp"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Walktour</string>
+    <string name="control_ok">确定</string>
+    <string name="control_start">开始</string>
+    <string name="control_save">保存</string>
+    <string name="control_cancel">取消</string>
+    <string name="control_new">新建</string>
+    <string name="control_sort">排序</string>
+    <string name="sdcard">Walktour</string>
+    <string name="file_choose">文件选择</string>
+    <string name="file_not_exist">文件不存在!</string>
+    <string name="file_choose_parent_file">上层文件夹</string>
+    <string name="data_loading">数据加载中...</string>
+</resources>

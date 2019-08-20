@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	<item 
+	android:id="@+id/menu_newBuilding" 
+	android:icon="@android:drawable/ic_menu_add" 
+	android:title="@string/sys_indoor_newFloor">
+	</item>
+			
+	<item 
+	android:id="@+id/menu_delall" 
+	android:icon="@android:drawable/ic_menu_delete" 
+	android:title="@string/delete_all">
+	</item>
+
+</menu>

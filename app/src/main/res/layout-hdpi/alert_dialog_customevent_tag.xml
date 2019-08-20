@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical">
+
+    <View style="@style/task_listdivider" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="0dp">
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/sp_tag_type" />
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:popupBackground="@color/white"
+            android:id="@+id/sp_tagtype"
+            style="@style/task_drop_view"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View style="@style/task_listdivider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:orientation="vertical"
+        android:paddingLeft="0dp">
+
+        <EditText
+            android:id="@+id/alert_textEditText"
+            style="@style/task_edit_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            tool:text="dsjfdjkfksdfjds"
+            android:gravity="fill_horizontal"
+            android:paddingLeft="4dip"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:scrollHorizontally="true"
+            android:singleLine="false" />
+
+        <Button
+            android:id="@+id/bt_action_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_blue_radius_selector"
+            android:text="@string/tag_radio" />
+        <Button
+            android:id="@+id/bt_action_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_blue_radius_selector"
+            android:text="@string/tag_photo" />
+        <Button
+            android:id="@+id/bt_action_take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_blue_radius_selector"
+            android:text="@string/tag_take_photo" />
+
+
+        <Button
+            android:id="@+id/bt_action_audio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_blue_radius_selector"
+            android:text="@string/speak_by_press" />
+    </LinearLayout>
+
+    <View style="@style/task_listdivider" />
+
+    <!--<LinearLayout-->
+        <!--style="@style/task_layout_edge"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingLeft="0dp">-->
+
+        <!--<TextView-->
+            <!--style="@style/setting_sort_left_text_2"-->
+            <!--android:text="存放路径："-->
+            <!--android:textSize="@dimen/default_txt_size_small" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_info"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/default_txt_size_small"-->
+            <!--tool:text="sdfasdfjak" />-->
+
+
+        <!--<View style="@style/task_listdivider" />-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

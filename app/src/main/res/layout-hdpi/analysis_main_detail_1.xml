@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip"
+    android:layout_gravity="center_vertical" 
+    android:background="@drawable/search_item_click_2"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <View style="@style/setting_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_margin="8dp" 
+        android:layout_weight="2"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/keyvalue1"
+            style="@style/fontstyle14"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="left|center_vertical"
+            android:text="回落频点不一致"
+            android:textColor="#418ce3" />
+
+        <TextView
+            android:id="@+id/keyvalue2"
+            style="@style/fontstyle14"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="right|center_vertical"
+            android:text="5%"
+            android:textColor="#418ce3" />
+    </LinearLayout>
+
+    <View style="@style/setting_divider" />
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:id="@+id/LineraLayout01"
+      android:layout_width="fill_parent"
+      android:layout_height="52dip"
+      android:layout_gravity="bottom" 
+      android:background="@drawable/toolbar_bg"
+      android:orientation="horizontal"
+      android:gravity="fill_horizontal"
+      android:weightSum="1"
+      >
+      		
+      		<LinearLayout android:id="@+id/Button01"
+      			android:layout_height="fill_parent"
+      			android:layout_width="42dip"
+      			android:layout_margin="5dip"
+       		android:background="@drawable/background_toolbar_item"
+       		android:orientation="vertical"
+      			android:gravity="center"
+      			android:layout_weight="0.25"
+      		>
+			
+			<ImageView
+				android:src="@drawable/controlbar_new"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+			/>
+				        			
+	       	<TextView android:id="@+id/TextView01"
+	       		android:layout_width="wrap_content"
+	       		android:layout_height="wrap_content"
+	       		android:text="@string/act_task_new"
+	       		android:textColor="@android:color/white"
+	       		android:textSize="12sp"
+	       	/>
+       	
+       	</LinearLayout>
+       	
+       	<LinearLayout android:id="@+id/Button02"
+      			android:layout_height="fill_parent"
+      			android:layout_width="42dip"
+      			android:layout_margin="5dip"
+      			android:layout_weight="0.25"
+       		android:background="@drawable/background_toolbar_item"
+       		android:orientation="vertical"
+      			android:gravity="center"
+      		>
+			
+			<ImageView
+				android:src="@drawable/controlbar_muilt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+			/>
+				        			
+	       	<TextView android:id="@+id/TextView02"
+	       		android:layout_width="wrap_content"
+	       		android:layout_height="wrap_content"
+	       		android:text="@string/select_multi"
+	       		android:textColor="@android:color/white"
+	       		android:textSize="12sp"
+	       	/>
+       	
+       	</LinearLayout>
+       	
+       	
+       	<LinearLayout android:id="@+id/Button03"
+     			android:layout_height="fill_parent"
+     			android:layout_width="42dip"
+      			android:layout_margin="5dip"
+     			android:layout_weight="0.25"
+      		android:background="@drawable/background_toolbar_item"
+      		android:orientation="vertical"
+     			android:gravity="center"
+      		>
+			
+			<ImageView
+				android:src="@drawable/controlbar_history"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+			/>
+				        			
+	       	<TextView android:id="@+id/TextView03"
+	       		android:layout_width="wrap_content"
+	       		android:layout_height="wrap_content"
+	       		android:text="@string/task_history"
+	       		android:textColor="@android:color/white"
+	       		android:textSize="12sp"
+	       	/>
+       	
+       	</LinearLayout>
+       	
+       	<LinearLayout android:id="@+id/Button04"
+     			android:layout_height="fill_parent"
+     			android:layout_width="42dip"
+      		android:layout_margin="5dip"
+     			android:layout_weight="0.25"
+      		android:background="@drawable/background_toolbar_item"
+      		android:orientation="vertical"
+     			android:gravity="center"
+      		>
+			
+			<ImageView
+				android:src="@drawable/controlbar_edit"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+			/>
+				        			
+	       	<TextView android:id="@+id/TextView04"
+	       		android:layout_width="wrap_content"
+	       		android:layout_height="wrap_content"
+	       		android:text="@string/task_setting"
+	       		android:textColor="@android:color/white"
+	       		android:textSize="12sp"
+	       	/>
+       	
+       	</LinearLayout>
+       	
+
+</LinearLayout>

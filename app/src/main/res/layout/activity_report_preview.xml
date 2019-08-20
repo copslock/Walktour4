@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/report_tempL_title"
+        layout="@layout/basic_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/setting_sort_title_bgcolor" />
+
+    <WebView
+        android:id="@+id/report_preview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <org.xwalk.core.XWalkView
+        android:id="@+id/report_preview2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+
+        />
+
+</LinearLayout>

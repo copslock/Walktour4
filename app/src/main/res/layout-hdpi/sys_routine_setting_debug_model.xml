@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_color"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/setting_level2_title"
+        android:text="@string/sys_setting_debug_model" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/app_main_color">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 数据集设置 -->
+
+            <TextView
+                style="@style/setting_level2_title"
+                android:text="@string/sys_debug_dataset_setting" />
+
+            <!-- 压数据集 -->
+            <LinearLayout
+                style="@style/item_layout_white_circle"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_debug_push_dataset" />
+
+                    <CheckBox
+                        android:id="@+id/check_push_dataset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:button="@drawable/walktour_cb_2"
+                        android:checked="false" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+                <!-- 分帧设置 -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_debug_divide_frame" />
+
+                    <CheckBox
+                        android:id="@+id/check_divide_frame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:button="@drawable/walktour_cb_2"
+                        android:checked="false" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+                <!-- 解码设置 -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_debug_decoder" />
+
+                    <CheckBox
+                        android:id="@+id/check_decoder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:button="@drawable/walktour_cb_2"
+                        android:checked="false" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+                <!-- 解码并读取数据 -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_debug_decoder_andread" />
+
+                    <CheckBox
+                        android:id="@+id/check_decoder_and_readdata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:button="@drawable/walktour_cb_2"
+                        android:checked="false" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+                <!-- 事件判断 -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_debug_event_judge" />
+
+                    <CheckBox
+                        android:id="@+id/check_event_judeg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:button="@drawable/walktour_cb_2"
+                        android:checked="false" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+                <!-- 正常模式 -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_debug_normal" />
+
+                    <CheckBox
+                        android:id="@+id/check_debug_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:button="@drawable/walktour_cb_2"
+                        android:checked="false" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 查询设置 -->
+
+            <TextView
+                style="@style/setting_level2_title"
+                android:text="@string/sys_debug_query_setting" />
+
+            <!-- 查询事件 -->
+            <LinearLayout
+               style="@style/item_layout_white_circle"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_debug_query_event" />
+
+                    <CheckBox
+                        android:id="@+id/check_query_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:button="@drawable/walktour_cb_2"
+                        android:checked="false" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+                <!-- 查询信令 -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_debug_query_signal" />
+
+                    <CheckBox
+                        android:id="@+id/check_query_signal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:button="@drawable/walktour_cb_2"
+                        android:checked="false" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+                <!-- 查询参数 -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_debug_query_param" />
+
+                    <CheckBox
+                        android:id="@+id/check_query_param"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:button="@drawable/walktour_cb_2"
+                        android:checked="false" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+                <!-- 详细解码 -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_debug_query_detail_decoder" />
+
+                    <CheckBox
+                        android:id="@+id/check_detail_decoder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:button="@drawable/walktour_cb_2"
+                        android:checked="false" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

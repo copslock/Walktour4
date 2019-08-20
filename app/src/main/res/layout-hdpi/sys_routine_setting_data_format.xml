@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_rcu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="RCU" />
+
+        <CheckBox
+            android:id="@+id/toggle_rcu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/switch_button_bg"
+            android:checked="false"
+            android:layout_marginRight="10dp"/>
+        
+        <View style="@style/sys_routine_setting_divider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_dtlog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="DT Log" />
+
+        <CheckBox
+            android:id="@+id/toggle_dtlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/switch_button_bg"
+            android:checked="false" 
+            android:layout_marginRight="10dp"/>
+        
+        <View style="@style/sys_routine_setting_divider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_dcf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="DCF" />
+
+        <CheckBox
+            android:id="@+id/toggle_dcf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/switch_button_bg"
+            android:checked="false" 
+            android:layout_marginRight="10dp"/>
+        
+        <View style="@style/sys_routine_setting_divider" />
+    </RelativeLayout>
+	<RelativeLayout
+        android:id="@+id/layout_org_rcu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="ORG RCU" />
+
+        <CheckBox
+            android:id="@+id/toggle_org_rcu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/switch_button_bg"
+            android:checked="false" 
+            android:layout_marginRight="10dp"/>
+        
+        <View style="@style/sys_routine_setting_divider" />
+    </RelativeLayout>
+    
+	<RelativeLayout
+        android:id="@+id/layout_cu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="CU" />
+
+        <CheckBox
+            android:id="@+id/toggle_cu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/switch_button_bg"
+            android:checked="false" 
+            android:layout_marginRight="10dp"/>
+        
+        <View style="@style/sys_routine_setting_divider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_ecti"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="ECTI" />
+
+        <CheckBox
+            android:id="@+id/toggle_ecti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/switch_button_bg"
+            android:checked="false"
+            android:layout_marginRight="10dp"/>
+
+        <View style="@style/sys_routine_setting_divider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_ots"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="OTS" />
+
+        <CheckBox
+            android:id="@+id/toggle_ots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/switch_button_bg"
+            android:checked="false"
+            android:layout_marginRight="10dp"/>
+
+        <View style="@style/sys_routine_setting_divider" />
+    </RelativeLayout>
+</LinearLayout>

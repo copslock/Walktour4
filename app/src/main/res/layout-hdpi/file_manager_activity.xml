@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 数据管理界面布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/basic_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/basic_title_share" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.walktour.framework.view.viewpagerindicator.TabPageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottom"
+            android:layout_below="@+id/indicator" />
+        <!-- 底部工具栏 -->
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.walktour.gui.applet.ControlBar
+                android:id="@+id/ControlBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_horizontal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

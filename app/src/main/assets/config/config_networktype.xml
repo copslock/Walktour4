@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<networks>
+	<network networkid="0" networkname="LTE-TD-SCDMA-GSM">
+		<item value="46000" />
+		<item value="46002" />
+		<item value="46007" />
+	</network>
+	<network networkid="1" networkname="LTE-CDMA-EVDO">
+		<item value="46011" />
+		<item value="46003" />
+		<item value="46005" />
+	</network>
+	<network networkid="2" networkname="LTE-WCDMA-GSM">
+		<item value="46001" />
+		<item value="46006" />
+	</network>
+</networks>

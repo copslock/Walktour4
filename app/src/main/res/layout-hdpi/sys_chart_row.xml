@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/setting_chart_table_row" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/sys_chart_para_text"
+                style="@style/setting_sort_left_text_2"
+                android:text="" />
+
+            <com.walktour.framework.ui.BasicSpinner
+                android:id="@+id/SpinnerPara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/drop"
+                android:drawSelectorOnTop="true" />
+            <!-- style="@style/task_drop_view"-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/sys_chart_color_text"
+                style="@style/setting_chart_center_text_2"
+                android:layout_marginLeft="5dip"
+                android:text="@string/sys_chart_color" />
+
+            <com.walktour.framework.view.colorpicker.ColorPanelView
+                android:id="@+id/SpinnerColor"
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dip"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/new_setting_divider" />
+
+</LinearLayout>

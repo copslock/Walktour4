@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<fleet>
+	<test_switch value="0"/>
+	<ip value=""/>
+	<port value=""/>
+	<auto_time value="20:00"/>
+	<ul_switch value="1"/>
+	<location value="0"/>
+	<location_start value="06:00"/>
+	<location_end value="18:00"/>
+	<imei value="358326030329145"/>
+</fleet>

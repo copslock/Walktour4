@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <!-- 作为弹出窗口的view: 包含1个Text 和 1个EditText -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">    
+    <EditText
+        android:id="@+id/alert_textEditText"
+        android:layout_width="fill_parent"
+        style="@style/task_edit_view"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:scrollHorizontally="true"
+        android:gravity="fill_horizontal"
+        android:layout_height="38dip"
+        android:paddingLeft="4dip"
+        android:singleLine="true" />
+    
+</LinearLayout>

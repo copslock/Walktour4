@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<config>
+		<setting>
+			<item name="schInfo" value="1"/>
+			<item name="rlcpduinfo" value="0"/>
+			<item name="macpduinfo" value="0"/>
+			<item name="ml1info" value="0"/>
+			<item name="pdcppduinfo" value="0"/>
+			<item name="grantList" value="0"/>
+			<item name="mcsStatis" value="0"/>
+			<item name="l3msg" value="0"/>
+			<item name="dciInfo" value="0"/>
+			<item name="rrbInfo" value="0"/>
+			<item name="isParaAcquisition" value="0"/>
+		</setting>
+
+
+
+			 <Acquisitions>
+					<AcquisitionItem ShowName="GSM RxlevFull" id="0x7F000103" timeInterval="500"/>
+					<AcquisitionItem ShowName="GSM RxlevSub" id="0x7F000104" timeInterval="500"/>
+					<AcquisitionItem ShowName="GSM RxQualFull" id="0x7F000105" timeInterval="500"/>
+					<AcquisitionItem ShowName="GSM RxQualSub" id="0x7F000106" timeInterval="500"/>
+					<AcquisitionItem ShowName="GSM TxPower" id="0x7F000114" timeInterval="500"/>
+					<AcquisitionItem ShowName="TDSCDMA PCCPCH RSCP" id="0x7F03011B" timeInterval="500"/>
+					<AcquisitionItem ShowName="TDSCDMA PCCPCH C/I" id="0x7F030120" timeInterval="500"/>
+					<AcquisitionItem ShowName="TDSCDMA DPCH RSCP" id="0x7F030112" timeInterval="500"/>
+					<AcquisitionItem ShowName="TDSCDMA DPCH C/I" id="0x7F030114" timeInterval="500"/>
+					<AcquisitionItem ShowName="WCDMA Total RSCP" id="0x7F02000D" timeInterval="500"/>
+					<AcquisitionItem ShowName="WCDMA Total EcIo" id="0x7F02000A" timeInterval="500"/>
+					<AcquisitionItem ShowName="WCDMA ToPower" id="0x7F020002" timeInterval="500"/>
+					<AcquisitionItem ShowName="CDMA RxAGC" id="0x7F010001" timeInterval="500"/>
+					<AcquisitionItem ShowName="CDMA TxPower" id="0x7F010003" timeInterval="500"/>
+					<AcquisitionItem ShowName="CDMA Total EcIo" id="0x7F01000C" timeInterval="500"/>
+					<AcquisitionItem ShowName="LTE RSRP" id="0x7F06000E" timeInterval="200"/>
+					<AcquisitionItem ShowName="LTE RSRQ" id="0x7F06000F" timeInterval="200"/>
+			</Acquisitions>
+
+
+</config>

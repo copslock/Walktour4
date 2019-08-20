@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* rewriter from //device/apps/common/assets/res/any/layout/simple_spinner_dropdown_item.xml
+*/
+-->
+
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:singleLine="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/app_second_content_txt_size"
+    android:minHeight="45dip"
+    android:checkMark="@drawable/radio"
+    android:ellipsize="marquee"
+    android:textColor="@color/app_main_text_color"
+    />

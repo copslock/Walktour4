@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/btn_scan" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        style="@style/task_layout_edge"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:layout_marginLeft="0dp"
+                            android:text="@string/file_name" />
+
+                        <TextView
+                            android:id="@+id/txt_file_path"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_marginRight="0dp"
+                            android:maxWidth="200dp"
+                            android:text="Android-OUT20150722-Email" />
+                        
+                    </RelativeLayout>
+                    <View style="@style/task_listdivider" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

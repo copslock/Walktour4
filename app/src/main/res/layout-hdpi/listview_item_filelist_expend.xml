@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 未展开的Item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:weightSum="1"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dip"
+        android:layout_weight="0.35"
+         >
+
+        <TextView
+            android:id="@+id/ItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/app_main_text_color"
+
+            android:textSize="@dimen/app_content_txt_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.35"
+         >
+
+        <TextView
+            android:id="@+id/ItemSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dip"
+            android:text=""
+            android:textColor="@color/app_main_text_color"
+            android:textSize="@dimen/app_content_txt_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+    >
+
+        <TextView
+            android:id="@+id/ItemStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:text=""
+            android:textColor="@color/app_main_text_color"
+            android:textSize="@dimen/app_content_txt_size" />
+       
+        <ProgressBar
+	        android:id="@+id/ItemProgress"
+	        style="?android:attr/progressBarStyleHorizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="3dip"
+	        android:layout_marginRight="5dip"
+	        android:layout_centerInParent="true"
+	        android:progress="50"
+	        android:progressDrawable="@drawable/data_progress_horizontal" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

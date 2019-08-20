@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	    android:layout_height="wrap_content"
+    	    android:layout_width="fill_parent"
+    	    android:layout_marginRight="2dip"
+    	    android:layout_marginLeft="2dip"
+    	    android:background="@color/app_main_bg_color"
+    	    android:minHeight="25dip"
+    	    android:orientation="vertical"
+    	    >
+    	    
+        <LinearLayout
+             android:layout_height="wrap_content"
+    	    android:layout_width="fill_parent"
+    	    android:minHeight="25dip"
+             >
+            
+              <View 
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:background="#969696"/>
+    	      <TextView
+        android:id="@+id/text_KPI"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textSize="12dip"
+       	android:layout_gravity="center_vertical"
+       	android:gravity="center"
+         />
+    
+    <View 
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:background="#969696"/>
+
+    <TextView
+        android:id="@+id/text_Threshold"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:textSize="12dip"
+        android:layout_gravity="center_vertical"
+       	android:gravity="center"
+        android:layout_weight="1"
+        android:text="Threshold" />
+    
+     <View 
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:background="#969696"/>
+
+    <TextView
+        android:id="@+id/text_ActualValue"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+         android:textSize="12dip"
+        android:layout_gravity="center_vertical"
+        />
+    <View 
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:background="#969696"/>
+
+    <TextView
+        android:id="@+id/text_Result"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+         android:textSize="@dimen/app_content_txt_size"
+         android:layout_gravity="center_vertical"
+       	android:gravity="center"
+        />
+    
+    	        <View 
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:background="#969696"/>
+        </LinearLayout>
+    	    
+      <View 
+          
+          android:id="@+id/show_least_line"
+          android:visibility="gone"	
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#969696"/>
+    	    
+    	        
+
+</LinearLayout>
+
+
+

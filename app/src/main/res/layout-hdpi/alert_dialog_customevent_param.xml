@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <View style="@style/task_listdivider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/sys_alarm_param1" />
+
+            <com.walktour.framework.ui.BasicSpinner
+                android:id="@+id/spinner_param1"
+                style="@style/drop_fillhorizontal"
+                android:layout_weight="1" 
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/sys_alarm_condition1" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="4" >
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/spinner_condition1"
+                    style="@style/drop_fillhorizontal"
+                    android:layout_weight="3" />
+
+                <EditText
+                    android:id="@+id/edit_value1"
+                    style="@style/edit_fillhorizontal_digit"
+                    android:layout_weight="1" 
+                    android:inputType="numberSigned|numberDecimal"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/task_listdivider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/sys_alarm_param2" />
+
+            <com.walktour.framework.ui.BasicSpinner
+                android:id="@+id/spinner_param2"
+                style="@style/drop_fillhorizontal"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/sys_alarm_condition2" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="4" >
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/spinner_condition2"
+                    style="@style/drop_fillhorizontal"
+                    android:layout_weight="3" />
+
+                <EditText
+                    android:id="@+id/edit_value2"
+                    style="@style/edit_fillhorizontal_digit"
+                    android:layout_weight="1" 
+                    android:inputType="numberSigned|numberDecimal"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/task_listdivider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/sys_alarm_param3" />
+
+            <com.walktour.framework.ui.BasicSpinner
+                android:id="@+id/spinner_param3"
+                style="@style/drop_fillhorizontal"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                style="@style/setting_sort_left_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/sys_alarm_condition3" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="4" >
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/spinner_condition3"
+                    style="@style/drop_fillhorizontal"
+                    android:layout_weight="3" />
+
+                <EditText
+                    android:id="@+id/edit_value3"
+                    style="@style/edit_fillhorizontal_digit"
+                    android:layout_weight="1" 
+                    android:inputType="numberSigned|numberDecimal"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/task_listdivider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/sys_alarm_duration" 
+            style="@style/setting_sort_left_text_2"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <com.walktour.framework.ui.BasicSpinner
+                style="@style/drop_fillhorizontal"
+                android:layout_weight="3" 
+                android:visibility="invisible"
+                />
+
+             <EditText
+            android:id="@+id/edit_duration"
+            style="@style/edit_fillhorizontal_digit"
+            android:layout_weight="1"
+            android:minHeight="36dip" 
+            android:inputType="number"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/task_listdivider" />
+
+</LinearLayout>

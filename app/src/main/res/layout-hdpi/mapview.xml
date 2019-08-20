@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/auto_mark_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/left_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/center_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/right_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+    <!-- android:background="@drawable/page_bg" -->
+
+    <FrameLayout
+        android:id="@+id/FrameLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <com.walktour.gui.map.MapView
+            android:id="@+id/view_map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFFFF" >
+        </com.walktour.gui.map.MapView>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:id="@+id/linearTool"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+            <ImageButton
+                android:id="@+id/zoominbtn"
+                style="@style/zoom_in_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/zoomoutbtn"
+                style="@style/zoom_out_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="bottom"
+                android:id="@+id/locationbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/location_item" />
+            <!-- style="@style/location_item_bg" -->
+        </LinearLayout>
+        <TextView
+            android:layout_gravity="right|top"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_init_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/app_content_txt_size"
+            android:textColor="@color/black"
+            tools:text="初始化信息" />
+        <TextView
+            android:id="@+id/textViewInfo"
+            android:layout_width="115dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/black" >
+        </TextView>
+
+        <!-- 阀值图例 -->
+
+        <com.walktour.gui.map.ThresholdView
+            android:id="@+id/threshold_view"
+            android:layout_width="fill_parent"
+            android:layout_height="15dip"
+            android:layout_gravity="bottom" >
+        </com.walktour.gui.map.ThresholdView>
+
+        <com.walktour.gui.applet.ControlPanel
+            android:id="@+id/ControlPanel"
+            android:layout_width="170dip"
+            android:layout_height="170dip"
+            android:clickable="true"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <com.walktour.gui.applet.ControlBar
+        android:id="@+id/LineraLayoutToolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+
+</LinearLayout>

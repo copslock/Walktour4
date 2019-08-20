@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:id="@+id/switch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_scene_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="1"
+                android:textSize="@dimen/app_content_txt_size"
+                tools:text="停车场进出口测试"/>
+
+            <ImageButton
+                android:id="@+id/ib_start_test"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_simple_click"
+                android:src="@drawable/singlestation_test_start"/>
+
+            <ImageButton
+                android:id="@+id/ib_upload"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_simple_click"
+                android:src="@drawable/singlestation_upload"/>
+
+            <Switch
+                android:id="@+id/switch_controller"
+                android:layout_width="wrap_content"
+                android:theme="@style/single_station_switch"
+                android:layout_height="wrap_content"
+                android:checked="true"/>
+
+        </LinearLayout>
+
+        <View style="@style/list_divider"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/test_task_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switch_layout"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageButton
+                    android:id="@+id/task_check"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="13dp"
+                    android:src="@drawable/btn_check_on"/>
+
+                <TextView
+                    android:id="@+id/task_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/task_check"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="5dp"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+            </RelativeLayout>
+
+            <View style="@style/list_divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/single_station_title_kpis"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/single_station_title_threshold"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/single_station_title_test_value"
+                    android:textSize="@dimen/app_content_txt_size"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/single_station_title_results"
+                    android:textSize="@dimen/app_content_txt_size"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/list_divider"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/test_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/test_task_layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_margin="1dp"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp">
+
+            <TextView
+                android:id="@+id/threshold_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/threshold_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/real_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/app_content_txt_size"/>
+
+            <TextView
+                android:id="@+id/test_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/app_content_txt_size"/>
+        </LinearLayout>
+
+        <View style="@style/list_divider"/>
+    </LinearLayout>
+
+</RelativeLayout>

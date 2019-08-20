@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="25dp"
+    android:gravity="center_vertical"
+    android:background="#E6E6E6">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:textAllCaps="true" 
+        android:textColor="@color/app_main_text_color"
+        android:textSize="@dimen/app_second_title_txt_size"
+        android:text="hhhhhhh"
+        android:layout_gravity="center_vertical"
+        android:textIsSelectable="false" />
+
+</LinearLayout>

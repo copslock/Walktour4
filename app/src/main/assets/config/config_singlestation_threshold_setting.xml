@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SinglestationThresholdSetting>
+    <Type type="indoor">
+      <Scene name="coverage" type="0">
+        <Threshold Task="FTP_Download" KPI="RS Coverage Ratio" operator="&gt;=" value="95" unit="%"/>
+      </Scene>
+      <Scene name="handover_gate" type="1">
+        <Threshold Task="FTP_Download" KPI="Attempt Handover Times" operator="=" value="10" unit="times"/>
+        <Threshold Task="FTP_Download" KPI="Handover Success Ratio" operator="&gt;=" value="95" unit="%"/>
+        <Threshold Task="MOC_CSFB" KPI="Attempt Handover Times" operator="=" value="10" unit="times"/>
+        <Threshold Task="MOC_CSFB" KPI="Handover Success Ratio" operator="&gt;=" value="95" unit="%"/>
+      </Scene>
+      <Scene name="handover_indoor" type="1">
+        <Threshold Task="FTP_Download" KPI="Attempt Handover Times" operator="=" value="10" unit="times"/>
+        <Threshold Task="FTP_Download" KPI="Handover Success Ratio" operator="&gt;=" value="95" unit="%"/>
+        <Threshold Task="MOC_CSFB" KPI="Attempt Handover Times" operator="=" value="10" unit="times"/>
+        <Threshold Task="MOC_CSFB" KPI="Handover Success Ratio" operator="&gt;=" value="95" unit="%"/>
+      </Scene>
+      <Scene name="handover_park" type="1">
+        <Threshold Task="FTP_Download" KPI="Attempt Handover Times" operator="=" value="10" unit="times"/>
+        <Threshold Task="FTP_Download" KPI="Handover Success Ratio" operator="&gt;=" value="95" unit="%"/>
+        <Threshold Task="MOC_CSFB" KPI="Attempt Handover Times" operator="=" value="10" unit="times"/>
+        <Threshold Task="MOC_CSFB" KPI="Handover Success Ratio" operator="&gt;=" value="95" unit="%"/>
+      </Scene>
+      <Scene name="leakage" type="2">
+        <Threshold Task="Idle" KPI="PCI Sample" operator="&lt;=" value="5" unit="%"/>
+        <Threshold Task="Idle" KPI="RSRP" operator="&lt;=" value="-110" unit="dBm"/>
+      </Scene>
+      <Scene name="performance" type="3">
+        <Threshold Task="Attach" KPI="Attempt Times" operator="=" value="3" unit="times"/>
+        <Threshold Task="Attach" KPI="Success Ratio" operator="=" value="100" unit="%"/>
+        <Threshold Task="FTP_Upload" KPI="Average Rate" operator="&gt;=" value="10" unit="Mbps"/>
+        <Threshold Task="FTP_Download" KPI="Average Rate" operator="&gt;=" value="40" unit="Mbps"/>
+        <Threshold Task="MOC_CSFB" KPI="Attampt Call Times(CSFB)" operator="=" value="10" unit="times"/>
+        <Threshold Task="MOC_CSFB" KPI="Call Sucess Ratio(CSFB)" operator="=" value="100" unit="%"/>
+        <Threshold Task="MOC_VOLTE" KPI="Call Sucess Ratio(Volte)" operator="=" value="100" unit="%"/>
+        <Threshold Task="MOC_CSFB" KPI="Call Return Delay(CSFB)" operator="&lt;" value="1.5" unit="s"/>
+        <Threshold Task="MOC_CSFB" KPI="Call Connect Delay(CSFB)" operator="&lt;" value="10" unit="s"/>
+        <Threshold Task="MOC_CSFB" KPI="Call Return Success Ratio(CSFB)" operator="=" value="100" unit="%"/>
+
+      </Scene>
+    </Type>
+    <Type type="outdoor">
+      <Scene name="coverage" type="0">
+        <Threshold Task="FTP_Download" KPI="Average Rate" operator="&gt;=" value="25" unit="Mbps"/>
+      </Scene>
+      <Scene name="performance" type="3">
+        <Threshold Task="Attach" KPI="Attempt Times" operator="=" value="3" unit="times"/>
+        <Threshold Task="Attach" KPI="Success Ratio" operator="=" value="100" unit="%"/>
+        <Threshold Task="FTP_Upload" KPI="Average Rate" operator="&gt;=" value="10" unit="Mbps"/>
+        <Threshold Task="FTP_Download" KPI="Average Rate" operator="&gt;=" value="40" unit="Mbps"/>
+        <Threshold Task="MOC_CSFB" KPI="Call Established Sucess Ratio(CSFB)" operator="&gt;=" value="95" unit="%"/>
+        <Threshold Task="MOC_CSFB" KPI="Attampt Call Times(CSFB)" operator="=" value="3" unit="times"/>
+        <Threshold Task="MOC_CSFB" KPI="Call Sucess Ratio(CSFB)" operator="=" value="100" unit="%"/>
+        <Threshold Task="MOC_VOLTE" KPI="Call Sucess Ratio(Volte)" operator="=" value="100" unit="%"/>
+        <Threshold Task="MOC_VOLTE" KPI="Handover Success Times(eSRVCC)" operator="&gt;=" value="1" unit="times"/>
+      </Scene>
+    </Type>
+</SinglestationThresholdSetting>

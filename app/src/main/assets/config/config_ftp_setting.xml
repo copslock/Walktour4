@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ftp>
+	<!-- 高铁获取线路ftp设置 -->
+	<highspeedrail>
+		<serverIp value="PT13TnhJRTJMakl6TGpqTHljVE0=" />
+
+		<serverIp value="MGdqTHdUUXpMallNdUVqTg==" />
+
+		<serverIp value="PT13Tno0a3hMakUxTVNqTHlFVE0=" />
+
+		<serverPort value="PWpFTQ==" />
+
+		<serverUser value="dDkyWVoyeHB1bEda" />
+
+		<serverPassword value="PVFtY2MzZFB6QkVj" />
+
+		<serverPath value="PT13THMyaFNZV2xacGgwTA==" />
+	</highspeedrail>
+	<!-- 地铁获取线路ftp设置 -->
+	<metrorail>
+		<serverIp value="PT13TnhJRTJMakl6TGpqTHljVE0=" />
+
+		<serverIp value="MGdqTHdUUXpMallNdUVqTg==" />
+
+		<serverIp value="PT13Tno0a3hMakUxTVNqTHlFVE0=" />
+
+		<serverPort value="PWpFTQ==" />
+
+		<serverUser value="dDkyWVoyeHB1bEda" />
+
+		<serverPassword value="PVFtY2MzZFB6QkVj" />
+
+		<serverPath value="PT13TGRISnZsMTBM" />
+	</metrorail>
+
+	<!--升级服务，通过JNI库获取最新的版本信息，再调用FTP的jar包下载版本安装 -->
+	<versionupgrade>
+		<serverIp value="emdqTHdUUXpMallNdUVqTg==" />
+
+		<serverIp value="PT1BTno0a3hMakUxTVNqTHlFVE0=" />
+
+		<serverIp value="d0FUTXVqRTJMakVMeWNUTQ==" />
+
+		<serverPort value="PWpFTQ==" />
+
+		<serverUser value="PVVHZGQzSnAydDJk" />
+
+		<serverPassword value="cXBYZTREVXlQeVZPTVIwSQ==" />
+
+		<serverCatalog value="Walktour3.8"/>
+	</versionupgrade>
+
+	<!-- 异常日志log上传的ftp -->
+	<log>
+		<serverIp value="emdqTHdUUXpMallNdUVqTg==" />
+
+		<serverIp value="PT1BTno0a3hMakUxTVNqTHlFVE0=" />
+
+		<serverIp value="d0FUTXVqRTJMakVMeWNUTQ==" />
+
+		<serverPort value="PWpFTQ==" />
+
+		<serverUser value="PVVHZGQzSnAydDJk" />
+
+		<serverPassword value="cXBYZTREVXlQeVZPTVIwSQ==" />
+
+		<serverCatalog value="LOG" />
+	</log>
+</ftp>

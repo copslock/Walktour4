@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <body style="margin:0px">
+        <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+        <div id="player"></div>
+
+        <script type="text/javascript">
+            var hasPlayerEventFunc = false;
+            if (typeof(PlayerEventFunc) == "undefined") {
+                hasPlayerEventFunc = false;
+            } else {
+                hasPlayerEventFunc = true;
+            }
+            
+            //由YoutubeJavascriptInterface赋值
+            var quality = "";				//请求播放的品质
+            var available_quality = "";     //由quality计算出有效的最接近的品质
+            var player_quality = "";        //从onPlayerStateChange事件里获取的品质
+        
+            // 2. This code loads the IFrame Player API code asynchronously.
+            var tag = document.createElement('script');
+
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            // 3. This function creates an <iframe> (and YouTube player)
+            //    after the API code downloads.
+            // controls: 在视频播放器中显示播放器控件。
+            // enablejsapi: 允许使用 IFrame Player API 控制播放器。
+            // fs: 播放器将显示可通过全屏模式观看视频的按钮。
+            // modestbranding: 不在播放器控制栏中显示 YouTube 徽标。
+            // rel: 播放器应在第一个视频播放结束时显示相关的视频。
+            // showinfo: 在视频开始播放前显示视频标题和评分等信息。
+            var player;
+            function onYouTubeIframeAPIReady() {
+//                console.log("onYouTubeIframeAPIReady called, clientWidth:" + document.body.clientWidth
+//                	+ " clientHeight:" + document.body.clientHeight);
+//                console.log("onYouTubeIframeAPIReady called, innerWidth:" + window.innerWidth
+//                	+ " innerHeight:" + window.innerHeight);
+                console.log("onYouTubeIframeAPIReady called, clientWidth:" + document.documentElement.clientWidth
+                	+ " clientHeight:" + document.documentElement.clientHeight);
+                	
+                player = new YT.Player('player', {
+                    width: document.documentElement.clientWidth,
+                    height: document.documentElement.clientHeight,
+                    playerVars: {
+                    	'controls': 0,
+                    	'enablejsapi': 1,
+                    	'fs': 0,
+                    	'modestbranding': 1,
+                    	'rel': 0,
+                    	'showinfo': 0,
+                    },
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange,
+                        'onPlaybackQualityChange': onPlayerPlaybackQualityChange,
+                        'onError': onPlayerError
+                    }
+                });
+            }
+        </script>
+        <script type="text/javascript">
+            // 4. The API will call this function when the video player is ready.
+            function onPlayerReady(event) {
+                if (hasPlayerEventFunc) {
+                    PlayerEventFunc.onPlayerReady();
+                }
+            }
+
+            // 5. The API calls this function when the player's state changes.
+            //    The function indicates that when playing a video (state=1),
+            //    the player should play for six seconds and then stop.
+            function onPlayerStateChange(event) {
+                console.log("onPlayerStateChange " + event.data 
+                + " duration:" + event.target.getDuration()
+                + " quality:" + event.target.getPlaybackQuality()
+                + " Fraction:" + event.target.getVideoLoadedFraction()
+                + " currentTime:" + event.target.getCurrentTime());
+
+                if (player_quality == "") {
+                    var quality_tmp = event.target.getPlaybackQuality();
+                    if (quality_tmp != "" && quality_tmp != "unknown")  {
+                        player_quality = quality_tmp;
+                    }
+                }
+
+                if (available_quality == "") {
+                    available_quality = FindAvailableQuality(quality);
+                    
+					//这里设置了品质，也会在onPlayerPlaybackQualityChange事件再设置一次，所以这里取消设置品质。
+//                    var cur_quality = event.target.getPlaybackQuality();
+//                    if (available_quality != "" && available_quality != 'default' && cur_quality != available_quality){
+//                        console.log("onPlayerStateChange cur_quality:" + cur_quality + " set_quality: " + available_quality);
+//                        event.target.setPlaybackQuality(available_quality);
+//                    }
+                }
+
+                if (hasPlayerEventFunc) {
+                    PlayerEventFunc.onPlayerStateChange(event.data);
+                }
+                
+                if (event.data == 1) {  //1:playing
+                    custom_player.CheckPlayStart();
+                }
+            }
+            
+            function onPlayerPlaybackQualityChange(event) {
+				console.log("onPlaybackQualityChange event.data:" + event.data);
+
+                if (available_quality == "") {
+                    available_quality = FindAvailableQuality(quality);
+                }
+                
+				//java代码设置的品质已经可以锁定品质，这里只是留个后备。
+				var set_quality = available_quality;
+				if (set_quality != "" && quality != 'auto' && event.data != set_quality){
+					console.log("onPlaybackQualityChange event.data:" + event.data + " set_quality: " + set_quality);
+					event.target.setPlaybackQuality(set_quality);
+				}
+                
+                if (hasPlayerEventFunc) {
+                    PlayerEventFunc.onPlayerPlaybackQualityChange(event.data);
+                }
+            }
+            
+            function onPlayerError(event) {
+                if (hasPlayerEventFunc) {
+                    PlayerEventFunc.onPlayerError(event.data);
+                }
+            }
+        </script>
+        <script type="text/javascript">
+            function onCustomPlayerPlayStart() {
+                if (hasPlayerEventFunc) {
+                    PlayerEventFunc.onCustomPlayerPlayStart();
+                }
+            }
+        </script>
+        <script type="text/javascript">
+            var custom_player = new function CustomPlayer() {
+                var playStarted = false;
+                
+                function PCheckPlayStart () {
+                    if (playStarted == true) {
+                        return;
+                    }
+
+                    var cur_time = player.getCurrentTime();
+                    if (cur_time > 0) {
+                        playStarted = true;
+                        onCustomPlayerPlayStart();
+                        return;
+                    }
+                    
+                    setTimeout(PCheckPlayStart, 20);
+                }
+                this.CheckPlayStart = function () {
+                    PCheckPlayStart();
+                };
+            }
+            
+            function FindAvailableQuality(quality_name) {
+                var quality_id = GetQualityId(quality_name);
+                
+                var quality_name_curr = "";
+                var quality_id_curr = 0;
+				var quality_name_lowest = "";
+				var quality_id_lowest = 0;
+
+                var arr = player.getAvailableQualityLevels();
+
+                for (var i = 0; i<arr.length; i++) {
+                    var quality_name_tmp = arr[i];
+                    var quality_id_tmp = GetQualityId(quality_name_tmp);
+                    console.log("AvailableQualityLevels quality:" + quality_name_tmp + " id:" + quality_id_tmp);
+                    
+					if ((quality_id_lowest == 0) || (quality_id_tmp < quality_id_lowest)) {
+						quality_id_lowest = quality_id_tmp;
+                        quality_name_lowest = quality_name_tmp;
+					}
+
+                    if ((quality_id_tmp <= quality_id) && (quality_id_tmp > quality_id_curr)) {
+                        quality_id_curr = quality_id_tmp;
+                        quality_name_curr = quality_name_tmp;
+                    }
+                }
+                
+				//如果没有找到相应的品质，则返回最小品质。
+				if ((quality_id_curr == 0) && (quality_id_lowest > 0)){
+					quality_id_curr = quality_id_lowest;
+                    quality_name_curr = quality_name_lowest;
+				}
+
+                console.log("FindAvailableQuality quality:" + quality_name 
+                    + " find_quality:" + quality_name_curr
+                    + " id:" + quality_id_curr);
+                
+                return quality_name_curr;
+            }
+            
+			//下列的id编号只用于找出存在的最接近的品质，与业务定义的品质代号无关。
+			//default、auto等不属于存在的品质
+            function GetQualityId(quality_name) {
+                var quality_id = 0;
+                
+                if (quality_name == "tiny") {			//144P/极速
+                    quality_id = 1;
+                } else if (quality_name == "small") {	//240P/标清
+                    quality_id = 2;
+                } else if (quality_name == "medium") {	//360P/高清
+                    quality_id = 3;
+                } else if (quality_name == "large") {	//480P/超清
+                    quality_id = 4;
+                } else if (quality_name == "hd720") {	//720P
+                    quality_id = 5;
+                } else if (quality_name == "hd1080") {	//1080P
+                    quality_id = 6;
+				} else if (quality_name == "hd1440") {	//1440P/2K
+                    quality_id = 7;
+				} else if (quality_name == "hd2160") {	//2160P/4K
+                    quality_id = 8;
+                } else {    //other
+                    quality_id = 9;
+                }
+                
+                return quality_id;
+            }
+        </script>
+    </body>
+</html>
+

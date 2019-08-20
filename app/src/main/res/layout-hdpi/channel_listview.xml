@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+     >
+    
+	<include layout="@layout/basic_title" android:id="@+id/title_layout"/>
+	
+    <ListView
+        android:layout_below="@id/title_layout"
+        android:id="@+id/ListView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/app_main_bg_color"
+        android:divider="@drawable/list_divider"
+        android:fadingEdge="none"
+        android:cacheColorHint="#00000000"
+        android:layout_marginBottom="57dip" />
+
+
+
+     <LinearLayout
+        android:id="@+id/DeleteBar"
+        android:layout_width="fill_parent"
+        android:layout_height="58dip"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:background="@color/basic_bg_color"
+         >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/list_divider" />
+
+
+
+         <Button
+            android:id="@+id/add_channel_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/base_list_item_bg"
+            android:textColor="@color/app_main_text_color"
+            android:textSize="@dimen/app_defult_btn_txt_size"
+            android:text="@string/scan_add_frequency" />
+    </LinearLayout>
+</RelativeLayout>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_bg_color"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="45dip"
+    android:orientation="horizontal"
+    android:paddingLeft="10dip" >
+
+    <CheckBox
+        android:id="@+id/ck_rab_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:button="@drawable/checkbox"
+        android:checked="false"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/tv_rab_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:text="FTp-down"
+        android:layout_marginLeft="20dip"
+        android:textColor="@color/app_main_text_color"
+        android:layout_toRightOf="@id/ck_rab_task" />
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:fillViewport="true">
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+		<TextView
+			android:textSize="@dimen/app_content_txt_size"
+			android:text="@string/FileName"
+			android:id="@+id/TextFileName"
+			android:textAppearance="?android:attr/textAppearance"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></TextView>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<EditText
+				android:textSize="@dimen/app_content_txt_size"
+				android:layout_height="wrap_content"
+				android:id="@+id/FileName"
+				android:layout_weight="1"
+				android:layout_width="0dip"/>
+			<Button
+				android:textSize="@dimen/app_content_txt_size"
+				android:id="@+id/SelectFileBtn"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/SelectFile" />
+			</LinearLayout>
+
+		<TextView
+			android:textSize="@dimen/app_content_txt_size"
+			android:text=""
+			android:id="@+id/empty"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_weight="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></TextView>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			style="@android:style/ButtonBar">
+
+			<Button
+				android:textSize="@dimen/app_content_txt_size"
+				android:id="@+id/ImportBtn"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/Import" />
+
+			<Button
+				android:textSize="@dimen/app_content_txt_size"
+				android:id="@+id/discardButton"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/menu_doNotSave" />
+
+		</LinearLayout>
+</LinearLayout>
+</ScrollView>

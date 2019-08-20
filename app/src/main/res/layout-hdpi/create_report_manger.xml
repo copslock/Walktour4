@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/task_ftp_title"
+        layout="@layout/basic_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical|center"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <LinearLayout 
+                android:id="@+id/createsheetlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical" > 
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.walktour.gui.applet.ControlBar
+        android:id="@+id/ControlBar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom" />
+
+</LinearLayout>

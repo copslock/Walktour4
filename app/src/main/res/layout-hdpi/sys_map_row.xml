@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/setting_chart_table_row"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="40dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/img_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/remove" />
+
+            <TextView
+                android:id="@+id/sys_map_threshold_text"
+                style="@style/setting_sort_left_text_2"
+                android:layout_height="40dp"
+                android:text=""
+                android:textColor="@color/app_main_text_color" />
+        </LinearLayout>
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:id="@+id/SpinnerColorDefault"
+            android:layout_width="120dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/drop"
+            android:drawSelectorOnTop="true"
+            android:paddingRight="5dp" 
+            style="@style/task_drop_view"/>
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/box2"
+            android:orientation="horizontal"
+            android:paddingRight="5dp"
+            android:visibility="gone" >
+
+            <com.walktour.framework.view.colorpicker.ColorPanelView
+                android:id="@+id/SpinnerColor"
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dip"
+                android:layout_toLeftOf="@+id/img_color_select" />
+
+            <ImageView
+                android:id="@+id/img_color_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/fuh" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:src="@drawable/epx"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View style="@style/setting_divider" />
+
+</LinearLayout>

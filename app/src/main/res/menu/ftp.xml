@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	<item 
+	android:id="@+id/menu_newftp" 
+	android:icon="@android:drawable/ic_menu_add" 
+	android:title="@string/sys_ftp_new">
+	</item>
+	
+	<item 
+	android:id="@+id/menu_multichoice" 
+	android:icon="@android:drawable/ic_menu_agenda" 
+	android:title="@string/select_multi">
+	</item>
+	
+	<item 
+	android:id="@+id/menu_delall" 
+	android:icon="@android:drawable/ic_menu_delete" 
+	android:title="@string/delete_all">
+	</item>
+
+</menu>

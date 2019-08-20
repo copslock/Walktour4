@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/base_list_item_bg_nomal"
+     >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="58dip"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/basic_title" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/setting_sort_title_bgcolor" />
+
+        <include
+            android:id="@+id/workordertitle"
+            layout="@layout/listview_item_order" />
+
+        <View style="@style/task_listdivider" />
+        <ListView
+            android:id="@+id/list_work_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/list_divider"
+            android:layout_marginBottom="58dip"
+            android:footerDividersEnabled="true" 
+            android:visibility="gone"
+            />
+        
+        <ListView
+            android:id="@+id/list_work_order"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/list_divider"
+            android:footerDividersEnabled="true" 
+             />
+    </LinearLayout>
+    
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="58dip"
+    android:background="@drawable/menu_bottom_bg"
+	android:layout_alignParentBottom="true"	
+    android:orientation="horizontal"
+    android:weightSum="4" >
+
+    <Button
+        android:id="@+id/Button01"
+        style="@style/toolbar_button_bg"
+        android:textSize="16sp"
+        android:layout_weight="1"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/Button02"
+        style="@style/toolbar_button_bg"
+        android:textSize="16sp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/Button04"
+        android:textSize="16sp"
+        style="@style/toolbar_button_bg"
+        android:layout_weight="1"
+        android:visibility="gone" />
+</LinearLayout>
+
+</RelativeLayout>

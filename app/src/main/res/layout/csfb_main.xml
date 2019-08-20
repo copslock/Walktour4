@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+ <!-- @drawable/csfb_bg_2 -->
+
+    <include
+        android:id="@+id/task_ftp_title"
+        layout="@layout/basic_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@color/setting_sort_title_bgcolor"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_main_bg_color"
+        android:paddingBottom="5dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dip"
+            android:background="@drawable/run_state_shape"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/timeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:text="12:06:09"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:text="@string/csfb_faild_reasion"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/errTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:text="原因分析：原因分析：原因分析：原因分析：原因分析：原因分析：原因分析：原因分析："
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/app_content_txt_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/netTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:text="起呼网络:GSM"
+                android:textColor="@color/app_main_text_color"
+                android:textSize="@dimen/app_content_txt_size" />
+
+            <LinearLayout
+                android:id="@+id/addPara_Ly"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/timeline_track"
+            android:layout_width="3dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="72.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/feed_item_track" />
+
+        <ListView
+            android:id="@+id/list_id"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null" />
+
+        <RelativeLayout
+            android:id="@+id/l3msg_info_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center"
+            android:layout_marginLeft="80dip"
+            android:background="@color/white"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/info_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_title_bg_color"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/title_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dip"
+                    android:text="@string/act_info"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/app_content_txt_size" />
+
+                <Button
+                    android:id="@+id/close_btn"
+                    android:layout_width="60dip"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/btn_summit"
+                    android:text="@string/pref_close"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/app_content_txt_size" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_divider"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@id/info_title"
+                android:background="@color/setting_sort_title_bgcolor"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/view_divider"
+                android:background="@color/white" >
+
+                <WebView
+                    android:id="@+id/info_web"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/loading_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center"
+        android:gravity="center_vertical|center" >
+
+        <ImageButton
+            android:id="@+id/replaybtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|center"
+            android:layout_margin="8dp"
+            android:background="@drawable/main_replay_2"
+            android:gravity="center_vertical|center" />
+    </LinearLayout>
+
+</LinearLayout>

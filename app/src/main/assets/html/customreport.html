@@ -1,0 +1,67 @@
+<html ng-app="ionicApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Ionic collapsible list</title>
+    <link href="lib/ionic/css/ionic.min.css" rel="stylesheet">
+    <link href="lib/frozen.css" rel="stylesheet">
+    <link href="css/App.css" rel="stylesheet">
+
+    <script src="lib/ionic/js/ionic.bundle.min.js"></script>
+    <script src="js/App.js"></script>
+    <script src="js/AppData.js"></script>
+    <script>
+        $.mobile.pushStateEnabled = false;
+    </script>
+  </head>
+
+  <body ng-controller="MyCtrl">
+    
+<!--    <ion-header-bar class="bar-positive">-->
+<!--      <h1 class="title">Ionic collapsible list</h1>-->
+<!--    </ion-header-bar>-->
+    <ion-content class="no-header">
+      <div class="ui-tab" id="tab2" ng-show="(tabNames.length> 1)">
+        <ul class="ui-tab-nav">
+          <li class="tab_default" ng-repeat="d in tabNames" ng-click="activeSlide($index)" ng-class="slectIndex==$index ? 'current' : '' ">{{d}}</li>
+        </ul>
+      </div>
+      <ion-slide-box on-slide-changed="slideChanged(index)" active-slide="slideIndex" does-continue="false" show-pager="false">
+        <ion-slide ng-repeat="groups in pages">
+          <ion-content ng-class="pages.lenght > 1? 'has-footer' : '' ">
+          <ion-list>
+            <div ng-repeat="group in groups">
+              <ion-item class="item-stable item-icon-right groupTitle"
+                    ng-click="toggleGroup(group)"
+                    ng-class="isGroupShown(group) ? 'rowExpanted' : 'rowColspaned'">
+                <span class="groupTitle">{{group.name}}</span>
+                <i class="icon" ng-class="isGroupShown(group) ? 'ion-ios-arrow-down' : 'ion-ios-arrow-right'" style="font-size: 13px;"></i>
+              </ion-item>
+              <ion-item class="item-accordion" ng-show="isGroupShown(group)">
+                <div class="gridcont">
+                  <ul>
+                    <li style="height:1px;"></li>
+                    <li ng-repeat="item in group.items"> 
+                      <span ng-class="item.single ? 'gridkpi2' : 'gridkpi' ">{{item.kpi1}}</span>
+                      <span ng-class="item.single ? 'gridvalue2' : 'gridvalue' ">{{item.value1}}</span>
+                      <span ng-class="item.single ? 'gridsplitHide' : 'gridsplit' ">|</span>
+                      <span ng-class="item.single ? 'gridkpiHide' : 'gridkpi' ">{{item.kpi2}}</span>
+                      <span ng-class="item.single ? 'gridvalueHide' : 'gridvalue' ">{{item.value2}}</span>
+                    </li>
+                  </ul>
+                </div>
+              </ion-item>
+            </div>
+          </ion-list>
+          </ion-content>
+        </ion-slide>
+      </ion-slide-box>
+    </ion-content>
+
+    <style>
+      .customMesure{font-size:1em}
+      #dvCompute{position:absolute;visibility:hidden;}
+    </style>
+    <div class="customMesure" id="dvCompute"></div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/setting_sort_left_up_text"
+            android:text="@string/file_name"
+            android:textColor="@color/app_main_text_color" />
+
+        <TextView
+            android:id="@+id/file_name_txt"
+            style="@style/setting_sort_left_down_text"
+            android:layout_height="wrap_content"
+            android:textColor="@color/info_param_color" />
+    </LinearLayout>
+
+    <View style="@style/setting_divider" />
+
+    <TextView
+        style="@style/setting_sort_left_text"
+        android:text="@string/report_type" />
+
+    <ListView
+        android:id="@+id/report_type_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+    </ListView>
+
+</LinearLayout>

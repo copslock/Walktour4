@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/work_order_fj_testing_content"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible" >
+    <View
+        style="@style/setting_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" 
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/left1"
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/work_order_fj_testing_business" />
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/left1"
+            android:layout_marginLeft="10dp"
+            android:gravity="right">
+            <Button
+            android:id="@+id/work_order_fj_testing_business"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/drop"
+            android:drawSelectorOnTop="true"
+            android:minHeight="30dp"
+            android:gravity="center"
+            android:text="@string/work_order_fj_select_action"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+        </LinearLayout>
+
+        
+    </RelativeLayout>
+
+    <!-- DT语音测试 -->
+	<include layout="@layout/work_order_fj_dt_testing_content"/>
+	<!-- CQT语音测试 -->
+    <include layout="@layout/work_order_fj_cqt_voice_testing_content"/>
+	<!-- CQT数据测试 -->
+    <include layout="@layout/work_order_fj_cqt_data_testing_content"/>
+</LinearLayout>

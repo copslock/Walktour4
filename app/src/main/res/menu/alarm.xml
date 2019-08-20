@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	<item 
+	android:id="@+id/menu_checked" 
+	android:icon="@drawable/cb_check_2"
+	android:title="@string/sys_alarm_allon">
+	</item>
+	
+	<item 
+	android:id="@+id/menu_unchecked" 
+	android:icon="@drawable/cb_uncheck_2"
+	android:title="@string/sys_alarm_alloff">
+	</item>
+
+</menu>
+

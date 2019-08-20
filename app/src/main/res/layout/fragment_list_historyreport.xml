@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/fragment_main_layout"
+              android:orientation="vertical"
+    >
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:id="@+id/battchdeletelayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/list_view"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/control_bar_divider_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:textSize="@dimen/app_content_txt_size"
+                android:id="@+id/batchdeletebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/task_test_main_bg"
+                android:text="@string/single_station_batch_delete"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@color/control_bar_divider_color"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:textSize="@dimen/app_content_txt_size"
+                android:id="@+id/rereportbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/task_test_main_bg"
+                android:text="@string/single_station_regenerate_report"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomConfirmOrCancellayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/control_bar_divider_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:textSize="@dimen/app_content_txt_size"
+                android:id="@+id/confirmbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/task_test_main_bg"
+                android:text="@string/control_ok"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/control_bar_divider_color"/>
+
+            <Button
+                android:textSize="@dimen/app_content_txt_size"
+                android:id="@+id/cancelbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/task_test_main_bg"
+                android:text="@string/control_cancel"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

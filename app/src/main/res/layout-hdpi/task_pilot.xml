@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/basic_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/task_title" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_weight="50" >
+
+        <LinearLayout
+            android:id="@+id/task_centent_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#2d3034"
+            android:orientation="vertical" >
+
+            <!-- 网络选择 -->
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/sc_taskcw_netchoice"
+                    android:textSize="18dip" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/network_selete_spinner"
+                    style="@style/task_drop_view"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:drawSelectorOnTop="true" />
+            </RelativeLayout>
+
+            <!-- 添加频点 -->
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/sc_add_frequency"
+                    android:textSize="18dip" />
+
+                <Button
+                    android:id="@+id/add_frequency_btn"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/sc_title_add"
+                    android:textColor="@color/white"
+                    android:background="@drawable/dialog_btn" />
+
+                <View style="@style/setting_divider" />
+            </RelativeLayout>
+
+            <!-- 业务类别 -->
+
+            <RelativeLayout
+                android:id="@+id/business_category_layoot"
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/sc_business_category"
+                    android:textSize="18dip" />
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/business_category_spinner"
+                    style="@style/task_drop_view"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:drawSelectorOnTop="true" />
+
+                <View style="@style/setting_divider" />
+            </RelativeLayout>
+            
+            
+               <!--带宽-->
+                                
+                <RelativeLayout
+                    android:id="@+id/bandwidth_layout"
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_bandwidth"
+                        android:textSize="18dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/bandwidth_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+                     <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+            <!-- 信号设置 -->
+
+            <LinearLayout
+                android:id="@+id/etopn_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/setting_sort_title"
+                    android:text="@string/sc_etopn_signal_settings" />
+                <!-- 循环前缀 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_cyclic_prefix"
+                        android:textSize="18dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/cyclic_prefix_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 信号个数 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_signal_amount"
+                        android:textSize="18dip" />
+
+                    <EditText
+                        android:id="@+id/signal_amount_edit"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        android:singleLine="true" />
+
+                    <View style="@style/task_listdivider" />
+                </RelativeLayout>
+
+                <!-- 发射天线个数 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_transmitting_antenna_amount"
+                        android:textSize="18dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/transmitting_antenna_amount_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 载波RSSI阈值 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_carrier_rss_threshold"
+                        android:textSize="18dip" />
+
+                    <EditText
+                        android:id="@+id/carrier_rss_threshold_edit"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"             
+						android:inputType="numberSigned"
+						android:digits="1234567890-" 
+                        android:maxLength="9"
+                        android:singleLine="true" />
+
+                    <View style="@style/task_listdivider" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/setting_sort_title"
+                    android:text="@string/sc_synchronization_settings" />
+                <!-- 数据模式 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_data_mode"
+                        android:textSize="18dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/data_mode_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 运行模式 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_run_mode"
+                        android:textSize="18dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/run_mode_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 测量阈值 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_measurement_thresholds"
+                        android:textSize="18dip" />
+
+                    <EditText
+                        android:id="@+id/measurement_thresholds_edit"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        						android:inputType="numberSigned"
+						android:digits="1234567890-" 
+                        android:maxLength="3"
+                        android:singleLine="true" />
+
+                    <View style="@style/task_listdivider" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/setting_sort_title"
+                    android:text="@string/sc_reference_settings" />
+                <!-- 数据模式 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_data_mode"
+                        android:textSize="18dip"/>
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/refer_data_mode_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 子频段大小 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_sub_band_size"
+                        android:textSize="18dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/sub_band_size_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 起始子频段大小 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_starting_sub_bands"
+                        android:textSize="18dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/starting_sub_band_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 子频段 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_sub_band"
+                        android:textSize="18dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/sub_band_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 运行模式 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_run_mode"
+                        android:textSize="18dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/refer_run_mode_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 测量阈值 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_measurement_thresholds"
+                        android:textSize="18dip" />
+
+                    <EditText
+                        android:id="@+id/refer_measurement_thresholds_edit"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        						android:inputType="numberSigned"
+						android:digits="1234567890-" 
+                        android:maxLength="3"
+                        android:singleLine="true" />
+
+                    <View style="@style/task_listdivider" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- BLIND 业务 -->
+
+            <LinearLayout
+                android:id="@+id/blind_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/setting_sort_title"
+                    android:text="Blind" />
+                
+                
+                <!-- 协议 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/stream_play_protocol"
+                        android:textSize="18dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/protocol_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 频段-->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_band"
+                        android:textSize="18dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/band_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/setting_sort_title"
+                    android:text="@string/sc_basic_settings" />
+
+                <!-- 上报模式 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_report_mode"
+                        android:textSize="18dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/report_mode_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 上报数量 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_report_amount"
+                        android:textSize="18dip" />
+
+                    <EditText
+                        android:id="@+id/report_amount_edit"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:singleLine="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 测量门限 -->
+
+                <TextView
+                    style="@style/setting_sort_title"
+                    android:text="@string/sc_measurement_threshold" />
+
+                <!-- 基准参数 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_basic_parameters"
+                        android:textSize="18dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/basic_parameters_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 最低值 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_min_value"
+                        android:textSize="18dip" />
+
+                    <EditText
+                        android:id="@+id/min_value_edit"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        						android:inputType="numberSigned"
+						android:digits="1234567890-" 
+                        android:maxLength="4"
+                        android:singleLine="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/setting_sort_title"
+                    android:text="@string/sc_band_setting" />
+
+                <!-- 信道模式 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_channel_mode"
+                        android:textSize="18dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/channel_mode_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- EPS业务 -->
+
+            <LinearLayout
+                android:id="@+id/eps_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/setting_sort_title"
+                    android:text="EPS" />
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_bandwidth"
+                        android:textSize="18dip" />
+
+                    <EditText
+                        android:id="@+id/esp_current_bandwidth_edit"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+						android:digits="1234567890" 
+                        android:singleLine="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 步长 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_step"
+                        android:textSize="18dip" />
+
+                    <EditText
+                        android:id="@+id/esp_step_edit"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:digits="1234567890" 
+                        android:singleLine="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 栅格 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_raster"
+                        android:textSize="18dip" />
+
+                    <EditText
+                        android:id="@+id/esp_raster_edit"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:digits="1234567890" 
+                        android:maxLength="4"
+                        android:singleLine="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 时间周期标记 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_time_period_mark"
+                        android:textSize="18dip" />
+
+                    <EditText
+                        android:id="@+id/esp_time_period_mark_edit"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:digits="1234567890" 
+                        android:maxLength="5"
+                        android:singleLine="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 时间偏移标记 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_timestamp_offset"
+                        android:textSize="18dip" />
+
+                    <EditText
+                        android:id="@+id/esp_timestamp_offset_edit"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:digits="1234567890" 
+                        android:singleLine="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 测量时间窗 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_measurement_time_window"
+                        android:textSize="18dip" />
+
+                    <EditText
+                        android:id="@+id/esp_measurement_time_window_edit"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:digits="1234567890" 
+                        android:maxLength="3"
+                        android:singleLine="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- EPS 标记 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_eps_mark"
+                        android:textSize="18dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/eps_mark_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- Power Analysis 业务 -->
+
+            <LinearLayout
+                android:id="@+id/power_analysis_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/setting_sort_title"
+                    android:text="@string/sc_data_mode" />
+
+                <!-- 数据模式 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_data_mode"
+                        android:textSize="18dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/poweranalysis_data_mode_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+
+                <!-- 子数据模式 -->
+
+                <RelativeLayout
+                    style="@style/task_layout_edge"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sc_sub_data_mode"
+                        android:textSize="18dip" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/poweranalysis_sub_data_mode_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:drawSelectorOnTop="true" />
+
+                    <View style="@style/setting_divider" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/task_menu_buttom" />
+
+</LinearLayout>

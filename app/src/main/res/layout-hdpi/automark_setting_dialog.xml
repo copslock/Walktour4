@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_list_item_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:textSize="@dimen/app_content_txt_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/auto_mark_building_orientation"
+            android:textColor="@color/app_main_text_color" />
+
+        <EditText
+            android:id="@+id/building_orientation"
+            style="@style/task_edit_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:textSize="@dimen/app_content_txt_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/auto_mark_building_scale"
+            android:textColor="@color/app_main_text_color" />
+
+        <EditText
+            android:id="@+id/building_scale"
+            style="@style/task_edit_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="@dimen/app_content_txt_size"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/auto_mark_standard_atm"
+            android:textColor="@color/app_main_text_color" />
+
+        <EditText
+            android:id="@+id/standard_atm"
+            style="@style/task_edit_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/app_content_txt_size"
+            android:text="@string/auto_mark_show_distance"
+            android:textColor="@color/app_main_text_color" />
+
+        <CheckBox
+            android:id="@+id/show_distance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/switch_button_bg" />
+    </LinearLayout>
+
+</LinearLayout>

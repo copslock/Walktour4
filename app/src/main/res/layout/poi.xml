@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PoiTitle"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textSize="@dimen/app_content_txt_size"></TextView>
+
+        <EditText
+            android:id="@+id/Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@+id/Title"
+            android:textSize="@dimen/app_content_txt_size"></EditText>
+
+        <TextView
+            android:id="@+id/TextPoiCategoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PoiCategoryTitle"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textSize="@dimen/app_content_txt_size"></TextView>
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/PoiCategoryTitle" />
+
+        <TextView
+            android:id="@+id/TextLat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PoiLat"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textSize="@dimen/app_content_txt_size"></TextView>
+
+        <EditText
+            android:id="@+id/Lat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@+id/Lat"
+            android:textSize="@dimen/app_content_txt_size"></EditText>
+
+        <TextView
+            android:id="@+id/TextLon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PoiLon"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textSize="@dimen/app_content_txt_size"></TextView>
+
+        <EditText
+            android:id="@+id/Lon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@+id/Lon"
+            android:textSize="@dimen/app_content_txt_size"></EditText>
+
+        <TextView
+            android:id="@+id/TextDescr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PoiDescr"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textSize="@dimen/app_content_txt_size"></TextView>
+
+        <EditText
+            android:id="@+id/Descr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minLines="4"
+            android:text="@+id/Descr"
+            android:textSize="@dimen/app_content_txt_size"></EditText>
+
+        <CheckBox
+            android:id="@+id/Hidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hidden"
+            android:textSize="@dimen/app_content_txt_size"></CheckBox>
+
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/app_content_txt_size"></TextView>
+
+        <LinearLayout
+            style="@android:style/ButtonBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/menu_done"
+                android:textSize="@dimen/app_content_txt_size" />
+
+            <Button
+                android:id="@+id/discardButton"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/menu_doNotSave"
+                android:textSize="@dimen/app_content_txt_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

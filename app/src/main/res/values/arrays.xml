@@ -1,0 +1,1718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============== -->
+    <!-- 公共字符串数组 -->
+    <!-- ============== -->
+    <string-array name="public_switch">
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+    <string-array name="public_yn">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+    <string-array name="public_danzhuang">
+        <item>Simple</item>
+        <item>Duplex</item>
+    </string-array>
+    <string-array name="connect_mode">
+        <item>Passive</item>
+        <item>Port</item>
+    </string-array>
+    <string-array name="edit">
+        <item>Delete</item>
+        <item>Copy to...</item>
+        <item>Move to...</item>
+        <item>Data Partition</item>
+        <item>Data Merger</item>
+        <item>Customize Export</item>
+    </string-array>
+
+    <!-- ============= -->
+    <!-- 系统设置 -->
+    <!-- ============= -->
+    <string-array name="sys_setting_routine">
+        <item>Device Name</item>
+        <item>Phone number</item>
+        <item>Storage</item>
+        <item>Statistical methods</item>
+        <item>Auto run</item>
+        <item>TCP/IP capture</item>
+        <item>Can Run Script</item>
+        <item>Split Type</item>
+        <item>By Size</item>
+        <item>Sampling Frequency</item>
+        <item>Base Map show</item>
+        <item>Upload Way</item>
+    </string-array>
+    <string-array name="sys_setting_splitType">
+        <item>By Size</item>
+        <item>By Time</item>
+    </string-array>
+    <string-array name="sys_data_upload_way">
+        <item>EVDO</item>
+        <item>WIFI</item>
+    </string-array>
+    <string-array name="sys_setting_routine_storgereally">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="sys_indoor_filetype">
+        <item>All</item>
+        <item>RCU</item>
+        <item>Image</item>
+    </string-array>
+    <string-array name="sys_setting_routine_storge">
+        <item>Phone memory</item>
+        <item>SDcard</item>
+    </string-array>
+    <string-array name="sys_setting_routine_statistics">
+        <item>Method A</item>
+        <item>Method B</item>
+    </string-array>
+    <string-array name="sys_setting_routine_light">
+        <item>Illumination</item>
+        <item>The phone system settings</item>
+    </string-array>
+    <string-array name="sys_setting_monitor">
+        <item>Upload Options</item>
+        <item>Save Options</item>
+        <item>Upload type</item>
+        <item>Delete after uploading</item>
+        <item>Fast upload</item>
+    </string-array>
+    <string-array name="sys_setting_synchronizeTime">
+        <item>Current time</item>
+        <item>Sync now</item>
+        <item>Sync option</item>
+    </string-array>
+    <string-array name="sys_setting_monitor_options">
+        <item>All type</item>
+        <item>Access failure</item>
+        <item>Drop call</item>
+        <item>Poor Coverage</item>
+        <item>Bad Coverage</item>
+        <item>Frequent switching</item>
+        <item>Switch failure</item>
+    </string-array>
+    <string-array name="sys_setting_monitor_uploadType">
+        <item>Manual upload</item>
+        <item>Upload Now</item>
+        <item>Uploaded regularly</item>
+    </string-array>
+    <string-array name="replay_data_status">
+        <item>All</item>
+        <item>Abnormal</item>
+        <item>Normal</item>
+    </string-array>
+    <string-array name="sys_setting_monitor_uploadelte">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+    <string-array name="sys_setting_defevent">
+        <item>More Switch</item>
+        <item>Poor Coverage</item>
+        <item>Rx quality</item>
+    </string-array>
+    <string-array name="sys_map_color">
+        <item>Gray</item>
+        <item>White</item>
+        <item>Black</item>
+        <item>Red</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Cyan</item>
+        <item>Blue</item>
+        <item>Purple</item>
+    </string-array>
+    <string-array name="sys_dtmap_default">
+        <item>MIF</item>
+        <item>Google Map</item>
+        <item>Baidu Map</item>
+        <item>A Map</item>
+        <item>Bing Map</item>
+    </string-array>
+    <string-array name="sys_chart_set">
+        <item>Curve / histogram content</item>
+        <item>Table of contents</item>
+    </string-array>
+    <string-array name="sys_map_threshold">
+        <item>Threshold 1</item>
+        <item>Threshold 2</item>
+        <item>Threshold 3</item>
+        <item>Threshold 4</item>
+    </string-array>
+    <string-array name="sys_map_threshold_color">
+        <item>■■■■</item>
+        <item>■■■■</item>
+        <item>■■■■</item>
+        <item>■■■■</item>
+    </string-array>
+    <string-array name="sys_chart_line">
+        <item>Curve 1</item>
+        <item>Curve 2</item>
+        <item>Curve 3</item>
+        <item>Curve 4</item>
+    </string-array>
+    <string-array name="sys_chart_color">
+        <item>Color 1</item>
+        <item>Color 2</item>
+        <item>Color 3</item>
+        <item>Color 4</item>
+    </string-array>
+    <string-array name="sys_alarm">
+        <item>Low Power</item>
+        <item>High Temperature</item>
+        <item>Low Storage Space</item>
+        <item>Storage Unavailable</item>
+        <item>GPS Unavailable</item>
+        <item>Device Lost</item>
+        <item>Stop Test</item>
+        <item>Interrupt Test</item>
+        <item>No Sim Card</item>
+        <item>MO MicroMOS Low Power</item>
+        <item>MT MicroMOS Low Power</item>
+    </string-array>
+    <string-array name="sys_ftp">
+        <item>FTP server name</item>
+        <item>IP address</item>
+        <item>Port</item>
+        <item>User</item>
+        <item>Password</item>
+    </string-array>
+    <string-array name="maptype_mif">
+        <item>mif</item>
+    </string-array>
+    <string-array name="maptype_picture">
+        <item>jpg</item>
+        <item>jpeg</item>
+        <item>bmp</item>
+        <item>gif</item>
+        <item>png</item>
+        <!-- <item>tab</item> -->
+    </string-array>
+    <string-array name="ziptype_build">
+        <item>zip</item>
+        <item>ibwc</item>
+    </string-array>
+    <string-array name="maptype_tour">
+        <item>txt</item>
+    </string-array>
+    <string-array name="maptype_tab">
+        <item>tab</item>
+    </string-array>
+
+    <!-- ============= -->
+    <!-- GPS设置 -->
+    <!-- ============= -->
+
+    <string-array name="gps_type">
+        <item>Auto select</item>
+        <item>Internal GPS</item>
+    </string-array>
+
+    <!-- ============= -->
+    <!-- 测试任务 -->
+    <!-- ============= -->
+
+    <string-array name="task">
+        <item>New task</item>
+        <item>View task</item>
+        <item>History task</item>
+    </string-array>
+    <string-array name="task_beta1">
+        <item>Idle</item>
+        <item>MOC</item>
+        <item>MTC</item>
+        <item>Initiative Videocall</item>
+        <item>Passivity Videocall</item>
+        <item>Ping</item>
+        <item>Attach/Detach</item>
+        <item>PDP</item>
+        <item>FTP Upload</item>
+        <item>FTP Download</item>
+        <item>HTTP Page</item>
+        <item>HTTP Page</item>
+        <item>HTTP Download</item>
+        <item>HTTP Upload</item>
+        <item>Email Send</item>
+        <item>Email Receive</item>
+        <item>SMS Send</item>
+        <item>SMS Receive</item>
+        <item>SMS Self-Reception</item>
+        <item>MMS Send</item>
+        <item>MMS Receive</item>
+        <item>MMS Self-Reception</item>
+        <item>WAP Logon</item>
+        <item>WAP Refresh</item>
+        <item>WAP Download</item>
+        <item>WLAN Logon</item>
+        <item>WLAN AP</item>
+        <item>WLAN Ete Auth</item>
+        <item>Email Self-Reception</item>
+        <item>Parallel Service</item>
+        <item>Video Streaming</item>
+        <item>VoIP</item>
+        <item>DNS Lookup</item>
+        <item>Speed Test</item>
+        <item>Video Play</item>
+        <item>Multil FTP Upload</item>
+        <item>Multil FTP Download</item>
+        <item>Facebook</item>
+        <item>Trace Route</item>
+        <item>Iperf</item>
+        <item>PBM</item>
+        <item>WeiBo</item>
+        <item>WeChat</item>
+        <item>UDP</item>
+        <item>REBOOT</item>
+        <item>OpenSignal</item>
+        <item>Multi Http Download</item>
+        <item>WeCallMoc</item>
+        <item>WeCallMtc</item>
+        <item>SkypeChat</item>
+        <item>QQ</item>
+        <item>SinaWeibo</item>
+        <item>WhatsAppChat</item>
+        <item>WhatsAppMoc</item>
+        <item>WhatsAppMtc</item>
+        <item>Facebook(OTT)</item>
+        <item>Instagram(OTT)</item>
+    </string-array>
+    <string-array name="task_key">
+        <item>EmptyTask</item>
+        <item>InitiativeCall</item>
+        <item>PassivityCall</item>
+        <item>InitiativeVideoCall</item>
+        <item>PassivityVideoCall</item>
+        <item>Ping</item>
+        <item>Attach</item>
+        <item>PDP</item>
+        <item>FTPUpload</item>
+        <item>FTPDownload</item>
+        <item>Http</item>
+        <item>HttpRefurbish</item>
+        <item>HttpDownload</item>
+        <item>HttpUpload</item>
+        <item>EmailSmtp</item>
+        <item>EmailPop3</item>
+        <item>SMSSend</item>
+        <item>SMSIncept</item>
+        <item>SMSSendReceive</item>
+        <item>MMSSend</item>
+        <item>MMSIncept</item>
+        <item>MMSSendReceive</item>
+        <item>WapLogin</item>
+        <item>WapRefurbish</item>
+        <item>WapDownload</item>
+        <item>WlanLogin</item>
+        <item>WlanAP</item>
+        <item>WlanEteAuth</item>
+        <item>EmailSmtpAndPOP</item>
+        <item>MultiRAB</item>
+        <item>Stream</item>
+        <item>VOIP</item>
+        <item>DNSLookUp</item>
+        <item>SpeedTest</item>
+        <item>HTTPVS</item>
+        <item>MultiftpUpload</item>
+        <item>MultiftpDownload</item>
+        <item>Facebook</item>
+        <item>TraceRoute</item>
+        <item>Iperf</item>
+        <item>PBM</item>
+        <item>WeiBo</item>
+        <item>WeChat</item>
+        <item>UDP</item>
+        <item>REBOOT</item>
+        <item>OpenSignal</item>
+        <item>MultiHttpDownload</item>
+        <item>WeCallMoc</item>
+        <item>WeCallMtc</item>
+        <item>SkypeChat</item>
+        <item>QQ</item>
+        <item>SinaWeibo</item>
+        <item>WhatsAppChat</item>
+        <item>WhatsAppMoc</item>
+        <item>WhatsAppMtc</item>
+        <item>Facebook_Ott</item>
+        <item>Instagram_Ott</item>
+    </string-array>
+    <string-array name="sc_task_beta1">
+        <item>CW</item>
+        <item>Pilot</item>
+        <item>Spectrum</item>
+        <item>ColorCode</item>
+    </string-array>
+    <string-array name="sc_task_key">
+        <item>CW</item>
+        <item>Pilot</item>
+        <item>Spectrum</item>
+        <item>ColorCode</item>
+    </string-array>
+    <string-array name="task_type">
+        <item>Idle test</item>
+        <item>Call test</item>
+        <item>Data test</item>
+        <item>Value-added</item>
+    </string-array>
+    <string-array name="task_list">
+        <item>任务1</item>
+        <item>任务2</item>
+        <item>任务3</item>
+        <item>任务4</item>
+    </string-array>
+    <string-array name="task_type_free">
+        <item>Idle test</item>
+    </string-array>
+    <string-array name="task_type_call">
+        <item>Voice calling</item>
+        <item>Voice called</item>
+        <item>Video calling</item>
+        <item>Video called</item>
+    </string-array>
+    <string-array name="task_type_data">
+        <item>Ping</item>
+        <item>Attach</item>
+        <item>PDP</item>
+        <item>FTP Upload</item>
+        <item>FTP Download</item>
+        <item>Http</item>
+        <item>Email Pop3</item>
+        <item>Email Smtp</item>
+    </string-array>
+    <string-array name="task_type_more">
+        <item>Receive SMS</item>
+        <item>Send SMS</item>
+        <item>Receive MMS</item>
+        <item>Send MMS</item>
+        <item>Wap Logon</item>
+        <item>Wap Refresh</item>
+        <item>Wap Downlaod</item>
+    </string-array>
+    <string-array name="task_call_parallel">
+        <item>NONE</item>
+        <item>Wap</item>
+    </string-array>
+    <string-array name="task_wap_downloadType">
+        <item>picture</item>
+        <item>ringtone</item>
+        <item>KJava</item>
+    </string-array>
+    <string-array name="task_ap">
+        <item>Net</item>
+        <item>Wifi</item>
+    </string-array>
+    <string-array name="task_initiativecall">
+        <item>Task Name</item>
+        <item>Repetitions</item>
+        <item>Call number</item>
+        <item>Connection time</item>
+        <item>Duration</item>
+        <item>Each time interval</item>
+        <item>Voice assessment test</item>
+        <item>Concurrent data services</item>
+    </string-array>
+    <string-array name="map_menu_items">
+        <item>Loading map</item>
+        <item>Clear Map</item>
+        <item>Mark</item>
+        <item>Clean one Point</item>
+        <item>Show / Hide Legend</item>
+        <item>Set up</item>
+    </string-array>
+
+    <!-- ============= -->
+    <!-- 数据文件 -->
+    <!-- ============= -->
+    <string-array name="data_context_menu">
+        <item>Send</item>
+        <item>Delete</item>
+        <item>Rename</item>
+        <item>Property</item>
+    </string-array>
+    <string-array name="data_context_menu_dir">
+        <item>Open Directory</item>
+        <item>Sent to</item>
+        <item>Delete</item>
+        <item>Rename</item>
+    </string-array>
+    <string-array name="data_sendOption">
+        <item>FTP server</item>
+        <item>Fleet server</item>
+    </string-array>
+    <string-array name="data_sendSetting">
+        <item>Set FTP server</item>
+        <item>Set Fleet server</item>
+    </string-array>
+
+    <!-- ============= -->
+    <!-- 切换网络 -->
+    <!-- ============= -->
+    <string-array name="lock_netWorkType_GSM">
+        <item>GSM/WCDMA(WCDMA Priority)</item>
+        <item>仅GSM</item>
+        <item>仅WCDMA</item>
+        <item>GSM/WCDMA(Auto)</item>
+    </string-array>
+    <string-array name="lock_netWorkType_CDMA">
+        <item>CDMA/EvDo(Auto)</item>
+        <item>仅CDMA</item>
+        <item>仅EvDo</item>
+    </string-array>
+    <string-array name="lock_netWorkType_all">
+        <item>GSM/WCDMA(WCDMA Priority)</item>
+        <item>仅GSM</item>
+        <item>仅WCDMA</item>
+        <item>GSM/CDMA(Auto)</item>
+        <item>CDMA/EvDo(Auto)</item>
+        <item>仅CDMA</item>
+        <item>仅EvDo</item>
+        <item>GSM/WCDMA/CDMA/EvDo(Auto)</item>
+    </string-array>
+
+    <!--
+         请参考源代码：hardware/ril/include/telephony/ril.h　搜索RIL_REQUEST_SET_BAND_MODE　
+		 并结合http://wireless.agilent.com/rfcomms/refdocs/1xevdo/1xevdo_gen_bse_cell_band.php
+    -->
+    <string-array name="lock_bandMode_gsm">
+        <item>Auto</item>
+        <item>900-MHz</item>
+        <item>1800-MHz</item>
+        <item>1900-MHz</item>
+    </string-array>
+    <string-array name="lock_bandMode_cdma">
+        <item>800-MHz</item>
+    </string-array>
+
+    <!-- ============= -->
+    <!-- 切换网络 -->
+    <!-- ============= -->
+    <!-- GPS设置 -->
+    <string-array name="gpsvalue">
+        <item>Calling Open</item>
+        <item>Always open</item>
+        <item>Close</item>
+    </string-array>
+    <string-array name="keepdays">
+        <item>Immediately remove</item>
+        <item>Retention 1 Day</item>
+        <item>Retention 2 Day</item>
+        <item>Retention 3 Day</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="gpsreally">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <!-- 上传模式设置 -->
+    <string-array name="uploadway">
+        <item>Automatically upload</item>
+        <item>Manually upload</item>
+        <item>Prompted upload</item>
+    </string-array>
+    <string-array name="upload_way">
+        <item>Auto Upload</item>
+        <item>Manual Upload</item>
+    </string-array>
+    <string-array name="uploadwayreally">
+        <item>0</item>
+        <item>1</item>
+        <item>2 </item>
+    </string-array>
+    <string-array name="monitor_data_time">
+        <item>All Time</item>
+        <item>Month</item>
+        <item>Week</item>
+        <item>Today</item>
+    </string-array>
+
+    <!-- 状态 -->
+    <string-array name="monitor_data_status">
+        <item>All Status</item>
+        <item>No Uploaded</item>
+        <item>Uploaded</item>
+    </string-array>
+
+    <!-- 排序 -->
+    <string-array name="monitor_data_order">
+        <item>Time</item>
+        <item>Size</item>
+        <item>Status</item>
+    </string-array>
+
+    <!-- 服务器设置 -->
+    <string-array name="serverSet">
+        <item>172.168.0.1</item>
+        <item>172.168.0.5</item>
+    </string-array>
+    <!-- 清除选项 -->
+    <string-array name="clearOpition">
+        <item>Clear Mark</item>
+        <item>Clear Base</item>
+        <item>Clear Map</item>
+        <item>Clear All</item>
+    </string-array>
+    <string-array name="system_fleet_upload">
+        <item>IP address</item>
+        <item>Port</item>
+    </string-array>
+    <string-array name="colors"></string-array>
+
+    <!-- 多网同步测试 -->
+    <string-array name="system_mutilytester_set">
+
+        <!-- item>Auto Connect</item -->
+        <!--
+        <item>WIFI AP</item>
+	 	<item>Controller IP</item>
+		<item>Phone ID</item>
+        -->
+        <item>Data Service APN Settings</item>
+        <item>Alarm</item>
+        <item>Lock Network</item>
+        <!--
+        <item>Wifi名</item>
+		<item>UMPC Port</item>
+		<item>Timeout</item>
+		<item>Password</item>
+		<item>Wifi密码</item>
+        -->
+    </string-array>
+    <string-array name="system_apn_ciphermode">
+        <item>OPEN</item>
+        <item>WPA(TKIP/AES)</item>
+        <item>WEP(ASCII)</item>
+        <item>WEP(Hex)</item>
+    </string-array>
+    <string-array name="array_task_ftp_protocol">
+        <item>IPV4</item>
+        <item>IPV6</item>
+    </string-array>
+    <string-array name="array_task_disconnect">
+        <item>Never</item>
+        <item>Each Loop Completed</item>
+        <item>Each Session Completed</item>
+    </string-array>
+    <string-array name="array_task_ue_state">
+        <item>None</item>
+        <item>Idle</item>
+    </string-array>
+    <string-array name="array_task_udp_test_mode">
+        <item>Up</item>
+        <item>Down</item>
+    </string-array>
+    <string-array name="info_page_option">
+        <item>Hide</item>
+        <item>Option</item>
+    </string-array>
+    <string-array name="basemap_info">
+        <item>Height</item>
+        <item>PN</item>
+        <item>AZIMUTH</item>
+        <item>Location</item>
+    </string-array>
+    <string-array name="setting_server_network">
+        <item>Auto</item>
+        <item>WiFi Only</item>
+        <item>Data Only</item>
+    </string-array>
+    <string-array name="lock">
+        <item>Lock Network</item>
+        <item>Lock Frequency Point</item>
+    </string-array>
+    <string-array name="array_stream_protocol">
+        <item>TCP</item>
+        <item>UDP</item>
+    </string-array>
+    <string-array name="array_stream_play_model">
+        <item>By Time</item>
+        <item>By File</item>
+    </string-array>
+
+    <!-- 地图数组开始 -->
+    <string-array name="projection_title">
+        <item>Mercator (spheroid - like Google.Map)</item>
+        <item>Mercator (ellipsoid - like Yandex.Map)</item>
+    </string-array>
+    <string-array name="projection_value">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="accuracy_pref_value">
+        <item>1</item>
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="accuracy_pref_title">
+        <item>Always</item>
+        <item>Never</item>
+        <item>When accuracy &gt; 5 m</item>
+        <item>When accuracy &gt; 10 m</item>
+        <item>When accuracy &gt; 20 m</item>
+        <item>When accuracy &gt; 50 m</item>
+        <item>When accuracy &gt; 100</item>
+    </string-array>
+    <string-array name="zoomlevel_pref_title">
+        <item>Not set</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="zoomlevel_pref_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="languages_codes">
+        <item>ar</item>
+        <item>eu</item>
+        <item>bg</item>
+        <item>bn</item>
+        <item>ca</item>
+        <item>cs</item>
+        <item>da</item>
+        <item>de</item>
+        <item>el</item>
+        <item>en</item>
+        <item>en-AU</item>
+        <item>en-GB</item>
+        <item>es</item>
+        <item>eu</item>
+        <item>fa</item>
+        <item>fi</item>
+        <item>fil</item>
+        <item>fr</item>
+        <item>gl</item>
+        <item>gu</item>
+        <item>hi</item>
+        <item>hr</item>
+        <item>hu</item>
+        <item>id</item>
+        <item>it</item>
+        <item>iw</item>
+        <item>ja</item>
+        <item>kn</item>
+        <item>ko</item>
+        <item>lt</item>
+        <item>lv</item>
+        <item>ml</item>
+        <item>mr</item>
+        <item>nl</item>
+        <item>nn</item>
+        <item>no</item>
+        <item>or</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>pt-BR</item>
+        <item>pt-PT</item>
+        <item>rm</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>sk</item>
+        <item>sl</item>
+        <item>sr</item>
+        <item>sv</item>
+        <item>tl</item>
+        <item>ta</item>
+        <item>te</item>
+        <item>th</item>
+        <item>tr</item>
+        <item>uk</item>
+        <item>vi</item>
+        <item>zh-CN</item>
+        <item>zh-TW</item>
+    </string-array>
+    <string-array name="languages_names">
+        <item>ARABIC</item>
+        <item>BASQUE</item>
+        <item>BULGARIAN</item>
+        <item>BENGALI</item>
+        <item>CATALAN</item>
+        <item>CZECH</item>
+        <item>DANISH</item>
+        <item>GERMAN</item>
+        <item>GREEK</item>
+        <item>ENGLISH</item>
+        <item>ENGLISH (AUSTRALIAN)</item>
+        <item>ENGLISH (GREAT BRITAIN)</item>
+        <item>SPANISH</item>
+        <item>BASQUE</item>
+        <item>FARSI</item>
+        <item>FINNISH</item>
+        <item>FILIPINO</item>
+        <item>FRENCH</item>
+        <item>GALICIAN</item>
+        <item>GUJARATI</item>
+        <item>HINDI</item>
+        <item>CROATIAN</item>
+        <item>HUNGARIAN</item>
+        <item>INDONESIAN</item>
+        <item>ITALIAN</item>
+        <item>HEBREW</item>
+        <item>JAPANESE</item>
+        <item>KANNADA</item>
+        <item>KOREAN</item>
+        <item>LITHUANIAN</item>
+        <item>LATVIAN</item>
+        <item>MALAYALAM</item>
+        <item>MARATHI</item>
+        <item>DUTCH</item>
+        <item>NORWEGIAN NYNORSK</item>
+        <item>NORWEGIAN</item>
+        <item>ORIYA</item>
+        <item>POLISH</item>
+        <item>PORTUGUESE</item>
+        <item>PORTUGUESE (BRAZIL)</item>
+        <item>PORTUGUESE (PORTUGAL)</item>
+        <item>ROMANSCH</item>
+        <item>ROMANIAN</item>
+        <item>RUSSIAN</item>
+        <item>SLOVAK</item>
+        <item>SLOVENIAN</item>
+        <item>SERBIAN</item>
+        <item>SWEDISH</item>
+        <item>TAGALOG</item>
+        <item>TAMIL</item>
+        <item>TELUGU</item>
+        <item>THAI</item>
+        <item>TURKISH</item>
+        <item>UKRAINIAN</item>
+        <item>VIETNAMESE</item>
+        <item>CHINESE (SIMPLIFIED)</item>
+        <item>CHINESE (TRADITIONAL)</item>
+    </string-array>
+    <string-array name="screen_orientation_pref_title">
+        <item>Default</item>
+        <item>Force Landscape</item>
+        <item>Force Portrait</item>
+    </string-array>
+    <string-array name="screen_orientation_pref_value">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="mintime_pref_title">
+        <item>1 s</item>
+        <item>2 s (recommended)</item>
+        <item>3 s</item>
+        <item>4 s</item>
+        <item>5 s</item>
+        <item>10 s</item>
+        <item>20 s</item>
+        <item>30 s</item>
+        <item>1 min</item>
+        <item>2 min</item>
+        <item>3 min</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>30 min</item>
+    </string-array>
+    <string-array name="mintime_pref_values">
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>20000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>180000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>900000</item>
+        <item>1800000</item>
+    </string-array>
+    <string-array name="mindistance_pref_title">
+        <item>5 m</item>
+        <item>10 m (recommended)</item>
+        <item>50 m</item>
+        <item>100 m</item>
+        <item>200 m</item>
+        <item>500 m</item>
+    </string-array>
+    <string-array name="mindistance_pref_values">
+        <item>5</item>
+        <item>10</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+    </string-array>
+    <string-array name="zoomctrl_pref_title">
+        <item>Bottom</item>
+        <item>Top</item>
+        <item>Hide</item>
+    </string-array>
+    <string-array name="zoomctrl_pref_values">
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="units_pref_title">
+        <item>km, m, km/h, m/s</item>
+        <item>ml, ft, mph</item>
+    </string-array>
+    <string-array name="units_pref_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="track_activity">
+        <item>Unknown</item>
+        <item>Running</item>
+        <item>Walking</item>
+        <item>Cycling</item>
+        <item>Mountain biking</item>
+        <item>Hiking</item>
+        <item>Skating</item>
+        <item>Roller skating</item>
+        <item>Skateboarding</item>
+        <item>Downhill skiing</item>
+        <item>Back country skiing</item>
+        <item>Skiing</item>
+        <item>Rowing</item>
+        <item>Golf</item>
+        <item>Indoor</item>
+        <item>Swimming</item>
+        <item>Horse back riding</item>
+        <item>Motorcycling</item>
+        <item>Trial biking</item>
+        <item>ATV</item>
+        <item>Car driving</item>
+        <item>Boating</item>
+        <item>Kayaking</item>
+        <item>Canoeing</item>
+        <item>Sailing</item>
+        <item>Flying</item>
+        <item>Train</item>
+        <item>Dog sledging</item>
+        <item>Rock climbing</item>
+        <item>Ice climbing</item>
+        <item>Canyoneering</item>
+        <item>Diving</item>
+        <item>Caving</item>
+        <item>Hang gliding</item>
+        <item>Ballooning</item>
+        <item>Snowboarding</item>
+        <item>Snowmobiling</item>
+        <item>Offroading</item>
+        <item>Kiteboarding</item>
+        <item>Surfing</item>
+        <item>Paragliding</item>
+    </string-array>
+    <!-- 地图数组结束 -->
+
+    <string-array name="array_voip_calltype">
+        <item>Calling</item>
+        <item>Called</item>
+    </string-array>
+    <string-array name="array_voip_registertype">
+        <item>Sample Voip Register</item>
+        <item>IMS Register</item>
+    </string-array>
+    <string-array name="array_voip_voiptype">
+        <item>Audio Telephony</item>
+        <item>Video Telephony</item>
+    </string-array>
+    <string-array name="array_voip_usesample">
+        <item>Microphone and camera data</item>
+        <item>Sample File</item>
+    </string-array>
+    <string-array name="mos_testtype">
+        <item>Mobile to Mobile</item>
+        <item>Mobile to Land</item>
+    </string-array>
+    <string-array name="mos_counted">
+        <item>PESQ</item>
+        <item>POLQA</item>
+    </string-array>
+    <string-array name="mos_polqa_sample">
+        <item>NB 8k</item>
+        <item>WB 16k</item>
+        <item>SWB 48k</item>
+    </string-array>
+    <string-array name="mos_polqa_calc">
+        <item>NB</item>
+        <item>SWB</item>
+    </string-array>
+
+    <!-- Http Upload上传模式 -->
+    <string-array name="array_httpupload_testmode">
+        <item>By File</item>
+        <item>By Time</item>
+    </string-array>
+
+    <!-- FTP download 下载模式 -->
+    <string-array name="array_ftpdownload_testmode">
+        <item>By File</item>
+        <item>By Time</item>
+    </string-array>
+    <string-array name="array_ftp_transfer_protocal">
+        <item>FTP</item>
+        <item>SFTP</item>
+    </string-array>
+    <!-- MFTP download 结束条件 -->
+    <string-array name="array_mftp_end">
+        <item>One Session End</item>
+        <item>All Session End</item>
+    </string-array>
+
+    <!-- http测试模式 -->
+    <string-array name="array_http_testmode">
+        <item>Logon</item>
+        <item>Refresh</item>
+    </string-array>
+
+    <!-- http刷新模式 -->
+    <string-array name="array_http_refresh_type">
+        <item>Refresh the Homepage</item>
+        <item>Refresh Deeply</item>
+    </string-array>
+
+    <!-- 文件获取方式 -->
+    <string-array name="array_httpupload_filesource">
+        <item>Local File</item>
+        <item>Create File</item>
+    </string-array>
+
+    <!-- 文件获取方式 -->
+    <string-array name="array_httpupload_servertype">
+
+        <!-- <item>QQ Disk</item> -->
+        <item>HTTPs</item>
+        <item>Youtube</item>
+        <item>Baiduyun</item>
+    </string-array>
+    <string-array name="array_httpupload_accountType">
+        <item>Developer</item>
+        <item>Special</item>
+    </string-array>
+    <string-array name="array_httpdownload_servertype">
+        <item>Normal</item>
+        <item>Baiduyun</item>
+    </string-array>
+
+    <!-- 文件获取方式 -->
+    <string-array name="array_mutil_ftpserver_filesource">
+        <item>Create File</item>
+        <item>Local File</item>
+    </string-array>
+
+    <!-- 星期 -->
+    <string-array name="array_weekday">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+    <!-- 加载地图 -->
+    <string-array name="array_loading_map">
+        <item>@string/map_scan</item>
+        <item>@string/map_indoor</item>
+        <item>@string/map_outdoor</item>
+        <!-- <item>@string/map_base</item> -->
+        <item>@string/map_outtab</item>
+        <item>@string/map_offline</item>
+        <item>@string/map_online</item>
+    </string-array>
+
+    <!-- 室内地图 -->
+    <string-array name="array_indoor_map">
+        <item>@string/map_scan</item>
+        <item>@string/map_online</item>
+        <item>@string/map_outtab</item>
+        <item>@string/map_indoor</item>
+    </string-array>
+    <!-- 室外地图 -->
+    <string-array name="array_dt_map">
+        <item>@string/map_outdoor</item>
+        <!-- <item>@string/map_outtab</item> -->
+        <item>@string/map_offline</item>
+        <item>@string/map_online</item>
+    </string-array>
+    <string-array name="stream_video_type">
+        <item>Monternet</item>
+        <item>Common</item>
+    </string-array>
+    <string-array name="stream_video_quality">
+        <item>Low Quality</item>
+        <item>High Quality</item>
+    </string-array>
+
+    <!-- video play -->
+    <string-array name="array_player_type">
+        <item>@string/player_type_dingli</item>
+        <item>@string/player_type_youtube</item>
+        <item>@string/player_type_vitamio</item>
+    </string-array>
+    <string-array name="array_stream_type">
+        <item>HPD</item>
+        <item>HLS</item>
+    </string-array>
+    <string-array name="array_timer_mode">
+        <item>@string/by_duration</item>
+        <item>@string/by_percentage</item>
+    </string-array>
+
+    <string-array name="array_video_quality">
+        <item>@string/video_quality_1_Standard</item>
+        <item>@string/video_quality_2_High</item>
+        <item>@string/video_quality_3_Ultra</item>
+        <item>@string/video_quality_4_720P</item>
+        <item>@string/video_quality_5_1080P</item>
+        <item>@string/video_quality_6_2K</item>
+        <item>@string/video_quality_7_4K</item>
+        <item>@string/video_quality_19_Auto</item>
+    </string-array>
+
+    <!-- 扫频仪 cw数组 -->
+    <string-array name="scanner_cw_netChoice">
+        <item>GSM</item>
+        <item>WCDMA</item>
+        <item>LTE</item>
+    </string-array>
+
+    <!-- 扫频仪设置 数据分割 数组 -->
+    <string-array name="scanner_setting_datafenge">
+        <item>按时间</item>
+        <item>按大小</item>
+        <item>不分割</item>
+    </string-array>
+    <string-array name="scanner_band">
+        <item>EB38 IMT Ext Cntr Gap</item>
+        <item>EB40 China 2.3 TDD</item>
+        <item>EB41 US Lower TD﹣LTE</item>
+        <item>1.8 TDD DL/UL、US 700 Upper C/D</item>
+        <item>Rev.US Upper 700 C/D</item>
+        <item>US 700 Upper C</item>
+        <item>Rev.US 700 Upper C</item>
+        <item>US Lower 700 A/B/C</item>
+        <item>US Lower 700 B/C</item>
+        <item>Rev.US Lower 700 B/C</item>
+        <item>1900(PCS)DL</item>
+        <item>1900(PCS)UL</item>
+        <item>2100(IMT﹣2000)DL</item>
+        <item>2100(IMT﹣2000)UL</item>
+    </string-array>
+
+    <!-- 业务类别 -->
+    <string-array name="scanner_business_category">
+        <item>E TopN</item>
+        <!-- <item>Blind</item> -->
+        <item>EPS</item>
+        <item>Power Analysis</item>
+    </string-array>
+
+    <!-- 带宽 -->
+    <string-array name="scanner_bangwidth">
+        <item>1400</item>
+        <item>3000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <!--
+     	    <item>15000</item>
+	    <item>20000</item>
+        -->
+    </string-array>
+
+    <!-- 循环前缀 -->
+    <string-array name="scanner_cyclic_prefix">
+        <item>Autodetect</item>
+        <item>Normal 15KHz</item>
+        <item>Extended 15KHz</item>
+    </string-array>
+
+    <!-- 发射天线个数 -->
+    <string-array name="scanner_transmitting_antenna_amount">
+        <item>Autodetect</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <!-- 协议 -->
+    <string-array name="scanner_protocol">
+        <item>FDD LTE</item>
+        <item>TDD LTE</item>
+    </string-array>
+
+    <!-- 上报模式 -->
+    <string-array name="scanner_report_mode">
+        <item>Channel</item>
+        <item>Frequency</item>
+    </string-array>
+
+    <!-- 基准参数 -->
+    <string-array name="scanner_basic_paramter">
+        <item>RSSI</item>
+    </string-array>
+    <!-- 基准参数 -->
+    <string-array name="scanner_channel_mode">
+        <item>Mode0</item>
+    </string-array>
+
+    <string name="scanner_cyclic_prefix"><item>Autodetect</item> <item>Normal 15KHz</item> <item>Extended 15KHz</item></string>
+    <string name="scanner_transmitting_antenna_amount"><item>Autodetect</item> <item>1</item> <item>2</item> <item>3</item> <item>4</item></string>
+    <string name="scanner_data_mode"><item>SCH</item> <item>SCH_MIB_SIB</item></string>
+    <string name="scanner_run_mode"><item>PSCH_RP</item> <item>PSCH_RQ</item> <item>SCH_CINR</item> <item>SCH_RP</item> <item>SCH_RQ</item></string>
+
+    <!-- E topN 数据模式 -->
+    <string-array name="scanner_refer_etopn_data_mode">
+        <item>WideBand</item>
+        <item>WideBand＋SubBand</item>
+        <item>WideBand＋Rf Path</item>
+        <item>WideBand＋SubBand＋Rf Path</item>
+    </string-array>
+
+    <!-- 子频段大小 -->
+    <string-array name="scanner_sub_band_size">
+        <item>Defualt</item>
+        <item>4KB</item>
+    </string-array>
+    <string-array name="scanner_starting_sub_band">
+        <item>Defualt</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="scanner_sub_band">
+        <item>Defualt</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="scanner_refer_run_mode">
+        <item>SCH_CINR</item>
+        <item>PSCH_RP</item>
+        <item>PSCH_RQ</item>
+    </string-array>
+    <string-array name="scanner_eps_mark">
+        <item>Center</item>
+        <item>Min</item>
+        <item>Max</item>
+    </string-array>
+
+    <!-- Power Analysis 数据模式 -->
+    <string-array name="scanner_power_analysis_data_mode">
+        <item>Time Slot Analysis</item>
+        <item>Resource Block Analysis</item>
+    </string-array>
+
+    <!-- 子数据模式 -->
+    <string-array name="scanner_sub_data_mode">
+        <item>RB、TS、TS w</item>
+        <item>SubFrame&amp;Frame</item>
+    </string-array>
+
+    <!-- 基站显示类型 -->
+    <string-array name="array_base_display_type">
+        <item>Display Current Network Base</item>
+        <item>Custom Parameters</item>
+    </string-array>
+
+    <!-- facebook -->
+    <string-array name="array_face_file_type">
+        <item>Picture</item>
+        <item>Video</item>
+    </string-array>
+    <string-array name="array_face_file_Source">
+
+        <!-- <item>Create File</item> -->
+        <item>Local Random File</item>
+        <item>Select Local File</item>
+    </string-array>
+
+    <!-- dial choice -->
+    <string-array name="net_interface">
+        <item>PPP Dial</item>
+        <item>Wi-Fi</item>
+    </string-array>
+    <string-array name="exchange_model">
+        <item>Normal model</item>
+        <item>NB-Iot model</item>
+    </string-array>
+    <string-array name="lock_Enable_CA">
+        <item>Enable CA</item>
+        <item>Disable CA</item>
+    </string-array>
+    <string-array name="lock_gsm_band">
+        <item>GSM 850</item>
+        <item>E-GSM 900</item>
+        <item>P-GSM 900</item>
+        <item>GSM 1800</item>
+        <item>GSM 1900</item>
+    </string-array>
+    <string-array name="lock_gsm_band_value">
+        <item>24</item>
+        <item>9</item>
+        <item>10</item>
+        <item>8</item>
+        <item>26</item>
+    </string-array>
+    <string-array name="lock_td_band">
+        <item>Band A</item>
+        <item>Band F</item>
+    </string-array>
+    <string-array name="lock_td_band_value">
+        <item>1</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="lock_lte_band">
+        <item>Band1</item>
+        <item>Band38</item>
+        <item>Band39</item>
+        <item>Band40</item>
+    </string-array>
+    <string-array name="lock_lte_band_value">
+        <item>1</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="locus_shape_array">
+        <item>Round</item>
+        <item>Square</item>
+    </string-array>
+    <string-array name="locus_shape_size_array">
+        <item>Large</item>
+        <item>Medium</item>
+        <item>Small</item>
+    </string-array>
+    <string-array name="array_iperf_protocol">
+        <item>TCP</item>
+        <item>UDP</item>
+    </string-array>
+    <string-array name="array_iperf_direction">
+        <item>Send</item>
+        <item>Receive</item>
+        <item>Full Duplex</item>
+    </string-array>
+    <string-array name="array_custom_export_network">
+        <item>GSM</item>
+        <item>WCDMA</item>
+        <item>TDSCDMA</item>
+        <item>LTE</item>
+    </string-array>
+    <string-array name="array_custom_export_format">
+        <item>.csv</item>
+        <item>.txt</item>
+        <item>.xml</item>
+    </string-array>
+    <string-array name="array_kpi_task">
+        <item>@string/act_task_initiativecall</item>
+        <item>@string/act_task_ftpupload</item>
+        <item>@string/act_task_ftpdownload</item>
+    </string-array>
+    <string-array name="select_license_array">
+        <item>@string/main_menu_license_onlineupdate</item>
+        <item>@string/main_menu_license_localupdate</item>
+    </string-array>
+    <string-array name="help_doc">
+        <item>Quick Guide</item>
+        <item>Detailed Guide</item>
+    </string-array>
+    <string-array name="total_dtCqt_array">
+        <item>DT</item>
+        <item>CQT</item>
+    </string-array>
+    <string-array name="total_showType_array">
+        <item>Excel</item>
+        <item>Word</item>
+    </string-array>
+    <string-array name="total_netType_array">
+        <item>LTE</item>
+        <item>TDSCDMA</item>
+        <item>GSM</item>
+    </string-array>
+
+    <!-- PBM -->
+    <string-array name="array_pbm_server_count">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="gps_info_array">
+        <item>E</item>
+        <item>W</item>
+        <item>S</item>
+        <item>N</item>
+    </string-array>
+
+    <!-- TCP/IP采集模式 -->
+    <string-array name="tcp_ip_collect_name_array">
+        <item>All</item>
+        <item>Header Only</item>
+        <item>Optimized</item>
+    </string-array>
+
+    <integer-array name="tcp_ip_collect_value_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="ims_encrypted_array">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="tcpip_setting">
+        <item>All</item>
+        <item>Head Only</item>
+        <item>Optimized</item>
+    </string-array>
+    <string-array name="dual_network_array">
+        <item>2G</item>
+        <item>3G/4G</item>
+        <item>CSFB</item>
+    </string-array>
+    <string-array name="cucc_setting_array">
+        <item>Unlimited</item>
+        <item>4G Only</item>
+        <item>3G Only</item>
+    </string-array>
+    <string-array name="run_time_array">
+        <item>Days</item>
+        <item>:</item>
+        <item>:</item>
+        <item></item>
+    </string-array>
+    <string-array name="email_sent_ssl">
+        <item>None</item>
+        <item>SSL</item>
+        <item>STARTTLS</item>
+    </string-array>
+    <string-array name="email_receive_ssl">
+        <item>None</item>
+        <item>SSL</item>
+    </string-array>
+    <string-array name="email_receive_popsmtp">
+        <item>POP3</item>
+        <item>IMAP</item>
+    </string-array>
+    <string-array name="max_up_down_array">
+        <item>None</item>
+        <item>128kbps</item>
+        <item>384kbps</item>
+        <item>1024kbps</item>
+        <item>2048kbps</item>
+    </string-array>
+    <!-- 福建工单 -->
+    <string-array name="work_order_fj_testing_buiness">
+        <item>DT Voice</item>
+        <item>CQT Voice</item>
+        <item>CQT Data</item>
+    </string-array>
+    <string-array name="work_order_fj_testing_local_type">
+        <item>Indoor</item>
+        <item>Outdoor</item>
+    </string-array>
+    <string-array name="work_order_fj_issue_detail">
+        <item>Single-pass</item>
+        <item>Drop Call</item>
+        <item>Off Line</item>
+        <item>Aftersound</item>
+        <item>Noise</item>
+        <item>Call Difficult</item>
+    </string-array>
+    <string-array name="work_order_fj_auto_testing_template">
+        <item>FTP</item>
+        <item>Web Browse</item>
+        <item>Vedio</item>
+        <item>MMS</item>
+        <item>Email</item>
+        <item>Stock</item>
+        <item>QQ</item>
+        <item>Game</item>
+    </string-array>
+    <string-array name="array_network_work_order_fj">
+        <item>select please</item>
+        <item>GSM</item>
+        <item>WCDMA</item>
+        <item>LTE</item>
+    </string-array>
+    <string-array name="fj_dt_test_repeat">
+        <item>Doing Testing&#8230; No.1</item>
+        <item>Doing Testing&#8230; No.2</item>
+        <item>Doing Testing&#8230; No.3</item>
+        <item>Doing Testing&#8230; No.4</item>
+        <item>Doing Testing&#8230; No.5</item>
+        <item>Testing Finish</item>
+    </string-array>
+    <string-array name="tdd_fdd_array">
+        <item>TDD</item>
+        <item>FDD</item>
+    </string-array>
+    <string-array name="array_all_businesses">
+        <item>Call_SUCCESSRATE:Call Success Rate(%)</item>
+        <item>Call_DROPPEDRATE:Dropped Call Rate(%)</item>
+        <item>Call_BUSINESSDELAY:Average Call Delay(s)</item>
+        <item>FTPDownload_SUCCESSRATE:Success Rate(%)</item>
+        <item>FTPDownload_TRANSFERRATE:Average Download Speed(KB/s)</item>
+        <item>FTPUpload_SUCCESSRATE:Success Rate(%)</item>
+        <item>FTPUpload_TRANSFERRATE:Average Upload Speed(KB/s)</item>
+        <item>MultiFTPDownload_SUCCESSRATE:Success Rate(%)</item>
+        <item>MultiFTPDownload_TRANSFERRATE:Average Download Speed(KB/s)</item>
+        <item>MultiFTPUpload_SUCCESSRATE:Success Rate(%)</item>
+        <item>MultiFTPUpload_TRANSFERRATE:Average Upload Speed(KB/s)</item>
+        <item>Ping_SUCCESSRATE:Success Rate(%)</item>
+        <item>Ping_BUSINESSDELAY:Average Delay(s)</item>
+        <item>TraceRoute_SUCCESSRATE:Success Rate(%)</item>
+        <item>TraceRoute_BUSINESSDELAY:Average Delay(s)</item>
+        <item>HTTPPage_SUCCESSRATE:Success Rate(%)</item>
+        <item>HTTPPage_AVERAGE:Average Success Delay(s)</item>
+        <item>HTTPDownload_SUCCESSRATE:Success Rate(%)</item>
+        <item>HTTPDownload_TRANSFERRATE:Average Download Speed(KB/s)</item>
+        <item>HTTPUpload_SUCCESSRATE:Success Rate(%)</item>
+        <item>HTTPUpload_TRANSFERRATE:Average Upload Speed(KB/s)</item>
+        <item>EmailRecv_SUCCESSRATE:Success Rate(%)</item>
+        <item>EmailRecv_TRANSFERRATE:Average Receive Speed(KB/s)</item>
+        <item>EmailSend_SUCCESSRATE:Success Rate(%)</item>
+        <item>EmailSend_TRANSFERRATE:Average Send Speed(KB/s)</item>
+        <item>VideoPlay_DROPPEDRATE:Video Play Dropped Ratio(%)</item>
+        <item>VideoPlay_SUCCESSRATE:Video Play Completed  Ratio(%)</item>
+        <item>VideoPlay_TOTALCOUNT:Rebuffering Attempts</item>
+        <item>Speedtest_SUCCESSRATE:Success Rate(%)</item>
+        <item>DNSLookup_SUCCESSRATE:Success Rate(%)</item>
+        <item>DNSLookup_BUSINESSDELAY:Average Delay(s)</item>
+        <item>PBM_DOWNSPEED:Average DL Speed(KB/s)</item>
+        <item>PBM_UPSPEED:Average UL Speed(KB/s)</item>
+        <item>SMSSend_SUCCESSRATE:Success Rate(%)</item>
+        <item>SMSRecv_SUCCESSRATE:Success Rate(%)</item>
+        <item>MMSSend_SUCCESSRATE:Success Rate(%)</item>
+        <item>MMSRecv_SUCCESSRATE:Success Rate(%)</item>
+        <item>GSM_RxLevel_Full:RxLevelFull(dBm)</item>
+        <item>GSM_GSM_TxPower_G:TxPower(dBm)</item>
+        <item>CDMA_CDMA_Total_Ec:TotalEc(dB)</item>
+        <item>CDMA_CDMA_RxAGC:RxAGC(dBm)</item>
+        <item>EVDO_EVDO_TxAGC:TxAGC(dBm)</item>
+        <item>EVDO_EVDO_RxPER:RxPER(%)</item>
+        <item>EVDO_EVDO_TxPER:TxPER(%)</item>
+        <item>WCDMA_WCDMA_Total_RSCP:TotalRSCP(dBm)</item>
+        <item>WCDMA_WCDMA_BLER:BLER(%)</item>
+        <item>TDSCDMA_TDS_DPCH_RSCP:DPCH_RSCP(dBm)</item>
+        <item>TDSCDMA_TDS_BLER:BLER(%)</item>
+        <item>LTE_LTE_RSRP:RSRP(dBm)</item>
+        <item>LTE_LTE_SINR:SINR(dB)</item>
+    </string-array>
+    <string-array name="array_mathematical_operator">
+        <item>&lt;=</item>
+        <item>&gt;= </item>
+        <item>&lt;</item>
+        <item>&gt;</item>
+    </string-array>
+    <string-array name="array_custom_window">
+        <item>Event</item>
+        <item>Parameter</item>
+        <item>Message</item>
+        <item>Video</item>
+        <item>Analysis</item>
+    </string-array>
+    <!-- new data manager -->
+    <string-array name="array_data_manager_bussiness">
+        <item>Voice</item>
+        <item>FTP</item>
+        <item>Http</item>
+        <item>Ping</item>
+        <item>Email</item>
+        <item>VideoPlay</item>
+    </string-array>
+    <string-array name="array_data_manager_check">
+        <item>语音掉话</item>
+        <item>语音未接通</item>
+        <item>CSFB掉话</item>
+        <item>CSFB未接通</item>
+        <item>VoLTE掉话</item>
+        <item>VoLTE未接通</item>
+        <item>FTP Upload(掉线)</item>
+        <item>FTP Download(掉线)</item>
+        <item>Http Page(失败)</item>
+        <item>Http Upload(掉线)</item>
+        <item>Http Download(掉线)</item>
+        <item>Ping(失败)</item>
+        <item>Email (失败)</item>
+        <item>VideoPlay(掉线)</item>
+        <item>PBM(掉线)</item>
+        <item>网间切换失败</item>
+    </string-array>
+    <string-array name="edit_new">
+        <item>Delete</item>
+        <item>Copy to...</item>
+        <item>Move to...</item>
+        <item>Data Partition</item>
+        <item>Data Merger</item>
+        <item>Customize Export</item>
+        <item>Rename</item>
+        <item>Preview Locus</item>
+        <item>Preview Events</item>
+        <item>Platform Query</item>
+    </string-array>
+    <string-array name="report_type_name">
+        <item>FTP业务报表</item>
+        <item>HTTP报表</item>
+        <item>切换报表</item>
+    </string-array>
+    <string-array name="report_type_value">
+        <item>20091</item>
+        <item>20092</item>
+        <item>20093</item>
+    </string-array>
+    <string-array name="taskrab_byMode_array">
+        <item>Default</item>
+        <item>By Delay</item>
+        <item>By Time</item>
+        <item>By Status</item>
+    </string-array>
+    <string-array name="taskrab_byTask_array">
+        <item>Start Referencing Service</item>
+        <item>Referencing Service Succeeded</item>
+        <item>Referencing Service Completed</item>
+    </string-array>
+    <string-array name="search_range">
+        <item>default</item>
+        <item>500m</item>
+        <item>1000m</item>
+        <item>2000m</item>
+        <item>5000m</item>
+    </string-array>
+
+    <string-array name="mutily_mosbox_channel">
+        <item>None</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="cu_Test_Network">
+        <item>LTE-FDD</item>
+        <item>LTE-TDD</item>
+        <item>LTE</item>
+        <item>WCDMA</item>
+        <item>GSM</item>
+        <item>CDMA</item>
+        <item>LTE/W/G</item>
+        <item>W/G</item>
+    </string-array>
+    <string-array name="send_pic_size_level">
+        <item>Small(0.5MB)</item>
+        <item>Middle(1.5MB)</item>
+        <item>Large(3MB)</item>
+    </string-array>
+    <string-array name="auto_mark_type">
+        <item>Handset Gyroscope</item>
+        <item>Inns-based Pinpointing</item>
+        <item>External Gyroscope</item>
+        <item>Glonavin L3</item>
+    </string-array>
+    <string-array name="auto_mark_scene">
+        <item>common</item>
+        <item>stairs</item>
+        <item>lift</item>
+    </string-array>
+    <string-array name="glonavin_type_gaotie">
+        <item>高铁专用</item>
+        <item>Glonavin L3</item>
+    </string-array>
+    <string-array name="glonavin_type_ditie">
+        <item>地铁专用</item>
+        <item>Glonavin L3</item>
+    </string-array>
+    <string-array name="wechat_operation_type">
+        <item>Send All</item>
+        <item>Send Picture Only</item>
+    </string-array>
+    <string-array name="single_station_survey">
+        <item>Pass</item>
+        <item>No Pass</item>
+    </string-array>
+    <string-array name="single_station_type">
+        <item>@string/single_station_type_indoor</item>
+        <item>@string/single_station_type_outdoor</item>
+    </string-array>
+    <string-array name="comprehensivetestinstrument">
+        <item>归一化到NAS</item>
+        <item>归一化到RLC</item>
+        <item>归一化到MAC</item>
+        <item>归一化到PHY</item>
+        <item>不归一化</item>
+    </string-array>
+
+    　　　　
+    <string-array name="arr_tag">
+        <item>text</item>
+        <item>photo</item>
+        <item>aduio</item>
+    </string-array>
+
+    <string-array name="network_select">
+        <item>全网</item>
+        <item>GSM</item>
+        <item>WCDMA</item>
+        <item>LTE</item>
+    </string-array>
+
+    <string-array name="city_select">
+        <item>全国</item>
+        <item>北京市</item>
+        <item>天津市</item>
+        <item>重庆市</item>
+    </string-array>
+    <string-array name="thread_mode_select">
+        <item>文件大小+线程数</item>
+        <item>文件大小*线程数</item>
+    </string-array>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+		<CheckBoxPreference 
+			android:key="system_autostart"
+			android:title="@string/monitor_systemset_autorun">
+		</CheckBoxPreference>
+		<CheckBoxPreference
+			android:key = "system_opencontrol"
+			android:title = "@string/monitor_systemset_openmonitor">
+		</CheckBoxPreference>
+		<CheckBoxPreference
+			android:key = "system_remove"
+			android:title = "@string/monitor_systemset_deleteAfterupload">
+		</CheckBoxPreference>
+		<ListPreference 
+			android:title="@string/monitor_systemset_gpsset" 
+			android:key="system_gpsset" 
+			android:dialogTitle="@string/monitor_systemset_gpsset" android:negativeButtonText="@string/str_cancle" android:entries="@array/gpsvalue" android:entryValues="@array/gpsreally"/>
+		<ListPreference 
+			android:dialogTitle="@string/monitor_systemset_uploadway" 
+			android:entries="@array/uploadway" 
+			android:title="@string/monitor_systemset_uploadway" 
+			android:key="system_uploadway" 
+			android:entryValues="@array/uploadwayreally" android:negativeButtonText="@string/str_cancle">
+		</ListPreference>
+		<ListPreference 
+			android:dialogTitle="@string/monitor_systemset_savepath" 
+			android:entries="@array/sys_setting_routine_storge" 
+			android:title="@string/monitor_systemset_savepath" 
+			android:key="system_storeway" 
+			android:entryValues="@array/sys_setting_routine_storgereally" android:negativeButtonText="@string/str_cancle">
+		</ListPreference>
+		<EditTextPreference 
+			android:title="@string/monitor_systemset_uploadtimes" 
+			android:dialogTitle="@string/monitor_systemset_uploadtimes" 
+			android:key="system_reloadcount" 
+			android:negativeButtonText="@string/str_cancle" android:positiveButtonText="@string/str_ok">
+		</EditTextPreference>
+		<EditTextPreference 
+			android:title="@string/monitor_systemset_uploadTime" 
+			android:negativeButtonText="@string/str_cancle" 
+			android:dialogTitle="@string/monitor_systemset_uploadTime" 
+			android:key="system_reloadtime" android:positiveButtonText="@string/str_ok">
+		</EditTextPreference>
+</PreferenceScreen>

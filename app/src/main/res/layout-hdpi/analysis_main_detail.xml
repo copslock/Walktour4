@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_grey_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_head"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="#0071BC"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/task_test_main_bg"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:src="@drawable/navi_back" />
+
+        <TextView
+            android:id="@+id/titileTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="2"
+            android:text="@string/intelligent_analysis"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_first_title_txt_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="8dp"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/mainsave"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/controlbar_paste" />
+
+            <ImageView
+                android:id="@+id/maindetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/analysis_5" />
+
+            <ImageView
+                android:id="@+id/historydetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/analysis_3" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/main_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center"
+            android:background="@color/white"
+            android:gravity="center_vertical|center"
+            android:orientation="horizontal">
+
+            <HorizontalScrollView
+                android:id="@+id/scrollviewlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center"
+                android:gravity="center_vertical|center"
+                android:orientation="horizontal"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/datapieslayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="145dp"
+                    android:layout_gravity="center_vertical|center"
+                    android:gravity="center_vertical|center"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:background="@color/white"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="2"
+                android:background="@color/white"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/fontstyle14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/intelligent_analysis_x1" />
+
+                <TextView
+                    android:id="@+id/totalcount"
+                    style="@style/fontstyle14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:gravity="left|center_vertical"
+                    android:text="5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="8dp"
+                android:background="@color/white"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/datadetailmap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/analysis_4" />
+
+                <ImageView
+                    android:id="@+id/datadetailtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/analysis_6" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/datadetailall"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include layout="@layout/analysis_main_detail_main" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

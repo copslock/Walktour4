@@ -1,0 +1,89 @@
+2013.09.29
+1.QualcommParser.dll
+	(*)更新基类。
+2.libtdscdmaRRC.so
+  (*)优化.
+3.libnas.so
+	(+)增加函数Routing_Area_Accept取PTMSI的接口;
+2013.09.25
+1.QualcommParser.dll
+                 (*)lTE限制RSRQ的值。
+                (*)TD 限制RLC_Err_Rate的值.
+2013.09.09
+1.QualcommParser.dll
+                  (*)修正信令时间修改导致EplseTime为负数从而RLP速率为负的问题.
+	(*)BinDtlog如果数据带了CRC的2字节则进行校验,没有则不校验。
+2013.09.02
+1.QualcommParser.dll
+                (*) -128作为EVDO_EV_RxAGC0和EVDO_EV_RxAGC1的无效值抛掉
+                (*)HDR Pilot Sets Version 3(0x12B6)按400ms过滤(跟Pilot Sets Version 2保持一样的过滤频率)
+
+2013.08.23
+1.libPCTEL_ExParser.so
+       (*)Ex系列设备带有“Absolute Time Stamp Option”功能选项时，解码增加处理
+
+2013.08.20
+1.libnas.so
+	(*)与Windows同步;
+2.QualcommParser.dll
+	(*)GSM 更新5226编码错误。
+                  (*)TD 修改DPA work UARFCN取值问题.
+
+2013.08.08
+1.QualcommParser.dll
+	(+)TD直接抛掉0xD034 ,0xD00F,0xD088 ,0xD089 ,0xD08C ,0xD118 和0xD10F这几条无用信令。
+2013.08.07
+1.QualcommParser.dll
+	(*)修正TD MCC为负值的问题。
+	(+)增加两条精简信令LTE_DCI_Info_4008和精简信令LTE_PDCCH_PHICH_4009
+2013.08.01
+1.QualcommParser.dll
+	(+)修正Android 下LTE PUCCH TxPower问题。
+2.libPCTEL_ExParser.so
+        (*)最新基类集成Lx/Ex系列解码库
+
+2013.07.25
+1.QualcommParser.dll
+	(+)LTE下增加Attach State状态字段;。
+2013.07.23
+1.QualcommParser.dll
+	(*)修改了双载波情况下的hsdpa各层速率的算法。
+	(*)调整了mac层的算法，把物理层重复的包剔除。
+	(+)增加Session字段的清值。
+	(*)修改LTE QPSK Rate等速率缺少精度的问题。
+                  (*)修改PCCPCH RSCP SIR, DPCH ISCP RSCP C/I算法.
+
+2013.7.19
+1.libQualcommParser.so
+           (+)添加Galaxy S4中HS Decode Status Log Packet with Data Edition 3(version 10)和WCDMA Temporal Analysis Edition 2(version 7)的解析
+           (+)添加Quanta中MAC DL TB subpacket(version 1)的解析
+            (*)TD PCCPCH C/I取值时判断是否为服务小区MidID.
+           (*)修改0x4186中finger堆栈溢出的BUG。
+
+2013.7.12
+1.libQualcommParser.so
+            (+)TD取消几条参数的过滤.
+2013.7.5
+1.libLteL3Decoder.so
+            (+)增加Identity Response的中IMSI、IMEI等结构体的提取.
+
+2013.6.20
+1.libQualcommParser.so
+            (*)部分TD参数的优化和增加输出.
+
+2013.6.18
+1.libwcdmarrc.so
+            (*)同步编译版本。
+
+2013.5.27
+1.libQualcommParser.so
+            (*)增加TD参数.
+2013.5.24
+1.libQualcommParser.so
+            (*)处理NAS信令重复输出问题.
+2013.4.28
+1.libQualcommParser.so
+            (+)提交初步版本.
+2013.5.16
+1.libQualcommParser.so
+            (+)同步代码后提交.

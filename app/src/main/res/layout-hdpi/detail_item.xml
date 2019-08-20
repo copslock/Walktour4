@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<!-- 注意： 将复选框设置为不可点击，不可在触摸时点击，不可获得焦点 -->  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/about_item_bg" >
+
+                <TextView
+                    android:id="@+id/detail_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:paddingRight="15dip"
+                	android:paddingLeft="15dip"
+                    android:gravity="center_vertical"
+                    android:text="IMEI"
+                    android:singleLine="true"
+                    android:textColor="@color/info_param_color"
+                    android:textSize="@dimen/app_content_txt_size" />
+            </RelativeLayout> 

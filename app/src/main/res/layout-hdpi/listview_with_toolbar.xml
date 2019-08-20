@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout01" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    > 
+    
+		<ListView android:layout_width="fill_parent"   
+	        android:layout_height="wrap_content"   
+	        android:layout_marginBottom="60dip"
+	        android:id="@+id/ListView01"  
+	      />
+			           
+	    <LinearLayout android:id="@+id/LineraLayout01"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="6dip"
+	        android:paddingBottom="4dip"
+	        android:layout_gravity="bottom" 
+	        android:background="@drawable/toolbar_bg"
+	        android:orientation="horizontal">
+			       	<Button android:id="@+id/Button01"
+			       		android:layout_width="wrap_content"
+			       		android:layout_height="wrap_content"
+			       		android:layout_weight="0.5"
+			       	/>
+			       	
+			       	<Button android:id="@+id/Button02"
+			       		android:layout_width="wrap_content"
+			       		android:layout_height="wrap_content"
+			       		android:layout_weight="0.5"
+			       	/>
+
+		 </LinearLayout>
+		 
+		 <RelativeLayout   
+	    android:id="@+id/RelativeLayout01"   
+	    android:layout_width="fill_parent"   
+	    android:layout_height="wrap_content" 
+	    android:layout_gravity="bottom"
+	    android:paddingBottom="54dip"
+	  	>   
+		       	<ListView android:id="@+id/ListView02"
+		       			android:layout_width="120dip"   
+		         		android:layout_height="wrap_content"
+		         		android:background="@drawable/toolbar_pop_bg"
+		         		android:visibility="invisible" 
+		         		android:layout_alignParentBottom="true"
+		       	/>
+		       	
+		       	<ListView android:id="@+id/ListView03"
+		       			android:layout_width="120dip"   
+		         		android:layout_height="wrap_content"
+		         		android:layout_marginLeft="-2dip"
+		         		android:layout_toRightOf="@id/ListView02"
+		         		android:background="@drawable/toolbar_pop_bg"
+		         		android:visibility="invisible" 
+		         		android:layout_alignParentBottom="true"
+		       	/>
+	    </RelativeLayout>
+        
+</FrameLayout> 

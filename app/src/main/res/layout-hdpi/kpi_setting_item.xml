@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/head_layout"
+        layout="@layout/kpi_item_section" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg"
+        android:minHeight="40dip"
+        android:paddingRight="10dip" >
+
+        <TextView
+            android:id="@+id/show_txt"
+            style="@style/setting_sort_left_text_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/enble_checkbox"
+            android:singleLine="true"
+            android:text="Ftpsssssssssssssssssssssss" />
+
+        <CheckBox
+            android:id="@+id/enble_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/switch_button_bg"
+            android:checked="true" />
+    </RelativeLayout>
+
+</LinearLayout>

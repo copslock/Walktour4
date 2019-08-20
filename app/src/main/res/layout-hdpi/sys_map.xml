@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:background="@color/app_main_color">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/setting_level2_title"
+                android:text="@string/sys_chart_line_setting" />
+
+            <LinearLayout
+                style="@style/item_layout_white_circle"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    style="@style/setting_chart_table_row"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/TextViewMapSetting"
+                        style="@style/setting_sort_left_text_2"
+                        android:layout_width="110dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/sys_map_default" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/SpinnerMapdefault"
+                        style="@style/task_drop_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dip"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/TextViewMapSetting"
+                        android:background="@drawable/drop"
+                        android:drawSelectorOnTop="false" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/new_setting_divider"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    style="@style/setting_chart_table_row"
+                    android:paddingRight="10dip">
+
+                    <TextView
+                        android:id="@+id/TextDtMapSetting"
+                        style="@style/setting_sort_left_text_2"
+                        android:layout_width="135dip"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="@string/sys_dtmap_default" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/SpinnerDtMapdefault"
+                        style="@style/task_drop_view"
+                        android:layout_width="@dimen/sys_map_width"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/drop"
+                        android:drawSelectorOnTop="false" />
+                </RelativeLayout>
+
+                <View style="@style/new_setting_divider" />
+
+                <RelativeLayout
+                    style="@style/setting_chart_table_row"
+                    android:layout_width="fill_parent"
+                    android:paddingRight="10dip">
+
+                    <TextView
+                        android:id="@+id/TextViewGps"
+                        style="@style/setting_sort_left_text_2"
+                        android:layout_width="135dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/sys_map_gpsColor" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/SpinnerGps"
+                        style="@style/task_drop_view"
+                        android:layout_width="@dimen/sys_map_width"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/drop"
+                        android:drawSelectorOnTop="false" />
+                </RelativeLayout>
+
+                <View style="@style/new_setting_divider" />
+                <!-- 轨迹形状 -->
+
+                <RelativeLayout
+                    style="@style/setting_chart_table_row"
+                    android:layout_width="fill_parent"
+                    android:paddingRight="10dip">
+
+                    <TextView
+                        android:id="@+id/locus_shape_txt"
+                        style="@style/setting_sort_left_text_2"
+                        android:layout_width="135dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/sys_map_locus_shape" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/locus_shape_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_width="@dimen/sys_map_width"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/drop"
+                        android:drawSelectorOnTop="false" />
+                </RelativeLayout>
+
+                <View style="@style/new_setting_divider" />
+
+                <!-- 轨迹大小 -->
+
+                <RelativeLayout
+                    style="@style/setting_chart_table_row"
+                    android:paddingRight="10dip">
+
+                    <TextView
+                        android:id="@+id/locus_shape_size_txt"
+                        style="@style/setting_sort_left_text_2"
+                        android:layout_width="135dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/sys_map_locus_shape_size" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/locus_shape_size_spinner"
+                        style="@style/task_drop_view"
+                        android:layout_width="@dimen/sys_map_width"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/drop"
+                        android:drawSelectorOnTop="false" />
+                </RelativeLayout>
+
+                <View style="@style/new_setting_divider" />
+
+                <!-- 2G参数 -->
+
+                <RelativeLayout
+                    style="@style/setting_chart_table_row"
+                    android:paddingRight="10dip">
+
+                    <TextView
+                        android:id="@+id/map_2g_param"
+                        style="@style/setting_sort_left_text_2"
+                        android:layout_width="135dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="@string/sys_map_2g_gpsColor" />
+
+                    <Button
+                        android:id="@+id/map_2g_param_btn"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="@dimen/sys_map_width"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/drop"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:minHeight="30dp"
+                        android:textColor="@color/app_main_text_color"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View style="@style/new_setting_divider" />
+
+                <!-- 3G参数 -->
+
+                <RelativeLayout
+                    style="@style/setting_chart_table_row"
+                    android:paddingRight="10dip">
+
+                    <TextView
+                        android:id="@+id/map_3g_param"
+                        style="@style/setting_sort_left_text_2"
+                        android:layout_width="135dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="@string/sys_map_3g_gpsColor" />
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:id="@+id/map_3g_param_btn"
+                        android:layout_width="@dimen/sys_map_width"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/drop"
+                        android:drawSelectorOnTop="false"
+                        android:minHeight="30dp"
+                        android:singleLine="true"
+                        android:textColor="@color/app_main_text_color"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View style="@style/new_setting_divider" />
+
+                <!-- 4G参数 -->
+
+                <RelativeLayout
+                    style="@style/setting_chart_table_row"
+                    android:paddingRight="10dip">
+
+                    <TextView
+                        android:id="@+id/map_4g_param"
+                        style="@style/setting_sort_left_text_2"
+                        android:layout_width="135dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="@string/sys_map_4g_gpsColor" />
+
+                    <Button
+                        android:id="@+id/map_4g_param_btn"
+                        android:layout_width="@dimen/sys_map_width"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/drop"
+                        android:drawSelectorOnTop="false"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:minHeight="30dp"
+                        android:textColor="@color/app_main_text_color"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View style="@style/new_setting_divider" />
+
+                <RelativeLayout
+                    style="@style/setting_chart_table_row"
+                    android:paddingRight="10dip"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/TextViewParameter"
+                        style="@style/setting_sort_left_text_2"
+                        android:layout_width="135dip"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="left"
+                        android:text="@string/sys_map_parameter_setting" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/SpinnerParameter"
+                        android:layout_width="@dimen/sys_map_width"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/drop"
+                        android:drawSelectorOnTop="false" />
+                </RelativeLayout>
+
+                <!--
+         不再使用可以删除<RelativeLayout
+                    android:id="@+id/setting_base_params_setting"
+                    style="@style/setting_chart_table_row"
+                    android:paddingRight="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/setting_base_params_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/sys_map_parameter_setting"
+                        style="@style/setting_sort_left_text_2" />
+
+                    <Button
+                        android:id="@+id/btn_base_params_setting"
+                        android:layout_width="102dip"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/btn_blue_radius_selector"
+                        android:text="@string/setting"
+                        android:textColor="@color/app_main_text_color" />
+                </RelativeLayout>
+
+                <View style="@style/new_setting_divider" />
+                -->
+
+                <RelativeLayout
+                    android:id="@+id/setting_base_params_threshold_setting"
+                    style="@style/setting_chart_table_row"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dip">
+
+                    <TextView
+                        android:id="@+id/setting_base_params_threshold__title"
+                        style="@style/setting_sort_left_text_2"
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/sys_map_parameter_threshold_setting" />
+
+                    <Button
+                        android:id="@+id/btn_base_params_threshold_setting"
+                        android:layout_width="167dp"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_blue_radius_selector"
+                        android:gravity="center"
+                        android:text="@string/setting"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/app_content_txt_size" />
+                </RelativeLayout>
+
+                <View style="@style/new_setting_divider" />
+                <!--
+                <include
+                    layout="@layout/sys_map_param_threshold_view_old"
+                    android:visibility="gone" />
+
+                <include
+                    layout="@layout/sys_map_param_threshold_view"
+                    android:visibility="gone" />
+                -->
+
+                <RelativeLayout
+                    android:id="@+id/setting_base_params_go_or_nogo_setting"
+                    style="@style/setting_chart_table_row"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dip"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/setting_base_params_go_or_nogo_setting_title"
+                        style="@style/setting_sort_left_text_2"
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/sys_map_parameter_go_or_nogo_setting" />
+
+                    <Button
+                        android:id="@+id/btn_base_params_go_or_nogo_setting"
+                        android:layout_width="@dimen/sys_map_width"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_blue_radius_selector"
+                        android:gravity="center"
+                        android:text="@string/setting"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/app_content_txt_size" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line_layout_5"
+                    style="@style/new_setting_divider" />
+
+                <RelativeLayout
+                    style="@style/setting_chart_table_row"
+                    android:paddingRight="10dip">
+
+                    <TextView
+                        android:id="@+id/basedisplay_txt"
+                        style="@style/setting_sort_left_text_2"
+                        android:layout_width="110dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/sys_map_base_display" />
+
+                    <com.walktour.framework.ui.BasicSpinner
+                        android:id="@+id/basedisplay_sp"
+                        style="@style/task_drop_view"
+                        android:layout_width="@dimen/sys_map_width"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/drop"
+                        android:drawSelectorOnTop="false" />
+                </RelativeLayout>
+
+                <View style="@style/new_setting_divider" />
+
+                <RelativeLayout
+                    style="@style/setting_chart_table_row"
+                    android:paddingRight="10dip">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:layout_width="110dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/base_station_download" />
+
+                    <Button
+                        android:id="@+id/btn_base_station_download"
+                        android:layout_width="@dimen/sys_map_width"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_blue_radius_selector"
+                        android:gravity="center"
+                        android:text="@string/setting"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/app_content_txt_size" />
+                </RelativeLayout>
+                <View style="@style/new_setting_divider" />
+                <RelativeLayout
+                    android:id="@+id/setting_base_custom_param"
+                    style="@style/setting_chart_table_row"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/base_custom_title"
+                        style="@style/setting_sort_left_up_text_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/sys_chart_select_custom_online" />
+
+                    <TextView
+                        style="@style/setting_sort_left_down_text_2"
+                        android:id="@+id/base_custom_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/base_custom_title"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginTop="10dip"
+                        android:text="@string/none"
+                        android:textColor="@color/app_main_second_title_text_color"
+                        android:textSize="@dimen/app_content_txt_size" />
+
+                </RelativeLayout>
+
+                <View style="@style/new_setting_divider" />
+
+                <RelativeLayout
+                    style="@style/setting_chart_table_row"
+                    android:paddingRight="10dip">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/map_operate_displaychart" />
+
+                    <CheckBox
+                        android:id="@+id/CheckBox01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:button="@drawable/switch_button_bg" />
+                </RelativeLayout>
+
+                <View style="@style/new_setting_divider" />
+
+                <RelativeLayout
+                    style="@style/setting_chart_table_row"
+                    android:paddingRight="10dip">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/map_mark_calibration" />
+
+                    <CheckBox
+                        android:id="@+id/CheckBox02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:button="@drawable/switch_button_bg" />
+                </RelativeLayout>
+
+                <!-- 小区连线设置 -->
+
+                <View style="@style/new_setting_divider" />
+
+                <RelativeLayout
+                    style="@style/setting_chart_table_row"
+                    android:paddingRight="10dip">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:layout_width="135dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="left"
+                        android:text="@string/sys_cell_link" />
+
+                    <Button
+                        android:id="@+id/cell_line_set_btn"
+                        android:layout_width="@dimen/sys_map_width"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_blue_radius_selector"
+                        android:text="@string/setting"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/app_content_txt_size" />
+                </RelativeLayout>
+
+                <!-- 地铁线路下载设置 -->
+
+                <RelativeLayout
+                    android:id="@+id/metro_setting_layout"
+                    style="@style/setting_chart_table_row"
+                    android:visibility="gone">
+
+                    <View style="@style/new_setting_divider" />
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:layout_width="135dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="left"
+                        android:text="@string/metro_route_download" />
+
+                    <Button
+                        android:id="@+id/metro_route_download_btn"
+                        android:layout_width="@dimen/sys_map_width"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/btn_blue_radius_selector"
+                        android:text="@string/setting"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/app_content_txt_size" />
+                </RelativeLayout>
+
+                <!-- 高铁线路下载 -->
+
+                <RelativeLayout
+                    android:id="@+id/dowloadgaotielayout"
+                    style="@style/setting_chart_table_row"
+                    android:background="@drawable/base_list_item_bg"
+                    android:descendantFocusability="blocksDescendants"
+                    android:visibility="gone">
+
+                    <View style="@style/new_setting_divider" />
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="left"
+                        android:text="@string/gaotie_project_test_3" />
+
+                    <Button
+                        android:id="@+id/gaotie_route_download_btn"
+                        android:layout_width="@dimen/sys_map_width"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/btn_blue_radius_selector"
+                        android:text="@string/setting"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/app_content_txt_size" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/order_no"
+        style="@style/setting_sort_left_up_text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/order_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:gravity="top"
+        android:text=""
+        android:textColor="@color/sys_setting_sort_left_down_text"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/work_order_fj_dt_testing_content_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="0dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_detail_step3_1"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/txt_dt_testing_business"
+                style="@style/setting_sort_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/work_order_fj_dt_voice_test" />
+
+            <Button
+                android:id="@+id/work_order_fj_dt_start_testing"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/dialog_btn"
+                android:drawSelectorOnTop="true"
+                android:gravity="center"
+                android:text="@string/work_order_fj_start_testing"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp" >
+
+            <TextView
+                style="@style/setting_sort_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/work_order_fj_business_template" />
+
+            <Button
+                android:id="@+id/work_order_fj_dt_template_edit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/dialog_btn"
+                android:drawSelectorOnTop="true"
+                android:gravity="center"
+                android:text="@string/work_order_fj_template_edit"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/dt_voice_test_message_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/dt_voice_test_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text=""
+                android:textColor="@color/light_blue"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- DT语音测试参数layout -->
+
+        <LinearLayout
+            android:id="@+id/dt_voice_testing_params_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="@string/work_order_fj_dt_voice_test"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/dt_test_repeat_times_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/txt_dt_test_repeat_times"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/light_blue"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="@string/work_order_fj_voice_test_param"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/work_order_fj_voice_test_param1" />
+
+                    <TextView
+                        android:id="@+id/work_order_fj_voice_test_param1"
+                        style="@style/setting_sort_right_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/light_blue" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.0" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/work_order_fj_voice_test_param2" />
+
+                    <TextView
+                        android:id="@+id/work_order_fj_voice_test_param2"
+                        style="@style/setting_sort_right_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/light_blue" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingTop="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/work_order_fj_voice_test_param3" />
+
+                    <TextView
+                        android:id="@+id/work_order_fj_voice_test_param3"
+                        style="@style/setting_sort_right_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/light_blue" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.0" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/work_order_fj_voice_test_param4" />
+
+                    <TextView
+                        android:id="@+id/work_order_fj_voice_test_param4"
+                        style="@style/setting_sort_right_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/light_blue" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingTop="10dp" >
+
+                <!-- 1 -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/work_order_fj_voice_test_param19" />
+
+                    <TextView
+                        android:id="@+id/work_order_fj_voice_test_param19"
+                        style="@style/setting_sort_right_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/light_blue" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.0" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/work_order_fj_voice_test_param6" />
+
+                    <TextView
+                        android:id="@+id/work_order_fj_voice_test_param6"
+                        style="@style/setting_sort_right_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/light_blue" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingTop="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/work_order_fj_voice_test_param7" />
+
+                    <TextView
+                        android:id="@+id/work_order_fj_voice_test_param7"
+                        style="@style/setting_sort_right_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/light_blue" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.0" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/work_order_fj_voice_test_param8" />
+
+                    <TextView
+                        android:id="@+id/work_order_fj_voice_test_param8"
+                        style="@style/setting_sort_right_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/light_blue" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingTop="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.0" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/work_order_fj_voice_test_param5" />
+
+                    <TextView
+                        android:id="@+id/work_order_fj_voice_test_param5"
+                        style="@style/setting_sort_right_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/light_blue" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.0" >
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

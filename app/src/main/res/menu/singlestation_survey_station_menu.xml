@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_singlestation_show_map"
+        android:icon="@drawable/singlestation_show_map"
+        android:orderInCategory="90"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_singlestation_show_list"
+        android:icon="@drawable/singlestation_show_map"
+        android:orderInCategory="90"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_singlestation_login"
+        android:icon="@drawable/singlestation_login"
+        android:orderInCategory="90"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+   <!-- <item
+        android:id="@+id/menu_singlestation_import_station"
+        android:icon="@drawable/singlestation_import_station"
+        android:orderInCategory="90"
+        android:title=""
+        app:showAsAction="ifRoom"/>-->
+</menu>

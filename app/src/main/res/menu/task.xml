@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/menu_task_newtask" android:icon="@android:drawable/ic_input_add" android:title="@string/task_new"></item>
+<item android:id="@+id/menu_task_callhistory" android:icon="@android:drawable/ic_input_get" android:title="@string/task_history"></item>
+<item android:id="@+id/menu_task_set" android:icon="@android:drawable/ic_menu_edit" android:title="@string/task_setting"></item>
+</menu>

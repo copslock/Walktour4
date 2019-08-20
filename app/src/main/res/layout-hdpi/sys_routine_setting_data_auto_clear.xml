@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/auto_clear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/str_auto_clear" />
+
+        <TextView
+            android:id="@+id/auto_clear_text"
+            style="@style/setting_sort_right_text_2" />
+    </RelativeLayout>
+
+    
+
+    <RelativeLayout
+        android:id="@+id/data_keep_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+        <View style="@style/sys_routine_setting_divider" />
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/str_data_keep_data" />
+
+        <TextView
+            android:id="@+id/data_keep_text"
+            style="@style/setting_sort_right_text_2" />
+    </RelativeLayout>
+
+</LinearLayout>

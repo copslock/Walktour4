@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@color/info_background"
+><!--
+
+	<TableLayout
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent"
+	  android:background="@color/black"
+	  >
+	  		<View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/info_background"/>
+	  		
+	  		<TableRow  android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@color/black">
+	  			<View android:layout_width="1dip" android:layout_height="fill_parent" android:background="@color/info_background"/>
+	  			<TextView  android:text="@string/cdma_title"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="center"/>
+	  		</TableRow>
+	  		
+	  		<View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/info_background"/>
+	  		
+	  		<TableRow  android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@color/black">
+	  			<TextView  android:text="@string/cdma_title"  android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	  		</TableRow>
+	  		
+	  		<View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/info_background"/>
+	  		
+	</TableLayout>
+
+--></ScrollView>
+

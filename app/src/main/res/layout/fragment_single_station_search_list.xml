@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/fragment_main_layout">
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/list_default_round"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <ImageView
+                android:id="@+id/search_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dip"
+                android:src="@drawable/singlestation_search_condition"/>
+
+            <EditText
+                android:id="@+id/search_content_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="2dip"
+                android:layout_toRightOf="@id/search_condition"
+                android:background="@null"
+                android:hint="@string/str_search"
+                android:textColor="@color/black"
+                android:textSize="@dimen/app_content_txt_size"/>
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/search_condition_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/list_default_round"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RadioButton
+                android:textSize="@dimen/app_content_txt_size"
+                android:id="@+id/search_condition_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="1000m"/>
+
+            <RadioButton
+                android:textSize="@dimen/app_content_txt_size"
+                android:id="@+id/search_condition_2000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2000m"/>
+
+            <RadioButton
+                android:id="@+id/search_condition_3000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3000m"/>
+
+            <RadioButton
+                android:textSize="@dimen/app_content_txt_size"
+                android:id="@+id/search_condition_5000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5000m"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_bar"/>
+
+</RelativeLayout>

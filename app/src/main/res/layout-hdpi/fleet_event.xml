@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<ScrollView   xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:id="@+id/ScrollView01"
+      android:layout_width="fill_parent" android:layout_height="fill_parent" 
+      android:layout_marginLeft="6sp" android:layout_marginRight="6sp"
+      android:scrollbars="vertical" android:fadingEdge="vertical">
+         
+      <TextView
+          android:textSize="@dimen/app_content_txt_size"
+          android:id="@+id/TextView01"
+      android:layout_width="fill_parent"  
+      android:layout_height="wrap_content" 
+      android:layout_marginTop="3sp" 
+      android:layout_marginBottom="6sp"/> 
+            
+</ScrollView>

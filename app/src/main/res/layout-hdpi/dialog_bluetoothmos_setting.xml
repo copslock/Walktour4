@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/tasK_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/task_callMOS_device_playback_volume" />
+
+        <EditText
+            android:id="@+id/edit_playback_volume"
+            style="@style/task_edit_view"
+            android:layout_width="80dp"
+            android:layout_centerInParent="true"
+            android:inputType="number"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:width="10dp" />
+    </RelativeLayout>
+
+    <View style="@style/task_listdivider" />
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/tasK_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/task_callMOS_device_record_volume" />
+
+        <EditText
+            android:id="@+id/edit_record_volume"
+            style="@style/task_edit_view"
+            android:layout_width="80dp"
+            android:layout_centerInParent="true"
+            android:inputType="number"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:width="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/basic_title"/>
+
+    <!-- 缩略图 -->
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="160dip"
+        android:visibility="gone"
+        android:background="#66FFFFFF">
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:baselineAlignBottom="true" />
+
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/str_image_expand" />
+
+        <Button
+            android:id="@+id/Button02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/str_load" />
+
+    </RelativeLayout>
+
+    <!-- 文件列表-->
+    <ListView
+        android:id="@+id/ListView01"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/app_main_bg_color"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/list_divider"
+        android:overScrollMode="never"
+        android:fadingEdge="none" />
+
+    <!-- 底部工具栏 -->
+    <com.walktour.gui.applet.ControlBar
+        android:id="@+id/ControlBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal" />
+
+
+</LinearLayout>

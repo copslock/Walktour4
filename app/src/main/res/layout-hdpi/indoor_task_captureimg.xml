@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </SurfaceView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:textSize = "@dimen/app_defult_btn_txt_size"
+            android:id="@+id/btnTake"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="@string/str_take"/>
+
+        <Button
+            android:textSize = "@dimen/app_defult_btn_txt_size"
+            android:id="@+id/btnSave"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="@string/str_save"/>
+
+        <Button
+            android:textSize = "@dimen/app_defult_btn_txt_size"
+            android:id="@+id/btnCancel"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="@+string/str_cancle"/>
+    </LinearLayout>
+</FrameLayout>

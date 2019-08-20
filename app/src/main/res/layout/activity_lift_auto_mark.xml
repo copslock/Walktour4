@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/threshold_view" />
+
+    <TextView
+        android:id="@+id/tv_current_floor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="@dimen/app_content_txt_size"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_init_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:textSize="@dimen/app_content_txt_size"
+        android:textColor="@color/black"
+        tools:text="初始化信息" />
+
+    <!-- 阀值图例 -->
+
+    <com.walktour.gui.map.ThresholdView
+        android:id="@+id/threshold_view"
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:layout_above="@id/LineraLayoutToolbar" />
+
+    <LinearLayout
+        android:id="@+id/LineraLayoutToolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+
+        <Button
+            android:id="@+id/undo_btn"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_undo"
+            android:text="@string/map_bar_undo"
+            android:textSize="@dimen/app_content_txt_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_export"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_undo"
+            android:text="@string/task_export" />
+
+
+        <Button
+            android:id="@+id/btn_setting"
+            style="@style/toolbar_button_bg"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/controlbar_menu"
+            android:text="@string/str_setting" />
+    </LinearLayout>
+
+</RelativeLayout>

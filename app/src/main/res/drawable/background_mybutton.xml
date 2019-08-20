@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+
+<!-- <item android:state_window_focused="false" 
+       android:drawable="@drawable/button_default" /> 默认 -->
+        
+<!--   <item android:state_focused="true" 
+  		android:state_pressed="true" 
+        android:drawable="@null" /> 获得焦点按下
+        
+  <item android:state_focused="false" 
+  		android:state_pressed="true" 
+        android:drawable="@null" /> 未获得焦点按下 -->
+        <!-- android:drawable="@drawable/tab_btn_top_2_select_bg" />  -->
+</selector> 

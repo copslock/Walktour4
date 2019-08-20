@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <KPIList>
+	<kpi enable="1" kpiKey="_Rate" kpiShowName="total_callSuccRate" operator="&gt;=" value="98" scale="100" molecule="_moConnects" denominator="_moTrys" units="%" groupby="VoiceCall"/>
+	<kpi enable="1" kpiKey="_Rate" kpiShowName="total_dropCallRate" operator="&lt;=" value="1" scale="100" molecule="_moDropcalls" denominator="_moConnects" units="%" groupby="VoiceCall"/>
+	<kpi enable="1" kpiKey="_Rate" kpiShowName="total_callDelay" operator="&lt;=" value="10" scale="0.001" molecule="_moCalldelay" denominator="_moDelaytimes" units="s" groupby="VoiceCall"/>
+
+	<kpi enable="1" kpiKey="_Rate" kpiShowName="total_csfb_success_ratio" operator="&gt;=" value="98" scale="100" molecule="_csfb_mo_Established" denominator="_csfb_mo_request" units="%" groupby="CSFBCall"/>
+	<kpi enable="1" kpiKey="_Rate" kpiShowName="total_csfb_dropped_call_rate" operator="&lt;=" value="1" scale="100" molecule="_csfb_mo_drop" denominator="_csfb_mo_Established" units="%" groupby="CSFBCall"/>
+	<kpi enable="1" kpiKey="_Rate" kpiShowName="total_csfb_successes_delay" operator="&lt;=" value="12" scale="0.001" molecule="_csfb_mo_SuccessDelay" denominator="_csfb_mo_Established" units="s" groupby="CSFBCall"/>
+
+	<kpi enable="1" kpiKey="_Rate" kpiShowName="total_DropRate" operator="&lt;=" value="1" scale="100" molecule="_downDrops" denominator="_downtrys" units="%" groupby="FTPDownload"/>
+	<kpi enable="1" kpiKey="_Rate" kpiShowName="total_AppAverageSpeed" operator="&gt;=" value="5120" scale="0.9765625" molecule="_downCurrentSize" denominator="_downCurrentTimes" units="kbps" groupby="FTPDownload"/>
+
+	<kpi enable="1" kpiKey="_rate" kpiShowName="total_DropRate" operator="&lt;=" value="1" scale="100" molecule="_upDrops" denominator="_uptrys" units="%" groupby="FTPUpload"/>
+	<kpi enable="1" kpiKey="_Rate" kpiShowName="total_AppAverageSpeed" operator="&gt;=" value="2048" scale="0.9765625" molecule="_upCurrentSize" denominator="_upCurrentTimes" units="kbps" groupby="FTPUpload"/>
+
+	<kpi enable="1" kpiKey="_rate" kpiShowName="total_SuccessRate" operator="&gt;=" value="98" scale="100" molecule="_HttpSuccess" denominator="_HttpTry" units="%" groupby="HTTPLogon"/>
+	<kpi enable="1" kpiKey="_Rate" kpiShowName="total_AverageDelay" operator="&lt;=" value="20000" scale="1" molecule="_HttpDelay" denominator="_HttpSuccess" units="ms" groupby="HTTPLogon"/>
+
+	<kpi enable="1" kpiKey="_rate" kpiShowName="total_SuccessRate" operator="&gt;=" value="98" scale="100" molecule="_pingSuccess" denominator="_pingTry" units="%" groupby="Ping"/>
+	<kpi enable="1" kpiKey="_Rate" kpiShowName="total_AverageDelay" operator="&lt;=" value="2000" scale="1" molecule="_pingDelay" denominator="_pingSuccess" units="ms" groupby="Ping"/>
+
+	<kpi enable="1" kpiKey="_rate" kpiShowName="total_coverage_ratio" operator="&gt;=" value="98" scale="100" molecule="_LTErsrp" denominator="_LTErsrpCount" units="%" groupby="CoverageRate"/>
+
+	<kpi enable="0" kpiKey="_rate" kpiShowName="total_sendSuccessRate" operator="&gt;=" value="98" scale="100" molecule="_EmailSendSuccess" denominator="_EmailSendTry" units="%" groupby="Email"/>
+	<kpi enable="0" kpiKey="_rate" kpiShowName="total_SendAverageSpeed" operator="&gt;=" value="5120" scale="7.8125" molecule="_EmailSendSumSize" denominator="_EmailSendAllTime" units="kbps" groupby="Email"/>
+	<kpi enable="0" kpiKey="_rate" kpiShowName="total_ReceiveSuccessRate" operator="&gt;=" value="98" scale="100" molecule="_EmailReceiveSuccess" denominator="_EmailReceiveTry" units="%" groupby="Email"/>
+	<kpi enable="0" kpiKey="_rate" kpiShowName="total_ReceiveAverageSpeed" operator="&gt;=" value="2048" scale="7.8125" molecule="_EmailReceSumSize" denominator="_EmailReceAllTime" units="kbps" groupby="Email"/>
+
+	<kpi enable="0" kpiKey="_rate" kpiShowName="total_vs_serviceAccessTime" operator="&lt;=" value="5000" scale="1" molecule="_videoConnectTime" denominator="_videoSuccs" units="ms" groupby="VideoPlay"/>
+	<kpi enable="0" kpiKey="_rate" kpiShowName="total_vs_reproductionDelay" operator="&lt;=" value="10000" scale="1" molecule="_videoReproductionDaily" denominator="_videoReproductionStart" units="ms" groupby="VideoPlay"/>
+	<kpi enable="0" kpiKey="_rate" kpiShowName="total_vs_reproductionFailureRatio" operator="&lt;=" value="1" scale="1" molecule="_videoReproductionFailure" denominator="_videoReproductionStart" units="%" groupby="VideoPlay"/>
+	<kpi enable="0" kpiKey="_rate" kpiShowName="total_vs_reproductionDropRatio" operator="&lt;=" value="1" scale="1" molecule="_videoDrop" denominator="_videoReproductionStart" units="%" groupby="VideoPlay"/>
+	<kpi enable="0" kpiKey="_rate" kpiShowName="total_vs_rebufferTime" operator="&lt;=" value="" scale="10000" molecule="_videoRebufferTime" denominator="_videoReBufferSuccess" units="ms" groupby="VideoPlay"/>
+</KPIList>

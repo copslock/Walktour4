@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fragment_main_layout"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/list_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar">
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+    <com.walktour.base.gui.activity.BaseBottomControlBar
+        android:id="@+id/bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+</RelativeLayout>

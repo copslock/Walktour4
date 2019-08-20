@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/setting_noGO_checkBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/auto_show_result" />
+
+        <CheckBox
+            android:id="@+id/auto_show_result_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:button="@drawable/switch_button_bg"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <View style="@style/sys_routine_setting_divider" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dip"
+        android:paddingRight="9dip"
+        android:paddingTop="6dip" 
+        android:background="@drawable/base_list_item_bg">
+
+        <TextView
+            android:layout_width="135dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/sys_setting_kpi_setting_str"
+            style="@style/setting_sort_left_text_2"/>
+
+        <Button
+            android:id="@+id/sys_setting_threshold"
+            android:layout_width="102dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="@drawable/dialog_btn"
+            android:text="@string/sys_chart_line_setting"
+            android:textColor="@color/app_main_text_color" 
+            android:textSize="@dimen/default_txt_size_normal"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+			android:background="@color/setting_bgcolor"
+		    >
+		    <include
+            android:id="@+id/about_title"
+            layout="@layout/basic_title" />
+		    <View
+		    android:id="@+id/title_blue_color"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/setting_sort_title_bgcolor" />
+    <ScrollView
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:background="@color/setting_bgcolor"
+        android:layout_weight="50"
+        >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:background="@color/setting_bgcolor"
+         android:orientation="vertical"
+        >
+        
+
+		
+		<TextView 
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:textSize="@dimen/app_second_title_txt_size"
+		    android:textColor="@color/white"
+		    android:padding="5dip"
+		    android:text="Contract Information"
+		    />
+       
+			<LinearLayout
+			    android:id="@+id/about_panel_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:background="@drawable/license_run_state_shape"
+                 >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:paddingRight="15dip"
+                android:paddingLeft="15dip"
+                android:background="@drawable/about_item_bg" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Area"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/app_content_txt_size" />
+
+                <TextView
+                    android:id="@+id/gls_detail_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Test"
+					android:textSize="@dimen/app_content_txt_size"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/info_param_color" />
+            </RelativeLayout>
+            
+            <View android:background="@color/about_item" android:layout_height="1dp" android:layout_width="fill_parent" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:paddingRight="15dip"
+                android:paddingLeft="15dip"
+                android:background="@drawable/about_item_bg" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Project"
+                    android:textColor="@color/white"
+					android:textSize="@dimen/app_content_txt_size" />
+
+                <TextView
+                    android:id="@+id/gls_detail_area_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Ericsson ATU Project"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/info_param_color" />
+            </RelativeLayout>
+           <View android:background="@color/about_item" android:layout_height="1px" android:layout_width="fill_parent" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:paddingRight="15dip"
+                android:paddingLeft="15dip"
+                android:id="@+id/gls_mag_Contract"
+                android:background="@drawable/about_item_bg" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Contract"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/app_content_txt_size" />
+
+                <TextView
+                    android:id="@+id/gls_detail_contract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="DL3300AA00001"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:drawablePadding="5dip"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/info_param_color" />
+            </RelativeLayout>
+            <View android:background="@color/about_item" android:layout_height="1px" android:layout_width="fill_parent" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:paddingRight="15dip"
+                android:paddingLeft="15dip"
+                android:background="@drawable/about_item_bg" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Expiration Date"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/app_content_txt_size" />
+
+                <TextView
+                    android:id="@+id/gls_detail_expiration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="2013/12/12"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/info_param_color" />
+            </RelativeLayout>
+            <View android:background="@color/about_item" android:layout_height="1px" android:layout_width="fill_parent" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:paddingRight="15dip"
+                android:paddingLeft="15dip"
+                android:background="@drawable/about_item_bg" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Total Number"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/app_content_txt_size" />
+
+                <TextView
+                    android:id="@+id/gls_detail_total_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="9"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/info_param_color" />
+            </RelativeLayout>
+            <View android:background="@color/about_item" android:layout_height="1px" android:layout_width="fill_parent" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:paddingRight="15dip"
+                android:paddingLeft="15dip"
+                android:background="@drawable/about_item_bg" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Available Number"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/app_content_txt_size" />
+
+                <TextView
+                    android:id="@+id/gls_detail_available_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="1"
+                    android:textSize="@dimen/app_content_txt_size"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/info_param_color" />
+            </RelativeLayout>
+            
+             </LinearLayout>
+             
+			<TextView 
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:textSize="18sp"
+		    android:textColor="@color/white"
+		    android:padding="5dip"
+		    android:text="License Detail"
+		    />
+       
+			<LinearLayout
+			    android:id="@+id/addLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:background="@drawable/license_run_state_shape"
+                 >
+             </LinearLayout>
+             
+
+    </LinearLayout>
+    
+    </ScrollView>
+    
+    <RelativeLayout
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content" >
+
+			        <TextView
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_marginBottom="5dip"
+			            android:gravity="center_horizontal"
+			            android:text="Ericsson GLS"
+			            android:textColor="@color/info_param_color"
+			            android:textSize="@dimen/app_second_title_txt_size" />
+
+    		</RelativeLayout>
+    
+    </LinearLayout>
+

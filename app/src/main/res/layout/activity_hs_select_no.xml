@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".highspeedrail.HsSelectNoActivity">
+
+    <LinearLayout
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/task_attach_title"
+            layout="@layout/basic_title" />
+    </LinearLayout>
+    <EditText
+        android:drawableLeft="@drawable/search"
+        android:id="@+id/search_content_edit"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="4dp"
+        android:gravity="center_vertical"
+        android:background="@null"
+        android:focusable="true"
+        android:hint="筛选班次"
+        android:textColor="@color/black"
+        android:textSize="@dimen/app_content_txt_size" />
+    <View style="@style/task_listdivider" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_hs_select_no"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_below="@+id/top_title"></android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/downrailway"
+            style="@style/fontstyle14"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/dialog_btn"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/metro_check_update"
+            android:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

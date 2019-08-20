@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/scan" android:title="@string/map_scan"></item>
+	<item android:id="@+id/outside" android:title="@string/map_outdoor"></item>
+	<item android:id="@+id/floor" android:title="@string/map_indoor"></item>
+	<item android:id="@+id/base" android:title="@string/map_base"></item>
+	<item android:id="@+id/outtab" android:title="@string/map_outtab"></item>
+	<item android:id="@+id/map_offline" android:title="@string/map_offline"></item>
+	<item android:id="@+id/map_online" android:title="@string/map_online"></item>
+	<!--  item android:id="@+id/base_append" android:title="@string/map_base_append"></item>-->
+	<!--<item android:id="@+id/selfdraw" android:title="@string/map_selfdraw"></item> -->
+</menu>

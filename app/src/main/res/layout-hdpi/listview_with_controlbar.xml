@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:background="@color/app_main_bg_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <LinearLayout
+        android:id="@+id/setting_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_main_color"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/setting_title"
+            style="@style/setting_level2_title"
+            android:text="@string/sys_indoor_building_setting" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/FrameLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/setting_title_layout" 
+        >
+
+        <ListView
+            android:id="@+id/ListView01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/list_divider"
+            android:fadingEdge="none"
+            android:cacheColorHint="#00000000"
+            android:background="@color/app_main_bg_color"
+            android:layout_marginBottom="54dip" />
+
+        <!-- 底部工具栏 -->
+
+        <com.walktour.gui.applet.ControlBar
+            android:id="@+id/ControlBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+        
+        <com.walktour.gui.applet.ControlBar
+            android:id="@+id/ControlBarDel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color" >
+
+    <include
+        android:id="@+id/task_attach_title"
+        layout="@layout/basic_title" />
+
+    <RelativeLayout
+        android:id="@+id/csfb_title"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_below="@+id/task_attach_title"
+        android:background="@color/base_second_title_bg" >
+
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/csfb_Call_Type"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/setting_sort_right_text1"
+                android:layout_weight="1"
+                android:text="@string/csfb_faild_type_mo"
+                android:textSize="14sp" />
+
+            <TextView
+                style="@style/setting_sort_right_text1"
+                android:layout_weight="1"
+                android:text="@string/csfb_faild_type_mt"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/csfb_title"
+        android:background="@color/app_main_bg_color" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/app_main_bg_color"
+            android:orientation="vertical" >
+
+            <View style="@style/setting_divider" />
+
+            <LinearLayout
+                android:id="@+id/csfb_Delay_llyt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/volte_total_jtl"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/total_volte_jtl_text"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_width="45dip"
+                            android:layout_gravity="center_vertical|right" 
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/total_volte_jtl_text_mt"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_width="45dip"
+                            android:layout_gravity="center_vertical|right" 
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/volte_total_dhl"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/total_volte_dhl_text"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_width="45dip"
+                            android:layout_gravity="center_vertical|right" 
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/total_volte_dhl_text_mt"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_width="45dip"
+                            android:layout_gravity="center_vertical|right" 
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/volte_total_jtsy"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/total_volte_jtsy_text"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_width="45dip"
+                            android:layout_gravity="center_vertical|right" 
+                            android:gravity="center_vertical|right"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/total_volte_jtsy_text_mt"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_width="45dip"
+                            android:layout_gravity="center_vertical|right" 
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/volte_Abnormal_Count"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/total_volte_exception_count"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_weight="1"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/total_str_param"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                style="@style/setting_sort_left_text_2"
+                                android:text="RFC1889 Jitter"
+                                android:textSize="12sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|right" >
+
+                                <TextView
+                                    android:id="@+id/textvv1"
+                                    style="@style/setting_sort_right_text_2"
+                                    android:text="-"
+                                    android:textColor="@color/info_param_color"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                style="@style/setting_sort_left_text_2"
+                                android:text="Jitter Buffer Delay"
+                                android:textSize="12sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|right" >
+
+                                <TextView
+                                    android:id="@+id/textvv2"
+                                    style="@style/setting_sort_right_text_2"
+                                    android:text="-"
+                                    android:textColor="@color/info_param_color"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                style="@style/setting_sort_left_text_2"
+                                android:text="PDSCH BLER"
+                                android:textSize="12sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|right" >
+
+                                <TextView
+                                    android:id="@+id/textvv3"
+                                    style="@style/setting_sort_right_text_2"
+                                    android:text="-"
+                                    android:textColor="@color/info_param_color"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                style="@style/setting_sort_left_text_2"
+                                android:text="PDSCH BLER"
+                                android:textSize="12sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|right" >
+
+                                <TextView
+                                    android:id="@+id/textvv4"
+                                    style="@style/setting_sort_right_text_2"
+                                    android:text="-"
+                                    android:textColor="@color/info_param_color"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                style="@style/setting_sort_left_text_2"
+                                android:text="POLQA MOS"
+                                android:textSize="12sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|right" >
+
+                                <TextView
+                                    android:id="@+id/textvv5"
+                                    style="@style/setting_sort_right_text_2"
+                                    android:text="-"
+                                    android:textColor="@color/info_param_color"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                style="@style/setting_sort_left_text_2"
+                                android:text="PESQ MOS"
+                                android:textSize="12sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|right" >
+
+                                <TextView
+                                    android:id="@+id/textvv6"
+                                    style="@style/setting_sort_right_text_2"
+                                    android:text="-"
+                                    android:textColor="@color/info_param_color"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="PDSCH Scheduled RB Count /slot"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/textvv7"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_weight="1"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="PUSCH Scheduled RB Count /slot "
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/textvv8"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_weight="1"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="MCS Average code0 DL /s"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/textvv9"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_weight="1"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="MCS Average code1 DL /s"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/textvv10"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_weight="1"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="MCS Average DL /s"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/textvv11"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_weight="1"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="Packet Loss Rate(%)"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/textvv12"
+                            style="@style/setting_sort_right_text_2"
+                            android:layout_weight="1"
+                            android:text="-"
+                            android:textColor="@color/info_param_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

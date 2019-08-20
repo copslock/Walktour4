@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <!-- 作为弹出窗口的view: 包含1个TimePicker -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TimePicker
+	android:id="@+id/alert_timepicker"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_horizontal"
+	>
+	</TimePicker>
+	    
+</LinearLayout>

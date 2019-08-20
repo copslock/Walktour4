@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/data_testing_sub_content_detail_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginRight="0dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <!-- 网速测试 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_network_test"
+            android:textSize="@dimen/little_txt_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/work_order_fj_up_speed"
+                    android:textSize="@dimen/little_txt_size" />
+
+                <TextView
+                    android:id="@+id/work_order_fj_up_speed"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/little_txt_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/work_order_fj_down_speed"
+                    android:textSize="@dimen/little_txt_size" />
+
+                <TextView
+                    android:id="@+id/work_order_fj_down_speed"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/little_txt_size" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- ftp下载 -->
+
+    <LinearLayout
+        android:id="@+id/data_testing_sub_content_ftp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            style="@style/setting_divider"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray" />
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/act_task_ftpdownload"
+            android:textSize="@dimen/little_txt_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_DropRate"
+                    android:textSize="@dimen/little_txt_size" />
+
+                <TextView
+                    android:id="@+id/total_DropRate"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/little_txt_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/work_order_fj_average_rate"
+                    android:textSize="@dimen/little_txt_size" />
+
+                <TextView
+                    android:id="@+id/work_order_fj_average_rate"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/little_txt_size" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" >
+
+            <TextView
+                style="@style/setting_sort_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/work_order_fj_manual_test_abnormal"
+                android:textSize="@dimen/little_txt_size" />
+
+            <com.walktour.framework.ui.BasicSpinner
+                android:id="@+id/data_testing_sub_content_spinner1"
+                android:layout_width="101dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/drop"
+                android:drawSelectorOnTop="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 网页浏览 -->
+
+    <LinearLayout
+        android:id="@+id/data_testing_sub_content_web_page"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            style="@style/setting_divider"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray" />
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_order_fj_borwse_the_web"
+            android:textSize="@dimen/little_txt_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_SuccessRate"
+                    android:textSize="@dimen/little_txt_size" />
+
+                <TextView
+                    android:id="@+id/total_SuccessRate"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/little_txt_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/work_order_fj_average_delay"
+                    android:textSize="@dimen/little_txt_size" />
+
+                <TextView
+                    android:id="@+id/work_order_fj_average_delay"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/little_txt_size" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" >
+
+            <TextView
+                style="@style/setting_sort_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/work_order_fj_manual_test_abnormal"
+                android:textSize="@dimen/little_txt_size" />
+
+            <com.walktour.framework.ui.BasicSpinner
+                android:id="@+id/data_testing_sub_content_spinner2"
+                android:layout_width="101dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/drop"
+                android:drawSelectorOnTop="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 视频 -->
+
+    <LinearLayout
+        android:id="@+id/data_testing_sub_content_video"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            style="@style/setting_divider"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray" />
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/act_task_videoplay"
+            android:textSize="@dimen/little_txt_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/total_vs_kpi_successAttemptRats"
+                    android:textSize="@dimen/little_txt_size" />
+
+                <TextView
+                    android:id="@+id/work_order_fj_successAttemptRats"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/little_txt_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/total_vs_kpi_playDropRats"
+                    android:textSize="@dimen/little_txt_size" />
+
+                <TextView
+                    android:id="@+id/work_order_fj_playDropRats"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/little_txt_size" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" >
+
+            <TextView
+                style="@style/setting_sort_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/work_order_fj_manual_test_abnormal"
+                android:textSize="@dimen/little_txt_size" />
+
+            <com.walktour.framework.ui.BasicSpinner
+                android:id="@+id/data_testing_sub_content_spinner3"
+                android:layout_width="101dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/drop"
+                android:drawSelectorOnTop="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 彩信 -->
+
+    <LinearLayout
+        android:id="@+id/data_testing_sub_content_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            style="@style/setting_divider"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray" />
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_mms"
+            android:textSize="@dimen/little_txt_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_sendSuccess"
+                    android:textSize="@dimen/little_txt_size" />
+
+                <TextView
+                    android:id="@+id/work_order_fj_sendSuccess"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/little_txt_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_receiveSuccess"
+                    android:textSize="@dimen/little_txt_size" />
+
+                <TextView
+                    android:id="@+id/work_order_fj_receiveSuccess"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/little_txt_size" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="@string/total_sendDelay"
+                    android:textSize="@dimen/little_txt_size" />
+
+                <TextView
+                    android:id="@+id/work_order_fj_sendDelay"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/little_txt_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_receiveDelay"
+                    android:textSize="@dimen/little_txt_size" />
+
+                <TextView
+                    android:id="@+id/work_order_fj_receiveDelay"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/little_txt_size" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" >
+
+            <TextView
+                style="@style/setting_sort_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/work_order_fj_manual_test_abnormal"
+                android:textSize="@dimen/little_txt_size" />
+
+            <com.walktour.framework.ui.BasicSpinner
+                android:id="@+id/data_testing_sub_content_spinner4"
+                android:layout_width="101dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/drop"
+                android:drawSelectorOnTop="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- Email -->
+
+    <LinearLayout
+        android:id="@+id/data_testing_sub_content_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            style="@style/setting_divider"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray" />
+
+        <TextView
+            style="@style/setting_sort_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_email"
+            android:textSize="@dimen/little_txt_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_SendSuccessCounts"
+                    android:textSize="@dimen/little_txt_size" />
+
+                <TextView
+                    android:id="@+id/work_order_fj_SendSuccessCounts"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/little_txt_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/email_AverageSpeed"
+                    android:textSize="@dimen/little_txt_size" />
+
+                <TextView
+                    android:id="@+id/work_order_fj_SendAverageSpeed"
+                    style="@style/setting_sort_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/little_txt_size" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" >
+
+            <TextView
+                style="@style/setting_sort_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/work_order_fj_manual_test_abnormal"
+                android:textSize="@dimen/little_txt_size" />
+
+            <com.walktour.framework.ui.BasicSpinner
+                android:id="@+id/data_testing_sub_content_spinner5"
+                android:layout_width="101dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/drop"
+                android:drawSelectorOnTop="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 股票 -->
+
+    <LinearLayout
+        android:id="@+id/data_testing_sub_content_stock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            style="@style/setting_divider"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/work_order_fj_stock"
+                    android:textSize="@dimen/little_txt_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" >
+
+            <TextView
+                style="@style/setting_sort_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/work_order_fj_manual_test_abnormal"
+                android:textSize="@dimen/little_txt_size" />
+
+            <com.walktour.framework.ui.BasicSpinner
+                android:id="@+id/data_testing_sub_content_spinner6"
+                android:layout_width="101dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/drop"
+                android:drawSelectorOnTop="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- QQ -->
+
+    <LinearLayout
+        android:id="@+id/data_testing_sub_content_qq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            style="@style/setting_divider"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/work_order_fj_QQ"
+                    android:textSize="@dimen/little_txt_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" >
+
+            <TextView
+                style="@style/setting_sort_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/work_order_fj_manual_test_abnormal"
+                android:textSize="@dimen/little_txt_size" />
+
+            <com.walktour.framework.ui.BasicSpinner
+                android:id="@+id/data_testing_sub_content_spinner7"
+                android:layout_width="101dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/drop"
+                android:drawSelectorOnTop="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 游戏 -->
+
+    <LinearLayout
+        android:id="@+id/data_testing_sub_content_game"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            style="@style/setting_divider"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    style="@style/setting_sort_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/work_order_fj_game"
+                    android:textSize="@dimen/little_txt_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" >
+
+            <TextView
+                style="@style/setting_sort_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/work_order_fj_manual_test_abnormal"
+                android:textSize="@dimen/little_txt_size" />
+
+            <com.walktour.framework.ui.BasicSpinner
+                android:id="@+id/data_testing_sub_content_spinner8"
+                android:layout_width="101dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/drop"
+                android:drawSelectorOnTop="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout 
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_centerInParent="true"
+		android:gravity="center" android:orientation="vertical"
+		android:background="@null"><!-- @drawable/main_tab_picture -->
+<!-- 		<TextView android:id="@+id/tab_imagebtn_view"
+			android:textColor="@color/white" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/ic_tab_talk_picture" /> -->
+			
+			<!--  -->
+		<TextView android:id="@+id/tab_btn_view" android:textColor="@drawable/selector_tab_text_color"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textSize="@dimen/app_content_txt_size"
+			android:layout_below="@+id/tab_imagebtn_view" android:singleLine="true"
+			android:visibility="gone" />
+		
+		        <RadioButton
+            android:id="@+id/tab_radio_button"
+            style="@style/setting_sort_center_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_button"
+            android:button="@null"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@drawable/selector_tab_text_color"
+            android:singleLine="true"
+            android:checked="true"
+             />
+	</LinearLayout>

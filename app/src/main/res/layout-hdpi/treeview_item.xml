@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_list_item_bg"
+    android:descendantFocusability="blocksDescendants" >
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="周三"
+        android:textColor="@color/app_main_text_color"
+        android:textSize="@dimen/default_txt_size_small"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layout_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <View
+            android:id="@+id/choose_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/empty" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/checkbox"
+            android:button="@null"
+            android:clickable="false"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/right"
+            android:layout_toRightOf="@+id/checkBox1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:maxLines="2"
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:ellipsize="end"
+                    android:text="CQT测试哈哈哈"
+                    android:textColor="@color/app_main_text_color"
+                    android:textSize="@dimen/app_content_txt_size" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/txt_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0708-10:25"
+                    android:textColor="@color/app_light_grey_color"
+                    android:textSize="@dimen/app_second_content_txt_size" />
+
+                <TextView
+                    android:id="@+id/txt_time_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/txt_start_time"
+                    android:text="1小时50分"
+                    android:textColor="@color/app_light_grey_color"
+                    android:textSize="@dimen/app_second_content_txt_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="未上传"
+                        android:textColor="@color/light_blue"
+                        android:textSize="@dimen/app_second_content_txt_size" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/right"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center|right"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/layout_exception"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:minHeight="50dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/txt_exception"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/circle_shape_red"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_go_nogo"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:minHeight="50dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_go_nogo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="27dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:text="GO"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cb_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/checkbox"
+                android:button="@null"
+                android:clickable="false"
+                android:text=""
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

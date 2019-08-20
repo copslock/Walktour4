@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_list_item_bg"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/itemicon"
+        android:layout_width="34dip"
+        android:layout_height="34dip"
+        android:layout_centerVertical="true"
+        android:contentDescription="@drawable/arrow" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/check_wifi"
+        android:layout_toRightOf="@+id/itemicon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/setting_sort_left_text_2"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/check_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/check_data"
+        android:button="@drawable/switch_button_bg" />
+
+    <CheckBox
+        android:id="@+id/check_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:button="@drawable/switch_button_bg" />
+
+</RelativeLayout>

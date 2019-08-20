@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<deviceadapter>
+	<item	devicename="PCTELL IBflex" 
+			nettypes="LTE,WCDMA,GSM,EVDO,TDSCDMA" 
+			modulename="PCTEL_Android"
+			chipvendor="D113"
+			expend1="" expend2="" expend3=""
+	/>
+</deviceadapter>

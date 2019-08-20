@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+    <!-- GSM TOTAL PARAM -->
+	<par name="_rxQualFull" id="7F000105" showName = "RxQualFull" nettype="2" totalType= "1" showThreshold="1">
+		<threshold>
+			<item name="rxqualfull1" showName = "1" value ="1" color="-16748100"/>
+			<item name="rxqualfull3" showName = "3" value ="3" color="-14046238"/>
+			<item name="rxqualfull5" showName = "5" value ="5" color="-959964"/>
+			<item name="rxqualfull7" showName = "7" value ="7" color="-12995254"/>
+		</threshold>
+	</par>
+	<par name="_rxQualSub" id="7F000106" showName = "RxQualSub" nettype="2" totalType= "5" showThreshold="1" tasklimit="InitiativeCall,PassivityCall">
+		<threshold>
+			<item name="rxqualsub1" showName = "1" value ="1" color="-16748100"/>
+			<item name="rxqualsub3" showName = "3" value ="3" color="-14046238"/>
+			<item name="rxqualsub5" showName = "5" value ="5" color="-959964"/>
+			<item name="rxqualsub7" showName = "7" value ="7" color="-12995254"/>
+		</threshold>
+	</par>
+	<par name="_rxLevFull" id="7F000103" showName = "RxLevFull" nettype="2" totalType= "1" showThreshold="1">
+		<threshold>
+			<item name="rxlevfull95" showName = "-95" value ="-95" color="-65536"/>
+			<item name="rxlevfull85" showName = "-85" value ="-85" color="-16748100"/>
+			<item name="rxlevfull75" showName = "-75" value ="-75" color="-14046238"/>
+			<item name="rxlevfull65" showName = "-65" value ="-65" color="-959964"/>
+			<item name="rxlevfull47" showName = "-47" value ="-47" color="-12995254"/>
+		</threshold>
+	</par>
+	<par name="_rxLevSub" id="7F000104" showName = "RxLevSub" nettype="2" totalType= "1" showThreshold="1">
+		<threshold>
+			<item name="rxlevsub95" showName = "-95" value ="-95" color="-65536"/>
+			<item name="rxlevsub85" showName = "-85" value ="-85" color="-16748100"/>
+			<item name="rxlevsub75" showName = "-75" value ="-75" color="-14046238"/>
+			<item name="rxlevsub65" showName = "-65" value ="-65" color="-959964"/>
+			<item name="rxlevsub47" showName = "-47" value ="-47" color="-12995254"/>
+		</threshold>
+	</par>
+	<par name="_txPower" id="7F000114" showName = "TxPower" nettype="2" totalType= "1" showThreshold="1">
+		<threshold>
+			<item name="txpower5"  showName = "5"  value ="5" color="-16748100"/>
+			<item name="txpower10" showName = "10" value ="10" color="-14046238"/>
+			<item name="txpower15" showName = "15" value ="15" color="-959964"/>
+			<item name="txpower31" showName = "31" value="31" color="-12995254"/>
+		</threshold>
+	</par>
+	<par name="_vCodec" id="7F000314" showName = "VCodec" nettype="2" totalType= "1" showThreshold="1">
+		<threshold>
+			<item name="vcodec0"  showName = "FR"  value ="0" color="-65536"/>
+			<item name="vcodec1" showName = "EFR" value ="1" color="-16748100"/>
+			<item name="vcodec2" showName = "AMR FR" value ="2" color="-14046238"/>
+			<item name="vcodec3" showName = "HR" value="3" color="-959964"/>
+			<item name="vcodec4" showName = "AMR HR" value="4" color="-12995254"/>
+		</threshold>
+	</par>
+	<par name="_ta" id="7F000113" showName = "TA" nettype="2" totalType= "1" showThreshold="0" />
+	<par name="_bcchLev" id="7F000109" showName = "BCCHLev" nettype="2" totalType= "5" showThreshold="0" tasklimit="InitiativeCall,PassivityCall" />
+	<par name="_dlRLCThr" id="7F000402" showName = "DlRLCThr" nettype="2" totalType= "1" showThreshold="0" />
+	<par name="_gprsBLER" id="7F000607" showName = "GprsBLER" nettype="2" totalType= "1" showThreshold="0" />
+	<par name="_dlTBFState" id="7F000609" showName = "DlTBFState" nettype="2" totalType= "1" showThreshold="0" />
+	<par name="_mcsDown" id="7F000617" nettype="2" totalType= "1" showThreshold="0" />
+	<par name="_dlTSNum" id="7F000603" nettype="2" totalType= "1" showThreshold="0" />
+	<par name="_ulTSNum" id="7F000604" nettype="2" totalType= "1" showThreshold="0" />
+	<par name="_ulRLCThr" id="7F000401" nettype="2" totalType= "1" showThreshold="0" />
+	<par name="_ulTBFState" id="7F00060A" nettype="2" totalType= "1" showThreshold="0" />
+	<par name="_mcsUp" id="7F000616" nettype="2" totalType= "1" showThreshold="0" />
+	<par name="_ulRLCRTX" id="7F000403" nettype="2" totalType= "1" showThreshold="0" />
+	<par name="_dlRLCRTX" id="7F000404" nettype="2" totalType= "1" showThreshold="0" />
+	<par name="_cvBepGMSK" id="7F000618" nettype="2" totalType= "1" showThreshold="0" />
+	<par name="_bepGMSK" id="7F00061A" nettype="2" totalType= "1" showThreshold="0" />
+	<par name="_cvBep8PSK" id="7F000619" nettype="2" totalType= "1" showThreshold="0" />
+	<par name="_bep8PSK" id="7F00061B" nettype="2" totalType= "1" showThreshold="0" />
+	<par name="_cvalue" id="7F000610" nettype="2" totalType= "1" showThreshold="0" />
+	<par name="_ulLLCThr" id="7F000501" nettype="2" totalType= "1" showThreshold="0" />
+	<par name="_dlLLCThr" id="7F000502" nettype="2" totalType= "1" showThreshold="0" />
+	
+	<!-- TDSCDMA -->
+	<par name="_tUE_TxPower" id="7F030102" nettype="5" totalType= "1" showThreshold="0" />
+	<par name="_tBLER" id="7F030119" nettype="5" totalType= "5" showThreshold="0" scale="1000"/>
+	<par name="_pdschTotalLER" id="7F030728" nettype="5" totalType= "5" showThreshold="0" scale="1000"/>
+	<!-- TDSCDMA By FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload -->
+	<par name="_tdlRLCThr" id="7F030601" nettype="5" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_tdlRLCBLER" id="7F030605" nettype="5" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1" scale="1000"/>
+	<par name="_tulRLCThr" id="7F030602" nettype="5" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1" />
+	<par name="_tulRLCRTXRate" id="7F030606" nettype="5" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1" scale="1000"/>
+	
+	
+	<!-- WCDMA TOTAL PARAM -->
+	<par name="_wTotalRSCP" id="7F02000D" nettype="1" totalType= "1" showThreshold="0" />
+	<par name="_wTotalEclo" id="7F02000A" nettype="1" totalType= "1" showThreshold="0" />
+	<par name="_wRxPower" id="7F020001" nettype="1" totalType= "1" showThreshold="0" />
+	<par name="_wTxPower" id="7F020002" nettype="1" totalType= "1" showThreshold="0" />
+	<par name="_wBLER" id="7F020005" nettype="1" totalType= "1" showThreshold="0" />
+	<par name="_wSIR" id="7F020010" nettype="1" totalType= "1" showThreshold="0" />
+	<par name="_hsdpaPhysRequestThr" id="7F02030F" nettype="1" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_hsdpaPhysScheduledThr" id="7F020310" nettype="1" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_hsdpaPhysServiceThr" id="7F020311" nettype="1" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_hsdpaMACThr" id="7F020312" nettype="1" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_hsupaPhysServiceThr" id="7F020404" nettype="1" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_hsupaMACThr" id="7F020403" nettype="1" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_mimoPhysScheduledThr" id="7F020615" nettype="1" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_mimoPhysServiceThr" id="7F020616" nettype="1" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_dualPhysRequestThr" id="7F02063D" nettype="1" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_dualPhysScheduledThr" id="7F02063E" nettype="1" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_dualPhysServiceThr" id="7F02063F" nettype="1" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+
+	<!-- LTE -->
+	<par name="_lRSRQ" id="7F06000F" nettype="6" totalType= "1" showThreshold="0" />
+	<par name="_lSRS_Power" id="7F060011" nettype="6" totalType= "1" showThreshold="0" />
+	<par name="_lPRACH_Power" id="7F060005" nettype="6" totalType= "1" showThreshold="0" />
+	<par name="_lPUCCH_Power" id="7F060007" nettype="6" totalType= "1" showThreshold="0" />
+	<par name="_lPUSCH_Power" id="7F060009" nettype="6" totalType= "1" showThreshold="0" />
+	<par name="_rlc_BLER_UL" id="7F060738" nettype="6" totalType= "1" showThreshold="0" />
+	<par name="_rlc_BLER_DL" id="7F060739" nettype="6" totalType= "1" showThreshold="0" />
+
+	<!-- VoLTE -->
+	<par name="_RFC1889_Jitter" id="7F1D4005" nettype="6" totalType= "1" showThreshold="0" />
+	<par name="_Jitter_Buffer_Delay" id="7F1D4010" nettype="6" totalType= "1" showThreshold="0" />
+	<par name="_Packet_LossCount" id="7F1D401A" nettype="6" totalType= "1" showThreshold="0" />
+	<par name="_SIP_Rx_RTP_Packet_Num" id="7F1D4033" nettype="6" totalType= "1" showThreshold="0" />
+	<par name="_Packet_Delay" id="7F1D400E" nettype="6" totalType= "1" showThreshold="0" />
+	
+	
+	<!-- LTE By HTTP,FTPUpload,FTPDownload,MutilFtp -->
+	<par name="_lupPDCPThr" id="7F060B03" nettype="6" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_ldownPDCPThr" id="7F060B02" nettype="6" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_lupRLCThr" id="7F060B07" nettype="6" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_ldownRLCThr" id="7F060B06" nettype="6" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_lupMACThr" id="7F060B01" nettype="6" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_ldownMACThr" id="7F060B00" nettype="6" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_lupPhysThr" id="7F060B05" nettype="6" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_ldownPhysThr" id="7F060B04" nettype="6" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_lupMCSMean" id="0A004106" nettype="6" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_ldownMCSMean" id="0A004107" nettype="6" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_lupRBCount" id="7F060206" nettype="6" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_ldownRBCount" id="7F060207" nettype="6" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_lpdSCHBLER" id="7F06006E" nettype="6" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	<par name="_lpuSCHBLER" id="7F060069" nettype="6" totalType= "1" showThreshold="0" tasklimit="FTPUpload,FTPDownload,MultiftpUpload,MultiftpDownload,HttpDownload" isDataLimit="1"/>
+	
+	<!-- CDMA -->
+	<par name="_cRxAGC" id="7F010001" nettype="3" totalType= "1" showThreshold="1">
+		<threshold>
+			<item name="rxagc95" showName = "-95" value ="-95" color="-65536"/>
+			<item name="rxagc90" showName = "-90" value ="-90" color="-256"/>
+			<item name="rxagc75" showName = "-75" value ="-75" color="-16776961"/>
+			<item name="rxagc65" showName = "-65" value ="-65" color="-16711936"/>
+		</threshold>
+	</par>
+	<par name="_cTxAGC" id="7F010002" nettype="3" totalType= "1" showThreshold="1">
+		<threshold>
+			<item name="txagc20" showName = "-20" value ="-20" color="-65536"/>
+			<item name="txagc10" showName = "-10" value ="-10" color="-256"/>
+			<item name="txagcz10" showName = "10" value ="10" color="-16776961"/>
+			<item name="txagcz20" showName = "20" value ="20" color="-16711936"/>
+		</threshold>
+	</par>
+	<par name="_cTotalECIO" id="7F01000C" nettype="3" totalType= "1" showThreshold="1">
+		<threshold>
+			<item name="ecio15" showName = "-15" value ="-15" color="-65536"/>
+			<item name="ecio12" showName = "-12" value ="-12" color="-256"/>
+			<item name="ecio9" showName = "-9" value ="-9" color="-16776961"/>
+			<item name="ecio5" showName = "-5" value ="-5" color="-16711936"/>
+		</threshold>
+	</par>
+	<par name="_cFFER" id="7F010006" nettype="3" totalType= "1" showThreshold="1">
+		<threshold>
+			<item name="ffer0" showName = "0" value ="0" color="-16711936"/>
+			<item name="ffer5" showName = "5" value ="5" color="-16776961"/>
+			<item name="ffer20" showName = "20" value ="20" color="-256"/>
+			<item name="ffer30" showName = "30" value ="30" color="-65536"/>
+		</threshold>
+	</par>
+	<par name="_cTotalEC" id="7F01000F" nettype="3" totalType= "1" showThreshold="0" />
+	<par name="_cTxPower" id="7F010003" nettype="3" totalType= "1" showThreshold="0" />
+	<!-- CDMA 1x -->
+	<par name="_cRXPhysThr" id="7F010205" nettype="3" totalType= "1" showThreshold="0" />
+	<par name="_cTPhysThr" id="7F010206" nettype="3" totalType= "1" showThreshold="0" />
+	<par name="_cRXRLPThr" id="7F010201" nettype="3" totalType= "1" showThreshold="0" />
+	<par name="_cTXRLPThr" id="7F010202" nettype="3" totalType= "1" showThreshold="0" />
+	<par name="_cRLPErrRate" id="7F010203" nettype="3" totalType= "1" showThreshold="0" />
+	<par name="_cRLPRTXRate" id="7F010204" nettype="3" totalType= "1" showThreshold="0" />
+	
+	<!-- EVDO -->
+	<par name="_eRXAGC0" id="7F018001" nettype="4" totalType= "1" showThreshold="0" />
+	<par name="_eRXAGC1" id="7F018002" nettype="4" totalType= "1" showThreshold="0" />
+	<par name="_eTxAGC" id="7F018003" nettype="4" totalType= "1" showThreshold="0" />
+	<par name="_eTotalSINR" id="7F018008" nettype="4" totalType= "1" showThreshold="0" />
+
+	<!-- EVENT Total-->
+	<par name="_lacTry" id="200E0" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_lacSuccs" id="200E1" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_sectionReChooses" id="30095" showName = "GsmAreaReSet" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_sectionReChooses" id="3009A" showName = "TDAreaReSet" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_sectionReChooses" id="3009D" showName = "LteAreaReSet" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_rauTrys" id="200E3" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_rauSuccs" id="200E6" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_lteHandOverReq" id="30300" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_lteHandOverSucss" id="30301" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_moGsmSwitch" id="30000" nettype="2" totalType= "2" showThreshold="0" tasklimit="InitiativeCall,PassivityCall" keyname="_moGsmSwitch,_mtGsmSwitch"/>
+	<par name="_moGsmSwitchSuccs" id="30001" nettype="2" totalType= "2" showThreshold="0" tasklimit="InitiativeCall,PassivityCall" keyname="_moGsmSwitchSuccs,_mtGsmSwitchSuccs"/>
+	<par name="_moTDBatonHandoverRequest" id="30130" nettype="2" totalType= "2" showThreshold="0" tasklimit="InitiativeCall,PassivityCall" keyname="_moTDBatonHandoverRequest,_mtTDBatonHandoverRequest"/>
+	<par name="_moTDBatonHandoverSuccess" id="30131" nettype="2" totalType= "2" showThreshold="0" tasklimit="InitiativeCall,PassivityCall" keyname="_moTDBatonHandoverSuccess,_mtTDBatonHandoverSuccess"/>
+	<par name="_moTDHardHandoverRequest" id="30073" nettype="2" totalType= "2" showThreshold="0" tasklimit="InitiativeCall,PassivityCall" keyname="_moTDHardHandoverRequest,_mtTDHardHandoverRequest"/>
+	<par name="_moTDHardHandoverSuccess" id="30074" nettype="2" totalType= "2" showThreshold="0" tasklimit="InitiativeCall,PassivityCall" keyname="_moTDHardHandoverSuccess,_mtTDHardHandoverSuccess"/>
+	<par name="_moReSetGSM2TD" id="3009B" nettype="2" totalType= "2" showThreshold="0" tasklimit="InitiativeCall,PassivityCall" keyname="_moReSetGSM2TD,_mtReSetGSM2TD"/>
+	<par name="_moReSetTD2GSM" id="30098" nettype="2" totalType= "2" showThreshold="0" tasklimit="InitiativeCall,PassivityCall" keyname="_moReSetTD2GSM,_motReSetTD2GSM"/>
+	<par name="_moHandOverGSM2TD" id="30083" nettype="2" totalType= "2" showThreshold="0" tasklimit="InitiativeCall,PassivityCall" keyname="_moHandOverGSM2TD,_mtHandOverGSM2TD"/>
+	<par name="_moHandOverTD2GSM" id="300B3" nettype="2" totalType= "2" showThreshold="0" tasklimit="InitiativeCall,PassivityCall" keyname="_moHandOverTD2GSM,_mtHandOverTD2GSM"/>
+		
+	<par name="_lteHandoverToTDRequest" id="30103" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_lteHandoverToTDSuccess" id="30104" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_lteHandoverToTDFailure" id="30105" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_redirectionLTEToGSMRequest" id="30343" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_redirectionLTEToGSMSuccess" id="30344" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_redirectionLTEToGSMFailure" id="30345" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_lteToGsmCellComplete" id="300E4" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_lteToGsmCellRequest" id="300E3" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_gsmToLteCellComplete" id="300E1" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_gsmToLteCellRequest" id="300E0" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_lteToTdCellComplete" id="300A8" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_lteToTdCellRequest" id="300A7" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_tdscdmaToLteCellComplete" id="300AA" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_tdscdmaToLteCellRequest" id="300A9" nettype="2" totalType= "2" showThreshold="0" />
+	
+	<par name="_gsmTotdHandoverRequest" id="30083" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_gsmTotdHandoverSuccess" id="30084" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_tdTogsmHandoverRequest" id="300B3" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_tdTogsmHandoverSuccess" id="300B4" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_gsmTotdCellReselectRequest" id="3009B" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_gsmTotdCellReselectComplete" id="3009C" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_tdTogsmCellResRequest" id="30098" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_tdTogsmCellResSuccess" id="30099" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_lteTogsmHandoverRequest" id="300B6" nettype="2" totalType= "2" showThreshold="0" />
+	<par name="_lteTogsmHandoverSuccess" id="300B7" nettype="2" totalType= "2" showThreshold="0" />
+	
+	
+	
+    <!-- 覆盖质量统计 -->
+    <par name="_lRSRP" id = "7F06000E" nettype="6" totalType= "3" showThreshold="0"/>
+    <par name="_lSINR" id = "7F060001" nettype="6" totalType= "4" mainKeyID="7F06000E" showThreshold="0" />
+    
+    <par name="_tPCCPCH_RSCP" id = "7F03011B" nettype="5" totalType= "3" showThreshold="0" />
+    <par name="_tPCCPCH_C_I"  id = "7F030120" nettype="5" totalType= "4" mainKeyID="7F03011B" showThreshold="0" isFilter="0"/>
+	
+	<par name="_currentNetState" id="7F1D2001" nettype="0" totalType= "5" showThreshold="0" isFilter="0" currentPoint = "1" />
+	
+</parameters>
+
+

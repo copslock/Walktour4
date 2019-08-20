@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+     >
+    
+	<include layout="@layout/task_title" android:id="@+id/title_layout"/>
+	
+    <ListView
+        android:layout_below="@id/title_layout"
+        android:id="@+id/ListView01"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_main_bg_color"
+        android:divider="@drawable/list_divider"
+        android:fadingEdge="none"
+        android:cacheColorHint="#00000000"
+        android:footerDividersEnabled="true"
+        android:layout_marginBottom="54dip" 
+        />
+
+    <!-- 底部工具栏 -->
+
+    <com.walktour.gui.applet.ControlBar
+        android:id="@+id/ControlBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+    <!-- 删除栏 -->
+
+    <LinearLayout
+        android:id="@+id/DeleteBar"
+        android:layout_width="fill_parent"
+        android:layout_height="58dip"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+         >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/task_content_group_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+         >
+        
+
+        <Button
+            android:id="@+id/ButtonCancle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textColor="@color/app_main_text_color"
+            android:background="@drawable/base_list_item_bg"
+            android:text="@string/str_cancle" />
+        
+	    <View
+	        android:layout_width="1px"
+	        android:layout_height="fill_parent"
+	        android:background="@color/task_content_group_bg" />
+        
+         <Button
+            android:id="@+id/ButtonDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/base_list_item_bg"
+            android:enabled="false"
+            android:textColor="@color/app_main_text_color"
+            android:text="@string/delete" />
+         </LinearLayout>
+    </LinearLayout>
+
+    <!-- 树形菜单 -->
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingBottom="50dip" >
+
+        <ListView
+            android:id="@+id/ListView02"
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/toolbar_pop_bg"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/ListView03"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="-8dip"
+            android:layout_toRightOf="@id/ListView02"
+            android:background="@drawable/toolbar_pop_bg"
+            android:divider="@drawable/list_divider"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

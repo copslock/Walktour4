@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel_upload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_main_bottom_selector"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/str_cancle"
+            android:textColor="@drawable/selector_textcolor"
+            android:textSize="@dimen/app_defult_btn_txt_size" />
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_main_bottom_selector"
+            android:gravity="center"
+            android:text="@string/upload"
+            android:textColor="@drawable/selector_textcolor"
+            android:textSize="@dimen/app_defult_btn_txt_size" />
+    </LinearLayout>
+
+
+</LinearLayout>

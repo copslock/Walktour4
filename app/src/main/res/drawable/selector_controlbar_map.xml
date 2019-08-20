@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:color="@color/app_main_text_color" android:drawable="@drawable/btn_control_map" android:state_focused="false" android:state_pressed="false" />
+
+    <item android:color="@color/app_main_color" android:drawable="@drawable/btn_control_map_pressed" android:state_pressed="true" />
+
+    <item android:color="@color/app_main_color" android:drawable="@drawable/btn_control_map_pressed" android:state_focused="true" />
+
+</selector> 

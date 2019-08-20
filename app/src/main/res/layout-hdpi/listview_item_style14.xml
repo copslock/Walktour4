@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>  
+
+<!--第一行Title ,第二行2个 TextView分布 -->
+
+<RelativeLayout   
+    android:id="@+id/RelativeLayout01"   
+    android:layout_width="fill_parent"   
+    xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:layout_height="wrap_content"   
+    android:paddingBottom="4dip"   
+    android:paddingLeft="8dip"  
+    android:paddingRight="8dip"
+    android:descendantFocusability="blocksDescendants"
+    >  
+<TextView   
+    android:id="@+id/ItemTitle"  
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+    android:layout_alignParentLeft="true"
+    android:text="ItemTitle"  
+    android:textColor="@color/white" 
+    android:paddingTop="5dip"
+	android:textSize="@dimen/app_content_txt_size"
+    />  
+<TextView 
+    android:id="@+id/ItemContent1"  
+	android:layout_height="wrap_content"   
+    android:layout_width="180dip" 
+    android:layout_below="@+id/ItemTitle" 
+    android:layout_alignLeft="@id/ItemTitle"
+	android:textSize="@dimen/app_content_txt_size"
+    android:paddingRight="12dip"
+    android:text="ItemText1"    
+    />
+<TextView 
+    android:id="@+id/ItemContent2"  
+	android:layout_height="wrap_content"
+	android:textSize="@dimen/app_content_txt_size"
+    android:layout_width="wrap_content" 
+    android:layout_alignTop="@id/ItemContent1" 
+    android:layout_toRightOf="@id/ItemContent1"  
+    android:text="ItemText2"    
+    />
+    
+<CheckBox
+	android:id="@+id/ItemCheckble"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_alignParentRight="true"
+	android:layout_centerVertical="true"
+/>
+  
+</RelativeLayout>  

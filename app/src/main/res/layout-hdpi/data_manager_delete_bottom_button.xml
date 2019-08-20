@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="52dp"
+    android:orientation="horizontal" >
+   	<Button 
+	    android:id="@+id/btn_cancel"
+	    android:layout_width="fill_parent"
+	    android:layout_height="52dp"
+		android:layout_weight="1.0"
+	    android:background="@drawable/base_list_item_bg"
+	    android:textColor="@drawable/selector_tab_text_color3"
+	    android:textSize="@dimen/app_defult_btn_txt_size"
+	    android:text="@string/str_cancle"/>
+   	   		    <View
+	        android:layout_width="1px"
+	        android:layout_height="fill_parent"
+	        android:background="@color/gray" />
+	<Button 
+	    android:id="@+id/btn_choose_all"
+	    android:layout_width="fill_parent"
+	    android:layout_height="52dp"
+	    android:layout_weight="1.0"
+	    android:background="@drawable/base_list_item_bg"
+	    android:textColor="@drawable/selector_tab_text_color3"
+		android:textSize="@dimen/app_defult_btn_txt_size"
+	    android:text="@string/str_checkall"/>
+	   		    <View
+	        android:layout_width="1px"
+	        android:layout_height="fill_parent"
+	        android:background="@color/gray" />
+	<Button 
+	    android:id="@+id/btn_choose_non"
+	    android:layout_width="fill_parent"
+	    android:layout_height="52dp"
+	    android:layout_weight="1.0"
+	    android:background="@drawable/base_list_item_bg"
+		android:textSize="@dimen/app_defult_btn_txt_size"
+	    android:textColor="@drawable/selector_tab_text_color3"
+	    android:text="@string/str_checknon"/>
+   		    <View
+	        android:layout_width="1px"
+	        android:layout_height="fill_parent"
+	        android:background="@color/gray" />
+	<Button 
+	    android:id="@+id/btn_delete"
+	    android:layout_width="fill_parent"
+	    android:layout_height="52dp"
+		android:textSize="@dimen/app_defult_btn_txt_size"
+	    android:layout_weight="1.0"
+	    android:background="@drawable/base_list_item_bg"
+	    android:textColor="@drawable/selector_tab_text_color3"
+	    android:text="@string/delete"/>
+
+</LinearLayout>

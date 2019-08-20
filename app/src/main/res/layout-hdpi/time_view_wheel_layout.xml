@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="fill_parent"
+	android:background="@color/app_main_bg_color">
+	
+	<LinearLayout
+	    android:layout_below="@id/show_tip_massage"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:weightSum="3"
+		  android:id="@+id/timePicker1">
+
+		<com.walktour.framework.view.datepicker.WheelView
+			android:id="@+id/year" android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:layout_width="wrap_content"/>
+		<com.walktour.framework.view.datepicker.WheelView
+			android:id="@+id/month" android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:layout_width="wrap_content"/>
+		<com.walktour.framework.view.datepicker.WheelView
+			android:id="@+id/day" android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:layout_width="wrap_content"/>
+		<com.walktour.framework.view.datepicker.WheelView
+		    android:visibility="gone"
+			android:id="@+id/hour" android:layout_height="wrap_content"
+			android:layout_width="44dip" />
+		<com.walktour.framework.view.datepicker.WheelView
+		     android:visibility="gone"
+			android:id="@+id/mins" android:layout_height="wrap_content"
+			android:layout_width="44dip" />
+		<com.walktour.framework.view.datepicker.WheelView
+		     android:visibility="gone"
+			android:id="@+id/mss" android:layout_height="wrap_content"
+			android:layout_width="44dip" />
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profile Version="1.4" Name="GoOrNoGoSetting" CreatTime="20150410 17:12:35">
+    <Businesses>
+        <Business Name="Call" Desc="Call" Key="">
+            <AvaliableSettings>
+                <Parameter Name="SUCCESSRATE" Alias="SUCCESSRATE" Condiction="&gt;95"/>
+                <Parameter Name="DROPPEDRATE" Alias="DROPPEDRATE" Condiction="&lt;5"/>
+                <Parameter Name="BUSINESSDELAY" Alias="CALLDELAY" Condiction="&lt;2"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="SUCCESSRATE" Alias="SUCCESSRATE" Condiction="&gt;95"/>
+                <Parameter Name="DROPPEDRATE" Alias="DROPPEDRATE" Condiction="&lt;5"/>
+                <Parameter Name="BUSINESSDELAY" Alias="CALLDELAY" Condiction="&lt;2"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="FTPDownload" Desc="FTPDownload" Key="">
+            <AvaliableSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="TRANSFERRATE" Alias="" Condiction="&gt;10000"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="TRANSFERRATE" Alias="" Condiction="&gt;10000"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="FTPUpload" Desc="FTPUpload" Key="">
+            <AvaliableSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="TRANSFERRATE" Alias="" Condiction="&gt;8000"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="TRANSFERRATE" Alias="" Condiction="&gt;8000"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="MultiFTPDownload" Desc="MultiFTPDownload" Key="">
+            <AvaliableSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="TRANSFERRATE" Alias="" Condiction="&gt;10000"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="TRANSFERRATE" Alias="" Condiction="&gt;10000"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="MultiFTPUpload" Desc="MultiFTPUpload" Key="">
+            <AvaliableSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="TRANSFERRATE" Alias="" Condiction="&gt;8000"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="TRANSFERRATE" Alias="" Condiction="&gt;8000"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="Ping" Desc="Ping" Key="">
+            <AvaliableSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="BUSINESSDELAY" Alias="" Condiction="&lt;5"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="BUSINESSDELAY" Alias="" Condiction="&lt;5"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="TraceRoute" Desc="TraceRoute" Key="">
+            <AvaliableSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="BUSINESSDELAY" Alias="" Condiction="&lt;5"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="BUSINESSDELAY" Alias="" Condiction="&lt;5"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="HTTPPage" Desc="HTTPPage" Key="">
+            <AvaliableSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="AVERAGE" Alias="TRANSMIT_DELAY" Condiction="&lt;3"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="AVERAGE" Alias="TRANSMIT_DELAY" Condiction="&lt;3"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="HTTPDownload" Desc="HTTPDownload" Key="">
+            <AvaliableSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="TRANSFERRATE" Alias="" Condiction="&gt;8000"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="TRANSFERRATE" Alias="" Condiction="&gt;8000"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="HTTPUpload" Desc="HTTPUpload" Key="">
+            <AvaliableSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="TRANSFERRATE" Alias="" Condiction="&gt;8000"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="TRANSFERRATE" Alias="" Condiction="&gt;8000"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="EmailRecv" Desc="EmailRecv" Key="">
+            <AvaliableSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="TRANSFERRATE" Alias="" Condiction="&gt;10000"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="TRANSFERRATE" Alias="" Condiction="&gt;10000"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="EmailSend" Desc="EmailSend" Key="">
+            <AvaliableSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="TRANSFERRATE" Alias="" Condiction="&gt;8000"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="TRANSFERRATE" Alias="" Condiction="&gt;8000"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="VideoPlay" Desc="VideoPlay" Key="">
+            <AvaliableSettings>
+                <Parameter Name="DROPPEDRATE" Alias="" Condiction="&lt;5"/>
+                <Parameter Name="TOTALCOUNT" Alias="REBUFFERINGATTEMPTS" Condiction="&lt;5"/>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;90"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="DROPPEDRATE" Alias="" Condiction="&lt;5"/>
+                <Parameter Name="TOTALCOUNT" Alias="REBUFFERINGATTEMPTS" Condiction="&lt;5"/>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;90"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="Speedtest" Desc="Speedtest" Key="">
+            <AvaliableSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="DNSLookup" Desc="DNSLookup" Key="">
+            <AvaliableSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="BUSINESSDELAY" Alias="" Condiction="&lt;5"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+                <Parameter Name="BUSINESSDELAY" Alias="" Condiction="&lt;5"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="PBM" Desc="PBM" Key="">
+            <AvaliableSettings>
+                <Parameter Name="AVERAGE" Alias="PBM_DOWNSPEED" Condiction="&gt;25000"/>
+                <Parameter Name="AVERAGE" Alias="PBM_UPSPEED" Condiction="&gt;10000"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="AVERAGE" Alias="PBM_DOWNSPEED" Condiction="&gt;25000"/>
+                <Parameter Name="AVERAGE" Alias="PBM_UPSPEED" Condiction="&gt;10000"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="SMSSend" Desc="SMSSend" Key="">
+            <AvaliableSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="SMSRecv" Desc="SMSRecv" Key="">
+            <AvaliableSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="MMSSend" Desc="MMSSend" Key="">
+            <AvaliableSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="MMSRecv" Desc="MMSRecv" Key="">
+            <AvaliableSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="SUCCESSRATE" Alias="" Condiction="&gt;95"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="GSM" Desc="GSM" Key="">
+            <AvaliableSettings>
+                <Parameter Name="RxLevel_Full" Alias="" Condiction="&gt;-100"/>
+                <Parameter Name="GSM_TxPower" Alias="" Condiction="&gt;20"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="RxLevel_Full" Alias="" Condiction="&gt;-100"/>
+                <Parameter Name="GSM_TxPower" Alias="" Condiction="&gt;20"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="CDMA" Desc="CDMA" Key="">
+            <AvaliableSettings>
+                <Parameter Name="CDMA_Total_Ec" Alias="" Condiction="&gt;-110"/>
+                <Parameter Name="CDMA_RxAGC" Alias="" Condiction="&gt;-110"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="CDMA_Total_Ec" Alias="" Condiction="&gt;-110"/>
+                <Parameter Name="CDMA_RxAGC" Alias="" Condiction="&gt;-110"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="EVDO" Desc="EVDO" Key="">
+            <AvaliableSettings>
+                <Parameter Name="EVDO_TxAGC" Alias="" Condiction="&gt;-110"/>
+                <Parameter Name="EVDO_RxPER" Alias="" Condiction="&gt;20"/>
+                <Parameter Name="EVDO_TxPER" Alias="" Condiction="&gt;20"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="EVDO_TxAGC" Alias="" Condiction="&gt;-110"/>
+                <Parameter Name="EVDO_RxPER" Alias="" Condiction="&gt;20"/>
+                <Parameter Name="EVDO_TxPER" Alias="" Condiction="&gt;20"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="WCDMA" Desc="WCDMA" Key="">
+            <AvaliableSettings>
+                <Parameter Name="WCDMA_Total_RSCP" Alias="" Condiction="&gt;-110"/>
+                <Parameter Name="WCDMA_BLER" Alias="" Condiction="&lt;5"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="WCDMA_Total_RSCP" Alias="" Condiction="&gt;-110"/>
+                <Parameter Name="WCDMA_BLER" Alias="" Condiction="&lt;5"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="TDSCDMA" Desc="TDSCDMA" Key="">
+            <AvaliableSettings>
+                <Parameter Name="TDS_DPCH_RSCP" Alias="" Condiction="&gt;-110"/>
+                <Parameter Name="TDS_BLER" Alias="" Condiction="&lt;5"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="TDS_DPCH_RSCP" Alias="" Condiction="&gt;-110"/>
+                <Parameter Name="TDS_BLER" Alias="" Condiction="&lt;5"/>
+            </DefaultSettings>
+        </Business>
+        <Business Name="LTE" Desc="LTE" Key="">
+            <AvaliableSettings>
+                <Parameter Name="LTE_RSRP" Alias="" Condiction="&gt;-110"/>
+                <Parameter Name="LTE_SINR" Alias="" Condiction="&gt;12"/>
+            </AvaliableSettings>
+            <DefaultSettings>
+                <Parameter Name="LTE_RSRP" Alias="" Condiction="&gt;-110"/>
+                <Parameter Name="LTE_SINR" Alias="" Condiction="&gt;12"/>
+            </DefaultSettings>
+        </Business>
+    </Businesses>
+</Profile>

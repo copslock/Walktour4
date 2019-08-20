@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/basic_title" />
+    
+       <!-- 底部工具栏 -->
+
+        <com.walktour.gui.InfoTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="56dip"
+        android:layout_below="@id/title_layout" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:paddingTop="7dip"
+            android:background="@drawable/tab_bg" />
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="45dip" />
+    </com.walktour.gui.InfoTabHost>
+    
+        <com.walktour.gui.applet.ControlBar
+        android:id="@+id/ControlBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="fill_horizontal" />
+
+
+</RelativeLayout>

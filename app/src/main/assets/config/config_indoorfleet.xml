@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config 	ip = "112.91.144.214" 
+			port = "9000"
+			user = "admin"
+			password = "dingli">
+</config>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+			android:background="@color/app_grey_color"
+		    >
+	<include layout="@layout/basic_title" android:id="@+id/task_attach_title"/>
+     <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/title_layout"
+        android:background="@color/setting_sort_title_bgcolor" />		    
+	<ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="50"
+	    android:id="@+id/scrollview"
+	    android:layout_marginBottom="5dip"
+	    >
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_marginBottom="5dip"
+	    android:background="@color/app_main_bg_color"
+	    >
+	                
+            <!-- 常规 -->
+            <include layout="@layout/task_routine_sort_title" />
+	    
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    style="@style/task_layout_edge">
+	    <TextView 
+	        android:id="@+id/txt_taskname"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="ddd"
+	        style="@style/tasK_title_style"
+	        android:layout_centerVertical="true"
+	         />
+	    <EditText
+	        android:id="@+id/edit_taskname"
+	        android:inputType="text"
+	        android:singleLine="true"
+	        android:maxLength="30"
+	        android:width="10px"
+	        android:layout_centerInParent="true"
+	        style="@style/task_edit_view"
+	        />        
+	</RelativeLayout>
+	<View style="@style/task_listdivider"/>
+   	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    style="@style/task_layout_edge">
+	    <TextView 
+	        android:id="@+id/txt_keepTime"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        style="@style/tasK_title_style"
+	        android:layout_centerVertical="true"
+	         />
+	    <EditText
+	        android:id="@+id/edit_keepTime"
+	        style="@style/task_edit_view"
+	        android:inputType="number" 
+	        android:singleLine="true"
+	        android:maxLength="9"        
+	        android:layout_centerInParent="true"
+	        />        
+	</RelativeLayout>
+	</LinearLayout>
+	</ScrollView>
+
+	<include layout="@layout/task_menu_buttom"/>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout   
+    android:layout_width="fill_parent"   
+    android:layout_height="fill_parent" 
+    android:background="@color/app_main_bg_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">  
+    
+    	
+    
+    
+		<!-- 文件列表-->		    
+		<com.walktour.framework.view.HeadListView
+			  android:id="@+id/ListView01" 
+			  android:layout_width="fill_parent"   
+	          android:layout_height="fill_parent"  
+	          android:dividerHeight="0dip"
+	          android:background="@color/app_main_bg_color"
+	          android:fadingEdge="none"
+	          android:fastScrollEnabled="true"
+	          android:cacheColorHint="#00000000"
+         />  
+		
+		         
+</RelativeLayout> 

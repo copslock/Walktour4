@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:background="@color/base_second_title_bg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/droidwall_other_app_network_control_short"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/default_txt_size_normal"
+            android:textColor="@color/app_main_text_color" />
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/layout_data"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/droidwall_other_app_network_wifi"
+                android:textSize="@dimen/default_txt_size_normal"
+            	android:textColor="@color/app_main_text_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_data"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/droidwall_other_app_network_data"
+                android:textSize="@dimen/default_txt_size_normal"
+            	android:textColor="@color/app_main_text_color" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/setting_divider" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_bg"
+        android:paddingRight="10dp" >
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:singleLine="true"
+            android:text="@string/droidwall_other_app_all" />
+        <CheckBox
+            android:id="@+id/check_wifi_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/check_data_all"
+            android:button="@drawable/switch_button_bg" />
+        <CheckBox
+            android:id="@+id/check_data_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/switch_button_bg" />
+    </RelativeLayout>
+	<View style="@style/setting_divider" />
+    <ListView
+        android:id="@+id/app_list"
+        style="@style/listview_wrapveritical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+    <View style="@style/sys_routine_setting_divider" />
+
+</LinearLayout>

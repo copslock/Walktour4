@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/base_list_item_bg"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:textSize="@dimen/app_content_txt_size"
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dp"
+        android:text="13:33:55"
+        android:textColor="@color/app_main_text_color" />
+
+    <TextView
+        android:textSize="@dimen/app_content_txt_size"
+        android:id="@+id/protocol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="TCP"
+        android:textColor="@color/app_main_text_color" />
+
+    <TextView
+        android:textSize="@dimen/app_content_txt_size"
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="ffffffffffff"
+        android:textColor="@color/app_main_text_color" />
+
+</LinearLayout>

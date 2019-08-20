@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+      <PreferenceCategory
+           android:title="@string/fleet_autoTest">                 
+			<CheckBoxPreference
+		        android:key="fleet_autotest"
+		        android:title="@string/fleet_autoTest"
+		        android:summaryOn="@string/fleet_set_summer_on" 
+		        android:summaryOff="@string/fleet_set_summer_off" 
+		        android:defaultValue="true"
+		        />
+		   
+		   	<Preference
+		          android:key="fleet_ip"
+		          android:title="@string/fleet_set_ip"
+		          android:dialogTitle="@string/fleet_set_ip"/>
+		          
+		   	<Preference
+		      android:key="fleet_port"
+		      android:title="@string/fleet_set_port"
+		      android:dialogTitle="@string/fleet_set_port"/>
+      </PreferenceCategory><!--   
+    
+    <PreferenceCategory
+            android:title="@string/fleet_set_location"
+            android:visible="gone">
+            
+      	<CheckBoxPreference
+             android:key="fleet_location"
+             android:title="@string/fleet_set_location"
+             android:summary="@string/fleet_set_location_summary" 
+             android:defaultValue="true"
+       />
+             
+       <Preference
+       		android:key="fleet_location_start"
+       		android:dependency="fleet_location"
+       		android:title="@string/fleet_set_location_start"
+       />  
+       
+       <Preference
+       		android:key="fleet_location_end"
+       		android:dependency="fleet_location"
+       		android:title="@string/fleet_set_location_end"
+       />  
+    </PreferenceCategory>
+    
+    --><PreferenceCategory
+        android:title="@string/fleet_set_apn">
+            <Preference
+       		android:key="fleet_apn_internet"
+       		android:title="@string/sys_setting_internt"
+       		/> 
+            <Preference
+       		android:key="fleet_apn_wap"
+       		android:title="@string/sys_setting_internt_wapAPN"
+       		/> 
+    </PreferenceCategory>
+    
+</PreferenceScreen>

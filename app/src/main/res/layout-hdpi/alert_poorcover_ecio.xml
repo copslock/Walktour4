@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:paddingLeft = "5dip"
+  android:paddingRight = "5dip"
+  android:layout_gravity = "center_horizontal"
+  android:stretchColumns = "2">
+  	<TableRow>
+  	<TextView
+  	android:text = "@string/pref_TotalEc"
+  	android:layout_width = "wrap_content"
+  	android:layout_height = "wrap_content"
+  	android:textSize = "16sp"/>
+  	<TextView
+  	android:layout_marginLeft = "5dip"
+  	android:layout_marginRight= "5dip"
+  	android:layout_width = "wrap_content"
+  	android:layout_height = "wrap_content"
+  	android:text = "@string/pref_lt"
+  	android:textSize = "18sp"/>
+  	<EditText
+  	android:id = "@+id/edit_poorcover_ecio"
+  	android:layout_width = "wrap_content"
+  	android:layout_height = "wrap_content"
+  	android:inputType = "number"
+  	android:digits = "0123456789-."
+  	android:singleLine = "true"
+  	android:gravity="fill_horizontal"/>
+  		<TextView
+  	android:layout_marginLeft = "5dip"
+  	android:layout_width = "wrap_content"
+  	android:layout_height = "wrap_content"
+  	android:text = "@string/pref_dB"
+  	android:textSize = "16sp"/>
+  	</TableRow>
+</TableLayout>

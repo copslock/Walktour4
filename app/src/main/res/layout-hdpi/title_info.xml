@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 查看信息的标题 -->
+<RelativeLayout   
+    android:id="@+id/RelativeLayout01"   
+    xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:layout_width="fill_parent"   
+    android:layout_height="wrap_content"   
+>  
+  	 <TextView	android:id="@+id/TextViewTitle"
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:layout_alignParentLeft="true"
+  			android:layout_centerVertical="true"
+  			android:layout_marginRight="96dip"
+  			android:textColor = "@color/white"/>
+  	
+  	<Button android:id = "@+id/buttonHide"
+  			android:text = "@string/info_hide"
+  			android:layout_width="110dip"
+ 			android:layout_height="fill_parent"
+ 			android:layout_alignParentRight="true"
+ 			android:layout_centerVertical="true"
+ 			android:layout_marginTop="2dip"
+ 			android:gravity="center"
+ 			android:textColor = "@color/black"
+ 			android:background="@drawable/background_mybutton3">
+  	</Button>
+  		
+	<Button android:id="@+id/Button01"
+ 			android:layout_width="40dip"
+ 			android:layout_height="40dip"
+ 			android:layout_alignParentRight="true"
+ 			android:layout_centerVertical="true"
+ 			android:gravity="center"
+ 			android:background="@drawable/background_snapshot"
+	/>
+	
+	<Button android:id="@+id/Button02"
+ 			android:layout_width="40dip"
+ 			android:layout_height="40dip"
+ 			android:layout_toLeftOf="@id/Button01"
+ 			android:layout_centerVertical="true"
+ 			android:layout_marginRight="4dip"
+ 			android:gravity="center"
+ 			android:background="@drawable/background_frezze"
+	/>
+		
+</RelativeLayout>

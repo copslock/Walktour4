@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/single_station_scene_test_info"
+        android:orderInCategory="90"
+        android:title="@string/single_station_scene_test_info"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/single_station_scene_to_survy"
+        android:orderInCategory="90"
+        android:title="@string/single_station_scene_to_survy"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/single_station_scene_error_report"
+        android:orderInCategory="90"
+        android:title="@string/single_station_scene_error_report"
+        app:showAsAction="never"/>
+</menu>

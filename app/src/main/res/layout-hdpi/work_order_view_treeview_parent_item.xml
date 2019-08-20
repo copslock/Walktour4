@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_main_text_color"
+        android:textSize="@dimen/app_content_txt_size"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="周三"/>
+    <CheckBox 
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:background="@drawable/checkbox"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"/>
+    <View android:id="@+id/parent_divider" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@android:drawable/divider_horizontal_bright" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

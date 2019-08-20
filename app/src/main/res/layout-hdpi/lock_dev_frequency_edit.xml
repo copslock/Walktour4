@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 作为弹出窗口的view: 包含1个Text 和 1个EditText -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativelayout_lock_freq_band">
+
+        <TextView
+            android:id="@+id/lock_dev_freq_band_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/lock_bandMode" />
+
+        <com.walktour.framework.ui.BasicSpinner
+            android:id="@+id/band_select_edit"
+            style="@style/task_drop_view"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawSelectorOnTop="true" />
+    </RelativeLayout>
+
+    <View style="@style/setting_divider" />
+    
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:id="@+id/relativelayout_lock_freq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/earfcn_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/base_detail_earfcn" />
+
+        <EditText
+            android:id="@+id/earfcn_edit"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"
+            android:inputType="number"
+            android:maxLength="30"
+            android:singleLine="true" />
+	</RelativeLayout>
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:id="@+id/relativelayout_lock_freq_dl_freq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/dl_freq_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/base_detail_freq_dl" />
+
+        <EditText
+            android:id="@+id/dl_freq_edit"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"
+            android:inputType="number"
+            android:maxLength="30"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/task_layout_edge"
+        android:id="@+id/relativelayout_lock_freq_ul_freq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/ul_freq_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/base_detail_freq_ul" />
+
+        <EditText
+            android:id="@+id/ul_freq_edit"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"
+            android:inputType="number"
+            android:maxLength="30"
+            android:singleLine="true" />
+    </RelativeLayout>
+</LinearLayout>

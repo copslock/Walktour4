@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Walktour</string>
+    <string name="control_ok">OK</string>
+    <string name="control_start">Start</string>
+    <string name="control_save">Save</string>
+    <string name="control_cancel">Cancel</string>
+    <string name="control_new">New</string>
+    <string name="control_sort">Sort</string>
+    <string name="sdcard">Walktour</string>
+    <string name="file_choose">File Choose</string>
+    <string name="file_not_exist">File Not Exist!</string>
+    <string name="file_choose_parent_file">Parent Directory</string>
+    <string name="data_loading">Data Loading...</string>
+</resources>

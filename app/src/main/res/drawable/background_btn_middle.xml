@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+ <!-- 主界面的按钮 -->
+ 
+ <item android:state_focused="false" 
+  		android:state_pressed="false" 
+        android:drawable="@drawable/btn_middle" />
+ 
+ <item  android:state_pressed="true" 
+        android:drawable="@drawable/btn_middle_pressed" />
+        
+  <item android:state_focused="true"
+        android:drawable="@drawable/btn_middle_focused" />
+</selector> 

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<!--====================================================================-->
+	<!--作为弹出对话框 的内容:包含5个TextView、4个EditText、1EditText password -->
+	<!--====================================================================-->
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical">
+    
+    <include
+        android:id="@+id/task_attach_title"
+        layout="@layout/basic_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/list_divider" />
+    <ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="50"
+	    android:id="@+id/scrollview"
+	    android:layout_marginBottom="1dip"
+	    >
+	    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_marginBottom="1dip"
+	    android:background="@color/app_main_bg_color"
+	    >
+
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+		style="@style/task_layout_edge">
+	
+	    <TextView
+	        style="@style/setting_sort_left_text_2"
+	        android:text="@string/server_name"
+	   />
+	            
+	    <EditText
+	        android:id="@+id/edit_name"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"       
+	        android:inputType="text"
+	        android:singleLine="true"
+	        android:maxLength="30"        
+	        />        
+	</RelativeLayout>
+	 <View style="@style/task_listdivider" />
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+		style="@style/task_layout_edge">
+	
+	    <TextView
+	        style="@style/setting_sort_left_text_2"
+	        android:text="@string/ip"
+	   	/>
+	            
+	    <com.walktour.gui.task.CustomAutoCompleteTextView
+	        android:id="@+id/edit_ip"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"      
+	        android:inputType="text"
+	        android:maxLength="15"
+	        android:singleLine="true"	
+	        android:dropDownVerticalOffset="3dip"
+        	android:popupBackground="#F1F2F6"              
+	        />        
+	</RelativeLayout>
+	 <View style="@style/task_listdivider" />
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    style="@style/task_layout_edge">
+	
+	    <TextView
+	        style="@style/setting_sort_left_text_2"
+	        android:text="@string/port"
+	   />
+	            
+	    <EditText
+	        android:id="@+id/edit_port"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"      
+	        android:inputType="number" 
+	        android:singleLine="true"
+	        android:maxLength="5"        
+	        />        
+	</RelativeLayout>
+	
+	 <View style="@style/task_listdivider" />
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    style="@style/task_layout_edge">
+	
+	    <TextView
+	        style="@style/setting_sort_left_text_2"
+	        android:text="@string/user"
+	   />
+	            
+	    <EditText
+	        android:id="@+id/edit_user"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"      
+	        android:singleLine="true"
+	        android:inputType="text"
+	        android:maxLength="30"        
+	        />        
+	</RelativeLayout>
+	 <View style="@style/task_listdivider" />
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    style="@style/task_layout_edge">
+	
+	    <TextView
+	        style="@style/setting_sort_left_text_2"
+	        android:text="@string/pass"
+	   />
+	            
+	    <EditText
+	        android:id="@+id/edit_pass"
+            style="@style/task_edit_view"
+            android:layout_centerInParent="true"      
+	        android:singleLine="true"
+	        android:maxLength="32"  
+	        android:password="false"      
+	        />        
+	</RelativeLayout>
+	
+	 <View style="@style/task_listdivider" />
+	 
+	 <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        style="@style/task_layout_edge"
+        >
+        <TextView
+            style="@style/setting_sort_left_text_2"
+            android:text="@string/sys_ftp_anonymous" />
+        <CheckBox 
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="false"
+            android:button="@drawable/switch_button_bg"/>
+    </RelativeLayout>
+    
+	 <View style="@style/task_listdivider" />
+	 
+	<RelativeLayout
+	    style="@style/task_layout_edge"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+
+	    <TextView
+	        style="@style/setting_sort_left_text_2"
+	        android:text="@string/task_connect_mode"
+	   />
+
+	    <com.walktour.framework.ui.BasicSpinner
+	        android:id="@+id/spinner_passive"
+	        style="@style/task_drop_view"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerInParent="true"
+	        android:layout_centerVertical="true" />
+	</RelativeLayout>
+
+	<View style="@style/task_listdivider" />
+	 
+	 </LinearLayout>
+	 </ScrollView>
+	     <include layout="@layout/task_menu_buttom"/>
+		
+</LinearLayout>
+

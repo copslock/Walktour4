@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_time"
+            style="@style/setting_chart_center_text_2"
+            android:layout_marginRight="0dp"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:text="15:26:50" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/divider_v" />
+
+        <TextView
+            android:id="@+id/txt_abnormal"
+            style="@style/setting_chart_center_text_2"
+            android:layout_marginRight="0dp"
+            android:layout_width="0dp"
+            android:layout_weight="2.0"
+            android:text="Outgoing Blocked Call" />
+    </LinearLayout>
+
+    <View style="@style/task_listdivider" />
+
+</LinearLayout>

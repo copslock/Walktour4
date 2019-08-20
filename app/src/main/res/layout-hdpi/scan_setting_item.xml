@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>  
+
+<LinearLayout   
+    android:id="@+id/RelativeLayout01"   
+    android:layout_width="fill_parent"   
+    xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:layout_height="wrap_content"   
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    >  
+    <include android:id="@+id/head_layout"   layout="@layout/scan_item_section"/>
+    
+ <LinearLayout 
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:minHeight="40dip"
+     android:paddingLeft="8dip" 
+     android:paddingRight="8dip"
+     android:background="@drawable/base_list_item_bg"
+     android:id="@+id/item_llyt"
+     >
+     
+     
+     <CheckBox
+		 android:button="@drawable/selector_task_checkbox"
+            android:id="@+id/enble_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_gravity="center_vertical"
+            />
+     
+     <TextView 
+         android:layout_marginLeft="10dip"
+		android:layout_gravity="center_vertical"
+	     android:id="@+id/show_txt"
+	     android:layout_height="wrap_content"
+	     android:layout_width="wrap_content"
+	     android:singleLine="true"
+	     android:textSize="14dip"
+	     android:textColor="@color/app_main_text_color"
+		 android:text="Ftpsssssssssssssssssssssss"
+		 android:layout_centerVertical="true"
+     />         
+        
+     
+     
+ </LinearLayout>
+ 
+ <View  android:id="@+id/scan_listDivider" style="@style/task_listdivider"/>
+		    
+</LinearLayout>  

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background = "@drawable/dialog_box_gps4"
+  android:paddingTop = "3dip"
+  android:orientation = "vertical"
+  android:paddingLeft  ="10dip">
+  <TextView android:id = "@+id/textView" 
+  android:layout_width = "wrap_content" 
+  android:textSize  ="12sp"
+  android:textColor = "@color/black"
+  android:layout_height = "wrap_content"></TextView>
+  <TextView android:id = "@+id/textlong" 
+  android:layout_width = "wrap_content" 
+  android:textSize  ="12sp"
+  android:textColor = "@color/black"
+  android:layout_height = "wrap_content"></TextView>
+  <TextView android:id = "@+id/textlat" 
+  android:layout_width = "wrap_content" 
+  android:textSize  ="12sp"
+  android:textColor = "@color/black"
+  android:layout_height = "wrap_content"></TextView>
+</LinearLayout>

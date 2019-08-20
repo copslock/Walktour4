@@ -1,0 +1,22 @@
+﻿
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- 选中状态获得焦点-->
+	 <item android:state_checked="true" android:state_focused="true" android:state_enabled="true"
+         android:drawable="@drawable/button_metro_switch_on" />
+     <!-- 未选中状态获得焦点 -->
+     <item android:state_checked="false" android:state_focused="true" android:state_enabled="true"
+         android:drawable="@drawable/button_metro_switch_off" />
+     <!-- 未被选中时-->
+     <item android:state_checked="false" android:state_enabled="true"
+         android:drawable="@drawable/button_metro_switch_off" />
+     <!-- 被选中时 -->
+     <item android:state_checked="true" android:state_enabled="true"
+         android:drawable="@drawable/button_metro_switch_on" />
+     
+      <item android:state_checked="true" android:state_enabled="false"
+         android:drawable="@drawable/button_metro_switch_on_disable" />
+      
+           <!-- 未被选中时-->
+     <item android:state_checked="false" android:state_enabled="false"
+         android:drawable="@drawable/button_metro_switch_off_disable" />
+</selector>

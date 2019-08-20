@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_grey_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/task_attach_title"
+        layout="@layout/basic_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/setting_sort_title_bgcolor" />
+
+    <ScrollView
+        android:id="@+id/sv_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/app_main_bg_color"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_task_name"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_taskName"/>
+
+                <EditText
+                    android:id="@+id/et_task_name"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLength="30"
+                    android:text="@string/def_udp_task_name"/>
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider"/>
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_task_times"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_repeat"/>
+
+                <EditText
+                    android:id="@+id/et_task_times"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="4"
+                    android:text="@string/def_udp_test_times"/>
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider"/>
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_ping_unlimited"/>
+
+                <CheckBox
+                    android:id="@+id/cb_unlimited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:button="@drawable/switch_button_bg"
+                    android:paddingRight="10dp"/>
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider"/>
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_server_ip"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/server_ip"/>
+
+                <EditText
+                    android:id="@+id/et_server_ip"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:lines="1"
+                    android:maxLength="40"/>
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider"/>
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_server_port"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/server_port"/>
+
+                <EditText
+                    android:id="@+id/et_server_port"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:lines="1"/>
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider"/>
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_test_mode"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/udp_test_mode"/>
+
+                <com.walktour.framework.ui.BasicSpinner
+                    android:id="@+id/spinner_test_mode"
+                    style="@style/task_drop_view"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:drawSelectorOnTop="true"/>
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider"/>
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_packet_size"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/packet_size"/>
+
+                <EditText
+                    android:id="@+id/et_packet_size"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:text="@string/def_udp_up_packet_size"/>
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider"/>
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_send_packet_interval"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/send_packet_interval"/>
+
+                <EditText
+                    android:id="@+id/et_send_packet_interval"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:text="@string/def_udp_send_packet_interval"/>
+            </RelativeLayout>
+
+            <View style="@style/task_listdivider"/>
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_send_packet_duration"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/send_packet_duration"/>
+
+                <EditText
+                    android:id="@+id/et_send_packet_duration"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:text="@string/def_udp_send_packet_duration"/>
+            </RelativeLayout>
+
+
+            <View style="@style/task_listdivider"/>
+
+
+            <RelativeLayout
+                style="@style/task_layout_edge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_test_duration"
+                    style="@style/tasK_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/udp_test_duration"/>
+
+                <EditText
+                    android:id="@+id/et_test_duration"
+                    style="@style/task_edit_view"
+                    android:layout_centerInParent="true"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:text="@string/def_udp_test_duration"/>
+            </RelativeLayout>
+
+
+            <!-- 高级 -->
+            <include layout="@layout/task_advanced_sort_title"/>
+
+            <LinearLayout
+                android:id="@+id/task_advanced_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/rl_interval"
+                    style="@style/task_layout_edge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_interval"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/udp_test_interval"/>
+
+                    <EditText
+                        android:id="@+id/et_interval"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:maxLength="40"
+                        android:text="@string/def_udp_test_interval"/>
+                </RelativeLayout>
+
+                <View style="@style/task_listdivider"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_no_data_timeout"
+                    style="@style/task_layout_edge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_no_data_timeout"
+                        style="@style/tasK_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/no_data_timeout"/>
+
+                    <EditText
+                        android:id="@+id/et_no_data_timeout"
+                        style="@style/task_edit_view"
+                        android:layout_centerInParent="true"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:maxLength="40"
+                        android:text="@string/def_udp_no_data_timeout"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/task_menu_buttom" />
+
+</LinearLayout>

@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/about_title"
+        layout="@layout/basic_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/setting_level2_title"
+                android:text="@string/exception_project_test_2" />
+    <LinearLayout
+        android:orientation="vertical"
+      style="@style/item_layout_white_circle">
+            <RelativeLayout
+                android:id="@+id/txt_exception_1_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground" >
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/exception_project_test_3" />
+
+                <TextView
+                    android:id="@+id/txt_exception_1"
+                    style="@style/setting_sort_right_text_2"
+                    android:textColor="@color/light_blue" />
+
+                <View style="@style/sys_routine_setting_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/advenced_replay_speed_multiple"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground" >
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/exception_project_test_4" />
+
+                <CheckBox
+                    android:id="@+id/txt_exception_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/switch_button_bg"
+                    android:checked="true" />
+
+                <View style="@style/sys_routine_setting_divider" />
+            </RelativeLayout>
+ 
+            <RelativeLayout
+                android:id="@+id/txt_exception_3_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground" >
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/exception_project_test_5" />
+
+                <TextView
+                    android:id="@+id/txt_exception_3"
+                    style="@style/setting_sort_right_text_2"
+                    android:textColor="@color/light_blue" />
+
+                <View style="@style/sys_routine_setting_divider" />
+            </RelativeLayout>
+ 
+            <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground" >
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/exception_project_test_6" />
+
+                <CheckBox
+                    android:id="@+id/txt_exception_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/switch_button_bg"
+                    android:checked="false" />
+
+                <View style="@style/sys_routine_setting_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_puase_nodata"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground" >
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/exception_project_test_7" />
+
+                <CheckBox
+                    android:id="@+id/txt_exception_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/switch_button_bg"
+                    android:checked="false" />
+
+                <View style="@style/sys_routine_setting_divider" />
+            </RelativeLayout>
+    </LinearLayout>
+            <!-- 超级用户业务权限 -->
+
+            <LinearLayout
+                android:id="@+id/setting_superuser_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/setting_superuser_txt"
+                    style="@style/setting_level2_title"
+                    android:text="@string/exception_project_test_8" />
+
+                <RelativeLayout
+                    android:id="@+id/ims_encrypted_layout"
+                    android:layout_width="fill_parent"
+                   style="@style/item_layout_white_circle"
+                    android:visibility="visible" >
+
+                    <EditText
+                        android:paddingLeft="7dp"
+                        android:textSize="@dimen/app_content_txt_size"
+                        android:id="@+id/exceptioninfo"
+                        android:layout_width="fill_parent"
+                        android:background="@color/transparent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/exception_project_test_9"
+                        android:lines="3" />
+
+                    <View style="@style/sys_routine_setting_divider" />
+                </RelativeLayout>
+
+                <!-- 是否GMCC项目 -->
+
+                <RelativeLayout
+                    android:id="@+id/setting_isgmcc_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_setting_isgmcc" />
+
+                    <CheckBox
+                        android:id="@+id/supper_user_isGmcc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:button="@drawable/switch_button_bg"
+                        android:checked="false"
+                        android:enabled="false" />
+
+                    <View style="@style/sys_routine_setting_divider" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/show_superuser_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <!-- 是否检查脱网 -->
+
+                    <RelativeLayout
+                        android:id="@+id/setting_checkofservice_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:visibility="visible" >
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_checkoutofservice" />
+
+                        <CheckBox
+                            android:id="@+id/supper_user_checkoutofservice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:button="@drawable/switch_button_bg"
+                            android:checked="false" />
+
+                        <View style="@style/sys_routine_setting_divider" />
+                    </RelativeLayout>
+
+                    <!-- 调试设置 -->
+
+                    <RelativeLayout
+                        android:id="@+id/setting_debugmodel_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground" >
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_debug_model" />
+
+                        <CheckBox
+                            android:id="@+id/supper_user_debugmodel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:button="@drawable/switch_button_bg"
+                            android:checked="false" />
+
+                        <View style="@style/sys_routine_setting_divider" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/setting_ipackmodel_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground" >
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_ipack_bywifimodel" />
+
+                        <CheckBox
+                            android:id="@+id/supper_user_connectipackbywifi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:button="@drawable/switch_button_bg"
+                            android:checked="false" />
+
+                        <View style="@style/sys_routine_setting_divider" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/setting_memory_mapped_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground" >
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_writefile_by_memory_mapped" />
+
+                        <CheckBox
+                            android:id="@+id/supper_user_memory_mapped"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:button="@drawable/switch_button_bg"
+                            android:checked="false" />
+
+                        <View style="@style/sys_routine_setting_divider" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/setting_save_all_log_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground" >
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_save_all_log" />
+
+                        <CheckBox
+                            android:id="@+id/supper_user_save_all_log"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:button="@drawable/switch_button_bg"
+                            android:checked="false" />
+
+                        <View style="@style/sys_routine_setting_divider" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/setting_auto_upgrade_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground" >
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_auto_upgrade" />
+
+                        <CheckBox
+                            android:id="@+id/supper_user_auto_upgrade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:button="@drawable/switch_button_bg"
+                            android:checked="false" />
+
+                        <View style="@style/sys_routine_setting_divider" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/telecom_setting_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground" >
+
+                        <View style="@style/sys_routine_setting_divider" />
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_Telecom_Setting" />
+
+                        <TextView
+                            android:id="@+id/cucc_setting_text"
+                            style="@style/setting_sort_right_text_2" />
+                    </RelativeLayout>
+
+                    <View style="@style/sys_routine_setting_divider" />
+
+                    <RelativeLayout
+                        android:id="@+id/dual_Network_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground" >
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_Dual_Network" />
+
+                        <TextView
+                            android:id="@+id/dual_Network_text"
+                            style="@style/setting_sort_right_text_2" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/setting_sharepush_txt"
+                    style="@style/setting_level2_title"
+                    android:text="@string/exception_project_test_10" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:id="@+id/imageslayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/click_exception_1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/obj_new" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <View style="@style/sys_routine_setting_divider" />
+
+        <Button
+            android:id="@+id/uploadDlog"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical|center"
+            android:background="@drawable/btn_blue_radius_selector"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center_vertical|center"
+            android:text="@string/exception_project_test_11" />
+    </LinearLayout>
+
+</LinearLayout>

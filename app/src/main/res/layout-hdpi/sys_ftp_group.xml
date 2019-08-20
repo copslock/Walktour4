@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" >
+
+
+    <include
+        android:id="@+id/task_attach_title"
+        layout="@layout/basic_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@color/setting_sort_title_bgcolor" />
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_weight="50"
+         android:orientation="vertical"
+         android:layout_marginBottom="5dip"
+        >
+<!--     <ListView 
+        android:id="@+id/ftpgroup_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        /> -->
+        
+        <LinearLayout 
+            android:id="@+id/server_group_lay"
+             android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical"
+            ></LinearLayout>
+	</ScrollView>
+    <include layout="@layout/task_menu_buttom" />
+
+</LinearLayout>

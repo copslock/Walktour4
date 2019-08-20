@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/basic_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/app_main_bg_color" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/setting_sort_title"
+                android:text="@string/locl_lock_network" />
+
+            <LinearLayout
+                android:id="@+id/setting_network_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/lock_locknet" />
+
+                    <TextView style="@style/setting_sort_right_text_2" />
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_band_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        android:id="@+id/setting_datacatup_size_left_text"
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/lock_lockband" />
+
+                    <TextView style="@style/setting_sort_right_text_2" />
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_point_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/locl_lock_point" />
+
+                    <TextView style="@style/setting_sort_right_text_2" />
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_cell_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/locl_lock_area" />
+
+                    <TextView style="@style/setting_sort_right_text_2" />
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_camp_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/lock_camp_cell" />
+
+                    <TextView style="@style/setting_sort_right_text_2" />
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_release_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/base_list_item_bg" >
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/locl_lock_none" />
+
+                    <TextView style="@style/setting_sort_right_text_2" />
+                </RelativeLayout>
+
+                <View style="@style/setting_divider" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

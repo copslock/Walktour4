@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_main_color">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/sys_setting_advanced" />
+
+
+        <TextView
+            style="@style/setting_level2_title"
+            android:text="@string/str_test_type" />
+
+        <LinearLayout
+            style="@style/item_layout_white_circle"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/exchange_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/exchange_model" />
+
+                <TextView
+                    android:id="@+id/txt_model"
+                    style="@style/setting_sort_right_text_2" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nif_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_advenced_route" />
+
+                <TextView
+                    android:id="@+id/txt_nif"
+                    style="@style/setting_sort_right_text_2" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/advenced_replay_speed_multiple"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_advenced_replay_speed" />
+
+                <TextView
+                    android:id="@+id/txt_advenced_replay_speed_multiple"
+                    style="@style/setting_sort_right_text_2" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+            <!-- 自动接听 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_accept_call"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_accept" />
+
+                <CheckBox
+                    android:id="@+id/toggle_accept_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/walktour_cb_2"
+                    android:checked="false" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+            <!-- 暂停停止测试 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_puase_keeptest"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_puase_keeptest" />
+
+                <CheckBox
+                    android:id="@+id/toggle_puase_keeptest_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/walktour_cb_2"
+                    android:checked="false" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+            <!-- 暂停不保存数据 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_puase_nodata"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_puase_nodata" />
+
+                <CheckBox
+                    android:id="@+id/toggle_puase_nodata_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/walktour_cb_2"
+                    android:checked="false" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+            <!-- 暂停保存数据 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_puase_nodata"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_puase_savedata" />
+
+                <CheckBox
+                    android:id="@+id/toggle_puase_savedata_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/walktour_cb_2"
+                    android:checked="false" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+            <!-- 更新speedtest 服务器 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_puase_nodata"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_speedtest_url" />
+
+                <Button
+                    android:id="@+id/update_speedtest_server"
+                    android:layout_width="167dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/btn_blue_radius_selector"
+                    android:textColor="@color/white"
+                    android:text="@string/update_order_str"/>
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+            <!-- 测试切换飞行模式 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_test_switchairplan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_test_switchairplan" />
+
+                <CheckBox
+                    android:id="@+id/toggle_switchaiplan_bytest_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/walktour_cb_2"
+                    android:checked="false" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+
+
+            <!-- 扫频仪开关 -->
+            <RelativeLayout
+                android:id="@+id/rl_use_scanner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_use_scanner" />
+
+                <CheckBox
+                    android:id="@+id/cb_use_scanner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/walktour_cb_2"
+                    android:checked="false" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+            <!-- TSMA扫频仪开关 -->
+            <RelativeLayout
+                android:id="@+id/rl_use_scanner_tsma"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_use__tsma_scanner" />
+
+                <CheckBox
+                    android:id="@+id/cb_use_scanner_tsma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/walktour_cb_2"
+                    android:checked="false" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+            <!--电信专项测试-->
+            <RelativeLayout
+                android:id="@+id/telecom_setting_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_Telecom_Setting" />
+
+                <TextView
+                    android:id="@+id/cucc_setting_text"
+                    style="@style/setting_sort_right_text_2" />
+
+                <View style="@style/sys_routine_setting_divider" />
+            </RelativeLayout>
+            <!-- 高铁外置陀螺仪开关 -->
+            <RelativeLayout
+                android:id="@+id/setting_hs_external_gps"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/setting_sort_left_text_2"
+                    android:text="@string/sys_setting_hs_gps" />
+
+                <CheckBox
+                    android:id="@+id/cb_hs_external_gps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:button="@drawable/walktour_cb_2"
+                    android:checked="false" />
+
+                <View style="@style/new_setting_divider" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 超级用户业务权限 -->
+
+        <LinearLayout
+            android:id="@+id/setting_superuser_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/setting_superuser_txt"
+                style="@style/setting_level2_title"
+                android:text="@string/sys_setting_supperuser" />
+
+            <LinearLayout
+                style="@style/item_layout_white_circle"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/ims_encrypted_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_setting_ims_encrypted" />
+
+                    <TextView
+                        android:id="@+id/ims_encrypted_text"
+                        style="@style/setting_sort_right_text_2" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+
+                <!-- 是否GMCC项目 -->
+
+                <RelativeLayout
+                    android:id="@+id/setting_isgmcc_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_setting_isgmcc" />
+
+                    <CheckBox
+                        android:id="@+id/supper_user_isGmcc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:button="@drawable/walktour_cb_2"
+                        android:checked="false"
+                        android:enabled="false" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+                <!-- 是否打开数据集日志 -->
+
+                <RelativeLayout
+                    android:id="@+id/setting_datasetlog_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/sys_setting_open_datasetlog" />
+
+                    <CheckBox
+                        android:id="@+id/supper_user_opendatasetlog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:button="@drawable/walktour_cb_2"
+                        android:checked="false" />
+
+                    <View style="@style/new_setting_divider" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/show_superuser_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/setting_saveorgdata_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_run_saveorgdata" />
+
+                        <CheckBox
+                            android:id="@+id/supper_user_saveorgdata"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:button="@drawable/walktour_cb_2"
+                            android:checked="false" />
+
+                        <View style="@style/new_setting_divider" />
+                    </RelativeLayout>
+
+                    <!-- 是否检查脱网 -->
+
+                    <RelativeLayout
+                        android:id="@+id/setting_checkofservice_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_checkoutofservice" />
+
+                        <CheckBox
+                            android:id="@+id/supper_user_checkoutofservice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:button="@drawable/walktour_cb_2"
+                            android:checked="false" />
+
+                        <View style="@style/new_setting_divider" />
+                    </RelativeLayout>
+
+                    <!-- 调试设置 -->
+
+                    <RelativeLayout
+                        android:id="@+id/setting_debugmodel_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_debug_model" />
+
+                        <CheckBox
+                            android:id="@+id/supper_user_debugmodel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:button="@drawable/walktour_cb_2"
+                            android:checked="false" />
+
+                        <View style="@style/new_setting_divider" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/setting_ipackmodel_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_ipack_bywifimodel" />
+
+                        <CheckBox
+                            android:id="@+id/supper_user_connectipackbywifi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:button="@drawable/walktour_cb_2"
+                            android:checked="false" />
+
+                        <View style="@style/new_setting_divider" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/setting_memory_mapped_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_writefile_by_memory_mapped" />
+
+                        <CheckBox
+                            android:id="@+id/supper_user_memory_mapped"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:button="@drawable/walktour_cb_2"
+                            android:checked="false" />
+
+                        <View style="@style/new_setting_divider" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/setting_save_all_log_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_save_all_log" />
+
+                        <CheckBox
+                            android:id="@+id/supper_user_save_all_log"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:button="@drawable/walktour_cb_2"
+                            android:checked="false" />
+
+                        <View style="@style/new_setting_divider" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/setting_auto_upgrade_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_auto_upgrade" />
+
+                        <CheckBox
+                            android:id="@+id/supper_user_auto_upgrade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:button="@drawable/walktour_cb_2"
+                            android:checked="false" />
+
+                        <View style="@style/new_setting_divider" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/setting_auto_upgrade_layout2x"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_zonghe_test" />
+
+
+                        <Spinner
+                            android:id="@+id/comprehensive_test_environment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/drop"></Spinner>
+
+
+                        <View style="@style/new_setting_divider" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/setting_auto_upgrade_layout3x"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_show_l1_l2_command" />
+
+                        <CheckBox
+                            android:id="@+id/show_l1_l2_command"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:button="@drawable/walktour_cb_2"
+                            android:checked="false" />
+
+                        <View style="@style/new_setting_divider" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/setting_auto_upgrade_layout4x"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_show_l1_l2_command_buffer" />
+
+                        <CheckBox
+                            android:id="@+id/show_l1_l2_command_buffer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:button="@drawable/walktour_cb_2"
+                            android:checked="false" />
+
+                        <View style="@style/new_setting_divider" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/dual_Network_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/setting_sort_left_text_2"
+                            android:text="@string/sys_setting_Dual_Network" />
+
+                        <TextView
+                            android:id="@+id/dual_Network_text"
+                            style="@style/setting_sort_right_text_2" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 微服务设置,分享测试数据 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/setting_sharepush_txt"
+                style="@style/setting_level2_title"
+                android:text="@string/sys_setting_supperuser" />
+
+            <LinearLayout
+                style="@style/item_layout_white_circle"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/share_project_devices_release_relation_7" />
+
+                    <CheckBox
+                        android:id="@+id/setting_sharepush_ck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:button="@drawable/walktour_cb_2"
+                        android:checked="false"
+                        android:enabled="true" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 异常反馈设置 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/setting_level2_title"
+                android:text="@string/exception_project_test" />
+
+            <LinearLayout
+                style="@style/item_layout_white_circle"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/exceptionfeedback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:descendantFocusability="blocksDescendants"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/setting_sort_left_text_2"
+                        android:text="@string/exception_project_test_1" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

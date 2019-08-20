@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_bg_color"
+    android:orientation="vertical" 
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/type"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/dialog_btn"
+            android:gravity="center"
+            android:textColor="@color/app_main_text_color"
+            android:text="@string/more_equal_string" />
+
+        <EditText
+            android:id="@+id/value"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textSize="@dimen/default_txt_size_normal" 
+            android:inputType="numberSigned"
+            style="@style/task_edit_view"/>
+    </LinearLayout>
+</LinearLayout>
